@@ -113,7 +113,7 @@ function generateCarouselHtml(professeurs) {
     const slides = professeurs.map((p, index) => {
         const photoHtml = p.photo
             ? `<img src="professeurs/fiches/${p.photo}" alt="${p.name}" class="team-member__photo">`
-            : `<div class="team-member__photo team-member__photo--placeholder">${p.initials}</div>`;
+            : `<img src="images/logo-kannagara.png" alt="Logo Kannagara" class="team-member__photo" style="object-fit: contain; padding: 10px;">`;
         
         return `
                     <div class="team-member teachers-carousel__slide${index === 0 ? ' active' : ''}">
@@ -158,7 +158,7 @@ function generateProfesseursHtml(professeurs) {
                         </div>`
             : `
                         <div class="team-member" style="text-align: center;">
-                            <div class="team-member__photo team-member__photo--placeholder">${p.initials}</div>
+                            <img src="images/logo-kannagara.png" alt="Logo Kannagara" class="team-member__photo" style="width: 200px; height: 200px; object-fit: contain; padding: 20px;">
                         </div>`;
 
         const contentHtml = `

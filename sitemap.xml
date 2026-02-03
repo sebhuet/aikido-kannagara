@@ -1,129 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://kannagara.free.fr/</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <priority>1</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/aikido.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/index.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://sebhuet.github.io/aikido-kannagara/aikido.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/club.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/club.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/professeurs.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/professeurs.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/actualites.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/actualites.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/inscription.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/inscription.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/grades.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/grades.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/contact.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/contact.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/galerie.html</loc>
-        <lastmod>2024-02-03</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/armes.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/faq.html</loc>
-        <lastmod>2024-02-03</lastmod>
-        <changefreq>yearly</changefreq>
+        <loc>https://sebhuet.github.io/aikido-kannagara/fondations.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/lexique.html</loc>
-        <lastmod>2024-02-03</lastmod>
-        <changefreq>yearly</changefreq>
+        <loc>https://sebhuet.github.io/aikido-kannagara/galerie.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/armes.html</loc>
-        <lastmod>2024-02-03</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/lexique.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/fondations.html</loc>
-        <lastmod>2024-02-03</lastmod>
-        <changefreq>yearly</changefreq>
+        <loc>https://sebhuet.github.io/aikido-kannagara/faq.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/blog.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/blog.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kannagara.free.fr/blog/importance-ukemi.html</loc>
-        <lastmod>2024-01-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://kannagara.free.fr/blog/stage-regional-2023.html</loc>
-        <lastmod>2023-12-08</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://kannagara.free.fr/blog/debuter-aikido.html</loc>
-        <lastmod>2023-11-20</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://kannagara.free.fr/blog/rentree-2023.html</loc>
-        <lastmod>2023-10-05</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://kannagara.free.fr/blog/passage-grades-juin-2023.html</loc>
-        <lastmod>2023-06-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://kannagara.free.fr/blog/reflexion-harmonie.html</loc>
-        <lastmod>2023-05-01</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://kannagara.free.fr/mentions-legales.html</loc>
-        <lastmod>2024-01-15</lastmod>
+        <loc>https://sebhuet.github.io/aikido-kannagara/mentions-legales.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://sebhuet.github.io/aikido-kannagara/blog/debuter-aikido.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://sebhuet.github.io/aikido-kannagara/blog/importance-ukemi.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://sebhuet.github.io/aikido-kannagara/blog/passage-grades-juin-2023.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://sebhuet.github.io/aikido-kannagara/blog/reflexion-harmonie.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://sebhuet.github.io/aikido-kannagara/blog/rentree-2023.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://sebhuet.github.io/aikido-kannagara/blog/stage-regional-2023.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
     </url>
 </urlset>
