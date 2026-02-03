@@ -85,6 +85,67 @@
     </script>
 
     <style>
+        .faq-search {
+            max-width: 600px;
+            margin: 0 auto var(--spacing-xxl);
+        }
+
+        .faq-search__input {
+            width: 100%;
+            padding: var(--spacing-md) var(--spacing-lg);
+            font-size: 1.1rem;
+            border: 2px solid var(--color-border);
+            border-radius: 30px;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .faq-search__input:focus {
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+        }
+
+        .faq-search__input::placeholder {
+            color: #999;
+        }
+
+        .faq-search__results {
+            margin-top: var(--spacing-sm);
+            text-align: center;
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+        }
+
+        .faq-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            justify-content: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .faq-category-btn {
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border: 2px solid var(--color-accent);
+            background: white;
+            color: var(--color-accent);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .faq-category-btn:hover {
+            background: var(--color-accent);
+            color: white;
+        }
+
+        .faq-category-btn.active {
+            background: var(--color-accent);
+            color: white;
+        }
+
         .faq-section {
             margin-bottom: var(--spacing-xxl);
         }
@@ -96,6 +157,10 @@
             padding-bottom: var(--spacing-sm);
             border-bottom: 2px solid var(--color-accent);
             display: inline-block;
+        }
+
+        .faq-section.hidden {
+            display: none;
         }
 
         .faq-list {
@@ -240,13 +305,35 @@
                     Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à <a href="contact.html">nous contacter</a>.
                 </p>
             </div>
+
+            <!-- Barre de recherche -->
+            <div class="faq-search">
+                <input 
+                    type="search" 
+                    class="faq-search__input" 
+                    id="faqSearchInput"
+                    placeholder="🔍 Rechercher une question..."
+                    aria-label="Rechercher dans la FAQ"
+                >
+                <div class="faq-search__results" id="faqSearchResults"></div>
+            </div>
+
+            <!-- Filtres par catégorie -->
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">Toutes</button>
+                <button class="faq-category-btn" data-category="debuter">Débuter</button>
+                <button class="faq-category-btn" data-category="equipement">Équipement</button>
+                <button class="faq-category-btn" data-category="club">Le Club</button>
+                <button class="faq-category-btn" data-category="pratique">Pratique</button>
+                <button class="faq-category-btn" data-category="inscription">Inscription</button>
+            </div>
         </div>
     </section>
 
     <!-- FAQ Débuter -->
     <section class="section section--alt">
         <div class="container">
-            <div class="faq-section">
+            <div class="faq-section" data-category="debuter">
                 <h2 class="faq-section__title">Débuter l'aïkido</h2>
                 <ul class="faq-list">
                     <li class="faq-item">
@@ -310,7 +397,7 @@
                 </ul>
             </div>
 
-            <div class="faq-section">
+            <div class="faq-section" data-category="equipement">
                 <h2 class="faq-section__title">Équipement et tenue</h2>
                 <ul class="faq-list">
                     <li class="faq-item">
@@ -366,7 +453,7 @@
                 </ul>
             </div>
 
-            <div class="faq-section">
+            <div class="faq-section" data-category="club">
                 <h2 class="faq-section__title">Le club Kannagara</h2>
                 <ul class="faq-list">
                     <li class="faq-item">
@@ -428,7 +515,7 @@
                 </ul>
             </div>
 
-            <div class="faq-section">
+            <div class="faq-section" data-category="pratique">
                 <h2 class="faq-section__title">La pratique</h2>
                 <ul class="faq-list">
                     <li class="faq-item">
@@ -500,7 +587,7 @@
                 </ul>
             </div>
 
-            <div class="faq-section">
+            <div class="faq-section" data-category="inscription">
                 <h2 class="faq-section__title">Inscription</h2>
                 <ul class="faq-list">
                     <li class="faq-item">
@@ -612,7 +699,12 @@
         // FAQ Accordion
         document.addEventListener('DOMContentLoaded', function() {
             const faqItems = document.querySelectorAll('.faq-item');
+            const searchInput = document.getElementById('faqSearchInput');
+            const searchResults = document.getElementById('faqSearchResults');
+            const categoryButtons = document.querySelectorAll('.faq-category-btn');
+            const sections = document.querySelectorAll('.faq-section');
 
+            // Gestion de l'accordéon
             faqItems.forEach(item => {
                 const question = item.querySelector('.faq-question');
 
@@ -629,6 +721,92 @@
                     if (!isActive) {
                         item.classList.add('active');
                         this.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+
+            // Fonction de recherche
+            function searchFAQ(query) {
+                query = query.toLowerCase().trim();
+                let visibleCount = 0;
+                let totalCount = faqItems.length;
+
+                if (query === '') {
+                    // Réinitialiser l'affichage
+                    faqItems.forEach(item => {
+                        item.style.display = '';
+                    });
+                    sections.forEach(section => {
+                        section.style.display = '';
+                    });
+                    searchResults.textContent = '';
+                    return;
+                }
+
+                faqItems.forEach(item => {
+                    const questionText = item.querySelector('.faq-question').textContent.toLowerCase();
+                    const answerText = item.querySelector('.faq-answer__content').textContent.toLowerCase();
+
+                    if (questionText.includes(query) || answerText.includes(query)) {
+                        item.style.display = '';
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Masquer les sections vides
+                sections.forEach(section => {
+                    const visibleItems = section.querySelectorAll('.faq-item[style=""]');
+                    section.style.display = visibleItems.length > 0 ? '' : 'none';
+                });
+
+                // Afficher le résultat de la recherche
+                if (visibleCount === 0) {
+                    searchResults.textContent = 'Aucune question trouvée';
+                } else if (visibleCount === 1) {
+                    searchResults.textContent = '1 question trouvée';
+                } else {
+                    searchResults.textContent = `${visibleCount} questions trouvées`;
+                }
+            }
+
+            // Écouteur sur la recherche
+            searchInput.addEventListener('input', function(e) {
+                searchFAQ(e.target.value);
+            });
+
+            // Gestion des filtres par catégorie
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.dataset.category;
+
+                    // Retirer la classe active de tous les boutons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Ajouter la classe active au bouton cliqué
+                    this.classList.add('active');
+
+                    // Réinitialiser la recherche
+                    searchInput.value = '';
+                    searchResults.textContent = '';
+                    faqItems.forEach(item => {
+                        item.style.display = '';
+                    });
+
+                    // Filtrer les sections
+                    if (category === 'all') {
+                        sections.forEach(section => {
+                            section.classList.remove('hidden');
+                        });
+                    } else {
+                        sections.forEach(section => {
+                            if (section.dataset.category === category) {
+                                section.classList.remove('hidden');
+                            } else {
+                                section.classList.add('hidden');
+                            }
+                        });
                     }
                 });
             });
