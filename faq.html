@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>FAQ | Questions fréquentes sur l'aïkido - Kannagara Guyancourt</title>
+    <meta name="description" content="Réponses aux questions fréquentes sur l'aïkido et le club Kannagara : équipement, inscription, cours d'essai, niveau requis, enfants, tarifs.">
+    <meta name="keywords" content="FAQ aikido, questions aikido, débuter aikido, équipement aikido, inscription club aikido, Guyancourt">
+    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kannagara.free.fr/faq.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kannagara.free.fr/faq.html">
+    <meta property="og:title" content="FAQ - Questions fréquentes - Kannagara Aïkido">
+    <meta property="og:description" content="Toutes les réponses à vos questions sur l'aïkido et notre club de Guyancourt.">
+    <meta property="og:image" content="https://kannagara.free.fr/images/logo-kannagara.png">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FAQ - Kannagara Aïkido">
+    <meta name="twitter:description" content="Questions fréquentes sur l'aïkido et notre club.">
+    <meta name="twitter:image" content="https://kannagara.free.fr/images/logo-kannagara.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/logo-kannagara.png">
+
+    <!-- Schema.org FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Faut-il avoir déjà pratiqué un sport de combat pour commencer l'aïkido ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non, aucune expérience préalable n'est nécessaire. L'aïkido est accessible à tous, quel que soit votre niveau sportif. Les débutants sont les bienvenus et bénéficient d'un accompagnement adapté."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "À partir de quel âge peut-on pratiquer l'aïkido ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Au club Kannagara, nous accueillons les enfants à partir de 7 ans. Les cours enfants ont lieu le lundi et jeudi de 18h30 à 19h30 avec une pédagogie adaptée et ludique."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Y a-t-il une limite d'âge pour commencer ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non, il n'y a pas de limite d'âge supérieure. L'aïkido est pratiqué par des personnes de tous âges, y compris des seniors. Les techniques s'adaptent aux capacités de chacun."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quel équipement faut-il pour commencer ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour les premières séances, un simple survêtement suffit. Par la suite, vous aurez besoin d'un keikogi (kimono) blanc. Les armes (jo, bokken) peuvent être prêtées au début ou achetées progressivement."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Peut-on faire un cours d'essai ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, nous proposons des cours d'essai gratuits, particulièrement en septembre lors des portes ouvertes. Contactez-nous pour convenir d'une date."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        .faq-section {
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .faq-section__title {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--color-accent);
+            display: inline-block;
+        }
+
+        .faq-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .faq-item {
+            margin-bottom: var(--spacing-md);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-lg);
+            background: white;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: var(--color-bg-alt);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--color-accent);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-answer__content {
+            padding: 0 var(--spacing-lg) var(--spacing-lg);
+            color: var(--color-text);
+            line-height: 1.7;
+        }
+
+        .faq-answer__content p {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .faq-answer__content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-answer__content ul {
+            margin: var(--spacing-sm) 0;
+            padding-left: var(--spacing-lg);
+        }
+
+        .faq-answer__content li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .faq-contact {
+            text-align: center;
+            padding: var(--spacing-xl);
+            background: var(--color-bg-alt);
+            border-radius: 8px;
+        }
+
+        .faq-contact__title {
+            margin-bottom: var(--spacing-md);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo-kannagara.png" alt="Kannagara Aïkido Club de Guyancourt" class="header__logo-img">
+            </a>
+
+            <nav class="nav">
+                <button class="nav__toggle" aria-label="Menu">
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                </button>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="aikido.html" class="nav__link">Aïkido</a></li>
+                    <li class="nav__item"><a href="club.html" class="nav__link">Le Club</a></li>
+                    <li class="nav__item"><a href="professeurs.html" class="nav__link">Professeurs</a></li>
+                    <li class="nav__item"><a href="actualites.html" class="nav__link">Actualités</a></li>
+                    <li class="nav__item"><a href="galerie.html" class="nav__link">Galerie</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="inscription.html" class="nav__link">Inscription</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Foire Aux Questions</h1>
+            <p class="page-header__breadcrumb">
+                <a href="index.html">Accueil</a> / FAQ
+            </p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <div class="content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p>
+                    Vous vous posez des questions sur l'aïkido ou sur notre club ?
+                    Retrouvez ci-dessous les réponses aux questions les plus fréquentes.
+                    Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à <a href="contact.html">nous contacter</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Débuter -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="faq-section">
+                <h2 class="faq-section__title">Débuter l'aïkido</h2>
+                <ul class="faq-list">
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Faut-il avoir déjà pratiqué un sport de combat pour commencer ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Non, aucune expérience préalable n'est nécessaire. L'aïkido est accessible à tous,
+                                    quel que soit votre niveau sportif. Les débutants sont les bienvenus et bénéficient
+                                    d'un accompagnement adapté par nos enseignants diplômés.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            À partir de quel âge peut-on pratiquer ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Au club Kannagara, nous accueillons les enfants à partir de <strong>7 ans</strong>.
+                                    Les cours enfants ont lieu le lundi et jeudi de 18h30 à 19h30 avec une pédagogie
+                                    adaptée et ludique. Pour les adultes, il n'y a pas de limite d'âge : l'aïkido
+                                    est pratiqué par des personnes de tous âges, y compris des seniors.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            L'aïkido est-il adapté aux femmes ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Absolument ! L'aïkido est particulièrement adapté aux femmes car il ne repose pas
+                                    sur la force brute mais sur les principes de levier, de déséquilibre et d'utilisation
+                                    de l'énergie du partenaire. La pratique mixte est enrichissante et l'environnement
+                                    du club est bienveillant et respectueux.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Faut-il être souple ou en bonne condition physique ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Non, l'aïkido ne demande pas de condition physique particulière au départ.
+                                    La souplesse et la condition physique s'améliorent naturellement avec la pratique.
+                                    Chacun progresse à son rythme, selon ses capacités.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="faq-section">
+                <h2 class="faq-section__title">Équipement et tenue</h2>
+                <ul class="faq-list">
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Quel équipement faut-il pour commencer ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Pour les premières séances, un simple <strong>survêtement</strong> suffit.
+                                    Par la suite, vous aurez besoin de :
+                                </p>
+                                <ul>
+                                    <li>Un <strong>keikogi</strong> (kimono blanc) - le même que pour le judo convient</li>
+                                    <li>Une <strong>ceinture blanche</strong> (souvent fournie avec le keikogi)</li>
+                                    <li>Des <strong>zoori</strong> (sandales) pour vous déplacer hors du tatami</li>
+                                </ul>
+                                <p>
+                                    Les armes (jo, bokken) peuvent être prêtées au début ou achetées progressivement.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Où acheter son équipement ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Vous pouvez trouver votre équipement dans les magasins de sport (Decathlon, etc.)
+                                    ou dans des boutiques spécialisées en arts martiaux. Les enseignants du club
+                                    peuvent vous conseiller sur les achats à privilégier.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Qu'est-ce que le hakama ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Le <strong>hakama</strong> est le pantalon large traditionnel porté par les pratiquants
+                                    avancés (généralement à partir du 1er kyu ou 1er dan selon les dojos).
+                                    C'est un vêtement symbolique qui représente l'engagement dans la voie.
+                                    Les débutants ne portent que le keikogi blanc.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="faq-section">
+                <h2 class="faq-section__title">Le club Kannagara</h2>
+                <ul class="faq-list">
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Peut-on faire un cours d'essai ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Oui, nous proposons des <strong>cours d'essai gratuits</strong>, particulièrement
+                                    en septembre lors des portes ouvertes. Vous pouvez venir observer un cours
+                                    ou participer directement. Contactez-nous pour convenir d'une date.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Quels sont les horaires des cours ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>Les cours ont lieu au Gymnase Maurice Baquet :</p>
+                                <ul>
+                                    <li><strong>Enfants (7 ans et +)</strong> : Lundi et jeudi, 18h30 - 19h30</li>
+                                    <li><strong>Adultes</strong> : Lundi et jeudi, 19h30 - 21h30</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Où se trouve le club ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Le club est situé au <strong>Gymnase Maurice Baquet</strong>,
+                                    Mail des Graviers, 78280 Guyancourt. Un plan d'accès détaillé est disponible
+                                    sur notre <a href="contact.html">page contact</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Le club est-il affilié à une fédération ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Oui, le club Kannagara est affilié à la <strong>FFAB</strong>
+                                    (Fédération Française d'Aïkido et de Budo) et possède l'agrément Jeunesse et Sports.
+                                    Cette affiliation garantit un enseignement de qualité et des grades reconnus.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="faq-section">
+                <h2 class="faq-section__title">La pratique</h2>
+                <ul class="faq-list">
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Y a-t-il des compétitions en aïkido ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Non, l'aïkido <strong>exclut toute forme de compétition</strong>.
+                                    C'est l'une des caractéristiques fondamentales de cette discipline.
+                                    La pratique est basée sur la coopération et le respect mutuel entre partenaires.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Comment fonctionnent les grades ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Le système de grades comprend les <strong>kyu</strong> (du 6e au 1er kyu, ceinture blanche)
+                                    puis les <strong>dan</strong> (à partir de la ceinture noire). Les passages de grades
+                                    se font au sein du club pour les kyu, et lors d'examens régionaux ou nationaux
+                                    pour les dan. Plus d'informations sur notre <a href="grades.html">page grades</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Utilise-t-on des armes en aïkido ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Oui, l'aïkido inclut un travail avec des <strong>armes en bois</strong> :
+                                </p>
+                                <ul>
+                                    <li><strong>Jo</strong> : bâton d'environ 1,28 m</li>
+                                    <li><strong>Bokken</strong> : sabre en bois</li>
+                                    <li><strong>Tanto</strong> : couteau en bois</li>
+                                </ul>
+                                <p>
+                                    Ce travail permet de mieux comprendre les distances, les angles et l'origine
+                                    des techniques à mains nues.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            L'aïkido est-il efficace en self-défense ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    L'aïkido développe des qualités essentielles pour la self-défense :
+                                    vigilance, anticipation, placement, gestion du stress. Cependant, l'aïkido
+                                    enseigne avant tout à <strong>désamorcer les conflits</strong> avant qu'ils
+                                    ne deviennent physiques. C'est une approche globale qui va au-delà
+                                    des simples techniques de combat.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="faq-section">
+                <h2 class="faq-section__title">Inscription</h2>
+                <ul class="faq-list">
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Quand peut-on s'inscrire ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Les inscriptions se font principalement en <strong>septembre</strong>
+                                    lors des portes ouvertes, mais vous pouvez nous rejoindre à tout moment
+                                    de l'année selon les places disponibles. Contactez-nous pour en savoir plus.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Quels documents fournir pour l'inscription ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>Pour vous inscrire, vous devrez fournir :</p>
+                                <ul>
+                                    <li>Un <strong>certificat médical</strong> de non contre-indication à la pratique de l'aïkido</li>
+                                    <li>Une <strong>photo d'identité</strong></li>
+                                    <li>Le <strong>formulaire d'inscription</strong> complété</li>
+                                    <li>Le règlement de la cotisation</li>
+                                </ul>
+                                <p>
+                                    Toutes les informations détaillées sont sur notre <a href="inscription.html">page inscription</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section">
+        <div class="container">
+            <div class="faq-contact">
+                <h2 class="faq-contact__title">Vous avez d'autres questions ?</h2>
+                <p>N'hésitez pas à nous contacter, nous serons ravis de vous répondre !</p>
+                <div class="mt-3">
+                    <a href="contact.html" class="btn btn--primary">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <h4>Kannagara Aïkido</h4>
+                    <p>Club d'aïkido de Guyancourt depuis 1990.</p>
+                    <p>Agréé Jeunesse et Sports.</p>
+                    <p>Affilié à la FFAB.</p>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="aikido.html">L'Aïkido</a></li>
+                        <li><a href="club.html">Le Club</a></li>
+                        <li><a href="professeurs.html">Professeurs</a></li>
+                        <li><a href="grades.html">Grades</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Pratique</h4>
+                    <ul>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="inscription.html">Inscription</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="lexique.html">Lexique</a></li>
+                        <li><a href="fondations.html">Fondations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Contact</h4>
+                    <p>Gymnase Maurice Baquet</p>
+                    <p>Mail des Graviers</p>
+                    <p>78280 Guyancourt</p>
+                    <p><a href="tel:0607625162">06 07 62 51 62</a></p>
+                    <p><a href="mailto:kannagara@wanadoo.fr">kannagara@wanadoo.fr</a></p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Kannagara Aïkido Club de Guyancourt. Tous droits réservés.</p>
+                <span class="footer__ffab">Affilié à la Fédération Française d'Aïkido et de Budo</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+
+                question.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+
+                    // Fermer tous les autres
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    });
+
+                    // Basculer l'élément actuel
+                    if (!isActive) {
+                        item.classList.add('active');
+                        this.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

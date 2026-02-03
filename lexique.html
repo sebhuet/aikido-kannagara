@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Lexique Japonais de l'Aïkido | Vocabulaire et termes techniques</title>
+    <meta name="description" content="Lexique japonais de l'aïkido : termes techniques, vocabulaire du dojo, noms des techniques, comptage japonais. Guide complet pour les pratiquants.">
+    <meta name="keywords" content="lexique aikido, vocabulaire japonais, termes aikido, techniques aikido, dojo, seiza, rei, uke, tori">
+    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kannagara.free.fr/lexique.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kannagara.free.fr/lexique.html">
+    <meta property="og:title" content="Lexique Japonais de l'Aïkido">
+    <meta property="og:description" content="Vocabulaire japonais essentiel pour la pratique de l'aïkido : termes techniques, expressions du dojo.">
+    <meta property="og:image" content="https://kannagara.free.fr/images/logo-kannagara.png">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/logo-kannagara.png">
+
+    <style>
+        .lexique-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xl);
+            padding: var(--spacing-md);
+            background: var(--color-bg-alt);
+            border-radius: 8px;
+        }
+
+        .lexique-nav__link {
+            padding: var(--spacing-sm) var(--spacing-md);
+            background: white;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lexique-nav__link:hover {
+            background: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+
+        .lexique-section {
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .lexique-section__title {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--color-accent);
+        }
+
+        .lexique-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .lexique-item {
+            background: white;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .lexique-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .lexique-item__term {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            color: var(--color-secondary);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .lexique-item__kanji {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            margin-left: var(--spacing-sm);
+        }
+
+        .lexique-item__definition {
+            color: var(--color-text);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .lexique-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .lexique-table th,
+        .lexique-table td {
+            padding: var(--spacing-sm) var(--spacing-md);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .lexique-table th {
+            background: var(--color-primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .lexique-table tr:nth-child(even) {
+            background: var(--color-bg-alt);
+        }
+
+        .lexique-table tr:hover {
+            background: rgba(201, 162, 39, 0.1);
+        }
+
+        .japanese {
+            font-weight: 600;
+            color: var(--color-secondary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo-kannagara.png" alt="Kannagara Aïkido Club de Guyancourt" class="header__logo-img">
+            </a>
+
+            <nav class="nav">
+                <button class="nav__toggle" aria-label="Menu">
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                </button>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="aikido.html" class="nav__link">Aïkido</a></li>
+                    <li class="nav__item"><a href="club.html" class="nav__link">Le Club</a></li>
+                    <li class="nav__item"><a href="professeurs.html" class="nav__link">Professeurs</a></li>
+                    <li class="nav__item"><a href="actualites.html" class="nav__link">Actualités</a></li>
+                    <li class="nav__item"><a href="galerie.html" class="nav__link">Galerie</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="inscription.html" class="nav__link">Inscription</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-overlay"></div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Lexique Japonais</h1>
+            <p class="page-header__breadcrumb">
+                <a href="index.html">Accueil</a> / <a href="aikido.html">Aïkido</a> / Lexique
+            </p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <div class="content" style="max-width: 800px; margin: 0 auto;">
+                <p>
+                    L'aïkido utilise un vocabulaire japonais spécifique. Connaître ces termes permet
+                    de mieux comprendre les instructions du professeur et de s'immerger dans la culture
+                    de cette discipline. Voici les termes essentiels que tout pratiquant devrait connaître.
+                </p>
+            </div>
+
+            <!-- Navigation rapide -->
+            <nav class="lexique-nav" aria-label="Navigation du lexique">
+                <a href="#general" class="lexique-nav__link">Termes généraux</a>
+                <a href="#dojo" class="lexique-nav__link">Le dojo</a>
+                <a href="#pratique" class="lexique-nav__link">La pratique</a>
+                <a href="#techniques" class="lexique-nav__link">Techniques</a>
+                <a href="#directions" class="lexique-nav__link">Directions</a>
+                <a href="#armes" class="lexique-nav__link">Armes</a>
+                <a href="#comptage" class="lexique-nav__link">Comptage</a>
+                <a href="#fondations" class="lexique-nav__link">Fondations (Tamura)</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Termes généraux -->
+    <section class="section section--alt" id="general">
+        <div class="container">
+            <div class="lexique-section">
+                <h2 class="lexique-section__title">Termes généraux</h2>
+                <div class="lexique-grid">
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Aikido <span class="lexique-item__kanji">合気道</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            "La voie de l'harmonie des énergies". Ai = harmonie, Ki = énergie, Do = voie.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Budo <span class="lexique-item__kanji">武道</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            "La voie martiale". Ensemble des arts martiaux japonais traditionnels.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Sensei <span class="lexique-item__kanji">先生</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Professeur, enseignant. Littéralement "celui qui est né avant".
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            O'Sensei <span class="lexique-item__kanji">大先生</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            "Grand maître". Titre réservé au fondateur de l'aïkido, Morihei Ueshiba.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Sempai <span class="lexique-item__kanji">先輩</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Pratiquant plus ancien, plus expérimenté.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Kohai <span class="lexique-item__kanji">後輩</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Pratiquant moins ancien, débutant.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Le dojo -->
+    <section class="section" id="dojo">
+        <div class="container">
+            <div class="lexique-section">
+                <h2 class="lexique-section__title">Le dojo et l'étiquette</h2>
+                <div class="lexique-grid">
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Dojo <span class="lexique-item__kanji">道場</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            "Lieu où l'on étudie la voie". Salle d'entraînement.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Tatami <span class="lexique-item__kanji">畳</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Tapis de pratique. Traditionnellement en paille de riz.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Kamiza <span class="lexique-item__kanji">上座</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Place d'honneur du dojo, souvent ornée d'un portrait du fondateur.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Rei <span class="lexique-item__kanji">礼</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Salut. Marque de respect mutuel entre pratiquants.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Seiza <span class="lexique-item__kanji">正座</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Position assise traditionnelle, à genoux.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Keikogi / Gi <span class="lexique-item__kanji">稽古着</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Tenue d'entraînement (veste et pantalon blancs).
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Hakama <span class="lexique-item__kanji">袴</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Pantalon large traditionnel porté par les pratiquants avancés.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Obi <span class="lexique-item__kanji">帯</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Ceinture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- La pratique -->
+    <section class="section section--alt" id="pratique">
+        <div class="container">
+            <div class="lexique-section">
+                <h2 class="lexique-section__title">La pratique</h2>
+                <div class="lexique-grid">
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Keiko <span class="lexique-item__kanji">稽古</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Entraînement, pratique.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Tori / Nage <span class="lexique-item__kanji">取り / 投げ</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Celui qui exécute la technique.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Uke <span class="lexique-item__kanji">受け</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Celui qui reçoit la technique, qui attaque.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Ukemi <span class="lexique-item__kanji">受身</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Chute, réception. "Corps qui reçoit".
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Kamae <span class="lexique-item__kanji">構え</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Garde, posture de base.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Ma-ai <span class="lexique-item__kanji">間合い</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Distance entre les partenaires.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Tai sabaki <span class="lexique-item__kanji">体捌き</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Déplacement du corps, esquive.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Atemi <span class="lexique-item__kanji">当て身</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Coup porté (généralement simulé) pour déstabiliser.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Kuzushi <span class="lexique-item__kanji">崩し</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Déséquilibre du partenaire.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Zanshin <span class="lexique-item__kanji">残心</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Vigilance maintenue après la technique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types de techniques -->
+    <section class="section" id="techniques">
+        <div class="container">
+            <div class="lexique-section">
+                <h2 class="lexique-section__title">Types de techniques</h2>
+
+                <h3 style="margin: var(--spacing-lg) 0 var(--spacing-md); color: var(--color-secondary);">Attaques (Waza)</h3>
+                <table class="lexique-table">
+                    <thead>
+                        <tr>
+                            <th>Terme</th>
+                            <th>Signification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="japanese">Ai hanmi katate dori</td>
+                            <td>Saisie du poignet en garde identique</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Gyaku hanmi katate dori</td>
+                            <td>Saisie du poignet en garde inverse</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Ryote dori</td>
+                            <td>Saisie des deux poignets</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Morote dori</td>
+                            <td>Saisie d'un poignet à deux mains</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Kata dori</td>
+                            <td>Saisie de l'épaule</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Shomen uchi</td>
+                            <td>Frappe verticale à la tête</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Yokomen uchi</td>
+                            <td>Frappe latérale à la tempe</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Tsuki</td>
+                            <td>Coup de poing direct</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Ushiro ryote dori</td>
+                            <td>Saisie des deux poignets par l'arrière</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin: var(--spacing-lg) 0 var(--spacing-md); color: var(--color-secondary);">Projections (Nage waza)</h3>
+                <table class="lexique-table">
+                    <thead>
+                        <tr>
+                            <th>Terme</th>
+                            <th>Signification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="japanese">Irimi nage</td>
+                            <td>Projection par entrée</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Shiho nage</td>
+                            <td>Projection dans les quatre directions</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Kote gaeshi</td>
+                            <td>Retournement du poignet</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Kaiten nage</td>
+                            <td>Projection rotative</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Tenchi nage</td>
+                            <td>Projection ciel-terre</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Kokyu nage</td>
+                            <td>Projection par la respiration</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Koshi nage</td>
+                            <td>Projection de hanche</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin: var(--spacing-lg) 0 var(--spacing-md); color: var(--color-secondary);">Immobilisations (Osae waza)</h3>
+                <table class="lexique-table">
+                    <thead>
+                        <tr>
+                            <th>Terme</th>
+                            <th>Signification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="japanese">Ikkyo</td>
+                            <td>Première immobilisation (contrôle du coude)</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Nikyo</td>
+                            <td>Deuxième immobilisation (torsion du poignet)</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Sankyo</td>
+                            <td>Troisième immobilisation (rotation du poignet)</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Yonkyo</td>
+                            <td>Quatrième immobilisation (pression sur le nerf)</td>
+                        </tr>
+                        <tr>
+                            <td class="japanese">Gokyo</td>
+                            <td>Cinquième immobilisation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directions -->
+    <section class="section section--alt" id="directions">
+        <div class="container">
+            <div class="lexique-section">
+                <h2 class="lexique-section__title">Directions et positions</h2>
+                <div class="lexique-grid">
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">Omote</div>
+                        <p class="lexique-item__definition">Devant, face. Entrée vers l'avant du partenaire.</p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">Ura</div>
+                        <p class="lexique-item__definition">Derrière, dos. Entrée vers l'arrière du partenaire.</p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">Irimi</div>
+                        <p class="lexique-item__definition">Entrée directe vers le partenaire.</p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">Tenkan</div>
+                        <p class="lexique-item__definition">Rotation, pivot sur un pied.</p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">Tachi waza</div>
+                        <p class="lexique-item__definition">Techniques debout.</p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">Suwari waza</div>
+                        <p class="lexique-item__definition">Techniques à genoux.</p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">Hanmi handachi</div>
+                        <p class="lexique-item__definition">Tori à genoux, uke debout.</p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">Migi / Hidari</div>
+                        <p class="lexique-item__definition">Droite / Gauche</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Armes -->
+    <section class="section" id="armes">
+        <div class="container">
+            <div class="lexique-section">
+                <h2 class="lexique-section__title">Les armes</h2>
+                <div class="lexique-grid">
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Jo <span class="lexique-item__kanji">杖</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Bâton en bois d'environ 128 cm.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Bokken / Bokuto <span class="lexique-item__kanji">木剣</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Sabre en bois pour l'entraînement.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Tanto <span class="lexique-item__kanji">短刀</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Couteau en bois pour l'entraînement.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">
+                            Ken / Katana <span class="lexique-item__kanji">剣 / 刀</span>
+                        </div>
+                        <p class="lexique-item__definition">
+                            Sabre japonais.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">Suburi</div>
+                        <p class="lexique-item__definition">
+                            Exercices de coupe répétitifs avec les armes.
+                        </p>
+                    </div>
+                    <div class="lexique-item">
+                        <div class="lexique-item__term">Kata</div>
+                        <p class="lexique-item__definition">
+                            Forme, enchaînement codifié de mouvements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comptage -->
+    <section class="section section--alt" id="comptage">
+        <div class="container">
+            <div class="lexique-section">
+                <h2 class="lexique-section__title">Comptage japonais</h2>
+                <div class="content" style="max-width: 600px; margin: 0 auto;">
+                    <table class="lexique-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Japonais</th>
+                                <th>Prononciation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td class="japanese">一 Ichi</td><td>itchi</td></tr>
+                            <tr><td>2</td><td class="japanese">二 Ni</td><td>ni</td></tr>
+                            <tr><td>3</td><td class="japanese">三 San</td><td>sanne</td></tr>
+                            <tr><td>4</td><td class="japanese">四 Shi / Yon</td><td>chi / yonne</td></tr>
+                            <tr><td>5</td><td class="japanese">五 Go</td><td>go</td></tr>
+                            <tr><td>6</td><td class="japanese">六 Roku</td><td>rokou</td></tr>
+                            <tr><td>7</td><td class="japanese">七 Shichi / Nana</td><td>chitchi / nana</td></tr>
+                            <tr><td>8</td><td class="japanese">八 Hachi</td><td>hatchi</td></tr>
+                            <tr><td>9</td><td class="japanese">九 Ku / Kyu</td><td>kou / kyou</td></tr>
+                            <tr><td>10</td><td class="japanese">十 Ju</td><td>djou</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fondations selon Maître Tamura -->
+    <section class="section" id="fondations">
+        <div class="container">
+            <div class="lexique-section">
+                <h2 class="lexique-section__title">Les fondations selon Maître Tamura</h2>
+                <div class="content" style="max-width: 800px; margin: 0 auto;">
+                    <p>
+                        <strong>Maître Nobuyoshi Tamura</strong> (1933-2010), élève direct du fondateur et figure majeure
+                        de l'aïkido français, a formalisé un ensemble de <strong>dix fondations</strong> essentielles
+                        à la pratique. Ces principes constituent le socle sur lequel repose toute la technique.
+                    </p>
+
+                    <div class="info-box mt-3">
+                        <h4 class="info-box__title">Les 10 Fondations</h4>
+                        <p style="margin-bottom: var(--spacing-md);">
+                            <strong>Shisei</strong> (posture) • <strong>Kokyu</strong> (respiration) •
+                            <strong>Kamae</strong> (garde) • <strong>Ma-ai</strong> (distance) •
+                            <strong>Irimi</strong> (entrée) • <strong>Tenkan</strong> (rotation) •
+                            <strong>Ura/Omote</strong> (aspects) • <strong>Tai sabaki</strong> (déplacement) •
+                            <strong>Atemi</strong> (coup) • <strong>Kokyu ryoku</strong> (puissance)
+                        </p>
+                        <a href="fondations.html" class="btn btn--primary">Découvrir les fondations en détail</a>
+                    </div>
+
+                    <blockquote style="font-style: italic; border-left: 3px solid var(--color-accent); padding-left: var(--spacing-md); margin: var(--spacing-xl) 0;">
+                        "L'aïkido n'est pas une technique de combat mais un moyen de s'améliorer soi-même
+                        en harmonie avec les autres et avec la nature."
+                        <footer style="margin-top: var(--spacing-sm); font-style: normal; color: var(--color-text-light);">
+                            - Maître Nobuyoshi Tamura
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lien vers d'autres pages -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="info-box" style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <h3 class="info-box__title">Pour aller plus loin</h3>
+                <p>
+                    Le vocabulaire s'apprend naturellement au fil de la pratique.
+                    N'hésitez pas à poser des questions aux enseignants et aux pratiquants plus anciens.
+                </p>
+                <div class="mt-3">
+                    <a href="aikido.html" class="btn btn--primary">Découvrir l'aïkido</a>
+                    <a href="grades.html" class="btn btn--outline">Les grades</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <h4>Kannagara Aïkido</h4>
+                    <p>Club d'aïkido de Guyancourt depuis 1990.</p>
+                    <p>Agréé Jeunesse et Sports.</p>
+                    <p>Affilié à la FFAB.</p>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="aikido.html">L'Aïkido</a></li>
+                        <li><a href="club.html">Le Club</a></li>
+                        <li><a href="professeurs.html">Professeurs</a></li>
+                        <li><a href="grades.html">Grades</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Pratique</h4>
+                    <ul>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="inscription.html">Inscription</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="lexique.html">Lexique</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Contact</h4>
+                    <p>Gymnase Maurice Baquet</p>
+                    <p>Mail des Graviers</p>
+                    <p>78280 Guyancourt</p>
+                    <p><a href="tel:0607625162">06 07 62 51 62</a></p>
+                    <p><a href="mailto:kannagara@wanadoo.fr">kannagara@wanadoo.fr</a></p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Kannagara Aïkido Club de Guyancourt. Tous droits réservés.</p>
+                <span class="footer__ffab">Affilié à la Fédération Française d'Aïkido et de Budo</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

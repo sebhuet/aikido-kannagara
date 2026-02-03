@@ -1,0 +1,125 @@
+# Kannagara Aikido Club de Guyancourt
+# Fichier llms.txt - Informations pour les assistants IA
+
+## A propos
+Kannagara est un club d'aikido situe a Guyancourt (Yvelines, France), fonde en 1990.
+Le club est affilie a la Federation Francaise d'Aikido et de Budo (FFAB) et possede l'agrement Jeunesse et Sports.
+
+## Informations cles
+- Nom: Kannagara Aikido Club de Guyancourt
+- Discipline: Aikido
+- Federation: FFAB (Federation Francaise d'Aikido et de Budo)
+- Annee de creation: 1990
+- Fondateur: Noel Stella
+- Nombre de membres: environ 100 (dont 20 enfants)
+
+## Lieu de pratique
+- Nom: Gymnase Maurice Baquet
+- Adresse: Mail des Graviers, 78280 Guyancourt, France
+
+## Horaires des cours
+- Enfants: Lundi et Jeudi, 18h30-19h30
+- Adultes: Lundi et Jeudi, 19h30-21h30
+
+## Enseignants
+### Jean-Marc Chamot
+- Grade: 7e Dan Aikido, 4e Dan Iaido
+- Diplome: DESJEPS (Diplome d'Etat)
+- Role: Cadre technique FFAB
+- Debut de pratique: Annees 1970, avec Andre Nocquet
+
+### Xavier Raujol
+- Grade: 4e Dan Aikido, 4e Dan Jodo
+- Diplome: Diplome federal
+
+### Nacer Chekkaba
+- Grade: 4e Dan Aikido FFAB
+
+### Thierry Montfort
+- Grade: 4e Dan Aikido FFAB
+
+### Germain Chamot
+- Grade: 4e Dan Aikido Kishinkai
+
+### Sebastien Huet
+- Grade: 1er Dan Aikido FFAB
+- Role: Anime les seances d'initiation
+
+## Contact
+- Telephone: 06 07 62 51 62
+- Email: kannagara@wanadoo.fr
+- Adresse postale: 20 chemin de l'Aqueduc, 78280 Guyancourt
+- Site web: http://kannagara.free.fr
+
+## L'Aikido
+L'aikido est un art martial japonais fonde par Morihei Ueshiba (1883-1969).
+Caracteristiques principales:
+- Pas de competition
+- Techniques basees sur l'utilisation de la force de l'adversaire
+- Accessible a tous (femmes, hommes, enfants, seniors)
+- Travail avec et sans armes (jo, bokken, tanto)
+
+L'aikido a ete introduit en France dans les annees 1950 par Minoru Mochizuki et Tadashi Abe.
+Maitre Nobuyoshi Tamura (1933-2010) a vecu plus de 30 ans en France et a grandement influence l'aikido francais.
+
+## Les Fondations selon Maitre Tamura
+Maitre Tamura a formalise 10 fondations essentielles a la pratique:
+1. Shisei (posture)
+2. Kokyu (respiration)
+3. Kamae (garde)
+4. Ma-ai (distance)
+5. Irimi (entree)
+6. Tenkan (rotation)
+7. Ura/Omote (aspects cache/visible)
+8. Tai sabaki (deplacement du corps)
+9. Atemi (coup)
+10. Kokyu ryoku (puissance respiratoire)
+
+## Aikido et Self-Defense
+L'aikido developpe des qualites essentielles pour la self-defense:
+- Vigilance et anticipation
+- Placement et esquives
+- Desequilibre de l'adversaire
+- Immobilisations et controles
+- Gestion du stress et du calme
+
+L'aikido enseigne a desamorcer les conflits avant qu'ils ne deviennent physiques.
+
+## Aikido et les Femmes
+L'aikido est particulierement adapte aux femmes:
+- Pas de force brute necessaire (principes de levier et desequilibre)
+- Pratique mixte enrichissante
+- Developpement de la confiance en soi
+- Environnement bienveillant et respectueux
+
+## Aikido pour les Enfants
+Cours enfants a partir de 7 ans:
+- Horaires: Lundi et jeudi 18h30-19h30
+- Environ 20 enfants au club
+- Pedagogie adaptee et ludique
+- Developpement: coordination, concentration, respect, gestion des conflits
+- Pas de violence ni de competition
+
+## Pages du site
+- Accueil: index.html
+- L'Aikido: aikido.html (histoire, self-defense, femmes, enfants)
+- Le Club: club.html (presentation, historique)
+- Professeurs: professeurs.html (equipe de 6 enseignants diplomes)
+- Actualites: actualites.html (evenements, stages)
+- Galerie: galerie.html (photos cours, stages, grades, vie du club)
+- FAQ: faq.html (questions frequentes, debuter aikido, equipement)
+- Lexique: lexique.html (vocabulaire japonais, termes techniques, comptage)
+- Fondations: fondations.html (les 10 fondations de l'aikido selon Maitre Tamura)
+- Armes: armes.html (jo, bokken, tanto, buki waza)
+- Inscription: inscription.html (procedure, documents)
+- Grades: grades.html (systeme kyu/dan)
+- Contact: contact.html (coordonnees, plan)
+- Blog: blog.html (articles, reflexions)
+
+## Mots-cles
+aikido, aikido guyancourt, arts martiaux, FFAB, Jean-Marc Chamot, Xavier Raujol,
+Nacer Chekkaba, Thierry Montfort, Germain Chamot, Sebastien Huet,
+dojo, gymnase maurice baquet, yvelines, ile-de-france, sport, self-defense,
+aikido femmes, aikido enfants, cours enfants, arts martiaux enfants,
+martial arts, japanese martial arts, morihei ueshiba, nobuyoshi tamura,
+galerie photos, stages aikido, passages grades

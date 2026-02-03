@@ -1,0 +1,11 @@
+# Robots.txt pour Kannagara Aikido Club de Guyancourt
+# https://kannagara.free.fr
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kannagara.free.fr/sitemap.xml
+
+# Fichier pour les LLMs/IA
+# llms.txt: https://kannagara.free.fr/llms.txt

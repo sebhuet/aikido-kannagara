@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Blog Kannagara Aïkido</title>
+        <description>Articles et réflexions sur l'aïkido - Club Kannagara de Guyancourt</description>
+        <link>https://kannagara.free.fr/blog.html</link>
+        <atom:link href="https://kannagara.free.fr/feed.xml" rel="self" type="application/rss+xml"/>
+        <language>fr-FR</language>
+        <copyright>© 2024 Kannagara Aïkido Club de Guyancourt</copyright>
+        <managingEditor>kannagara@wanadoo.fr (Kannagara Aïkido)</managingEditor>
+        <webMaster>kannagara@wanadoo.fr (Kannagara Aïkido)</webMaster>
+        <lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0100</lastBuildDate>
+        <ttl>1440</ttl>
+        <image>
+            <url>https://kannagara.free.fr/images/logo-kannagara.png</url>
+            <title>Kannagara Aïkido</title>
+            <link>https://kannagara.free.fr</link>
+        </image>
+
+        <item>
+            <title>L'importance des ukemi dans la pratique de l'aïkido</title>
+            <link>https://kannagara.free.fr/blog/importance-ukemi.html</link>
+            <guid isPermaLink="true">https://kannagara.free.fr/blog/importance-ukemi.html</guid>
+            <pubDate>Mon, 15 Jan 2024 10:00:00 +0100</pubDate>
+            <description><![CDATA[Les ukemi (受身), littéralement "corps qui reçoit", sont souvent perçus par les débutants comme un aspect secondaire de l'aïkido. Pourtant, ils constituent un élément fondamental de la pratique, aussi important que les techniques elles-mêmes. Découvrez pourquoi les chutes sont essentielles et comment les travailler.]]></description>
+            <category>Technique</category>
+            <category>Pédagogie</category>
+        </item>
+
+        <item>
+            <title>Retour sur le stage régional FFAB 2023</title>
+            <link>https://kannagara.free.fr/blog/stage-regional-2023.html</link>
+            <guid isPermaLink="true">https://kannagara.free.fr/blog/stage-regional-2023.html</guid>
+            <pubDate>Sun, 03 Dec 2023 18:00:00 +0100</pubDate>
+            <description><![CDATA[Compte-rendu du stage régional FFAB Île-de-France qui s'est tenu le week-end dernier. Une belle occasion de pratiquer avec des experts de la fédération et de rencontrer des pratiquants de toute la région.]]></description>
+            <category>Stage</category>
+            <category>FFAB</category>
+        </item>
+
+        <item>
+            <title>Bien débuter en aïkido</title>
+            <link>https://kannagara.free.fr/blog/debuter-aikido.html</link>
+            <guid isPermaLink="true">https://kannagara.free.fr/blog/debuter-aikido.html</guid>
+            <pubDate>Mon, 20 Nov 2023 09:00:00 +0100</pubDate>
+            <description><![CDATA[Conseils pratiques pour les personnes qui souhaitent débuter l'aïkido : quoi attendre des premiers cours, quel équipement prévoir, comment progresser sereinement. Un guide complet pour bien commencer.]]></description>
+            <category>Débutants</category>
+            <category>Conseils</category>
+        </item>
+
+        <item>
+            <title>Réflexion sur le concept d'harmonie</title>
+            <link>https://kannagara.free.fr/blog/reflexion-harmonie.html</link>
+            <guid isPermaLink="true">https://kannagara.free.fr/blog/reflexion-harmonie.html</guid>
+            <pubDate>Mon, 01 May 2023 14:00:00 +0200</pubDate>
+            <description><![CDATA[L'aïkido est souvent traduit par "la voie de l'harmonie des énergies". Mais que signifie vraiment cette harmonie ? Réflexion sur ce concept fondamental qui guide notre pratique au quotidien.]]></description>
+            <category>Philosophie</category>
+            <category>Réflexion</category>
+        </item>
+    </channel>
+</rss>

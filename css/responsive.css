@@ -1,0 +1,412 @@
+/* ============================================
+   KANNAGARA AIKIDO - Styles responsives
+   ============================================ */
+
+/* ---------- Tablette (max 1024px) ---------- */
+@media screen and (max-width: 1024px) {
+    :root {
+        --spacing-xl: 2.5rem;
+        --spacing-xxl: 4rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__enso {
+        width: 350px;
+        height: 350px;
+        right: -100px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map iframe {
+        height: 300px;
+    }
+}
+
+/* ---------- Mobile (max 768px) ---------- */
+@media screen and (max-width: 768px) {
+    :root {
+        --header-height: 70px;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+        --spacing-xxl: 3rem;
+    }
+
+    html {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Navigation mobile */
+    .nav__toggle {
+        display: flex;
+        z-index: 1001;
+    }
+
+    .nav__list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--color-white);
+        flex-direction: column;
+        padding: calc(var(--header-height) + var(--spacing-lg)) var(--spacing-lg) var(--spacing-lg);
+        box-shadow: var(--shadow-lg);
+        transition: right var(--transition-normal);
+        gap: 0;
+    }
+
+    .nav__list.active {
+        right: 0;
+    }
+
+    .nav__item {
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav__link {
+        display: block;
+        padding: var(--spacing-sm) 0;
+    }
+
+    .nav__link::after {
+        display: none;
+    }
+
+    /* Overlay quand menu ouvert */
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition-normal);
+        z-index: 999;
+    }
+
+    .nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Animation hamburger */
+    .nav__toggle.active .nav__toggle-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav__toggle.active .nav__toggle-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav__toggle.active .nav__toggle-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero__title {
+        font-size: 2.25rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero__description {
+        font-size: 1rem;
+    }
+
+    .hero__enso {
+        display: none;
+    }
+
+    .hero__content {
+        padding: var(--spacing-md);
+    }
+
+    /* Section titres */
+    .section__title::before,
+    .section__title::after {
+        width: 30px;
+    }
+
+    .section__title::before {
+        right: calc(100% + var(--spacing-sm));
+    }
+
+    .section__title::after {
+        left: calc(100% + var(--spacing-sm));
+    }
+
+    /* Cards et grilles */
+    .cards-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-member__photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Schedule */
+    .schedule {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    /* Page header */
+    .page-header {
+        padding: var(--spacing-xl) 0 var(--spacing-lg);
+    }
+
+    .page-header__title {
+        font-size: 2rem;
+    }
+
+    /* Tables */
+    .grades-table {
+        font-size: 0.875rem;
+    }
+
+    .grades-table th,
+    .grades-table td {
+        padding: var(--spacing-xs);
+    }
+
+    /* Buttons */
+    .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .hero .btn {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+/* ---------- Petit mobile (max 480px) ---------- */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero__title {
+        font-size: 1.875rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.125rem;
+    }
+
+    .section__title::before,
+    .section__title::after {
+        display: none;
+    }
+
+    .header__logo-text {
+        font-size: 1.25rem;
+    }
+
+    .header__logo-subtitle {
+        display: none;
+    }
+
+    .team-member__photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contact-info__item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Grades table responsive */
+    .grades-table,
+    .grades-table thead,
+    .grades-table tbody,
+    .grades-table th,
+    .grades-table td,
+    .grades-table tr {
+        display: block;
+    }
+
+    .grades-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .grades-table tr {
+        margin-bottom: var(--spacing-md);
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .grades-table td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .grades-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: var(--spacing-sm);
+        width: 45%;
+        font-weight: 600;
+        color: var(--color-primary);
+    }
+}
+
+/* ---------- Impression ---------- */
+@media print {
+    .header,
+    .footer,
+    .nav,
+    .hero__enso,
+    .btn {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 20px;
+        background: #fff;
+        margin-top: 0;
+    }
+
+    .hero__title,
+    .hero__subtitle {
+        color: #000;
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* ---------- Animations au scroll (optionnel) ---------- */
+@media (prefers-reduced-motion: no-preference) {
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Respecter les preferences utilisateur */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ---------- Mode sombre (optionnel, respect des preferences systeme) ---------- */
+@media (prefers-color-scheme: dark) {
+    /*
+    Decommenter si vous souhaitez un mode sombre automatique
+
+    :root {
+        --color-background: #1a1a1a;
+        --color-background-alt: #2d2d2d;
+        --color-text: #e0e0e0;
+        --color-text-light: #a0a0a0;
+        --color-white: #2d2d2d;
+        --color-border: #404040;
+    }
+
+    .header {
+        background-color: #2d2d2d;
+    }
+
+    .card,
+    .blog-card,
+    .info-box {
+        background-color: #2d2d2d;
+    }
+    */
+}

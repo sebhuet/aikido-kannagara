@@ -1,0 +1,203 @@
+/* ============================================
+   KANNAGARA AIKIDO - JavaScript principal
+   ============================================ */
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ---------- Menu Mobile ----------
+    const navToggle = document.querySelector('.nav__toggle');
+    const navList = document.querySelector('.nav__list');
+    const navOverlay = document.querySelector('.nav-overlay');
+    const navLinks = document.querySelectorAll('.nav__link');
+
+    function toggleMenu() {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.classList.toggle('active');
+        navList.classList.toggle('active');
+        if (navOverlay) {
+            navOverlay.classList.toggle('active');
+        }
+        // Mise à jour des attributs ARIA
+        navToggle.setAttribute('aria-expanded', !isExpanded);
+        navToggle.setAttribute('aria-label', isExpanded ? 'Ouvrir le menu' : 'Fermer le menu');
+        document.body.style.overflow = navList.classList.contains('active') ? 'hidden' : '';
+    }
+
+    function closeMenu() {
+        navToggle.classList.remove('active');
+        navList.classList.remove('active');
+        if (navOverlay) {
+            navOverlay.classList.remove('active');
+        }
+        // Mise à jour des attributs ARIA
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Ouvrir le menu');
+        document.body.style.overflow = '';
+    }
+
+    if (navToggle) {
+        navToggle.addEventListener('click', toggleMenu);
+    }
+
+    if (navOverlay) {
+        navOverlay.addEventListener('click', closeMenu);
+    }
+
+    // Fermer le menu au clic sur un lien
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Fermer le menu avec Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navList.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+
+    // ---------- Header scroll effect ----------
+    const header = document.querySelector('.header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+
+        // Ajouter une classe quand on scroll
+        if (currentScroll > 50) {
+            header.classList.add('header--scrolled');
+        } else {
+            header.classList.remove('header--scrolled');
+        }
+
+        lastScroll = currentScroll;
+    });
+
+    // ---------- Smooth scroll pour les ancres ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // ---------- Animation au scroll (fade-in) ----------
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    if (fadeElements.length > 0 && 'IntersectionObserver' in window) {
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    fadeObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        fadeElements.forEach(el => fadeObserver.observe(el));
+    }
+
+    // ---------- Active nav link based on current page ----------
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        if (linkPage === currentPage ||
+            (currentPage === '' && linkPage === 'index.html') ||
+            (currentPage === 'index.html' && linkPage === 'index.html')) {
+            link.classList.add('nav__link--active');
+        }
+    });
+
+    // ---------- Formulaire de contact (validation basique) ----------
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Validation simple
+            const name = this.querySelector('[name="name"]');
+            const email = this.querySelector('[name="email"]');
+            const message = this.querySelector('[name="message"]');
+            let isValid = true;
+
+            [name, email, message].forEach(field => {
+                if (field && !field.value.trim()) {
+                    field.classList.add('error');
+                    isValid = false;
+                } else if (field) {
+                    field.classList.remove('error');
+                }
+            });
+
+            if (email && email.value && !isValidEmail(email.value)) {
+                email.classList.add('error');
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Ici vous pouvez ajouter l'envoi du formulaire
+                alert('Message envoyé ! Nous vous répondrons dans les plus brefs délais.');
+                this.reset();
+            }
+        });
+    }
+
+    function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    // ---------- Gestion des tables responsives ----------
+    const tables = document.querySelectorAll('.grades-table');
+    tables.forEach(table => {
+        const headers = table.querySelectorAll('th');
+        const rows = table.querySelectorAll('tbody tr');
+
+        rows.forEach(row => {
+            const cells = row.querySelectorAll('td');
+            cells.forEach((cell, index) => {
+                if (headers[index]) {
+                    cell.setAttribute('data-label', headers[index].textContent);
+                }
+            });
+        });
+    });
+
+    // ---------- Lazy loading des images (natif) ----------
+    const images = document.querySelectorAll('img[data-src]');
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    imageObserver.unobserve(img);
+                }
+            });
+        });
+
+        images.forEach(img => imageObserver.observe(img));
+    } else {
+        // Fallback pour les anciens navigateurs
+        images.forEach(img => {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+        });
+    }
+
+    // ---------- Console log pour debug ----------
+    console.log('Kannagara Aikido - Site chargé');
+});
