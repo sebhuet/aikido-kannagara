@@ -570,6 +570,62 @@ p {
     color: var(--color-text-light);
 }
 
+/* ---------- Teachers Carousel ---------- */
+.teachers-carousel {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.teachers-carousel__track {
+    position: relative;
+    min-height: 320px;
+}
+
+.teachers-carousel__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.teachers-carousel__slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.teachers-carousel__dots {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+}
+
+.teachers-carousel__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--color-accent);
+    background: transparent;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    padding: 0;
+}
+
+.teachers-carousel__dot:hover {
+    background: rgba(206, 48, 48, 0.5);
+}
+
+.teachers-carousel__dot.active {
+    background: var(--color-accent);
+}
+
 /* ---------- Footer ---------- */
 .footer {
     background-color: var(--color-primary);

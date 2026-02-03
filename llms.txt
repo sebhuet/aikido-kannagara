@@ -28,10 +28,6 @@ Le club est affilie a la Federation Francaise d'Aikido et de Budo (FFAB) et poss
 - Role: Cadre technique FFAB
 - Debut de pratique: Annees 1970, avec Andre Nocquet
 
-### Xavier Raujol
-- Grade: 4e Dan Aikido, 4e Dan Jodo
-- Diplome: Diplome federal
-
 ### Nacer Chekkaba
 - Grade: 4e Dan Aikido FFAB
 
@@ -117,7 +113,7 @@ Cours enfants a partir de 7 ans:
 - Blog: blog.html (articles, reflexions)
 
 ## Mots-cles
-aikido, aikido guyancourt, arts martiaux, FFAB, Jean-Marc Chamot, Xavier Raujol,
+aikido, aikido guyancourt, arts martiaux, FFAB, Jean-Marc Chamot,
 Nacer Chekkaba, Thierry Montfort, Germain Chamot, Sebastien Huet,
 dojo, gymnase maurice baquet, yvelines, ile-de-france, sport, self-defense,
 aikido femmes, aikido enfants, cours enfants, arts martiaux enfants,

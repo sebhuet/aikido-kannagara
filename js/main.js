@@ -163,6 +163,55 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // ---------- Teachers Carousel ----------
+    const carousel = document.querySelector('.teachers-carousel');
+    if (carousel) {
+        const slides = carousel.querySelectorAll('.teachers-carousel__slide');
+        const dots = carousel.querySelectorAll('.teachers-carousel__dot');
+        let currentSlide = 0;
+        let autoplayInterval;
+
+        function showSlide(index) {
+            // Remove active class from all slides and dots
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            // Add active class to current slide and dot
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            const next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+        }
+
+        function startAutoplay() {
+            autoplayInterval = setInterval(nextSlide, 2000);
+        }
+
+        function stopAutoplay() {
+            clearInterval(autoplayInterval);
+        }
+
+        // Click on dots to navigate
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                stopAutoplay();
+                showSlide(index);
+                startAutoplay();
+            });
+        });
+
+        // Pause on hover
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+
+        // Start autoplay
+        startAutoplay();
+    }
+
     // ---------- Console log pour debug ----------
     console.log('Kannagara Aikido - Site chargé');
 });
