@@ -180,7 +180,7 @@ function generateProfesseursHtml(professeurs) {
         if (isAlt) {
             return `
             <!-- ${p.name} -->
-            <div class="section section--alt" style="margin: var(--spacing-xl) calc(-50vw + 50%); padding: var(--spacing-xl) calc(50vw - 50%);">
+            <div id="${p.slug}" class="section section--alt" style="margin: var(--spacing-xl) calc(-50vw + 50%); padding: var(--spacing-xl) calc(50vw - 50%);">
                 <div style="max-width: 900px; margin: 0 auto;">
                     <div class="team-grid" style="${gridStyle}; align-items: start;">
                         ${innerContent}
@@ -190,7 +190,7 @@ function generateProfesseursHtml(professeurs) {
         } else {
             return `
             <!-- ${p.name} -->
-            <div style="max-width: 900px; margin: var(--spacing-xl) auto;">
+            <div id="${p.slug}" style="max-width: 900px; margin: var(--spacing-xl) auto;">
                 <div class="team-grid" style="${gridStyle}; align-items: start;">
                     ${innerContent}
                 </div>

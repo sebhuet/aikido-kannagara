@@ -181,13 +181,12 @@ p {
 }
 
 .header__logo-img {
+    display: block;
     height: 60px;
     width: auto;
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-primary);
-    text-decoration: none;
+    min-width: 60px;
+    max-height: 60px;
+    object-fit: contain;
 }
 
 .header__logo:hover {

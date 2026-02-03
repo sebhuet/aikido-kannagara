@@ -99,7 +99,7 @@ Cours enfants a partir de 7 ans:
 ## Pages du site
 - Accueil: index.html
 - L'Aikido: aikido.html (histoire, self-defense, femmes, enfants)
-- Le Club: club.html (presentation, historique)
+- Club: club.html (presentation, historique)
 - Professeurs: professeurs.html (equipe de 6 enseignants diplomes)
 - Actualites: actualites.html (evenements, stages)
 - Galerie: galerie.html (photos cours, stages, grades, vie du club)
