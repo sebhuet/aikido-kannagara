@@ -1,0 +1,31 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuration IDE/Editeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Configuration Claude (paramètres locaux uniquement)
+.claude/settings.local.json
+
+# Node.js (si ajouté ultérieurement)
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Fichiers temporaires
+*.tmp
+*.log
+.cache/
+
+# Variables d'environnement
+.env
+.env.local
+.env.*.local
