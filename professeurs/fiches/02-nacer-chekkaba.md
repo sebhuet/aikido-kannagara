@@ -1,7 +1,7 @@
 ---
 name: Nacer Chekkaba
 initials: NC
-grade: 4e Dan Aïkido FFAB
+grade: 4ème Dan Aïkido FFAB
 shortBio: Enseignant expérimenté, formé dans la tradition FFAB. Transmet un aïkido rigoureux et attentif à chaque pratiquant.
 photo: 02-nacer-chekkaba.jpg
 ---

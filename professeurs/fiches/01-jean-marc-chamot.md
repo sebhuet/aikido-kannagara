@@ -1,7 +1,7 @@
 ---
 name: Jean-Marc Chamot
 initials: JMC
-grade: 7e Dan Aïkido - 4e Dan Iaïdo
+grade: 7ème Dan Aïkido - 4e Dan Iaïdo
 diplome: DESJEPS (Diplôme d'État Supérieur de la Jeunesse, de l'Éducation Populaire et du Sport)
 fonction: Cadre technique FFAB
 shortBio: Professeur diplômé d'État (DESJEPS), cadre technique FFAB. Pratique l'aïkido depuis le début des années 1970.
