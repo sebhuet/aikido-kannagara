@@ -186,11 +186,17 @@ function readArticles() {
         const content = fs.readFileSync(filePath, 'utf-8');
         const { metadata, content: markdown } = parseFrontmatter(content);
 
+        // Extraire le slug du nom de fichier (enlever préfixe date YYYYMMDD-)
+        let fileSlug = path.basename(file, '.md');
+        if (fileSlug.match(/^\d{8}-/)) {
+            fileSlug = fileSlug.substring(9); // Enlever "YYYYMMDD-"
+        }
+
         articles.push({
             ...metadata,
             markdown,
             filename: file,
-            slug: metadata.slug || path.basename(file, '.md')
+            slug: metadata.slug || fileSlug
         });
     }
 
