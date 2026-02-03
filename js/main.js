@@ -121,43 +121,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // ---------- Formulaire de contact (validation basique) ----------
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Validation simple
-            const name = this.querySelector('[name="name"]');
-            const email = this.querySelector('[name="email"]');
-            const message = this.querySelector('[name="message"]');
-            let isValid = true;
-
-            [name, email, message].forEach(field => {
-                if (field && !field.value.trim()) {
-                    field.classList.add('error');
-                    isValid = false;
-                } else if (field) {
-                    field.classList.remove('error');
-                }
-            });
-
-            if (email && email.value && !isValidEmail(email.value)) {
-                email.classList.add('error');
-                isValid = false;
-            }
-
-            if (isValid) {
-                // Ici vous pouvez ajouter l'envoi du formulaire
-                alert('Message envoyé ! Nous vous répondrons dans les plus brefs délais.');
-                this.reset();
-            }
-        });
-    }
-
-    function isValidEmail(email) {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    }
+    // ---------- Formulaire de contact ----------
+    // Le formulaire de contact utilise Google Forms (lien externe)
 
     // ---------- Gestion des tables responsives ----------
     const tables = document.querySelectorAll('.grades-table');
