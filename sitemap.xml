@@ -91,6 +91,36 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>https://kannagara.free.fr/blog/stage-regional-2023.html</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.free.fr/blog/debuter-aikido.html</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.free.fr/blog/rentree-2023.html</loc>
+        <lastmod>2023-10-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.free.fr/blog/passage-grades-juin-2023.html</loc>
+        <lastmod>2023-06-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.free.fr/blog/reflexion-harmonie.html</loc>
+        <lastmod>2023-05-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>https://kannagara.free.fr/mentions-legales.html</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>yearly</changefreq>
