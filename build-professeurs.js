@@ -120,9 +120,6 @@ function generateCarouselHtml(professeurs) {
                         ${photoHtml}
                         <h3 class="team-member__name">${p.name}</h3>
                         <p class="team-member__grade">${p.grade}</p>
-                        <p class="team-member__bio">
-                            ${p.shortBio}
-                        </p>
                     </div>`;
     }).join('');
 
