@@ -18,14 +18,14 @@ const AGENDA_HTML = path.join(__dirname, 'agenda.html');
 function parseAgenda() {
     const content = fs.readFileSync(AGENDA_MD, 'utf-8');
     const lines = content.split('\n');
-    
+
     const weeks = [];
     let currentWeek = null;
     let currentDay = null;
 
     for (let line of lines) {
         line = line.trim();
-        
+
         // Nouvelle semaine
         if (line.startsWith('## Semaine du ')) {
             if (currentWeek) weeks.push(currentWeek);
@@ -45,38 +45,42 @@ function parseAgenda() {
                 currentWeek.days.push(currentDay);
             }
         }
-        // Cours
-        else if (line.startsWith('- **') && currentDay) {
-            // Format: - **18h30-19h30** | Adultes | Jean-Marc Chamot, Nacer Chekkaba
-            const match = line.match(/- \*\*(.+?)\*\* \| (.+?) \| (.+)/);
-            if (match) {
-                currentDay.courses.push({
-                    time: match[1],
-                    type: match[2],
-                    teachers: match[3],
-                    note: null
-                });
-            }
-            // Format fermé: - **Fermé** | Vacances scolaires
-            const closedMatch = line.match(/- \*\*Fermé\*\* \| (.+)/);
-            if (closedMatch) {
-                currentDay.courses.push({
-                    time: 'Fermé',
-                    type: closedMatch[1],
-                    teachers: null,
-                    note: null
-                });
-            }
-        }
-        // Note
+        // Note (doit être avant les cours pour éviter le conflit avec '- **')
         else if (line.startsWith('- **Note**') && currentDay && currentDay.courses.length > 0) {
             const note = line.replace('- **Note** : ', '').replace('- **Note**: ', '');
             currentDay.courses[currentDay.courses.length - 1].note = note;
         }
+        // Cours
+        else if (line.startsWith('- **') && currentDay) {
+            // Note lines are handled separately
+            if (!line.startsWith('- **Note**')) {
+                // Format: - **18h30-19h30** | Adultes | Jean-Marc Chamot, Nacer Chekkaba
+                const match = line.match(/- \*\*(.+?)\*\* \| (.+?) \|(.*)/);
+                if (match) {
+                    const teachers = match[3].trim() || 'À confirmer';
+                    currentDay.courses.push({
+                        time: match[1],
+                        type: match[2],
+                        teachers: teachers,
+                        note: null
+                    });
+                }
+                // Format fermé: - **Fermé** | Vacances scolaires
+                const closedMatch = line.match(/- \*\*Fermé\*\* \| (.+)/);
+                if (closedMatch) {
+                    currentDay.courses.push({
+                        time: 'Fermé',
+                        type: closedMatch[1],
+                        teachers: null,
+                        note: null
+                    });
+                }
+            }
+        }
     }
-    
+
     if (currentWeek) weeks.push(currentWeek);
-    
+
     return weeks;
 }
 
@@ -85,11 +89,11 @@ function parseAgenda() {
  */
 function generateAgendaHtml(weeks) {
     let html = '';
-    
+
     weeks.forEach((week, weekIndex) => {
         const isAlt = weekIndex % 2 === 1;
         const sectionClass = isAlt ? 'section section--alt' : 'section';
-        
+
         html += `
     <section class="${sectionClass}">
         <div class="container">
@@ -104,11 +108,11 @@ function generateAgendaHtml(weeks) {
                     </tr>
                 </thead>
                 <tbody>`;
-        
+
         week.days.forEach(day => {
             let firstCourse = true;
             const rowCount = day.courses.length;
-            
+
             day.courses.forEach((course, courseIndex) => {
                 if (course.time === 'Fermé') {
                     html += `
@@ -126,7 +130,7 @@ function generateAgendaHtml(weeks) {
                             .replace(/^-+|-+$/g, '');
                         return `<a href="professeurs.html#${slug}" class="teacher-link">${name}</a>`;
                     }).join(', ');
-                    
+
                     html += `
                     <tr>
                         ${firstCourse ? `<td class="agenda-day-cell" rowspan="${rowCount}">${day.name}</td>` : ''}
@@ -138,14 +142,14 @@ function generateAgendaHtml(weeks) {
                 firstCourse = false;
             });
         });
-        
+
         html += `
                 </tbody>
             </table>
         </div>
     </section>`;
     });
-    
+
     return html;
 }
 
@@ -160,23 +164,23 @@ function updateAgendaHtml(weeks) {
 
     let html = fs.readFileSync(AGENDA_HTML, 'utf-8');
     const agendaHtml = generateAgendaHtml(weeks);
-    
+
     // Trouver et remplacer la section agenda
     const startMarker = '<!-- AGENDA_START -->';
     const endMarker = '<!-- AGENDA_END -->';
-    
+
     const startIndex = html.indexOf(startMarker);
     const endIndex = html.indexOf(endMarker);
-    
+
     if (startIndex === -1 || endIndex === -1) {
         console.log('⚠️  Marqueurs AGENDA_START/AGENDA_END non trouvés dans agenda.html');
         return;
     }
-    
+
     html = html.substring(0, startIndex + startMarker.length) +
            '\n' + agendaHtml + '\n    ' +
            html.substring(endIndex);
-    
+
     fs.writeFileSync(AGENDA_HTML, html, 'utf-8');
     console.log('✓ agenda.html mis à jour');
 }

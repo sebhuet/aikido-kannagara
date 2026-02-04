@@ -34,7 +34,11 @@ Chaque cours est défini par :
 
 - **18h30-19h30** | Enfants |
 - **19h30-21h30** | Adultes |
-- **Note** : Stage Jean-Marc Chamot le dimanche 15 février 2026 dans notre dojo
+
+### Dimanche 15/02
+
+- **10h00-12h30** | Stage Codep78 | Jean-Marc Chamot
+- **14h30-17h00** | Stage Codep78 | Jean-Marc Chamot
 
 ## Semaine du 17/02/2026
 
