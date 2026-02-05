@@ -35,17 +35,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (navToggle) {
-        navToggle.addEventListener('click', toggleMenu);
+        // Gestion du clic et du touch pour le bouton menu
+        navToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+        });
+
+        // Support tactile amélioré
+        navToggle.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            toggleMenu();
+        });
     }
 
     if (navOverlay) {
         navOverlay.addEventListener('click', closeMenu);
+        navOverlay.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            closeMenu();
+        });
     }
 
-    // Fermer le menu au clic sur un lien
-    navLinks.forEach(link => {
-        link.addEventListener('click', closeMenu);
-    });
+    // Les liens naviguent normalement - pas besoin de closeMenu
+    // car la page sera rechargée
 
     // Fermer le menu avec Escape
     document.addEventListener('keydown', function(e) {

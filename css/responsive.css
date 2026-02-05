@@ -64,7 +64,9 @@
     /* Navigation mobile */
     .nav__toggle {
         display: flex;
-        z-index: 1001;
+        z-index: 200;
+        padding: 10px;
+        cursor: pointer;
     }
 
     .nav__list {
@@ -80,7 +82,7 @@
         box-shadow: var(--shadow-lg);
         transition: right var(--transition-normal);
         gap: 0;
-        z-index: 1000;
+        z-index: 150;
         overflow-y: auto;
     }
 
@@ -116,7 +118,7 @@
         opacity: 0;
         visibility: hidden;
         transition: var(--transition-normal);
-        z-index: 999;
+        z-index: 140;
     }
 
     .nav-overlay.active {
