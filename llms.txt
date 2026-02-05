@@ -45,7 +45,7 @@ Le club est affilie a la Federation Francaise d'Aikido et de Budo (FFAB) et poss
 - Telephone: 06 07 62 51 62
 - Email: kannagara@wanadoo.fr
 - Adresse postale: 20 chemin de l'Aqueduc, 78280 Guyancourt
-- Site web: http://kannagara.free.fr
+- Site web: https://kannagara.fr
 
 ## L'Aikido
 L'aikido est un art martial japonais fonde par Morihei Ueshiba (1883-1969).
