@@ -20,27 +20,17 @@ const PAGES = [
     { url: '/aikido.html', priority: 0.8, changefreq: 'monthly' },
     { url: '/club.html', priority: 0.8, changefreq: 'monthly' },
     { url: '/professeurs.html', priority: 0.8, changefreq: 'monthly' },
-    { url: '/actualites.html', priority: 0.9, changefreq: 'weekly' },
     { url: '/inscription.html', priority: 0.9, changefreq: 'yearly' },
     { url: '/grades.html', priority: 0.6, changefreq: 'yearly' },
     { url: '/contact.html', priority: 0.7, changefreq: 'yearly' },
     { url: '/armes.html', priority: 0.7, changefreq: 'monthly' },
     { url: '/fondations.html', priority: 0.7, changefreq: 'monthly' },
-    { url: '/galerie.html', priority: 0.6, changefreq: 'monthly' },
     { url: '/lexique.html', priority: 0.5, changefreq: 'yearly' },
     { url: '/faq.html', priority: 0.7, changefreq: 'monthly' },
-    { url: '/blog.html', priority: 0.8, changefreq: 'weekly' },
     { url: '/mentions-legales.html', priority: 0.3, changefreq: 'yearly' },
-];
-
-// Articles de blog
-const BLOG_ARTICLES = [
-    '/blog/debuter-aikido.html',
-    '/blog/importance-ukemi.html',
-    '/blog/passage-grades-juin-2023.html',
-    '/blog/reflexion-harmonie.html',
-    '/blog/rentree-2023.html',
-    '/blog/stage-regional-2023.html',
+    { url: '/agenda.html', priority: 0.8, changefreq: 'weekly' },
+    { url: '/statuts.html', priority: 0.3, changefreq: 'yearly' },
+    { url: '/reglement-interieur.html', priority: 0.3, changefreq: 'yearly' },
 ];
 
 /**
@@ -78,27 +68,13 @@ function generateSitemap() {
         console.log(`  ✓ ${page.url.padEnd(30)} (${lastmod})`);
     });
 
-    // Articles de blog
-    console.log('\n📝 Articles de blog:');
-    BLOG_ARTICLES.forEach(article => {
-        const lastmod = getLastModified(article);
-        xml += `    <url>\n`;
-        xml += `        <loc>${BASE_URL}${article}</loc>\n`;
-        xml += `        <lastmod>${lastmod}</lastmod>\n`;
-        xml += `        <changefreq>yearly</changefreq>\n`;
-        xml += `        <priority>0.6</priority>\n`;
-        xml += `    </url>\n`;
-        
-        console.log(`  ✓ ${article.padEnd(30)} (${lastmod})`);
-    });
-
     xml += '</urlset>\n';
 
     // Écrire le fichier
     fs.writeFileSync(SITEMAP_FILE, xml, 'utf-8');
-    
+
     console.log(`\n✨ Sitemap généré avec succès : ${SITEMAP_FILE}`);
-    console.log(`📊 ${PAGES.length + BLOG_ARTICLES.length} URLs incluses\n`);
+    console.log(`📊 ${PAGES.length} URLs incluses\n`);
 }
 
 // Exécution

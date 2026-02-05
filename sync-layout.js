@@ -17,10 +17,7 @@ const NAV_TEMPLATE = `                <ul class="nav__list">
                     <li class="nav__item"><a href="aikido.html" class="nav__link">Aïkido</a></li>
                     <li class="nav__item"><a href="club.html" class="nav__link">Club</a></li>
                     <li class="nav__item"><a href="professeurs.html" class="nav__link">Professeurs</a></li>
-                    <li class="nav__item"><a href="actualites.html" class="nav__link">Actualités</a></li>
                     <li class="nav__item"><a href="agenda.html" class="nav__link">Agenda</a></li>
-                    <li class="nav__item"><a href="galerie.html" class="nav__link">Galerie</a></li>
-                    <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
                     <li class="nav__item"><a href="inscription.html" class="nav__link">Inscription</a></li>
                     <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>`;
@@ -31,17 +28,16 @@ const FILES = [
     'armes.html',
     'club.html',
     'professeurs.html',
-    'actualites.html',
     'agenda.html',
-    'galerie.html',
-    'blog.html',
     'inscription.html',
     'contact.html',
     'fondations.html',
     'grades.html',
     'faq.html',
     'lexique.html',
-    'mentions-legales.html'
+    'mentions-legales.html',
+    'reglement-interieur.html',
+    'statuts.html'
 ];
 
 function getActiveNav(fileName) {

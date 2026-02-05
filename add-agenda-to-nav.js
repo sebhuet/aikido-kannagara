@@ -12,9 +12,6 @@ const PAGES_TO_UPDATE = [
     'aikido.html',
     'club.html',
     'professeurs.html',
-    'actualites.html',
-    'galerie.html',
-    'blog.html',
     'inscription.html',
     'contact.html',
     'armes.html',
@@ -22,7 +19,9 @@ const PAGES_TO_UPDATE = [
     'grades.html',
     'faq.html',
     'lexique.html',
-    'mentions-legales.html'
+    'mentions-legales.html',
+    'reglement-interieur.html',
+    'statuts.html'
 ];
 
 function addAgendaToNav(filePath) {
