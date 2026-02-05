@@ -203,7 +203,12 @@
     }
 
     .team-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Forcer la photo au-dessus du texte sur mobile */
+    .team-grid .team-member {
+        order: -1;
     }
 
     .team-member__photo {
