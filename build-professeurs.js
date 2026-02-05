@@ -164,7 +164,7 @@ function generateProfesseursHtml(professeurs) {
                             <p class="team-member__grade" style="font-size: 1.25rem; margin-bottom: var(--spacing-md);">
                                 ${p.grade}
                             </p>
-                            ${p.diplome ? `<p><strong>Diplôme d'État</strong> : ${p.diplome}</p>` : ''}
+                            ${p.diplome ? `<p><strong>Diplôme</strong> : ${p.diplome}</p>` : ''}
                             ${p.fonction ? `<p><strong>Fonction fédérale</strong> : ${p.fonction}</p>` : ''}
                             <h3>Parcours</h3>
                             ${p.htmlContent}

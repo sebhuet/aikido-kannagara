@@ -2,6 +2,7 @@
 name: Germain Chamot
 initials: GC
 grade: 4ème Dan Aïkido Kishinkai
+diplome: Brevet Fédéral FFAB
 shortBio: Rédacteur en chef Dragon Magazine Spécial Aïkido, producteur de la Nuit des Arts Martiaux Traditionnels.
 photo: 04-germain-chamot.jpg
 ---
