@@ -80,6 +80,8 @@
         box-shadow: var(--shadow-lg);
         transition: right var(--transition-normal);
         gap: 0;
+        z-index: 1000;
+        overflow-y: auto;
     }
 
     .nav__list.active {
@@ -92,7 +94,11 @@
 
     .nav__link {
         display: block;
-        padding: var(--spacing-sm) 0;
+        padding: var(--spacing-md) 0;
+        position: relative;
+        z-index: 1;
+        -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+        touch-action: manipulation;
     }
 
     .nav__link::after {
