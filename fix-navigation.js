@@ -88,13 +88,13 @@ let updated = 0;
 let errors = 0;
 
 FILES.forEach(file => {
-    const filePath = path.join(__dirname, file);
-    
+    const filePath = path.join(__dirname, 'htdocs', file);
+
     if (!fs.existsSync(filePath)) {
         console.log(`  ⊘ ${file} (n'existe pas)`);
         return;
     }
-    
+
     if (updateNavigation(filePath, file)) {
         console.log(`  ✓ ${file}`);
         updated++;
@@ -104,7 +104,7 @@ FILES.forEach(file => {
 });
 
 // Traiter index.html séparément car il a role="menubar"
-const indexPath = path.join(__dirname, 'index.html');
+const indexPath = path.join(__dirname, 'htdocs', 'index.html');
 if (fs.existsSync(indexPath)) {
     let content = fs.readFileSync(indexPath, 'utf-8');
     

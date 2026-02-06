@@ -54,7 +54,7 @@ let updated = 0;
 let skipped = 0;
 
 PAGES_TO_UPDATE.forEach(page => {
-    const filePath = path.join(__dirname, page);
+    const filePath = path.join(__dirname, 'htdocs', page);
     
     if (!fs.existsSync(filePath)) {
         console.log(`  ⊘ ${page} (n'existe pas)`);

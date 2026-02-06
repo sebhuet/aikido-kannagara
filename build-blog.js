@@ -15,10 +15,10 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const ARTICLES_DIR = path.join(__dirname, 'blog', 'articles');
-const OUTPUT_DIR = path.join(__dirname, 'blog');
-const TEMPLATE_FILE = path.join(__dirname, 'blog', '_template.html');
-const BLOG_INDEX = path.join(__dirname, 'blog.html');
+const ARTICLES_DIR = path.join(__dirname, 'htdocs', 'blog', 'articles');
+const OUTPUT_DIR = path.join(__dirname, 'htdocs', 'blog');
+const TEMPLATE_FILE = path.join(__dirname, 'htdocs', 'blog', '_template.html');
+const BLOG_INDEX = path.join(__dirname, 'htdocs', 'blog.html');
 
 // Mois en français
 const MONTHS_FR = [

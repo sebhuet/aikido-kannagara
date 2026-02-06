@@ -13,7 +13,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const IMAGES_DIR = path.join(__dirname, 'images');
+const IMAGES_DIR = path.join(__dirname, 'htdocs', 'images');
 
 /**
  * Analyse les images du site
@@ -65,13 +65,14 @@ function analyzeImages() {
 function checkSEO() {
     console.log('🔍 Vérification SEO...\n');
 
-    const htmlFiles = fs.readdirSync(__dirname)
+    const htdocsDir = path.join(__dirname, 'htdocs');
+    const htmlFiles = fs.readdirSync(htdocsDir)
         .filter(f => f.endsWith('.html') && f !== '_template.html');
 
     const issues = [];
 
     htmlFiles.forEach(file => {
-        const content = fs.readFileSync(path.join(__dirname, file), 'utf-8');
+        const content = fs.readFileSync(path.join(htdocsDir, file), 'utf-8');
         const fileIssues = [];
 
         // Vérifier title

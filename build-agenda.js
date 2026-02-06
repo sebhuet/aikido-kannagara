@@ -9,8 +9,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const AGENDA_MD = path.join(__dirname, 'agenda.md');
-const AGENDA_HTML = path.join(__dirname, 'agenda.html');
+const AGENDA_MD = path.join(__dirname, 'htdocs', 'agenda.md');
+const AGENDA_HTML = path.join(__dirname, 'htdocs', 'agenda.html');
 
 /**
  * Parse le fichier agenda.md

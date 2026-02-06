@@ -11,7 +11,7 @@ const path = require('path');
 
 // Configuration
 const BASE_URL = 'https://sebhuet.github.io/aikido-kannagara';
-const SITEMAP_FILE = path.join(__dirname, 'sitemap.xml');
+const SITEMAP_FILE = path.join(__dirname, 'htdocs', 'sitemap.xml');
 
 // Pages du site avec priorités et fréquences de changement
 const PAGES = [
@@ -38,7 +38,7 @@ const PAGES = [
  */
 function getLastModified(filePath) {
     try {
-        const fullPath = path.join(__dirname, filePath.replace(/^\//, ''));
+        const fullPath = path.join(__dirname, 'htdocs', filePath.replace(/^\//, ''));
         const stats = fs.statSync(fullPath);
         return stats.mtime.toISOString().split('T')[0]; // Format YYYY-MM-DD
     } catch (error) {

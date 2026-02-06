@@ -116,7 +116,7 @@ let headerUpdated = 0;
 let footerUpdated = 0;
 
 FILES.forEach(file => {
-    const filePath = path.join(__dirname, file);
+    const filePath = path.join(__dirname, 'htdocs', file);
     
     if (!fs.existsSync(filePath)) {
         console.log(`  ⊘ ${file} (n'existe pas)`);
