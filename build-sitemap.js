@@ -16,21 +16,21 @@ const SITEMAP_FILE = path.join(__dirname, 'htdocs', 'sitemap.xml');
 // Pages du site avec priorités et fréquences de changement
 const PAGES = [
     { url: '/', priority: 1.0, changefreq: 'weekly' },
-    { url: '/index.html', priority: 1.0, changefreq: 'weekly' },
-    { url: '/aikido.html', priority: 0.8, changefreq: 'monthly' },
-    { url: '/club.html', priority: 0.8, changefreq: 'monthly' },
-    { url: '/professeurs.html', priority: 0.8, changefreq: 'monthly' },
-    { url: '/inscription.html', priority: 0.9, changefreq: 'yearly' },
-    { url: '/grades.html', priority: 0.6, changefreq: 'yearly' },
-    { url: '/contact.html', priority: 0.7, changefreq: 'yearly' },
-    { url: '/armes.html', priority: 0.7, changefreq: 'monthly' },
-    { url: '/fondations.html', priority: 0.7, changefreq: 'monthly' },
-    { url: '/lexique.html', priority: 0.5, changefreq: 'yearly' },
-    { url: '/faq.html', priority: 0.7, changefreq: 'monthly' },
-    { url: '/mentions-legales.html', priority: 0.3, changefreq: 'yearly' },
-    { url: '/agenda.html', priority: 0.8, changefreq: 'weekly' },
-    { url: '/statuts.html', priority: 0.3, changefreq: 'yearly' },
-    { url: '/reglement-interieur.html', priority: 0.3, changefreq: 'yearly' },
+    { url: '/index.php', priority: 1.0, changefreq: 'weekly' },
+    { url: '/aikido.php', priority: 0.8, changefreq: 'monthly' },
+    { url: '/club.php', priority: 0.8, changefreq: 'monthly' },
+    { url: '/professeurs.php', priority: 0.8, changefreq: 'monthly' },
+    { url: '/inscription.php', priority: 0.9, changefreq: 'yearly' },
+    { url: '/grades.php', priority: 0.6, changefreq: 'yearly' },
+    { url: '/contact.php', priority: 0.7, changefreq: 'yearly' },
+    { url: '/armes.php', priority: 0.7, changefreq: 'monthly' },
+    { url: '/fondations.php', priority: 0.7, changefreq: 'monthly' },
+    { url: '/lexique.php', priority: 0.5, changefreq: 'yearly' },
+    { url: '/faq.php', priority: 0.7, changefreq: 'monthly' },
+    { url: '/mentions-legales.php', priority: 0.3, changefreq: 'yearly' },
+    { url: '/agenda.php', priority: 0.8, changefreq: 'weekly' },
+    { url: '/statuts.php', priority: 0.3, changefreq: 'yearly' },
+    { url: '/reglement-interieur.php', priority: 0.3, changefreq: 'yearly' },
 ];
 
 /**
@@ -57,7 +57,7 @@ function generateSitemap() {
 
     // Pages principales
     PAGES.forEach(page => {
-        const lastmod = getLastModified(page.url === '/' ? 'index.html' : page.url);
+        const lastmod = getLastModified(page.url === '/' ? 'index.php' : page.url);
         xml += `    <url>\n`;
         xml += `        <loc>${BASE_URL}${page.url}</loc>\n`;
         xml += `        <lastmod>${lastmod}</lastmod>\n`;

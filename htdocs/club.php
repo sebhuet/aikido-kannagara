@@ -26,33 +26,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-                            <!-- Header -->
-    <header class="header">
-        <div class="container header__container">
-            <a href="index.html" class="header__logo">
-                <img src="images/logo-kannagara.png" alt="Kannagara Aïkido Club de Guyancourt" class="header__logo-img">
-            </a>
-
-            <nav class="nav">
-                <button class="nav__toggle" aria-label="Menu">
-                    <span class="nav__toggle-bar"></span>
-                    <span class="nav__toggle-bar"></span>
-                    <span class="nav__toggle-bar"></span>
-                </button>
-
-                                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
-                    <li class="nav__item"><a href="aikido.html" class="nav__link">Aïkido</a></li>
-                    <li class="nav__item"><a href="club.html" class="nav__link nav__link--active" class="nav__link">Club</a></li>
-                    <li class="nav__item"><a href="professeurs.html" class="nav__link">Professeurs</a></li>
-                    <li class="nav__item"><a href="agenda.html" class="nav__link">Agenda</a></li>
-                    <li class="nav__item"><a href="inscription.html" class="nav__link">Inscription</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav-overlay"></div>
-    </header>
+    <?php $active = 'club'; include 'includes/header.php'; ?>
 
 
 
@@ -65,7 +39,7 @@
         <div class="container">
             <h1 class="page-header__title">Le Club Kannagara</h1>
             <p class="page-header__breadcrumb">
-                <a href="index.html">Accueil</a> / Le Club
+                <a href="index.php">Accueil</a> / Le Club
             </p>
         </div>
     </section>
@@ -208,8 +182,8 @@
                 </div>
 
                 <div class="text-center mt-4">
-                    <a href="inscription.html" class="btn btn--primary">Rejoindre le club</a>
-                    <a href="professeurs.html" class="btn btn--outline">Nos professeurs</a>
+                    <a href="inscription.php" class="btn btn--primary">Rejoindre le club</a>
+                    <a href="professeurs.php" class="btn btn--outline">Nos professeurs</a>
                 </div>
 
             </div>
@@ -282,56 +256,12 @@
                     soutenir notre club ? Contactez-nous pour étudier ensemble les possibilités
                     de partenariat.
                 </p>
-                <a href="contact.html" class="btn btn--primary mt-2">Nous contacter</a>
+                <a href="contact.php" class="btn btn--primary mt-2">Nous contacter</a>
             </div>
         </div>
     </section>
 
-                            <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__section">
-                    <h4>Kannagara Aïkido</h4>
-                    <p>Club d'aïkido de Guyancourt depuis 1990.</p>
-                    <p>Agréé Jeunesse et Sports.</p>
-                    <p>Affilié à la FFAB.</p>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="aikido.html">L'Aïkido</a></li>
-                        <li><a href="club.html">Club</a></li>
-                        <li><a href="professeurs.html">Professeurs</a></li>
-                        <li><a href="grades.html">Grades</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Pratique</h4>
-                    <ul>
-                        <li><a href="inscription.html">Inscription</a></li>
-                        <li><a href="agenda.html">Agenda</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="lexique.html">Lexique</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Contact</h4>
-                    <p><a href="tel:0676481601">06 76 48 16 01</a></p>
-                    <p><a href="mailto:kannagara@wanadoo.fr">kannagara@wanadoo.fr</a></p>
-                </div>
-            </div>
-
-            <div class="footer__bottom">
-                <p>&copy; 2026 Kannagara Aïkido Club de Guyancourt. Tous droits réservés. | <a href="mentions-legales.html">Mentions légales</a></p>
-                <span class="footer__ffab">Affilié à la Fédération Française d'Aïkido et de Budo</span>
-            </div>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
 
 

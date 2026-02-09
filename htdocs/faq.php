@@ -255,33 +255,7 @@
     </style>
 </head>
 <body>
-                            <!-- Header -->
-    <header class="header">
-        <div class="container header__container">
-            <a href="index.html" class="header__logo">
-                <img src="images/logo-kannagara.png" alt="Kannagara Aïkido Club de Guyancourt" class="header__logo-img">
-            </a>
-
-            <nav class="nav">
-                <button class="nav__toggle" aria-label="Menu">
-                    <span class="nav__toggle-bar"></span>
-                    <span class="nav__toggle-bar"></span>
-                    <span class="nav__toggle-bar"></span>
-                </button>
-
-                                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
-                    <li class="nav__item"><a href="aikido.html" class="nav__link">Aïkido</a></li>
-                    <li class="nav__item"><a href="club.html" class="nav__link">Club</a></li>
-                    <li class="nav__item"><a href="professeurs.html" class="nav__link">Professeurs</a></li>
-                    <li class="nav__item"><a href="agenda.html" class="nav__link">Agenda</a></li>
-                    <li class="nav__item"><a href="inscription.html" class="nav__link">Inscription</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav-overlay"></div>
-    </header>
+    <?php $active = 'faq'; include 'includes/header.php'; ?>
 
 
 
@@ -294,7 +268,7 @@
         <div class="container">
             <h1 class="page-header__title">Foire Aux Questions</h1>
             <p class="page-header__breadcrumb">
-                <a href="index.html">Accueil</a> / FAQ
+                <a href="index.php">Accueil</a> / FAQ
             </p>
         </div>
     </section>
@@ -306,7 +280,7 @@
                 <p>
                     Vous vous posez des questions sur l'aïkido ou sur notre club ?
                     Retrouvez ci-dessous les réponses aux questions les plus fréquentes.
-                    Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à <a href="contact.html">nous contacter</a>.
+                    Si vous ne trouvez pas la réponse à votre question, n'hésitez pas à <a href="contact.php">nous contacter</a>.
                 </p>
             </div>
 
@@ -497,7 +471,7 @@
                                 <p>
                                     Le club est situé au <strong><a href="https://maps.google.com/?q=Gymnase+Maurice+Baquet+Guyancourt" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>,
                                     Mail des Graviers, 78280 Guyancourt. Un plan d'accès détaillé est disponible
-                                    sur notre <a href="contact.html">page contact</a>.
+                                    sur notre <a href="contact.php">page contact</a>.
                                 </p>
                             </div>
                         </div>
@@ -546,7 +520,7 @@
                                     Le système de grades comprend les <strong>kyu</strong> (du 6e au 1er kyu, ceinture blanche)
                                     puis les <strong>dan</strong> (à partir de la ceinture noire). Les passages de grades
                                     se font au sein du club pour les kyu, et lors d'examens régionaux ou nationaux
-                                    pour les dan. Plus d'informations sur notre <a href="grades.html">page grades</a>.
+                                    pour les dan. Plus d'informations sur notre <a href="grades.php">page grades</a>.
                                 </p>
                             </div>
                         </div>
@@ -622,7 +596,7 @@
                                     <li>Le règlement de la cotisation</li>
                                 </ul>
                                 <p>
-                                    Toutes les informations détaillées sont sur notre <a href="inscription.html">page inscription</a>.
+                                    Toutes les informations détaillées sont sur notre <a href="inscription.php">page inscription</a>.
                                 </p>
                             </div>
                         </div>
@@ -639,57 +613,13 @@
                 <h2 class="faq-contact__title">Vous avez d'autres questions ?</h2>
                 <p>N'hésitez pas à nous contacter, nous serons ravis de vous répondre !</p>
                 <div class="mt-3">
-                    <a href="contact.html" class="btn btn--primary">Nous contacter</a>
+                    <a href="contact.php" class="btn btn--primary">Nous contacter</a>
                 </div>
             </div>
         </div>
     </section>
 
-                            <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__section">
-                    <h4>Kannagara Aïkido</h4>
-                    <p>Club d'aïkido de Guyancourt depuis 1990.</p>
-                    <p>Agréé Jeunesse et Sports.</p>
-                    <p>Affilié à la FFAB.</p>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="aikido.html">L'Aïkido</a></li>
-                        <li><a href="club.html">Club</a></li>
-                        <li><a href="professeurs.html">Professeurs</a></li>
-                        <li><a href="grades.html">Grades</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Pratique</h4>
-                    <ul>
-                        <li><a href="inscription.html">Inscription</a></li>
-                        <li><a href="agenda.html">Agenda</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="lexique.html">Lexique</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Contact</h4>
-                    <p><a href="tel:0676481601">06 76 48 16 01</a></p>
-                    <p><a href="mailto:kannagara@wanadoo.fr">kannagara@wanadoo.fr</a></p>
-                </div>
-            </div>
-
-            <div class="footer__bottom">
-                <p>&copy; 2026 Kannagara Aïkido Club de Guyancourt. Tous droits réservés. | <a href="mentions-legales.html">Mentions légales</a></p>
-                <span class="footer__ffab">Affilié à la Fédération Française d'Aïkido et de Budo</span>
-            </div>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
 
 

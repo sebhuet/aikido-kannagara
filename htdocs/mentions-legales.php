@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -25,33 +25,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-                <!-- Header -->
-    <header class="header">
-        <div class="container header__container">
-            <a href="index.html" class="header__logo">
-                <img src="images/logo-kannagara.png" alt="Kannagara Aïkido Club de Guyancourt" class="header__logo-img">
-            </a>
-
-            <nav class="nav">
-                <button class="nav__toggle" aria-label="Menu">
-                    <span class="nav__toggle-bar"></span>
-                    <span class="nav__toggle-bar"></span>
-                    <span class="nav__toggle-bar"></span>
-                </button>
-
-                                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
-                    <li class="nav__item"><a href="aikido.html" class="nav__link">Aïkido</a></li>
-                    <li class="nav__item"><a href="club.html" class="nav__link">Club</a></li>
-                    <li class="nav__item"><a href="professeurs.html" class="nav__link">Professeurs</a></li>
-                    <li class="nav__item"><a href="agenda.html" class="nav__link">Agenda</a></li>
-                    <li class="nav__item"><a href="inscription.html" class="nav__link">Inscription</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav-overlay"></div>
-    </header>
+    <?php $active = 'mentions-legales'; include 'includes/header.php'; ?>
 
 
 
@@ -60,7 +34,7 @@
         <div class="container">
             <h1 class="page-header__title">Mentions légales</h1>
             <p class="page-header__breadcrumb">
-                <a href="index.html">Accueil</a> / Mentions légales
+                <a href="index.php">Accueil</a> / Mentions légales
             </p>
         </div>
     </section>
@@ -77,7 +51,7 @@
                     <strong>Kannagara Aïkido Club de Guyancourt</strong><br>
                     Association loi 1901<br>
                     Siège social : 9 impasse Jean Bouin, 78390 Bois-d'Arcy<br>
-                    Email : <a href="mailto:kannagara@wanadoo.fr">kannagara@wanadoo.fr</a><br>
+                    Email : <a href="mailto:aikido.kannagara.guyancourt@gmail.com">aikido.kannagara.guyancourt@gmail.com</a><br>
                     Téléphone : 06 76 48 16 01
                 </p>
 
@@ -111,7 +85,7 @@
                     pour répondre à vos demandes et ne sont pas transmises à des tiers.
                 </p>
                 <p>
-                    Pour exercer vos droits, contactez-nous à : <a href="mailto:kannagara@wanadoo.fr">kannagara@wanadoo.fr</a>
+                    Pour exercer vos droits, contactez-nous à : <a href="mailto:aikido.kannagara.guyancourt@gmail.com">aikido.kannagara.guyancourt@gmail.com</a>
                 </p>
 
                 <h3>Cookies</h3>
@@ -138,7 +112,7 @@
                 <p>Consultez les documents officiels de l'association :</p>
 
                 <div class="cards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg); margin-top: var(--spacing-lg);">
-                    <a href="statuts.html" class="card" style="text-decoration: none; color: inherit;">
+                    <a href="statuts.php" class="card" style="text-decoration: none; color: inherit;">
                         <div class="card__content">
                             <h3 class="card__title">Statuts de l'association</h3>
                             <p class="card__text">Les statuts définissent l'objet, la composition et le fonctionnement de l'association loi 1901.</p>
@@ -146,7 +120,7 @@
                         </div>
                     </a>
 
-                    <a href="reglement-interieur.html" class="card" style="text-decoration: none; color: inherit;">
+                    <a href="reglement-interieur.php" class="card" style="text-decoration: none; color: inherit;">
                         <div class="card__content">
                             <h3 class="card__title">Règlement intérieur</h3>
                             <p class="card__text">Le règlement intérieur précise les règles de conduite, tenue, hygiène et étiquette au sein du club.</p>
@@ -158,51 +132,7 @@
         </div>
     </section>
 
-                <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__section">
-                    <h4>Kannagara Aïkido</h4>
-                    <p>Club d'aïkido de Guyancourt depuis 1990.</p>
-                    <p>Agréé Jeunesse et Sports.</p>
-                    <p>Affilié à la FFAB.</p>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="aikido.html">L'Aïkido</a></li>
-                        <li><a href="club.html">Club</a></li>
-                        <li><a href="professeurs.html">Professeurs</a></li>
-                        <li><a href="grades.html">Grades</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Pratique</h4>
-                    <ul>
-                        <li><a href="inscription.html">Inscription</a></li>
-                        <li><a href="agenda.html">Agenda</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="lexique.html">Lexique</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Contact</h4>
-                    <p><a href="tel:0676481601">06 76 48 16 01</a></p>
-                    <p><a href="mailto:kannagara@wanadoo.fr">kannagara@wanadoo.fr</a></p>
-                </div>
-            </div>
-
-            <div class="footer__bottom">
-                <p>&copy; 2026 Kannagara Aïkido Club de Guyancourt. Tous droits réservés. | <a href="mentions-legales.html">Mentions légales</a></p>
-                <span class="footer__ffab">Affilié à la Fédération Française d'Aïkido et de Budo</span>
-            </div>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>

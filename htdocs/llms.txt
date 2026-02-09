@@ -1,4 +1,4 @@
-# Kannagara Aikido Club de Guyancourt
+﻿# Kannagara Aikido Club de Guyancourt
 # Fichier llms.txt - Informations pour les assistants IA
 
 ## A propos
@@ -43,7 +43,7 @@ Le club est affilie a la Federation Francaise d'Aikido et de Budo (FFAB) et poss
 
 ## Contact
 - Telephone: 06 76 48 16 01
-- Email: kannagara@wanadoo.fr
+- Email: aikido.kannagara.guyancourt@gmail.com
 - Adresse postale: 9 impasse Jean Bouin, 78390 Bois-d'Arcy
 - Site web: https://kannagara.fr
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
 
     <!-- SEO Meta Tags -->
     <title>Contact | Club d'aïkido Guyancourt - Gymnase Maurice Baquet</title>
-    <meta name="description" content="Contactez Kannagara Aïkido Guyancourt. Gymnase Maurice Baquet, Mail des Graviers. Tél: 06 76 48 16 01. Email: kannagara@wanadoo.fr. Plan d'accès.">
+    <meta name="description" content="Contactez Kannagara Aïkido Guyancourt. Gymnase Maurice Baquet, Mail des Graviers. Tél: 06 76 48 16 01. Email: aikido.kannagara.guyancourt@gmail.com. Plan d'accès.">
     <meta name="keywords" content="contact aikido, Guyancourt, gymnase maurice baquet, adresse, téléphone, plan">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/contact.html">
@@ -33,7 +33,7 @@
         "name": "Kannagara Aïkido Club de Guyancourt",
         "description": "Club d'aïkido affilié FFAB",
         "telephone": "+33676481601",
-        "email": "kannagara@wanadoo.fr",
+        "email": "aikido.kannagara.guyancourt@gmail.com",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Gymnase Maurice Baquet, Mail des Graviers",
@@ -52,33 +52,7 @@
     </script>
 </head>
 <body>
-                            <!-- Header -->
-    <header class="header">
-        <div class="container header__container">
-            <a href="index.html" class="header__logo">
-                <img src="images/logo-kannagara.png" alt="Kannagara Aïkido Club de Guyancourt" class="header__logo-img">
-            </a>
-
-            <nav class="nav">
-                <button class="nav__toggle" aria-label="Menu">
-                    <span class="nav__toggle-bar"></span>
-                    <span class="nav__toggle-bar"></span>
-                    <span class="nav__toggle-bar"></span>
-                </button>
-
-                                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
-                    <li class="nav__item"><a href="aikido.html" class="nav__link">Aïkido</a></li>
-                    <li class="nav__item"><a href="club.html" class="nav__link">Club</a></li>
-                    <li class="nav__item"><a href="professeurs.html" class="nav__link">Professeurs</a></li>
-                    <li class="nav__item"><a href="agenda.html" class="nav__link">Agenda</a></li>
-                    <li class="nav__item"><a href="inscription.html" class="nav__link">Inscription</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link nav__link--active" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav-overlay"></div>
-    </header>
+    <?php $active = 'contact'; include 'includes/header.php'; ?>
 
 
 
@@ -91,7 +65,7 @@
         <div class="container">
             <h1 class="page-header__title">Contact</h1>
             <p class="page-header__breadcrumb">
-                <a href="index.html">Accueil</a> / Contact
+                <a href="index.php">Accueil</a> / Contact
             </p>
         </div>
     </section>
@@ -120,7 +94,7 @@
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p><a href="mailto:kannagara@wanadoo.fr">kannagara@wanadoo.fr</a></p>
+                            <p><a href="mailto:aikido.kannagara.guyancourt@gmail.com">aikido.kannagara.guyancourt@gmail.com</a></p>
                         </div>
                     </div>
 
@@ -187,7 +161,7 @@
                 <a href="https://forms.gle/VOTRE_GOOGLE_FORM_ID" target="_blank" rel="noopener" class="btn btn--primary">
                     Ouvrir le formulaire de contact
                 </a>
-                <a href="mailto:kannagara@wanadoo.fr?subject=Contact depuis le site web" class="btn btn--outline">
+                <a href="mailto:aikido.kannagara.guyancourt@gmail.com?subject=Contact depuis le site web" class="btn btn--outline">
                     Envoyer un email
                 </a>
             </div>
@@ -219,58 +193,14 @@
                 </div>
 
                 <div class="text-center mt-4">
-                    <a href="inscription.html" class="btn btn--primary">En savoir plus sur l'inscription</a>
-                    <a href="actualites.html" class="btn btn--outline">Voir les événements</a>
+                    <a href="inscription.php" class="btn btn--primary">En savoir plus sur l'inscription</a>
+                    <a href="actualites.php" class="btn btn--outline">Voir les événements</a>
                 </div>
             </div>
         </div>
     </section>
 
-                            <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__section">
-                    <h4>Kannagara Aïkido</h4>
-                    <p>Club d'aïkido de Guyancourt depuis 1990.</p>
-                    <p>Agréé Jeunesse et Sports.</p>
-                    <p>Affilié à la FFAB.</p>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="aikido.html">L'Aïkido</a></li>
-                        <li><a href="club.html">Club</a></li>
-                        <li><a href="professeurs.html">Professeurs</a></li>
-                        <li><a href="grades.html">Grades</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Pratique</h4>
-                    <ul>
-                        <li><a href="inscription.html">Inscription</a></li>
-                        <li><a href="agenda.html">Agenda</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="lexique.html">Lexique</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <h4>Contact</h4>
-                    <p><a href="tel:0676481601">06 76 48 16 01</a></p>
-                    <p><a href="mailto:kannagara@wanadoo.fr">kannagara@wanadoo.fr</a></p>
-                </div>
-            </div>
-
-            <div class="footer__bottom">
-                <p>&copy; 2026 Kannagara Aïkido Club de Guyancourt. Tous droits réservés. | <a href="mentions-legales.html">Mentions légales</a></p>
-                <span class="footer__ffab">Affilié à la Fédération Française d'Aïkido et de Budo</span>
-            </div>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
 
 
