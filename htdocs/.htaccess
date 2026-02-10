@@ -25,14 +25,3 @@
 # Page d'accueil par défaut
 DirectoryIndex index.php
 
-# Protection du dossier includes
-<IfModule mod_authz_core.c>
-    <Files "*.php">
-        Require all granted
-    </Files>
-</IfModule>
-<FilesMatch "^includes/">
-    <IfModule mod_authz_core.c>
-        Require all denied
-    </IfModule>
-</FilesMatch>
