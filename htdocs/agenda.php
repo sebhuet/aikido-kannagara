@@ -253,23 +253,25 @@
                         <td class="agenda-day-cell" rowspan="2">Lundi 02/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.html#jean-marc-chamot" class="teacher-link">Jean-Marc Chamot</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#jean-marc-chamot" class="teacher-link">Jean-Marc Chamot</a></td>
                     </tr>
                     <tr>
+                        
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.html#jean-marc-chamot" class="teacher-link">Jean-Marc Chamot</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#jean-marc-chamot" class="teacher-link">Jean-Marc Chamot</a></td>
                     </tr>
                     <tr>
                         <td class="agenda-day-cell" rowspan="2">Jeudi 05/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.html#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
                     </tr>
                     <tr>
+                        
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.html#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -292,34 +294,37 @@
                         <td class="agenda-day-cell" rowspan="2">Lundi 09/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.html#nacer-chekkaba" class="teacher-link">Nacer Chekkaba</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#nacer-chekkaba" class="teacher-link">Nacer Chekkaba</a></td>
                     </tr>
                     <tr>
+                        
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.html#nacer-chekkaba" class="teacher-link">Nacer Chekkaba</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#nacer-chekkaba" class="teacher-link">Nacer Chekkaba</a></td>
                     </tr>
                     <tr>
                         <td class="agenda-day-cell" rowspan="2">Jeudi 12/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><span class="agenda-course__reason">À confirmer</span></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
                     </tr>
                     <tr>
+                        
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><span class="agenda-course__reason">À confirmer</span></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
                     </tr>
                     <tr>
                         <td class="agenda-day-cell" rowspan="2">Dimanche 15/02</td>
                         <td class="agenda-time-cell">10h00-12h30</td>
                         <td class="agenda-type-cell">Stage Codep78</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.html#jean-marc-chamot" class="teacher-link">Jean-Marc Chamot</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#jean-marc-chamot" class="teacher-link">Jean-Marc Chamot</a></td>
                     </tr>
                     <tr>
+                        
                         <td class="agenda-time-cell">14h30-17h00</td>
                         <td class="agenda-type-cell">Stage Codep78</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.html#jean-marc-chamot" class="teacher-link">Jean-Marc Chamot</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#jean-marc-chamot" class="teacher-link">Jean-Marc Chamot</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -342,23 +347,25 @@
                         <td class="agenda-day-cell" rowspan="2">Lundi 16/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.html#germain-chamot" class="teacher-link">Germain Chamot</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#germain-chamot" class="teacher-link">Germain Chamot</a></td>
                     </tr>
                     <tr>
+                        
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.html#germain-chamot" class="teacher-link">Germain Chamot</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#germain-chamot" class="teacher-link">Germain Chamot</a></td>
                     </tr>
                     <tr>
                         <td class="agenda-day-cell" rowspan="2">Jeudi 19/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><span class="agenda-course__reason">À confirmer</span></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
                     </tr>
                     <tr>
+                        
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><span class="agenda-course__reason">À confirmer</span></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -381,23 +388,107 @@
                         <td class="agenda-day-cell" rowspan="2">Lundi 23/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><span class="agenda-course__reason">À confirmer</span></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#thierry-montfort" class="teacher-link">Thierry Montfort</a></td>
                     </tr>
                     <tr>
+                        
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><span class="agenda-course__reason">À confirmer</span></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#thierry-montfort" class="teacher-link">Thierry Montfort</a></td>
                     </tr>
                     <tr>
                         <td class="agenda-day-cell" rowspan="2">Jeudi 26/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><span class="agenda-course__reason">À confirmer</span></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#a-confirmer" class="teacher-link">À confirmer</a></td>
                     </tr>
                     <tr>
+                        
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><span class="agenda-course__reason">À confirmer</span></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#a-confirmer" class="teacher-link">À confirmer</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="agenda-week__title">📅 Semaine du 02/03/2026 - Vacances Scolaire</h2>
+            <table class="agenda-table">
+                <thead>
+                    <tr>
+                        <th>Jour</th>
+                        <th>Horaire</th>
+                        <th>Type</th>
+                        <th>Professeur(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="agenda-day-cell" rowspan="2">Mardi 03/03</td>
+                        <td class="agenda-time-cell">18h30-19h30</td>
+                        <td class="agenda-type-cell">Enfants</td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#pas-de-cours" class="teacher-link">Pas de cours</a></td>
+                    </tr>
+                    <tr>
+                        
+                        <td class="agenda-time-cell">19h30-21h30</td>
+                        <td class="agenda-type-cell">Adultes</td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-day-cell" rowspan="2">Jeudi 05/03</td>
+                        <td class="agenda-time-cell">18h30-19h30</td>
+                        <td class="agenda-type-cell">Enfants</td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#pas-de-cours" class="teacher-link">Pas de cours</a></td>
+                    </tr>
+                    <tr>
+                        
+                        <td class="agenda-time-cell">19h30-21h30</td>
+                        <td class="agenda-type-cell">Adultes</td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="agenda-week__title">📅 Semaine du 09/03/2026 - Vacances Scolaire</h2>
+            <table class="agenda-table">
+                <thead>
+                    <tr>
+                        <th>Jour</th>
+                        <th>Horaire</th>
+                        <th>Type</th>
+                        <th>Professeur(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="agenda-day-cell" rowspan="2">Mardi 10/03</td>
+                        <td class="agenda-time-cell">18h30-19h30</td>
+                        <td class="agenda-type-cell">Enfants</td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#pas-de-cours" class="teacher-link">Pas de cours</a></td>
+                    </tr>
+                    <tr>
+                        
+                        <td class="agenda-time-cell">19h30-21h30</td>
+                        <td class="agenda-type-cell">Adultes</td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-day-cell" rowspan="2">Jeudi 12/03</td>
+                        <td class="agenda-time-cell">18h30-19h30</td>
+                        <td class="agenda-type-cell">Enfants</td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#pas-de-cours" class="teacher-link">Pas de cours</a></td>
+                    </tr>
+                    <tr>
+                        
+                        <td class="agenda-time-cell">19h30-21h30</td>
+                        <td class="agenda-type-cell">Adultes</td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
                     </tr>
                 </tbody>
             </table>

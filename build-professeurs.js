@@ -16,8 +16,8 @@ const path = require('path');
 
 // Configuration
 const FICHES_DIR = path.join(__dirname, 'htdocs', 'professeurs', 'fiches');
-const INDEX_FILE = path.join(__dirname, 'htdocs', 'index.html');
-const PROFESSEURS_FILE = path.join(__dirname, 'htdocs', 'professeurs.html');
+const INDEX_FILE = path.join(__dirname, 'htdocs', 'index.php');
+const PROFESSEURS_FILE = path.join(__dirname, 'htdocs', 'professeurs.php');
 
 /**
  * Parse le frontmatter YAML d'un fichier markdown

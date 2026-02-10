@@ -32,8 +32,8 @@ Chaque cours est défini par :
 
 ### Jeudi 12/02
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Sébastien Huet
+- **19h30-21h30** | Adultes | Sébastien Huet
 
 ### Dimanche 15/02
 
@@ -49,17 +49,41 @@ Chaque cours est défini par :
 
 ### Jeudi 19/02
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Sébastien Huet
+- **19h30-21h30** | Adultes | Sébastien Huet
 
 ## Semaine du 23/02/2026
 
 ### Lundi 23/02
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Thierry Montfort
+- **19h30-21h30** | Adultes | Thierry Montfort
 
 ### Jeudi 26/02
 
 - **18h30-19h30** | Enfants |
 - **19h30-21h30** | Adultes |
+
+## Semaine du 02/03/2026 - Vacances Scolaire
+
+### Mardi 03/03
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+### Jeudi 05/03
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+## Semaine du 09/03/2026 - Vacances Scolaire
+
+### Mardi 10/03
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+### Jeudi 12/03
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet

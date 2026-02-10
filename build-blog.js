@@ -18,7 +18,7 @@ const path = require('path');
 const ARTICLES_DIR = path.join(__dirname, 'htdocs', 'blog', 'articles');
 const OUTPUT_DIR = path.join(__dirname, 'htdocs', 'blog');
 const TEMPLATE_FILE = path.join(__dirname, 'htdocs', 'blog', '_template.html');
-const BLOG_INDEX = path.join(__dirname, 'htdocs', 'blog.html');
+const BLOG_INDEX = path.join(__dirname, 'htdocs', 'blog.php');
 
 // Mois en français
 const MONTHS_FR = [

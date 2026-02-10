@@ -10,7 +10,7 @@ const fs = require('fs');
 const path = require('path');
 
 const AGENDA_MD = path.join(__dirname, 'htdocs', 'agenda.md');
-const AGENDA_HTML = path.join(__dirname, 'htdocs', 'agenda.html');
+const AGENDA_HTML = path.join(__dirname, 'htdocs', 'agenda.php');
 
 /**
  * Parse le fichier agenda.md
@@ -128,7 +128,7 @@ function generateAgendaHtml(weeks) {
                             .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
                             .replace(/[^a-z0-9]+/g, '-')
                             .replace(/^-+|-+$/g, '');
-                        return `<a href="professeurs.html#${slug}" class="teacher-link">${name}</a>`;
+                        return `<a href="professeurs.php#${slug}" class="teacher-link">${name}</a>`;
                     }).join(', ');
 
                     html += `

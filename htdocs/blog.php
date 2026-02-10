@@ -62,7 +62,7 @@
                     <div class="blog-card__content">
                         <span class="blog-card__date">15 janvier 2024</span>
                         <h3 class="blog-card__title">
-                            <a href="blog/importance-ukemi.php">L'importance des ukemi dans la pratique de l'aïkido</a>
+                            <a href="blog/importance-ukemi.html">L'importance des ukemi dans la pratique de l'aïkido</a>
                         </h3>
                         <p class="blog-card__excerpt">
                             L'importance des ukemi dans la pratique de l'aïkido : pourquoi les chutes sont essentielles et comment les travailler.
@@ -80,7 +80,7 @@
                     <div class="blog-card__content">
                         <span class="blog-card__date">8 décembre 2023</span>
                         <h3 class="blog-card__title">
-                            <a href="blog/stage-regional-2023.php">Retour sur le stage régional FFAB 2023</a>
+                            <a href="blog/stage-regional-2023.html">Retour sur le stage régional FFAB 2023</a>
                         </h3>
                         <p class="blog-card__excerpt">
                             Une vingtaine de membres du club ont participé au stage régional FFAB qui s'est tenu le mois dernier. Un beau moment de partage.
@@ -98,7 +98,7 @@
                     <div class="blog-card__content">
                         <span class="blog-card__date">20 novembre 2023</span>
                         <h3 class="blog-card__title">
-                            <a href="blog/debuter-aikido.php">Bien débuter en aïkido : conseils pour les nouveaux pratiquants</a>
+                            <a href="blog/debuter-aikido.html">Bien débuter en aïkido : conseils pour les nouveaux pratiquants</a>
                         </h3>
                         <p class="blog-card__excerpt">
                             Vous venez de rejoindre le club ou envisagez de commencer l'aïkido ? Voici quelques conseils pour bien démarrer votre pratique.
@@ -116,7 +116,7 @@
                     <div class="blog-card__content">
                         <span class="blog-card__date">5 octobre 2023</span>
                         <h3 class="blog-card__title">
-                            <a href="blog/rentree-2023.php">Rentrée 2023 : bienvenue aux nouveaux membres !</a>
+                            <a href="blog/rentree-2023.html">Rentrée 2023 : bienvenue aux nouveaux membres !</a>
                         </h3>
                         <p class="blog-card__excerpt">
                             La rentrée 2023 a été marquée par l'arrivée de nombreux nouveaux pratiquants. Un grand merci à tous ceux qui ont participé aux portes ouvertes.
@@ -133,7 +133,7 @@
                     <div class="blog-card__content">
                         <span class="blog-card__date">15 juin 2023</span>
                         <h3 class="blog-card__title">
-                            <a href="blog/passage-grades-juin-2023.php">Passages de grades de juin 2023</a>
+                            <a href="blog/passage-grades-juin-2023.html">Passages de grades de juin 2023</a>
                         </h3>
                         <p class="blog-card__excerpt">
                             Félicitations à tous les pratiquants qui ont passé leur grade ce mois-ci ! Retour en images sur cette belle session.
@@ -151,7 +151,7 @@
                     <div class="blog-card__content">
                         <span class="blog-card__date">1 mai 2023</span>
                         <h3 class="blog-card__title">
-                            <a href="blog/reflexion-harmonie.php">Réflexion sur le concept d'harmonie en aïkido</a>
+                            <a href="blog/reflexion-harmonie.html">Réflexion sur le concept d'harmonie en aïkido</a>
                         </h3>
                         <p class="blog-card__excerpt">
                             L'harmonie est au coeur de l'aïkido, mais que signifie réellement ce concept dans notre pratique quotidienne ?

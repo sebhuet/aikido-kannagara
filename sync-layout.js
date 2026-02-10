@@ -13,41 +13,41 @@ const HEADER_PARTIAL = path.join(__dirname, 'partials', 'header.html');
 const FOOTER_PARTIAL = path.join(__dirname, 'partials', 'footer.html');
 
 const NAV_TEMPLATE = `                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
-                    <li class="nav__item"><a href="aikido.html" class="nav__link">Aïkido</a></li>
-                    <li class="nav__item"><a href="club.html" class="nav__link">Club</a></li>
-                    <li class="nav__item"><a href="professeurs.html" class="nav__link">Professeurs</a></li>
-                    <li class="nav__item"><a href="agenda.html" class="nav__link">Agenda</a></li>
-                    <li class="nav__item"><a href="inscription.html" class="nav__link">Inscription</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="index.php" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="aikido.php" class="nav__link">Aïkido</a></li>
+                    <li class="nav__item"><a href="club.php" class="nav__link">Club</a></li>
+                    <li class="nav__item"><a href="professeurs.php" class="nav__link">Professeurs</a></li>
+                    <li class="nav__item"><a href="agenda.php" class="nav__link">Agenda</a></li>
+                    <li class="nav__item"><a href="inscription.php" class="nav__link">Inscription</a></li>
+                    <li class="nav__item"><a href="contact.php" class="nav__link">Contact</a></li>
                 </ul>`;
 
 const FILES = [
-    'index.html',
-    'aikido.html',
-    'armes.html',
-    'club.html',
-    'professeurs.html',
-    'agenda.html',
-    'inscription.html',
-    'contact.html',
-    'fondations.html',
-    'grades.html',
-    'faq.html',
-    'lexique.html',
-    'mentions-legales.html',
-    'reglement-interieur.html',
-    'statuts.html'
+    'index.php',
+    'aikido.php',
+    'armes.php',
+    'club.php',
+    'professeurs.php',
+    'agenda.php',
+    'inscription.php',
+    'contact.php',
+    'fondations.php',
+    'grades.php',
+    'faq.php',
+    'lexique.php',
+    'mentions-legales.php',
+    'reglement-interieur.php',
+    'statuts.php'
 ];
 
 function getActiveNav(fileName) {
     let nav = NAV_TEMPLATE;
     
     // Marquer la page active
-    if (fileName === 'index.html') {
+    if (fileName === 'index.php') {
         nav = nav.replace(
-            'href="index.html" class="nav__link"',
-            'href="index.html" class="nav__link nav__link--active" role="menuitem" aria-current="page"'
+            'href="index.php" class="nav__link"',
+            'href="index.php" class="nav__link nav__link--active" role="menuitem" aria-current="page"'
         );
         // Ajouter les rôles ARIA pour index
         nav = nav
