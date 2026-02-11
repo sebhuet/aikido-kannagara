@@ -9,10 +9,8 @@
 const { execSync } = require('child_process');
 
 const scripts = [
-    { name: 'Professeurs', cmd: 'node build-professeurs.js' },
     { name: 'Blog', cmd: 'node build-blog.js' },
     { name: 'Agenda', cmd: 'node build-agenda.js' },
-    { name: 'Layout (header/footer)', cmd: 'node sync-layout.js' },
     { name: 'Sitemap', cmd: 'node build-sitemap.js' }
 ];
 

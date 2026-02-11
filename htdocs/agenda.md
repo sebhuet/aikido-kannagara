@@ -32,8 +32,8 @@ Chaque cours est défini par :
 
 ### Jeudi 12/02
 
-- **18h30-19h30** | Enfants | Sébastien Huet
-- **19h30-21h30** | Adultes | Sébastien Huet
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
 
 ### Dimanche 15/02
 
@@ -49,8 +49,8 @@ Chaque cours est défini par :
 
 ### Jeudi 19/02
 
-- **18h30-19h30** | Enfants | Sébastien Huet
-- **19h30-21h30** | Adultes | Sébastien Huet
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
 
 ## Semaine du 23/02/2026
 

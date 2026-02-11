@@ -306,13 +306,13 @@
                         <td class="agenda-day-cell" rowspan="2">Jeudi 12/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#nacer-chekkaba" class="teacher-link">Nacer Chekkaba</a></td>
                     </tr>
                     <tr>
                         
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#nacer-chekkaba" class="teacher-link">Nacer Chekkaba</a></td>
                     </tr>
                     <tr>
                         <td class="agenda-day-cell" rowspan="2">Dimanche 15/02</td>
@@ -359,13 +359,13 @@
                         <td class="agenda-day-cell" rowspan="2">Jeudi 19/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#nacer-chekkaba" class="teacher-link">Nacer Chekkaba</a></td>
                     </tr>
                     <tr>
                         
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#nacer-chekkaba" class="teacher-link">Nacer Chekkaba</a></td>
                     </tr>
                 </tbody>
             </table>
