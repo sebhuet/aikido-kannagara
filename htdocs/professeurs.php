@@ -18,7 +18,7 @@ $noms_grades = array_map(fn($f) => ($f['meta']['name'] ?? '') . ' (' . ($f['meta
 $nb = count($fiches);
 
 $meta_description = "L'équipe enseignante du club Kannagara : " . implode(', ', $noms_grades) . '.';
-$meta_keywords = implode(', ', $noms) . ', professeur aikido, DESJEPS, FFAB';
+$meta_keywords = implode(', ', $noms) . ', professeur aïkido, DESJEPS, FFAB';
 $og_description = $nb . ' enseignants diplômés : ' . implode(', ', $noms_grades) . '.';
 
 // Générer le Schema.org

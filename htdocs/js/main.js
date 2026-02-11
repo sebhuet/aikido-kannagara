@@ -226,5 +226,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ---------- Console log pour debug ----------
-    console.log('Kannagara Aikido - Site chargé');
+    console.log('Kannagara Aïkido - Site chargé');
 });

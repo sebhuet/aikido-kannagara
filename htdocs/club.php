@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Le Club Kannagara | Club d'aïkido à Guyancourt depuis 1990</title>
     <meta name="description" content="Club Kannagara Aïkido de Guyancourt, créé en 1990. Environ 50 membres, affilié FFAB. Gymnase Maurice Baquet, cours lundi et jeudi.">
-    <meta name="keywords" content="club aikido, Kannagara, Guyancourt, FFAB, dojo, gymnase maurice baquet">
+    <meta name="keywords" content="club aïkido, Kannagara, Guyancourt, FFAB, dojo, gymnase maurice baquet">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/club.html">
 

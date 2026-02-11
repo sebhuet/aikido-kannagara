@@ -50,6 +50,7 @@
                 <p>
                     <strong>Kannagara Aïkido Club de Guyancourt</strong><br>
                     Association loi 1901<br>
+                    SIRET : 414 262 923 00082<br>
                     Siège social : 9 impasse Jean Bouin, 78390 Bois-d'Arcy<br>
                     Email : <a href="mailto:aikido.kannagara.guyancourt@gmail.com">aikido.kannagara.guyancourt@gmail.com</a><br>
                     Téléphone : 06 76 48 16 01

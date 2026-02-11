@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Kannagara Aïkido Club de Guyancourt | Cours d'aïkido pour tous</title>
     <meta name="description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Cours pour enfants et adultes avec Jean-Marc Chamot (7e Dan). Gymnase Maurice Baquet, lundi et jeudi.">
-    <meta name="keywords" content="aikido, aïkido, Guyancourt, arts martiaux, FFAB, Jean-Marc Chamot, dojo, Yvelines, 78, cours aikido">
+    <meta name="keywords" content="aïkido, aikido, Guyancourt, arts martiaux, FFAB, Jean-Marc Chamot, dojo, Yvelines, 78, cours aïkido">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/">
@@ -48,7 +48,7 @@
         "@type": "SportsActivityLocation",
         "@id": "https://kannagara.fr/#organization",
         "name": "Kannagara Aïkido Club de Guyancourt",
-        "alternateName": "Kannagara Aikido",
+        "alternateName": "Kannagara Aïkido",
         "description": "Club d'aïkido affilié à la FFAB, proposant des cours pour enfants et adultes à Guyancourt depuis 1990.",
         "url": "https://kannagara.fr",
         "logo": "https://kannagara.fr/images/logo-kannagara.png",
@@ -92,7 +92,7 @@
             "name": "Fédération Française d'Aïkido et de Budo",
             "alternateName": "FFAB"
         },
-        "sport": "Aikido",
+        "sport": "Aïkido",
         "employee": [
             {
                 "@type": "Person",
@@ -178,6 +178,7 @@
                 <p class="section__subtitle"><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet, Mail des Graviers, Guyancourt <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></p>
             </div>
 
+            <div class="schedule-table-wrapper">
             <table class="schedule-table fade-in">
                 <thead>
                     <tr>
@@ -199,6 +200,7 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
 
             <div class="text-center mt-3">
                 <a href="inscription.php" class="btn btn--outline">Nous rejoindre</a>

@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Inscription | Rejoindre le club d'aïkido de Guyancourt</title>
     <meta name="description" content="Inscrivez-vous au club Kannagara Aïkido de Guyancourt. Cours d'essai gratuits en septembre, documents nécessaires, équipement. Enfants dès 7 ans, adultes tous niveaux.">
-    <meta name="keywords" content="inscription aikido, cours essai, tarif aikido, Guyancourt, enfants aikido, débutant">
+    <meta name="keywords" content="inscription aïkido, cours essai, tarif aïkido, Guyancourt, enfants aïkido, débutant">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/inscription.html">
 
@@ -215,7 +215,8 @@
                     <h4 class="info-box__title">Portes ouvertes</h4>
                     <p>
                         Pendant tout le mois de <strong>septembre</strong>, les cours sont ouverts
-                        aux personnes souhaitant découvrir l'aïkido. Prêt de kimono possible.
+                        aux personnes souhaitant découvrir l'aïkido. Prêt de kimono possible,
+                        à défaut une tenue de sport (jogging) convient pour les cours d'essai.
                     </p>
                     <p><a href="actualites.php">Voir les dates des événements</a></p>
                 </div>
@@ -312,7 +313,7 @@
                 <div class="info-box">
                     <h4 class="info-box__title">Tarif famille</h4>
                     <p>
-                        Une réduction de <strong>10%</strong> est accordée à partir de la 2e inscription
+                        Une réduction de <strong>10%</strong> est accordée à partir de la 3e inscription
                         d'un même foyer. Contactez-nous pour en bénéficier.
                     </p>
                 </div>
@@ -339,6 +340,11 @@
                 <p>
                     Pour les premiers cours d'essai, un survêtement propre peut suffire.
                     Le club peut prêter un kimono pour les séances d'initiation.
+                </p>
+                <p>
+                    Il est possible de commander votre équipement par l'intermédiaire du club
+                    auprès de notre partenaire <a href="https://www.budo-fight.com/catalogue/autres-disciplines/aikido" target="_blank" rel="noopener">BudoFight</a>.
+                    N'hésitez pas à nous consulter avant tout achat.
                 </p>
 
                 <h2>Comment s'inscrire ?</h2>

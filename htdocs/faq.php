@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>FAQ | Questions fréquentes sur l'aïkido - Kannagara Guyancourt</title>
     <meta name="description" content="Réponses aux questions fréquentes sur l'aïkido et le club Kannagara : équipement, inscription, cours d'essai, niveau requis, enfants, tarifs.">
-    <meta name="keywords" content="FAQ aikido, questions aikido, débuter aikido, équipement aikido, inscription club aikido, Guyancourt">
+    <meta name="keywords" content="FAQ aïkido, questions aïkido, débuter aïkido, équipement aïkido, inscription club aïkido, Guyancourt">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/faq.html">

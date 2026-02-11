@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Agenda des cours | Planning et présence des professeurs - Kannagara Aïkido</title>
     <meta name="description" content="Agenda et planning des cours d'aïkido du club Kannagara avec présence des professeurs. Cours ouverts à tous les licenciés, quelle que soit leur fédération.">
-    <meta name="keywords" content="agenda aikido, planning cours aikido, horaires aikido Guyancourt, professeurs présents">
+    <meta name="keywords" content="agenda aïkido, planning cours aïkido, horaires aïkido Guyancourt, professeurs présents">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/agenda.html">
 

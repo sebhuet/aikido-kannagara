@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Lexique Japonais de l'Aïkido | Vocabulaire et termes techniques</title>
     <meta name="description" content="Lexique japonais de l'aïkido : termes techniques, vocabulaire du dojo, noms des techniques, comptage japonais. Guide complet pour les pratiquants.">
-    <meta name="keywords" content="lexique aikido, vocabulaire japonais, termes aikido, techniques aikido, dojo, seiza, rei, uke, tori">
+    <meta name="keywords" content="lexique aïkido, vocabulaire japonais, termes aïkido, techniques aïkido, dojo, seiza, rei, uke, tori">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/lexique.html">
@@ -191,7 +191,7 @@
                 <div class="lexique-grid">
                     <div class="lexique-item">
                         <div class="lexique-item__term">
-                            Aikido <span class="lexique-item__kanji">合気道</span>
+                            Aïkido <span class="lexique-item__kanji">合気道</span>
                         </div>
                         <p class="lexique-item__definition">
                             "La voie de l'harmonie des énergies". Ai = harmonie, Ki = énergie, Do = voie.

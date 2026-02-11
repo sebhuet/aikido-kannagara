@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Grades en Aïkido | Du 6e kyu au dan - Programme technique</title>
     <meta name="description" content="Système de grades en aïkido : kyu (6e au 1er) et dan (ceinture noire). Programme technique FFAB, conditions de passage, techniques par niveau.">
-    <meta name="keywords" content="grade aikido, kyu, dan, ceinture noire, programme technique, passage grade, FFAB">
+    <meta name="keywords" content="grade aïkido, kyu, dan, ceinture noire, programme technique, passage grade, FFAB">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/grades.html">
 
@@ -62,9 +62,9 @@
                 <div class="info-box">
                     <h4 class="info-box__title">Particularité de l'aïkido</h4>
                     <p>
-                        Contrairement à d'autres arts martiaux, l'aïkido ne distingue pas les grades
-                        par des couleurs de ceinture (sauf pour les enfants dans certains clubs).
-                        La ceinture reste blanche jusqu'à l'obtention du 1er dan.
+                        En aïkido, la tradition veut que la ceinture reste blanche jusqu'à l'obtention du 1er dan,
+                        bien que certains clubs utilisent des ceintures de couleur pour marquer la progression,
+                        notamment chez les enfants.
                         Le hakama est généralement porté à partir du 3e kyu ou 1er kyu selon les écoles.
                     </p>
                 </div>

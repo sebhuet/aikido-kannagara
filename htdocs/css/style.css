@@ -525,8 +525,12 @@ p {
 }
 
 /* ---------- Schedule Table ---------- */
+.schedule-table-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .schedule-table {
-    margin: 0 auto;
     border-collapse: separate;
     border-spacing: 0;
 }
@@ -545,11 +549,12 @@ p {
 }
 
 .schedule-table thead th:first-child {
-    background-color: transparent;
+    background-color: var(--color-white);
+    border-radius: 8px 0 0 0;
 }
 
 .schedule-table thead th:nth-child(2) {
-    border-radius: 8px 0 0 0;
+    border-radius: 0;
 }
 
 .schedule-table thead th:last-child {
@@ -562,7 +567,7 @@ p {
     background-color: var(--color-white);
 }
 
-.schedule-table tbody tr:last-child td:nth-child(2) {
+.schedule-table tbody tr:last-child td:first-child {
     border-radius: 0 0 0 8px;
 }
 
@@ -575,7 +580,7 @@ p {
     font-size: 1.15rem;
     color: var(--color-secondary) !important;
     font-weight: 700 !important;
-    background-color: transparent !important;
+    background-color: var(--color-white) !important;
 }
 
 /* ---------- Professeurs / Team ---------- */

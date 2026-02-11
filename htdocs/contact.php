@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Contact | Club d'aïkido Guyancourt - Gymnase Maurice Baquet</title>
     <meta name="description" content="Contactez Kannagara Aïkido Guyancourt. Gymnase Maurice Baquet, Mail des Graviers. Tél: 06 76 48 16 01. Email: aikido.kannagara.guyancourt@gmail.com. Plan d'accès.">
-    <meta name="keywords" content="contact aikido, Guyancourt, gymnase maurice baquet, adresse, téléphone, plan">
+    <meta name="keywords" content="contact aïkido, Guyancourt, gymnase maurice baquet, adresse, téléphone, plan">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/contact.html">
 

@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Galerie Photos | Kannagara Aïkido Club de Guyancourt</title>
     <meta name="description" content="Découvrez la galerie photos du club Kannagara Aïkido : cours, stages, passages de grades et moments de vie du club à Guyancourt.">
-    <meta name="keywords" content="aikido, aïkido, Guyancourt, photos, galerie, stages, grades, cours, FFAB">
+    <meta name="keywords" content="aïkido, aikido, Guyancourt, photos, galerie, stages, grades, cours, FFAB">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/galerie.html">

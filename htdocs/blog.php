@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Blog | Articles et réflexions sur l'aïkido - Kannagara</title>
     <meta name="description" content="Blog du club Kannagara Aïkido : articles techniques, compte-rendus de stages, vie du club et réflexions sur la pratique de l'aïkido.">
-    <meta name="keywords" content="blog aikido, articles aikido, stages aikido, technique aikido, réflexions aikido">
+    <meta name="keywords" content="blog aïkido, articles aïkido, stages aïkido, technique aïkido, réflexions aïkido">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/blog.html">
 

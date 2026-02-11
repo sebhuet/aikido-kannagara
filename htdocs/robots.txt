@@ -1,4 +1,4 @@
-# Robots.txt pour Kannagara Aikido Club de Guyancourt
+# Robots.txt pour Kannagara Aïkido Club de Guyancourt
 # https://kannagara.fr
 
 User-agent: *

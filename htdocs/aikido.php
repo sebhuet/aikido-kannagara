@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>L'Aïkido : histoire, self-défense, femmes et enfants | Kannagara Guyancourt</title>
     <meta name="description" content="Découvrez l'aïkido : art martial japonais accessible à tous. Self-défense, cours femmes et enfants dès 7 ans. Sans compétition, fondé par Morihei Ueshiba.">
-    <meta name="keywords" content="aikido, aïkido, self défense, aikido femmes, aikido enfants, Morihei Ueshiba, art martial japonais, Tamura, cours aikido">
+    <meta name="keywords" content="aïkido, aikido, self défense, aïkido femmes, aïkido enfants, Morihei Ueshiba, art martial japonais, Tamura, cours aïkido">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/aikido.html">
 
@@ -292,9 +292,9 @@
                 <div class="info-box mt-3">
                     <h4 class="info-box__title">Un environnement bienveillant</h4>
                     <p>
-                        Au club Kannagara, les femmes représentent une part importante des pratiquants.
-                        L'atmosphère respectueuse et l'absence de compétition créent un cadre
-                        où chacune peut progresser à son rythme, en toute confiance.
+                        L'aïkido est ouvert à toutes et à tous. Au club Kannagara, l'atmosphère
+                        respectueuse et l'absence de compétition créent un cadre où chacun peut
+                        progresser à son rythme, en toute confiance.
                     </p>
                 </div>
 
