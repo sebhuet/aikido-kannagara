@@ -63,9 +63,13 @@ function markdown_to_html(string $text): string {
  * Génère un slug à partir d'un nom (ex: "Jean-Marc Chamot" → "jean-marc-chamot").
  */
 function slugify(string $name): string {
-    $slug = mb_strtolower($name, 'UTF-8');
+    $slug = strtolower($name);
     // Translittérer les accents
-    $slug = transliterator_transliterate('Any-Latin; Latin-ASCII', $slug);
+    $slug = strtr($slug, [
+        'à'=>'a','â'=>'a','ä'=>'a','é'=>'e','è'=>'e','ê'=>'e','ë'=>'e',
+        'î'=>'i','ï'=>'i','ô'=>'o','ö'=>'o','ù'=>'u','û'=>'u','ü'=>'u',
+        'ç'=>'c','ñ'=>'n','œ'=>'oe','æ'=>'ae',
+    ]);
     // Remplacer tout ce qui n'est pas alphanumérique ou tiret par un tiret
     $slug = preg_replace('/[^a-z0-9-]+/', '-', $slug);
     return trim($slug, '-');
