@@ -124,12 +124,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ---------- Active nav link based on current page ----------
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPage = window.location.pathname.split('/').pop() || 'index.php';
     navLinks.forEach(link => {
         const linkPage = link.getAttribute('href');
         if (linkPage === currentPage ||
-            (currentPage === '' && linkPage === 'index.html') ||
-            (currentPage === 'index.html' && linkPage === 'index.html')) {
+            (currentPage === '' && linkPage === 'index.php') ||
+            (currentPage === 'index.php' && linkPage === 'index.php')) {
             link.classList.add('nav__link--active');
         }
     });

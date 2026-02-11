@@ -39,7 +39,8 @@
 
             <div class="footer__bottom">
                 <p>&copy; <?= date('Y') ?> Kannagara Aïkido Club de Guyancourt. Tous droits réservés. | <a href="mentions-legales.php">Mentions légales</a></p>
-                <span class="footer__ffab">Affilié à la Fédération Française d'Aïkido et de Budo</span>
+                <span class="footer__ffab">Affilié à la Fédération Française d'Aïkido et de Budo — Club n° 11478010</span>
+                <span class="footer__ffab">Agrément ministériel Jeunesse et Sports</span>
             </div>
         </div>
     </footer>

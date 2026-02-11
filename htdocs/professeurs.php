@@ -1,3 +1,47 @@
+<?php
+require_once 'includes/markdown.php';
+
+// Charger toutes les fiches .md
+$fiches_dir = __DIR__ . '/professeurs/fiches';
+$fichiers = glob($fiches_dir . '/*.md');
+sort($fichiers);
+
+$fiches = [];
+foreach ($fichiers as $fichier) {
+    $fiche = parse_fiche($fichier);
+    if ($fiche) $fiches[] = $fiche;
+}
+
+// Générer les données pour les meta tags
+$noms = array_map(fn($f) => $f['meta']['name'] ?? '', $fiches);
+$noms_grades = array_map(fn($f) => ($f['meta']['name'] ?? '') . ' (' . ($f['meta']['grade'] ?? '') . ')', $fiches);
+$nb = count($fiches);
+
+$meta_description = "L'équipe enseignante du club Kannagara : " . implode(', ', $noms_grades) . '.';
+$meta_keywords = implode(', ', $noms) . ', professeur aikido, DESJEPS, FFAB';
+$og_description = $nb . ' enseignants diplômés : ' . implode(', ', $noms_grades) . '.';
+
+// Générer le Schema.org
+$schema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'ItemList',
+    'name' => "Professeurs d'aïkido du club Kannagara",
+    'itemListElement' => [],
+];
+foreach ($fiches as $i => $fiche) {
+    $schema['itemListElement'][] = [
+        '@type' => 'Person',
+        'position' => $i + 1,
+        'name' => $fiche['meta']['name'] ?? '',
+        'jobTitle' => "Professeur d'aïkido",
+        'description' => ($fiche['meta']['grade'] ?? '') . '.',
+        'worksFor' => [
+            '@type' => 'Organization',
+            'name' => 'Kannagara Aïkido Club de Guyancourt',
+        ],
+    ];
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,8 +50,8 @@
 
     <!-- SEO Meta Tags -->
     <title>Nos Professeurs | Équipe d'enseignants diplômés - Kannagara Aïkido</title>
-    <meta name="description" content="L'équipe enseignante du club Kannagara : Jean-Marc Chamot (7e Dan, DESJEPS), Nacer Chekkaba (4e Dan), Thierry Montfort (4e Dan), Germain Chamot (4e Dan) et Sébastien Huet (1er Dan).">
-    <meta name="keywords" content="Jean-Marc Chamot, Nacer Chekkaba, Thierry Montfort, Germain Chamot, Sébastien Huet, professeur aikido, DESJEPS, FFAB">
+    <meta name="description" content="<?= htmlspecialchars($meta_description) ?>">
+    <meta name="keywords" content="<?= htmlspecialchars($meta_keywords) ?>">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/professeurs.html">
 
@@ -15,7 +59,7 @@
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://kannagara.fr/professeurs.html">
     <meta property="og:title" content="Équipe enseignante - Kannagara Aïkido Guyancourt">
-    <meta property="og:description" content="5 enseignants diplômés : Jean-Marc Chamot (7e Dan), Nacer Chekkaba, Thierry Montfort, Germain Chamot et Sébastien Huet.">
+    <meta property="og:description" content="<?= htmlspecialchars($og_description) ?>">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
@@ -27,68 +71,8 @@
 
     <!-- Schema.org -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "Professeurs d'aïkido du club Kannagara",
-        "itemListElement": [
-            {
-                "@type": "Person",
-                "position": 1,
-                "name": "Jean-Marc Chamot",
-                "jobTitle": "Professeur d'aïkido",
-                "description": "7ème Dan Aïkido - 4e Dan Iaïdo.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Kannagara Aïkido Club de Guyancourt"
-                }
-            },
-            {
-                "@type": "Person",
-                "position": 2,
-                "name": "Nacer Chekkaba",
-                "jobTitle": "Professeur d'aïkido",
-                "description": "4ème Dan Aïkido FFAB.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Kannagara Aïkido Club de Guyancourt"
-                }
-            },
-            {
-                "@type": "Person",
-                "position": 3,
-                "name": "Thierry Montfort",
-                "jobTitle": "Professeur d'aïkido",
-                "description": "4ème Dan Aïkido FFAB.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Kannagara Aïkido Club de Guyancourt"
-                }
-            },
-            {
-                "@type": "Person",
-                "position": 4,
-                "name": "Germain Chamot",
-                "jobTitle": "Professeur d'aïkido",
-                "description": "4ème Dan Aïkido Kishinkai.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Kannagara Aïkido Club de Guyancourt"
-                }
-            },
-            {
-                "@type": "Person",
-                "position": 5,
-                "name": "Sébastien Huet",
-                "jobTitle": "Professeur d'aïkido",
-                "description": "1er Dan Aïkido FFAB.",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Kannagara Aïkido Club de Guyancourt"
-                }
-            }
-        ]
-    }
+    <?= json_encode($schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?>
+
     </script>
 </head>
 <body>
@@ -122,121 +106,67 @@
 
             </div>
 
-            <!-- Jean-Marc Chamot -->
-            <div id="jean-marc-chamot" class="section section--alt" style="margin: var(--spacing-xl) calc(-50vw + 50%); padding: var(--spacing-xl) calc(50vw - 50%);">
-                <div style="max-width: 900px; margin: 0 auto;">
-                    <div class="team-grid" style="grid-template-columns: 250px 1fr; align-items: start;">
-                        
-                        <div class="team-member" style="text-align: center;">
-                            <img src="professeurs/fiches/01-jean-marc-chamot.jpg" alt="Jean-Marc Chamot" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;">
-                        </div>
-                        <div>
-                            <h2 style="margin-top: 0;">Jean-Marc Chamot</h2>
+            <?php
+            foreach ($fiches as $index => $fiche):
+                $meta = $fiche['meta'];
+                $name = $meta['name'] ?? '';
+                $slug = slugify($name);
+                $grade = $meta['grade'] ?? '';
+                $diplome = $meta['diplome'] ?? '';
+                $fonction = $meta['fonction'] ?? '';
+                $photo = $meta['photo'] ?? '';
+                $body_html = markdown_to_html($fiche['body']);
+
+                $photo_left = ($index % 2 === 0);
+                $is_alt = ($index % 2 === 0);
+
+                // Bloc photo
+                $photo_block = '<div class="team-member" style="text-align: center;">
+                            <img src="professeurs/fiches/' . htmlspecialchars($photo) . '" alt="' . htmlspecialchars($name) . '" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;">
+                        </div>';
+
+                // Bloc texte
+                $text_block = '<div>
+                            <h2 style="margin-top: 0;">' . htmlspecialchars($name) . '</h2>
                             <p class="team-member__grade" style="font-size: 1.25rem; margin-bottom: var(--spacing-md);">
-                                7ème Dan Aïkido - 4e Dan Iaïdo
+                                ' . htmlspecialchars($grade) . '
                             </p>
-                            <p><strong>Diplôme</strong> : DESJEPS (Diplôme d'État Supérieur de la Jeunesse, de l'Éducation Populaire et du Sport)</p>
-                            <p><strong>Fonction fédérale</strong> : Cadre technique FFAB</p>
-                            <h3>Parcours</h3>
-                            <p>Jean-Marc débute l'Aïkido au début des années 70, à l'âge de 17 ans, au sein du groupe d'<strong>André Nocquet</strong>, premier uchi-deshi (élève interne) étranger de Ueshiba Moriheï, fondateur de l'Aïkido. Très rapidement cette discipline martiale devient sa passion et sa route croise alors celles de nombreuses personnalités de l'Aïkido comme les maîtres <strong>Tohei Koichi</strong>, <strong>Tada Hiroshi</strong>, <strong>Yamaguchi Seigo</strong>, <strong>Nakazano Mutsuharu</strong>, <strong>Noro Masamichi</strong>, <strong>Yamada Yoshimitsu</strong>.</p>
-<p>Dès sa première année de pratique il commence à suivre assidûment l'enseignement de <strong>Tamura Nobuyoshi</strong> – qui devient sa référence – ainsi que celui de <strong>Sugano Seichi</strong> dont il assure l'interprétariat en France pendant les neuf années que celui-ci passe en Europe. Lors de visites au Japon il fait également connaissance des maîtres de l'Aïkikaï, et s'entraîne à Iwama, dans le dojo de <strong>Saïto Morihiro</strong>.</p>
-<p>Parallèlement à l'Aïkido, Jean-Marc a pratiqué le Judo, le Karaté, le Jodo pendant plusieurs années. Il étudie et enseigne également le <strong>Iaïdo Shindo Muso Ryu</strong> depuis la fin des années 70.</p>
-<p>Pendant les années 80, il passe avec succès le 1er degré du brevet d'éducateur sportif puis le 2nd degré pour lequel il est major de promotion. Depuis près de 40 ans, il dirige des stages tant en France qu'à l'étranger et a participé à la formation de très nombreux pratiquants et enseignants.</p>
-<p>Ce qu'il aime retrouver sur le tatami, c'est cette sensation de fraternité et de plaisir dans l'effort que l'on rencontre dans un dojo et il s'efforce d'y contribuer par son sérieux comme par sa bonne humeur.</p>
-                        </div>
+                            <p><strong>Diplôme</strong> : ' . htmlspecialchars($diplome) . '</p>'
+                            . ($fonction ? '<p><strong>Fonction fédérale</strong> : ' . htmlspecialchars($fonction) . '</p>' : '');
+
+                if ($body_html) {
+                    $text_block .= '<h3>Parcours</h3>' . "\n" . $body_html;
+                }
+
+                $text_block .= '</div>';
+
+                // Colonnes selon la position de la photo
+                if ($photo_left) {
+                    $grid_cols = '250px 1fr';
+                    $grid_content = $photo_block . "\n" . $text_block;
+                } else {
+                    $grid_cols = '1fr 250px';
+                    $grid_content = $text_block . "\n" . $photo_block;
+                }
+            ?>
+
+            <?php if ($is_alt): ?>
+            <div id="<?= htmlspecialchars($slug) ?>" class="section section--alt" style="margin: var(--spacing-xl) calc(-50vw + 50%); padding: var(--spacing-xl) calc(50vw - 50%);">
+                <div style="max-width: 900px; margin: 0 auto;">
+                    <div class="team-grid" style="grid-template-columns: <?= $grid_cols ?>; align-items: start;">
+                        <?= $grid_content ?>
                     </div>
                 </div>
             </div>
-
-            <!-- Nacer Chekkaba -->
-            <div id="nacer-chekkaba" style="max-width: 900px; margin: var(--spacing-xl) auto;">
-                <div class="team-grid" style="grid-template-columns: 1fr 250px; align-items: start;">
-                    
-                        <div>
-                            <h2 style="margin-top: 0;">Nacer Chekkaba</h2>
-                            <p class="team-member__grade" style="font-size: 1.25rem; margin-bottom: var(--spacing-md);">
-                                4ème Dan Aïkido FFAB
-                            </p>
-                            <p><strong>Diplôme</strong> : BE1</p>
-                            
-                            <h3>Parcours</h3>
-                            <p>Enseignant expérimenté, Nacer apporte sa maîtrise technique et son approche pédagogique aux cours du club. Sa pratique régulière et son investissement dans la vie du club en font un pilier de l'équipe enseignante.</p>
-<p>Formé dans la tradition FFAB, il transmet un aïkido rigoureux tout en restant attentif à l'évolution de chaque pratiquant.</p>
-                        </div>
-                        <div class="team-member" style="text-align: center;">
-                            <img src="professeurs/fiches/02-nacer-chekkaba.jpg" alt="Nacer Chekkaba" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;">
-                        </div>
+            <?php else: ?>
+            <div id="<?= htmlspecialchars($slug) ?>" style="max-width: 900px; margin: var(--spacing-xl) auto;">
+                <div class="team-grid" style="grid-template-columns: <?= $grid_cols ?>; align-items: start;">
+                    <?= $grid_content ?>
                 </div>
             </div>
+            <?php endif; ?>
 
-            <!-- Thierry Montfort -->
-            <div id="thierry-montfort" class="section section--alt" style="margin: var(--spacing-xl) calc(-50vw + 50%); padding: var(--spacing-xl) calc(50vw - 50%);">
-                <div style="max-width: 900px; margin: 0 auto;">
-                    <div class="team-grid" style="grid-template-columns: 250px 1fr; align-items: start;">
-                        
-                        <div class="team-member" style="text-align: center;">
-                            <img src="professeurs/fiches/03-thierry-montfort.jpg" alt="Thierry Montfort" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;">
-                        </div>
-                        <div>
-                            <h2 style="margin-top: 0;">Thierry Montfort</h2>
-                            <p class="team-member__grade" style="font-size: 1.25rem; margin-bottom: var(--spacing-md);">
-                                4ème Dan Aïkido FFAB
-                            </p>
-                            <p><strong>Diplôme</strong> : BE1</p>
-                            
-                            <h3>Parcours</h3>
-                            <p>Pratiquant de longue date, Thierry contribue à l'enseignement avec rigueur et passion pour la discipline. Son expérience lui permet d'accompagner aussi bien les débutants que les pratiquants confirmés.</p>
-<p>Son engagement au sein du club et sa disponibilité en font un enseignant apprécié de tous les membres.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Germain Chamot -->
-            <div id="germain-chamot" style="max-width: 900px; margin: var(--spacing-xl) auto;">
-                <div class="team-grid" style="grid-template-columns: 1fr 250px; align-items: start;">
-                    
-                        <div>
-                            <h2 style="margin-top: 0;">Germain Chamot</h2>
-                            <p class="team-member__grade" style="font-size: 1.25rem; margin-bottom: var(--spacing-md);">
-                                4ème Dan Aïkido Kishinkai
-                            </p>
-                            <p><strong>Diplôme</strong> : Brevet Fédéral FFAB</p>
-                            
-                            <h3>Parcours</h3>
-                            <p>Germain débute les arts martiaux dès l'enfance par le judo, puis est initié à l'aïkido par son père, <strong>Jean-Marc Chamot</strong> (7ème Dan). Il pratiquera ensuite de nombreuses années avec <strong>Léo Tamaki</strong>, fondateur de l'école <strong>Kishinkai</strong>, et étudie également sous la direction de <strong>Maître Kuroda</strong>.</p>
-<p>Il a été <strong>Rédacteur en chef</strong> de <strong>Dragon Magazine Spécial Aïkido</strong>. Ce rôle lui a permis d'échanger avec de nombreux experts de haut niveau. Il contribue également au magazine <strong>Aikido Journal</strong>.</p>
-<p>Au-delà de l'aïkido, Germain est <strong>praticien de Shiatsu certifié FFST</strong> et a étudié le <strong>Yoga</strong>. Il considère ces disciplines non pas comme des fins en elles-mêmes, mais comme des moyens d'explorer le potentiel humain.</p>
-<p>Cette diversité d'approches et cette double filiation <strong>FFAB</strong> / <strong>Kishinkai</strong> enrichissent la pratique de l'ensemble des membres du club Kannagara.</p>
-                        </div>
-                        <div class="team-member" style="text-align: center;">
-                            <img src="professeurs/fiches/04-germain-chamot.jpg" alt="Germain Chamot" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;">
-                        </div>
-                </div>
-            </div>
-
-            <!-- Sébastien Huet -->
-            <div id="sebastien-huet" class="section section--alt" style="margin: var(--spacing-xl) calc(-50vw + 50%); padding: var(--spacing-xl) calc(50vw - 50%);">
-                <div style="max-width: 900px; margin: 0 auto;">
-                    <div class="team-grid" style="grid-template-columns: 250px 1fr; align-items: start;">
-                        
-                        <div class="team-member" style="text-align: center;">
-                            <img src="professeurs/fiches/05-sebastien-huet.jpg" alt="Sébastien Huet" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;">
-                        </div>
-                        <div>
-                            <h2 style="margin-top: 0;">Sébastien Huet</h2>
-                            <p class="team-member__grade" style="font-size: 1.25rem; margin-bottom: var(--spacing-md);">
-                                1er Dan Aïkido FFAB
-                            </p>
-                            <p><strong>Diplôme</strong> : Brevet Fédéral FFAB</p>
-                            
-                            <h3>Parcours</h3>
-                            <p>Sébastien anime les séances d'initiation _"Découvrir avant de s'inscrire"_, permettant aux personnes intéressées de faire leurs premiers pas sur le tatami dans un cadre adapté et bienveillant.</p>
-<p>Son approche pédagogique et sa patience en font l'interlocuteur idéal pour accueillir les nouveaux pratiquants et leur faire découvrir les bases de l'aïkido.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
 
             <!-- Approche pédagogique -->
             <div class="content" style="max-width: 900px; margin: 0 auto;">

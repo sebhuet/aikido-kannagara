@@ -454,7 +454,7 @@
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer__content">
-                                <p>Les cours ont lieu au <a href="https://maps.google.com/?q=Gymnase+Maurice+Baquet+Guyancourt" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a> :</p>
+                                <p>Les cours ont lieu au <a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a> :</p>
                                 <ul>
                                     <li><strong>Enfants (7 ans et +)</strong> : Lundi et jeudi, 18h30 - 19h30</li>
                                     <li><strong>Adultes</strong> : Lundi et jeudi, 19h30 - 21h30</li>
@@ -469,7 +469,7 @@
                         <div class="faq-answer">
                             <div class="faq-answer__content">
                                 <p>
-                                    Le club est situé au <strong><a href="https://maps.google.com/?q=Gymnase+Maurice+Baquet+Guyancourt" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>,
+                                    Le club est situé au <strong><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>,
                                     Mail des Graviers, 78280 Guyancourt. Un plan d'accès détaillé est disponible
                                     sur notre <a href="contact.php">page contact</a>.
                                 </p>

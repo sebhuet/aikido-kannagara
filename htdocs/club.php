@@ -109,7 +109,7 @@
 
                 <h2>Notre dojo</h2>
                 <p>
-                    Nous pratiquons au <strong><a href="https://maps.google.com/?q=Gymnase+Maurice+Baquet+Guyancourt" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>, situé Mail des Graviers à Guyancourt.
+                    Nous pratiquons au <strong><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>, situé Mail des Graviers à Guyancourt.
                     Notre dojo dispose d'un tatami de qualité et d'un espace suffisant pour accueillir
                     confortablement tous nos pratiquants.
                 </p>
@@ -117,7 +117,7 @@
                 <div class="info-box">
                     <h4 class="info-box__title">Adresse du dojo</h4>
                     <p>
-                        <strong><a href="https://maps.google.com/?q=Gymnase+Maurice+Baquet+Guyancourt" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong><br>
+                        <strong><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong><br>
                         Mail des Graviers<br>
                         78280 Guyancourt
                     </p>
@@ -218,7 +218,7 @@
                         <h3 class="card__title">Ville de Guyancourt</h3>
                         <p class="card__text">
                             La mairie de Guyancourt nous met à disposition le
-                            <strong><a href="https://maps.google.com/?q=Gymnase+Maurice+Baquet+Guyancourt" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong> pour nos entraînements
+                            <strong><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong> pour nos entraînements
                             et soutient la vie associative locale.
                         </p>
                         <a href="https://www.ville-guyancourt.fr" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Visiter</a>

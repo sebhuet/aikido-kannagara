@@ -210,7 +210,7 @@
                     Participation : <strong>10€/cours</strong> pour les pratiquants extérieurs au club.
                 </p>
                 <p style="margin-bottom: 0;">
-                    📍 <a href="https://maps.google.com/?q=Gymnase+Maurice+Baquet+Guyancourt" target="_blank" rel="noopener" style="color: #FFD700;">Gymnase Maurice Baquet</a>, Mail des Graviers, 78280 Guyancourt
+                    📍 <a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" style="color: #FFD700;">Gymnase Maurice Baquet</a>, Mail des Graviers, 78280 Guyancourt
                 </p>
             </div>
 
