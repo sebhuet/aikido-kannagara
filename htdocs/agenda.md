@@ -54,19 +54,19 @@ Chaque cours est défini par :
 
 ## Semaine du 23/02/2026
 
-### Lundi 23/02
+### Mardi 24/02 - Gymnase de l'aviation
 
-- **18h30-19h30** | Enfants | Thierry Montfort
+- **18h30-19h30** | Enfants | Pas de cours
 - **19h30-21h30** | Adultes | Thierry Montfort
 
 ### Jeudi 26/02
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
 
 ## Semaine du 02/03/2026 - Vacances Scolaire
 
-### Mardi 03/03
+### Mardi 03/03 - Gymnase de l'aviation
 
 - **18h30-19h30** | Enfants | Pas de cours
 - **19h30-21h30** | Adultes | Sébastien Huet
@@ -78,12 +78,12 @@ Chaque cours est défini par :
 
 ## Semaine du 09/03/2026 - Vacances Scolaire
 
-### Mardi 10/03
+### Lundi 09/03
 
-- **18h30-19h30** | Enfants | Pas de cours
-- **19h30-21h30** | Adultes | Sébastien Huet
+- **18h30-19h30** | Enfants | Jean-Marc Chamot
+- **19h30-21h30** | Adultes | Jean-Marc Chamot
 
 ### Jeudi 12/03
 
-- **18h30-19h30** | Enfants | Pas de cours
+- **18h30-19h30** | Enfants | Sébastien Huet
 - **19h30-21h30** | Adultes | Sébastien Huet

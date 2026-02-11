@@ -215,21 +215,7 @@
             </div>
 
             <!-- Horaires réguliers résumé -->
-            <div style="background: white; padding: var(--spacing-lg); border-radius: 8px; margin-bottom: var(--spacing-xl); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
-                <h3 style="margin-top: 0; text-align: center; color: var(--color-primary);">Horaires hebdomadaires</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-md); text-align: center;">
-                    <div>
-                        <strong style="color: var(--color-accent);">Lundi</strong><br>
-                        <span style="font-size: 0.9rem;">Enfants : 18h30-19h30</span><br>
-                        <span style="font-size: 0.9rem;">Adultes : 19h30-21h30</span>
-                    </div>
-                    <div>
-                        <strong style="color: var(--color-accent);">Jeudi</strong><br>
-                        <span style="font-size: 0.9rem;">Enfants : 18h30-19h30</span><br>
-                        <span style="font-size: 0.9rem;">Adultes : 19h30-21h30</span>
-                    </div>
-                </div>
-            </div>
+            <?php include 'includes/horaires.php'; ?>
         </div>
     </section>
 

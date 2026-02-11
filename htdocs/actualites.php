@@ -393,10 +393,7 @@
                         Les cours reprennent chaque année début septembre et se poursuivent
                         jusqu'à fin juin, hors vacances scolaires.
                     </p>
-                    <ul>
-                        <li><strong>Enfants :</strong> Lundi et jeudi de 18h30 à 19h30</li>
-                        <li><strong>Adultes :</strong> Lundi et jeudi de 19h30 à 21h30</li>
-                    </ul>
+                    <?php include 'includes/horaires.php'; ?>
                 </div>
 
                 <div class="info-box">

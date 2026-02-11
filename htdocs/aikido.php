@@ -362,8 +362,8 @@
 
                 <div class="info-box mt-3">
                     <h4 class="info-box__title">Les cours enfants au club Kannagara</h4>
+                    <?php include 'includes/horaires.php'; ?>
                     <p>
-                        <strong>Horaires :</strong> Lundi et jeudi de 18h30 à 19h30<br>
                         <strong>Âge :</strong> À partir de 7 ans<br>
                         <strong>Encadrement :</strong> Cours adaptés avec pédagogie ludique
                     </p>

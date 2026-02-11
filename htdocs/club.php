@@ -124,31 +124,7 @@
                 </div>
 
                 <h2>Horaires des cours</h2>
-                <div class="schedule mt-2">
-                    <div class="schedule__item">
-                        <div class="schedule__day">Lundi</div>
-                        <div class="schedule__group">Enfants</div>
-                        <div class="schedule__time">18h30 - 19h30</div>
-                    </div>
-
-                    <div class="schedule__item">
-                        <div class="schedule__day">Lundi</div>
-                        <div class="schedule__group">Adultes</div>
-                        <div class="schedule__time">19h30 - 21h30</div>
-                    </div>
-
-                    <div class="schedule__item">
-                        <div class="schedule__day">Jeudi</div>
-                        <div class="schedule__group">Enfants</div>
-                        <div class="schedule__time">18h30 - 19h30</div>
-                    </div>
-
-                    <div class="schedule__item">
-                        <div class="schedule__day">Jeudi</div>
-                        <div class="schedule__group">Adultes</div>
-                        <div class="schedule__time">19h30 - 21h30</div>
-                    </div>
-                </div>
+                <?php include 'includes/horaires.php'; ?>
 
                 <h2>Vie du club</h2>
                 <p>

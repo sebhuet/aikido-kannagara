@@ -178,29 +178,7 @@
                 <p class="section__subtitle"><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet, Mail des Graviers, Guyancourt <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></p>
             </div>
 
-            <div class="schedule-table-wrapper">
-            <table class="schedule-table fade-in">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Enfants</th>
-                        <th>Adultes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="schedule-table__day">Lundi</td>
-                        <td>18h30 - 19h30</td>
-                        <td>19h30 - 21h30</td>
-                    </tr>
-                    <tr>
-                        <td class="schedule-table__day">Jeudi</td>
-                        <td>18h30 - 19h30</td>
-                        <td>19h30 - 21h30</td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
+            <?php include 'includes/horaires.php'; ?>
 
             <div class="text-center mt-3">
                 <a href="inscription.php" class="btn btn--outline">Nous rejoindre</a>

@@ -109,8 +109,7 @@
                         </div>
                         <div>
                             <h4>Horaires des cours</h4>
-                            <p><strong>Enfants :</strong> Lundi et jeudi, 18h30 - 19h30</p>
-                            <p><strong>Adultes :</strong> Lundi et jeudi, 19h30 - 21h30</p>
+                            <?php include 'includes/horaires.php'; ?>
                         </div>
                     </div>
 
