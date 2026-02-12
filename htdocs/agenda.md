@@ -52,9 +52,9 @@ Chaque cours est défini par :
 - **18h30-19h30** | Enfants | Nacer Chekkaba
 - **19h30-21h30** | Adultes | Nacer Chekkaba
 
-## Semaine du 23/02/2026 - Vacances Scolaires
+## Semaine du 23/02/2026 - Vacances Scolaires - Gymnase de l'aviation
 
-### Mardi 24/02 - Gymnase de l'aviation
+### Mardi 24/02
 
 - **18h30-19h30** | Enfants | Pas de cours
 - **19h30-21h30** | Adultes | Thierry Montfort
@@ -64,9 +64,9 @@ Chaque cours est défini par :
 - **18h30-19h30** | Enfants | Pas de cours
 - **19h30-21h30** | Adultes | Sébastien Huet
 
-## Semaine du 02/03/2026 - Vacances Scolaires
+## Semaine du 02/03/2026 - Vacances Scolaires - Gymnase de l'aviation
 
-### Mardi 03/03 - Gymnase de l'aviation
+### Mardi 03/03
 
 - **18h30-19h30** | Enfants | Pas de cours
 - **19h30-21h30** | Adultes | Sébastien Huet
