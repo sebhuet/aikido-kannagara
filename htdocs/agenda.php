@@ -371,10 +371,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="agenda-day-cell" rowspan="2">Lundi 23/02</td>
+                        <td class="agenda-day-cell" rowspan="2">Mardi 24/02 - Gymnase de l'aviation</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.php#thierry-montfort" class="teacher-link">Thierry Montfort</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#pas-de-cours" class="teacher-link">Pas de cours</a></td>
                     </tr>
                     <tr>
                         
@@ -386,13 +386,13 @@
                         <td class="agenda-day-cell" rowspan="2">Jeudi 26/02</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.php#a-confirmer" class="teacher-link">À confirmer</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#pas-de-cours" class="teacher-link">Pas de cours</a></td>
                     </tr>
                     <tr>
                         
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.php#a-confirmer" class="teacher-link">À confirmer</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -412,7 +412,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="agenda-day-cell" rowspan="2">Mardi 03/03</td>
+                        <td class="agenda-day-cell" rowspan="2">Mardi 03/03 - Gymnase de l'aviation</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
                         <td class="agenda-teachers-cell"><a href="professeurs.php#pas-de-cours" class="teacher-link">Pas de cours</a></td>
@@ -453,22 +453,22 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="agenda-day-cell" rowspan="2">Mardi 10/03</td>
+                        <td class="agenda-day-cell" rowspan="2">Lundi 09/03</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.php#pas-de-cours" class="teacher-link">Pas de cours</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#jean-marc-chamot" class="teacher-link">Jean-Marc Chamot</a></td>
                     </tr>
                     <tr>
                         
                         <td class="agenda-time-cell">19h30-21h30</td>
                         <td class="agenda-type-cell">Adultes</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#jean-marc-chamot" class="teacher-link">Jean-Marc Chamot</a></td>
                     </tr>
                     <tr>
                         <td class="agenda-day-cell" rowspan="2">Jeudi 12/03</td>
                         <td class="agenda-time-cell">18h30-19h30</td>
                         <td class="agenda-type-cell">Enfants</td>
-                        <td class="agenda-teachers-cell"><a href="professeurs.php#pas-de-cours" class="teacher-link">Pas de cours</a></td>
+                        <td class="agenda-teachers-cell"><a href="professeurs.php#sebastien-huet" class="teacher-link">Sébastien Huet</a></td>
                     </tr>
                     <tr>
                         
