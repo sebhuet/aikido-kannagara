@@ -5,6 +5,10 @@ echo "=== Build du site ==="
 node build-all.js
 
 echo ""
+echo "=== Push vers GitHub ==="
+git push origin master
+
+echo ""
 echo "=== Push vers Gandi ==="
 git push gandi master
 
