@@ -31,3 +31,10 @@ package-lock.json
 .env
 .env.local
 .env.*.local
+
+# WhatsApp Baileys (session + messages)
+tools/auth_state/
+tools/whatsapp_messages.txt
+
+# Backups agenda
+htdocs/agenda.*.bak.md
