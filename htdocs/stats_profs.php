@@ -32,7 +32,7 @@
             border-bottom: 1px solid var(--color-border);
         }
 
-        .stats-table td:last-child {
+        .stats-table td:nth-child(5) {
             text-align: left;
         }
 
@@ -101,11 +101,21 @@ require_once 'includes/agenda-parser.php';
 $weeks = parse_agenda(__DIR__ . '/agenda.md');
 
 // Compteurs par professeur
-$stats = []; // nom => ['jours' => N, 'enfants' => N, 'adultes' => N, 'stages' => N]
-$totalDays = 0;
+$stats = []; // nom => ['jours' => N, 'enfants' => N, 'adultes' => N, 'prochain' => null]
+$today = date('Y-m-d');
 
 foreach ($weeks as $week) {
+    // Extraire l'année depuis le titre de la semaine (format JJ/MM/YYYY)
+    preg_match('/(\d{2})\/(\d{2})\/(\d{4})/', $week['title'], $wm);
+    $weekYear = $wm ? $wm[3] : date('Y');
+
     foreach ($week['days'] as $day) {
+        // Extraire la date du jour (format "Lundi 16/03")
+        $dayDate = null;
+        if (preg_match('/(\d{2})\/(\d{2})$/', $day['name'], $dm)) {
+            $dayDate = $weekYear . '-' . $dm[2] . '-' . $dm[1];
+        }
+
         // Collecter les profs de ce jour (pour compter les jours uniques)
         $profsThisDay = [];
 
@@ -132,7 +142,7 @@ foreach ($weeks as $week) {
                 if ($name === '') continue;
 
                 if (!isset($stats[$name])) {
-                    $stats[$name] = ['jours' => 0, 'enfants' => 0, 'adultes' => 0];
+                    $stats[$name] = ['jours' => 0, 'enfants' => 0, 'adultes' => 0, 'prochain' => null];
                 }
 
                 // Compter par type de cours
@@ -143,15 +153,17 @@ foreach ($weeks as $week) {
                 }
 
                 $profsThisDay[$name] = true;
+
+                // Prochain cours >= aujourd'hui
+                if ($dayDate && $dayDate >= $today && $stats[$name]['prochain'] === null) {
+                    $stats[$name]['prochain'] = $dayDate;
+                }
             }
         }
 
         // Incrémenter le compteur de jours pour chaque prof présent ce jour
         foreach (array_keys($profsThisDay) as $name) {
             $stats[$name]['jours']++;
-        }
-        if (!empty($profsThisDay)) {
-            $totalDays++;
         }
     }
 }
@@ -176,6 +188,7 @@ foreach ($stats as $s) {
                             <th>Enfants</th>
                             <th>Adultes</th>
                             <th>Répartition</th>
+                            <th>Prochain cours</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -196,6 +209,14 @@ foreach ($stats as $name => $s):
                             <td><?= $s['enfants'] ?></td>
                             <td><?= $s['adultes'] ?></td>
                             <td><span class="stats-bar" style="width: <?= $barWidth ?>px;"></span></td>
+                            <td><?php
+                                if ($s['prochain']) {
+                                    $d = DateTime::createFromFormat('Y-m-d', $s['prochain']);
+                                    echo $d ? $d->format('d/m/Y') : '-';
+                                } else {
+                                    echo '-';
+                                }
+                            ?></td>
                         </tr>
 <?php endforeach; ?>
                         <tr class="total-row">
@@ -203,6 +224,7 @@ foreach ($stats as $name => $s):
                             <td><?= $totalJours ?></td>
                             <td><?= $totalEnfants ?></td>
                             <td><?= $totalAdultes ?></td>
+                            <td></td>
                             <td></td>
                         </tr>
                     </tbody>
