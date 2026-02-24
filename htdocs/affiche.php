@@ -71,9 +71,21 @@
             transition: border-color 0.3s ease;
         }
 
-        .form-group input:focus {
+        .form-group input:focus,
+        .form-group textarea:focus {
             outline: none;
             border-color: var(--color-accent);
+        }
+
+        .form-group textarea {
+            width: 100%;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            resize: vertical;
         }
 
         .form-row {
@@ -157,24 +169,24 @@
         }
 
         .affiche-text--infos .ouvert {
-            font-size: 20px;
+            font-size: 26px;
             font-weight: bold;
             color: #000;
             margin-bottom: 15px;
         }
 
         .affiche-text--infos .lieu {
-            font-size: 18px;
+            font-size: 28px;
             color: #000;
             line-height: 1.5;
         }
 
         .affiche-text--infos .lieu strong {
-            font-size: 20px;
+            font-size: 30px;
         }
 
         .affiche-text--infos .tarifs {
-            font-size: 17px;
+            font-size: 26px;
             color: #000;
             margin-top: 15px;
             line-height: 1.6;
@@ -280,7 +292,8 @@
                     </div>
                     <div class="form-group">
                         <label for="adresse">Adresse</label>
-                        <input type="text" id="adresse" value="Mail des Graviers, 78280 Guyancourt">
+                        <textarea id="adresse" rows="3">Mail des Graviers
+78280 Guyancourt</textarea>
                     </div>
 
                     <h3>Tarifs</h3>
@@ -364,7 +377,7 @@
         }
 
         // Écouter tous les champs
-        var fields = document.querySelectorAll('.affiche-form input');
+        var fields = document.querySelectorAll('.affiche-form input, .affiche-form textarea');
         fields.forEach(function(field) {
             field.addEventListener('input', updatePreview);
         });
@@ -460,7 +473,7 @@
                 infosHTML += '<strong>Lieu :</strong> ';
                 if (lieu) infosHTML += esc(lieu);
                 if (lieu && adresse) infosHTML += '<br>';
-                if (adresse) infosHTML += esc(adresse);
+                if (adresse) infosHTML += adresse.split('\n').map(function(l) { return esc(l); }).join('<br>');
                 infosHTML += '</div>';
             }
 
