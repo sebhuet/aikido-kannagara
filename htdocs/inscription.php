@@ -390,16 +390,11 @@
                 </div>
                 <?php endif; ?>
 
-                <?php if (isset($_GET['erreur'])): ?>
-                <div class="info-box" style="background: #fbe9e7; border-left: 4px solid #e53935;">
-                    <p style="margin: 0; color: #c62828;">
-                        <strong>Erreur :</strong>
-                        <?= htmlspecialchars($_GET['erreur']) ?>
-                    </p>
-                </div>
-                <?php endif; ?>
-
-                <form class="mt-3" action="send-preinscription.php" method="POST" style="background: var(--color-bg-alt); padding: var(--spacing-xl); border-radius: 8px;">
+                <form class="mt-3" action="https://api.web3forms.com/submit" method="POST" style="background: var(--color-bg-alt); padding: var(--spacing-xl); border-radius: 8px;">
+                    <input type="hidden" name="access_key" value="ebb9e2e7-db3b-468a-af9a-26b88981b40d">
+                    <input type="hidden" name="subject" value="Nouvelle pré-inscription Kannagara">
+                    <input type="hidden" name="from_name" value="Site kannagara.fr">
+                    <input type="hidden" name="redirect" value="https://kannagara.fr/inscription.php?merci=1#preinscription">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nom">Nom *</label>
