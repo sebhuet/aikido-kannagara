@@ -7,7 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Kannagara Aïkido Club de Guyancourt | Cours d'aïkido pour tous</title>
     <meta name="description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Cours pour enfants et adultes avec Jean-Marc Chamot (7e Dan). Gymnase Maurice Baquet, lundi et jeudi.">
-    <meta name="keywords" content="aïkido, aikido, Guyancourt, arts martiaux, FFAB, Jean-Marc Chamot, dojo, Yvelines, 78, cours aïkido">
+    <meta name="keywords" content="aïkido, aikido, Guyancourt, Saint-Quentin-en-Yvelines, Montigny-le-Bretonneux, Versailles, arts martiaux, FFAB, Jean-Marc Chamot, dojo, Yvelines, 78, cours aïkido">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/">
@@ -92,6 +92,18 @@
             "name": "Fédération Française d'Aïkido et de Budo",
             "alternateName": "FFAB"
         },
+        "areaServed": [
+            {"@type": "City", "name": "Guyancourt"},
+            {"@type": "City", "name": "Montigny-le-Bretonneux"},
+            {"@type": "City", "name": "Voisins-le-Bretonneux"},
+            {"@type": "City", "name": "Élancourt"},
+            {"@type": "City", "name": "Trappes"},
+            {"@type": "City", "name": "La Verrière"},
+            {"@type": "City", "name": "Buc"},
+            {"@type": "City", "name": "Vélizy-Villacoublay"},
+            {"@type": "City", "name": "Versailles"},
+            {"@type": "AdministrativeArea", "name": "Saint-Quentin-en-Yvelines"}
+        ],
         "sport": "Aïkido",
         "employee": [
             {
@@ -271,27 +283,27 @@
             <div class="teachers-carousel">
                 <div class="teachers-carousel__track">
                     <div class="team-member teachers-carousel__slide active">
-                        <img src="professeurs/fiches/01-jean-marc-chamot.jpg" alt="Jean-Marc Chamot" class="team-member__photo">
+                        <img src="professeurs/fiches/01-jean-marc-chamot.jpg" alt="Jean-Marc Chamot" class="team-member__photo" loading="lazy">
                         <h3 class="team-member__name">Jean-Marc Chamot</h3>
                         <p class="team-member__grade">7ème Dan Aïkido - 4e Dan Iaïdo</p>
                     </div>
                     <div class="team-member teachers-carousel__slide">
-                        <img src="professeurs/fiches/02-nacer-chekkaba.jpg" alt="Nacer Chekkaba" class="team-member__photo">
+                        <img src="professeurs/fiches/02-nacer-chekkaba.jpg" alt="Nacer Chekkaba" class="team-member__photo" loading="lazy">
                         <h3 class="team-member__name">Nacer Chekkaba</h3>
                         <p class="team-member__grade">4ème Dan Aïkido FFAB</p>
                     </div>
                     <div class="team-member teachers-carousel__slide">
-                        <img src="professeurs/fiches/03-thierry-montfort.jpg" alt="Thierry Montfort" class="team-member__photo">
+                        <img src="professeurs/fiches/03-thierry-montfort.jpg" alt="Thierry Montfort" class="team-member__photo" loading="lazy">
                         <h3 class="team-member__name">Thierry Montfort</h3>
                         <p class="team-member__grade">4ème Dan Aïkido FFAB</p>
                     </div>
                     <div class="team-member teachers-carousel__slide">
-                        <img src="professeurs/fiches/04-germain-chamot.jpg" alt="Germain Chamot" class="team-member__photo">
+                        <img src="professeurs/fiches/04-germain-chamot.jpg" alt="Germain Chamot" class="team-member__photo" loading="lazy">
                         <h3 class="team-member__name">Germain Chamot</h3>
                         <p class="team-member__grade">4ème Dan Aïkido Kishinkai</p>
                     </div>
                     <div class="team-member teachers-carousel__slide">
-                        <img src="professeurs/fiches/05-sebastien-huet.jpg" alt="Sébastien Huet" class="team-member__photo">
+                        <img src="professeurs/fiches/05-sebastien-huet.jpg" alt="Sébastien Huet" class="team-member__photo" loading="lazy">
                         <h3 class="team-member__name">Sébastien Huet</h3>
                         <p class="team-member__grade">1er Dan Aïkido FFAB</p>
                     </div>
@@ -319,7 +331,7 @@
             </div>
 
             <div class="team-member" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <img src="images/fanny-jacquemier.jpg" alt="Fanny Jacquemier" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;">
+                <img src="images/fanny-jacquemier.jpg" alt="Fanny Jacquemier" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;" loading="lazy">
                 <h3 class="team-member__name">Fanny Jacquemier</h3>
                 <p class="team-member__grade">Présidente du club</p>
                 <p style="margin-top: var(--spacing-sm);"><a href="tel:0676481601">06 76 48 16 01</a></p>
@@ -329,6 +341,10 @@
                 <p><strong>Email :</strong> <a href="mailto:aikido.kannagara.guyancourt@gmail.com">aikido.kannagara.guyancourt@gmail.com</a></p>
                 <p class="mt-2">
                     <strong>Lieu de pratique :</strong> <a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet, Mail des Graviers, Guyancourt <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a>
+                </p>
+                <p class="mt-1" style="font-size: 0.95em; color: var(--color-text-light);">
+                    Au cœur de Saint-Quentin-en-Yvelines, accessible depuis Montigny-le-Bretonneux,
+                    Voisins-le-Bretonneux, Élancourt, Trappes, La Verrière, Buc, Vélizy-Villacoublay et Versailles.
                 </p>
             </div>
 

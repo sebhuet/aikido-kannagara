@@ -9,6 +9,10 @@
     <meta name="description" content="Réponses aux questions fréquentes sur l'aïkido et le club Kannagara : équipement, inscription, cours d'essai, niveau requis, enfants, tarifs.">
     <meta name="keywords" content="FAQ aïkido, questions aïkido, débuter aïkido, équipement aïkido, inscription club aïkido, Guyancourt">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+    <meta name="geo.position" content="48.7678;2.0567">
+    <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/faq.html">
 
@@ -86,6 +90,14 @@
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "L'enseignement est dirigé par Jean-Marc Chamot, 7e Dan d'aïkido, 4e Dan d'iaïdo, titulaire du DESJEPS et cadre technique FFAB. Il pratique depuis le début des années 1970, formé auprès d'André Nocquet (premier uchi-deshi étranger du fondateur de l'aïkido) et de Maître Tamura Nobuyoshi. Il est accompagné de quatre enseignants diplômés."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Comment venir au club depuis les villes voisines ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le club est situé au Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt, au cœur de Saint-Quentin-en-Yvelines. Nous accueillons des pratiquants de toutes les communes environnantes : Montigny-le-Bretonneux, Voisins-le-Bretonneux, Élancourt, Trappes, La Verrière, Buc, Vélizy-Villacoublay, Versailles et au-delà."
                 }
             },
             {
@@ -485,6 +497,27 @@
                                     Le club est situé au <strong><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>,
                                     Mail des Graviers, 78280 Guyancourt. Un plan d'accès détaillé est disponible
                                     sur notre <a href="contact.php">page contact</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Comment venir au club depuis les villes voisines ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Le club est situé au <strong>Gymnase Maurice Baquet</strong>, Mail des Graviers,
+                                    78280 Guyancourt, au cœur de <strong>Saint-Quentin-en-Yvelines</strong>.
+                                    Nous accueillons des pratiquants de toutes les communes environnantes :
+                                    <strong>Montigny-le-Bretonneux</strong>, <strong>Voisins-le-Bretonneux</strong>,
+                                    <strong>Élancourt</strong>, <strong>Trappes</strong>, <strong>La Verrière</strong>,
+                                    <strong>Buc</strong>, <strong>Vélizy-Villacoublay</strong>,
+                                    <strong>Versailles</strong> et au-delà.
+                                </p>
+                                <p>
+                                    <a href="https://www.google.com/maps/dir/?api=1&destination=Gymnase+Maurice+Baquet,+Guyancourt" target="_blank" rel="noopener">Calculer mon itinéraire via Google Maps</a>.
                                 </p>
                             </div>
                         </div>

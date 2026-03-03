@@ -9,6 +9,10 @@
     <meta name="description" content="Lexique japonais de l'aïkido : termes techniques, vocabulaire du dojo, noms des techniques, comptage japonais. Guide complet pour les pratiquants.">
     <meta name="keywords" content="lexique aïkido, vocabulaire japonais, termes aïkido, techniques aïkido, dojo, seiza, rei, uke, tori">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+    <meta name="geo.position" content="48.7678;2.0567">
+    <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/lexique.html">
 
@@ -24,6 +28,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Lexique Japonais de l'Aïkido">
     <meta name="twitter:description" content="Vocabulaire japonais essentiel pour la pratique de l'aïkido : termes techniques, expressions du dojo.">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

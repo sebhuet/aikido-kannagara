@@ -27,6 +27,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Le Club Kannagara Aïkido">
     <meta name="twitter:description" content="Club d'aïkido à Guyancourt depuis 1990. Environ 50 membres, affilié FFAB.">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -62,7 +63,7 @@
                 <h2>Notre histoire</h2>
 
                 <div class="team-member" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                    <img src="images/noel-stella.jpg" alt="Noël Stella" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;">
+                    <img src="images/noel-stella.jpg" alt="Noël Stella" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;" loading="lazy">
                     <h3 class="team-member__name">Noël Stella</h3>
                     <p class="team-member__grade">Fondateur du club</p>
                 </div>
@@ -119,8 +120,10 @@
 
                 <h2>Notre dojo</h2>
                 <p>
-                    Nous pratiquons au <strong><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>, situé Mail des Graviers à Guyancourt.
-                    Notre dojo dispose d'un tatami de qualité et d'un espace suffisant pour accueillir
+                    Nous pratiquons au <strong><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>, situé Mail des Graviers à Guyancourt,
+                    au cœur de Saint-Quentin-en-Yvelines. Notre dojo, accessible depuis Montigny-le-Bretonneux,
+                    Voisins-le-Bretonneux, Élancourt, Versailles et les communes du sud des Yvelines,
+                    dispose d'un tatami de qualité et d'un espace suffisant pour accueillir
                     confortablement tous nos pratiquants.
                 </p>
 
@@ -154,13 +157,13 @@
 
                 <div style="display: flex; justify-content: center; gap: var(--spacing-xl); flex-wrap: wrap; margin: var(--spacing-lg) 0;">
                     <div class="team-member" style="text-align: center;">
-                        <img src="images/fanny-jacquemier.jpg" alt="Fanny Jacquemier" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;">
+                        <img src="images/fanny-jacquemier.jpg" alt="Fanny Jacquemier" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;" loading="lazy">
                         <h3 class="team-member__name">Fanny Jacquemier</h3>
                         <p class="team-member__grade">Présidente</p>
                         <p><a href="tel:0676481601">06 76 48 16 01</a></p>
                     </div>
                     <div class="team-member" style="text-align: center;">
-                        <img src="professeurs/fiches/05-sebastien-huet.jpg" alt="Sébastien Huet" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;">
+                        <img src="professeurs/fiches/05-sebastien-huet.jpg" alt="Sébastien Huet" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;" loading="lazy">
                         <h3 class="team-member__name">Sébastien Huet</h3>
                         <p class="team-member__grade">Trésorier</p>
                         <p><a href="tel:0637927537">06 37 92 75 37</a></p>

@@ -9,6 +9,10 @@
     <meta name="description" content="Les 10 fondations de l'aïkido selon Maître Nobuyoshi Tamura : shisei, kokyu, kamae, ma-ai, irimi, tenkan, ura-omote, tai sabaki, atemi, kokyu ryoku.">
     <meta name="keywords" content="fondations aïkido, Tamura, shisei, kokyu, kamae, ma-ai, irimi, tenkan, tai sabaki, FFAB, kihon">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+    <meta name="geo.position" content="48.7678;2.0567">
+    <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/fondations.html">
 
@@ -24,6 +28,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Les Fondations de l'Aïkido selon Maître Tamura">
     <meta name="twitter:description" content="Les 10 fondations essentielles de l'aïkido transmises par Maître Tamura, pilier de l'enseignement FFAB.">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

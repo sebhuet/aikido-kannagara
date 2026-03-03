@@ -84,6 +84,10 @@ foreach ($fiches as $i => $fiche) {
     <meta name="description" content="<?= htmlspecialchars($meta_description) ?>">
     <meta name="keywords" content="<?= htmlspecialchars($meta_keywords) ?>">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+    <meta name="geo.position" content="48.7678;2.0567">
+    <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/professeurs.html">
 
@@ -98,6 +102,7 @@ foreach ($fiches as $i => $fiche) {
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Équipe enseignante - Kannagara Aïkido Guyancourt">
     <meta name="twitter:description" content="<?= htmlspecialchars($og_description) ?>">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

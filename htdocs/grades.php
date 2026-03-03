@@ -9,6 +9,10 @@
     <meta name="description" content="Système de grades en aïkido : kyu (6e au 1er) et dan (ceinture noire). Programme technique FFAB, conditions de passage, techniques par niveau.">
     <meta name="keywords" content="grade aïkido, kyu, dan, ceinture noire, programme technique, passage grade, FFAB">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+    <meta name="geo.position" content="48.7678;2.0567">
+    <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/grades.html">
 
@@ -23,6 +27,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Grades en Aïkido - Programme technique">
     <meta name="twitter:description" content="Du 6e kyu au dan : système de grades et programme technique FFAB.">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

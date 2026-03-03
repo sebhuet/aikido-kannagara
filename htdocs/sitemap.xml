@@ -7,91 +7,85 @@
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/index.php</loc>
-        <lastmod>2026-03-03</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>https://kannagara.fr/aikido.php</loc>
+        <loc>https://kannagara.fr/aikido.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/club.php</loc>
+        <loc>https://kannagara.fr/club.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/professeurs.php</loc>
+        <loc>https://kannagara.fr/professeurs.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/inscription.php</loc>
+        <loc>https://kannagara.fr/inscription.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/grades.php</loc>
+        <loc>https://kannagara.fr/grades.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/contact.php</loc>
+        <loc>https://kannagara.fr/contact.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/armes.php</loc>
+        <loc>https://kannagara.fr/armes.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/fondations.php</loc>
+        <loc>https://kannagara.fr/fondations.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/lexique.php</loc>
+        <loc>https://kannagara.fr/lexique.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/faq.php</loc>
+        <loc>https://kannagara.fr/faq.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/mentions-legales.php</loc>
+        <loc>https://kannagara.fr/mentions-legales.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/agenda.php</loc>
+        <loc>https://kannagara.fr/agenda.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/statuts.php</loc>
+        <loc>https://kannagara.fr/statuts.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/reglement-interieur.php</loc>
+        <loc>https://kannagara.fr/reglement-interieur.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>

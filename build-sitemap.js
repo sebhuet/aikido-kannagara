@@ -14,23 +14,23 @@ const BASE_URL = 'https://kannagara.fr';
 const SITEMAP_FILE = path.join(__dirname, 'htdocs', 'sitemap.xml');
 
 // Pages du site avec priorités et fréquences de changement
+// URLs canoniques en .html (le .htaccess redirige .html → .php)
 const PAGES = [
     { url: '/', priority: 1.0, changefreq: 'weekly' },
-    { url: '/index.php', priority: 1.0, changefreq: 'weekly' },
-    { url: '/aikido.php', priority: 0.8, changefreq: 'monthly' },
-    { url: '/club.php', priority: 0.8, changefreq: 'monthly' },
-    { url: '/professeurs.php', priority: 0.8, changefreq: 'monthly' },
-    { url: '/inscription.php', priority: 0.9, changefreq: 'yearly' },
-    { url: '/grades.php', priority: 0.6, changefreq: 'yearly' },
-    { url: '/contact.php', priority: 0.7, changefreq: 'yearly' },
-    { url: '/armes.php', priority: 0.7, changefreq: 'monthly' },
-    { url: '/fondations.php', priority: 0.7, changefreq: 'monthly' },
-    { url: '/lexique.php', priority: 0.5, changefreq: 'yearly' },
-    { url: '/faq.php', priority: 0.7, changefreq: 'monthly' },
-    { url: '/mentions-legales.php', priority: 0.3, changefreq: 'yearly' },
-    { url: '/agenda.php', priority: 0.8, changefreq: 'weekly' },
-    { url: '/statuts.php', priority: 0.3, changefreq: 'yearly' },
-    { url: '/reglement-interieur.php', priority: 0.3, changefreq: 'yearly' },
+    { url: '/aikido.html', priority: 0.8, changefreq: 'monthly' },
+    { url: '/club.html', priority: 0.8, changefreq: 'monthly' },
+    { url: '/professeurs.html', priority: 0.8, changefreq: 'monthly' },
+    { url: '/inscription.html', priority: 0.9, changefreq: 'yearly' },
+    { url: '/grades.html', priority: 0.6, changefreq: 'yearly' },
+    { url: '/contact.html', priority: 0.7, changefreq: 'yearly' },
+    { url: '/armes.html', priority: 0.7, changefreq: 'monthly' },
+    { url: '/fondations.html', priority: 0.7, changefreq: 'monthly' },
+    { url: '/lexique.html', priority: 0.5, changefreq: 'yearly' },
+    { url: '/faq.html', priority: 0.7, changefreq: 'monthly' },
+    { url: '/mentions-legales.html', priority: 0.3, changefreq: 'yearly' },
+    { url: '/agenda.html', priority: 0.8, changefreq: 'weekly' },
+    { url: '/statuts.html', priority: 0.3, changefreq: 'yearly' },
+    { url: '/reglement-interieur.html', priority: 0.3, changefreq: 'yearly' },
     { url: '/llms.txt', priority: 0.4, changefreq: 'monthly' },
     { url: '/llms-full.txt', priority: 0.4, changefreq: 'monthly' },
 ];
@@ -40,7 +40,9 @@ const PAGES = [
  */
 function getLastModified(filePath) {
     try {
-        const fullPath = path.join(__dirname, 'htdocs', filePath.replace(/^\//, ''));
+        // Les URLs sont en .html mais les fichiers sources sont en .php
+        const resolved = filePath.replace(/^\//, '').replace(/\.html$/, '.php');
+        const fullPath = path.join(__dirname, 'htdocs', resolved || 'index.php');
         const stats = fs.statSync(fullPath);
         return stats.mtime.toISOString().split('T')[0]; // Format YYYY-MM-DD
     } catch (error) {

@@ -9,6 +9,10 @@
     <meta name="description" content="Découvrez l'aïkido : art martial japonais accessible à tous. Self-défense, cours femmes et enfants dès 7 ans. Sans compétition, fondé par Morihei Ueshiba.">
     <meta name="keywords" content="aïkido, aikido, self défense, aïkido femmes, aïkido enfants, Morihei Ueshiba, art martial japonais, Tamura, cours aïkido">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+    <meta name="geo.position" content="48.7678;2.0567">
+    <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/aikido.html">
 
@@ -23,6 +27,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="L'Aïkido : histoire et philosophie">
     <meta name="twitter:description" content="Art martial japonais fondé par Morihei Ueshiba. Sans compétition, accessible à tous.">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

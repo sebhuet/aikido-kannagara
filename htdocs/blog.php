@@ -9,6 +9,10 @@
     <meta name="description" content="Blog du club Kannagara Aïkido : articles techniques, compte-rendus de stages, vie du club et réflexions sur la pratique de l'aïkido.">
     <meta name="keywords" content="blog aïkido, articles aïkido, stages aïkido, technique aïkido, réflexions aïkido">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+    <meta name="geo.position" content="48.7678;2.0567">
+    <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/blog.html">
 
@@ -23,6 +27,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Blog - Kannagara Aïkido">
     <meta name="twitter:description" content="Articles, compte-rendus de stages et réflexions sur l'aïkido.">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

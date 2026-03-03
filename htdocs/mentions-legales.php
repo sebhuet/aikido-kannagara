@@ -8,6 +8,10 @@
     <title>Mentions légales | Kannagara Aïkido</title>
     <meta name="description" content="Mentions légales du site Kannagara Aïkido Club de Guyancourt.">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+    <meta name="geo.position" content="48.7678;2.0567">
+    <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://kannagara.fr/mentions-legales.html">
 
@@ -17,6 +21,12 @@
     <meta property="og:title" content="Mentions légales | Kannagara Aïkido">
     <meta property="og:description" content="Mentions légales du site Kannagara Aïkido Club de Guyancourt.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mentions légales | Kannagara Aïkido">
+    <meta name="twitter:description" content="Mentions légales du site Kannagara Aïkido Club de Guyancourt.">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

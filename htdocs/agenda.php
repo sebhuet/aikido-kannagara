@@ -9,6 +9,10 @@
     <meta name="description" content="Agenda et planning des cours d'aïkido du club Kannagara avec présence des professeurs. Cours ouverts à tous les licenciés, quelle que soit leur fédération.">
     <meta name="keywords" content="agenda aïkido, planning cours aïkido, horaires aïkido Guyancourt, professeurs présents">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+    <meta name="geo.position" content="48.7678;2.0567">
+    <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/agenda.html">
 
@@ -23,6 +27,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Agenda des cours - Kannagara Aïkido">
     <meta name="twitter:description" content="Planning des cours et présence des professeurs. Cours ouverts à tous les licenciés.">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

@@ -27,6 +27,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Contact - Kannagara Aïkido Guyancourt">
     <meta name="twitter:description" content="Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt. Tél: 06 76 48 16 01.">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -57,7 +58,19 @@
             "longitude": 2.0567
         },
         "url": "https://kannagara.fr",
-        "openingHours": ["Mo 18:30-21:30", "Th 18:30-21:30"]
+        "openingHours": ["Mo 18:30-21:30", "Th 18:30-21:30"],
+        "areaServed": [
+            {"@type": "City", "name": "Guyancourt"},
+            {"@type": "City", "name": "Montigny-le-Bretonneux"},
+            {"@type": "City", "name": "Voisins-le-Bretonneux"},
+            {"@type": "City", "name": "Élancourt"},
+            {"@type": "City", "name": "Trappes"},
+            {"@type": "City", "name": "La Verrière"},
+            {"@type": "City", "name": "Buc"},
+            {"@type": "City", "name": "Vélizy-Villacoublay"},
+            {"@type": "City", "name": "Versailles"},
+            {"@type": "AdministrativeArea", "name": "Saint-Quentin-en-Yvelines"}
+        ]
     }
     </script>
 </head>
@@ -89,7 +102,7 @@
                     <h2>Nous contacter</h2>
 
                     <div class="team-member" style="text-align: center; margin: var(--spacing-lg) 0;">
-                        <img src="images/fanny-jacquemier.jpg" alt="Fanny Jacquemier" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;">
+                        <img src="images/fanny-jacquemier.jpg" alt="Fanny Jacquemier" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;" loading="lazy">
                         <h3 class="team-member__name">Fanny Jacquemier</h3>
                         <p class="team-member__grade">Présidente du club</p>
                         <p style="margin-top: var(--spacing-sm);"><a href="tel:0676481601">06 76 48 16 01</a></p>
@@ -131,8 +144,13 @@
                             78280 Guyancourt
                         </p>
                         <p class="mt-1">
-                            <strong>Accès :</strong> Le gymnase est situé dans le quartier des Graviers,
-                            facilement accessible en voiture ou en transports en commun.
+                            Au cœur de Saint-Quentin-en-Yvelines, accessible depuis Montigny-le-Bretonneux,
+                            Voisins-le-Bretonneux, Élancourt, Versailles, Vélizy et les communes voisines.
+                        </p>
+                        <p class="mt-1">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Gymnase+Maurice+Baquet,+Guyancourt" target="_blank" rel="noopener" class="btn btn--outline" style="font-size: 0.9rem;">
+                                Calculer mon itinéraire
+                            </a>
                         </p>
                     </div>
                 </div>

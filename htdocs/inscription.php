@@ -27,6 +27,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="S'inscrire au club Kannagara Aïkido">
     <meta name="twitter:description" content="Rejoignez notre club d'aïkido. Cours d'essai gratuits en septembre.">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -456,6 +457,12 @@
                         <button type="submit" class="btn btn--primary">Envoyer ma pré-inscription</button>
                     </div>
                 </form>
+
+                <p class="mt-3" style="text-align: center; font-size: 0.95em; color: var(--color-text-light);">
+                    Nous accueillons des pratiquants de Guyancourt et des communes voisines :
+                    Montigny-le-Bretonneux, Voisins-le-Bretonneux, Élancourt, Versailles, Vélizy-Villacoublay
+                    et tout Saint-Quentin-en-Yvelines.
+                </p>
 
                 <h2>Questions fréquentes</h2>
 
