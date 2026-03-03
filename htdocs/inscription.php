@@ -374,13 +374,32 @@
                     </p>
                 </div>
 
-                <h2 id="pre-inscription">Formulaire de pré-inscription</h2>
+                <h2 id="preinscription">Formulaire de pré-inscription</h2>
                 <p>
                     Remplissez ce formulaire pour manifester votre intérêt. Nous vous recontacterons
                     pour organiser votre venue au club et votre cours d'essai.
                 </p>
 
-                <form class="mt-3" action="https://formspree.io/f/xwpezlgn" method="POST" style="background: var(--color-bg-alt); padding: var(--spacing-xl); border-radius: 8px;">
+                <?php if (isset($_GET['merci'])): ?>
+                <div class="info-box" style="background: #e8f5e9; border-left: 4px solid #4caf50;">
+                    <p style="margin: 0; color: #2e7d32;">
+                        <strong>Merci pour votre pré-inscription !</strong><br>
+                        Nous avons bien reçu votre demande et vous recontacterons rapidement
+                        pour organiser votre venue au club.
+                    </p>
+                </div>
+                <?php endif; ?>
+
+                <?php if (isset($_GET['erreur'])): ?>
+                <div class="info-box" style="background: #fbe9e7; border-left: 4px solid #e53935;">
+                    <p style="margin: 0; color: #c62828;">
+                        <strong>Erreur :</strong>
+                        <?= htmlspecialchars($_GET['erreur']) ?>
+                    </p>
+                </div>
+                <?php endif; ?>
+
+                <form class="mt-3" action="send-preinscription.php" method="POST" style="background: var(--color-bg-alt); padding: var(--spacing-xl); border-radius: 8px;">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="nom">Nom *</label>
@@ -437,9 +456,6 @@
                             </label>
                         </div>
                     </div>
-
-                    <input type="hidden" name="_subject" value="Nouvelle pré-inscription Kannagara">
-                    <input type="hidden" name="_next" value="https://kannagara.fr/inscription.html?merci=1">
 
                     <div class="text-center">
                         <button type="submit" class="btn btn--primary">Envoyer ma pré-inscription</button>
