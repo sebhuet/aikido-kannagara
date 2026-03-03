@@ -7,6 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Mentions légales | Kannagara Aïkido</title>
     <meta name="description" content="Mentions légales du site Kannagara Aïkido Club de Guyancourt.">
+    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://kannagara.fr/mentions-legales.html">
 

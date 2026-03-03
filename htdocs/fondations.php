@@ -20,6 +20,11 @@
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
     <meta property="og:locale" content="fr_FR">
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Les Fondations de l'Aïkido selon Maître Tamura">
+    <meta name="twitter:description" content="Les 10 fondations essentielles de l'aïkido transmises par Maître Tamura, pilier de l'enseignement FFAB.">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">

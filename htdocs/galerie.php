@@ -442,7 +442,7 @@
         <button class="lightbox__close" aria-label="Fermer">&times;</button>
         <button class="lightbox__nav lightbox__prev" aria-label="Photo précédente">&#10094;</button>
         <div class="lightbox__content">
-            <img src="" alt="" class="lightbox__image">
+            <img src="" alt="Photo agrandie" class="lightbox__image">
             <p class="lightbox__caption"></p>
         </div>
         <button class="lightbox__nav lightbox__next" aria-label="Photo suivante">&#10095;</button>

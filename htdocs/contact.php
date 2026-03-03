@@ -8,6 +8,11 @@
     <title>Contact | Club d'aïkido Guyancourt - Gymnase Maurice Baquet</title>
     <meta name="description" content="Contactez Kannagara Aïkido Guyancourt. Gymnase Maurice Baquet, Mail des Graviers. Tél: 06 76 48 16 01. Email: aikido.kannagara.guyancourt@gmail.com. Plan d'accès.">
     <meta name="keywords" content="contact aïkido, Guyancourt, gymnase maurice baquet, adresse, téléphone, plan">
+    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+    <meta name="geo.position" content="48.7678;2.0567">
+    <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/contact.html">
 
@@ -17,6 +22,11 @@
     <meta property="og:title" content="Contact - Kannagara Aïkido Guyancourt">
     <meta property="og:description" content="Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt. Tél: 06 76 48 16 01.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact - Kannagara Aïkido Guyancourt">
+    <meta name="twitter:description" content="Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt. Tél: 06 76 48 16 01.">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -157,10 +167,7 @@
                     Pour nous contacter, vous pouvez utiliser notre formulaire en ligne
                     ou nous envoyer directement un email.
                 </p>
-                <a href="https://forms.gle/VOTRE_GOOGLE_FORM_ID" target="_blank" rel="noopener" class="btn btn--primary">
-                    Ouvrir le formulaire de contact
-                </a>
-                <a href="mailto:aikido.kannagara.guyancourt@gmail.com?subject=Contact depuis le site web" class="btn btn--outline">
+                <a href="mailto:aikido.kannagara.guyancourt@gmail.com?subject=Contact depuis le site web" class="btn btn--primary">
                     Envoyer un email
                 </a>
             </div>

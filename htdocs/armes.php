@@ -20,6 +20,11 @@
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
     <meta property="og:locale" content="fr_FR">
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Les Armes en Aïkido - Jo, Bokken, Tanto">
+    <meta name="twitter:description" content="Le travail avec les armes en aïkido : comprendre les origines des techniques à mains nues.">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">

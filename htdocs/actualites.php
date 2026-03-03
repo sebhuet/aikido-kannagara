@@ -8,6 +8,7 @@
     <title>Actualités | Stages et événements aïkido Guyancourt</title>
     <meta name="description" content="Actualités du club Kannagara Aïkido : portes ouvertes septembre, stages FFAB, passages de grades. Événements à Guyancourt.">
     <meta name="keywords" content="actualités aïkido, stage aïkido, portes ouvertes, événements Guyancourt, FFAB">
+    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/actualites.html">
 
@@ -17,6 +18,11 @@
     <meta property="og:title" content="Actualités - Kannagara Aïkido">
     <meta property="og:description" content="Portes ouvertes, stages, événements du club d'aïkido de Guyancourt.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Actualités - Kannagara Aïkido">
+    <meta name="twitter:description" content="Portes ouvertes, stages, événements du club d'aïkido de Guyancourt.">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

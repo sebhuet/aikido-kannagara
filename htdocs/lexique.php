@@ -20,6 +20,11 @@
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
     <meta property="og:locale" content="fr_FR">
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Lexique Japonais de l'Aïkido">
+    <meta name="twitter:description" content="Vocabulaire japonais essentiel pour la pratique de l'aïkido : termes techniques, expressions du dojo.">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">

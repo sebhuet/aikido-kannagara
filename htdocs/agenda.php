@@ -8,6 +8,7 @@
     <title>Agenda des cours | Planning et présence des professeurs - Kannagara Aïkido</title>
     <meta name="description" content="Agenda et planning des cours d'aïkido du club Kannagara avec présence des professeurs. Cours ouverts à tous les licenciés, quelle que soit leur fédération.">
     <meta name="keywords" content="agenda aïkido, planning cours aïkido, horaires aïkido Guyancourt, professeurs présents">
+    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/agenda.html">
 
@@ -17,6 +18,11 @@
     <meta property="og:title" content="Agenda des cours - Kannagara Aïkido">
     <meta property="og:description" content="Planning des cours et présence des professeurs. Cours ouverts à tous les licenciés.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Agenda des cours - Kannagara Aïkido">
+    <meta name="twitter:description" content="Planning des cours et présence des professeurs. Cours ouverts à tous les licenciés.">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

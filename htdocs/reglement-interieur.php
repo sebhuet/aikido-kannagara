@@ -7,6 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Règlement intérieur | Kannagara Aïkido</title>
     <meta name="description" content="Règlement intérieur du club Kannagara Aïkido de Guyancourt. Règles de conduite, tenue, hygiène et étiquette sur le tatami.">
+    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://kannagara.fr/reglement-interieur.html">
 

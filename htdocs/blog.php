@@ -8,6 +8,7 @@
     <title>Blog | Articles et réflexions sur l'aïkido - Kannagara</title>
     <meta name="description" content="Blog du club Kannagara Aïkido : articles techniques, compte-rendus de stages, vie du club et réflexions sur la pratique de l'aïkido.">
     <meta name="keywords" content="blog aïkido, articles aïkido, stages aïkido, technique aïkido, réflexions aïkido">
+    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/blog.html">
 
@@ -17,6 +18,11 @@
     <meta property="og:title" content="Blog - Kannagara Aïkido">
     <meta property="og:description" content="Articles, compte-rendus de stages et réflexions sur l'aïkido.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blog - Kannagara Aïkido">
+    <meta name="twitter:description" content="Articles, compte-rendus de stages et réflexions sur l'aïkido.">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

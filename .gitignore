@@ -38,3 +38,4 @@ tools/whatsapp_messages.txt
 
 # Backups agenda
 htdocs/agenda.*.bak.md
+.claude/CLAUDE.md

@@ -7,6 +7,7 @@
     <!-- SEO Meta Tags -->
     <title>Statuts de l'association | Kannagara Aïkido</title>
     <meta name="description" content="Statuts de l'association Kannagara Aïkido Club de Guyancourt, association loi 1901 affiliée à la FFAB.">
+    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://kannagara.fr/statuts.html">
 
