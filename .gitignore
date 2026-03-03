@@ -39,3 +39,8 @@ tools/whatsapp_messages.txt
 # Backups agenda
 htdocs/agenda.*.bak.md
 .claude/CLAUDE.md
+todo/todo.md
+
+# Dossiers hors projet
+affiche/
+kannagara.fr/

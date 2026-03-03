@@ -10,7 +10,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const BASE_URL = 'https://sebhuet.github.io/aikido-kannagara';
+const BASE_URL = 'https://kannagara.fr';
 const SITEMAP_FILE = path.join(__dirname, 'htdocs', 'sitemap.xml');
 
 // Pages du site avec priorités et fréquences de changement
@@ -31,6 +31,8 @@ const PAGES = [
     { url: '/agenda.php', priority: 0.8, changefreq: 'weekly' },
     { url: '/statuts.php', priority: 0.3, changefreq: 'yearly' },
     { url: '/reglement-interieur.php', priority: 0.3, changefreq: 'yearly' },
+    { url: '/llms.txt', priority: 0.4, changefreq: 'monthly' },
+    { url: '/llms-full.txt', priority: 0.4, changefreq: 'monthly' },
 ];
 
 /**

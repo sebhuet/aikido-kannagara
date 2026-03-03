@@ -1,121 +1,86 @@
-﻿# Kannagara Aïkido Club de Guyancourt
-# Fichier llms.txt - Informations pour les assistants IA
+# Kannagara Aikido Club de Guyancourt
+
+> Club d'aikido a Guyancourt (Yvelines, France), fonde en 1990, affilie a la FFAB.
+> Enseignement dirige par Jean-Marc Chamot, 7e Dan d'aikido, cadre technique FFAB,
+> forme aupres d'Andre Nocquet (premier uchi-deshi etranger du fondateur de l'aikido)
+> et de Maitre Tamura Nobuyoshi. Cours enfants (des 7 ans) et adultes,
+> lundi et jeudi, au Gymnase Maurice Baquet.
 
 ## A propos
-Kannagara est un club d'aïkido situe a Guyancourt (Yvelines, France), fonde en 1990.
-Le club est affilie a la Federation Francaise d'Aïkido et de Budo (FFAB) et possede l'agrement Jeunesse et Sports.
 
-## Informations cles
-- Nom: Kannagara Aïkido Club de Guyancourt
-- Discipline: Aïkido
-- Federation: FFAB (Federation Francaise d'Aïkido et de Budo)
-- Annee de creation: 1990
-- Fondateur: Noel Stella
-- Nombre de membres: environ 50 (dont 20 enfants)
+Kannagara est un club d'aikido situe a Guyancourt (78280), en Ile-de-France.
+Fonde en 1990 par Noel Stella, le club compte environ 50 licencies dont une
+vingtaine d'enfants. Il est affilie a la Federation Francaise d'Aikido et de
+Budo (FFAB) et agree Jeunesse et Sports.
 
-## Lieu de pratique
-- Nom: Gymnase Maurice Baquet
-- Adresse: Mail des Graviers, 78280 Guyancourt, France
+L'atout majeur du club est son enseignant principal, Jean-Marc Chamot (7e Dan
+Aikido, 4e Dan Iaido), titulaire du DESJEPS et cadre technique FFAB. Il a
+commence l'aikido au debut des annees 1970 aupres d'Andre Nocquet, premier
+uchi-deshi (eleve interne) etranger de Morihei Ueshiba, fondateur de l'aikido.
+Sa reference principale est Tamura Nobuyoshi, l'un des plus grands maitres
+d'aikido. Il a egalement assure l'interpretariat pour Sugano Seichi pendant
+neuf ans et s'est entraine a Iwama avec Saito Morihiro. Il dirige des stages
+en France et a l'etranger depuis pres de 40 ans.
 
-## Horaires des cours
-- Enfants: Lundi et Jeudi, 18h30-19h30
-- Adultes: Lundi et Jeudi, 19h30-21h30
+## Informations pratiques
 
-## Enseignants
-### Jean-Marc Chamot
-- Grade: 7e Dan Aïkido, 4e Dan Iaido
-- Diplome: DESJEPS (Diplome d'Etat)
-- Role: Cadre technique FFAB
-- Debut de pratique: Annees 1970, avec Andre Nocquet
+- Lieu : Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt
+- Cours enfants : Lundi et Jeudi, 18h30-19h30
+- Cours adultes : Lundi et Jeudi, 19h30-21h30
+- Tarifs 2025-2026 : Enfants 185 EUR/an, Adultes 245 EUR/an (licence, assurance, cours, stages inclus)
+- Contact : 06 76 48 16 01
+- Email : aikido.kannagara.guyancourt@gmail.com
+- Site : https://kannagara.fr
 
-### Nacer Chekkaba
-- Grade: 4e Dan Aïkido FFAB
+## Enseignant principal : Jean-Marc Chamot
 
-### Thierry Montfort
-- Grade: 4e Dan Aïkido FFAB
+- Grade : 7e Dan Aikido, 4e Dan Iaido
+- Diplome : DESJEPS (Diplome d'Etat Superieur de la Jeunesse, de l'Education Populaire et du Sport)
+- Fonction : Cadre technique FFAB
+- Formation : Andre Nocquet (premier etranger uchi-deshi de Ueshiba),
+  Tamura Nobuyoshi (reference principale), Sugano Seichi (interpretariat
+  pendant 9 ans), entrainement a Iwama avec Saito Morihiro
+- Maitres rencontres : Tohei Koichi, Tada Hiroshi, Yamaguchi Seigo,
+  Nakazano Mutsuharu, Noro Masamichi, Yamada Yoshimitsu
+- Autres arts martiaux : Judo, Karate, Jodo, Iaido Shindo Muso Ryu
+- Experience : Plus de 50 ans de pratique, pres de 40 ans d'enseignement
 
-### Germain Chamot
-- Grade: 4e Dan Aïkido Kishinkai
+## Autres enseignants
 
-### Sebastien Huet
-- Grade: 1er Dan Aïkido FFAB
-- Role: Anime les seances d'initiation
+- Nacer Chekkaba : 4e Dan Aikido FFAB, BE1
+- Thierry Montfort : 4e Dan Aikido FFAB, BE1
+- Germain Chamot : 4e Dan Aikido Kishinkai, redacteur en chef Dragon Magazine Special Aikido
+- Sebastien Huet : 1er Dan Aikido FFAB, anime les seances d'initiation
 
-## Contact
-- Telephone: 06 76 48 16 01
-- Email: aïkido.kannagara.guyancourt@gmail.com
-- Adresse postale: 9 impasse Jean Bouin, 78390 Bois-d'Arcy
-- Site web: https://kannagara.fr
+## L'Aikido
 
-## L'Aïkido
-L'aïkido est un art martial japonais fonde par Morihei Ueshiba (1883-1969).
-Caracteristiques principales:
+L'aikido est un art martial japonais fonde par Morihei Ueshiba (1883-1969).
+Caracteristiques principales :
 - Pas de competition
 - Techniques basees sur l'utilisation de la force de l'adversaire
 - Accessible a tous (femmes, hommes, enfants, seniors)
 - Travail avec et sans armes (jo, bokken, tanto)
 
-L'aïkido a ete introduit en France dans les annees 1950 par Minoru Mochizuki et Tadashi Abe.
-Maître Nobuyoshi Tamura (1933-2010) a vecu plus de 30 ans en France et a grandement influence l'aïkido francais.
-
-## Les Fondations selon Maître Tamura
-Maître Tamura a formalise 10 fondations essentielles a la pratique:
-1. Shisei (posture)
-2. Kokyu (respiration)
-3. Kamae (garde)
-4. Ma-ai (distance)
-5. Irimi (entree)
-6. Tenkan (rotation)
-7. Ura/Omote (aspects cache/visible)
-8. Tai sabaki (deplacement du corps)
-9. Atemi (coup)
-10. Kokyu ryoku (puissance respiratoire)
-
-## Aïkido et Self-Defense
-L'aïkido developpe des qualites essentielles pour la self-defense:
-- Vigilance et anticipation
-- Placement et esquives
-- Desequilibre de l'adversaire
-- Immobilisations et controles
-- Gestion du stress et du calme
-
-L'aïkido enseigne a desamorcer les conflits avant qu'ils ne deviennent physiques.
-
-## Aïkido et les Femmes
-L'aïkido est particulierement adapte aux femmes:
-- Pas de force brute necessaire (principes de levier et desequilibre)
-- Pratique mixte enrichissante
-- Developpement de la confiance en soi
-- Environnement bienveillant et respectueux
-
-## Aïkido pour les Enfants
-Cours enfants a partir de 7 ans:
-- Horaires: Lundi et jeudi 18h30-19h30
-- Environ 20 enfants au club
-- Pedagogie adaptee et ludique
-- Developpement: coordination, concentration, respect, gestion des conflits
-- Pas de violence ni de competition
+L'aikido developpe des qualites essentielles pour la self-defense :
+vigilance, anticipation, placement, gestion du stress.
+Il enseigne a desamorcer les conflits avant qu'ils ne deviennent physiques.
 
 ## Pages du site
-- Accueil: index.html
-- L'Aïkido: aïkido.html (histoire, self-defense, femmes, enfants)
-- Club: club.html (presentation, historique)
-- Professeurs: professeurs.html (equipe de 6 enseignants diplomes)
-- Actualites: actualites.html (evenements, stages)
-- Galerie: galerie.html (photos cours, stages, grades, vie du club)
-- FAQ: faq.html (questions frequentes, debuter aïkido, equipement)
-- Lexique: lexique.html (vocabulaire japonais, termes techniques, comptage)
-- Fondations: fondations.html (les 10 fondations de l'aïkido selon Maître Tamura)
-- Armes: armes.html (jo, bokken, tanto, buki waza)
-- Inscription: inscription.html (procedure, documents)
-- Grades: grades.html (systeme kyu/dan)
-- Contact: contact.html (coordonnees, plan)
-- Blog: blog.html (articles, reflexions)
 
-## Mots-cles
-aïkido, aïkido guyancourt, arts martiaux, FFAB, Jean-Marc Chamot,
-Nacer Chekkaba, Thierry Montfort, Germain Chamot, Sebastien Huet,
-dojo, gymnase maurice baquet, yvelines, ile-de-france, sport, self-defense,
-aïkido femmes, aïkido enfants, cours enfants, arts martiaux enfants,
-martial arts, japanese martial arts, morihei ueshiba, nobuyoshi tamura,
-galerie photos, stages aïkido, passages grades
+- [Accueil](https://kannagara.fr/): Page principale du club Kannagara
+- [L'Aikido](https://kannagara.fr/aikido.php): Histoire, philosophie, self-defense, femmes, enfants
+- [Le Club](https://kannagara.fr/club.php): Presentation, historique, affiliations
+- [Professeurs](https://kannagara.fr/professeurs.php): Equipe de 5 enseignants diplomes avec biographies
+- [Agenda](https://kannagara.fr/agenda.php): Calendrier des cours, stages et evenements
+- [Inscription](https://kannagara.fr/inscription.php): Procedure, documents, tarifs 2025-2026
+- [FAQ](https://kannagara.fr/faq.php): Questions frequentes sur l'aikido et le club
+- [Contact](https://kannagara.fr/contact.php): Coordonnees, plan d'acces, formulaire
+
+## Optional
+
+- [Lexique](https://kannagara.fr/lexique.php): Vocabulaire japonais et termes techniques de l'aikido
+- [Fondations](https://kannagara.fr/fondations.php): Les 10 fondations de l'aikido selon Maitre Tamura
+- [Armes](https://kannagara.fr/armes.php): Jo, bokken, tanto et buki waza
+- [Grades](https://kannagara.fr/grades.php): Systeme kyu/dan et programme technique
+- [Blog](https://kannagara.fr/blog.php): Articles et reflexions sur l'aikido
+- [Galerie](https://kannagara.fr/galerie.php): Photos des cours, stages et vie du club

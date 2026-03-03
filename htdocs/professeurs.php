@@ -29,17 +29,48 @@ $schema = [
     'itemListElement' => [],
 ];
 foreach ($fiches as $i => $fiche) {
-    $schema['itemListElement'][] = [
+    $person = [
         '@type' => 'Person',
         'position' => $i + 1,
         'name' => $fiche['meta']['name'] ?? '',
         'jobTitle' => "Professeur d'aïkido",
-        'description' => ($fiche['meta']['grade'] ?? '') . '.',
+        'description' => ($fiche['meta']['grade'] ?? '') . '. ' . ($fiche['meta']['diplome'] ?? '') . '.',
         'worksFor' => [
             '@type' => 'Organization',
             'name' => 'Kannagara Aïkido Club de Guyancourt',
         ],
     ];
+
+    // Enrichir Jean-Marc Chamot avec des credentials détaillées
+    if (($fiche['meta']['initials'] ?? '') === 'JMC') {
+        $person['@id'] = 'https://kannagara.fr/professeurs.php#jean-marc-chamot';
+        $person['description'] = '7e Dan Aïkido, 4e Dan Iaïdo. Cadre technique FFAB, titulaire du DESJEPS. Formé auprès d\'André Nocquet (premier uchi-deshi étranger du fondateur de l\'aïkido) et de Maître Tamura Nobuyoshi. Plus de 50 ans de pratique.';
+        $person['hasCredential'] = [
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'credentialCategory' => 'grade',
+                'name' => '7e Dan Aïkido',
+                'recognizedBy' => [
+                    '@type' => 'Organization',
+                    'name' => 'Fédération Française d\'Aïkido et de Budo',
+                ],
+            ],
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'credentialCategory' => 'grade',
+                'name' => '4e Dan Iaïdo',
+            ],
+            [
+                '@type' => 'EducationalOccupationalCredential',
+                'credentialCategory' => 'diploma',
+                'name' => 'DESJEPS',
+                'description' => 'Diplôme d\'État Supérieur de la Jeunesse, de l\'Éducation Populaire et du Sport',
+            ],
+        ];
+        $person['knowsAbout'] = ['Aïkido', 'Iaïdo', 'Jodo'];
+    }
+
+    $schema['itemListElement'][] = $person;
 }
 ?>
 <!DOCTYPE html>
@@ -106,8 +137,10 @@ foreach ($fiches as $i => $fiche) {
             <div class="content" style="max-width: 900px; margin: 0 auto;">
 
                 <p class="text-center" style="font-size: 1.125rem; margin-bottom: var(--spacing-xl);">
-                    Le club Kannagara dispose d'une équipe d'enseignants expérimentés et diplômés,
-                    formés dans la tradition de l'aïkido transmise par Maître Tamura.
+                    Le club Kannagara est dirigé par <strong>Jean-Marc Chamot</strong>,
+                    <strong>7<sup>e</sup> Dan d'aïkido</strong> et cadre technique FFAB,
+                    accompagné d'une équipe de quatre enseignants diplômés.
+                    Tous sont formés dans la tradition directe de Maître Tamura Nobuyoshi.
                 </p>
 
             </div>

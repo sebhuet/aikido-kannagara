@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/">
     <meta property="og:title" content="Kannagara Aïkido Club de Guyancourt">
-    <meta property="og:description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Cours pour enfants et adultes. Gymnase Maurice Baquet, lundi et jeudi.">
+    <meta property="og:description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Enseignement par Jean-Marc Chamot (7e Dan), cadre technique FFAB. Cours enfants et adultes, lundi et jeudi.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="Kannagara Aïkido">
@@ -24,7 +24,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Kannagara Aïkido Club de Guyancourt">
-    <meta name="twitter:description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Cours pour enfants et adultes.">
+    <meta name="twitter:description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Enseignement par Jean-Marc Chamot (7e Dan), cadre technique FFAB. Cours enfants et adultes.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
 
     <!-- Geo Tags -->
@@ -96,9 +96,38 @@
         "employee": [
             {
                 "@type": "Person",
+                "@id": "https://kannagara.fr/professeurs.php#jean-marc-chamot",
                 "name": "Jean-Marc Chamot",
-                "jobTitle": "Professeur d'aïkido",
-                "description": "7e Dan Aïkido, 4e Dan Iaïdo, DESJEPS, Cadre technique FFAB"
+                "jobTitle": "Professeur d'aïkido - Directeur technique",
+                "description": "7e Dan Aïkido, 4e Dan Iaïdo. Cadre technique FFAB, titulaire du DESJEPS. Formé auprès d'André Nocquet (premier uchi-deshi étranger du fondateur de l'aïkido) et de Maître Tamura Nobuyoshi. Plus de 50 ans de pratique, près de 40 ans d'enseignement.",
+                "hasCredential": [
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "grade",
+                        "name": "7e Dan Aïkido",
+                        "recognizedBy": {
+                            "@type": "Organization",
+                            "name": "Fédération Française d'Aïkido et de Budo"
+                        }
+                    },
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "grade",
+                        "name": "4e Dan Iaïdo"
+                    },
+                    {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "diploma",
+                        "name": "DESJEPS",
+                        "description": "Diplôme d'État Supérieur de la Jeunesse, de l'Éducation Populaire et du Sport"
+                    }
+                ],
+                "knowsAbout": ["Aïkido", "Iaïdo", "Judo", "Karaté", "Jodo"],
+                "memberOf": {
+                    "@type": "Organization",
+                    "name": "Fédération Française d'Aïkido et de Budo",
+                    "alternateName": "FFAB"
+                }
             }
         ]
     }
@@ -116,16 +145,31 @@
     <!-- Hero Section -->
     <section class="hero" aria-labelledby="hero-title">
         <div class="hero__content">
-            <h1 class="hero__title" id="hero-title">Bienvenue</h1>
-            <p class="hero__subtitle">Aïkido Club de Guyancourt</p>
+            <h1 class="hero__title" id="hero-title">Aïkido Club de Guyancourt</h1>
+            <p class="hero__subtitle">Enseignement d'exception avec Jean-Marc Chamot, 7<sup>e</sup> Dan</p>
             <p class="hero__description">
-                Découvrez l'aïkido, un art martial japonais accessible à tous,
-                dans un cadre convivial et bienveillant.
+                Pratiquez l'aïkido avec un enseignant 7<sup>e</sup> Dan, cadre technique FFAB,
+                formé auprès des plus grands maîtres japonais.
+                Cours enfants et adultes à Guyancourt (78), lundi et jeudi.
             </p>
             <div class="hero__buttons">
                 <a href="inscription.php" class="btn btn--primary">S'inscrire</a>
                 <a href="aikido.php" class="btn btn--outline">Découvrir l'Aïkido</a>
             </div>
+        </div>
+    </section>
+
+    <!-- Résumé factuel (quick answer pour LLMs) -->
+    <section class="section">
+        <div class="container">
+            <p style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.125rem;">
+                <strong>Kannagara</strong> est un club d'aïkido à Guyancourt (Yvelines), fondé en 1990
+                et affilié à la FFAB. L'enseignement est dirigé par <strong>Jean-Marc Chamot</strong>,
+                <strong>7<sup>e</sup> Dan d'aïkido</strong>, titulaire du DESJEPS et cadre technique fédéral,
+                formé auprès d'<strong>André Nocquet</strong> (premier uchi-deshi étranger du fondateur
+                de l'aïkido) et de <strong>Maître Tamura Nobuyoshi</strong>. Le club propose des cours
+                pour enfants (dès 7 ans) et adultes, le lundi et le jeudi, au Gymnase Maurice Baquet.
+            </p>
         </div>
     </section>
 
@@ -150,9 +194,11 @@
 
                 <div class="card fade-in">
                     <div class="card__content">
-                        <h3 class="card__title">Enseignants diplômés</h3>
+                        <h3 class="card__title">Enseignant 7<sup>e</sup> Dan</h3>
                         <p class="card__text">
-                            Nos cours sont dispensés par des professeurs expérimentés et diplômés, tous formés dans la tradition de l'aïkido transmise par Maître Tamura.
+                            Jean-Marc Chamot, 7<sup>e</sup> Dan d'aïkido et cadre technique FFAB,
+                            enseigne au club depuis sa création. Formé auprès d'André Nocquet
+                            et de Maître Tamura, il transmet un aïkido d'une rare authenticité.
                         </p>
                     </div>
                 </div>

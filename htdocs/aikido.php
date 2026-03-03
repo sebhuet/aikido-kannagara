@@ -83,6 +83,13 @@
         <div class="container">
             <div class="content" style="max-width: 900px; margin: 0 auto;">
 
+                <p style="font-size: 1.125rem; text-align: center; margin-bottom: var(--spacing-xl);">
+                    L'aïkido est un art martial japonais fondé par Morihei Ueshiba, basé sur l'harmonie
+                    et excluant toute compétition. Au club Kannagara de Guyancourt, l'aïkido est enseigné
+                    par <strong>Jean-Marc Chamot</strong> (<strong>7<sup>e</sup> Dan</strong>)
+                    dans la tradition directe de Maître Tamura Nobuyoshi.
+                </p>
+
                 <h2>Qu'est-ce que l'Aïkido ?</h2>
                 <p>
                     L'Aïkido ne peut être classé, à proprement parler, parmi les sports car il <strong>exclut toute idée de compétition</strong>.

@@ -1,0 +1,435 @@
+# Kannagara Aikido Club de Guyancourt - Contenu complet du site
+
+> Ce fichier contient le contenu textuel complet du site kannagara.fr,
+> destine aux modeles de langage (LLM). Pour un resume, voir llms.txt.
+
+---
+
+## Page d'accueil
+
+Kannagara est un club d'aikido a Guyancourt (Yvelines), fonde en 1990 et affilie a la FFAB.
+L'enseignement est dirige par Jean-Marc Chamot, 7e Dan d'aikido, titulaire du DESJEPS et cadre
+technique federal, forme aupres d'Andre Nocquet (premier uchi-deshi etranger du fondateur de
+l'aikido) et de Maitre Tamura Nobuyoshi. Le club propose des cours pour enfants (des 7 ans)
+et adultes, le lundi et le jeudi, au Gymnase Maurice Baquet.
+
+Le club accueille pres de 50 licencies, dont une vingtaine d'enfants, dans une ambiance familiale
+et respectueuse des traditions martiales.
+
+Jean-Marc Chamot, 7e Dan d'aikido et cadre technique FFAB, enseigne au club depuis sa creation.
+Forme aupres d'Andre Nocquet et de Maitre Tamura, il transmet un aikido d'une rare authenticite.
+
+Le club est agree Jeunesse et Sports et affilie a la Federation Francaise d'Aikido et de Budo (FFAB),
+garantissant un enseignement de qualite.
+
+### Horaires des cours
+- Gymnase Maurice Baquet, Mail des Graviers, Guyancourt
+- Enfants : Lundi et Jeudi, 18h30-19h30
+- Adultes : Lundi et Jeudi, 19h30-21h30
+
+### Qu'est-ce que l'Aikido ?
+L'Aikido est un art martial japonais fonde par Maitre Morihei Ueshiba (1883-1969).
+Contrairement a d'autres disciplines, l'aikido exclut toute idee de competition et privilegie
+l'harmonie et le respect mutuel. Les techniques d'aikido reposent sur l'utilisation de la force
+de l'adversaire et ne necessitent pas d'aptitudes physiques particulieres.
+C'est pourquoi l'aikido est pratique quotidiennement par des femmes, des hommes, des enfants
+et des personnes plus agees.
+
+### Contact
+- Presidente : Fanny Jacquemier, 06 76 48 16 01
+- Email : aikido.kannagara.guyancourt@gmail.com
+- Lieu : Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt
+
+---
+
+## L'Aikido
+
+L'aikido est un art martial japonais fonde par Morihei Ueshiba, base sur l'harmonie et excluant
+toute competition. Au club Kannagara de Guyancourt, l'aikido est enseigne par Jean-Marc Chamot
+(7e Dan) dans la tradition directe de Maitre Tamura Nobuyoshi.
+
+### Qu'est-ce que l'Aikido ?
+L'Aikido ne peut etre classe parmi les sports car il exclut toute idee de competition.
+C'est un art martial qui vise a developper l'harmonie entre le corps et l'esprit, et avec les autres.
+Les techniques d'aikido reposent sur l'utilisation de la force de l'adversaire et ne necessitent pas
+d'aptitudes physiques particulieres. C'est pourquoi l'aikido est pratique aussi bien par des femmes,
+des hommes, des enfants que des personnes plus agees.
+
+### Histoire de l'Aikido
+L'Aikido est ne au debut du siecle sous l'impulsion de Maitre Morihei Ueshiba (1883-1969),
+dont le petit-fils (Moriteru Ueshiba, actuel Doshu) assure aujourd'hui la succession a la tete
+de l'Aikikai de Tokyo. Surnomme O Sensei ("Grand Maitre"), Morihei Ueshiba a cree l'aikido
+en synthetisant plusieurs arts martiaux traditionnels japonais, notamment le Daito-ryu Aiki-jujutsu.
+
+### L'Aikido en France
+L'aikido a ete introduit en France par Maitres Minoru Mochizuki et Tadashi Abe au debut des annees
+1950, ainsi que par Maitres Noro et Nakazono. Maitre Andre Nocquet (1914-1999) fut le premier
+Francais a se rendre au Japon pour etudier l'aikido aupres du Fondateur. Il fut uchi-deshi
+(eleve interne) de Maitre Ueshiba.
+
+Maitre Nobuyoshi Tamura (1933-2010), l'un des eleves directs du Fondateur, a vecu plus de 30 ans
+en France ou il a diffuse, en tant que delegue europeen, un aikido fidele a l'enseignement qu'il
+a recu. Son influence sur l'aikido francais est considerable et perdure a travers ses nombreux eleves.
+
+Notre club s'inscrit dans la lignee de l'enseignement de Maitre Tamura, transmis par ses eleves
+directs. Jean-Marc Chamot a notamment pratique avec Andre Nocquet, premier uchi-deshi francais
+du Fondateur.
+
+### Principes fondamentaux
+- Ai (合) : Harmonie, union
+- Ki (気) : Energie vitale
+- Do (道) : La voie, le chemin
+Ainsi, l'Aikido peut se traduire par "la voie de l'harmonie des energies".
+
+### La pratique
+L'aikido se pratique en keikogi (tenue d'entrainement blanche) et souvent en hakama
+(pantalon large traditionnel) pour les pratiquants avances. Les techniques comprennent :
+- Tachi-waza : Techniques debout
+- Suwari-waza : Techniques a genoux
+- Hanmi-handachi : Un partenaire debout, l'autre a genoux
+- Buki-waza : Techniques avec armes (jo, bokken, tanto)
+
+### Pourquoi pratiquer l'Aikido ?
+- Condition physique : souplesse, coordination, equilibre
+- Bien-etre mental : gestion du stress, concentration
+- Confiance en soi : assurance et serenite face aux conflits
+
+### Aikido et Self-Defense
+L'aikido developpe des qualites essentielles pour la self-defense :
+- La vigilance : conscience de son environnement et anticipation
+- Le placement : savoir se positionner pour eviter le danger
+- Le desequilibre : utiliser la force de l'agresseur contre lui-meme
+- Les immobilisations : controler sans blesser
+- Le calme : garder son sang-froid sous pression
+L'aikido enseigne a desamorcer les conflits avant qu'ils ne deviennent physiques.
+
+### Aikido et les Femmes
+L'aikido est particulierement adapte aux femmes car il ne repose pas sur la force brute
+mais sur les principes de levier, de desequilibre et d'utilisation de l'energie du partenaire.
+La pratique mixte est enrichissante et l'environnement du club est bienveillant et respectueux.
+
+### Aikido pour les Enfants
+L'aikido est une discipline ideale pour les enfants a partir de 7 ans. Sans competition ni violence,
+il permet de developper coordination, equilibre, souplesse, concentration, respect et discipline,
+gestion des conflits. Les cours enfants ont lieu le lundi et jeudi de 18h30 a 19h30.
+
+---
+
+## Le Club Kannagara
+
+### Notre histoire
+Le club Kannagara a ete cree en 1990 par Noel Stella. Depuis plus de 30 ans, il accueille
+des pratiquants de tous ages et de tous niveaux dans une ambiance conviviale et respectueuse
+des traditions martiales japonaises.
+
+"Kannagara" (惟神) est un concept shinto qui signifie "suivre la voie des kami" ou "etre en
+harmonie avec le divin". Il evoque l'idee de vivre naturellement, en accord avec les lois de
+l'univers. Ce nom reflete l'approche de l'aikido du club : une pratique qui vise l'harmonie
+et le developpement naturel de chacun.
+
+### Le club aujourd'hui
+Le club Kannagara compte pres de 50 licencies, dont une vingtaine d'enfants. Il propose :
+- Cours enfants (a partir de 7 ans)
+- Cours adultes debutants et confirmes
+- Stages reguliers avec des experts invites
+
+### Affiliations et agrements
+- FFAB (Federation Francaise d'Aikido et de Budo) : enseignement dans la tradition de Maitre Tamura
+- Agrement Jeunesse et Sports : conditions d'accueil et d'encadrement de qualite
+
+### Notre dojo
+Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt
+
+### L'equipe dirigeante
+- Fanny Jacquemier : Presidente, 06 76 48 16 01
+- Sebastien Huet : Tresorier, 06 37 92 75 37
+
+### Partenaires
+- FFAB : Federation Francaise d'Aikido et de Budo
+- Ville de Guyancourt : mise a disposition du Gymnase Maurice Baquet
+- Ligue Ile-de-France FFAB : stages et evenements regionaux
+
+---
+
+## Les Professeurs
+
+Le club Kannagara est dirige par Jean-Marc Chamot, 7e Dan d'aikido et cadre technique FFAB,
+accompagne d'une equipe de quatre enseignants diplomes. Tous sont formes dans la tradition
+directe de Maitre Tamura Nobuyoshi.
+
+### Jean-Marc Chamot
+- Grade : 7eme Dan Aikido, 4e Dan Iaido
+- Diplome : DESJEPS (Diplome d'Etat Superieur de la Jeunesse, de l'Education Populaire et du Sport)
+- Fonction : Cadre technique FFAB
+
+Jean-Marc debute l'Aikido au debut des annees 70, a l'age de 17 ans, au sein du groupe d'Andre
+Nocquet, premier uchi-deshi (eleve interne) etranger de Ueshiba Morihei, fondateur de l'Aikido.
+Tres rapidement cette discipline martiale devient sa passion et sa route croise alors celles de
+nombreuses personnalites de l'Aikido comme les maitres Tohei Koichi, Tada Hiroshi, Yamaguchi Seigo,
+Nakazano Mutsuharu, Noro Masamichi, Yamada Yoshimitsu.
+
+Des sa premiere annee de pratique il commence a suivre assidument l'enseignement de Tamura
+Nobuyoshi -- qui devient sa reference -- ainsi que celui de Sugano Seichi dont il assure
+l'interpretariat en France pendant les neuf annees que celui-ci passe en Europe. Lors de visites
+au Japon il fait egalement connaissance des maitres de l'Aikikai, et s'entraine a Iwama,
+dans le dojo de Saito Morihiro.
+
+Parallelement a l'Aikido, Jean-Marc a pratique le Judo, le Karate, le Jodo pendant plusieurs annees.
+Il etudie et enseigne egalement le Iaido Shindo Muso Ryu depuis la fin des annees 70.
+
+Pendant les annees 80, il passe avec succes le 1er degre du brevet d'educateur sportif puis le
+2nd degre pour lequel il est major de promotion. Depuis pres de 40 ans, il dirige des stages tant
+en France qu'a l'etranger et a participe a la formation de tres nombreux pratiquants et enseignants.
+
+### Nacer Chekkaba
+- Grade : 4eme Dan Aikido FFAB
+- Diplome : BE1
+
+Enseignant experimente, Nacer apporte sa maitrise technique et son approche pedagogique aux cours
+du club. Forme dans la tradition FFAB, il transmet un aikido rigoureux tout en restant attentif
+a l'evolution de chaque pratiquant.
+
+### Thierry Montfort
+- Grade : 4eme Dan Aikido FFAB
+- Diplome : BE1
+
+Thierry Montfort a commence l'Aikido en septembre 1990 aupres de Jean-Marc Chamot. En 2008,
+le choix de suivre l'enseignement de Christian Tissier et de ses eleves a marque une nouvelle
+etape dans son parcours. Educateur technique specialise de profession, transmettre est au coeur
+de son identite. Pour Thierry, l'Aikido depasse le cadre d'un art martial : c'est un art du
+mouvement, un espace d'apprentissage permanent. Il pratique et enseigne avec une conviction
+simple : "nous n'avons jamais fini d'apprendre !".
+
+### Germain Chamot
+- Grade : 4eme Dan Aikido Kishinkai
+- Diplome : Brevet Federal FFAB
+
+Germain debute les arts martiaux des l'enfance par le judo, puis est initie a l'aikido par son
+pere, Jean-Marc Chamot (7eme Dan). Il pratiquera ensuite de nombreuses annees avec Leo Tamaki,
+fondateur de l'ecole Kishinkai, et etudie egalement sous la direction de Maitre Kuroda.
+Il a ete Redacteur en chef de Dragon Magazine Special Aikido. Il contribue egalement au magazine
+Aikido Journal. Praticien de Shiatsu certifie FFST. Cette diversite d'approches et cette double
+filiation FFAB / Kishinkai enrichissent la pratique de l'ensemble des membres du club.
+
+### Sebastien Huet
+- Grade : 1er Dan Aikido FFAB
+- Diplome : Brevet Federal FFAB
+
+Sebastien anime les seances d'initiation "Decouvrir avant de s'inscrire", permettant aux personnes
+interessees de faire leurs premiers pas sur le tatami dans un cadre adapte et bienveillant.
+Son approche pedagogique et sa patience en font l'interlocuteur ideal pour accueillir les
+nouveaux pratiquants.
+
+### Notre approche pedagogique
+- Respect de la tradition : un aikido fidele a l'enseignement des maitres
+- Adaptation : des cours adaptes au niveau et aux capacites de chacun
+- Bienveillance : une atmosphere d'entraide et de respect mutuel
+- Progression : un suivi personnalise pour chaque pratiquant
+- Ouverture : des stages et echanges avec d'autres clubs
+
+---
+
+## Inscription
+
+### Essayer avant de s'inscrire
+Pendant tout le mois de septembre, les cours sont ouverts aux personnes souhaitant decouvrir
+l'aikido. Pret de kimono possible, a defaut une tenue de sport (jogging) convient.
+
+### Documents necessaires
+- Fiche d'inscription (bulletin adultes ou mineurs)
+- Certificat medical de non contre-indication a la pratique de l'aikido (moins d'un an)
+- Photo d'identite
+- Reglement de la cotisation (paiement en plusieurs fois possible)
+
+### Tarifs saison 2025-2026
+- Enfants (7-14 ans) : 185 EUR / an
+- Adultes (15 ans et +) : 245 EUR / an
+- Tarif reduit (etudiants, chomeurs) : 126 EUR / an (sur justificatif)
+- Tarif famille : reduction de 10% a partir de la 3e inscription d'un meme foyer
+
+La cotisation annuelle comprend :
+- Licence FFAB
+- Assurance
+- Acces a tous les cours de la semaine
+- Participation aux stages federaux
+- Passages de grades (kyu au sein du club)
+
+### Equipement necessaire
+- Keikogi (kimono blanc)
+- Zoori (sandales japonaises) pour circuler autour du tatami
+- Hakama : pantalon traditionnel, generalement a partir du 3e kyu
+- Armes (optionnel) : jo (baton), bokken (sabre en bois), tanto (couteau en bois)
+Pour les premiers cours d'essai, un survetement propre suffit.
+
+---
+
+## FAQ - Questions frequentes
+
+### Debuter l'aikido
+
+Q: Faut-il avoir deja pratique un sport de combat pour commencer ?
+R: Non, aucune experience prealable n'est necessaire. L'aikido est accessible a tous, quel que soit
+votre niveau sportif. Les debutants beneficient d'un accompagnement adapte.
+
+Q: A partir de quel age peut-on pratiquer ?
+R: Au club Kannagara, les enfants sont accueillis a partir de 7 ans. Les cours enfants ont lieu
+le lundi et jeudi de 18h30 a 19h30. Pour les adultes, il n'y a pas de limite d'age.
+
+Q: L'aikido est-il adapte aux femmes ?
+R: Absolument. L'aikido ne repose pas sur la force brute mais sur les principes de levier, de
+desequilibre et d'utilisation de l'energie du partenaire. La pratique mixte est enrichissante
+et l'environnement du club est bienveillant et respectueux.
+
+Q: Faut-il etre souple ou en bonne condition physique ?
+R: Non, la souplesse et la condition physique s'ameliorent naturellement avec la pratique.
+Chacun progresse a son rythme, selon ses capacites.
+
+### Equipement et tenue
+
+Q: Quel equipement faut-il pour commencer ?
+R: Un simple survetement suffit pour les premieres seances. Puis un keikogi (kimono blanc),
+une ceinture blanche et des zoori (sandales). Les armes peuvent etre pretees au debut.
+
+Q: Qu'est-ce que le hakama ?
+R: Le hakama est le pantalon large traditionnel porte par les pratiquants avances
+(generalement a partir du 1er kyu ou 1er dan). C'est un vetement symbolique
+qui represente l'engagement dans la voie.
+
+### Le club Kannagara
+
+Q: Peut-on faire un cours d'essai ?
+R: Oui, cours d'essai gratuits, particulierement en septembre lors des portes ouvertes.
+
+Q: Quels sont les horaires des cours ?
+R: Gymnase Maurice Baquet : enfants lundi et jeudi 18h30-19h30, adultes lundi et jeudi 19h30-21h30.
+
+Q: Ou se trouve le club ?
+R: Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt.
+
+Q: Le club est-il affilie a une federation ?
+R: Oui, affilie a la FFAB (Federation Francaise d'Aikido et de Budo) avec agrement Jeunesse et Sports.
+
+Q: Qui enseigne l'aikido au club Kannagara ?
+R: L'enseignement est dirige par Jean-Marc Chamot, 7e Dan d'aikido, 4e Dan d'iaido, titulaire du
+DESJEPS et cadre technique FFAB. Il pratique depuis le debut des annees 1970, forme aupres d'Andre
+Nocquet (premier uchi-deshi etranger du fondateur de l'aikido) et de Maitre Tamura Nobuyoshi.
+Il est accompagne de quatre enseignants diplomes.
+
+Q: Qu'est-ce qui distingue le club Kannagara des autres clubs d'aikido ?
+R: Le club offre l'opportunite rare de pratiquer avec un enseignant 7e Dan beneficiant d'une
+filiation exceptionnelle : Andre Nocquet (premier etranger uchi-deshi du fondateur), Maitre
+Tamura, et neuf ans d'interpretariat pour Maitre Sugano. Cette transmission directe depuis
+les sources de l'aikido confere a l'enseignement une authenticite et une profondeur remarquables.
+
+### La pratique
+
+Q: Y a-t-il des competitions en aikido ?
+R: Non, l'aikido exclut toute forme de competition. La pratique est basee sur la cooperation
+et le respect mutuel entre partenaires.
+
+Q: Comment fonctionnent les grades ?
+R: Le systeme comprend les kyu (du 6e au 1er kyu, ceinture blanche) puis les dan (ceinture noire).
+Les passages de kyu se font au sein du club, les dan lors d'examens regionaux ou nationaux.
+
+Q: Utilise-t-on des armes en aikido ?
+R: Oui, armes en bois : jo (baton d'environ 1,28 m), bokken (sabre en bois), tanto (couteau en bois).
+Ce travail permet de mieux comprendre les distances, les angles et l'origine des techniques.
+
+Q: L'aikido est-il efficace en self-defense ?
+R: L'aikido developpe vigilance, anticipation, placement, gestion du stress. Il enseigne surtout
+a desamorcer les conflits avant qu'ils ne deviennent physiques.
+
+### Inscription
+
+Q: Quand peut-on s'inscrire ?
+R: Principalement en septembre lors des portes ouvertes, mais aussi en cours d'annee selon
+les places disponibles.
+
+Q: Quels documents fournir ?
+R: Certificat medical, photo d'identite, formulaire d'inscription, reglement de la cotisation.
+
+---
+
+## Contact
+
+- Presidente : Fanny Jacquemier, 06 76 48 16 01
+- Email : aikido.kannagara.guyancourt@gmail.com
+- Horaires : Lundi et Jeudi 18h30-21h30
+- Lieu : Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt
+- Acces : Quartier des Graviers, accessible en voiture ou en transports en commun
+- Coordonnees GPS : 48.7678, 2.0567
+
+---
+
+## Les Fondations de l'Aikido selon Maitre Tamura
+
+Maitre Nobuyoshi Tamura, 8e dan et eleve direct du fondateur Morihei Ueshiba, a formalise
+un ensemble de dix fondations qui constituent le socle de la pratique de l'aikido.
+Ces principes sont transmis au sein de la FFAB.
+
+1. Shisei (姿勢) - La Posture : position a la fois physique et mentale, alignement du corps
+2. Kokyu (呼吸) - La Respiration : respiration abdominale, lente, profonde et naturelle
+3. Kamae (構え) - La Garde : se tenir pret, hanmi no kamae (garde de profil)
+4. Ma-ai (間合い) - La Distance : espace convenable entre deux pratiquants
+5. Irimi (入身) - L'Entree : penetrer, avancer en reduisant la distance
+6. Tenkan (転換) - La Rotation : transformer un mouvement lineaire en circulaire
+7. Ura / Omote (裏/表) - Les Aspects : cote cache et cote visible des techniques
+8. Tai sabaki (体捌き) - Le Deplacement du corps : esquive et positionnement
+9. Atemi (当身) - Le Coup : outil de destabilisation et de controle
+10. Kokyu ryoku (呼吸力) - La Puissance respiratoire : coordination corps-souffle-esprit
+
+### Les Chutes (Ukemi)
+- Mae ukemi : chute avant roulee
+- Ushiro ukemi : chute arriere roulee
+- Yoko ukemi : chute laterale
+- Tobu ukemi : chute plaquee (projection aerienne)
+
+### Maitre Nobuyoshi Tamura (1933-2010)
+Ne a Osaka en 1933, Nobuyoshi Tamura devient l'un des eleves les plus proches d'O Sensei
+Morihei Ueshiba. En 1964, il s'installe en France ou il contribue enormement au developpement
+de l'aikido. Directeur technique de la FFAB, il forme des generations de pratiquants et
+d'enseignants, laissant un heritage technique et philosophique considerable.
+
+"L'aikido n'est pas une technique de combat mais un moyen de s'ameliorer soi-meme en harmonie
+avec les autres et avec la nature." - Maitre Nobuyoshi Tamura
+
+---
+
+## Les Grades en Aikido
+
+Le systeme de grades en aikido comprend :
+
+### Les Kyu (grades debutants, ceinture blanche)
+Du 6e kyu au 1er kyu, progression technique evaluee au sein du club.
+
+### Les Dan (grades avances, ceinture noire)
+A partir du 1er Dan, passages devant un jury regional ou national.
+Les dan sanctionnent non seulement la maitrise technique mais aussi la maturite dans la pratique.
+
+---
+
+## Les Armes en Aikido
+
+L'aikido inclut un travail avec trois armes principales en bois :
+
+### Jo (baton)
+Baton droit d'environ 1,28 m. Permet de travailler les distances, les angles et la coordination.
+
+### Bokken (sabre en bois)
+Replica en bois du katana japonais. Permet de comprendre l'origine des techniques a mains nues.
+
+### Tanto (couteau en bois)
+Utilisee pour le travail de defense contre attaque au couteau. Apprend le placement et les esquives.
+
+Le travail avec armes enrichit la comprehension des techniques a mains nues et inversement.
+
+---
+
+## Mots-cles
+
+aikido, aikido guyancourt, arts martiaux, FFAB, Jean-Marc Chamot, 7e Dan,
+Nacer Chekkaba, Thierry Montfort, Germain Chamot, Sebastien Huet,
+dojo, gymnase maurice baquet, yvelines, ile-de-france, sport, self-defense,
+aikido femmes, aikido enfants, cours enfants, arts martiaux enfants,
+morihei ueshiba, nobuyoshi tamura, andre nocquet, sugano seichi,
+stages aikido, passages grades, DESJEPS, cadre technique

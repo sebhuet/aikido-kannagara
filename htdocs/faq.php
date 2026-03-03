@@ -79,6 +79,22 @@
                     "@type": "Answer",
                     "text": "Oui, nous proposons des cours d'essai gratuits, particulièrement en septembre lors des portes ouvertes. Contactez-nous pour convenir d'une date."
                 }
+            },
+            {
+                "@type": "Question",
+                "name": "Qui enseigne l'aïkido au club Kannagara ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "L'enseignement est dirigé par Jean-Marc Chamot, 7e Dan d'aïkido, 4e Dan d'iaïdo, titulaire du DESJEPS et cadre technique FFAB. Il pratique depuis le début des années 1970, formé auprès d'André Nocquet (premier uchi-deshi étranger du fondateur de l'aïkido) et de Maître Tamura Nobuyoshi. Il est accompagné de quatre enseignants diplômés."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Qu'est-ce qui distingue le club Kannagara des autres clubs d'aïkido ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Le club offre l'opportunité rare de pratiquer avec un enseignant 7e Dan bénéficiant d'une filiation exceptionnelle : André Nocquet (premier étranger uchi-deshi du fondateur de l'aïkido), Maître Tamura Nobuyoshi, et neuf ans d'interprétariat pour Maître Sugano Seichi. Cette transmission directe depuis les sources de l'aïkido confère à l'enseignement une authenticité et une profondeur remarquables."
+                }
             }
         ]
     }
@@ -483,6 +499,46 @@
                                     Oui, le club Kannagara est affilié à la <strong>FFAB</strong>
                                     (Fédération Française d'Aïkido et de Budo) et possède l'agrément Jeunesse et Sports.
                                     Cette affiliation garantit un enseignement de qualité et des grades reconnus.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Qui enseigne l'aïkido au club Kannagara ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    L'enseignement est dirigé par <strong>Jean-Marc Chamot</strong>,
+                                    <strong>7<sup>e</sup> Dan d'aïkido</strong>, 4<sup>e</sup> Dan d'iaïdo,
+                                    titulaire du DESJEPS (diplôme d'État supérieur) et cadre technique
+                                    de la FFAB. Il pratique l'aïkido depuis le début des années 1970
+                                    et a été formé auprès d'<strong>André Nocquet</strong>, premier
+                                    uchi-deshi (élève interne) étranger du fondateur de l'aïkido,
+                                    et de <strong>Maître Tamura Nobuyoshi</strong>, l'un des plus grands
+                                    maîtres d'aïkido au monde. Il est accompagné d'une équipe de quatre
+                                    enseignants diplômés.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Qu'est-ce qui distingue le club Kannagara des autres clubs d'aïkido ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Le club offre une opportunité rare de pratiquer avec un enseignant
+                                    <strong>7<sup>e</sup> Dan</strong>, grade très élevé en aïkido.
+                                    Jean-Marc Chamot bénéficie d'une filiation exceptionnelle :
+                                    formé par André Nocquet (premier étranger à avoir étudié directement
+                                    avec le fondateur de l'aïkido au Japon), puis par Maître Tamura
+                                    pendant des décennies. Il a également servi d'interprète pour
+                                    Maître Sugano pendant neuf ans. Cette transmission directe depuis
+                                    les sources de l'aïkido confère à l'enseignement du club une
+                                    authenticité et une profondeur remarquables.
                                 </p>
                             </div>
                         </div>
