@@ -230,7 +230,10 @@
                             <h3 class="card__title">Fiche d'inscription</h3>
                             <p class="card__text">
                                 Formulaire d'inscription au club, à compléter et signer.
-                                Disponible sur place ou sur demande par email.
+                            </p>
+                            <p class="card__text">
+                                <a href="docs/Bulletin%20adh%C3%A9sion%20adultes.pdf" target="_blank">Bulletin adultes (PDF)</a><br>
+                                <a href="docs/Bulletin%20adh%C3%A9sion%20mineur.pdf" target="_blank">Bulletin mineurs (PDF)</a>
                             </p>
                         </div>
                     </div>
@@ -265,7 +268,7 @@
                     </div>
                 </div>
 
-                <h2>Tarifs saison 2024-2025</h2>
+                <h2>Tarifs saison 2025-2026</h2>
                 <p>
                     La cotisation annuelle comprend la licence FFAB, l'assurance et l'accès à tous les cours.
                     Le règlement peut s'effectuer en plusieurs fois.
@@ -274,7 +277,7 @@
                 <div class="tarifs-grid">
                     <div class="tarif-card">
                         <h3 class="tarif-card__title">Enfants</h3>
-                        <div class="tarif-card__price">180€ <span>/ an</span></div>
+                        <div class="tarif-card__price">185€ <span>/ an</span></div>
                         <p class="tarif-card__description">7 à 14 ans</p>
                         <ul class="tarif-card__features">
                             <li>2 cours par semaine</li>
@@ -286,7 +289,7 @@
 
                     <div class="tarif-card tarif-card--featured">
                         <h3 class="tarif-card__title">Adultes</h3>
-                        <div class="tarif-card__price">280€ <span>/ an</span></div>
+                        <div class="tarif-card__price">245€ <span>/ an</span></div>
                         <p class="tarif-card__description">À partir de 15 ans</p>
                         <ul class="tarif-card__features">
                             <li>2 cours par semaine (4h)</li>
@@ -299,7 +302,7 @@
 
                     <div class="tarif-card">
                         <h3 class="tarif-card__title">Tarif réduit</h3>
-                        <div class="tarif-card__price">230€ <span>/ an</span></div>
+                        <div class="tarif-card__price">126€ <span>/ an</span></div>
                         <p class="tarif-card__description">Étudiants, chômeurs</p>
                         <ul class="tarif-card__features">
                             <li>Sur justificatif</li>
