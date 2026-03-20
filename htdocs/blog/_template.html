@@ -4,7 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{description}}">
-    <title>{{title}} - Blog Kannagara</title>
+    <meta name="robots" content="index, follow">
+    <title>{{title}} | Blog Kannagara Aïkido</title>
+    <link rel="canonical" href="https://kannagara.fr/blog/{{slug}}.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://kannagara.fr/blog/{{slug}}.html">
+    <meta property="og:title" content="{{title}} | Blog Kannagara Aïkido">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Kannagara Aïkido">
+    <meta property="article:published_time" content="{{date_iso}}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{title}} | Blog Kannagara Aïkido">
+    <meta name="twitter:description" content="{{description}}">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+
+    <!-- Geo -->
+    <meta name="geo.region" content="FR-78">
+    <meta name="geo.placename" content="Guyancourt">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{title}}",
+      "description": "{{description}}",
+      "datePublished": "{{date_iso}}",
+      "url": "https://kannagara.fr/blog/{{slug}}.html",
+      "author": {
+        "@type": "Organization",
+        "name": "Kannagara Aïkido Club de Guyancourt",
+        "url": "https://kannagara.fr"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Kannagara Aïkido Club de Guyancourt",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://kannagara.fr/images/logo-kannagara.png"
+        }
+      },
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "Blog Kannagara Aïkido",
+        "url": "https://kannagara.fr/blog.html"
+      }
+    }
+    </script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../css/style.css">

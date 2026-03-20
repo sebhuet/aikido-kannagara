@@ -67,28 +67,28 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/mentions-legales.html</loc>
-        <lastmod>2026-03-03</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    <url>
         <loc>https://kannagara.fr/agenda.html</loc>
         <lastmod>2026-03-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/statuts.html</loc>
+        <loc>https://kannagara.fr/actualites.html</loc>
         <lastmod>2026-03-03</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://kannagara.fr/reglement-interieur.html</loc>
+        <loc>https://kannagara.fr/blog.html</loc>
         <lastmod>2026-03-03</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.fr/galerie.html</loc>
+        <lastmod>2026-03-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://kannagara.fr/llms.txt</loc>
@@ -101,5 +101,41 @@
         <lastmod>2026-03-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.fr/blog/importance-ukemi.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.fr/blog/stage-regional-2023.html</loc>
+        <lastmod>2023-12-08</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.fr/blog/debuter-aikido.html</loc>
+        <lastmod>2023-11-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.fr/blog/rentree-2023.html</loc>
+        <lastmod>2023-10-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.fr/blog/passage-grades-juin-2023.html</loc>
+        <lastmod>2023-06-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.fr/blog/reflexion-harmonie.html</loc>
+        <lastmod>2023-05-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
     </url>
 </urlset>

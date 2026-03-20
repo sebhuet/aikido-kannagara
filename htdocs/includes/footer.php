@@ -10,22 +10,27 @@
                 </div>
 
                 <div class="footer__section">
-                    <h4>Navigation</h4>
+                    <h4>L'Aïkido</h4>
                     <ul>
-                        <li><a href="aikido.php">L'Aïkido</a></li>
-                        <li><a href="club.php">Club</a></li>
-                        <li><a href="professeurs.php">Professeurs</a></li>
+                        <li><a href="aikido.php">Présentation</a></li>
+                        <li><a href="fondations.php">Fondations</a></li>
+                        <li><a href="armes.php">Armes</a></li>
                         <li><a href="grades.php">Grades</a></li>
+                        <li><a href="lexique.php">Lexique</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__section">
-                    <h4>Pratique</h4>
+                    <h4>Le Club</h4>
                     <ul>
+                        <li><a href="club.php">Présentation</a></li>
+                        <li><a href="professeurs.php">Professeurs</a></li>
+                        <li><a href="actualites.php">Actualités</a></li>
+                        <li><a href="blog.php">Blog</a></li>
+                        <li><a href="galerie.php">Galerie</a></li>
                         <li><a href="inscription.php">Inscription</a></li>
                         <li><a href="agenda.php">Agenda</a></li>
                         <li><a href="faq.php">FAQ</a></li>
-                        <li><a href="lexique.php">Lexique</a></li>
                         <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </div>
