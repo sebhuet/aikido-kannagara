@@ -104,8 +104,8 @@ Chaque cours est défini par :
 
 ### Lundi 23/03
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Thierry Montfort
+- **19h30-21h30** | Adultes | Thierry Montfort
 
 ### Jeudi 26/03
 
