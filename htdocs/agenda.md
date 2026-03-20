@@ -97,8 +97,8 @@ Chaque cours est défini par :
 
 ### Jeudi 19/03
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Germain Chamot
+- **19h30-21h30** | Adultes | Germain Chamot
 
 ## Semaine du 23/03/2026
 
