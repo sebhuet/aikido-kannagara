@@ -109,27 +109,27 @@ Chaque cours est défini par :
 
 ### Jeudi 26/03
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
 
 ## Semaine du 30/03/2026
 
 ### Lundi 30/03
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Thierry Montfort
+- **19h30-21h30** | Adultes | Thierry Montfort
 
 ### Jeudi 02/04
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Germain Chamot
+- **19h30-21h30** | Adultes | Germain Chamot
 
 ## Semaine du 06/04/2026
 
 ### Lundi 06/04
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Pas de cours
 
 ### Jeudi 09/04
 
@@ -141,24 +141,24 @@ Chaque cours est défini par :
 ### Lundi 13/04
 
 - **18h30-19h30** | Enfants | Pas de cours
-- **19h30-21h30** | Adultes |
+- **19h30-21h30** | Adultes | Sébastien Huet
 
 ### Jeudi 16/04
 
 - **18h30-19h30** | Enfants | Pas de cours
-- **19h30-21h30** | Adultes |
+- **19h30-21h30** | Adultes | Sébastien Huet
 
 ## Semaine du 20/04/2026 - Vacances Scolaires
 
 ### Lundi 20/04
 
 - **18h30-19h30** | Enfants | Pas de cours
-- **19h30-21h30** | Adultes |
+- **19h30-21h30** | Adultes | Sébastien Huet
 
 ### Jeudi 23/04
 
 - **18h30-19h30** | Enfants | Pas de cours
-- **19h30-21h30** | Adultes |
+- **19h30-21h30** | Adultes | Sébastien Huet
 
 ## Semaine du 27/04/2026
 
