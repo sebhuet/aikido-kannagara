@@ -153,7 +153,7 @@ Chaque cours est défini par :
 ### Lundi 20/04
 
 - **18h30-19h30** | Enfants | Pas de cours
-- **19h30-21h30** | Adultes | Sébastien Huet
+- **19h30-21h30** | Adultes | Jean-Marc Chamot / Stage ouvert aux extérieurs
 
 ### Jeudi 23/04
 
@@ -168,6 +168,51 @@ Chaque cours est défini par :
 - **19h30-21h30** | Adultes |
 
 ### Jeudi 30/04
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+## Semaine du 04/05/2026
+
+### Lundi 04/05
+
+- **18h30-19h30** | Enfants | Jean-Marc Chamot
+- **19h30-21h30** | Adultes | Jean-Marc Chamot / Stage ouvert aux extérieurs
+
+### Jeudi 07/05
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+## Semaine du 11/05/2026
+
+### Lundi 11/05
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+### Jeudi 14/05 - Ascension - Pas de cours
+
+## Semaine du 18/05/2026
+
+### Lundi 18/05
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+### Jeudi 21/05
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+## Semaine du 25/05/2026
+
+### Lundi 25/05 - Lundi de Pentecôte
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+### Jeudi 28/05
 
 - **18h30-19h30** | Enfants |
 - **19h30-21h30** | Adultes |

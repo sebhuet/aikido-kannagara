@@ -205,6 +205,327 @@
             min-width: 180px;
             text-align: center;
         }
+
+        /* Photo intervenant — Codep */
+        .affiche-photo {
+            position: absolute;
+            top: 35%;
+            right: 5%;
+            width: 280px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            border: 4px solid rgba(255,255,255,0.8);
+        }
+
+        .affiche-photo[src=""] {
+            display: none;
+        }
+
+        /* Photo intervenant — Kannagara */
+        .kn-photo {
+            position: absolute;
+            right: 80px;
+            top: 440px;
+            width: 240px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border: 3px solid #e8e8f0;
+            z-index: 5;
+        }
+
+        .kn-photo[src=""] {
+            display: none;
+        }
+
+        /* Upload photo */
+        .photo-upload {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+
+        .photo-upload__preview {
+            width: 60px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid var(--color-border);
+            background: var(--color-bg-alt);
+        }
+
+        .photo-upload__preview[src=""] {
+            display: none;
+        }
+
+        .photo-upload__clear {
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            cursor: pointer;
+            text-decoration: underline;
+            border: none;
+            background: none;
+            padding: 0;
+        }
+
+        .photo-upload__clear:hover {
+            color: #c0392b;
+        }
+
+        /* Sélecteur de template */
+        .template-selector {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .template-option {
+            flex: 1;
+            position: relative;
+        }
+
+        .template-option input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .template-option label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md);
+            border: 2px solid var(--color-border);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .template-option label:hover {
+            border-color: var(--color-accent);
+        }
+
+        .template-option input:checked + label {
+            border-color: var(--color-accent);
+            background: rgba(201, 163, 56, 0.08);
+            box-shadow: 0 0 0 1px var(--color-accent);
+        }
+
+        .template-option__preview {
+            width: 100%;
+            height: 80px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .template-option__preview--codep {
+            background: linear-gradient(135deg, #1a2a4a 60%, #2a3a5a);
+        }
+
+        .template-option__preview--kannagara {
+            background: linear-gradient(to bottom, #fff 50%, #1a1a3e);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .template-option__preview--kannagara::after {
+            content: "";
+            position: absolute;
+            right: 15%;
+            top: 10%;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #c0392b;
+        }
+
+        /* ===== TEMPLATE KANNAGARA ===== */
+        .affiche-preview--kannagara {
+            width: 1240px;
+            height: 1754px;
+            position: relative;
+            background: #fff;
+            font-family: 'Century Gothic', 'Avenir', 'Helvetica Neue', sans-serif;
+            transform-origin: top left;
+            overflow: hidden;
+        }
+
+        /* En-tête */
+        .kn-header {
+            text-align: center;
+            padding: 60px 80px 30px;
+        }
+
+        .kn-header__stage {
+            position: absolute;
+            top: 60px;
+            left: 80px;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            writing-mode: vertical-rl;
+            color: #1a1a2e;
+        }
+
+        .kn-header__aikido {
+            font-size: 96px;
+            font-weight: 900;
+            letter-spacing: 5px;
+            color: #1a1a2e;
+            line-height: 1;
+        }
+
+        .kn-header__sub {
+            font-size: 18px;
+            color: #666;
+            margin-top: 8px;
+            letter-spacing: 2px;
+        }
+
+        /* Professeur */
+        .kn-prof {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .kn-prof__name {
+            font-size: 52px;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .kn-prof__grade {
+            font-size: 52px;
+            font-weight: 300;
+            color: #1a1a2e;
+        }
+
+        .kn-prof__name2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-top: 10px;
+        }
+
+        .kn-prof__grade2 {
+            font-size: 42px;
+            font-weight: 300;
+            color: #1a1a2e;
+        }
+
+        /* Date */
+        .kn-date {
+            text-align: center;
+            margin-top: 40px;
+            color: #8b1a1a;
+        }
+
+        .kn-date__day {
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        .kn-date__hours {
+            font-size: 30px;
+            margin-top: 5px;
+        }
+
+        /* Logos */
+        .kn-logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .kn-logos img {
+            height: 80px;
+            object-fit: contain;
+        }
+
+        /* Infos */
+        .kn-infos {
+            position: absolute;
+            left: 80px;
+            top: 780px;
+            max-width: 500px;
+            font-size: 26px;
+            line-height: 1.8;
+            color: #1a1a2e;
+            z-index: 5;
+        }
+
+        .kn-infos__label {
+            font-weight: 700;
+        }
+
+        .kn-infos__row {
+            margin-bottom: 8px;
+        }
+
+        /* Soleil rouge */
+        .kn-sun {
+            position: absolute;
+            right: 80px;
+            top: 650px;
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 40% 40%, #e84545, #c0392b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+        }
+
+        .kn-sun__kanji {
+            font-size: 100px;
+            color: rgba(255, 255, 255, 0.88);
+            font-weight: 700;
+            writing-mode: vertical-rl;
+            letter-spacing: 12px;
+            font-family: "MS Mincho", "Yu Mincho", "Hiragino Mincho Pro", serif;
+        }
+
+        /* Nuages SVG */
+        .kn-clouds {
+            position: absolute;
+            right: 350px;
+            top: 680px;
+            z-index: 4;
+        }
+
+        /* Mont Fuji */
+        .kn-fuji {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 4;
+        }
+
+        /* Footer contact */
+        .kn-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #1a1a3e;
+            color: #fff;
+            text-align: center;
+            padding: 18px 40px;
+            font-size: 18px;
+            line-height: 1.7;
+            z-index: 10;
+        }
     </style>
 </head>
 <body>
@@ -229,6 +550,24 @@
                 <div class="affiche-form">
                     <h2>Informations du stage</h2>
 
+                    <h3>Modèle d'affiche</h3>
+                    <div class="template-selector">
+                        <div class="template-option">
+                            <input type="radio" name="template" id="tpl-codep" value="codep" checked>
+                            <label for="tpl-codep">
+                                <div class="template-option__preview template-option__preview--codep"></div>
+                                Codep 78
+                            </label>
+                        </div>
+                        <div class="template-option">
+                            <input type="radio" name="template" id="tpl-kannagara" value="kannagara">
+                            <label for="tpl-kannagara">
+                                <div class="template-option__preview template-option__preview--kannagara"></div>
+                                Kannagara
+                            </label>
+                        </div>
+                    </div>
+
                     <h3>Intervenant 1</h3>
                     <div class="form-row">
                         <div class="form-group">
@@ -238,6 +577,14 @@
                         <div class="form-group">
                             <label for="grade">Grade</label>
                             <input type="text" id="grade" value="7ème Dan">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo-upload">Photo de l'intervenant</label>
+                        <div class="photo-upload">
+                            <input type="file" id="photo-upload" accept="image/*">
+                            <img src="" alt="" class="photo-upload__preview" id="photo-thumb">
+                            <button type="button" class="photo-upload__clear" id="photo-clear" style="display:none;">Supprimer</button>
                         </div>
                     </div>
 
@@ -338,16 +685,76 @@
                     </div>
                 </div>
 
-                <!-- Prévisualisation -->
-                <div class="affiche-preview-container">
+                <!-- Prévisualisation Codep 78 -->
+                <div class="affiche-preview-container" id="container-codep">
                     <div class="affiche-preview-wrapper">
                         <div class="affiche-preview" id="affiche-preview">
 
                             <!-- Zone haut-droite : intervenant + date + horaires -->
                             <div class="affiche-text--instructeur" id="preview-instructeur"></div>
 
+                            <!-- Photo intervenant -->
+                            <img src="" alt="" class="affiche-photo" id="preview-photo-codep">
+
                             <!-- Zone gauche : lieu + tarifs -->
                             <div class="affiche-text--infos" id="preview-infos"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prévisualisation Kannagara -->
+                <div class="affiche-preview-container" id="container-kannagara" style="display: none;">
+                    <div class="affiche-preview-wrapper">
+                        <div class="affiche-preview--kannagara" id="affiche-preview-kn">
+
+                            <!-- En-tête -->
+                            <div class="kn-header">
+                                <span class="kn-header__stage">STAGE</span>
+                                <div class="kn-header__aikido">AÏKIDO</div>
+                                <div class="kn-header__sub">Organisé par le club Kannagara — Guyancourt</div>
+                            </div>
+
+                            <!-- Professeur -->
+                            <div class="kn-prof" id="kn-prof"></div>
+
+                            <!-- Date -->
+                            <div class="kn-date" id="kn-date"></div>
+
+                            <!-- Logos -->
+                            <div class="kn-logos">
+                                <img src="images/logo-kannagara.png" alt="Kannagara Aïkido">
+                            </div>
+
+                            <!-- Photo intervenant -->
+                            <img src="" alt="" class="kn-photo" id="preview-photo-kn">
+
+                            <!-- Infos -->
+                            <div class="kn-infos" id="kn-infos"></div>
+
+                            <!-- Soleil rouge + kanji -->
+                            <div class="kn-sun">
+                                <span class="kn-sun__kanji">合気道</span>
+                            </div>
+
+                            <!-- Nuages -->
+                            <svg class="kn-clouds" width="200" height="100" viewBox="0 0 120 60">
+                                <path fill="rgba(200,160,160,0.3)" d="M20,40 Q10,40 10,30 Q10,20 20,20 Q22,10 35,12 Q45,5 55,15 Q65,8 72,18 Q82,15 85,25 Q95,22 95,32 Q95,42 85,42 Z"/>
+                                <path fill="rgba(200,160,160,0.3)" d="M50,55 Q42,55 42,47 Q42,40 50,40 Q52,33 62,35 Q70,30 77,38 Q85,35 87,43 Q92,42 92,48 Q92,56 85,56 Z"/>
+                            </svg>
+
+                            <!-- Mont Fuji -->
+                            <svg class="kn-fuji" viewBox="0 0 800 300" preserveAspectRatio="none" style="height: 350px;">
+                                <path fill="#1a1a3e" d="M0,300 L0,240 Q50,220 100,210 Q200,170 300,130 Q350,110 400,90 Q420,80 430,85 Q440,90 450,100 Q460,95 470,88 Q480,82 490,85 Q500,90 510,100 Q550,120 600,150 Q700,200 800,240 L800,300 Z"/>
+                                <path fill="#e8e8f0" d="M370,115 Q380,105 400,90 Q420,80 430,85 Q440,90 450,100 Q460,95 470,88 Q480,82 490,85 Q500,90 510,100 Q520,108 530,118 Q500,125 470,120 Q440,128 410,122 Q390,118 370,115 Z"/>
+                                <path fill="#1a1a3e" d="M0,270 Q100,250 200,255 Q300,240 400,260 Q500,245 600,255 Q700,250 800,270 L800,300 L0,300 Z" opacity="0.7"/>
+                            </svg>
+
+                            <!-- Footer contact -->
+                            <div class="kn-footer" id="kn-footer">
+                                <strong>Contact :</strong> Sébastien HUET — 06 76 48 16 01 — aikido.kannagara.guyancourt@gmail.com<br>
+                                Kannagara Aïkido Club de Guyancourt — Affilié à la FFAB
+                            </div>
 
                         </div>
                     </div>
@@ -366,6 +773,40 @@
     <script>
     document.addEventListener('DOMContentLoaded', function() {
 
+        var currentTemplate = 'codep';
+        var photoDataUrl = '';
+
+        // Gestion upload photo
+        var photoInput = document.getElementById('photo-upload');
+        var photoThumb = document.getElementById('photo-thumb');
+        var photoClear = document.getElementById('photo-clear');
+
+        photoInput.addEventListener('change', function(e) {
+            var file = e.target.files[0];
+            if (!file) return;
+            var reader = new FileReader();
+            reader.onload = function(ev) {
+                photoDataUrl = ev.target.result;
+                photoThumb.src = photoDataUrl;
+                photoClear.style.display = '';
+                updatePhotoPreview();
+            };
+            reader.readAsDataURL(file);
+        });
+
+        photoClear.addEventListener('click', function() {
+            photoDataUrl = '';
+            photoInput.value = '';
+            photoThumb.src = '';
+            photoClear.style.display = 'none';
+            updatePhotoPreview();
+        });
+
+        function updatePhotoPreview() {
+            document.getElementById('preview-photo-codep').src = photoDataUrl;
+            document.getElementById('preview-photo-kn').src = photoDataUrl;
+        }
+
         // Date par défaut : aujourd'hui
         var dateInput = document.getElementById('date-stage');
         if (!dateInput.value) {
@@ -379,45 +820,33 @@
         // Écouter tous les champs
         var fields = document.querySelectorAll('.affiche-form input, .affiche-form textarea');
         fields.forEach(function(field) {
-            field.addEventListener('input', updatePreview);
+            field.addEventListener('input', updateAllPreviews);
+        });
+
+        // Écouter le sélecteur de template
+        document.querySelectorAll('input[name="template"]').forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                currentTemplate = this.value;
+                document.getElementById('container-codep').style.display = currentTemplate === 'codep' ? '' : 'none';
+                document.getElementById('container-kannagara').style.display = currentTemplate === 'kannagara' ? '' : 'none';
+                updatePreviewScale();
+            });
         });
 
         // Mise à jour initiale
-        updatePreview();
+        updateAllPreviews();
         updatePreviewScale();
         window.addEventListener('resize', updatePreviewScale);
 
-        // === Prévisualisation ===
+        // === Données partagées ===
 
-        function updatePreviewScale() {
-            var wrapper = document.querySelector('.affiche-preview-wrapper');
-            var preview = document.getElementById('affiche-preview');
-            var availableWidth = wrapper.parentElement.clientWidth;
-            var scale = availableWidth / 1240;
-            if (scale > 1) scale = 1;
-            preview.style.transform = 'scale(' + scale + ')';
-            wrapper.style.height = (1754 * scale) + 'px';
-        }
-
-        function updatePreview() {
-            var instructeur = document.getElementById('instructeur').value;
-            var grade = document.getElementById('grade').value;
-            var instructeur2 = document.getElementById('instructeur-2').value.trim();
-            var grade2 = document.getElementById('grade-2').value.trim();
+        function getFormData() {
             var dateVal = document.getElementById('date-stage').value;
             var matinDebut = document.getElementById('matin-debut').value.trim();
             var matinFin = document.getElementById('matin-fin').value.trim();
             var apremDebut = document.getElementById('aprem-debut').value.trim();
             var apremFin = document.getElementById('aprem-fin').value.trim();
-            var lieu = document.getElementById('lieu').value;
-            var adresse = document.getElementById('adresse').value;
-            var prixAdulteDemi = document.getElementById('prix-adulte-demi').value.trim();
-            var prixAdulteJournee = document.getElementById('prix-adulte-journee').value.trim();
-            var prixEtudiantDemi = document.getElementById('prix-etudiant-demi').value.trim();
-            var prixEtudiantJournee = document.getElementById('prix-etudiant-journee').value.trim();
-            var ouvertA = document.getElementById('ouvert-a').value;
 
-            // Formater la date en français
             var dateFormatted = '';
             if (dateVal) {
                 var d = new Date(dateVal + 'T00:00:00');
@@ -427,7 +856,6 @@
                 dateFormatted = jours[d.getDay()] + ' ' + d.getDate() + ' ' + mois[d.getMonth()] + ' ' + d.getFullYear();
             }
 
-            // Construire la chaîne horaires
             var horaires = '';
             var hasMatin = matinDebut && matinFin;
             var hasAprem = apremDebut && apremFin;
@@ -439,68 +867,163 @@
                 horaires = apremDebut + ' - ' + apremFin;
             }
 
-            // Zone intervenant (haut-droite)
+            return {
+                instructeur: document.getElementById('instructeur').value,
+                grade: document.getElementById('grade').value,
+                instructeur2: document.getElementById('instructeur-2').value.trim(),
+                grade2: document.getElementById('grade-2').value.trim(),
+                dateFormatted: dateFormatted,
+                horaires: horaires,
+                lieu: document.getElementById('lieu').value,
+                adresse: document.getElementById('adresse').value,
+                prixAdulteDemi: document.getElementById('prix-adulte-demi').value.trim(),
+                prixAdulteJournee: document.getElementById('prix-adulte-journee').value.trim(),
+                prixEtudiantDemi: document.getElementById('prix-etudiant-demi').value.trim(),
+                prixEtudiantJournee: document.getElementById('prix-etudiant-journee').value.trim(),
+                ouvertA: document.getElementById('ouvert-a').value
+            };
+        }
+
+        function updateAllPreviews() {
+            var data = getFormData();
+            updatePreviewCodep(data);
+            updatePreviewKannagara(data);
+        }
+
+        // === Prévisualisation ===
+
+        function updatePreviewScale() {
+            // Codep
+            var containerCodep = document.getElementById('container-codep');
+            if (containerCodep.style.display !== 'none') {
+                var wrapper = containerCodep.querySelector('.affiche-preview-wrapper');
+                var preview = document.getElementById('affiche-preview');
+                var availableWidth = wrapper.parentElement.clientWidth;
+                var scale = availableWidth / 1240;
+                if (scale > 1) scale = 1;
+                preview.style.transform = 'scale(' + scale + ')';
+                wrapper.style.height = (1754 * scale) + 'px';
+            }
+
+            // Kannagara
+            var containerKn = document.getElementById('container-kannagara');
+            if (containerKn.style.display !== 'none') {
+                var wrapperKn = containerKn.querySelector('.affiche-preview-wrapper');
+                var previewKn = document.getElementById('affiche-preview-kn');
+                var availableWidthKn = wrapperKn.parentElement.clientWidth;
+                var scaleKn = availableWidthKn / 1240;
+                if (scaleKn > 1) scaleKn = 1;
+                previewKn.style.transform = 'scale(' + scaleKn + ')';
+                wrapperKn.style.height = (1754 * scaleKn) + 'px';
+            }
+        }
+
+        // === Codep 78 (existant) ===
+
+        function updatePreviewCodep(data) {
             var instrHTML = '';
-            if (instructeur) {
-                instrHTML += '<div class="nom">' + esc(instructeur) + '</div>';
+            if (data.instructeur) {
+                instrHTML += '<div class="nom">' + esc(data.instructeur) + '</div>';
             }
-            if (grade) {
-                instrHTML += '<div class="grade">' + esc(grade) + '</div>';
+            if (data.grade) {
+                instrHTML += '<div class="grade">' + esc(data.grade) + '</div>';
             }
-            if (instructeur2) {
-                instrHTML += '<div class="nom" style="margin-top: 15px;">' + esc(instructeur2) + '</div>';
-                if (grade2) {
-                    instrHTML += '<div class="grade">' + esc(grade2) + '</div>';
+            if (data.instructeur2) {
+                instrHTML += '<div class="nom" style="margin-top: 15px;">' + esc(data.instructeur2) + '</div>';
+                if (data.grade2) {
+                    instrHTML += '<div class="grade">' + esc(data.grade2) + '</div>';
                 }
             }
-            if (dateFormatted) {
-                instrHTML += '<div class="date">' + esc(dateFormatted) + '</div>';
+            if (data.dateFormatted) {
+                instrHTML += '<div class="date">' + esc(data.dateFormatted) + '</div>';
             }
-            if (horaires) {
-                instrHTML += '<div class="horaires">' + esc(horaires) + '</div>';
+            if (data.horaires) {
+                instrHTML += '<div class="horaires">' + esc(data.horaires) + '</div>';
             }
             document.getElementById('preview-instructeur').innerHTML = instrHTML;
 
-            // Zone infos (gauche)
             var infosHTML = '';
-
-            if (ouvertA) {
-                infosHTML += '<div class="ouvert">' + esc(ouvertA) + '</div>';
+            if (data.ouvertA) {
+                infosHTML += '<div class="ouvert">' + esc(data.ouvertA) + '</div>';
             }
-
-            if (lieu || adresse) {
-                infosHTML += '<div class="lieu">';
-                infosHTML += '<strong>Lieu :</strong> ';
-                if (lieu) infosHTML += esc(lieu);
-                if (lieu && adresse) infosHTML += '<br>';
-                if (adresse) infosHTML += adresse.split('\n').map(function(l) { return esc(l); }).join('<br>');
+            if (data.lieu || data.adresse) {
+                infosHTML += '<div class="lieu"><strong>Lieu :</strong> ';
+                if (data.lieu) infosHTML += esc(data.lieu);
+                if (data.lieu && data.adresse) infosHTML += '<br>';
+                if (data.adresse) infosHTML += data.adresse.split('\n').map(function(l) { return esc(l); }).join('<br>');
                 infosHTML += '</div>';
             }
-
-            // Tarifs
-            var hasAnyPrice = prixAdulteDemi || prixAdulteJournee || prixEtudiantDemi || prixEtudiantJournee;
+            var hasAnyPrice = data.prixAdulteDemi || data.prixAdulteJournee || data.prixEtudiantDemi || data.prixEtudiantJournee;
             if (hasAnyPrice) {
                 infosHTML += '<div class="tarifs">';
-                if (prixAdulteDemi || prixAdulteJournee) {
-                    var adulte = 'Adultes : ';
+                if (data.prixAdulteDemi || data.prixAdulteJournee) {
                     var parts = [];
-                    if (prixAdulteDemi) parts.push(prixAdulteDemi + ' € demi journée');
-                    if (prixAdulteJournee) parts.push(prixAdulteJournee + ' € journée');
-                    adulte += parts.join(' / ');
-                    infosHTML += esc(adulte) + '<br>';
+                    if (data.prixAdulteDemi) parts.push(data.prixAdulteDemi + ' € demi journée');
+                    if (data.prixAdulteJournee) parts.push(data.prixAdulteJournee + ' € journée');
+                    infosHTML += esc('Adultes : ' + parts.join(' / ')) + '<br>';
                 }
-                if (prixEtudiantDemi || prixEtudiantJournee) {
-                    var etudiant = 'Étudiants : ';
+                if (data.prixEtudiantDemi || data.prixEtudiantJournee) {
                     var parts2 = [];
-                    if (prixEtudiantDemi) parts2.push(prixEtudiantDemi + ' € demi journée');
-                    if (prixEtudiantJournee) parts2.push(prixEtudiantJournee + ' € journée');
-                    etudiant += parts2.join(' / ');
-                    infosHTML += esc(etudiant);
+                    if (data.prixEtudiantDemi) parts2.push(data.prixEtudiantDemi + ' € demi journée');
+                    if (data.prixEtudiantJournee) parts2.push(data.prixEtudiantJournee + ' € journée');
+                    infosHTML += esc('Étudiants : ' + parts2.join(' / '));
                 }
                 infosHTML += '</div>';
             }
-
             document.getElementById('preview-infos').innerHTML = infosHTML;
+        }
+
+        // === Kannagara ===
+
+        function updatePreviewKannagara(data) {
+            // Professeur
+            var profHTML = '';
+            if (data.instructeur) {
+                profHTML += '<div class="kn-prof__name">' + esc(data.instructeur);
+                if (data.grade) profHTML += ' <span class="kn-prof__grade">- ' + esc(data.grade) + '</span>';
+                profHTML += '</div>';
+            }
+            if (data.instructeur2) {
+                profHTML += '<div class="kn-prof__name2">' + esc(data.instructeur2);
+                if (data.grade2) profHTML += ' <span class="kn-prof__grade2">- ' + esc(data.grade2) + '</span>';
+                profHTML += '</div>';
+            }
+            document.getElementById('kn-prof').innerHTML = profHTML;
+
+            // Date
+            var dateHTML = '';
+            if (data.dateFormatted) {
+                dateHTML += '<div class="kn-date__day">' + esc(data.dateFormatted) + '</div>';
+            }
+            if (data.horaires) {
+                dateHTML += '<div class="kn-date__hours">' + esc(data.horaires) + '</div>';
+            }
+            document.getElementById('kn-date').innerHTML = dateHTML;
+
+            // Infos
+            var infosHTML = '';
+            if (data.ouvertA) {
+                infosHTML += '<div class="kn-infos__row"><em>' + esc(data.ouvertA) + '</em></div>';
+            }
+            if (data.lieu || data.adresse) {
+                infosHTML += '<div class="kn-infos__row"><span class="kn-infos__label">Lieu :</span> ';
+                if (data.lieu) infosHTML += esc(data.lieu);
+                if (data.adresse) infosHTML += '<br>' + data.adresse.split('\n').map(function(l) { return esc(l); }).join('<br>');
+                infosHTML += '</div>';
+            }
+            if (data.prixAdulteDemi || data.prixAdulteJournee) {
+                var parts = [];
+                if (data.prixAdulteDemi) parts.push(data.prixAdulteDemi + '€ demi journée');
+                if (data.prixAdulteJournee) parts.push(data.prixAdulteJournee + '€ journée');
+                infosHTML += '<div class="kn-infos__row"><span class="kn-infos__label">Tarifs adultes :</span> ' + esc(parts.join(' — ')) + '</div>';
+            }
+            if (data.prixEtudiantDemi || data.prixEtudiantJournee) {
+                var parts2 = [];
+                if (data.prixEtudiantDemi) parts2.push(data.prixEtudiantDemi + '€ demi journée');
+                if (data.prixEtudiantJournee) parts2.push(data.prixEtudiantJournee + '€ journée');
+                infosHTML += '<div class="kn-infos__row"><span class="kn-infos__label">Tarifs étudiants :</span> ' + esc(parts2.join(' — ')) + '</div>';
+            }
+            document.getElementById('kn-infos').innerHTML = infosHTML;
         }
 
         function esc(str) {
@@ -522,12 +1045,12 @@
         });
 
         function exportAffiche(format) {
-            var preview = document.getElementById('affiche-preview');
+            var previewId = currentTemplate === 'kannagara' ? 'affiche-preview-kn' : 'affiche-preview';
+            var preview = document.getElementById(previewId);
             var originalTransform = preview.style.transform;
             preview.style.transform = 'none';
 
-            // Remonter le wrapper temporairement pour que html2canvas capture tout
-            var wrapper = document.querySelector('.affiche-preview-wrapper');
+            var wrapper = preview.closest('.affiche-preview-wrapper');
             var originalHeight = wrapper.style.height;
             wrapper.style.height = '1754px';
 
@@ -537,14 +1060,15 @@
                 allowTaint: true,
                 width: 1240,
                 height: 1754,
-                backgroundColor: null
+                backgroundColor: currentTemplate === 'kannagara' ? '#ffffff' : null
             }).then(function(canvas) {
                 preview.style.transform = originalTransform;
                 wrapper.style.height = originalHeight;
 
+                var suffix = currentTemplate === 'kannagara' ? '-kannagara' : '';
                 if (format === 'png') {
                     var link = document.createElement('a');
-                    link.download = 'affiche-stage-aikido.png';
+                    link.download = 'affiche-stage-aikido' + suffix + '.png';
                     link.href = canvas.toDataURL('image/png');
                     link.click();
                 } else {
@@ -556,7 +1080,7 @@
                     });
                     var imgData = canvas.toDataURL('image/jpeg', 0.95);
                     pdf.addImage(imgData, 'JPEG', 0, 0, 210, 297);
-                    pdf.save('affiche-stage-aikido.pdf');
+                    pdf.save('affiche-stage-aikido' + suffix + '.pdf');
                 }
             }).catch(function(err) {
                 preview.style.transform = originalTransform;
