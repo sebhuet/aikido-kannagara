@@ -182,7 +182,11 @@
         </div>
     </section>
 
-    <!-- Contenu principal -->
+    <!-- Événements à venir (dynamique depuis evenements.md) -->
+    <?php
+    require_once __DIR__ . '/includes/evenements-parser.php';
+    $evenements = parse_evenements(__DIR__ . '/evenements.md');
+    ?>
     <section class="section">
         <div class="container">
             <div class="section__header">
@@ -190,203 +194,41 @@
                 <p class="section__subtitle">Retrouvez ici les prochains rendez-vous du club</p>
             </div>
 
+            <?php if (!empty($evenements)): ?>
             <div class="cards-grid">
-                <!-- Événement 1 -->
+                <?php foreach ($evenements as $evt): ?>
                 <div class="card fade-in">
                     <div class="card__content">
-                        <span class="blog-card__date">Septembre 2025</span>
-                        <h3 class="card__title">Portes ouvertes</h3>
-                        <p class="card__text">
-                            Venez découvrir l'aïkido gratuitement pendant tout le mois de septembre !
-                            Cours d'essai ouverts à tous, avec prêt de kimono.
-                        </p>
+                        <span class="blog-card__date"><?= htmlspecialchars(format_date_evenement($evt['date'])) ?></span>
+                        <h3 class="card__title"><?= htmlspecialchars($evt['title']) ?></h3>
+                        <?php if ($evt['description']): ?>
+                        <p class="card__text"><?= htmlspecialchars($evt['description']) ?></p>
+                        <?php endif; ?>
                         <p class="card__meta">
-                            <strong>Animé par :</strong> L'équipe enseignante<br>
-                            <strong>Lieu :</strong> <a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a>
+                            <?php if ($evt['horaire']): ?>
+                                <strong>Horaire :</strong> <?= htmlspecialchars($evt['horaire']) ?><br>
+                            <?php endif; ?>
+                            <?php if ($evt['animateur']): ?>
+                                <strong>Animé par :</strong> <?= htmlspecialchars($evt['animateur']) ?><br>
+                            <?php endif; ?>
+                            <?php if ($evt['lieu']): ?>
+                                <strong>Lieu :</strong>
+                                <?php if ($evt['lieu_url']): ?>
+                                    <a href="<?= htmlspecialchars($evt['lieu_url']) ?>" target="_blank" rel="noopener" title="Voir sur Google Maps"><?= htmlspecialchars($evt['lieu']) ?> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a>
+                                <?php else: ?>
+                                    <?= htmlspecialchars($evt['lieu']) ?>
+                                <?php endif; ?>
+                            <?php endif; ?>
                         </p>
                     </div>
                 </div>
-
-                <!-- Événement 2 -->
-                <div class="card fade-in">
-                    <div class="card__content">
-                        <span class="blog-card__date">Samedi 30 août 2025</span>
-                        <h3 class="card__title">Initiation "Découvrir avant de s'inscrire"</h3>
-                        <p class="card__text">
-                            Séance spéciale d'initiation pour les personnes qui souhaitent
-                            découvrir l'aïkido avant la rentrée.
-                        </p>
-                        <p class="card__meta">
-                            <strong>Horaire :</strong> 9h à 10h<br>
-                            <strong>Animé par :</strong> Sébastien Huet
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Événement 3 -->
-                <div class="card fade-in">
-                    <div class="card__content">
-                        <span class="blog-card__date">Lundi 25 août 2025</span>
-                        <h3 class="card__title">Pré-rentrée</h3>
-                        <p class="card__text">
-                            Reprise des cours pour les anciens membres avant la rentrée officielle.
-                            L'occasion de se retrouver et de reprendre la pratique en douceur.
-                        </p>
-                        <p class="card__meta">
-                            <strong>Horaire :</strong> 19h00<br>
-                            <strong>Lieu :</strong> <a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a>
-                        </p>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
-        </div>
-    </section>
-
-    <!-- Calendrier de la saison -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title">Calendrier de la saison 2024-2025</h2>
-                <p class="section__subtitle">Les temps forts de l'année au club</p>
+            <?php else: ?>
+            <div class="info-box" style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <p>Aucun événement à venir pour le moment. Revenez bientôt !</p>
             </div>
-
-            <div class="calendar" style="max-width: 800px; margin: 0 auto;">
-                <div class="calendar__header">
-                    <h3 class="calendar__title">Saison 2024-2025</h3>
-                    <p class="calendar__subtitle">Du 2 septembre 2024 au 28 juin 2025</p>
-                </div>
-
-                <div class="calendar__body">
-                    <!-- Septembre -->
-                    <div class="calendar__month">
-                        <h4 class="calendar__month-name">Septembre 2024</h4>
-                        <ul class="calendar__events">
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">2 sept.</span>
-                                <span class="calendar__event-title">Reprise des cours - Rentrée</span>
-                                <span class="calendar__event-type calendar__event-type--cours">Cours</span>
-                            </li>
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">Tout le mois</span>
-                                <span class="calendar__event-title">Portes ouvertes - Cours d'essai gratuits</span>
-                                <span class="calendar__event-type calendar__event-type--cours">Cours</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Octobre -->
-                    <div class="calendar__month">
-                        <h4 class="calendar__month-name">Octobre 2024</h4>
-                        <ul class="calendar__events">
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">19-20 oct.</span>
-                                <span class="calendar__event-title">Stage régional FFAB Île-de-France</span>
-                                <span class="calendar__event-type calendar__event-type--stage">Stage</span>
-                            </li>
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">26 oct.</span>
-                                <span class="calendar__event-title">Vacances scolaires (pas de cours)</span>
-                                <span class="calendar__event-type">Info</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Décembre -->
-                    <div class="calendar__month">
-                        <h4 class="calendar__month-name">Décembre 2024</h4>
-                        <ul class="calendar__events">
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">14 déc.</span>
-                                <span class="calendar__event-title">Passage de grades (kyu)</span>
-                                <span class="calendar__event-type calendar__event-type--grade">Grade</span>
-                            </li>
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">19 déc.</span>
-                                <span class="calendar__event-title">Dernier cours avant les fêtes</span>
-                                <span class="calendar__event-type calendar__event-type--cours">Cours</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Janvier -->
-                    <div class="calendar__month">
-                        <h4 class="calendar__month-name">Janvier 2025</h4>
-                        <ul class="calendar__events">
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">6 janv.</span>
-                                <span class="calendar__event-title">Reprise des cours</span>
-                                <span class="calendar__event-type calendar__event-type--cours">Cours</span>
-                            </li>
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">11 janv.</span>
-                                <span class="calendar__event-title">Galette des rois du club</span>
-                                <span class="calendar__event-type">Convivialité</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Mars -->
-                    <div class="calendar__month">
-                        <h4 class="calendar__month-name">Mars 2025</h4>
-                        <ul class="calendar__events">
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">15-16 mars</span>
-                                <span class="calendar__event-title">Stage national FFAB</span>
-                                <span class="calendar__event-type calendar__event-type--stage">Stage</span>
-                            </li>
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">22 mars</span>
-                                <span class="calendar__event-title">Passage de grades (kyu)</span>
-                                <span class="calendar__event-type calendar__event-type--grade">Grade</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Juin -->
-                    <div class="calendar__month">
-                        <h4 class="calendar__month-name">Juin 2025</h4>
-                        <ul class="calendar__events">
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">7 juin</span>
-                                <span class="calendar__event-title">Passage de grades de fin de saison</span>
-                                <span class="calendar__event-type calendar__event-type--grade">Grade</span>
-                            </li>
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">21 juin</span>
-                                <span class="calendar__event-title">Démonstration - Fête du sport</span>
-                                <span class="calendar__event-type">Événement</span>
-                            </li>
-                            <li class="calendar__event">
-                                <span class="calendar__event-date">28 juin</span>
-                                <span class="calendar__event-title">Dernier cours + Repas de fin d'année</span>
-                                <span class="calendar__event-type">Convivialité</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="calendar__legend">
-                    <div class="calendar__legend-item">
-                        <span class="calendar__event-type calendar__event-type--cours">Cours</span>
-                        Cours et portes ouvertes
-                    </div>
-                    <div class="calendar__legend-item">
-                        <span class="calendar__event-type calendar__event-type--stage">Stage</span>
-                        Stages FFAB
-                    </div>
-                    <div class="calendar__legend-item">
-                        <span class="calendar__event-type calendar__event-type--grade">Grade</span>
-                        Passages de grades
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-box mt-4" style="max-width: 800px; margin: var(--spacing-xl) auto 0;">
-                <p style="text-align: center;">
-                    <em>Ce calendrier est donné à titre indicatif. Les dates peuvent être modifiées.
-                    Consultez régulièrement cette page ou contactez-nous pour confirmation.</em>
-                </p>
-            </div>
+            <?php endif; ?>
         </div>
     </section>
 
