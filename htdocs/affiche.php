@@ -350,115 +350,163 @@
             width: 1240px;
             height: 1754px;
             position: relative;
-            background: #fff;
+            background: #fafaf8;
             font-family: 'Century Gothic', 'Avenir', 'Helvetica Neue', sans-serif;
             transform-origin: top left;
             overflow: hidden;
         }
 
+        /* Filet décoratif haut */
+        .affiche-preview--kannagara::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(to right, #1a1a2e, #c0392b, #1a1a2e);
+            z-index: 10;
+        }
+
         /* En-tête */
         .kn-header {
             text-align: center;
-            padding: 60px 80px 30px;
+            padding: 50px 80px 20px;
+            position: relative;
         }
 
         .kn-header__stage {
-            position: absolute;
-            top: 60px;
-            left: 80px;
-            font-size: 22px;
+            display: inline-block;
+            font-size: 20px;
             font-weight: 700;
-            letter-spacing: 6px;
+            letter-spacing: 12px;
             text-transform: uppercase;
-            writing-mode: vertical-rl;
-            color: #1a1a2e;
+            color: #c0392b;
+            border: 2px solid #c0392b;
+            padding: 6px 24px;
+            margin-bottom: 10px;
         }
 
         .kn-header__aikido {
-            font-size: 96px;
+            font-size: 120px;
             font-weight: 900;
-            letter-spacing: 5px;
+            letter-spacing: 8px;
             color: #1a1a2e;
             line-height: 1;
+            margin-top: 5px;
         }
 
         .kn-header__sub {
-            font-size: 18px;
-            color: #666;
-            margin-top: 8px;
-            letter-spacing: 2px;
+            font-size: 20px;
+            color: #888;
+            margin-top: 10px;
+            letter-spacing: 3px;
+            font-weight: 300;
+        }
+
+        /* Ligne séparatrice */
+        .kn-separator {
+            width: 120px;
+            height: 3px;
+            background: #c0392b;
+            margin: 30px auto;
         }
 
         /* Professeur */
         .kn-prof {
             text-align: center;
-            margin-top: 40px;
+            padding: 0 80px;
         }
 
         .kn-prof__name {
-            font-size: 52px;
+            font-size: 58px;
             font-weight: 700;
             color: #1a1a2e;
+            letter-spacing: 2px;
         }
 
         .kn-prof__grade {
-            font-size: 52px;
+            font-size: 40px;
             font-weight: 300;
-            color: #1a1a2e;
+            color: #c0392b;
+            margin-top: 4px;
         }
 
         .kn-prof__name2 {
-            font-size: 42px;
+            font-size: 46px;
             font-weight: 700;
             color: #1a1a2e;
-            margin-top: 10px;
+            margin-top: 20px;
+            letter-spacing: 2px;
         }
 
         .kn-prof__grade2 {
-            font-size: 42px;
+            font-size: 34px;
             font-weight: 300;
-            color: #1a1a2e;
+            color: #c0392b;
         }
 
         /* Date */
         .kn-date {
             text-align: center;
-            margin-top: 40px;
-            color: #8b1a1a;
+            margin-top: 35px;
+            color: #1a1a2e;
         }
 
         .kn-date__day {
-            font-size: 38px;
+            font-size: 42px;
             font-weight: 700;
+            letter-spacing: 1px;
         }
 
         .kn-date__hours {
-            font-size: 30px;
-            margin-top: 5px;
+            font-size: 32px;
+            margin-top: 6px;
+            font-weight: 400;
+            color: #444;
         }
 
-        /* Logos */
+        /* Logo */
         .kn-logos {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 30px;
-            margin-top: 50px;
+            margin-top: 35px;
         }
 
         .kn-logos img {
-            height: 80px;
+            height: 90px;
             object-fit: contain;
+        }
+
+        /* Photo intervenant — Kannagara */
+        .kn-photo {
+            position: absolute;
+            left: 80px;
+            right: 80px;
+            top: 1180px;
+            width: calc(100% - 160px);
+            height: 480px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            border: 5px solid #fff;
+            z-index: 15;
+        }
+
+        .kn-photo[src=""] {
+            display: none;
         }
 
         /* Infos */
         .kn-infos {
             position: absolute;
             left: 80px;
-            top: 780px;
-            max-width: 500px;
+            top: 770px;
+            max-width: 520px;
             font-size: 26px;
-            line-height: 1.8;
+            line-height: 1.7;
             color: #1a1a2e;
             z-index: 5;
         }
@@ -468,39 +516,51 @@
         }
 
         .kn-infos__row {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         /* Soleil rouge */
         .kn-sun {
             position: absolute;
-            right: 80px;
-            top: 650px;
-            width: 380px;
-            height: 380px;
+            right: 60px;
+            top: 680px;
+            width: 400px;
+            height: 400px;
             border-radius: 50%;
-            background: radial-gradient(circle at 40% 40%, #e84545, #c0392b);
+            background: radial-gradient(circle at 35% 35%, #e84545 0%, #c0392b 50%, #a0302b 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             z-index: 3;
+            box-shadow: 0 0 80px rgba(192, 57, 43, 0.2);
         }
 
         .kn-sun__kanji {
-            font-size: 100px;
-            color: rgba(255, 255, 255, 0.88);
+            font-size: 110px;
+            color: rgba(255, 255, 255, 0.85);
             font-weight: 700;
             writing-mode: vertical-rl;
-            letter-spacing: 12px;
+            letter-spacing: 15px;
             font-family: "MS Mincho", "Yu Mincho", "Hiragino Mincho Pro", serif;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         /* Nuages SVG */
         .kn-clouds {
             position: absolute;
-            right: 350px;
-            top: 680px;
+            right: 340px;
+            top: 720px;
             z-index: 4;
+            opacity: 0.5;
+        }
+
+        .kn-clouds-2 {
+            position: absolute;
+            left: 60px;
+            top: 900px;
+            z-index: 4;
+            opacity: 0.3;
+            transform: scaleX(-1);
         }
 
         /* Mont Fuji */
@@ -518,13 +578,18 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: #1a1a3e;
-            color: #fff;
+            background: #1a1a2e;
+            color: rgba(255,255,255,0.9);
             text-align: center;
-            padding: 18px 40px;
+            padding: 20px 40px;
             font-size: 18px;
-            line-height: 1.7;
+            line-height: 1.8;
             z-index: 10;
+            letter-spacing: 0.5px;
+        }
+
+        .kn-footer strong {
+            color: #fff;
         }
     </style>
 </head>
@@ -683,6 +748,17 @@
                             Télécharger en PDF
                         </button>
                     </div>
+
+                    <h3>Sauvegarder / Charger</h3>
+                    <div class="affiche-export-buttons">
+                        <button type="button" id="btn-save-json" class="btn btn--outline">
+                            Sauvegarder (.json)
+                        </button>
+                        <label class="btn btn--outline" style="text-align: center; cursor: pointer;">
+                            Charger (.json)
+                            <input type="file" id="btn-load-json" accept=".json" style="display: none;">
+                        </label>
+                    </div>
                 </div>
 
                 <!-- Prévisualisation Codep 78 -->
@@ -715,6 +791,9 @@
                                 <div class="kn-header__sub">Organisé par le club Kannagara — Guyancourt</div>
                             </div>
 
+                            <!-- Séparateur -->
+                            <div class="kn-separator"></div>
+
                             <!-- Professeur -->
                             <div class="kn-prof" id="kn-prof"></div>
 
@@ -726,9 +805,6 @@
                                 <img src="images/logo-kannagara.png" alt="Kannagara Aïkido">
                             </div>
 
-                            <!-- Photo intervenant -->
-                            <img src="" alt="" class="kn-photo" id="preview-photo-kn">
-
                             <!-- Infos -->
                             <div class="kn-infos" id="kn-infos"></div>
 
@@ -739,20 +815,29 @@
 
                             <!-- Nuages -->
                             <svg class="kn-clouds" width="200" height="100" viewBox="0 0 120 60">
-                                <path fill="rgba(200,160,160,0.3)" d="M20,40 Q10,40 10,30 Q10,20 20,20 Q22,10 35,12 Q45,5 55,15 Q65,8 72,18 Q82,15 85,25 Q95,22 95,32 Q95,42 85,42 Z"/>
-                                <path fill="rgba(200,160,160,0.3)" d="M50,55 Q42,55 42,47 Q42,40 50,40 Q52,33 62,35 Q70,30 77,38 Q85,35 87,43 Q92,42 92,48 Q92,56 85,56 Z"/>
+                                <path fill="rgba(180,140,140,0.25)" d="M20,40 Q10,40 10,30 Q10,20 20,20 Q22,10 35,12 Q45,5 55,15 Q65,8 72,18 Q82,15 85,25 Q95,22 95,32 Q95,42 85,42 Z"/>
+                                <path fill="rgba(180,140,140,0.2)" d="M50,55 Q42,55 42,47 Q42,40 50,40 Q52,33 62,35 Q70,30 77,38 Q85,35 87,43 Q92,42 92,48 Q92,56 85,56 Z"/>
+                            </svg>
+                            <svg class="kn-clouds-2" width="160" height="80" viewBox="0 0 120 60">
+                                <path fill="rgba(180,140,140,0.2)" d="M20,40 Q10,40 10,30 Q10,20 20,20 Q22,10 35,12 Q45,5 55,15 Q65,8 72,18 Q82,15 85,25 Q95,22 95,32 Q95,42 85,42 Z"/>
                             </svg>
 
                             <!-- Mont Fuji -->
-                            <svg class="kn-fuji" viewBox="0 0 800 300" preserveAspectRatio="none" style="height: 350px;">
-                                <path fill="#1a1a3e" d="M0,300 L0,240 Q50,220 100,210 Q200,170 300,130 Q350,110 400,90 Q420,80 430,85 Q440,90 450,100 Q460,95 470,88 Q480,82 490,85 Q500,90 510,100 Q550,120 600,150 Q700,200 800,240 L800,300 Z"/>
-                                <path fill="#e8e8f0" d="M370,115 Q380,105 400,90 Q420,80 430,85 Q440,90 450,100 Q460,95 470,88 Q480,82 490,85 Q500,90 510,100 Q520,108 530,118 Q500,125 470,120 Q440,128 410,122 Q390,118 370,115 Z"/>
-                                <path fill="#1a1a3e" d="M0,270 Q100,250 200,255 Q300,240 400,260 Q500,245 600,255 Q700,250 800,270 L800,300 L0,300 Z" opacity="0.7"/>
+                            <svg class="kn-fuji" viewBox="0 0 1240 420" preserveAspectRatio="none" style="height: 420px;">
+                                <!-- Montagne principale -->
+                                <path fill="#1a1a3e" d="M0,420 L0,340 Q80,310 160,290 Q300,230 440,170 Q520,140 580,115 Q610,100 630,105 Q650,110 665,125 Q675,118 685,112 Q695,106 710,110 Q725,116 740,130 Q800,160 880,200 Q1000,260 1120,310 Q1180,330 1240,350 L1240,420 Z"/>
+                                <!-- Neige au sommet -->
+                                <path fill="#e8e8f0" d="M540,135 Q560,120 580,115 Q610,100 630,105 Q650,110 665,125 Q675,118 685,112 Q695,106 710,110 Q725,116 740,130 Q755,140 770,152 Q740,158 710,153 Q680,160 650,155 Q620,160 590,152 Q565,145 540,135 Z"/>
+                                <!-- Collines avant -->
+                                <path fill="#1a1a3e" d="M0,380 Q120,355 250,360 Q380,345 520,365 Q650,350 780,360 Q920,348 1060,360 Q1150,355 1240,370 L1240,420 L0,420 Z" opacity="0.7"/>
                             </svg>
 
+                            <!-- Photo intervenant (en bas, au-dessus du footer) -->
+                            <img src="" alt="" class="kn-photo" id="preview-photo-kn">
+
                             <!-- Footer contact -->
-                            <div class="kn-footer" id="kn-footer">
-                                <strong>Contact :</strong> Sébastien HUET — 06 76 48 16 01 — aikido.kannagara.guyancourt@gmail.com<br>
+                            <div class="kn-footer">
+                                <strong>Contact :</strong> Fanny JACQUEMIER — 06 76 48 16 01 — aikido.kannagara.guyancourt@gmail.com<br>
                                 Kannagara Aïkido Club de Guyancourt — Affilié à la FFAB
                             </div>
 
@@ -1047,23 +1132,38 @@
         function exportAffiche(format) {
             var previewId = currentTemplate === 'kannagara' ? 'affiche-preview-kn' : 'affiche-preview';
             var preview = document.getElementById(previewId);
-            var originalTransform = preview.style.transform;
-            preview.style.transform = 'none';
-
             var wrapper = preview.closest('.affiche-preview-wrapper');
+
+            // Sauvegarder les styles originaux
+            var originalTransform = preview.style.transform;
             var originalHeight = wrapper.style.height;
+            var originalOverflow = wrapper.style.overflow;
+
+            // Réinitialiser pour capture à taille réelle
+            preview.style.transform = 'none';
             wrapper.style.height = '1754px';
+            wrapper.style.overflow = 'visible';
+
+            // Forcer le recalcul du layout avant capture
+            preview.offsetHeight;
 
             html2canvas(preview, {
-                scale: 1,
+                scale: 2,
                 useCORS: true,
                 allowTaint: true,
                 width: 1240,
                 height: 1754,
-                backgroundColor: currentTemplate === 'kannagara' ? '#ffffff' : null
+                windowWidth: 1240,
+                windowHeight: 1754,
+                x: 0,
+                y: 0,
+                scrollX: 0,
+                scrollY: 0,
+                backgroundColor: currentTemplate === 'kannagara' ? '#fafaf8' : null
             }).then(function(canvas) {
                 preview.style.transform = originalTransform;
                 wrapper.style.height = originalHeight;
+                wrapper.style.overflow = originalOverflow;
 
                 var suffix = currentTemplate === 'kannagara' ? '-kannagara' : '';
                 if (format === 'png') {
@@ -1085,9 +1185,97 @@
             }).catch(function(err) {
                 preview.style.transform = originalTransform;
                 wrapper.style.height = originalHeight;
+                wrapper.style.overflow = originalOverflow;
                 alert('Erreur lors de l\'export : ' + err.message);
             });
         }
+
+        // === Sauvegarde JSON ===
+
+        var fieldIds = [
+            'instructeur', 'grade', 'instructeur-2', 'grade-2',
+            'date-stage', 'matin-debut', 'matin-fin', 'aprem-debut', 'aprem-fin',
+            'lieu', 'adresse',
+            'prix-adulte-demi', 'prix-adulte-journee', 'prix-etudiant-demi', 'prix-etudiant-journee',
+            'ouvert-a'
+        ];
+
+        document.getElementById('btn-save-json').addEventListener('click', function() {
+            var data = { template: currentTemplate };
+            fieldIds.forEach(function(id) {
+                var el = document.getElementById(id);
+                data[id] = el.value;
+            });
+            if (photoDataUrl) {
+                data.photo = photoDataUrl;
+            }
+
+            var slug = (data['instructeur'] || 'stage').replace(/\s+/g, '-').toLowerCase();
+            var dateVal = data['date-stage'] || 'sans-date';
+            var filename = 'affiche-' + slug + '-' + dateVal + '.json';
+
+            var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            var link = document.createElement('a');
+            link.download = filename;
+            link.href = URL.createObjectURL(blob);
+            link.click();
+            URL.revokeObjectURL(link.href);
+        });
+
+        // === Chargement JSON ===
+
+        document.getElementById('btn-load-json').addEventListener('change', function(e) {
+            var file = e.target.files[0];
+            if (!file) return;
+
+            var reader = new FileReader();
+            reader.onload = function(ev) {
+                try {
+                    var data = JSON.parse(ev.target.result);
+                } catch (err) {
+                    alert('Fichier JSON invalide.');
+                    return;
+                }
+
+                // Restaurer les champs
+                fieldIds.forEach(function(id) {
+                    if (data[id] !== undefined) {
+                        var el = document.getElementById(id);
+                        el.value = data[id];
+                    }
+                });
+
+                // Restaurer le template
+                if (data.template) {
+                    var radio = document.getElementById('tpl-' + data.template);
+                    if (radio) {
+                        radio.checked = true;
+                        radio.dispatchEvent(new Event('change', { bubbles: true }));
+                    }
+                }
+
+                // Restaurer la photo
+                if (data.photo) {
+                    photoDataUrl = data.photo;
+                    photoThumb.src = photoDataUrl;
+                    photoClear.style.display = '';
+                    updatePhotoPreview();
+                } else {
+                    photoDataUrl = '';
+                    photoInput.value = '';
+                    photoThumb.src = '';
+                    photoClear.style.display = 'none';
+                    updatePhotoPreview();
+                }
+
+                updatePreview();
+                updatePreviewKn();
+            };
+            reader.readAsText(file);
+
+            // Reset pour pouvoir recharger le même fichier
+            e.target.value = '';
+        });
 
     });
     </script>
