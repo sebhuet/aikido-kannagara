@@ -19,6 +19,7 @@
                         'aikido' => 'Aïkido',
                         'club' => 'Club',
                         'professeurs' => 'Professeurs',
+                        'agenda' => 'Agenda',
                         'actualites' => 'Actualités',
                         'galerie' => 'Galerie',
                         'blog' => 'Blog',
