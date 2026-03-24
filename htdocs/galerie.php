@@ -277,143 +277,92 @@
         </div>
     </section>
 
-    <!-- Filtres -->
+    <!-- Galerie dynamique -->
     <section class="section section--alt">
         <div class="container">
-            <div class="gallery-filters" role="group" aria-label="Filtrer les photos">
-                <button class="gallery-filter active" data-filter="all">Toutes</button>
-                <button class="gallery-filter" data-filter="cours">Cours</button>
-                <button class="gallery-filter" data-filter="stages">Stages</button>
-                <button class="gallery-filter" data-filter="grades">Passages de grades</button>
-                <button class="gallery-filter" data-filter="vie-club">Vie du club</button>
-            </div>
+            <?php
+            // Catégories : slug => label
+            $categories = [
+                'cours'    => 'Cours',
+                'stages'   => 'Stages',
+                'grades'   => 'Passages de grades',
+                'vie-club' => 'Vie du club',
+                'art'      => 'Art',
+            ];
 
-            <!-- Section Cours -->
-            <div class="gallery-section" data-category="cours">
-                <h2 class="gallery-section__title">Cours réguliers</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-category="cours">
-                        <div class="gallery-item__placeholder">
-                            <span>🥋</span>
+            $galleryDir = __DIR__ . '/galerie';
+            $extensions = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+
+            // Scanner les images par catégorie
+            $gallery = [];
+            $totalPhotos = 0;
+            foreach ($categories as $slug => $label) {
+                $dir = $galleryDir . '/' . $slug;
+                $photos = [];
+                if (is_dir($dir)) {
+                    $files = scandir($dir);
+                    foreach ($files as $file) {
+                        $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+                        if (in_array($ext, $extensions)) {
+                            $photos[] = $file;
+                        }
+                    }
+                    sort($photos);
+                }
+                $gallery[$slug] = $photos;
+                $totalPhotos += count($photos);
+            }
+
+            // N'afficher les filtres que s'il y a des photos
+            $categoriesWithPhotos = array_filter($gallery, fn($p) => count($p) > 0);
+            ?>
+
+            <?php if ($totalPhotos > 0): ?>
+                <!-- Filtres -->
+                <div class="gallery-filters" role="group" aria-label="Filtrer les photos">
+                    <button class="gallery-filter active" data-filter="all">Toutes (<?= $totalPhotos ?>)</button>
+                    <?php foreach ($categories as $slug => $label):
+                        if (empty($gallery[$slug])) continue;
+                    ?>
+                        <button class="gallery-filter" data-filter="<?= $slug ?>"><?= $label ?> (<?= count($gallery[$slug]) ?>)</button>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Sections par catégorie -->
+                <?php foreach ($categories as $slug => $label):
+                    if (empty($gallery[$slug])) continue;
+                ?>
+                <div class="gallery-section" data-category="<?= $slug ?>">
+                    <h2 class="gallery-section__title"><?= $label ?></h2>
+                    <div class="gallery-grid">
+                        <?php foreach ($gallery[$slug] as $photo):
+                            $src = 'galerie/' . $slug . '/' . $photo;
+                            $name = pathinfo($photo, PATHINFO_FILENAME);
+                            // Titre lisible : remplacer tirets/underscores, enlever préfixes type IMG-20211122-WA
+                            $title = preg_replace('/^IMG-\d{8}-WA\d+$/i', $label, $name);
+                            $title = str_replace(['_', '-'], ' ', $title);
+                            $title = ucfirst(trim($title));
+                        ?>
+                        <div class="gallery-item" data-category="<?= $slug ?>">
+                            <img src="<?= htmlspecialchars($src) ?>"
+                                 alt="<?= htmlspecialchars($title . ' — Kannagara Aïkido') ?>"
+                                 class="gallery-item__image"
+                                 loading="lazy">
+                            <div class="gallery-item__overlay">
+                                <h3 class="gallery-item__title"><?= htmlspecialchars($title) ?></h3>
+                            </div>
                         </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Cours adultes</h3>
-                            <p class="gallery-item__date">Pratique au dojo</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="cours">
-                        <div class="gallery-item__placeholder">
-                            <span>👧</span>
-                        </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Cours enfants</h3>
-                            <p class="gallery-item__date">Initiation ludique</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="cours">
-                        <div class="gallery-item__placeholder">
-                            <span>⚔️</span>
-                        </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Travail aux armes</h3>
-                            <p class="gallery-item__date">Jo, bokken, tanto</p>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
-            </div>
+                <?php endforeach; ?>
 
-            <!-- Section Stages -->
-            <div class="gallery-section" data-category="stages">
-                <h2 class="gallery-section__title">Stages</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-category="stages">
-                        <div class="gallery-item__placeholder">
-                            <span>🏯</span>
-                        </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Stage régional FFAB</h3>
-                            <p class="gallery-item__date">2023</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="stages">
-                        <div class="gallery-item__placeholder">
-                            <span>🥋</span>
-                        </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Stage de rentrée</h3>
-                            <p class="gallery-item__date">Septembre 2023</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="stages">
-                        <div class="gallery-item__placeholder">
-                            <span>☀️</span>
-                        </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Stage d'été</h3>
-                            <p class="gallery-item__date">Juillet 2023</p>
-                        </div>
-                    </div>
+            <?php else: ?>
+                <div class="gallery-empty">
+                    <div class="gallery-empty__icon">📷</div>
+                    <p>La galerie est en cours de constitution.<br>Revenez bientôt !</p>
                 </div>
-            </div>
-
-            <!-- Section Grades -->
-            <div class="gallery-section" data-category="grades">
-                <h2 class="gallery-section__title">Passages de grades</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-category="grades">
-                        <div class="gallery-item__placeholder">
-                            <span>🎌</span>
-                        </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Passage de grades</h3>
-                            <p class="gallery-item__date">Juin 2023</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="grades">
-                        <div class="gallery-item__placeholder">
-                            <span>🏆</span>
-                        </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Remise de diplômes</h3>
-                            <p class="gallery-item__date">Saison 2022-2023</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section Vie du club -->
-            <div class="gallery-section" data-category="vie-club">
-                <h2 class="gallery-section__title">Vie du club</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-category="vie-club">
-                        <div class="gallery-item__placeholder">
-                            <span>🎉</span>
-                        </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Repas du club</h3>
-                            <p class="gallery-item__date">Décembre 2023</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="vie-club">
-                        <div class="gallery-item__placeholder">
-                            <span>🚪</span>
-                        </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Portes ouvertes</h3>
-                            <p class="gallery-item__date">Septembre 2023</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="vie-club">
-                        <div class="gallery-item__placeholder">
-                            <span>👥</span>
-                        </div>
-                        <div class="gallery-item__overlay">
-                            <h3 class="gallery-item__title">Photo de groupe</h3>
-                            <p class="gallery-item__date">Fin de saison</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php endif; ?>
         </div>
     </section>
 
@@ -455,51 +404,73 @@
     <!-- JavaScript -->
     <script src="js/main.js"></script>
     <script>
-        // Filtres de galerie
         document.addEventListener('DOMContentLoaded', function() {
-            const filters = document.querySelectorAll('.gallery-filter');
-            const sections = document.querySelectorAll('.gallery-section');
+            // Filtres de galerie
+            var filters = document.querySelectorAll('.gallery-filter');
+            var sections = document.querySelectorAll('.gallery-section');
 
-            filters.forEach(filter => {
+            filters.forEach(function(filter) {
                 filter.addEventListener('click', function() {
-                    const category = this.dataset.filter;
-
-                    // Mise à jour des boutons actifs
-                    filters.forEach(f => f.classList.remove('active'));
+                    var category = this.dataset.filter;
+                    filters.forEach(function(f) { f.classList.remove('active'); });
                     this.classList.add('active');
-
-                    // Filtrage des sections
-                    sections.forEach(section => {
-                        if (category === 'all' || section.dataset.category === category) {
-                            section.style.display = 'block';
-                        } else {
-                            section.style.display = 'none';
-                        }
+                    sections.forEach(function(section) {
+                        section.style.display = (category === 'all' || section.dataset.category === category) ? 'block' : 'none';
                     });
                 });
             });
 
-            // Lightbox (prêt pour les vraies images)
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = lightbox.querySelector('.lightbox__image');
-            const lightboxCaption = lightbox.querySelector('.lightbox__caption');
-            const lightboxClose = lightbox.querySelector('.lightbox__close');
+            // Lightbox
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = lightbox.querySelector('.lightbox__image');
+            var lightboxCaption = lightbox.querySelector('.lightbox__caption');
+            var allImages = [];
+            var currentIndex = 0;
 
-            // Fermeture de la lightbox
-            lightboxClose.addEventListener('click', () => {
+            // Collecter toutes les images cliquables
+            document.querySelectorAll('.gallery-item').forEach(function(item) {
+                var img = item.querySelector('.gallery-item__image');
+                var title = item.querySelector('.gallery-item__title');
+                if (img) {
+                    var idx = allImages.length;
+                    allImages.push({ src: img.src, caption: title ? title.textContent : '' });
+                    item.addEventListener('click', function() {
+                        currentIndex = idx;
+                        showLightbox();
+                    });
+                }
+            });
+
+            function showLightbox() {
+                lightboxImg.src = allImages[currentIndex].src;
+                lightboxCaption.textContent = allImages[currentIndex].caption;
+                lightbox.classList.add('active');
+            }
+
+            // Navigation
+            lightbox.querySelector('.lightbox__prev').addEventListener('click', function(e) {
+                e.stopPropagation();
+                currentIndex = (currentIndex - 1 + allImages.length) % allImages.length;
+                showLightbox();
+            });
+            lightbox.querySelector('.lightbox__next').addEventListener('click', function(e) {
+                e.stopPropagation();
+                currentIndex = (currentIndex + 1) % allImages.length;
+                showLightbox();
+            });
+
+            // Fermeture
+            lightbox.querySelector('.lightbox__close').addEventListener('click', function() {
                 lightbox.classList.remove('active');
             });
-
-            lightbox.addEventListener('click', (e) => {
-                if (e.target === lightbox) {
-                    lightbox.classList.remove('active');
-                }
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) lightbox.classList.remove('active');
             });
-
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    lightbox.classList.remove('active');
-                }
+            document.addEventListener('keydown', function(e) {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') lightbox.classList.remove('active');
+                if (e.key === 'ArrowLeft') { currentIndex = (currentIndex - 1 + allImages.length) % allImages.length; showLightbox(); }
+                if (e.key === 'ArrowRight') { currentIndex = (currentIndex + 1) % allImages.length; showLightbox(); }
             });
         });
     </script>
