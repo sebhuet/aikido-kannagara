@@ -36,6 +36,32 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Actualités - Kannagara Aïkido",
+        "description": "Actualités du club Kannagara Aïkido : portes ouvertes septembre, stages FFAB, passages de grades. Événements à Guyancourt.",
+        "url": "https://kannagara.fr/actualites.html",
+        "inLanguage": "fr",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Kannagara Aïkido",
+            "url": "https://kannagara.fr"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Kannagara Aïkido Club de Guyancourt",
+            "url": "https://kannagara.fr",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://kannagara.fr/images/logo-kannagara.png"
+            }
+        }
+    }
+    </script>
+
     <style>
         /* Calendrier des événements */
         .calendar {

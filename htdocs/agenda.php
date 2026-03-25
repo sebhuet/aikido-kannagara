@@ -6,7 +6,7 @@
 
     <!-- SEO Meta Tags -->
     <title>Agenda des cours | Planning et présence des professeurs - Kannagara Aïkido</title>
-    <meta name="description" content="Agenda et planning des cours d'aïkido du club Kannagara avec présence des professeurs. Cours ouverts à tous les licenciés, quelle que soit leur fédération.">
+    <meta name="description" content="Agenda des cours d'aïkido du club Kannagara Guyancourt. Planning, présence des professeurs. Ouvert à tous les licenciés, toutes fédérations.">
     <meta name="keywords" content="agenda aïkido, planning cours aïkido, horaires aïkido Guyancourt, professeurs présents">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="geo.region" content="FR-78">
@@ -35,6 +35,45 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Cours d'Aïkido Kannagara",
+        "description": "Agenda et planning des cours d'aïkido du club Kannagara avec présence des professeurs. Cours ouverts à tous les licenciés, quelle que soit leur fédération.",
+        "url": "https://kannagara.fr/agenda.html",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+            "@type": "Place",
+            "name": "Gymnase Maurice Baquet",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Mail des Graviers",
+                "addressLocality": "Guyancourt",
+                "postalCode": "78280",
+                "addressCountry": "FR"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Kannagara Aïkido Club de Guyancourt",
+            "url": "https://kannagara.fr",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://kannagara.fr/images/logo-kannagara.png"
+            }
+        },
+        "eventSchedule": {
+            "@type": "Schedule",
+            "repeatFrequency": "P1W",
+            "byDay": ["Tuesday", "Thursday"],
+            "scheduleTimezone": "Europe/Paris"
+        }
+    }
+    </script>
 
     <style>
         .info-box {

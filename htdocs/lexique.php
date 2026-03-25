@@ -38,6 +38,27 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/logo-kannagara.png">
 
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "DefinedTermSet",
+        "name": "Lexique Japonais de l'Aïkido",
+        "description": "Lexique japonais de l'aïkido : termes techniques, vocabulaire du dojo, noms des techniques, comptage japonais. Guide complet pour les pratiquants.",
+        "url": "https://kannagara.fr/lexique.html",
+        "inLanguage": ["ja", "fr"],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Kannagara Aïkido Club de Guyancourt",
+            "url": "https://kannagara.fr",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://kannagara.fr/images/logo-kannagara.png"
+            }
+        }
+    }
+    </script>
+
     <style>
         .lexique-nav {
             display: flex;
