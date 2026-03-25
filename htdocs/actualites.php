@@ -241,7 +241,7 @@
 
             <div class="content" style="max-width: 800px; margin: 0 auto;">
                 <div class="info-box">
-                    <h4 class="info-box__title">Cours hebdomadaires</h4>
+                    <h3 class="info-box__title">Cours hebdomadaires</h3>
                     <p>
                         Les cours reprennent chaque année début septembre et se poursuivent
                         jusqu'à fin juin, hors vacances scolaires.
@@ -250,7 +250,7 @@
                 </div>
 
                 <div class="info-box">
-                    <h4 class="info-box__title">Stages fédéraux</h4>
+                    <h3 class="info-box__title">Stages fédéraux</h3>
                     <p>
                         Le club participe régulièrement aux stages organisés par la FFAB
                         au niveau régional et national. Ces stages sont l'occasion de
@@ -260,7 +260,7 @@
                 </div>
 
                 <div class="info-box">
-                    <h4 class="info-box__title">Passages de grades</h4>
+                    <h3 class="info-box__title">Passages de grades</h3>
                     <p>
                         Des sessions de passage de grades (kyu) sont organisées régulièrement
                         au sein du club. Les examens pour les grades dan (ceinture noire)
@@ -316,6 +316,6 @@
 
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

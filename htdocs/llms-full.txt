@@ -425,6 +425,36 @@ Le travail avec armes enrichit la comprehension des techniques a mains nues et i
 
 ---
 
+## Actualites
+
+La page actualites presente les evenements a venir du club : stages, portes ouvertes,
+initiations, pre-rentree. Les evenements sont definis dans un fichier Markdown
+et les evenements passes sont automatiquement masques.
+
+Le club organise regulierement :
+- Des stages avec Jean-Marc Chamot (7e Dan) ouverts a tous les licencies
+- Des seances d'initiation "Decouvrir avant de s'inscrire"
+- Des portes ouvertes chaque septembre avec cours d'essai gratuits
+- Une pre-rentree pour les anciens membres avant la reprise officielle
+
+### Cours hebdomadaires
+- Enfants (7-14 ans) : Lundi et Jeudi, 18h30-19h30
+- Adultes (15 ans et +) : Lundi et Jeudi, 19h30-21h30
+- Lieu : Gymnase Maurice Baquet, Guyancourt
+
+---
+
+## Galerie
+
+La galerie photos du club est organisee en categories :
+- Cours : Photos des cours reguliers (enfants et adultes)
+- Stages : Photos des stages FFAB et stages internes
+- Passages de grades : Examens de kyu et dan
+- Vie du club : Repas, portes ouvertes, photos de groupe
+- Art : Oeuvres et representations artistiques liees a l'aikido
+
+---
+
 ## Mots-cles
 
 aikido, aikido guyancourt, arts martiaux, FFAB, Jean-Marc Chamot, 7e Dan,

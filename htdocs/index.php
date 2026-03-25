@@ -41,6 +41,10 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/logo-kannagara.png">
 
+    <!-- LLM-friendly content -->
+    <link rel="alternate" type="text/plain" href="https://kannagara.fr/llms.txt" title="LLM summary">
+    <link rel="alternate" type="text/plain" href="https://kannagara.fr/llms-full.txt" title="LLM full content">
+
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
@@ -367,6 +371,6 @@
 
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

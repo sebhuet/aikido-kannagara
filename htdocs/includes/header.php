@@ -1,7 +1,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container header__container">
-            <a href="index.php" class="header__logo">
+            <a href="index.html" class="header__logo">
                 <img src="images/logo-kannagara.png" alt="Kannagara Aïkido Club de Guyancourt" class="header__logo-img">
             </a>
 
@@ -30,7 +30,7 @@
                         $isActive = (isset($active) && $active === $slug);
                         $activeClass = $isActive ? ' nav__link--active' : '';
                     ?>
-                    <li class="nav__item"><a href="<?= $slug ?>.php" class="nav__link<?= $activeClass ?>"><?= $label ?></a></li>
+                    <li class="nav__item"><a href="<?= $slug ?>.html" class="nav__link<?= $activeClass ?>"><?= $label ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </nav>

@@ -36,7 +36,7 @@ Allow: /
 User-agent: DuckAssistBot
 Allow: /
 
-# Crawlers IA pour l'entrainement (bloques)
+# Crawlers IA pour l'entrainement (autorises)
 User-agent: CCBot
 Allow: /
 

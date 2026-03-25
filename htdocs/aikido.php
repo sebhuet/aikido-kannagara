@@ -117,7 +117,7 @@
                 </p>
 
                 <div class="info-box">
-                    <h4 class="info-box__title">Morihei Ueshiba, le Fondateur</h4>
+                    <h3 class="info-box__title">Morihei Ueshiba, le Fondateur</h3>
                     <p>
                         Surnommé O Sensei ("Grand Maître"), Morihei Ueshiba a créé l'aïkido en synthétisant
                         plusieurs arts martiaux traditionnels japonais, notamment le Daito-ryu Aiki-jujutsu.
@@ -143,7 +143,7 @@
                 </p>
 
                 <div class="info-box">
-                    <h4 class="info-box__title">Notre filiation</h4>
+                    <h3 class="info-box__title">Notre filiation</h3>
                     <p>
                         Notre club s'inscrit dans la lignée de l'enseignement de Maître Tamura,
                         transmis par ses élèves directs. Jean-Marc Chamot a notamment pratiqué
@@ -227,7 +227,7 @@
                 </p>
 
                 <div class="info-box">
-                    <h4 class="info-box__title">Une approche différente de la self-défense</h4>
+                    <h3 class="info-box__title">Une approche différente de la self-défense</h3>
                     <p>
                         Contrairement à d'autres arts martiaux, l'aïkido ne forme pas des combattants
                         mais des pratiquants capables de <strong>gérer les situations de conflit</strong>
@@ -303,7 +303,7 @@
                 </div>
 
                 <div class="info-box mt-3">
-                    <h4 class="info-box__title">Un environnement bienveillant</h4>
+                    <h3 class="info-box__title">Un environnement bienveillant</h3>
                     <p>
                         L'aïkido est ouvert à toutes et à tous. Au club Kannagara, l'atmosphère
                         respectueuse et l'absence de compétition créent un cadre où chacun peut
@@ -374,7 +374,7 @@
                 </div>
 
                 <div class="info-box mt-3">
-                    <h4 class="info-box__title">Les cours enfants au club Kannagara</h4>
+                    <h3 class="info-box__title">Les cours enfants au club Kannagara</h3>
                     <?php include 'includes/horaires.php'; ?>
                     <p>
                         <strong>Âge :</strong> À partir de 7 ans<br>
@@ -475,6 +475,6 @@
 
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

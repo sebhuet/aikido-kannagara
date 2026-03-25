@@ -402,7 +402,7 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Filtres de galerie

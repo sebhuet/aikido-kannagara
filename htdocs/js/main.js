@@ -230,6 +230,4 @@ document.addEventListener("DOMContentLoaded", function () {
     startAutoplay();
   }
 
-  // ---------- Console log pour debug ----------
-  console.log("Kannagara Aïkido - Site chargé");
 });

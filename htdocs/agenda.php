@@ -247,7 +247,7 @@
 
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     <script>
         // Filtrer les cours passés
         document.addEventListener('DOMContentLoaded', function() {

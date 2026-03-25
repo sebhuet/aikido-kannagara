@@ -68,19 +68,20 @@ Il enseigne a desamorcer les conflits avant qu'ils ne deviennent physiques.
 ## Pages du site
 
 - [Accueil](https://kannagara.fr/): Page principale du club Kannagara
-- [L'Aikido](https://kannagara.fr/aikido.php): Histoire, philosophie, self-defense, femmes, enfants
-- [Le Club](https://kannagara.fr/club.php): Presentation, historique, affiliations
-- [Professeurs](https://kannagara.fr/professeurs.php): Equipe de 5 enseignants diplomes avec biographies
-- [Agenda](https://kannagara.fr/agenda.php): Calendrier des cours, stages et evenements
-- [Inscription](https://kannagara.fr/inscription.php): Procedure, documents, tarifs 2025-2026
-- [FAQ](https://kannagara.fr/faq.php): Questions frequentes sur l'aikido et le club
-- [Contact](https://kannagara.fr/contact.php): Coordonnees, plan d'acces, formulaire
+- [L'Aikido](https://kannagara.fr/aikido.html): Histoire, philosophie, self-defense, femmes, enfants
+- [Le Club](https://kannagara.fr/club.html): Presentation, historique, affiliations
+- [Professeurs](https://kannagara.fr/professeurs.html): Equipe de 5 enseignants diplomes avec biographies
+- [Actualites](https://kannagara.fr/actualites.html): Evenements a venir et activites du club
+- [Galerie](https://kannagara.fr/galerie.html): Photos des cours, stages, vie du club et art
+- [Blog](https://kannagara.fr/blog.html): Articles et reflexions sur l'aikido
+- [Agenda](https://kannagara.fr/agenda.html): Calendrier des cours et presence des professeurs
+- [Inscription](https://kannagara.fr/inscription.html): Procedure, documents, tarifs 2025-2026
+- [FAQ](https://kannagara.fr/faq.html): Questions frequentes sur l'aikido et le club
+- [Contact](https://kannagara.fr/contact.html): Coordonnees, plan d'acces, formulaire
 
 ## Optional
 
-- [Lexique](https://kannagara.fr/lexique.php): Vocabulaire japonais et termes techniques de l'aikido
-- [Fondations](https://kannagara.fr/fondations.php): Les 10 fondations de l'aikido selon Maitre Tamura
-- [Armes](https://kannagara.fr/armes.php): Jo, bokken, tanto et buki waza
-- [Grades](https://kannagara.fr/grades.php): Systeme kyu/dan et programme technique
-- [Blog](https://kannagara.fr/blog.php): Articles et reflexions sur l'aikido
-- [Galerie](https://kannagara.fr/galerie.php): Photos des cours, stages et vie du club
+- [Lexique](https://kannagara.fr/lexique.html): Vocabulaire japonais et termes techniques de l'aikido
+- [Fondations](https://kannagara.fr/fondations.html): Les 10 fondations de l'aikido selon Maitre Tamura
+- [Armes](https://kannagara.fr/armes.html): Jo, bokken, tanto et buki waza
+- [Grades](https://kannagara.fr/grades.html): Systeme kyu/dan et programme technique

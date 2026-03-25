@@ -70,7 +70,7 @@
     <?php include 'includes/footer.php'; ?>
 
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     <script>
         // Charger et afficher le contenu markdown
         fetch('reglement-interieur.md')
