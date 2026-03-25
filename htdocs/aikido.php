@@ -6,7 +6,7 @@
 
     <!-- SEO Meta Tags -->
     <title>L'Aïkido : histoire, philosophie et pratique | Kannagara</title>
-    <meta name="description" content="Aïkido : art martial japonais accessible à tous, sans compétition. Self-défense, cours enfants dès 7 ans et adultes. Fondé par Morihei Ueshiba.">
+    <meta name="description" content="Découvrez l'aïkido : art martial japonais accessible à tous. Self-défense, cours femmes et enfants dès 7 ans. Sans compétition, fondé par Morihei Ueshiba.">
     <meta name="keywords" content="aïkido, aikido, self défense, aïkido femmes, aïkido enfants, Morihei Ueshiba, art martial japonais, Tamura, cours aïkido">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="geo.region" content="FR-78">
