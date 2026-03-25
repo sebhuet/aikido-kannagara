@@ -35,6 +35,37 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Grades en Aïkido - Du 6e kyu au dan, programme technique",
+        "description": "Système de grades en aïkido : kyu (6e au 1er) et dan (ceinture noire). Programme technique FFAB, conditions de passage, techniques par niveau.",
+        "url": "https://kannagara.fr/grades.html",
+        "about": "Grades en Aïkido",
+        "inLanguage": "fr",
+        "author": {
+            "@type": "Organization",
+            "name": "Kannagara Aïkido Club de Guyancourt",
+            "url": "https://kannagara.fr"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Kannagara Aïkido Club de Guyancourt",
+            "url": "https://kannagara.fr",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://kannagara.fr/images/logo-kannagara.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://kannagara.fr/grades.html"
+        }
+    }
+    </script>
 </head>
 <body>
     <?php $active = 'grades'; include 'includes/header.php'; ?>

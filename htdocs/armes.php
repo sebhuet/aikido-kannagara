@@ -38,6 +38,36 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/logo-kannagara.png">
 
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Les Armes en Aïkido - Jo, Bokken et Tanto",
+        "description": "Découvrez les armes de l'aïkido : jo (bâton), bokken (sabre en bois) et tanto (couteau). Histoire, utilisation et importance dans la pratique.",
+        "url": "https://kannagara.fr/armes.html",
+        "inLanguage": "fr",
+        "author": {
+            "@type": "Organization",
+            "name": "Kannagara Aïkido Club de Guyancourt",
+            "url": "https://kannagara.fr"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Kannagara Aïkido Club de Guyancourt",
+            "url": "https://kannagara.fr",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://kannagara.fr/images/logo-kannagara.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://kannagara.fr/armes.html"
+        }
+    }
+    </script>
+
     <style>
         .arme-section {
             margin-bottom: var(--spacing-xxl);

@@ -6,7 +6,7 @@
 
     <!-- SEO Meta Tags -->
     <title>Inscription | Rejoindre le club d'aïkido de Guyancourt</title>
-    <meta name="description" content="Inscrivez-vous au club Kannagara Aïkido de Guyancourt. Cours d'essai gratuits en septembre, documents nécessaires, équipement. Enfants dès 7 ans, adultes tous niveaux.">
+    <meta name="description" content="Inscription au club Kannagara Aïkido Guyancourt. Cours d'essai gratuits, documents nécessaires, équipement. Enfants dès 7 ans, adultes tous niveaux.">
     <meta name="keywords" content="inscription aïkido, cours essai, tarif aïkido, Guyancourt, enfants aïkido, débutant">
     <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="geo.region" content="FR-78">
@@ -35,6 +35,69 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Cours d'Aïkido - Kannagara",
+        "description": "Inscrivez-vous au club Kannagara Aïkido de Guyancourt. Cours d'essai gratuits en septembre, documents nécessaires, équipement. Enfants dès 7 ans, adultes tous niveaux.",
+        "url": "https://kannagara.fr/inscription.html",
+        "provider": {
+            "@type": "Organization",
+            "name": "Kannagara Aïkido Club de Guyancourt",
+            "url": "https://kannagara.fr",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://kannagara.fr/images/logo-kannagara.png"
+            }
+        },
+        "location": {
+            "@type": "Place",
+            "name": "Gymnase Maurice Baquet",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Mail des Graviers",
+                "addressLocality": "Guyancourt",
+                "postalCode": "78280",
+                "addressCountry": "FR"
+            }
+        },
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Enfants (7-14 ans)",
+                "price": "185",
+                "priceCurrency": "EUR",
+                "eligibleCustomerType": "http://schema.org/Student",
+                "description": "2 cours par semaine, licence FFAB et assurance incluses"
+            },
+            {
+                "@type": "Offer",
+                "name": "Adultes (15 ans et +)",
+                "price": "245",
+                "priceCurrency": "EUR",
+                "description": "2 cours par semaine (4h), licence FFAB et assurance incluses, accès aux stages"
+            },
+            {
+                "@type": "Offer",
+                "name": "Tarif réduit (étudiants, chômeurs)",
+                "price": "126",
+                "priceCurrency": "EUR",
+                "description": "Sur justificatif, mêmes avantages adultes, licence FFAB et assurance incluses"
+            }
+        ],
+        "hasCourseInstance": [
+            {
+                "@type": "CourseInstance",
+                "courseMode": "onsite",
+                "courseWorkload": "PT4H",
+                "inLanguage": "fr"
+            }
+        ]
+    }
+    </script>
 
     <style>
         /* Tarifs */
