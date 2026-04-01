@@ -133,8 +133,8 @@ Chaque cours est défini par :
 
 ### Jeudi 09/04
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
 
 ## Semaine du 13/04/2026
 
