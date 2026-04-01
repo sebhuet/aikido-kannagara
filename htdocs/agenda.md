@@ -136,7 +136,7 @@ Chaque cours est défini par :
 - **18h30-19h30** | Enfants |
 - **19h30-21h30** | Adultes |
 
-## Semaine du 13/04/2026 - Vacances Scolaires
+## Semaine du 13/04/2026
 
 ### Lundi 13/04
 
@@ -160,7 +160,7 @@ Chaque cours est défini par :
 - **18h30-19h30** | Enfants | Pas de cours
 - **19h30-21h30** | Adultes | Sébastien Huet
 
-## Semaine du 27/04/2026
+## Semaine du 27/04/2026 - Vacances Scolaires
 
 ### Lundi 27/04
 
@@ -192,6 +192,9 @@ Chaque cours est défini par :
 - **19h30-21h30** | Adultes |
 
 ### Jeudi 14/05 - Ascension - Pas de cours
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Pas de cours
 
 ## Semaine du 18/05/2026
 
