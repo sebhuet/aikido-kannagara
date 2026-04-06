@@ -140,15 +140,15 @@ Chaque cours est défini par :
 
 ### Lundi 13/04
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
 
 ### Jeudi 16/04
 
 - **18h30-19h30** | Enfants |
 - **19h30-21h30** | Adultes |
 
-## Semaine du 20/04/2026 - Vacances Scolaires
+## Semaine du 20/04/2026 - Vacances Scolaires - Dojo Bacquet RDC
 
 ### Lundi 20/04
 
@@ -160,7 +160,7 @@ Chaque cours est défini par :
 - **18h30-19h30** | Enfants | Pas de cours
 - **19h30-21h30** | Adultes | Sébastien Huet
 
-## Semaine du 27/04/2026 - Vacances Scolaires
+## Semaine du 27/04/2026 - Vacances Scolaires - Dojo Bacquet RDC
 
 ### Lundi 27/04
 
