@@ -245,7 +245,14 @@
                     soutenir notre club ? Contactez-nous pour étudier ensemble les possibilités
                     de partenariat.
                 </p>
-                <a href="contact.php" class="btn btn--primary mt-2">Nous contacter</a>
+                <p>
+                    Membres d'un <strong>Comité Social et Économique (CSE)</strong> ? Découvrez notre offre
+                    de partenariat spécialement conçue pour les salariés de votre entreprise.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="docs/Kannagara_Partenariat_CSE.pdf" class="btn btn--primary mt-2" target="_blank">Télécharger l'offre CSE</a>
+                    <a href="contact.php" class="btn btn--primary mt-2">Nous contacter</a>
+                </div>
             </div>
         </div>
     </section>
