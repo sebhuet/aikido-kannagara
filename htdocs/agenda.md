@@ -145,8 +145,8 @@ Chaque cours est défini par :
 
 ### Jeudi 16/04
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Germain Chamot
+- **19h30-21h30** | Adultes | Germain Chamot
 
 ## Semaine du 20/04/2026 - Vacances Scolaires - Dojo Bacquet RDC
 
