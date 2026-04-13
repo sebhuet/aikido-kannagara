@@ -21,14 +21,14 @@
     <meta property="og:url" content="https://kannagara.fr/lexique.html">
     <meta property="og:title" content="Lexique Japonais de l'Aïkido">
     <meta property="og:description" content="Vocabulaire japonais essentiel pour la pratique de l'aïkido : termes techniques, expressions du dojo.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Lexique Japonais de l'Aïkido">
     <meta name="twitter:description" content="Vocabulaire japonais essentiel pour la pratique de l'aïkido : termes techniques, expressions du dojo.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -36,7 +36,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/logo-kannagara.png">
+    <link rel="apple-touch-icon" href="images/logo-kannagara.jpg">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -53,7 +53,7 @@
             "url": "https://kannagara.fr",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.png"
+                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
             }
         }
     }

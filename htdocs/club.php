@@ -21,13 +21,13 @@
     <meta property="og:url" content="https://kannagara.fr/club.html">
     <meta property="og:title" content="Le Club Kannagara Aïkido">
     <meta property="og:description" content="Club d'aïkido à Guyancourt depuis 1990. Environ 50 membres, affilié FFAB.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Le Club Kannagara Aïkido">
     <meta name="twitter:description" content="Club d'aïkido à Guyancourt depuis 1990. Environ 50 membres, affilié FFAB.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

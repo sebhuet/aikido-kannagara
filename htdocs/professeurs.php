@@ -96,13 +96,13 @@ foreach ($fiches as $i => $fiche) {
     <meta property="og:url" content="https://kannagara.fr/professeurs.html">
     <meta property="og:title" content="Équipe enseignante - Kannagara Aïkido Guyancourt">
     <meta property="og:description" content="<?= htmlspecialchars($og_description) ?>">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Équipe enseignante - Kannagara Aïkido Guyancourt">
     <meta name="twitter:description" content="<?= htmlspecialchars($og_description) ?>">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

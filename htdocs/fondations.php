@@ -21,14 +21,14 @@
     <meta property="og:url" content="https://kannagara.fr/fondations.html">
     <meta property="og:title" content="Les Fondations de l'Aïkido selon Maître Tamura">
     <meta property="og:description" content="Les 10 fondations essentielles de l'aïkido transmises par Maître Tamura, pilier de l'enseignement FFAB.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Les Fondations de l'Aïkido selon Maître Tamura">
     <meta name="twitter:description" content="Les 10 fondations essentielles de l'aïkido transmises par Maître Tamura, pilier de l'enseignement FFAB.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -36,7 +36,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/logo-kannagara.png">
+    <link rel="apple-touch-icon" href="images/logo-kannagara.jpg">
 
     <style>
         .fondation-intro {

@@ -20,13 +20,13 @@
     <meta property="og:url" content="https://kannagara.fr/mentions-legales.html">
     <meta property="og:title" content="Mentions légales | Kannagara Aïkido">
     <meta property="og:description" content="Mentions légales du site Kannagara Aïkido Club de Guyancourt.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Mentions légales | Kannagara Aïkido">
     <meta name="twitter:description" content="Mentions légales du site Kannagara Aïkido Club de Guyancourt.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

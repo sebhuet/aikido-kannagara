@@ -21,14 +21,14 @@
     <meta property="og:url" content="https://kannagara.fr/armes.html">
     <meta property="og:title" content="Les Armes en Aïkido - Jo, Bokken, Tanto">
     <meta property="og:description" content="Le travail avec les armes en aïkido : comprendre les origines des techniques à mains nues.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Les Armes en Aïkido - Jo, Bokken, Tanto">
     <meta name="twitter:description" content="Le travail avec les armes en aïkido : comprendre les origines des techniques à mains nues.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -36,7 +36,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/logo-kannagara.png">
+    <link rel="apple-touch-icon" href="images/logo-kannagara.jpg">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -58,7 +58,7 @@
             "url": "https://kannagara.fr",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.png"
+                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
             }
         },
         "mainEntityOfPage": {

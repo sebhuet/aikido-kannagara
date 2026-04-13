@@ -21,14 +21,14 @@
     <meta property="og:url" content="https://kannagara.fr/galerie.html">
     <meta property="og:title" content="Galerie Photos - Kannagara Aïkido">
     <meta property="og:description" content="Découvrez la galerie photos du club Kannagara Aïkido : cours, stages, passages de grades et vie du club.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Galerie Photos - Kannagara Aïkido">
     <meta name="twitter:description" content="Découvrez la galerie photos du club Kannagara Aïkido.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -36,7 +36,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/logo-kannagara.png">
+    <link rel="apple-touch-icon" href="images/logo-kannagara.jpg">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">

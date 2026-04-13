@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://kannagara.fr/">
     <meta property="og:title" content="Kannagara Aïkido Club de Guyancourt">
     <meta property="og:description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Enseignement par Jean-Marc Chamot (7e Dan), cadre technique FFAB. Cours enfants et adultes, lundi et jeudi.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="Kannagara Aïkido">
 
@@ -25,7 +25,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Kannagara Aïkido Club de Guyancourt">
     <meta name="twitter:description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Enseignement par Jean-Marc Chamot (7e Dan), cadre technique FFAB. Cours enfants et adultes.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Geo Tags -->
     <meta name="geo.region" content="FR-78">
@@ -39,7 +39,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/logo-kannagara.png">
+    <link rel="apple-touch-icon" href="images/logo-kannagara.jpg">
 
     <!-- LLM-friendly content -->
     <link rel="alternate" type="text/plain" href="https://kannagara.fr/llms.txt" title="LLM summary">
@@ -55,8 +55,8 @@
         "alternateName": "Kannagara Aïkido",
         "description": "Club d'aïkido affilié à la FFAB, proposant des cours pour enfants et adultes à Guyancourt depuis 1990.",
         "url": "https://kannagara.fr",
-        "logo": "https://kannagara.fr/images/logo-kannagara.png",
-        "image": "https://kannagara.fr/images/logo-kannagara.png",
+        "logo": "https://kannagara.fr/images/logo-kannagara.jpg",
+        "image": "https://kannagara.fr/images/logo-kannagara.jpg",
         "telephone": "+33676481601",
         "email": "aikido.kannagara.guyancourt@gmail.com",
         "foundingDate": "1990",

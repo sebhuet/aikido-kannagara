@@ -21,14 +21,14 @@
     <meta property="og:url" content="https://kannagara.fr/faq.html">
     <meta property="og:title" content="FAQ - Questions fréquentes - Kannagara Aïkido">
     <meta property="og:description" content="Toutes les réponses à vos questions sur l'aïkido et notre club de Guyancourt.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="FAQ - Kannagara Aïkido">
     <meta name="twitter:description" content="Questions fréquentes sur l'aïkido et notre club.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -36,7 +36,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/logo-kannagara.png">
+    <link rel="apple-touch-icon" href="images/logo-kannagara.jpg">
 
     <!-- Schema.org FAQ -->
     <script type="application/ld+json">

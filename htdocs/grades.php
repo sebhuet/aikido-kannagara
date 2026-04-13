@@ -21,13 +21,13 @@
     <meta property="og:url" content="https://kannagara.fr/grades.html">
     <meta property="og:title" content="Grades en Aïkido - Programme technique">
     <meta property="og:description" content="Du 6e kyu au dan : système de grades et programme technique FFAB.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Grades en Aïkido - Programme technique">
     <meta name="twitter:description" content="Du 6e kyu au dan : système de grades et programme technique FFAB.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -57,7 +57,7 @@
             "url": "https://kannagara.fr",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.png"
+                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
             }
         },
         "mainEntityOfPage": {

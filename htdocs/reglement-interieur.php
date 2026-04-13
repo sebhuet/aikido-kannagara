@@ -20,13 +20,13 @@
     <meta property="og:url" content="https://kannagara.fr/reglement-interieur.html">
     <meta property="og:title" content="Règlement intérieur | Kannagara Aïkido">
     <meta property="og:description" content="Règlement intérieur du club Kannagara Aïkido de Guyancourt. Règles de conduite, tenue, hygiène et étiquette sur le tatami.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Règlement intérieur | Kannagara Aïkido">
     <meta name="twitter:description" content="Règlement intérieur du club Kannagara Aïkido de Guyancourt. Règles de conduite, tenue, hygiène et étiquette sur le tatami.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

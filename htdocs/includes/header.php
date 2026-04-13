@@ -2,7 +2,7 @@
     <header class="header">
         <div class="container header__container">
             <a href="index.php" class="header__logo">
-                <img src="images/logo-kannagara.png" alt="Kannagara Aïkido Club de Guyancourt" class="header__logo-img">
+                <img src="images/logo-kannagara.jpg" alt="Kannagara Aïkido Club de Guyancourt" class="header__logo-img">
             </a>
 
             <nav class="nav">

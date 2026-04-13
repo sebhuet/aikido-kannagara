@@ -21,13 +21,13 @@
     <meta property="og:url" content="https://kannagara.fr/contact.html">
     <meta property="og:title" content="Contact - Kannagara Aïkido Guyancourt">
     <meta property="og:description" content="Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt. Tél: 06 76 48 16 01.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Contact - Kannagara Aïkido Guyancourt">
     <meta name="twitter:description" content="Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt. Tél: 06 76 48 16 01.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

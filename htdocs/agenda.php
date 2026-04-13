@@ -21,13 +21,13 @@
     <meta property="og:url" content="https://kannagara.fr/agenda.html">
     <meta property="og:title" content="Agenda des cours - Kannagara Aïkido">
     <meta property="og:description" content="Planning des cours et présence des professeurs. Cours ouverts à tous les licenciés.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Agenda des cours - Kannagara Aïkido">
     <meta name="twitter:description" content="Planning des cours et présence des professeurs. Cours ouverts à tous les licenciés.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -63,7 +63,7 @@
             "url": "https://kannagara.fr",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.png"
+                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
             }
         },
         "eventSchedule": {

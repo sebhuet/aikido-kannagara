@@ -13,7 +13,7 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="apple-touch-icon" href="/images/logo-kannagara.png">
+  <link rel="apple-touch-icon" href="/images/logo-kannagara.jpg">
 </head>
 <body>
   <?php $active = ''; include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

@@ -21,13 +21,13 @@
     <meta property="og:url" content="https://kannagara.fr/inscription.html">
     <meta property="og:title" content="S'inscrire au club Kannagara Aïkido">
     <meta property="og:description" content="Rejoignez notre club d'aïkido. Cours d'essai gratuits en septembre.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="S'inscrire au club Kannagara Aïkido">
     <meta name="twitter:description" content="Rejoignez notre club d'aïkido. Cours d'essai gratuits en septembre.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -50,7 +50,7 @@
             "url": "https://kannagara.fr",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.png"
+                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
             }
         },
         "location": {

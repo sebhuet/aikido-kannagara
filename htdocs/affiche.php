@@ -802,7 +802,7 @@
 
                             <!-- Logos -->
                             <div class="kn-logos">
-                                <img src="images/logo-kannagara.png" alt="Kannagara Aïkido">
+                                <img src="images/logo-kannagara.jpg" alt="Kannagara Aïkido">
                             </div>
 
                             <!-- Infos -->

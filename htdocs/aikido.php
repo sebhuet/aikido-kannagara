@@ -21,13 +21,13 @@
     <meta property="og:url" content="https://kannagara.fr/aikido.html">
     <meta property="og:title" content="L'Aïkido : histoire et philosophie">
     <meta property="og:description" content="Art martial japonais fondé par Morihei Ueshiba. Sans compétition, accessible à tous.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="L'Aïkido : histoire et philosophie">
     <meta name="twitter:description" content="Art martial japonais fondé par Morihei Ueshiba. Sans compétition, accessible à tous.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.png">
+    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -52,7 +52,7 @@
             "name": "Kannagara Aïkido Club de Guyancourt",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.png"
+                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
             }
         },
         "mainEntityOfPage": "https://kannagara.fr/aikido.html",
