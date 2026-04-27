@@ -188,8 +188,8 @@ Chaque cours est défini par :
 
 ### Lundi 11/05
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
 
 ### Jeudi 14/05 - Ascension - Pas de cours
 
@@ -205,8 +205,8 @@ Chaque cours est défini par :
 
 ### Jeudi 21/05
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
 
 ## Semaine du 25/05/2026
 
