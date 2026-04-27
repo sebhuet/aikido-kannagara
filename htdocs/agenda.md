@@ -181,8 +181,8 @@ Chaque cours est défini par :
 
 ### Jeudi 07/05
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Germain Chamot
+- **19h30-21h30** | Adultes | Germain Chamot
 
 ## Semaine du 11/05/2026
 
@@ -200,20 +200,20 @@ Chaque cours est défini par :
 
 ### Lundi 18/05
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Germain Chamot
+- **19h30-21h30** | Adultes | Germain Chamot
 
 ### Jeudi 21/05
 
-- **18h30-19h30** | Enfants | Nacer Chekkaba
-- **19h30-21h30** | Adultes | Nacer Chekkaba
+- **18h30-19h30** | Enfants | Nacer Chekkaba / Germain Chamot
+- **19h30-21h30** | Adultes | Nacer Chekkaba / Germain Chamot
 
 ## Semaine du 25/05/2026
 
 ### Lundi 25/05 - Lundi de Pentecôte
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Pas de cours
 
 ### Jeudi 28/05
 
