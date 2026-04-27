@@ -205,8 +205,8 @@ Chaque cours est défini par :
 
 ### Jeudi 21/05
 
-- **18h30-19h30** | Enfants | Nacer Chekkaba / Germain Chamot
-- **19h30-21h30** | Adultes | Nacer Chekkaba / Germain Chamot
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
 
 ## Semaine du 25/05/2026
 
