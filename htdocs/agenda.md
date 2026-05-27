@@ -217,5 +217,12 @@ Chaque cours est défini par :
 
 ### Jeudi 28/05
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Sébastien Huet
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+## Semaine du 01/06/2026
+
+### Lundi 01/06
+
+- **18h30-19h30** | Enfants | Jean-Marc Chamot
+- **19h30-21h30** | Adultes | Jean-Marc Chamot / Stage ouvert aux extérieurs
