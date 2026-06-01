@@ -226,3 +226,43 @@ Chaque cours est défini par :
 
 - **18h30-19h30** | Enfants | Jean-Marc Chamot
 - **19h30-21h30** | Adultes | Jean-Marc Chamot / Stage ouvert aux extérieurs
+
+### Jeudi 04/06
+
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
+
+### Lundi 08/06
+
+- **18h30-19h30** | Enfants | Thierry Montfort
+- **19h30-21h30** | Adultes | Thierry Montfort
+
+### Jeudi 11/06
+
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
+
+### Lundi 15/06
+
+- **18h30-19h30** | Enfants | Germain Chamot
+- **19h30-21h30** | Adultes | Germain Chamot
+
+### Jeudi 18/06
+
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
+
+### Lundi 22/06
+
+- **18h30-19h30** | Enfants | Germain Chamot
+- **19h30-21h30** | Adultes | Germain Chamot
+
+### Jeudi 25/06
+
+- **18h30-19h30** | Enfants | Nacer Chekkaba
+- **19h30-21h30** | Adultes | Nacer Chekkaba
+
+### Lundi 29/06
+
+- **18h30-19h30** | Enfants | Pas de cours - AG Club
+- **19h30-21h30** | Adultes | Pas de cours - AG Club
