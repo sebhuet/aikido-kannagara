@@ -15,37 +15,37 @@ Chaque cours est défini par :
 
 ### Lundi 05/01
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Pas de cours
 
 ### Jeudi 08/01
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Pedro Dinis
+- **19h30-21h30** | Adultes | Pedro Dinis
 
 ## Semaine du 12/01/2026
 
 ### Lundi 12/01
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Sébastien Huet
+- **19h30-21h30** | Adultes | Sébastien Huet
 
 ### Jeudi 15/01
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Sébastien Huet
+- **19h30-21h30** | Adultes | Sébastien Huet
 
 ## Semaine du 19/01/2026
 
 ### Lundi 19/01
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Thierry Montfort
+- **19h30-21h30** | Adultes | Thierry Montfort
 
 ### Jeudi 22/01
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Germain Chamot
+- **19h30-21h30** | Adultes | Germain Chamot
 
 ## Semaine du 26/01/2026
 
@@ -56,8 +56,8 @@ Chaque cours est défini par :
 
 ### Jeudi 29/01
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Germain Chamot
+- **19h30-21h30** | Adultes | Germain Chamot
 
 ## Semaine du 02/02/2026
 
