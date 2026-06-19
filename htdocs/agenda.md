@@ -51,8 +51,8 @@ Chaque cours est défini par :
 
 ### Lundi 26/01
 
-- **18h30-19h30** | Enfants |
-- **19h30-21h30** | Adultes |
+- **18h30-19h30** | Enfants | Sébastien Huet
+- **19h30-21h30** | Adultes | Sébastien Huet
 
 ### Jeudi 29/01
 
