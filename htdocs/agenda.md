@@ -11,6 +11,54 @@ Chaque cours est défini par :
 - Professeur(s) présent(s)
 - Notes éventuelles (optionnel)
 
+## Semaine du 05/01/2026
+
+### Lundi 05/01
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+### Jeudi 08/01
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+## Semaine du 12/01/2026
+
+### Lundi 12/01
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+### Jeudi 15/01
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+## Semaine du 19/01/2026
+
+### Lundi 19/01
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+### Jeudi 22/01
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+## Semaine du 26/01/2026
+
+### Lundi 26/01
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
+### Jeudi 29/01
+
+- **18h30-19h30** | Enfants |
+- **19h30-21h30** | Adultes |
+
 ## Semaine du 02/02/2026
 
 ### Lundi 02/02
