@@ -27,8 +27,8 @@ Chaque cours est défini par :
 
 ### Lundi 12/01
 
-- **18h30-19h30** | Enfants | Sébastien Huet
-- **19h30-21h30** | Adultes | Sébastien Huet
+- **18h30-19h30** | Enfants | Jean-Marc Chamot
+- **19h30-21h30** | Adultes | Jean-Marc Chamot
 
 ### Jeudi 15/01
 
@@ -201,7 +201,7 @@ Chaque cours est défini par :
 ### Lundi 20/04
 
 - **18h30-19h30** | Enfants | Pas de cours
-- **19h30-21h30** | Adultes | Jean-Marc Chamot / Stage ouvert aux extérieurs
+- **19h30-21h30** | Adultes | Jean-Marc Chamot
 
 ### Jeudi 23/04
 
@@ -225,7 +225,7 @@ Chaque cours est défini par :
 ### Lundi 04/05
 
 - **18h30-19h30** | Enfants | Jean-Marc Chamot
-- **19h30-21h30** | Adultes | Jean-Marc Chamot / Stage ouvert aux extérieurs
+- **19h30-21h30** | Adultes | Jean-Marc Chamot
 
 ### Jeudi 07/05
 
@@ -273,7 +273,7 @@ Chaque cours est défini par :
 ### Lundi 01/06
 
 - **18h30-19h30** | Enfants | Jean-Marc Chamot
-- **19h30-21h30** | Adultes | Jean-Marc Chamot / Stage ouvert aux extérieurs
+- **19h30-21h30** | Adultes | Jean-Marc Chamot
 
 ### Jeudi 04/06
 
