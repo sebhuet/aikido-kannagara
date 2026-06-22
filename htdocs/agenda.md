@@ -302,13 +302,13 @@ Chaque cours est défini par :
 
 ### Lundi 22/06
 
-- **18h30-19h30** | Enfants | Germain Chamot
-- **19h30-21h30** | Adultes | Germain Chamot
+- **18h30-19h30** | Enfants | Cours annulé. Dojo fermé
+- **19h30-21h30** | Adultes | Cours annulé. Dojo fermé
 
 ### Jeudi 25/06
 
-- **18h30-19h30** | Enfants | Nacer Chekkaba
-- **19h30-21h30** | Adultes | Nacer Chekkaba
+- **18h30-19h30** | Enfants | Cours annulé. Dojo fermé
+- **19h30-21h30** | Adultes | Cours annulé. Dojo fermé
 
 ### Lundi 29/06
 
