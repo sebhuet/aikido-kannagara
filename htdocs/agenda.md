@@ -11,6 +11,19 @@ Chaque cours est défini par :
 - Professeur(s) présent(s)
 - Notes éventuelles (optionnel)
 
+### Horaires
+
+**Saison 2025-2026** (jusqu'en juillet 2026) :
+
+- **18h30-19h30** | Enfants
+- **19h30-21h30** | Adultes
+
+**Saison 2026-2027** (à partir de septembre 2026) :
+
+- **18h00-19h00** | Enfants
+- **19h00-20h30** | Adultes
+- **20h30-22h00** | Adultes
+
 ## Semaine du 05/01/2026
 
 ### Lundi 05/01
@@ -314,3 +327,23 @@ Chaque cours est défini par :
 
 - **18h30-19h30** | Enfants | Pas de cours - AG Club
 - **19h30-21h30** | Adultes | Pas de cours - AG Club
+
+### Jeudi 02/07
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+### Lundi 06/07
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+### Jeudi 09/07
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+### Lundi 13/07
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
