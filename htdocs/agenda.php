@@ -69,7 +69,7 @@
         "eventSchedule": {
             "@type": "Schedule",
             "repeatFrequency": "P1W",
-            "byDay": ["Tuesday", "Thursday"],
+            "byDay": ["Monday", "Thursday"],
             "scheduleTimezone": "Europe/Paris"
         }
     }
