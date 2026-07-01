@@ -183,7 +183,7 @@
             background: #dcdce2;
         }
         .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .photo-frame--hero { height: 600px; }
+        .photo-frame--hero { height: 440px; }
 
         /* ---------- Tableau comparatif ---------- */
         .compare {
@@ -297,20 +297,32 @@
         .flyer-footer__meta { font-size: 18px; margin-top: 6px; opacity: 0.85; letter-spacing: 0.5px; }
         .flyer-footer__site { font-size: 27px; font-weight: 900; color: #fff; letter-spacing: 2px; margin-top: 5px; }
 
-        /* Bandeau bas du recto */
-        .recto-strip {
+        /* Bande photo bas du recto */
+        .recto-photoband {
             position: absolute;
             bottom: 0; left: 0; right: 0;
-            background: var(--ink);
+            height: 280px;
+            overflow: hidden;
+            z-index: 25;
+        }
+        .recto-photoband img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 32%;
+        }
+        .recto-photoband__cap {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(26, 26, 46, 0.94) 0%, rgba(26, 26, 46, 0.78) 55%, rgba(26, 26, 46, 0) 100%);
             color: #fff;
             text-align: center;
-            padding: 22px;
+            padding: 48px 22px 22px;
             font-size: 26px;
             font-weight: 700;
             letter-spacing: 4px;
-            z-index: 25;
         }
-        .recto-strip span { color: var(--red-bright); }
+        .recto-photoband__cap span { color: var(--red-bright); }
 
         /* ---------- Impression ---------- */
         @media print {
@@ -421,7 +433,10 @@
                 </div>
             </div>
 
-            <div class="recto-strip">Découvrir l'aïkido à Guyancourt · <span>kannagara.fr</span></div>
+            <div class="recto-photoband">
+                <img src="images/flyer/travail.jpg" alt="Deux pratiquantes d'aïkido au dojo">
+                <div class="recto-photoband__cap">Découvrir l'aïkido à Guyancourt · <span>kannagara.fr</span></div>
+            </div>
         </div>
         </div>
 
