@@ -366,7 +366,7 @@
                         <div class="tarif-card__price">250€ <span>/ an</span></div>
                         <p class="tarif-card__description">À partir de 15 ans</p>
                         <ul class="tarif-card__features">
-                            <li>2 cours par semaine (6h)</li>
+                            <li>4 cours par semaine (6h)</li>
                             <li>Licence FFAB incluse</li>
                             <li>Assurance incluse</li>
                             <li>Passages de grades</li>
