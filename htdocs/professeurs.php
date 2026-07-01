@@ -142,10 +142,10 @@ foreach ($fiches as $i => $fiche) {
             <div class="content" style="max-width: 900px; margin: 0 auto;">
 
                 <p class="text-center" style="font-size: 1.125rem; margin-bottom: var(--spacing-xl);">
-                    Le club Kannagara est dirigé par <strong>Jean-Marc Chamot</strong>,
-                    <strong>7<sup>e</sup> Dan d'aïkido</strong> et cadre technique FFAB,
-                    accompagné d'une équipe de quatre enseignants diplômés.
-                    Tous sont formés dans la tradition directe de Maître Tamura Nobuyoshi.
+                    Le club Kannagara est placé sous la <strong>responsabilité pédagogique de Nacer Chekkaba</strong>.
+                    <strong>Thierry Montfort</strong>, <strong>Germain Chamot</strong> et <strong>Jean-Marc Chamot</strong>
+                    interviennent régulièrement sur le tatami.
+                    Retrouvez la présence de chaque enseignant sur l'<a href="agenda.php">agenda des cours</a>.
                 </p>
 
             </div>

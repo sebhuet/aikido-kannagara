@@ -89,7 +89,7 @@
                 "name": "Qui enseigne l'aïkido au club Kannagara ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "L'enseignement est dirigé par Jean-Marc Chamot, 7e Dan d'aïkido, 4e Dan d'iaïdo, titulaire du DESJEPS et cadre technique FFAB. Il pratique depuis le début des années 1970, formé auprès d'André Nocquet (premier uchi-deshi étranger du fondateur de l'aïkido) et de Maître Tamura Nobuyoshi. Il est accompagné de quatre enseignants diplômés."
+                    "text": "Le club est placé sous la responsabilité pédagogique de Nacer Chekkaba. Thierry Montfort, Germain Chamot et Jean-Marc Chamot interviennent régulièrement sur le tatami. Retrouvez la présence de chaque enseignant sur l'agenda des cours."
                 }
             },
             {
@@ -543,15 +543,10 @@
                         <div class="faq-answer">
                             <div class="faq-answer__content">
                                 <p>
-                                    L'enseignement est dirigé par <strong>Jean-Marc Chamot</strong>,
-                                    <strong>7<sup>e</sup> Dan d'aïkido</strong>, 4<sup>e</sup> Dan d'iaïdo,
-                                    titulaire du DESJEPS (diplôme d'État supérieur) et cadre technique
-                                    de la FFAB. Il pratique l'aïkido depuis le début des années 1970
-                                    et a été formé auprès d'<strong>André Nocquet</strong>, premier
-                                    uchi-deshi (élève interne) étranger du fondateur de l'aïkido,
-                                    et de <strong>Maître Tamura Nobuyoshi</strong>, l'un des plus grands
-                                    maîtres d'aïkido au monde. Il est accompagné d'une équipe de quatre
-                                    enseignants diplômés.
+                                    Le club est placé sous la <strong>responsabilité pédagogique de Nacer Chekkaba</strong>.
+                                    <strong>Thierry Montfort</strong>, <strong>Germain Chamot</strong>
+                                    et <strong>Jean-Marc Chamot</strong> interviennent régulièrement sur le tatami.
+                                    Retrouvez la présence de chaque enseignant sur l'<a href="agenda.php">agenda des cours</a>.
                                 </p>
                             </div>
                         </div>
