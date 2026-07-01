@@ -116,28 +116,28 @@
         .content {
             position: relative;
             z-index: 10;
-            padding: 74px 90px 0;
+            padding: 54px 90px 0;
         }
 
         .flyer-header { text-align: center; }
-        .flyer-header__logo { height: 132px; margin: 0 auto 18px; display: block; }
+        .flyer-header__logo { height: 104px; margin: 0 auto 12px; display: block; }
         .flyer-header__title {
-            font-size: 104px;
+            font-size: 90px;
             font-weight: 900;
             letter-spacing: 14px;
             color: var(--ink);
             line-height: 1;
         }
         .flyer-header__sub {
-            font-size: 23px;
+            font-size: 21px;
             color: var(--grey);
             letter-spacing: 5px;
-            margin-top: 14px;
+            margin-top: 10px;
             font-weight: 300;
             text-transform: uppercase;
         }
 
-        .separator { width: 130px; height: 3px; background: var(--red); margin: 34px auto; }
+        .separator { width: 130px; height: 3px; background: var(--red); margin: 22px auto; }
 
         .section-title {
             font-size: 46px;
@@ -156,9 +156,38 @@
             margin: 26px auto 0;
         }
 
+        /* ---------- Blocs deux colonnes avec photo ---------- */
+        .hero-cols {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 40px;
+            align-items: center;
+            margin-top: 28px;
+        }
+        .hero-cols .section-title { text-align: left; }
+        .hero-cols .lead { text-align: left; max-width: none; margin: 18px 0 0; }
+
+        .prose-cols {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 40px;
+            align-items: stretch;
+            margin-top: 14px;
+        }
+
+        .photo-frame {
+            border: 6px solid #fff;
+            border-radius: 8px;
+            box-shadow: 0 10px 34px rgba(0, 0, 0, 0.22);
+            overflow: hidden;
+            background: #dcdce2;
+        }
+        .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .photo-frame--hero { height: 600px; }
+
         /* ---------- Tableau comparatif ---------- */
         .compare {
-            margin-top: 46px;
+            margin-top: 40px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4px;
@@ -168,8 +197,8 @@
             overflow: hidden;
         }
         .compare__head {
-            padding: 20px 26px;
-            font-size: 27px;
+            padding: 18px 24px;
+            font-size: 24px;
             font-weight: 700;
             letter-spacing: 1px;
             color: #fff;
@@ -180,7 +209,7 @@
         .compare__cell {
             background: #fff;
             padding: 22px 26px;
-            font-size: 23px;
+            font-size: 21px;
             line-height: 1.5;
             color: #2c2c38;
         }
@@ -192,18 +221,19 @@
         .compare__mark--no { color: var(--red); }
 
         /* ---------- Verso : sections ---------- */
-        .prose-section { margin-top: 34px; }
-        .prose-section .section-title--left { font-size: 38px; }
+        .prose-section { margin-top: 24px; }
+        .prose-section:first-child { margin-top: 0; }
+        .prose-section .section-title--left { font-size: 34px; }
         .prose-section p {
-            font-size: 24px;
-            line-height: 1.6;
+            font-size: 22px;
+            line-height: 1.55;
             color: #3a3a48;
             margin-top: 6px;
         }
 
         /* ---------- Bloc "En pratique" ---------- */
         .practice {
-            margin-top: 40px;
+            margin-top: 26px;
             background: #fff;
             border: 4px solid var(--ink);
             border-radius: 8px;
@@ -213,31 +243,31 @@
         .practice__title {
             background: var(--ink);
             color: #fff;
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 700;
             letter-spacing: 3px;
             text-transform: uppercase;
             text-align: center;
-            padding: 18px;
+            padding: 13px;
         }
-        .practice__body { padding: 26px 40px; }
+        .practice__body { padding: 12px 36px; }
         .practice__row {
             display: grid;
-            grid-template-columns: 260px 1fr;
+            grid-template-columns: 250px 1fr;
             gap: 16px;
-            padding: 15px 0;
+            padding: 11px 0;
             border-bottom: 1px solid #eee;
             align-items: baseline;
         }
         .practice__row:last-child { border-bottom: none; }
         .practice__label {
-            font-size: 23px;
+            font-size: 21px;
             font-weight: 700;
             color: var(--red);
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        .practice__value { font-size: 24px; line-height: 1.5; color: #2c2c38; }
+        .practice__value { font-size: 22px; line-height: 1.45; color: #2c2c38; }
         .practice__value b { color: var(--ink); }
         .practice__value .small { font-size: 19px; color: var(--grey); }
 
@@ -251,21 +281,21 @@
             display: flex;
             align-items: center;
             gap: 30px;
-            padding: 26px 60px;
+            padding: 18px 56px;
         }
         .flyer-footer__qr {
             background: #fff;
-            padding: 10px;
+            padding: 9px;
             border-radius: 6px;
             flex-shrink: 0;
             line-height: 0;
         }
-        .flyer-footer__qr img, .flyer-footer__qr canvas { display: block; width: 130px; height: 130px; }
+        .flyer-footer__qr img, .flyer-footer__qr canvas { display: block; width: 112px; height: 112px; }
         .flyer-footer__text { flex: 1; text-align: center; }
-        .flyer-footer__contact { font-size: 25px; font-weight: 700; letter-spacing: 0.5px; }
+        .flyer-footer__contact { font-size: 23px; font-weight: 700; letter-spacing: 0.5px; }
         .flyer-footer__contact span { color: var(--red-bright); }
-        .flyer-footer__meta { font-size: 19px; margin-top: 8px; opacity: 0.85; letter-spacing: 0.5px; }
-        .flyer-footer__site { font-size: 30px; font-weight: 900; color: #fff; letter-spacing: 2px; margin-top: 6px; }
+        .flyer-footer__meta { font-size: 18px; margin-top: 6px; opacity: 0.85; letter-spacing: 0.5px; }
+        .flyer-footer__site { font-size: 27px; font-weight: 900; color: #fff; letter-spacing: 2px; margin-top: 5px; }
 
         /* Bandeau bas du recto */
         .recto-strip {
@@ -317,14 +347,8 @@
         <div class="flyer-page" id="page-recto">
             <div class="top-bar"></div>
 
-            <!-- Décor : soleil + kanji dans l'angle -->
-            <div class="deco-sun" style="width: 360px; height: 360px; top: -110px; right: -110px;">
-                <span class="deco-sun__kanji" style="font-size: 92px; letter-spacing: 12px; padding-bottom: 40px; padding-left: 70px;">合気道</span>
-            </div>
-            <svg class="deco-clouds" style="top: 250px; right: 70px; opacity: 0.4;" width="220" height="110" viewBox="0 0 120 60">
-                <path fill="rgba(180,140,140,0.4)" d="M20,40 Q10,40 10,30 Q10,20 20,20 Q22,10 35,12 Q45,5 55,15 Q65,8 72,18 Q82,15 85,25 Q95,22 95,32 Q95,42 85,42 Z"/>
-            </svg>
-
+            <!-- Décor : soleil levant dans l'angle -->
+            <div class="deco-sun" style="width: 360px; height: 360px; top: -120px; right: -120px;"></div>
             <div class="content">
                 <div class="flyer-header">
                     <img class="flyer-header__logo" src="images/logo-kannagara.png" alt="Kannagara Aïkido">
@@ -334,13 +358,20 @@
 
                 <div class="separator"></div>
 
-                <h1 class="section-title">L'aïkido en deux mots</h1>
-                <p class="lead">
-                    L'aïkido est un art martial japonais de portée universelle. Répandu dans le monde entier,
-                    il a conservé l'esprit et les valeurs des samouraïs qui lui ont donné naissance. Par le
-                    travail du corps et de l'esprit, il propose à chacun un chemin pour découvrir et développer
-                    ses propres potentiels.
-                </p>
+                <div class="hero-cols">
+                    <div>
+                        <h1 class="section-title">L'aïkido en deux mots</h1>
+                        <p class="lead">
+                            L'aïkido est un art martial japonais de portée universelle. Répandu dans le monde
+                            entier, il a conservé l'esprit et les valeurs des samouraïs qui lui ont donné
+                            naissance. Par le travail du corps et de l'esprit, il propose à chacun un chemin
+                            pour découvrir et développer ses propres potentiels.
+                        </p>
+                    </div>
+                    <div class="photo-frame photo-frame--hero">
+                        <img src="images/flyer/femme.jpg" alt="Pratiquante d'aïkido au jō (bâton)">
+                    </div>
+                </div>
 
                 <div class="compare">
                     <div class="compare__head compare__head--yes">Ce que c'est</div>
@@ -409,33 +440,38 @@
                 <h2 class="section-title">Une pratique pour tous</h2>
                 <div class="separator"></div>
 
-                <div class="prose-section">
-                    <h3 class="section-title--left">Les pratiquants</h3>
-                    <p>
-                        Les techniques reposent sur l'utilisation de la force du partenaire et ne nécessitent
-                        pas d'aptitudes physiques particulières. Le travail musculaire se fait naturellement,
-                        en accord avec la constitution de chacun. C'est pourquoi l'aïkido est pratiqué au
-                        quotidien par nombre de femmes, d'enfants et de personnes plus âgées.
-                    </p>
-                </div>
+                <div class="prose-cols">
+                    <div>
+                        <div class="prose-section">
+                            <h3 class="section-title--left">Les pratiquants</h3>
+                            <p>
+                                Les techniques utilisent la force du partenaire et ne demandent aucune aptitude
+                                physique particulière. Le travail musculaire se fait naturellement, selon la
+                                constitution de chacun : femmes, enfants et seniors y pratiquent au quotidien.
+                            </p>
+                        </div>
 
-                <div class="prose-section">
-                    <h3 class="section-title--left">Une source d'épanouissement</h3>
-                    <p>
-                        La pratique développe les réflexes, la coordination, la tonicité et la souplesse. Chez
-                        l'enfant, elle accroît les capacités psychomotrices et favorise les aptitudes utiles à
-                        la réussite scolaire, à la cohésion familiale et à l'insertion sociale. La disponibilité
-                        du corps est la base de l'épanouissement mental.
-                    </p>
-                </div>
+                        <div class="prose-section">
+                            <h3 class="section-title--left">Une source d'épanouissement</h3>
+                            <p>
+                                La pratique développe les réflexes, la coordination, la tonicité et la souplesse.
+                                Chez l'enfant, elle stimule la psychomotricité et les aptitudes utiles à la
+                                réussite scolaire et à la vie sociale.
+                            </p>
+                        </div>
 
-                <div class="prose-section">
-                    <h3 class="section-title--left">Une solution contre le stress</h3>
-                    <p>
-                        Une activité physique harmonieuse mène à la découverte des comportements d'un être
-                        accompli, déterminé, conscient de ses possibilités et apte à mobiliser toutes ses
-                        facultés pour résoudre les tensions de la vie contemporaine.
-                    </p>
+                        <div class="prose-section">
+                            <h3 class="section-title--left">Une solution contre le stress</h3>
+                            <p>
+                                Une activité physique harmonieuse pour mobiliser toutes ses facultés et dénouer
+                                les tensions de la vie contemporaine.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="photo-frame">
+                        <img src="images/flyer/self.jpg" alt="Technique d'aïkido au tanto (couteau)">
+                    </div>
                 </div>
 
                 <div class="practice">
@@ -493,7 +529,7 @@
                     <div class="flyer-footer__site">kannagara.fr</div>
                     <div class="flyer-footer__meta">Kannagara Aïkido — Club de Guyancourt · Affilié à la FFAB</div>
                 </div>
-                <div style="width: 150px; flex-shrink: 0;" aria-hidden="true"></div>
+                <div style="width: 130px; flex-shrink: 0;" aria-hidden="true"></div>
             </div>
         </div>
         </div>
