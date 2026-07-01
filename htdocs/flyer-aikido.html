@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Flyer de présentation — Kannagara Aïkido Guyancourt</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        :root {
+            --ink: #1a1a2e;
+            --red: #c0392b;
+            --red-bright: #e84545;
+            --cream: #fafaf8;
+            --grey: #6b6b76;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #4a4a52;
+            font-family: "Century Gothic", "Avenir", "Helvetica Neue", Arial, sans-serif;
+            color: var(--ink);
+            padding: 30px 0 60px;
+        }
+
+        /* ---------- Barre d'outils (écran uniquement) ---------- */
+        .toolbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 14px 20px;
+            margin: -30px 0 30px;
+            background: rgba(26, 26, 46, 0.96);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+        }
+
+        .toolbar__title {
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-right: 10px;
+            opacity: 0.85;
+        }
+
+        .btn {
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            padding: 11px 22px;
+            border-radius: 4px;
+            transition: transform 0.15s ease, background 0.2s ease;
+        }
+        .btn:hover { transform: translateY(-1px); }
+        .btn--primary { background: var(--red); color: #fff; }
+        .btn--primary:hover { background: var(--red-bright); }
+        .btn--ghost { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, 0.5); }
+        .btn--ghost:hover { background: rgba(255, 255, 255, 0.12); }
+        .btn:disabled { opacity: 0.5; cursor: wait; transform: none; }
+
+        /* ---------- Conteneurs de page ---------- */
+        #pages { display: flex; flex-direction: column; align-items: center; }
+
+        .page-hold {
+            margin: 0 auto 34px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+            overflow: hidden;
+        }
+
+        .flyer-page {
+            width: 1240px;
+            height: 1754px;
+            position: relative;
+            background: var(--cream);
+            transform-origin: top left;
+            overflow: hidden;
+        }
+
+        /* Filet décoratif haut */
+        .top-bar {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 8px;
+            background: linear-gradient(to right, var(--ink), var(--red), var(--ink));
+            z-index: 30;
+        }
+
+        /* ---------- Décor japonais ---------- */
+        .deco-sun {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 35% 35%, var(--red-bright) 0%, var(--red) 50%, #a0302b 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 80px rgba(192, 57, 43, 0.25);
+        }
+        .deco-sun__kanji {
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 700;
+            writing-mode: vertical-rl;
+            font-family: "MS Mincho", "Yu Mincho", "Hiragino Mincho Pro", serif;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .deco-clouds { position: absolute; }
+
+        /* ---------- Contenu ---------- */
+        .content {
+            position: relative;
+            z-index: 10;
+            padding: 74px 90px 0;
+        }
+
+        .flyer-header { text-align: center; }
+        .flyer-header__logo { height: 132px; margin: 0 auto 18px; display: block; }
+        .flyer-header__title {
+            font-size: 104px;
+            font-weight: 900;
+            letter-spacing: 14px;
+            color: var(--ink);
+            line-height: 1;
+        }
+        .flyer-header__sub {
+            font-size: 23px;
+            color: var(--grey);
+            letter-spacing: 5px;
+            margin-top: 14px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .separator { width: 130px; height: 3px; background: var(--red); margin: 34px auto; }
+
+        .section-title {
+            font-size: 46px;
+            font-weight: 700;
+            color: var(--ink);
+            text-align: center;
+        }
+        .section-title--left { text-align: left; margin-bottom: 14px; }
+
+        .lead {
+            font-size: 27px;
+            line-height: 1.62;
+            color: #3a3a48;
+            text-align: center;
+            max-width: 940px;
+            margin: 26px auto 0;
+        }
+
+        /* ---------- Tableau comparatif ---------- */
+        .compare {
+            margin-top: 46px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            background: #e4e4ea;
+            border: 4px solid var(--ink);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .compare__head {
+            padding: 20px 26px;
+            font-size: 27px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .compare__head--yes { background: var(--ink); }
+        .compare__head--no { background: var(--red); }
+        .compare__cell {
+            background: #fff;
+            padding: 22px 26px;
+            font-size: 23px;
+            line-height: 1.5;
+            color: #2c2c38;
+        }
+        .compare__cell b { color: var(--ink); }
+        .compare__cell--yes { border-left: 6px solid var(--ink); }
+        .compare__cell--no { border-left: 6px solid var(--red); }
+        .compare__mark { font-weight: 900; margin-right: 8px; }
+        .compare__mark--yes { color: var(--ink); }
+        .compare__mark--no { color: var(--red); }
+
+        /* ---------- Verso : sections ---------- */
+        .prose-section { margin-top: 34px; }
+        .prose-section .section-title--left { font-size: 38px; }
+        .prose-section p {
+            font-size: 24px;
+            line-height: 1.6;
+            color: #3a3a48;
+            margin-top: 6px;
+        }
+
+        /* ---------- Bloc "En pratique" ---------- */
+        .practice {
+            margin-top: 40px;
+            background: #fff;
+            border: 4px solid var(--ink);
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+        }
+        .practice__title {
+            background: var(--ink);
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 18px;
+        }
+        .practice__body { padding: 26px 40px; }
+        .practice__row {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 16px;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            align-items: baseline;
+        }
+        .practice__row:last-child { border-bottom: none; }
+        .practice__label {
+            font-size: 23px;
+            font-weight: 700;
+            color: var(--red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .practice__value { font-size: 24px; line-height: 1.5; color: #2c2c38; }
+        .practice__value b { color: var(--ink); }
+        .practice__value .small { font-size: 19px; color: var(--grey); }
+
+        /* ---------- Footer contact ---------- */
+        .flyer-footer {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: var(--ink);
+            color: rgba(255, 255, 255, 0.92);
+            z-index: 25;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 26px 60px;
+        }
+        .flyer-footer__qr {
+            background: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            flex-shrink: 0;
+            line-height: 0;
+        }
+        .flyer-footer__qr img, .flyer-footer__qr canvas { display: block; width: 130px; height: 130px; }
+        .flyer-footer__text { flex: 1; text-align: center; }
+        .flyer-footer__contact { font-size: 25px; font-weight: 700; letter-spacing: 0.5px; }
+        .flyer-footer__contact span { color: var(--red-bright); }
+        .flyer-footer__meta { font-size: 19px; margin-top: 8px; opacity: 0.85; letter-spacing: 0.5px; }
+        .flyer-footer__site { font-size: 30px; font-weight: 900; color: #fff; letter-spacing: 2px; margin-top: 6px; }
+
+        /* Bandeau bas du recto */
+        .recto-strip {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: var(--ink);
+            color: #fff;
+            text-align: center;
+            padding: 22px;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            z-index: 25;
+        }
+        .recto-strip span { color: var(--red-bright); }
+
+        /* ---------- Impression ---------- */
+        @media print {
+            @page { size: A4 portrait; margin: 0; }
+            html, body { background: #fff; padding: 0; margin: 0; }
+            .no-print { display: none !important; }
+            #pages { display: block; }
+            .page-hold {
+                width: 210mm !important;
+                height: 297mm !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+                page-break-after: always;
+                break-after: page;
+            }
+            .page-hold:last-child { page-break-after: auto; break-after: auto; }
+            .flyer-page { transform: scale(0.64) !important; transform-origin: top left; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barre d'outils (masquée à l'impression / export) -->
+    <div class="toolbar no-print">
+        <span class="toolbar__title">Flyer de présentation — Aïkido Kannagara</span>
+        <button class="btn btn--primary" id="btn-pdf" onclick="exportPDF()">Télécharger le PDF</button>
+        <button class="btn btn--ghost" onclick="window.print()">Imprimer</button>
+    </div>
+
+    <div id="pages">
+
+        <!-- ============================ RECTO ============================ -->
+        <div class="page-hold">
+        <div class="flyer-page" id="page-recto">
+            <div class="top-bar"></div>
+
+            <!-- Décor : soleil + kanji dans l'angle -->
+            <div class="deco-sun" style="width: 360px; height: 360px; top: -110px; right: -110px;">
+                <span class="deco-sun__kanji" style="font-size: 92px; letter-spacing: 12px; padding-bottom: 40px; padding-left: 70px;">合気道</span>
+            </div>
+            <svg class="deco-clouds" style="top: 250px; right: 70px; opacity: 0.4;" width="220" height="110" viewBox="0 0 120 60">
+                <path fill="rgba(180,140,140,0.4)" d="M20,40 Q10,40 10,30 Q10,20 20,20 Q22,10 35,12 Q45,5 55,15 Q65,8 72,18 Q82,15 85,25 Q95,22 95,32 Q95,42 85,42 Z"/>
+            </svg>
+
+            <div class="content">
+                <div class="flyer-header">
+                    <img class="flyer-header__logo" src="images/logo-kannagara.png" alt="Kannagara Aïkido">
+                    <div class="flyer-header__title">AÏKIDO</div>
+                    <div class="flyer-header__sub">Club Kannagara · Guyancourt · Affilié FFAB</div>
+                </div>
+
+                <div class="separator"></div>
+
+                <h1 class="section-title">L'aïkido en deux mots</h1>
+                <p class="lead">
+                    L'aïkido est un art martial japonais de portée universelle. Répandu dans le monde entier,
+                    il a conservé l'esprit et les valeurs des samouraïs qui lui ont donné naissance. Par le
+                    travail du corps et de l'esprit, il propose à chacun un chemin pour découvrir et développer
+                    ses propres potentiels.
+                </p>
+
+                <div class="compare">
+                    <div class="compare__head compare__head--yes">Ce que c'est</div>
+                    <div class="compare__head compare__head--no">Ce que ce n'est pas</div>
+
+                    <div class="compare__cell compare__cell--yes">
+                        <span class="compare__mark compare__mark--yes">✓</span>
+                        Un <b>art martial complet</b> : techniques à mains nues, travail au sabre, au bâton et
+                        au couteau, exercices de respiration et de concentration.
+                    </div>
+                    <div class="compare__cell compare__cell--no">
+                        <span class="compare__mark compare__mark--no">✕</span>
+                        Un <b>sport de compétition</b> : l'aïkido exclut toute idée de victoire, de classement
+                        ou d'adversaire à vaincre.
+                    </div>
+
+                    <div class="compare__cell compare__cell--yes">
+                        <span class="compare__mark compare__mark--yes">✓</span>
+                        Une <b>voie de développement personnel</b>, en quête d'harmonie avec soi-même, avec les
+                        autres et avec son environnement.
+                    </div>
+                    <div class="compare__cell compare__cell--no">
+                        <span class="compare__mark compare__mark--no">✕</span>
+                        Une <b>affaire de force</b> : les techniques reposent sur l'énergie du partenaire, non
+                        sur la puissance musculaire.
+                    </div>
+
+                    <div class="compare__cell compare__cell--yes">
+                        <span class="compare__mark compare__mark--yes">✓</span>
+                        Une <b>discipline ouverte à tous</b>, sans prérequis physique ni limite d'âge.
+                    </div>
+                    <div class="compare__cell compare__cell--no">
+                        <span class="compare__mark compare__mark--no">✕</span>
+                        Une <b>pratique réservée aux plus sportifs</b> : femmes, enfants et seniors y trouvent
+                        naturellement leur place.
+                    </div>
+
+                    <div class="compare__cell compare__cell--yes">
+                        <span class="compare__mark compare__mark--yes">✓</span>
+                        Une <b>école de maîtrise de soi</b>, de calme et de respect mutuel.
+                    </div>
+                    <div class="compare__cell compare__cell--no">
+                        <span class="compare__mark compare__mark--no">✕</span>
+                        Un <b>art de la violence</b> : la pratique apprend à désamorcer le conflit plutôt qu'à
+                        le rechercher.
+                    </div>
+                </div>
+            </div>
+
+            <div class="recto-strip">Découvrir l'aïkido à Guyancourt · <span>kannagara.fr</span></div>
+        </div>
+        </div>
+
+        <!-- ============================ VERSO ============================ -->
+        <div class="page-hold">
+        <div class="flyer-page" id="page-verso">
+            <div class="top-bar"></div>
+
+            <!-- Décor : soleil pâle en filigrane -->
+            <div class="deco-sun" style="width: 300px; height: 300px; top: -90px; left: -90px; opacity: 0.10; box-shadow: none;"></div>
+            <svg class="deco-clouds" style="top: 200px; left: 80px; opacity: 0.28; transform: scaleX(-1);" width="200" height="100" viewBox="0 0 120 60">
+                <path fill="rgba(180,140,140,0.4)" d="M20,40 Q10,40 10,30 Q10,20 20,20 Q22,10 35,12 Q45,5 55,15 Q65,8 72,18 Q82,15 85,25 Q95,22 95,32 Q95,42 85,42 Z"/>
+            </svg>
+
+            <div class="content">
+                <h2 class="section-title">Une pratique pour tous</h2>
+                <div class="separator"></div>
+
+                <div class="prose-section">
+                    <h3 class="section-title--left">Les pratiquants</h3>
+                    <p>
+                        Les techniques reposent sur l'utilisation de la force du partenaire et ne nécessitent
+                        pas d'aptitudes physiques particulières. Le travail musculaire se fait naturellement,
+                        en accord avec la constitution de chacun. C'est pourquoi l'aïkido est pratiqué au
+                        quotidien par nombre de femmes, d'enfants et de personnes plus âgées.
+                    </p>
+                </div>
+
+                <div class="prose-section">
+                    <h3 class="section-title--left">Une source d'épanouissement</h3>
+                    <p>
+                        La pratique développe les réflexes, la coordination, la tonicité et la souplesse. Chez
+                        l'enfant, elle accroît les capacités psychomotrices et favorise les aptitudes utiles à
+                        la réussite scolaire, à la cohésion familiale et à l'insertion sociale. La disponibilité
+                        du corps est la base de l'épanouissement mental.
+                    </p>
+                </div>
+
+                <div class="prose-section">
+                    <h3 class="section-title--left">Une solution contre le stress</h3>
+                    <p>
+                        Une activité physique harmonieuse mène à la découverte des comportements d'un être
+                        accompli, déterminé, conscient de ses possibilités et apte à mobiliser toutes ses
+                        facultés pour résoudre les tensions de la vie contemporaine.
+                    </p>
+                </div>
+
+                <div class="practice">
+                    <div class="practice__title">En pratique</div>
+                    <div class="practice__body">
+                        <div class="practice__row">
+                            <div class="practice__label">Lieu</div>
+                            <div class="practice__value"><b>Gymnase Maurice Baquet</b> — Mail des Graviers, 78280 Guyancourt</div>
+                        </div>
+                        <div class="practice__row">
+                            <div class="practice__label">Cours</div>
+                            <div class="practice__value">Le <b>lundi</b> et le <b>jeudi</b> soir</div>
+                        </div>
+                        <div class="practice__row">
+                            <div class="practice__label">Horaires</div>
+                            <div class="practice__value">
+                                Enfants <b>18h00 – 19h00</b> · Adultes <b>19h00 – 20h30</b> puis <b>20h30 – 22h00</b>
+                                <span class="small">(saison 2026-2027)</span>
+                            </div>
+                        </div>
+                        <div class="practice__row">
+                            <div class="practice__label">Tarifs / an</div>
+                            <div class="practice__value">
+                                Enfants <b>190 €</b> · Adultes <b>250 €</b> · Réduit <b>126 €</b> (étudiants, chômeurs)
+                                <span class="small">— licence FFAB et assurance incluses</span>
+                            </div>
+                        </div>
+                        <div class="practice__row">
+                            <div class="practice__label">Enseignement</div>
+                            <div class="practice__value">
+                                Sous la responsabilité pédagogique de <b>Nacer Chekkaba</b>, avec Thierry Montfort,
+                                Germain Chamot et Jean-Marc Chamot
+                            </div>
+                        </div>
+                        <div class="practice__row">
+                            <div class="practice__label">Essai gratuit</div>
+                            <div class="practice__value">Tout le mois de <b>septembre</b> — prêt de kimono possible</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mont Fuji -->
+            <svg style="position: absolute; bottom: 208px; left: 0; right: 0; width: 100%; height: 360px; z-index: 5;" viewBox="0 0 1240 420" preserveAspectRatio="none">
+                <path fill="#1a1a3e" d="M0,420 L0,340 Q80,310 160,290 Q300,230 440,170 Q520,140 580,115 Q610,100 630,105 Q650,110 665,125 Q675,118 685,112 Q695,106 710,110 Q725,116 740,130 Q800,160 880,200 Q1000,260 1120,310 Q1180,330 1240,350 L1240,420 Z"/>
+                <path fill="#e8e8f0" d="M540,135 Q560,120 580,115 Q610,100 630,105 Q650,110 665,125 Q675,118 685,112 Q695,106 710,110 Q725,116 740,130 Q755,140 770,152 Q740,158 710,153 Q680,160 650,155 Q620,160 590,152 Q565,145 540,135 Z"/>
+                <path fill="#1a1a3e" d="M0,380 Q120,355 250,360 Q380,345 520,365 Q650,350 780,360 Q920,348 1060,360 Q1150,355 1240,370 L1240,420 L0,420 Z" opacity="0.6"/>
+            </svg>
+
+            <!-- Footer contact + QR -->
+            <div class="flyer-footer">
+                <div class="flyer-footer__qr" id="qr-code"></div>
+                <div class="flyer-footer__text">
+                    <div class="flyer-footer__contact"><span>06 76 48 16 01</span> · aikido.kannagara.guyancourt@gmail.com</div>
+                    <div class="flyer-footer__site">kannagara.fr</div>
+                    <div class="flyer-footer__meta">Kannagara Aïkido — Club de Guyancourt · Affilié à la FFAB</div>
+                </div>
+                <div style="width: 150px; flex-shrink: 0;" aria-hidden="true"></div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        // --- QR code vers le site ---
+        function buildQR() {
+            if (typeof QRCode === "undefined") return;
+            new QRCode(document.getElementById("qr-code"), {
+                text: "https://kannagara.fr",
+                width: 130,
+                height: 130,
+                colorDark: "#1a1a2e",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.M
+            });
+        }
+
+        // --- Mise à l'échelle de l'aperçu écran ---
+        function fitPreview() {
+            var scale = Math.min(0.66, (window.innerWidth - 48) / 1240);
+            if (scale <= 0) scale = 0.66;
+            document.querySelectorAll(".page-hold").forEach(function (hold) {
+                var page = hold.querySelector(".flyer-page");
+                page.style.transform = "scale(" + scale + ")";
+                hold.style.width = (1240 * scale) + "px";
+                hold.style.height = (1754 * scale) + "px";
+            });
+        }
+
+        window.addEventListener("resize", fitPreview);
+        window.addEventListener("load", function () { buildQR(); fitPreview(); });
+        fitPreview();
+
+        // --- Export PDF (2 pages A4) ---
+        async function exportPDF() {
+            var btn = document.getElementById("btn-pdf");
+            btn.disabled = true;
+            var original = btn.textContent;
+            btn.textContent = "Génération…";
+
+            var pages = [document.getElementById("page-recto"), document.getElementById("page-verso")];
+            try {
+                var jsPDF = window.jspdf.jsPDF;
+                var pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+
+                for (var i = 0; i < pages.length; i++) {
+                    var page = pages[i];
+                    var hold = page.parentElement;
+                    var savedTransform = page.style.transform;
+                    var savedW = hold.style.width;
+                    var savedH = hold.style.height;
+
+                    // Capture à taille réelle
+                    page.style.transform = "none";
+                    hold.style.width = "1240px";
+                    hold.style.height = "1754px";
+                    page.offsetHeight; // force reflow
+
+                    var canvas = await html2canvas(page, {
+                        scale: 2,
+                        useCORS: true,
+                        allowTaint: true,
+                        width: 1240,
+                        height: 1754,
+                        windowWidth: 1240,
+                        windowHeight: 1754,
+                        backgroundColor: "#fafaf8"
+                    });
+
+                    // Restauration
+                    page.style.transform = savedTransform;
+                    hold.style.width = savedW;
+                    hold.style.height = savedH;
+
+                    if (i > 0) pdf.addPage();
+                    pdf.addImage(canvas.toDataURL("image/jpeg", 0.95), "JPEG", 0, 0, 210, 297);
+                }
+
+                pdf.save("flyer-aikido-kannagara.pdf");
+            } catch (err) {
+                alert("Erreur lors de l'export : " + err.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = original;
+            }
+        }
+    </script>
+</body>
+</html>
