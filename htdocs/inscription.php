@@ -68,7 +68,7 @@
             {
                 "@type": "Offer",
                 "name": "Enfants (7-14 ans)",
-                "price": "185",
+                "price": "190",
                 "priceCurrency": "EUR",
                 "eligibleCustomerType": "http://schema.org/Student",
                 "description": "2 cours par semaine, licence FFAB et assurance incluses"
@@ -76,9 +76,9 @@
             {
                 "@type": "Offer",
                 "name": "Adultes (15 ans et +)",
-                "price": "245",
+                "price": "250",
                 "priceCurrency": "EUR",
-                "description": "2 cours par semaine (4h), licence FFAB et assurance incluses, accès aux stages"
+                "description": "2 cours par semaine (6h), licence FFAB et assurance incluses, accès aux stages"
             },
             {
                 "@type": "Offer",
@@ -92,7 +92,7 @@
             {
                 "@type": "CourseInstance",
                 "courseMode": "onsite",
-                "courseWorkload": "PT4H",
+                "courseWorkload": "PT6H",
                 "inLanguage": "fr"
             }
         ]
@@ -342,7 +342,7 @@
                     </div>
                 </div>
 
-                <h2>Tarifs saison 2025-2026</h2>
+                <h2>Tarifs saison 2026-2027</h2>
                 <p>
                     La cotisation annuelle comprend la licence FFAB, l'assurance et l'accès à tous les cours.
                     Le règlement peut s'effectuer en plusieurs fois.
@@ -351,7 +351,7 @@
                 <div class="tarifs-grid">
                     <div class="tarif-card">
                         <h3 class="tarif-card__title">Enfants</h3>
-                        <div class="tarif-card__price">185€ <span>/ an</span></div>
+                        <div class="tarif-card__price">190€ <span>/ an</span></div>
                         <p class="tarif-card__description">7 à 14 ans</p>
                         <ul class="tarif-card__features">
                             <li>2 cours par semaine</li>
@@ -363,10 +363,10 @@
 
                     <div class="tarif-card tarif-card--featured">
                         <h3 class="tarif-card__title">Adultes</h3>
-                        <div class="tarif-card__price">245€ <span>/ an</span></div>
+                        <div class="tarif-card__price">250€ <span>/ an</span></div>
                         <p class="tarif-card__description">À partir de 15 ans</p>
                         <ul class="tarif-card__features">
-                            <li>2 cours par semaine (4h)</li>
+                            <li>2 cours par semaine (6h)</li>
                             <li>Licence FFAB incluse</li>
                             <li>Assurance incluse</li>
                             <li>Passages de grades</li>
