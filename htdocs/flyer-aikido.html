@@ -170,9 +170,11 @@
             border-radius: 8px;
             box-shadow: 0 10px 34px rgba(0, 0, 0, 0.22);
             overflow: hidden;
-            background: #dcdce2;
+            background-color: #dcdce2;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
-        .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .hero-banner {
             margin-top: 26px;
             border: 6px solid #fff;
@@ -180,9 +182,11 @@
             box-shadow: 0 10px 34px rgba(0, 0, 0, 0.22);
             overflow: hidden;
             height: 400px;
-            background: #dcdce2;
+            background-color: #dcdce2;
+            background-size: cover;
+            background-position: center 30%;
+            background-repeat: no-repeat;
         }
-        .hero-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; }
 
         /* ---------- Tableau comparatif ---------- */
         .compare {
@@ -365,9 +369,8 @@
                     ses propres potentiels.
                 </p>
 
-                <div class="hero-banner">
-                    <img src="images/flyer/travail.jpg" alt="Deux pratiquantes d'aïkido au dojo">
-                </div>
+                <div class="hero-banner" role="img" aria-label="Deux pratiquantes d'aïkido au dojo"
+                    style="background-image: url('images/flyer/travail.jpg');"></div>
 
                 <div class="compare">
                     <div class="compare__head compare__head--yes">Ce que c'est</div>
@@ -465,9 +468,8 @@
                         </div>
                     </div>
 
-                    <div class="photo-frame">
-                        <img src="images/flyer/self.jpg" alt="Technique d'aïkido au tanto (couteau)">
-                    </div>
+                    <div class="photo-frame" role="img" aria-label="Technique d'aïkido au tanto (couteau)"
+                        style="background-image: url('images/flyer/self.jpg');"></div>
                 </div>
 
                 <div class="practice">
