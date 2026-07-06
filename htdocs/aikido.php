@@ -462,7 +462,8 @@
                 </p>
                 <a href="inscription.php" class="btn btn--primary">Commencer l'Aïkido</a>
                 <a href="contact.php" class="btn btn--outline">Nous contacter</a>
-                <a href="flyer-aikido.html" class="btn btn--outline" target="_blank" rel="noopener">Télécharger le flyer (PDF imprimable)</a>
+                <a href="flyer-aikido.html" class="btn btn--outline" target="_blank" rel="noopener">Flyer de présentation (recto/verso)</a>
+                <a href="affiche-aikido.html" class="btn btn--outline" target="_blank" rel="noopener">Affiche A4 (à placarder)</a>
             </div>
         </div>
     </section>

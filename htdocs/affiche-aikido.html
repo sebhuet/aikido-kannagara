@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Affiche A4 — Kannagara Aïkido Guyancourt</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<style>
+    :root {
+        --ink: #1a1a2e;
+        --red: #c0392b;
+        --red-bright: #e84545;
+        --cream: #fafaf8;
+        --grey: #6b6b76;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+        background: #4a4a52;
+        font-family: "Century Gothic", "Avenir", "Helvetica Neue", Arial, sans-serif;
+        color: var(--ink);
+        padding: 30px 0 60px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* ---------- Barre d'outils (écran uniquement) ---------- */
+    .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 14px 20px;
+        margin: -30px 0 30px;
+        background: rgba(26, 26, 46, 0.96);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    }
+    .toolbar__title { color: #fff; font-size: 15px; letter-spacing: 1px; margin-right: 10px; opacity: 0.85; }
+    .btn {
+        border: none; cursor: pointer; font-family: inherit; font-size: 15px; font-weight: 700;
+        letter-spacing: 0.5px; padding: 11px 22px; border-radius: 4px;
+        transition: transform 0.15s ease, background 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn--primary { background: var(--red); color: #fff; }
+    .btn--primary:hover { background: var(--red-bright); }
+    .btn--ghost { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, 0.5); }
+    .btn--ghost:hover { background: rgba(255, 255, 255, 0.12); }
+    .btn:disabled { opacity: 0.5; cursor: wait; transform: none; }
+
+    /* ---------- Page ---------- */
+    .page-hold {
+        margin: 0 auto;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+        overflow: hidden;
+    }
+    .affiche-page {
+        width: 1240px;
+        height: 1754px;
+        position: relative;
+        background: var(--cream);
+        transform-origin: top left;
+        overflow: hidden;
+    }
+
+    .top-bar {
+        position: absolute; top: 0; left: 0; right: 0; height: 10px;
+        background: linear-gradient(to right, var(--ink), var(--red), var(--ink));
+        z-index: 30;
+    }
+
+    /* Soleil d'angle */
+    .deco-sun {
+        position: absolute; border-radius: 50%;
+        background: radial-gradient(circle at 35% 35%, var(--red-bright) 0%, var(--red) 50%, #a0302b 100%);
+        box-shadow: 0 0 90px rgba(192, 57, 43, 0.25);
+    }
+
+    .content { position: relative; z-index: 10; padding: 56px 80px 0; }
+
+    /* En-tête */
+    .aff-header { text-align: center; }
+    .aff-header__logo { height: 104px; margin: 0 auto 12px; display: block; }
+    .aff-header__title {
+        font-size: 140px; font-weight: 900; letter-spacing: 16px; color: var(--ink); line-height: 0.95;
+    }
+    .aff-header__sub {
+        font-size: 26px; color: var(--grey); letter-spacing: 6px; margin-top: 12px;
+        font-weight: 300; text-transform: uppercase;
+    }
+
+    .separator { width: 150px; height: 4px; background: var(--red); margin: 22px auto; }
+
+    /* Accroche */
+    .tagline {
+        text-align: center; font-size: 42px; line-height: 1.35; color: var(--ink);
+        font-weight: 700; max-width: 1000px; margin: 0 auto;
+    }
+    .tagline .red { color: var(--red); }
+    .tagline .light { font-weight: 300; }
+
+    /* Grande photo */
+    .aff-photo {
+        margin-top: 30px; height: 470px;
+        border: 8px solid #fff; border-radius: 10px;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+        background-color: #dcdce2; background-repeat: no-repeat;
+        background-image: url('images/flyer/travail.jpg');
+        background-size: cover; background-position: center 32%;
+    }
+
+    /* Bandeau essai gratuit */
+    .aff-cta {
+        margin-top: 32px; background: var(--red); color: #fff;
+        border-radius: 10px; text-align: center; padding: 22px 30px;
+        box-shadow: 0 8px 26px rgba(192, 57, 43, 0.3);
+    }
+    .aff-cta__big { font-size: 50px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; line-height: 1; }
+    .aff-cta__sub { font-size: 29px; margin-top: 10px; font-weight: 400; }
+    .aff-cta__sub b { font-weight: 700; }
+
+    /* Infos essentielles */
+    .aff-infos {
+        margin-top: 30px;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 18px 40px;
+    }
+    .aff-info {
+        display: grid; grid-template-columns: 160px 1fr; gap: 14px; align-items: baseline;
+    }
+    .aff-info__label {
+        font-size: 23px; font-weight: 700; color: var(--red);
+        text-transform: uppercase; letter-spacing: 1px;
+    }
+    .aff-info__value { font-size: 25px; line-height: 1.35; color: var(--ink); }
+    .aff-info__value b { font-weight: 700; }
+    .aff-info__value .small { font-size: 21px; color: var(--grey); }
+
+    /* Footer */
+    .aff-footer {
+        position: absolute; bottom: 0; left: 0; right: 0;
+        background: var(--ink); color: rgba(255, 255, 255, 0.92);
+        z-index: 25; display: flex; align-items: center; gap: 36px; padding: 26px 70px;
+    }
+    .aff-footer__qr { background: #fff; padding: 10px; border-radius: 6px; flex-shrink: 0; line-height: 0; }
+    .aff-footer__qr img, .aff-footer__qr canvas { display: block; width: 134px; height: 134px; }
+    .aff-footer__text { flex: 1; text-align: center; }
+    .aff-footer__site { font-size: 46px; font-weight: 900; color: #fff; letter-spacing: 2px; }
+    .aff-footer__contact { font-size: 27px; font-weight: 700; margin-top: 8px; }
+    .aff-footer__contact span { color: var(--red-bright); }
+    .aff-footer__meta { font-size: 20px; margin-top: 8px; opacity: 0.85; letter-spacing: 0.5px; }
+
+    /* Impression */
+    @media print {
+        @page { size: A4 portrait; margin: 0; }
+        html, body { background: #fff; padding: 0; margin: 0; }
+        .no-print { display: none !important; }
+        .page-hold {
+            width: 210mm !important; height: 297mm !important; margin: 0 !important;
+            box-shadow: none !important;
+        }
+        .affiche-page { transform: scale(0.64) !important; transform-origin: top left; }
+    }
+</style>
+</head>
+<body>
+
+    <div class="toolbar no-print">
+        <span class="toolbar__title">Affiche A4 — Aïkido Kannagara</span>
+        <button class="btn btn--primary" id="btn-pdf" onclick="exportPDF()">Télécharger le PDF</button>
+        <button class="btn btn--ghost" onclick="window.print()">Imprimer</button>
+    </div>
+
+    <div class="page-hold">
+    <div class="affiche-page" id="affiche">
+        <div class="top-bar"></div>
+
+        <!-- Soleil d'angle -->
+        <div class="deco-sun" style="width: 380px; height: 380px; top: -130px; right: -130px;"></div>
+
+        <div class="content">
+            <div class="aff-header">
+                <img class="aff-header__logo" src="images/logo-kannagara.png" alt="Kannagara Aïkido">
+                <div class="aff-header__title">AÏKIDO</div>
+                <div class="aff-header__sub">Club Kannagara · Guyancourt · Affilié FFAB</div>
+            </div>
+
+            <div class="separator"></div>
+
+            <p class="tagline">
+                Un <span class="red">art martial japonais</span> accessible à tous<br>
+                <span class="light">sans compétition, à tout âge, dès 7 ans</span>
+            </p>
+
+            <div class="aff-photo" role="img" aria-label="Deux pratiquantes d'aïkido au dojo"></div>
+
+            <div class="aff-cta">
+                <div class="aff-cta__big">Essai gratuit</div>
+                <div class="aff-cta__sub">Venez découvrir l'aïkido <b>tout le mois de septembre</b></div>
+            </div>
+
+            <div class="aff-infos">
+                <div class="aff-info">
+                    <div class="aff-info__label">Où</div>
+                    <div class="aff-info__value"><b>Gymnase Maurice Baquet</b><br><span class="small">Mail des Graviers, 78280 Guyancourt</span></div>
+                </div>
+                <div class="aff-info">
+                    <div class="aff-info__label">Quand</div>
+                    <div class="aff-info__value">Le <b>lundi</b> et le <b>jeudi</b> soir</div>
+                </div>
+                <div class="aff-info">
+                    <div class="aff-info__label">Enfants</div>
+                    <div class="aff-info__value"><b>18h00 – 19h00</b> <span class="small">(dès 7 ans)</span></div>
+                </div>
+                <div class="aff-info">
+                    <div class="aff-info__label">Adultes</div>
+                    <div class="aff-info__value"><b>19h00 – 20h30</b> puis <b>20h30 – 22h00</b></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="aff-footer">
+            <div class="aff-footer__qr" id="qr-code"></div>
+            <div class="aff-footer__text">
+                <div class="aff-footer__site">kannagara.fr</div>
+                <div class="aff-footer__contact"><span>06 76 48 16 01</span> · aikido.kannagara.guyancourt@gmail.com</div>
+                <div class="aff-footer__meta">Kannagara Aïkido — Club de Guyancourt · Affilié à la FFAB</div>
+            </div>
+            <div style="width: 154px; flex-shrink: 0;" aria-hidden="true"></div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        function buildQR() {
+            if (typeof QRCode === "undefined") return;
+            new QRCode(document.getElementById("qr-code"), {
+                text: "https://kannagara.fr", width: 150, height: 150,
+                colorDark: "#1a1a2e", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.M
+            });
+        }
+
+        function fitPreview() {
+            var scale = Math.min(0.66, (window.innerWidth - 48) / 1240);
+            if (scale <= 0) scale = 0.66;
+            var page = document.getElementById("affiche");
+            var hold = page.parentElement;
+            page.style.transform = "scale(" + scale + ")";
+            hold.style.width = (1240 * scale) + "px";
+            hold.style.height = (1754 * scale) + "px";
+        }
+
+        window.addEventListener("resize", fitPreview);
+        window.addEventListener("load", function () { buildQR(); fitPreview(); });
+        fitPreview();
+
+        async function exportPDF() {
+            var btn = document.getElementById("btn-pdf");
+            btn.disabled = true;
+            var original = btn.textContent;
+            btn.textContent = "Génération…";
+            var page = document.getElementById("affiche");
+            var hold = page.parentElement;
+            var savedTransform = page.style.transform, savedW = hold.style.width, savedH = hold.style.height;
+            try {
+                page.style.transform = "none";
+                hold.style.width = "1240px";
+                hold.style.height = "1754px";
+                page.offsetHeight;
+                var canvas = await html2canvas(page, {
+                    scale: 2, useCORS: true, allowTaint: true,
+                    width: 1240, height: 1754, windowWidth: 1240, windowHeight: 1754,
+                    backgroundColor: "#fafaf8"
+                });
+                page.style.transform = savedTransform;
+                hold.style.width = savedW;
+                hold.style.height = savedH;
+                var jsPDF = window.jspdf.jsPDF;
+                var pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+                pdf.addImage(canvas.toDataURL("image/jpeg", 0.95), "JPEG", 0, 0, 210, 297);
+                pdf.save("affiche-aikido-kannagara.pdf");
+            } catch (err) {
+                page.style.transform = savedTransform;
+                hold.style.width = savedW;
+                hold.style.height = savedH;
+                alert("Erreur lors de l'export : " + err.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = original;
+            }
+        }
+    </script>
+</body>
+</html>
