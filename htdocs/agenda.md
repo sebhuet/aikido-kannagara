@@ -1,4 +1,4 @@
-# Agenda des cours - Kannagara Aïkido
+# Agenda des cours - Aïkido Kannagara Guyancourt
 
 ## Format
 

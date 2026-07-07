@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Galerie Photos | Kannagara Aïkido Club de Guyancourt</title>
-    <meta name="description" content="Découvrez la galerie photos du club Kannagara Aïkido : cours, stages, passages de grades et moments de vie du club à Guyancourt.">
+    <title>Galerie Photos | Aïkido Kannagara Guyancourt</title>
+    <meta name="description" content="Découvrez la galerie photos du club Aïkido Kannagara Guyancourt : cours, stages, passages de grades et moments de vie du club à Guyancourt.">
     <meta name="keywords" content="aïkido, aikido, Guyancourt, photos, galerie, stages, grades, cours, FFAB">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">
@@ -19,15 +19,15 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/galerie.html">
-    <meta property="og:title" content="Galerie Photos - Kannagara Aïkido">
-    <meta property="og:description" content="Découvrez la galerie photos du club Kannagara Aïkido : cours, stages, passages de grades et vie du club.">
+    <meta property="og:title" content="Galerie Photos - Aïkido Kannagara Guyancourt">
+    <meta property="og:description" content="Découvrez la galerie photos du club Aïkido Kannagara Guyancourt : cours, stages, passages de grades et vie du club.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Galerie Photos - Kannagara Aïkido">
-    <meta name="twitter:description" content="Découvrez la galerie photos du club Kannagara Aïkido.">
+    <meta name="twitter:title" content="Galerie Photos - Aïkido Kannagara Guyancourt">
+    <meta name="twitter:description" content="Découvrez la galerie photos du club Aïkido Kannagara Guyancourt.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
@@ -43,12 +43,12 @@
     {
         "@context": "https://schema.org",
         "@type": "ImageGallery",
-        "name": "Galerie Photos Kannagara Aïkido",
-        "description": "Galerie photos du club Kannagara Aïkido de Guyancourt : cours, stages, passages de grades et vie du club.",
+        "name": "Galerie Photos Aïkido Kannagara Guyancourt",
+        "description": "Galerie photos du club Aïkido Kannagara Guyancourt : cours, stages, passages de grades et vie du club.",
         "url": "https://kannagara.fr/galerie.html",
         "isPartOf": {
             "@type": "WebSite",
-            "name": "Kannagara Aïkido Club de Guyancourt",
+            "name": "Aïkido Kannagara Guyancourt",
             "url": "https://kannagara.fr"
         }
     }
@@ -345,7 +345,7 @@
                         ?>
                         <div class="gallery-item" data-category="<?= $slug ?>">
                             <img src="<?= htmlspecialchars($src) ?>"
-                                 alt="<?= htmlspecialchars($title . ' — Kannagara Aïkido') ?>"
+                                 alt="<?= htmlspecialchars($title . ' — Aïkido Kannagara Guyancourt') ?>"
                                  class="gallery-item__image"
                                  loading="lazy">
                             <div class="gallery-item__overlay">

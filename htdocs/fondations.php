@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Les Fondations de l'Aïkido selon Maître Tamura | Kannagara Aïkido</title>
+    <title>Les Fondations de l'Aïkido selon Maître Tamura | Aïkido Kannagara Guyancourt</title>
     <meta name="description" content="Les 10 fondations de l'aïkido selon Maître Nobuyoshi Tamura : shisei, kokyu, kamae, ma-ai, irimi, tenkan, ura-omote, tai sabaki, atemi, kokyu ryoku.">
     <meta name="keywords" content="fondations aïkido, Tamura, shisei, kokyu, kamae, ma-ai, irimi, tenkan, tai sabaki, FFAB, kihon">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">

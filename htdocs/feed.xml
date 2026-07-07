@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Blog Kannagara Aïkido</title>
+        <title>Blog Aïkido Kannagara Guyancourt</title>
         <description>Articles et réflexions sur l'aïkido - Club Kannagara de Guyancourt</description>
         <link>https://kannagara.fr/blog.html</link>
         <atom:link href="https://kannagara.fr/feed.xml" rel="self" type="application/rss+xml"/>
         <language>fr-FR</language>
-        <copyright>© 2024 Kannagara Aïkido Club de Guyancourt</copyright>
-        <managingEditor>aikido.kannagara.guyancourt@gmail.com (Kannagara Aïkido)</managingEditor>
-        <webMaster>aikido.kannagara.guyancourt@gmail.com (Kannagara Aïkido)</webMaster>
+        <copyright>© 2024 Aïkido Kannagara Guyancourt</copyright>
+        <managingEditor>aikido.kannagara.guyancourt@gmail.com (Aïkido Kannagara Guyancourt)</managingEditor>
+        <webMaster>aikido.kannagara.guyancourt@gmail.com (Aïkido Kannagara Guyancourt)</webMaster>
         <lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0100</lastBuildDate>
         <ttl>1440</ttl>
         <image>
             <url>https://kannagara.fr/images/logo-kannagara.jpg</url>
-            <title>Kannagara Aïkido</title>
+            <title>Aïkido Kannagara Guyancourt</title>
             <link>https://kannagara.fr</link>
         </image>
 

@@ -2,7 +2,7 @@
 
 ### **Préambule**
 
-Le présent Règlement Intérieur a pour objet de compléter les statuts de l'association « Kannagara aïkido club de guyancourt », ci-après dénommée "le Club", affiliée à la Fédération Française d'Aïkido et de Budo (FFAB).
+Le présent Règlement Intérieur a pour objet de compléter les statuts de l'association « Aïkido Kannagara Guyancourt », ci-après dénommée "le Club", affiliée à la Fédération Française d'Aïkido et de Budo (FFAB).
 
 Il s'applique à l'ensemble des membres du Club, ainsi qu'à leurs représentants légaux pour les mineurs. Toute adhésion au Club emporte l'acceptation pleine et entière du présent règlement et l'engagement de s'y conformer.
 
@@ -98,7 +98,7 @@ Le dojo est un lieu d'étude et de respect mutuel. Chaque pratiquant contribue �
 
 ### **Article 10 : Protection des Données Personnelles (RGPD)**
 
-10.1. **Responsable de traitement :** Le Club "Kannagara aïkido club de guyancourt" est le responsable du traitement des données personnelles de ses membres.
+10.1. **Responsable de traitement :** Le Club "Aïkido Kannagara Guyancourt" est le responsable du traitement des données personnelles de ses membres.
 
 10.2. **Finalités de la collecte :** Le Club collecte les données personnelles de ses membres pour les finalités suivantes : gestion administrative des adhésions, établissement des licences auprès de la FFAB, gestion des assurances, communication d'informations relatives à la vie du Club, et respect des obligations légales, notamment le contrôle d'honorabilité des encadrants.
 
@@ -125,3 +125,5 @@ Le dojo est un lieu d'étude et de respect mutuel. Chaque pratiquant contribue �
 Fait à Guyancourt, le 31/08/2025
 
 La Présidente, Fanny Jacquemier
+
+_Mise à jour à la suite de l'Assemblée Générale du 29 juin 2026 : changement de dénomination de l'association, désormais « Aïkido Kannagara Guyancourt » (anciennement « Kannagara Aïkido Club de Guyancourt »)._

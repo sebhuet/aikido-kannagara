@@ -8,7 +8,7 @@
     <title>L'Aïkido : histoire, philosophie et pratique | Kannagara</title>
     <meta name="description" content="Aïkido : art martial japonais accessible à tous, sans compétition. Self-défense, cours enfants dès 7 ans et adultes. Fondé par Morihei Ueshiba.">
     <meta name="keywords" content="aïkido, aikido, self défense, aïkido femmes, aïkido enfants, Morihei Ueshiba, art martial japonais, Tamura, cours aïkido">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">
@@ -45,11 +45,11 @@
         "description": "Découvrez l'aïkido, art martial japonais fondé par Morihei Ueshiba.",
         "author": {
             "@type": "Organization",
-            "name": "Kannagara Aïkido Club de Guyancourt"
+            "name": "Aïkido Kannagara Guyancourt"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Kannagara Aïkido Club de Guyancourt",
+            "name": "Aïkido Kannagara Guyancourt",
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://kannagara.fr/images/logo-kannagara.jpg"

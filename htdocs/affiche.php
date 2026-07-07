@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Générateur d'affiches | Kannagara Aïkido</title>
+    <title>Générateur d'affiches | Aïkido Kannagara Guyancourt</title>
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Styles -->
@@ -802,7 +802,7 @@
 
                             <!-- Logos -->
                             <div class="kn-logos">
-                                <img src="images/logo-kannagara.jpg" alt="Kannagara Aïkido">
+                                <img src="images/logo-kannagara.jpg" alt="Aïkido Kannagara Guyancourt">
                             </div>
 
                             <!-- Infos -->
@@ -838,7 +838,7 @@
                             <!-- Footer contact -->
                             <div class="kn-footer">
                                 <strong>Contact :</strong> Fanny JACQUEMIER — 06 76 48 16 01 — aikido.kannagara.guyancourt@gmail.com<br>
-                                Kannagara Aïkido Club de Guyancourt — Affilié à la FFAB
+                                Aïkido Kannagara Guyancourt — Affilié à la FFAB
                             </div>
 
                         </div>

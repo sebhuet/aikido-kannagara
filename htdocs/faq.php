@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>FAQ | Questions fréquentes sur l'aïkido - Kannagara Guyancourt</title>
+    <title>FAQ | Questions fréquentes sur l'aïkido - Aïkido Kannagara Guyancourt</title>
     <meta name="description" content="Réponses aux questions fréquentes sur l'aïkido et le club Kannagara : équipement, inscription, cours d'essai, niveau requis, enfants, tarifs.">
     <meta name="keywords" content="FAQ aïkido, questions aïkido, débuter aïkido, équipement aïkido, inscription club aïkido, Guyancourt">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">
@@ -19,14 +19,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/faq.html">
-    <meta property="og:title" content="FAQ - Questions fréquentes - Kannagara Aïkido">
+    <meta property="og:title" content="FAQ - Questions fréquentes - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Toutes les réponses à vos questions sur l'aïkido et notre club de Guyancourt.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="FAQ - Kannagara Aïkido">
+    <meta name="twitter:title" content="FAQ - Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Questions fréquentes sur l'aïkido et notre club.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 

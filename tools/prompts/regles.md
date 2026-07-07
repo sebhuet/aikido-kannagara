@@ -1,4 +1,4 @@
-## Règles d'arbitrage du planning Kannagara Aïkido
+## Règles d'arbitrage du planning Aïkido Kannagara Guyancourt
 
 ### Cours réguliers (hors vacances scolaires)
 - Jours de cours : Lundi et Jeudi

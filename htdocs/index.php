@@ -5,25 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Kannagara Aïkido Club de Guyancourt | Cours d'aïkido pour tous</title>
+    <title>Aïkido Kannagara Guyancourt | Cours d'aïkido pour tous</title>
     <meta name="description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Cours pour enfants et adultes sous la responsabilité pédagogique de Nacer Chekkaba. Gymnase Maurice Baquet, lundi et jeudi.">
     <meta name="keywords" content="aïkido, aikido, Guyancourt, Saint-Quentin-en-Yvelines, Montigny-le-Bretonneux, Versailles, arts martiaux, FFAB, Jean-Marc Chamot, dojo, Yvelines, 78, cours aïkido">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/">
-    <meta property="og:title" content="Kannagara Aïkido Club de Guyancourt">
+    <meta property="og:title" content="Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Responsabilité pédagogique de Nacer Chekkaba. Cours enfants et adultes, lundi et jeudi.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
     <meta property="og:locale" content="fr_FR">
-    <meta property="og:site_name" content="Kannagara Aïkido">
+    <meta property="og:site_name" content="Aïkido Kannagara Guyancourt">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="twitter:title" content="Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Responsabilité pédagogique de Nacer Chekkaba. Cours enfants et adultes, lundi et jeudi.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
@@ -51,8 +51,8 @@
         "@context": "https://schema.org",
         "@type": "SportsActivityLocation",
         "@id": "https://kannagara.fr/#organization",
-        "name": "Kannagara Aïkido Club de Guyancourt",
-        "alternateName": "Kannagara Aïkido",
+        "name": "Aïkido Kannagara Guyancourt",
+        "alternateName": "Kannagara",
         "description": "Club d'aïkido affilié à la FFAB, proposant des cours pour enfants et adultes à Guyancourt depuis 1990.",
         "url": "https://kannagara.fr",
         "logo": "https://kannagara.fr/images/logo-kannagara.jpg",
@@ -76,15 +76,15 @@
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday", "Thursday"],
-                "opens": "18:30",
-                "closes": "19:30",
+                "opens": "18:00",
+                "closes": "19:00",
                 "description": "Cours enfants"
             },
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday", "Thursday"],
-                "opens": "19:30",
-                "closes": "21:30",
+                "opens": "19:00",
+                "closes": "22:00",
                 "description": "Cours adultes"
             }
         ],
@@ -161,7 +161,7 @@
     <!-- Hero Section -->
     <section class="hero" aria-labelledby="hero-title">
         <div class="hero__content">
-            <h1 class="hero__title" id="hero-title">Aïkido Club de Guyancourt</h1>
+            <h1 class="hero__title" id="hero-title">Aïkido Kannagara Guyancourt</h1>
             <p class="hero__subtitle">Sous la responsabilité pédagogique de Nacer Chekkaba</p>
             <p class="hero__description">
                 Une équipe d'enseignants expérimentés pour les enfants et les adultes.

@@ -1,4 +1,4 @@
-# Événements à venir — Kannagara Aïkido
+# Événements à venir — Aïkido Kannagara Guyancourt
 
 ## Format
 

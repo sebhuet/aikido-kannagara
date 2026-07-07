@@ -1,9 +1,11 @@
-﻿    <!-- Footer -->
+﻿    </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__section">
-                    <h4>Kannagara Aïkido</h4>
+                    <h4>Aïkido Kannagara Guyancourt</h4>
                     <p>Club d'aïkido de Guyancourt depuis 1990.</p>
                     <p>Agréé Jeunesse et Sports.</p>
                     <p>Affilié à la FFAB.</p>
@@ -43,7 +45,7 @@
             </div>
 
             <div class="footer__bottom">
-                <p>&copy; <?= date('Y') ?> Kannagara Aïkido Club de Guyancourt. Tous droits réservés. | <a href="mentions-legales.php">Mentions légales</a></p>
+                <p>&copy; <?= date('Y') ?> Aïkido Kannagara Guyancourt. Tous droits réservés. | <a href="mentions-legales.php">Mentions légales</a></p>
                 <span class="footer__ffab">Affilié à la Fédération Française d'Aïkido et de Budo — Club n° 11478010<br>Agrément ministériel Jeunesse et Sports N° 06 S 83 du 7 octobre 1985 et du 3 décembre 2004</span>
 
             </div>

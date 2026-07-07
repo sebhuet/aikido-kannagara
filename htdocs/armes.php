@@ -8,7 +8,7 @@
     <title>Les Armes en Aïkido | Jo, Bokken et Tanto - Kannagara</title>
     <meta name="description" content="Découvrez les armes de l'aïkido : jo (bâton), bokken (sabre en bois) et tanto (couteau). Histoire, utilisation et importance dans la pratique.">
     <meta name="keywords" content="armes aïkido, jo, bokken, tanto, buki waza, sabre aïkido, bâton aïkido, aiki jo, aiki ken">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">
@@ -49,12 +49,12 @@
         "inLanguage": "fr",
         "author": {
             "@type": "Organization",
-            "name": "Kannagara Aïkido Club de Guyancourt",
+            "name": "Aïkido Kannagara Guyancourt",
             "url": "https://kannagara.fr"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Kannagara Aïkido Club de Guyancourt",
+            "name": "Aïkido Kannagara Guyancourt",
             "url": "https://kannagara.fr",
             "logo": {
                 "@type": "ImageObject",

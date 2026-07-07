@@ -1,4 +1,4 @@
-# Kannagara Aikido Club de Guyancourt - Contenu complet du site
+# Aikido Kannagara Guyancourt - Contenu complet du site
 
 > Ce fichier contient le contenu textuel complet du site kannagara.fr,
 > destine aux modeles de langage (LLM). Pour un resume, voir llms.txt.

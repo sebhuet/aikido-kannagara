@@ -1,4 +1,4 @@
-# Kannagara Aïkido Club de Guyancourt
+# Aïkido Kannagara Guyancourt
 
 Site web officiel du club d'aïkido Kannagara de Guyancourt (78).
 
@@ -84,4 +84,4 @@ npx serve
 
 ## Licence
 
-© 2024 Kannagara Aïkido Club de Guyancourt. Tous droits réservés.
+© 2024 Aïkido Kannagara Guyancourt. Tous droits réservés.

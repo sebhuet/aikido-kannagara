@@ -6,9 +6,9 @@
 
     <!-- SEO Meta Tags -->
     <title>Contact | Club d'aïkido Guyancourt - Gymnase Maurice Baquet</title>
-    <meta name="description" content="Contactez Kannagara Aïkido Guyancourt. Gymnase Maurice Baquet, Mail des Graviers. Tél : 06 76 48 16 01. Plan d'accès et formulaire de contact.">
+    <meta name="description" content="Contactez Aïkido Kannagara Guyancourt. Gymnase Maurice Baquet, Mail des Graviers. Tél : 06 76 48 16 01. Plan d'accès et formulaire de contact.">
     <meta name="keywords" content="contact aïkido, Guyancourt, gymnase maurice baquet, adresse, téléphone, plan">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">
@@ -19,13 +19,13 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/contact.html">
-    <meta property="og:title" content="Contact - Kannagara Aïkido Guyancourt">
+    <meta property="og:title" content="Contact - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt. Tél: 06 76 48 16 01.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Contact - Kannagara Aïkido Guyancourt">
+    <meta name="twitter:title" content="Contact - Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt. Tél: 06 76 48 16 01.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
@@ -41,7 +41,7 @@
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Kannagara Aïkido Club de Guyancourt",
+        "name": "Aïkido Kannagara Guyancourt",
         "description": "Club d'aïkido affilié FFAB",
         "telephone": "+33676481601",
         "email": "aikido.kannagara.guyancourt@gmail.com",
@@ -58,7 +58,7 @@
             "longitude": 2.0567
         },
         "url": "https://kannagara.fr",
-        "openingHours": ["Mo 18:30-21:30", "Th 18:30-21:30"],
+        "openingHours": ["Mo 18:00-22:00", "Th 18:00-22:00"],
         "areaServed": [
             {"@type": "City", "name": "Guyancourt"},
             {"@type": "City", "name": "Montigny-le-Bretonneux"},

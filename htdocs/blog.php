@@ -6,9 +6,9 @@
 
     <!-- SEO Meta Tags -->
     <title>Blog | Articles et réflexions sur l'aïkido - Kannagara</title>
-    <meta name="description" content="Blog du club Kannagara Aïkido : articles techniques, compte-rendus de stages, vie du club et réflexions sur la pratique de l'aïkido.">
+    <meta name="description" content="Blog du club Aïkido Kannagara Guyancourt : articles techniques, compte-rendus de stages, vie du club et réflexions sur la pratique de l'aïkido.">
     <meta name="keywords" content="blog aïkido, articles aïkido, stages aïkido, technique aïkido, réflexions aïkido">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">
@@ -19,13 +19,13 @@
     <!-- Open Graph -->
     <meta property="og:type" content="blog">
     <meta property="og:url" content="https://kannagara.fr/blog.html">
-    <meta property="og:title" content="Blog - Kannagara Aïkido">
+    <meta property="og:title" content="Blog - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Articles, compte-rendus de stages et réflexions sur l'aïkido.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Blog - Kannagara Aïkido">
+    <meta name="twitter:title" content="Blog - Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Articles, compte-rendus de stages et réflexions sur l'aïkido.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
@@ -37,7 +37,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
     <!-- RSS Feed -->
-    <link rel="alternate" type="application/rss+xml" title="Blog Kannagara Aïkido" href="feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Blog Aïkido Kannagara Guyancourt" href="feed.xml">
 </head>
 <body>
     <?php $active = 'blog'; include 'includes/header.php'; ?>

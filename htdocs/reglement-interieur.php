@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Règlement intérieur | Kannagara Aïkido</title>
-    <meta name="description" content="Règlement intérieur du club Kannagara Aïkido de Guyancourt. Règles de conduite, tenue, hygiène et étiquette sur le tatami.">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <title>Règlement intérieur | Aïkido Kannagara Guyancourt</title>
+    <meta name="description" content="Règlement intérieur du club Aïkido Kannagara Guyancourt. Règles de conduite, tenue, hygiène et étiquette sur le tatami.">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">
@@ -18,14 +18,14 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/reglement-interieur.html">
-    <meta property="og:title" content="Règlement intérieur | Kannagara Aïkido">
-    <meta property="og:description" content="Règlement intérieur du club Kannagara Aïkido de Guyancourt. Règles de conduite, tenue, hygiène et étiquette sur le tatami.">
+    <meta property="og:title" content="Règlement intérieur | Aïkido Kannagara Guyancourt">
+    <meta property="og:description" content="Règlement intérieur du club Aïkido Kannagara Guyancourt. Règles de conduite, tenue, hygiène et étiquette sur le tatami.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Règlement intérieur | Kannagara Aïkido">
-    <meta name="twitter:description" content="Règlement intérieur du club Kannagara Aïkido de Guyancourt. Règles de conduite, tenue, hygiène et étiquette sur le tatami.">
+    <meta name="twitter:title" content="Règlement intérieur | Aïkido Kannagara Guyancourt">
+    <meta name="twitter:description" content="Règlement intérieur du club Aïkido Kannagara Guyancourt. Règles de conduite, tenue, hygiène et étiquette sur le tatami.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->

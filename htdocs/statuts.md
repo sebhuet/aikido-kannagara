@@ -4,7 +4,9 @@
 
 Le 15 mai 1997 est fondée entre les adhérents, aux présents statuts, une association régie par la loi du 01/07/1901 et le décret du 16/08/1901, ayant pour titre :
 
-KANNAGARA AIKIDO CLUB DE GUYANCOURT
+AÏKIDO KANNAGARA GUYANCOURT
+
+Dénomination adoptée par l’Assemblée Générale du 29 juin 2026, l’association étant précédemment dénommée « Kannagara Aïkido Club de Guyancourt ».
 
 ### **Article 2 : Objet**
 

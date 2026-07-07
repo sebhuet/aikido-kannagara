@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Agenda des cours | Planning et présence des professeurs - Kannagara Aïkido</title>
+    <title>Agenda des cours | Planning et présence des professeurs - Aïkido Kannagara Guyancourt</title>
     <meta name="description" content="Agenda des cours d'aïkido du club Kannagara Guyancourt. Planning, présence des professeurs. Ouvert à tous les licenciés, toutes fédérations.">
     <meta name="keywords" content="agenda aïkido, planning cours aïkido, horaires aïkido Guyancourt, professeurs présents">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">
@@ -19,13 +19,13 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/agenda.html">
-    <meta property="og:title" content="Agenda des cours - Kannagara Aïkido">
+    <meta property="og:title" content="Agenda des cours - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Planning des cours et présence des professeurs. Cours ouverts à tous les licenciés.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Agenda des cours - Kannagara Aïkido">
+    <meta name="twitter:title" content="Agenda des cours - Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Planning des cours et présence des professeurs. Cours ouverts à tous les licenciés.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
@@ -59,7 +59,7 @@
         },
         "organizer": {
             "@type": "Organization",
-            "name": "Kannagara Aïkido Club de Guyancourt",
+            "name": "Aïkido Kannagara Guyancourt",
             "url": "https://kannagara.fr",
             "logo": {
                 "@type": "ImageObject",

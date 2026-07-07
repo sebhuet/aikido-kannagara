@@ -136,7 +136,7 @@ function performanceReport() {
 }
 
 // Exécution
-console.log("🚀 Analyse SEO et Performance - Kannagara Aïkido\n");
+console.log("🚀 Analyse SEO et Performance - Aïkido Kannagara Guyancourt\n");
 console.log("═".repeat(60) + "\n");
 
 analyzeImages();

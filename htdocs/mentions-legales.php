@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Mentions légales | Kannagara Aïkido</title>
-    <meta name="description" content="Mentions légales du site Kannagara Aïkido Club de Guyancourt.">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <title>Mentions légales | Aïkido Kannagara Guyancourt</title>
+    <meta name="description" content="Mentions légales du site Aïkido Kannagara Guyancourt.">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">
@@ -18,14 +18,14 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/mentions-legales.html">
-    <meta property="og:title" content="Mentions légales | Kannagara Aïkido">
-    <meta property="og:description" content="Mentions légales du site Kannagara Aïkido Club de Guyancourt.">
+    <meta property="og:title" content="Mentions légales | Aïkido Kannagara Guyancourt">
+    <meta property="og:description" content="Mentions légales du site Aïkido Kannagara Guyancourt.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Mentions légales | Kannagara Aïkido">
-    <meta name="twitter:description" content="Mentions légales du site Kannagara Aïkido Club de Guyancourt.">
+    <meta name="twitter:title" content="Mentions légales | Aïkido Kannagara Guyancourt">
+    <meta name="twitter:description" content="Mentions légales du site Aïkido Kannagara Guyancourt.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
@@ -59,7 +59,7 @@
 
                 <h3>Éditeur du site</h3>
                 <p>
-                    <strong>Kannagara Aïkido Club de Guyancourt</strong><br>
+                    <strong>Aïkido Kannagara Guyancourt</strong><br>
                     Association loi 1901<br>
                     SIRET : 414 262 923 00082<br>
                     Siège social : 9 impasse Jean Bouin, 78390 Bois-d'Arcy<br>
@@ -82,7 +82,7 @@
                 <h3>Propriété intellectuelle</h3>
                 <p>
                     L'ensemble du contenu de ce site (textes, images, vidéos, logos) est la propriété
-                    de l'association Kannagara Aïkido Club de Guyancourt, sauf mention contraire.
+                    de l'association Aïkido Kannagara Guyancourt, sauf mention contraire.
                     Toute reproduction, même partielle, est soumise à autorisation préalable.
                 </p>
 
@@ -108,8 +108,8 @@
 
                 <h3>Crédits</h3>
                 <p>
-                    Conception et réalisation : Kannagara Aïkido Club de Guyancourt<br>
-                    Photographies : © Kannagara Aïkido Club de Guyancourt
+                    Conception et réalisation : Aïkido Kannagara Guyancourt<br>
+                    Photographies : © Aïkido Kannagara Guyancourt
                 </p>
 
             </div>

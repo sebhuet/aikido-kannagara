@@ -44,7 +44,7 @@ Analyse la conversation WhatsApp pour identifier :
 Retourne UNIQUEMENT le contenu complet du fichier agenda.md mis à jour, en respectant exactement le format suivant :
 
 ```
-# Agenda des cours - Kannagara Aïkido
+# Agenda des cours - Aïkido Kannagara Guyancourt
 
 ## Format
 

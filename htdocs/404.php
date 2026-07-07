@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Page non trouvée | Kannagara Aïkido</title>
+  <title>Page non trouvée | Aïkido Kannagara Guyancourt</title>
   <meta name="robots" content="noindex">
 
   <!-- Styles -->
@@ -18,7 +18,6 @@
 <body>
   <?php $active = ''; include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
 
-  <main>
     <!-- Page Header -->
     <section class="page-header">
       <div class="container">
@@ -43,7 +42,6 @@
         </div>
       </div>
     </section>
-  </main>
 
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php'; ?>
 </body>

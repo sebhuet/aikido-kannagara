@@ -37,7 +37,7 @@ foreach ($fiches as $i => $fiche) {
         'description' => ($fiche['meta']['grade'] ?? '') . '. ' . ($fiche['meta']['diplome'] ?? '') . '.',
         'worksFor' => [
             '@type' => 'Organization',
-            'name' => 'Kannagara Aïkido Club de Guyancourt',
+            'name' => 'Aïkido Kannagara Guyancourt',
         ],
     ];
 
@@ -80,10 +80,10 @@ foreach ($fiches as $i => $fiche) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Nos Professeurs | Équipe d'enseignants diplômés - Kannagara Aïkido</title>
+    <title>Nos Professeurs | Équipe d'enseignants diplômés - Aïkido Kannagara Guyancourt</title>
     <meta name="description" content="<?= htmlspecialchars($meta_description) ?>">
     <meta name="keywords" content="<?= htmlspecialchars($meta_keywords) ?>">
-    <meta name="author" content="Kannagara Aïkido Club de Guyancourt">
+    <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.7678;2.0567">
@@ -94,13 +94,13 @@ foreach ($fiches as $i => $fiche) {
     <!-- Open Graph -->
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://kannagara.fr/professeurs.html">
-    <meta property="og:title" content="Équipe enseignante - Kannagara Aïkido Guyancourt">
+    <meta property="og:title" content="Équipe enseignante - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="<?= htmlspecialchars($og_description) ?>">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Équipe enseignante - Kannagara Aïkido Guyancourt">
+    <meta name="twitter:title" content="Équipe enseignante - Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="<?= htmlspecialchars($og_description) ?>">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 

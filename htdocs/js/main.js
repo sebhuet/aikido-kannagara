@@ -1,5 +1,5 @@
 /* ============================================
-   KANNAGARA AIKIDO - JavaScript principal
+   AÏKIDO KANNAGARA GUYANCOURT - JavaScript principal
    ============================================ */
 
 document.addEventListener("DOMContentLoaded", function () {
