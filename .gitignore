@@ -44,3 +44,6 @@ todo/todo.md
 # Dossiers hors projet
 affiche/
 kannagara.fr/
+
+# Clés SSH / secrets de déploiement (NE PAS versionner)
+env/
