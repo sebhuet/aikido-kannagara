@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>Flyer CSE (remise -10%) — Aïkido Kannagara Guyancourt</title>
+    <title>Flyer Bouygues (remise -10%) — Aïkido Kannagara Guyancourt</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <style>
         :root {
@@ -320,8 +320,8 @@
         }
         .recto-strip span { color: var(--red-bright); }
 
-        /* Tampon remise CSE */
-        .cse-stamp {
+        /* Tampon remise Bouygues */
+        .bouygues-stamp {
             position: absolute;
             top: 632px; right: 52px;
             z-index: 40;
@@ -334,8 +334,8 @@
             box-shadow: 0 10px 26px rgba(0, 0, 0, 0.32);
             transform: rotate(-11deg);
         }
-        .cse-stamp__top { font-size: 27px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; line-height: 1; }
-        .cse-stamp__big { font-size: 62px; font-weight: 900; letter-spacing: 1px; line-height: 1; margin-top: 4px; }
+        .bouygues-stamp__top { font-size: 27px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; line-height: 1; }
+        .bouygues-stamp__big { font-size: 62px; font-weight: 900; letter-spacing: 1px; line-height: 1; margin-top: 4px; }
 
         /* ---------- Impression ---------- */
         @media print {
@@ -360,7 +360,7 @@
 
     <!-- Barre d'outils (masquée à l'impression / export) -->
     <div class="toolbar no-print">
-        <span class="toolbar__title">Flyer CSE (remise -10%) — Aïkido Kannagara Guyancourt</span>
+        <span class="toolbar__title">Flyer Bouygues (remise -10%) — Aïkido Kannagara Guyancourt</span>
         <button class="btn btn--primary" id="btn-pdf" onclick="exportPDF()">Télécharger le PDF</button>
         <button class="btn btn--ghost" onclick="window.print()">Imprimer</button>
     </div>
@@ -444,10 +444,10 @@
 
             <div class="recto-strip">Découvrir l'aïkido à Guyancourt · <span>kannagara.fr</span></div>
 
-            <!-- Tampon remise CSE -->
-            <div class="cse-stamp">
-                <div class="cse-stamp__top">Remise BY</div>
-                <div class="cse-stamp__big">-10%</div>
+            <!-- Tampon remise Bouygues -->
+            <div class="bouygues-stamp">
+                <div class="bouygues-stamp__top">Remise BY</div>
+                <div class="bouygues-stamp__big">-10%</div>
             </div>
         </div>
         </div>
@@ -635,7 +635,7 @@
                     pdf.addImage(canvas.toDataURL("image/jpeg", 0.95), "JPEG", 0, 0, 210, 297);
                 }
 
-                pdf.save("flyer-aikido-kannagara-cse.pdf");
+                pdf.save("flyer-aikido-kannagara-bouygues.pdf");
             } catch (err) {
                 alert("Erreur lors de l'export : " + err.message);
             } finally {
