@@ -248,23 +248,23 @@ function buildBlogFooter(club) {
                 <div class="footer__section">
                     <h4>Navigation</h4>
                     <ul>
-                        <li><a href="../aikido.html">L'Aïkido</a></li>
-                        <li><a href="../club.html">Club</a></li>
-                        <li><a href="../professeurs.html">Professeurs</a></li>
-                        <li><a href="../grades.html">Grades</a></li>
-                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../aikido.php">L'Aïkido</a></li>
+                        <li><a href="../club.php">Club</a></li>
+                        <li><a href="../professeurs.php">Professeurs</a></li>
+                        <li><a href="../grades.php">Grades</a></li>
+                        <li><a href="../blog.php">Blog</a></li>
                     </ul>
                 </div>
 
                 <div class="footer__section">
                     <h4>Pratique</h4>
                     <ul>
-                        <li><a href="../actualites.html">Actualités</a></li>
-                        <li><a href="../inscription.html">Inscription</a></li>
-                        <li><a href="../faq.html">FAQ</a></li>
-                        <li><a href="../lexique.html">Lexique</a></li>
-                        <li><a href="../fondations.html">Fondations</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="../actualites.php">Actualités</a></li>
+                        <li><a href="../inscription.php">Inscription</a></li>
+                        <li><a href="../faq.php">FAQ</a></li>
+                        <li><a href="../lexique.php">Lexique</a></li>
+                        <li><a href="../fondations.php">Fondations</a></li>
+                        <li><a href="../contact.php">Contact</a></li>
                     </ul>
                 </div>
 
@@ -281,11 +281,33 @@ function buildBlogFooter(club) {
             </div>
 
             <div class="footer__bottom">
-                <p>&copy; ${new Date().getFullYear()} ${club.name}. Tous droits réservés. | <a href="../mentions-legales.html">Mentions légales</a></p>
+                <p>&copy; ${new Date().getFullYear()} ${club.name}. Tous droits réservés. | <a href="../mentions-legales.php">Mentions légales</a></p>
                 <span class="footer__ffab">Affilié à la ${fed.name} — Club n° ${fed.clubNumber}<br>${fed.agrement}</span>
             </div>
         </div>
     </footer>`;
+}
+
+/**
+ * Génère le fil d'Ariane BreadcrumbList (3 niveaux) d'un article, depuis club.json.
+ * Le fil visible existe dans le template ; ici on l'expose aux moteurs.
+ */
+function buildBreadcrumbJsonLd(article, club) {
+  const base = club.url;
+  const ld = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Accueil", item: `${base}/` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${base}/blog.php` },
+      { "@type": "ListItem", position: 3, name: article.title, item: `${base}/blog/${article.slug}.html` }
+    ]
+  };
+  const json = JSON.stringify(ld, null, 2)
+    .split("\n")
+    .map((line) => "    " + line)
+    .join("\n");
+  return `<script type="application/ld+json">\n${json}\n    </script>`;
 }
 
 /**
@@ -294,8 +316,10 @@ function buildBlogFooter(club) {
 function generateArticlePage(article, prevArticle, template) {
   let html = template;
 
-  // Footer généré depuis la source unique club.json
-  html = html.replace(/\{\{footer\}\}/g, buildBlogFooter(CLUB));
+  // Footer et fil d'Ariane générés depuis la source unique club.json.
+  // Remplacement par fonction : évite l'interprétation des motifs $& dans le contenu injecté.
+  html = html.replace(/\{\{footer\}\}/g, () => buildBlogFooter(CLUB));
+  html = html.replace(/\{\{breadcrumb_jsonld\}\}/g, () => buildBreadcrumbJsonLd(article, CLUB));
 
   // Remplacements
   html = html.replace(/\{\{title\}\}/g, article.title);
