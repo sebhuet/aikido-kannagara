@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/grades.html">
+    <link rel="canonical" href="https://kannagara.fr/grades.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://kannagara.fr/grades.html">
+    <meta property="og:url" content="https://kannagara.fr/grades.php">
     <meta property="og:title" content="Grades en Aïkido - Programme technique">
     <meta property="og:description" content="Du 6e kyu au dan : système de grades et programme technique FFAB.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
@@ -43,7 +43,7 @@
         "@type": "Article",
         "headline": "Grades en Aïkido - Du 6e kyu au dan, programme technique",
         "description": "Système de grades en aïkido : kyu (6e au 1er) et dan (ceinture noire). Programme technique FFAB, conditions de passage, techniques par niveau.",
-        "url": "https://kannagara.fr/grades.html",
+        "url": "https://kannagara.fr/grades.php",
         "about": "Grades en Aïkido",
         "inLanguage": "fr",
         "author": {
@@ -62,7 +62,7 @@
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://kannagara.fr/grades.html"
+            "@id": "https://kannagara.fr/grades.php"
         }
     }
     </script>

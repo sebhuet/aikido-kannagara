@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/aikido.html">
+    <link rel="canonical" href="https://kannagara.fr/aikido.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://kannagara.fr/aikido.html">
+    <meta property="og:url" content="https://kannagara.fr/aikido.php">
     <meta property="og:title" content="L'Aïkido : histoire et philosophie">
     <meta property="og:description" content="Art martial japonais fondé par Morihei Ueshiba. Sans compétition, accessible à tous.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
@@ -55,7 +55,7 @@
                 "url": "https://kannagara.fr/images/logo-kannagara.jpg"
             }
         },
-        "mainEntityOfPage": "https://kannagara.fr/aikido.html",
+        "mainEntityOfPage": "https://kannagara.fr/aikido.php",
         "about": {
             "@type": "Thing",
             "name": "Aïkido",

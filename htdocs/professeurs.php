@@ -89,11 +89,11 @@ foreach ($fiches as $i => $fiche) {
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/professeurs.html">
+    <link rel="canonical" href="https://kannagara.fr/professeurs.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="profile">
-    <meta property="og:url" content="https://kannagara.fr/professeurs.html">
+    <meta property="og:url" content="https://kannagara.fr/professeurs.php">
     <meta property="og:title" content="Équipe enseignante - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="<?= htmlspecialchars($og_description) ?>">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">

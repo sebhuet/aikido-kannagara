@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/agenda.html">
+    <link rel="canonical" href="https://kannagara.fr/agenda.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/agenda.html">
+    <meta property="og:url" content="https://kannagara.fr/agenda.php">
     <meta property="og:title" content="Agenda des cours - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Planning des cours et présence des professeurs. Cours ouverts à tous les licenciés.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
@@ -43,7 +43,7 @@
         "@type": "Event",
         "name": "Cours d'Aïkido Kannagara",
         "description": "Agenda et planning des cours d'aïkido du club Kannagara avec présence des professeurs. Cours ouverts à tous les licenciés, quelle que soit leur fédération.",
-        "url": "https://kannagara.fr/agenda.html",
+        "url": "https://kannagara.fr/agenda.php",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {

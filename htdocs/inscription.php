@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require_once __DIR__ . '/includes/data.php'; $club = club_data(); $p = $club['pricing']; $cur = $p['currency']; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/inscription.html">
+    <link rel="canonical" href="https://kannagara.fr/inscription.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/inscription.html">
+    <meta property="og:url" content="https://kannagara.fr/inscription.php">
     <meta property="og:title" content="S'inscrire au club Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Rejoignez notre club d'aïkido. Cours d'essai gratuits en septembre.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
@@ -43,7 +43,7 @@
         "@type": "Course",
         "name": "Cours d'Aïkido - Kannagara",
         "description": "Inscrivez-vous au club Aïkido Kannagara Guyancourt. Cours d'essai gratuits en septembre, documents nécessaires, équipement. Enfants dès 7 ans, adultes tous niveaux.",
-        "url": "https://kannagara.fr/inscription.html",
+        "url": "https://kannagara.fr/inscription.php",
         "provider": {
             "@type": "Organization",
             "name": "Aïkido Kannagara Guyancourt",
@@ -68,23 +68,23 @@
             {
                 "@type": "Offer",
                 "name": "Enfants (7-14 ans)",
-                "price": "190",
-                "priceCurrency": "EUR",
+                "price": "<?= $p['children'] ?>",
+                "priceCurrency": "<?= $cur ?>",
                 "eligibleCustomerType": "http://schema.org/Student",
                 "description": "2 cours par semaine, licence FFAB et assurance incluses"
             },
             {
                 "@type": "Offer",
                 "name": "Adultes (15 ans et +)",
-                "price": "250",
-                "priceCurrency": "EUR",
+                "price": "<?= $p['adults'] ?>",
+                "priceCurrency": "<?= $cur ?>",
                 "description": "2 cours par semaine (6h), licence FFAB et assurance incluses, accès aux stages"
             },
             {
                 "@type": "Offer",
                 "name": "Tarif réduit (étudiants, chômeurs)",
-                "price": "126",
-                "priceCurrency": "EUR",
+                "price": "<?= $p['reduced'] ?>",
+                "priceCurrency": "<?= $cur ?>",
                 "description": "Sur justificatif, mêmes avantages adultes, licence FFAB et assurance incluses"
             }
         ],
@@ -342,7 +342,7 @@
                     </div>
                 </div>
 
-                <h2>Tarifs saison 2026-2027</h2>
+                <h2>Tarifs saison <?= htmlspecialchars($club['season']) ?></h2>
                 <p>
                     La cotisation annuelle comprend la licence FFAB, l'assurance et l'accès à tous les cours.
                     Le règlement peut s'effectuer en plusieurs fois.
@@ -351,7 +351,7 @@
                 <div class="tarifs-grid">
                     <div class="tarif-card">
                         <h3 class="tarif-card__title">Enfants</h3>
-                        <div class="tarif-card__price">190€ <span>/ an</span></div>
+                        <div class="tarif-card__price"><?= $p['children'] ?>€ <span>/ an</span></div>
                         <p class="tarif-card__description">7 à 14 ans</p>
                         <ul class="tarif-card__features">
                             <li>2 cours par semaine</li>
@@ -363,7 +363,7 @@
 
                     <div class="tarif-card tarif-card--featured">
                         <h3 class="tarif-card__title">Adultes</h3>
-                        <div class="tarif-card__price">250€ <span>/ an</span></div>
+                        <div class="tarif-card__price"><?= $p['adults'] ?>€ <span>/ an</span></div>
                         <p class="tarif-card__description">À partir de 15 ans</p>
                         <ul class="tarif-card__features">
                             <li>4 cours par semaine (6h)</li>
@@ -376,7 +376,7 @@
 
                     <div class="tarif-card">
                         <h3 class="tarif-card__title">Tarif réduit</h3>
-                        <div class="tarif-card__price">126€ <span>/ an</span></div>
+                        <div class="tarif-card__price"><?= $p['reduced'] ?>€ <span>/ an</span></div>
                         <p class="tarif-card__description">Étudiants, chômeurs</p>
                         <ul class="tarif-card__features">
                             <li>Sur justificatif</li>
@@ -390,7 +390,7 @@
                 <div class="info-box">
                     <h4 class="info-box__title">Tarif famille</h4>
                     <p>
-                        Une réduction de <strong>10%</strong> est accordée à partir de la 3e inscription
+                        Une réduction de <strong><?= $p['familyDiscountPercent'] ?>%</strong> est accordée à partir de la <?= $p['familyDiscountFrom'] ?>e inscription
                         d'un même foyer. Contactez-nous pour en bénéficier.
                     </p>
                 </div>

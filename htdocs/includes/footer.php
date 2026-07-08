@@ -1,14 +1,22 @@
 ﻿    </main>
 
+    <?php require_once __DIR__ . '/data.php'; $club = club_data(); $loc = $club['location']; $fed = $club['federation']; ?>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__section">
-                    <h4>Aïkido Kannagara Guyancourt</h4>
-                    <p>Club d'aïkido de Guyancourt depuis 1990.</p>
+                    <h4><?= htmlspecialchars($club['name']) ?></h4>
+                    <p>Club d'aïkido de <?= htmlspecialchars($loc['city']) ?> depuis <?= (int) $club['foundingYear'] ?>.</p>
                     <p>Agréé Jeunesse et Sports.</p>
-                    <p>Affilié à la FFAB.</p>
+                    <p>Affilié à la <?= htmlspecialchars($fed['abbr']) ?>.</p>
+                    <?php if (!empty($club['social'])): ?>
+                    <p class="footer__social">
+                        <?php foreach ($club['social'] as $label => $href): ?>
+                        <a href="<?= htmlspecialchars($href) ?>" target="_blank" rel="noopener"><?= htmlspecialchars($label) ?></a>
+                        <?php endforeach; ?>
+                    </p>
+                    <?php endif; ?>
                 </div>
 
                 <div class="footer__section">
@@ -39,14 +47,19 @@
 
                 <div class="footer__section">
                     <h4>Contact</h4>
-                    <p><a href="tel:0676481601">06 76 48 16 01</a></p>
-                    <p><a href="mailto:aikido.kannagara.guyancourt@gmail.com">aikido.kannagara.guyancourt@gmail.com</a></p>
+                    <p class="footer__address">
+                        <?= htmlspecialchars($loc['venue']) ?><br>
+                        <?= htmlspecialchars($loc['street']) ?><br>
+                        <?= htmlspecialchars($loc['postalCode']) ?> <?= htmlspecialchars($loc['city']) ?>
+                    </p>
+                    <p><a href="tel:<?= preg_replace('/\s+/', '', $club['contact']['phone']) ?>"><?= htmlspecialchars($club['contact']['phone']) ?></a></p>
+                    <p><a href="mailto:<?= htmlspecialchars($club['contact']['email']) ?>"><?= htmlspecialchars($club['contact']['email']) ?></a></p>
                 </div>
             </div>
 
             <div class="footer__bottom">
-                <p>&copy; <?= date('Y') ?> Aïkido Kannagara Guyancourt. Tous droits réservés. | <a href="mentions-legales.php">Mentions légales</a></p>
-                <span class="footer__ffab">Affilié à la Fédération Française d'Aïkido et de Budo — Club n° 11478010<br>Agrément ministériel Jeunesse et Sports N° 06 S 83 du 7 octobre 1985 et du 3 décembre 2004</span>
+                <p>&copy; <?= date('Y') ?> <?= htmlspecialchars($club['name']) ?>. Tous droits réservés. | <a href="mentions-legales.php">Mentions légales</a></p>
+                <span class="footer__ffab">Affilié à la <?= htmlspecialchars($fed['name']) ?> — Club n° <?= htmlspecialchars($fed['clubNumber']) ?><br><?= htmlspecialchars($fed['agrement']) ?></span>
 
             </div>
         </div>

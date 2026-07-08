@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/faq.html">
+    <link rel="canonical" href="https://kannagara.fr/faq.php">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/faq.html">
+    <meta property="og:url" content="https://kannagara.fr/faq.php">
     <meta property="og:title" content="FAQ - Questions fréquentes - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Toutes les réponses à vos questions sur l'aïkido et notre club de Guyancourt.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">

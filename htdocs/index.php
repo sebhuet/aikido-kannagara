@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<?php require_once __DIR__ . '/includes/data.php'; $club = club_data(); $sch = $club['schedule']; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -75,16 +75,16 @@
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Thursday"],
-                "opens": "18:00",
-                "closes": "19:00",
+                "dayOfWeek": <?= json_encode($sch['daysSchemaOrg']) ?>,
+                "opens": "<?= $sch['children']['opens'] ?>",
+                "closes": "<?= $sch['children']['closes'] ?>",
                 "description": "Cours enfants"
             },
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Thursday"],
-                "opens": "19:00",
-                "closes": "22:00",
+                "dayOfWeek": <?= json_encode($sch['daysSchemaOrg']) ?>,
+                "opens": "<?= $sch['adultsRange']['opens'] ?>",
+                "closes": "<?= $sch['adultsRange']['closes'] ?>",
                 "description": "Cours adultes"
             }
         ],

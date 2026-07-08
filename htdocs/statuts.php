@@ -13,11 +13,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="https://kannagara.fr/statuts.html">
+    <link rel="canonical" href="https://kannagara.fr/statuts.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/statuts.html">
+    <meta property="og:url" content="https://kannagara.fr/statuts.php">
     <meta property="og:title" content="Statuts de l'association | Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Statuts de l'association Aïkido Kannagara Guyancourt, association loi 1901 affiliée à la FFAB.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">

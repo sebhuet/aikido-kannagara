@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/actualites.html">
+    <link rel="canonical" href="https://kannagara.fr/actualites.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/actualites.html">
+    <meta property="og:url" content="https://kannagara.fr/actualites.php">
     <meta property="og:title" content="Actualités - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Portes ouvertes, stages, événements du club d'aïkido de Guyancourt.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
@@ -43,7 +43,7 @@
         "@type": "CollectionPage",
         "name": "Actualités - Aïkido Kannagara Guyancourt",
         "description": "Actualités du club Aïkido Kannagara Guyancourt : portes ouvertes septembre, stages FFAB, passages de grades. Événements à Guyancourt.",
-        "url": "https://kannagara.fr/actualites.html",
+        "url": "https://kannagara.fr/actualites.php",
         "inLanguage": "fr",
         "isPartOf": {
             "@type": "WebSite",

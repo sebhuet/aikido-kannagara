@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/lexique.html">
+    <link rel="canonical" href="https://kannagara.fr/lexique.php">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://kannagara.fr/lexique.html">
+    <meta property="og:url" content="https://kannagara.fr/lexique.php">
     <meta property="og:title" content="Lexique Japonais de l'Aïkido">
     <meta property="og:description" content="Vocabulaire japonais essentiel pour la pratique de l'aïkido : termes techniques, expressions du dojo.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
@@ -45,7 +45,7 @@
         "@type": "DefinedTermSet",
         "name": "Lexique Japonais de l'Aïkido",
         "description": "Lexique japonais de l'aïkido : termes techniques, vocabulaire du dojo, noms des techniques, comptage japonais. Guide complet pour les pratiquants.",
-        "url": "https://kannagara.fr/lexique.html",
+        "url": "https://kannagara.fr/lexique.php",
         "inLanguage": ["ja", "fr"],
         "publisher": {
             "@type": "Organization",

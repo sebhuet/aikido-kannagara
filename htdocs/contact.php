@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<?php require_once __DIR__ . '/includes/data.php'; $club = club_data(); $sch = $club['schedule']; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/contact.html">
+    <link rel="canonical" href="https://kannagara.fr/contact.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/contact.html">
+    <meta property="og:url" content="https://kannagara.fr/contact.php">
     <meta property="og:title" content="Contact - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt. Tél: 06 76 48 16 01.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
@@ -58,7 +58,7 @@
             "longitude": 2.0567
         },
         "url": "https://kannagara.fr",
-        "openingHours": ["Mo 18:00-22:00", "Th 18:00-22:00"],
+        "openingHours": <?= json_encode(array_map(fn($d) => substr($d, 0, 2) . ' ' . $sch['children']['opens'] . '-' . $sch['adultsRange']['closes'], $sch['daysSchemaOrg'])) ?>,
         "areaServed": [
             {"@type": "City", "name": "Guyancourt"},
             {"@type": "City", "name": "Montigny-le-Bretonneux"},

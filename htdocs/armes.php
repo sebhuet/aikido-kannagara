@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/armes.html">
+    <link rel="canonical" href="https://kannagara.fr/armes.php">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://kannagara.fr/armes.html">
+    <meta property="og:url" content="https://kannagara.fr/armes.php">
     <meta property="og:title" content="Les Armes en Aïkido - Jo, Bokken, Tanto">
     <meta property="og:description" content="Le travail avec les armes en aïkido : comprendre les origines des techniques à mains nues.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
@@ -45,7 +45,7 @@
         "@type": "Article",
         "headline": "Les Armes en Aïkido - Jo, Bokken et Tanto",
         "description": "Découvrez les armes de l'aïkido : jo (bâton), bokken (sabre en bois) et tanto (couteau). Histoire, utilisation et importance dans la pratique.",
-        "url": "https://kannagara.fr/armes.html",
+        "url": "https://kannagara.fr/armes.php",
         "inLanguage": "fr",
         "author": {
             "@type": "Organization",
@@ -63,7 +63,7 @@
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://kannagara.fr/armes.html"
+            "@id": "https://kannagara.fr/armes.php"
         }
     }
     </script>

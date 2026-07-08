@@ -38,5 +38,7 @@
         <div class="nav-overlay"></div>
     </header>
 
+    <?php include __DIR__ . '/breadcrumb.php'; ?>
+
     <main id="main">
 

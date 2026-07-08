@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/galerie.html">
+    <link rel="canonical" href="https://kannagara.fr/galerie.php">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/galerie.html">
+    <meta property="og:url" content="https://kannagara.fr/galerie.php">
     <meta property="og:title" content="Galerie Photos - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Découvrez la galerie photos du club Aïkido Kannagara Guyancourt : cours, stages, passages de grades et vie du club.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
@@ -45,7 +45,7 @@
         "@type": "ImageGallery",
         "name": "Galerie Photos Aïkido Kannagara Guyancourt",
         "description": "Galerie photos du club Aïkido Kannagara Guyancourt : cours, stages, passages de grades et vie du club.",
-        "url": "https://kannagara.fr/galerie.html",
+        "url": "https://kannagara.fr/galerie.php",
         "isPartOf": {
             "@type": "WebSite",
             "name": "Aïkido Kannagara Guyancourt",

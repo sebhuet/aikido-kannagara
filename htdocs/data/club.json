@@ -1,0 +1,62 @@
+{
+  "name": "Aïkido Kannagara Guyancourt",
+  "shortName": "Aïkido Kannagara",
+  "alternateName": "Kannagara",
+  "foundingYear": 1990,
+  "founder": "Noël Stella",
+  "url": "https://kannagara.fr",
+  "logo": "https://kannagara.fr/images/logo-kannagara.jpg",
+  "membersApprox": 50,
+  "president": "Fanny Jacquemier",
+  "contact": {
+    "phone": "06 76 48 16 01",
+    "phoneIntl": "+33676481601",
+    "email": "aikido.kannagara.guyancourt@gmail.com"
+  },
+  "location": {
+    "venue": "Gymnase Maurice Baquet",
+    "street": "Mail des Graviers",
+    "postalCode": "78280",
+    "city": "Guyancourt",
+    "region": "FR-78",
+    "country": "FR",
+    "geo": { "lat": 48.7678, "lng": 2.0567 },
+    "mapsUrl": "https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6"
+  },
+  "season": "2026-2027",
+  "schedule": {
+    "days": ["Lundi", "Jeudi"],
+    "daysSchemaOrg": ["Monday", "Thursday"],
+    "children": { "opens": "18:00", "closes": "19:00", "label": "18h00 - 19h00" },
+    "adults": [
+      { "opens": "19:00", "closes": "20:30", "label": "19h00 - 20h30" },
+      { "opens": "20:30", "closes": "22:00", "label": "20h30 - 22h00" }
+    ],
+    "adultsRange": { "opens": "19:00", "closes": "22:00" }
+  },
+  "pricing": {
+    "currency": "EUR",
+    "children": 190,
+    "adults": 250,
+    "reduced": 126,
+    "familyDiscountPercent": 10,
+    "familyDiscountFrom": 3
+  },
+  "federation": {
+    "name": "Fédération Française d'Aïkido et de Budo",
+    "abbr": "FFAB",
+    "clubNumber": "11478010",
+    "agrement": "Agrément ministériel Jeunesse et Sports N° 06 S 83 du 7 octobre 1985 et du 3 décembre 2004"
+  },
+  "pedagogicalLead": {
+    "name": "Nacer Chekkaba",
+    "grade": "4e Dan Aïkido FFAB",
+    "diploma": "BE1"
+  },
+  "social": {
+    "Facebook": "https://www.facebook.com/Kannagara-a%C3%AFkido-club-de-Guyancourt-375533475979211/"
+  },
+  "sameAs": [
+    "https://www.facebook.com/Kannagara-a%C3%AFkido-club-de-Guyancourt-375533475979211/"
+  ]
+}

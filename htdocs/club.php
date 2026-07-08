@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/club.html">
+    <link rel="canonical" href="https://kannagara.fr/club.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/club.html">
+    <meta property="og:url" content="https://kannagara.fr/club.php">
     <meta property="og:title" content="Le Club Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Club d'aïkido à Guyancourt depuis 1990. Environ 50 membres, affilié FFAB.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">

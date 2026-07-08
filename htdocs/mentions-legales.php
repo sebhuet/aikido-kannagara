@@ -13,11 +13,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="https://kannagara.fr/mentions-legales.html">
+    <link rel="canonical" href="https://kannagara.fr/mentions-legales.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/mentions-legales.html">
+    <meta property="og:url" content="https://kannagara.fr/mentions-legales.php">
     <meta property="og:title" content="Mentions légales | Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Mentions légales du site Aïkido Kannagara Guyancourt.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">

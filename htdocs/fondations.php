@@ -14,11 +14,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/fondations.html">
+    <link rel="canonical" href="https://kannagara.fr/fondations.php">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://kannagara.fr/fondations.html">
+    <meta property="og:url" content="https://kannagara.fr/fondations.php">
     <meta property="og:title" content="Les Fondations de l'Aïkido selon Maître Tamura">
     <meta property="og:description" content="Les 10 fondations essentielles de l'aïkido transmises par Maître Tamura, pilier de l'enseignement FFAB.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">

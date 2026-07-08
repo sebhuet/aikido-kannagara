@@ -13,11 +13,11 @@
     <meta name="geo.position" content="48.7678;2.0567">
     <meta name="ICBM" content="48.7678, 2.0567">
     <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="https://kannagara.fr/reglement-interieur.html">
+    <link rel="canonical" href="https://kannagara.fr/reglement-interieur.php">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/reglement-interieur.html">
+    <meta property="og:url" content="https://kannagara.fr/reglement-interieur.php">
     <meta property="og:title" content="Règlement intérieur | Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Règlement intérieur du club Aïkido Kannagara Guyancourt. Règles de conduite, tenue, hygiène et étiquette sur le tatami.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">

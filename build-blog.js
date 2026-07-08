@@ -19,6 +19,7 @@ const ARTICLES_DIR = path.join(__dirname, "htdocs", "blog", "articles");
 const OUTPUT_DIR = path.join(__dirname, "htdocs", "blog");
 const TEMPLATE_FILE = path.join(__dirname, "htdocs", "blog", "_template.html");
 const BLOG_INDEX = path.join(__dirname, "htdocs", "blog.php");
+const CLUB = JSON.parse(fs.readFileSync(path.join(__dirname, "htdocs", "data", "club.json"), "utf-8"));
 
 // Mois en français
 const MONTHS_FR = [
@@ -220,10 +221,81 @@ function readArticles() {
 }
 
 /**
+ * Génère le footer du blog à partir de la source unique club.json (liens relatifs au sous-dossier blog/).
+ */
+function buildBlogFooter(club) {
+  const loc = club.location;
+  const fed = club.federation;
+  const phoneTel = club.contact.phone.replace(/\s+/g, "");
+  const socialLinks = Object.entries(club.social || {})
+    .map(([label, href]) => `<a href="${href}" target="_blank" rel="noopener">${label}</a>`)
+    .join("\n                        ");
+  const socialBlock = socialLinks
+    ? `\n                    <p class="footer__social">\n                        ${socialLinks}\n                    </p>`
+    : "";
+
+  return `<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <h4>${club.name}</h4>
+                    <p>Club d'aïkido de ${loc.city} depuis ${club.foundingYear}.</p>
+                    <p>Agréé Jeunesse et Sports.</p>
+                    <p>Affilié à la ${fed.abbr}.</p>${socialBlock}
+                </div>
+
+                <div class="footer__section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../aikido.html">L'Aïkido</a></li>
+                        <li><a href="../club.html">Club</a></li>
+                        <li><a href="../professeurs.html">Professeurs</a></li>
+                        <li><a href="../grades.html">Grades</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Pratique</h4>
+                    <ul>
+                        <li><a href="../actualites.html">Actualités</a></li>
+                        <li><a href="../inscription.html">Inscription</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../lexique.html">Lexique</a></li>
+                        <li><a href="../fondations.html">Fondations</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Contact</h4>
+                    <p class="footer__address">
+                        ${loc.venue}<br>
+                        ${loc.street}<br>
+                        ${loc.postalCode} ${loc.city}
+                    </p>
+                    <p><a href="tel:${phoneTel}">${club.contact.phone}</a></p>
+                    <p><a href="mailto:${club.contact.email}">${club.contact.email}</a></p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; ${new Date().getFullYear()} ${club.name}. Tous droits réservés. | <a href="../mentions-legales.html">Mentions légales</a></p>
+                <span class="footer__ffab">Affilié à la ${fed.name} — Club n° ${fed.clubNumber}<br>${fed.agrement}</span>
+            </div>
+        </div>
+    </footer>`;
+}
+
+/**
  * Génère une page HTML pour un article
  */
 function generateArticlePage(article, prevArticle, template) {
   let html = template;
+
+  // Footer généré depuis la source unique club.json
+  html = html.replace(/\{\{footer\}\}/g, buildBlogFooter(CLUB));
 
   // Remplacements
   html = html.replace(/\{\{title\}\}/g, article.title);
