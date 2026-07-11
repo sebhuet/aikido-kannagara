@@ -332,7 +332,7 @@
                             Hakama <span class="lexique-item__kanji">袴</span>
                         </div>
                         <p class="lexique-item__definition">
-                            Pantalon large traditionnel porté par les pratiquants avancés.
+                            Pantalon large traditionnel porté à partir du 2e kyu.
                         </p>
                     </div>
                     <div class="lexique-item">

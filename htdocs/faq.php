@@ -449,7 +449,7 @@
                             <div class="faq-answer__content">
                                 <p>
                                     Le <strong>hakama</strong> est le pantalon large traditionnel porté par les pratiquants
-                                    avancés (généralement à partir du 1er kyu ou 1er dan selon les dojos).
+                                    confirmés : dans notre dojo, il se porte à partir du 2e kyu.
                                     C'est un vêtement symbolique qui représente l'engagement dans la voie.
                                     Les débutants ne portent que le keikogi blanc.
                                 </p>

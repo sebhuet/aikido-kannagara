@@ -411,7 +411,7 @@
                 <ul>
                     <li><strong>Keikogi</strong> (kimono blanc) : Indispensable dès les premiers cours</li>
                     <li><strong>Zoori</strong> (sandales japonaises) : Pour circuler autour du tatami</li>
-                    <li><strong>Hakama</strong> : Pantalon traditionnel, généralement à partir du 3e kyu</li>
+                    <li><strong>Hakama</strong> : Pantalon traditionnel, à partir du 2e kyu</li>
                     <li><strong>Armes</strong> (optionnel) : Jo (bâton), bokken (sabre en bois), tanto (couteau en bois)</li>
                 </ul>
                 <p>

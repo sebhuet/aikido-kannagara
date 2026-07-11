@@ -98,7 +98,7 @@
                 </p>
                 <ul>
                     <li><strong>Les kyu</strong> (grades inférieurs) : Du 6e kyu au 1er kyu, portés avec une ceinture blanche</li>
-                    <li><strong>Les dan</strong> (grades supérieurs) : À partir du 1er dan, portés avec une ceinture noire et le hakama</li>
+                    <li><strong>Les dan</strong> (grades supérieurs) : À partir du 1er dan, portés avec une ceinture noire</li>
                 </ul>
 
                 <div class="info-box">
@@ -107,7 +107,7 @@
                         En aïkido, la tradition veut que la ceinture reste blanche jusqu'à l'obtention du 1er dan,
                         bien que certains clubs utilisent des ceintures de couleur pour marquer la progression,
                         notamment chez les enfants.
-                        Le hakama est généralement porté à partir du 3e kyu ou 1er kyu selon les écoles.
+                        Dans notre dojo, le hakama se porte à partir du 2e kyu.
                     </p>
                 </div>
 

@@ -167,7 +167,7 @@
                 <h2>La pratique</h2>
                 <p>
                     L'aïkido se pratique en <strong>keikogi</strong> (tenue d'entraînement blanche)
-                    et souvent en <strong>hakama</strong> (pantalon large traditionnel) pour les pratiquants avancés.
+                    et en <strong>hakama</strong> (pantalon large traditionnel) à partir du 2e kyu.
                 </p>
                 <p>
                     Les techniques comprennent :

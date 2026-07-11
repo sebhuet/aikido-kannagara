@@ -262,7 +262,7 @@ La cotisation annuelle comprend :
 ### Equipement necessaire
 - Keikogi (kimono blanc)
 - Zoori (sandales japonaises) pour circuler autour du tatami
-- Hakama : pantalon traditionnel, generalement a partir du 3e kyu
+- Hakama : pantalon traditionnel, a partir du 2e kyu
 - Armes (optionnel) : jo (baton), bokken (sabre en bois), tanto (couteau en bois)
 Pour les premiers cours d'essai, un survetement propre suffit.
 
@@ -296,8 +296,8 @@ R: Un simple survetement suffit pour les premieres seances. Puis un keikogi (kim
 une ceinture blanche et des zoori (sandales). Les armes peuvent etre pretees au debut.
 
 Q: Qu'est-ce que le hakama ?
-R: Le hakama est le pantalon large traditionnel porte par les pratiquants avances
-(generalement a partir du 1er kyu ou 1er dan). C'est un vetement symbolique
+R: Le hakama est le pantalon large traditionnel porte par les pratiquants confirmes
+(dans notre dojo, a partir du 2e kyu). C'est un vetement symbolique
 qui represente l'engagement dans la voie.
 
 ### Le club Kannagara
