@@ -19,6 +19,7 @@ const ARTICLES_DIR = path.join(__dirname, "htdocs", "blog", "articles");
 const OUTPUT_DIR = path.join(__dirname, "htdocs", "blog");
 const TEMPLATE_FILE = path.join(__dirname, "htdocs", "blog", "_template.html");
 const BLOG_INDEX = path.join(__dirname, "htdocs", "blog.php");
+const FEED_FILE = path.join(__dirname, "htdocs", "feed.xml");
 const CLUB = JSON.parse(fs.readFileSync(path.join(__dirname, "htdocs", "data", "club.json"), "utf-8"));
 
 // Mois en français
@@ -392,6 +393,84 @@ function updateBlogIndex(articles) {
 }
 
 /**
+ * Génère feed.xml à partir des articles.
+ *
+ * feed.xml n'était généré par AUCUN script : il était maintenu à la main et
+ * s'était figé à janvier 2024. Le prochain article publié n'y serait jamais
+ * apparu — sans erreur ni avertissement. Il est désormais dérivé des articles,
+ * comme les pages et le sitemap.
+ */
+const DAYS_EN = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const MONTHS_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+function toRfc822(dateStr) {
+  const d = new Date(`${dateStr}T10:00:00Z`);
+  const jour = DAYS_EN[d.getUTCDay()];
+  const mois = MONTHS_EN[parseInt(dateStr.slice(5, 7), 10) - 1];
+
+  return `${jour}, ${dateStr.slice(8, 10)} ${mois} ${dateStr.slice(0, 4)} 10:00:00 +0100`;
+}
+
+function escapeXml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function generateFeed(articles) {
+  const site = CLUB.url;
+  const email = CLUB.contact.email;
+  const editeur = `${email} (${CLUB.name})`;
+  // Date du dernier article (et non la date du build) : le fichier reste stable
+  // tant qu'aucun article n'est ajouté, donc pas de diff parasite à chaque build.
+  const dernier = articles[0] ? toRfc822(articles[0].date) : toRfc822("1970-01-01");
+
+  const items = articles
+    .map((a) => {
+      const url = `${site}/blog/${a.slug}.html`;
+      const tags = Array.isArray(a.tags) ? a.tags : [];
+
+      return `        <item>
+            <title>${escapeXml(a.title)}</title>
+            <link>${url}</link>
+            <guid isPermaLink="true">${url}</guid>
+            <pubDate>${toRfc822(a.date)}</pubDate>
+            <description><![CDATA[${a.description || ""}]]></description>
+${tags.map((t) => `            <category>${escapeXml(t)}</category>`).join("\n")}
+        </item>`;
+    })
+    .join("\n\n");
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Blog ${escapeXml(CLUB.name)}</title>
+        <description>Articles et réflexions sur l'aïkido - Club Kannagara de Guyancourt</description>
+        <link>${site}/blog.php</link>
+        <atom:link href="${site}/feed.xml" rel="self" type="application/rss+xml"/>
+        <language>fr-FR</language>
+        <copyright>© ${new Date().getFullYear()} ${escapeXml(CLUB.name)}</copyright>
+        <managingEditor>${escapeXml(editeur)}</managingEditor>
+        <webMaster>${escapeXml(editeur)}</webMaster>
+        <lastBuildDate>${dernier}</lastBuildDate>
+        <ttl>1440</ttl>
+        <image>
+            <url>${CLUB.logo}</url>
+            <title>${escapeXml(CLUB.name)}</title>
+            <link>${site}</link>
+        </image>
+
+${items}
+    </channel>
+</rss>
+`;
+
+  fs.writeFileSync(FEED_FILE, xml);
+  console.log(`✓ feed.xml généré (${articles.length} articles)`);
+}
+
+/**
  * Fonction principale
  */
 function main() {
@@ -430,6 +509,9 @@ function main() {
   // Mettre à jour blog.html
   console.log("");
   updateBlogIndex(articles);
+
+  // Flux RSS
+  generateFeed(articles);
 
   console.log("\n✨ Génération terminée !");
 }

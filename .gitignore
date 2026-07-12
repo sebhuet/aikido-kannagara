@@ -47,3 +47,8 @@ kannagara.fr/
 
 # Clés SSH / secrets de déploiement (NE PAS versionner)
 env/
+
+# Binaires / exécutables : ce dépôt ne contient que le site (PHP/JS/assets)
+app
+*.elf
+*.bin
