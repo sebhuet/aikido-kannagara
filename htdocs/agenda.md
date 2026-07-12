@@ -303,6 +303,8 @@ Chaque cours est défini par :
 - **18h30-19h30** | Enfants | Nacer Chekkaba
 - **19h30-21h30** | Adultes | Nacer Chekkaba
 
+## Semaine du 15/06/2026
+
 ### Lundi 15/06
 
 - **18h30-19h30** | Enfants | Germain Chamot
@@ -312,6 +314,8 @@ Chaque cours est défini par :
 
 - **18h30-19h30** | Enfants | Nacer Chekkaba
 - **19h30-21h30** | Adultes | Nacer Chekkaba
+
+## Semaine du 22/06/2026
 
 ### Lundi 22/06
 
@@ -323,6 +327,8 @@ Chaque cours est défini par :
 - **18h30-19h30** | Enfants | Cours annulé. Dojo fermé
 - **19h30-21h30** | Adultes | Cours annulé. Dojo fermé
 
+## Semaine du 29/06/2026
+
 ### Lundi 29/06
 
 - **18h30-19h30** | Enfants | Pas de cours - AG Club
@@ -332,6 +338,8 @@ Chaque cours est défini par :
 
 - **18h30-19h30** | Enfants | Pas de cours
 - **19h30-21h30** | Adultes | Sébastien Huet
+
+## Semaine du 06/07/2026
 
 ### Lundi 06/07
 
@@ -343,7 +351,16 @@ Chaque cours est défini par :
 - **18h30-19h30** | Enfants | Pas de cours
 - **19h30-21h30** | Adultes | Sébastien Huet
 
+## Semaine du 13/07/2026
+
 ### Lundi 13/07
 
 - **18h30-19h30** | Enfants | Pas de cours
-- **19h30-21h30** | Adultes | Sébastien Huet
+- **19h30-21h30** | Adultes | Pas de cours Canicule Rouge
+
+### Jeudi 16/07
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet si dojo accessible
+
+
