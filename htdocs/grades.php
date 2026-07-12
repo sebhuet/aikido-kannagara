@@ -107,7 +107,7 @@
                         En aïkido, la tradition veut que la ceinture reste blanche jusqu'à l'obtention du 1er dan,
                         bien que certains clubs utilisent des ceintures de couleur pour marquer la progression,
                         notamment chez les enfants.
-                        Dans notre dojo, le hakama se porte à partir du 2e kyu.
+                        Dans notre dojo, le hakama se porte à partir du <?= htmlspecialchars(club_data()['hakamaFromGrade']) ?>.
                     </p>
                 </div>
 
@@ -220,6 +220,7 @@
                     <li><strong>Bokken</strong> : Sabre en bois</li>
                     <li><strong>Tanto</strong> : Couteau en bois</li>
                 </ul>
+                <p><a href="armes.php">En savoir plus sur le travail aux armes</a></p>
 
                 <div class="text-center mt-4">
                     <a href="inscription.php" class="btn btn--primary">Commencer l'aïkido</a>

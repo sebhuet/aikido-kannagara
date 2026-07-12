@@ -411,7 +411,7 @@
                 <ul>
                     <li><strong>Keikogi</strong> (kimono blanc) : Indispensable dès les premiers cours</li>
                     <li><strong>Zoori</strong> (sandales japonaises) : Pour circuler autour du tatami</li>
-                    <li><strong>Hakama</strong> : Pantalon traditionnel, à partir du 2e kyu</li>
+                    <li><strong>Hakama</strong> : Pantalon traditionnel, à partir du <?= htmlspecialchars(club_data()['hakamaFromGrade']) ?></li>
                     <li><strong>Armes</strong> (optionnel) : Jo (bâton), bokken (sabre en bois), tanto (couteau en bois)</li>
                 </ul>
                 <p>
@@ -528,29 +528,12 @@
                 </p>
 
                 <h2>Questions fréquentes</h2>
-
-                <div class="info-box">
-                    <h4 class="info-box__title">À partir de quel âge peut-on s'inscrire ?</h4>
-                    <p>
-                        Les cours enfants accueillent les jeunes à partir de <strong>7 ans</strong>.
-                        Les cours adultes sont ouverts à partir de <strong>15 ans</strong>.
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h4 class="info-box__title">Faut-il avoir déjà pratiqué un art martial ?</h4>
-                    <p>
-                        Non, aucune expérience préalable n'est requise. L'aïkido est accessible
-                        à tous, quel que soit le niveau de condition physique.
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h4 class="info-box__title">Peut-on s'inscrire en cours d'année ?</h4>
-                    <p>
-                        Oui, il est possible de rejoindre le club en cours d'année.
-                        La cotisation sera ajustée au prorata des mois restants.
-                    </p>
+                <p>
+                    Âge minimum, expérience préalable, inscription en cours d'année, équipement...
+                    Retrouvez les réponses aux questions les plus courantes sur notre page dédiée.
+                </p>
+                <div class="text-center mt-3">
+                    <a href="faq.php" class="btn btn--outline">Consulter la FAQ</a>
                 </div>
 
                 <div class="text-center mt-4">

@@ -153,31 +153,25 @@
 
                 <h2>Principes fondamentaux</h2>
                 <p>
-                    L'aïkido repose sur plusieurs principes essentiels :
-                </p>
-                <ul>
-                    <li><strong>Ai</strong> (合) : Harmonie, union</li>
-                    <li><strong>Ki</strong> (気) : Énergie vitale</li>
-                    <li><strong>Do</strong> (道) : La voie, le chemin</li>
-                </ul>
-                <p>
-                    Ainsi, l'Aïkido peut se traduire par "la voie de l'harmonie des énergies".
+                    Le mot « aïkido » se traduit par <strong>« la voie de l'harmonie des énergies »</strong> :
+                    <em>ai</em> désigne l'harmonie, <em>ki</em> l'énergie et <em>do</em> la voie. Tout l'art
+                    découle de cette recherche d'union entre sa propre énergie et celle du partenaire.
+                    <a href="lexique.php">Voir le lexique</a> pour le sens précis de ces termes.
                 </p>
 
                 <h2>La pratique</h2>
                 <p>
-                    L'aïkido se pratique en <strong>keikogi</strong> (tenue d'entraînement blanche)
-                    et en <strong>hakama</strong> (pantalon large traditionnel) à partir du 2e kyu.
+                    L'aïkido se pratique en <strong>keikogi</strong>, la tenue d'entraînement blanche,
+                    puis en <strong>hakama</strong> à partir d'un certain grade
+                    (voir les <a href="grades.php">grades</a> pour la règle exacte et le
+                    <a href="lexique.php">lexique</a> pour la signification des termes).
                 </p>
                 <p>
-                    Les techniques comprennent :
+                    Le travail se décline en plusieurs formes à mains nues — <em>tachi-waza</em>,
+                    <em>suwari-waza</em>, <em>hanmi-handachi</em> — dont le
+                    <a href="lexique.php">lexique</a> précise la signification, ainsi qu'un travail
+                    aux armes (<em>buki-waza</em>), détaillé sur la page <a href="armes.php">armes</a>.
                 </p>
-                <ul>
-                    <li><strong>Tachi-waza</strong> : Techniques debout</li>
-                    <li><strong>Suwari-waza</strong> : Techniques à genoux</li>
-                    <li><strong>Hanmi-handachi</strong> : Un partenaire debout, l'autre à genoux</li>
-                    <li><strong>Buki-waza</strong> : Techniques avec armes (jo, bokken, tanto)</li>
-                </ul>
 
                 <h2>Pourquoi pratiquer l'Aïkido ?</h2>
                 <div class="cards-grid mt-3">

@@ -57,7 +57,7 @@
                 "name": "À partir de quel âge peut-on pratiquer l'aïkido ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Au club Kannagara, nous accueillons les enfants à partir de 7 ans. Les cours enfants ont lieu le lundi et jeudi de 18h30 à 19h30 avec une pédagogie adaptée et ludique."
+                    "text": "Au club Kannagara, nous accueillons les enfants à partir de 7 ans. Les cours enfants ont lieu le lundi et jeudi de 18h00 à 19h00 avec une pédagogie adaptée et ludique."
                 }
             },
             {
@@ -364,8 +364,9 @@
                             <div class="faq-answer__content">
                                 <p>
                                     Au club Kannagara, nous accueillons les enfants à partir de <strong>7 ans</strong>.
-                                    Les cours enfants ont lieu le lundi et jeudi de 18h30 à 19h30 avec une pédagogie
-                                    adaptée et ludique. Pour les adultes, il n'y a pas de limite d'âge : l'aïkido
+                                    Les cours enfants ont lieu le lundi et le jeudi en début de soirée, avec une pédagogie
+                                    adaptée et ludique ; retrouvez les horaires détaillés sur la page <a href="agenda.php">Agenda</a>.
+                                    Pour les adultes, il n'y a pas de limite d'âge : l'aïkido
                                     est pratiqué par des personnes de tous âges, y compris des seniors.
                                 </p>
                             </div>
@@ -414,15 +415,9 @@
                             <div class="faq-answer__content">
                                 <p>
                                     Pour les premières séances, un simple <strong>survêtement</strong> suffit.
-                                    Par la suite, vous aurez besoin de :
-                                </p>
-                                <ul>
-                                    <li>Un <strong>keikogi</strong> (kimono blanc) - le même que pour le judo convient</li>
-                                    <li>Une <strong>ceinture blanche</strong> (souvent fournie avec le keikogi)</li>
-                                    <li>Des <strong>zoori</strong> (sandales) pour vous déplacer hors du tatami</li>
-                                </ul>
-                                <p>
-                                    Les armes (jo, bokken) peuvent être prêtées au début ou achetées progressivement.
+                                    Par la suite, un <strong>keikogi</strong> (kimono blanc) est nécessaire, et les
+                                    armes en bois peuvent être prêtées au début.
+                                    <a href="inscription.php">Voir l'équipement nécessaire en détail</a>.
                                 </p>
                             </div>
                         </div>
@@ -449,9 +444,10 @@
                             <div class="faq-answer__content">
                                 <p>
                                     Le <strong>hakama</strong> est le pantalon large traditionnel porté par les pratiquants
-                                    confirmés : dans notre dojo, il se porte à partir du 2e kyu.
+                                    confirmés : dans notre dojo, il se porte à partir du <?= htmlspecialchars(club_data()['hakamaFromGrade']) ?>.
                                     C'est un vêtement symbolique qui représente l'engagement dans la voie.
                                     Les débutants ne portent que le keikogi blanc.
+                                    <a href="grades.php">En savoir plus sur les grades et le hakama</a>.
                                 </p>
                             </div>
                         </div>
@@ -613,16 +609,11 @@
                         <div class="faq-answer">
                             <div class="faq-answer__content">
                                 <p>
-                                    Oui, l'aïkido inclut un travail avec des <strong>armes en bois</strong> :
-                                </p>
-                                <ul>
-                                    <li><strong>Jo</strong> : bâton d'environ 1,28 m</li>
-                                    <li><strong>Bokken</strong> : sabre en bois</li>
-                                    <li><strong>Tanto</strong> : couteau en bois</li>
-                                </ul>
-                                <p>
-                                    Ce travail permet de mieux comprendre les distances, les angles et l'origine
-                                    des techniques à mains nues.
+                                    Oui, l'aïkido inclut un travail avec des <strong>armes en bois</strong> : le
+                                    <strong>jo</strong> (bâton), le <strong>bokken</strong> (sabre) et le
+                                    <strong>tanto</strong> (couteau). Ce travail éclaire les distances, les angles
+                                    et l'origine des techniques à mains nues.
+                                    <a href="armes.php">En savoir plus sur les armes</a>.
                                 </p>
                             </div>
                         </div>
@@ -634,11 +625,10 @@
                         <div class="faq-answer">
                             <div class="faq-answer__content">
                                 <p>
-                                    L'aïkido développe des qualités essentielles pour la self-défense :
-                                    vigilance, anticipation, placement, gestion du stress. Cependant, l'aïkido
-                                    enseigne avant tout à <strong>désamorcer les conflits</strong> avant qu'ils
-                                    ne deviennent physiques. C'est une approche globale qui va au-delà
-                                    des simples techniques de combat.
+                                    L'aïkido développe des qualités utiles en self-défense (vigilance, placement,
+                                    gestion du stress), mais il enseigne avant tout à <strong>désamorcer les conflits</strong>
+                                    avant qu'ils ne deviennent physiques.
+                                    <a href="aikido.php">Aïkido et self-défense</a>.
                                 </p>
                             </div>
                         </div>
@@ -658,7 +648,8 @@
                                 <p>
                                     Les inscriptions se font principalement en <strong>septembre</strong>
                                     lors des portes ouvertes, mais vous pouvez nous rejoindre à tout moment
-                                    de l'année selon les places disponibles. Contactez-nous pour en savoir plus.
+                                    de l'année selon les places disponibles ; la cotisation est alors ajustée
+                                    au prorata des mois restants. Contactez-nous pour en savoir plus.
                                 </p>
                             </div>
                         </div>

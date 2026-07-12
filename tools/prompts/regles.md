@@ -2,14 +2,14 @@
 
 ### Cours réguliers (hors vacances scolaires)
 - Jours de cours : Lundi et Jeudi
-- Enfants : 18h30 - 19h30
-- Adultes : 19h30 - 21h30
+- Enfants : 18h00 - 19h00
+- Adultes (2 créneaux) : 19h00 - 20h30 et 20h30 - 22h00
 - Lieu par défaut : Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt
 
 ### Vacances scolaires
 - Jours de cours : Mardi et Jeudi
 - Pas de cours enfants (indiquer "Pas de cours" pour le créneau enfants)
-- Adultes : 19h30 - 21h30
+- Adultes (2 créneaux) : 19h00 - 20h30 et 20h30 - 22h00
 - Lieu : Gymnase de l'aviation
 - Ajouter " - Vacances Scolaires - Gymnase de l'aviation" après la date dans le titre de la semaine
 

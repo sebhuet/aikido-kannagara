@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/data.php'; ?>
     <!-- Header -->
     <header class="header">
         <div class="container header__container">

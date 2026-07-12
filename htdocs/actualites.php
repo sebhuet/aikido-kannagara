@@ -272,7 +272,10 @@
                         Les cours reprennent chaque année début septembre et se poursuivent
                         jusqu'à fin juin, hors vacances scolaires.
                     </p>
-                    <?php include 'includes/horaires.php'; ?>
+                    <p>
+                        Ils ont lieu le lundi et le jeudi.
+                        <a href="agenda.php">Voir les horaires et l'agenda</a>.
+                    </p>
                 </div>
 
                 <div class="info-box">
@@ -314,11 +317,15 @@
 
                 <ul>
                     <li>Stages internes avec les professeurs du club</li>
-                    <li>Participation aux stages régionaux FFAB</li>
                     <li>Échanges avec d'autres clubs de la région</li>
                     <li>Démonstrations lors d'événements locaux</li>
                     <li>Moments conviviaux (galette des rois, repas de fin d'année...)</li>
                 </ul>
+
+                <p>
+                    Les comptes-rendus de ces temps forts sont publiés sur le
+                    <a href="blog.php">blog du club</a>.
+                </p>
 
                 <p>
                     Pour être tenu informé des prochains événements, n'hésitez pas à nous contacter

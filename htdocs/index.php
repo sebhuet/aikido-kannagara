@@ -216,16 +216,6 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="card fade-in">
-                    <div class="card__content">
-                        <h3 class="card__title">Affilié FFAB</h3>
-                        <p class="card__text">
-                            Club agréé Jeunesse et Sports, affilié à la Fédération Française
-                            d'Aïkido et de Budo, garantissant un enseignement de qualité.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -235,7 +225,7 @@
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">Horaires des cours</h2>
-                <p class="section__subtitle"><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet, Mail des Graviers, Guyancourt <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></p>
+                <p class="section__subtitle"><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></p>
             </div>
 
             <?php include 'includes/horaires.php'; ?>
@@ -330,32 +320,12 @@
         <div class="container">
             <div class="section__header">
                 <h2 class="section__title">Nous contacter</h2>
-            </div>
-
-            <div class="team-member" style="text-align: center; margin-bottom: var(--spacing-lg);">
-                <img src="images/fanny-jacquemier.jpg" alt="Fanny Jacquemier" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;" loading="lazy">
-                <h3 class="team-member__name">Fanny Jacquemier</h3>
-                <p class="team-member__grade">Présidente du club</p>
-                <p style="margin-top: var(--spacing-sm);"><a href="tel:0676481601">06 76 48 16 01</a></p>
-            </div>
-
-            <div class="info-box" style="max-width: 600px; margin: 0 auto;">
-                <p><strong>Email :</strong> <a href="mailto:aikido.kannagara.guyancourt@gmail.com">aikido.kannagara.guyancourt@gmail.com</a></p>
-                <p class="mt-2">
-                    <strong>Lieu de pratique :</strong> <a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet, Mail des Graviers, Guyancourt <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a>
-                </p>
-                <p class="mt-1" style="font-size: 0.95em; color: var(--color-text-light);">
-                    Au cœur de Saint-Quentin-en-Yvelines, accessible depuis Montigny-le-Bretonneux,
-                    Voisins-le-Bretonneux, Élancourt, Trappes, La Verrière, Buc, Vélizy-Villacoublay et Versailles.
-                </p>
-            </div>
-
-            <div style="max-width: 600px; margin: var(--spacing-lg) auto 0;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d779.6417041653505!2d2.065928400569035!3d48.77273924223142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6815357e7661b%3A0xe4552d046632a0c4!2sA%C3%AFkido%20Club%20de%20Guyancourt%20-%20Kannagara!5e1!3m2!1sfr!2sfr!4v1770278428829!5m2!1sfr!2sfr" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="section__subtitle">Une question ? Envie de venir voir un cours ?</p>
             </div>
 
             <div class="text-center mt-3">
-                <a href="contact.php" class="btn btn--primary">Page contact complète</a>
+                <a href="contact.php" class="btn btn--primary">Nous contacter</a>
+                <a href="inscription.php" class="btn btn--outline">S'inscrire</a>
             </div>
         </div>
     </section>

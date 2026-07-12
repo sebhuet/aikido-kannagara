@@ -332,7 +332,7 @@
                             Hakama <span class="lexique-item__kanji">袴</span>
                         </div>
                         <p class="lexique-item__definition">
-                            Pantalon large traditionnel porté à partir du 2e kyu.
+                            Pantalon large traditionnel porté à partir du <?= htmlspecialchars(club_data()['hakamaFromGrade']) ?>.
                         </p>
                     </div>
                     <div class="lexique-item">
@@ -662,6 +662,9 @@
                         </p>
                     </div>
                 </div>
+                <p style="text-align: center; margin-top: var(--spacing-lg);">
+                    <a href="armes.php" class="btn btn--outline">Découvrir les armes en détail</a>
+                </p>
             </div>
         </div>
     </section>
@@ -705,30 +708,18 @@
                 <h2 class="lexique-section__title">Les fondations selon Maître Tamura</h2>
                 <div class="content" style="max-width: 800px; margin: 0 auto;">
                     <p>
-                        <strong>Maître Nobuyoshi Tamura</strong> (1933-2010), élève direct du fondateur et figure majeure
-                        de l'aïkido français, a formalisé un ensemble de <strong>dix fondations</strong> essentielles
-                        à la pratique. Ces principes constituent le socle sur lequel repose toute la technique.
+                        <strong>Maître Nobuyoshi Tamura</strong> a formalisé les <strong>dix fondations</strong>
+                        qui forment le socle de la technique de l'aïkido.
                     </p>
 
                     <div class="info-box mt-3">
                         <h4 class="info-box__title">Les 10 Fondations</h4>
                         <p style="margin-bottom: var(--spacing-md);">
-                            <strong>Shisei</strong> (posture) • <strong>Kokyu</strong> (respiration) •
-                            <strong>Kamae</strong> (garde) • <strong>Ma-ai</strong> (distance) •
-                            <strong>Irimi</strong> (entrée) • <strong>Tenkan</strong> (rotation) •
-                            <strong>Ura/Omote</strong> (aspects) • <strong>Tai sabaki</strong> (déplacement) •
-                            <strong>Atemi</strong> (coup) • <strong>Kokyu ryoku</strong> (puissance)
+                            Shisei • Kokyu • Kamae • Ma-ai • Irimi •
+                            Tenkan • Ura/Omote • Tai sabaki • Atemi • Kokyu ryoku
                         </p>
                         <a href="fondations.php" class="btn btn--primary">Découvrir les fondations en détail</a>
                     </div>
-
-                    <blockquote style="font-style: italic; border-left: 3px solid var(--color-accent); padding-left: var(--spacing-md); margin: var(--spacing-xl) 0;">
-                        "L'aïkido n'est pas une technique de combat mais un moyen de s'améliorer soi-même
-                        en harmonie avec les autres et avec la nature."
-                        <footer style="margin-top: var(--spacing-sm); font-style: normal; color: var(--color-text-light);">
-                            - Maître Nobuyoshi Tamura
-                        </footer>
-                    </blockquote>
                 </div>
             </div>
         </div>
@@ -753,153 +744,8 @@
 
     <?php include 'includes/footer.php'; ?>
 
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lien vers d'autres pages -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="info-box" style="max-width: 700px; margin: 0 auto; text-align: center;">
-                <h3 class="info-box__title">Pour aller plus loin</h3>
-                <p>
-                    Le vocabulaire s'apprend naturellement au fil de la pratique.
-                    N'hésitez pas à poser des questions aux enseignants et aux pratiquants plus anciens.
-                </p>
-                <div class="mt-3">
-                    <a href="aikido.php" class="btn btn--primary">Découvrir l'aïkido</a>
-                    <a href="grades.php" class="btn btn--outline">Les grades</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
-
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lien vers d'autres pages -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="info-box" style="max-width: 700px; margin: 0 auto; text-align: center;">
-                <h3 class="info-box__title">Pour aller plus loin</h3>
-                <p>
-                    Le vocabulaire s'apprend naturellement au fil de la pratique.
-                    N'hésitez pas à poser des questions aux enseignants et aux pratiquants plus anciens.
-                </p>
-                <div class="mt-3">
-                    <a href="aikido.php" class="btn btn--primary">Découvrir l'aïkido</a>
-                    <a href="grades.php" class="btn btn--outline">Les grades</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lien vers d'autres pages -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="info-box" style="max-width: 700px; margin: 0 auto; text-align: center;">
-                <h3 class="info-box__title">Pour aller plus loin</h3>
-                <p>
-                    Le vocabulaire s'apprend naturellement au fil de la pratique.
-                    N'hésitez pas à poser des questions aux enseignants et aux pratiquants plus anciens.
-                </p>
-                <div class="mt-3">
-                    <a href="aikido.php" class="btn btn--primary">Découvrir l'aïkido</a>
-                    <a href="grades.php" class="btn btn--outline">Les grades</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lien vers d'autres pages -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="info-box" style="max-width: 700px; margin: 0 auto; text-align: center;">
-                <h3 class="info-box__title">Pour aller plus loin</h3>
-                <p>
-                    Le vocabulaire s'apprend naturellement au fil de la pratique.
-                    N'hésitez pas à poser des questions aux enseignants et aux pratiquants plus anciens.
-                </p>
-                <div class="mt-3">
-                    <a href="aikido.php" class="btn btn--primary">Découvrir l'aïkido</a>
-                    <a href="grades.php" class="btn btn--outline">Les grades</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lien vers d'autres pages -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="info-box" style="max-width: 700px; margin: 0 auto; text-align: center;">
-                <h3 class="info-box__title">Pour aller plus loin</h3>
-                <p>
-                    Le vocabulaire s'apprend naturellement au fil de la pratique.
-                    N'hésitez pas à poser des questions aux enseignants et aux pratiquants plus anciens.
-                </p>
-                <div class="mt-3">
-                    <a href="aikido.php" class="btn btn--primary">Découvrir l'aïkido</a>
-                    <a href="grades.php" class="btn btn--outline">Les grades</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lien vers d'autres pages -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="info-box" style="max-width: 700px; margin: 0 auto; text-align: center;">
-                <h3 class="info-box__title">Pour aller plus loin</h3>
-                <p>
-                    Le vocabulaire s'apprend naturellement au fil de la pratique.
-                    N'hésitez pas à poser des questions aux enseignants et aux pratiquants plus anciens.
-                </p>
-                <div class="mt-3">
-                    <a href="aikido.php" class="btn btn--primary">Découvrir l'aïkido</a>
-                    <a href="grades.php" class="btn btn--outline">Les grades</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
