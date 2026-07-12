@@ -20,7 +20,7 @@
     "city": "Guyancourt",
     "region": "FR-78",
     "country": "FR",
-    "geo": { "lat": 48.7678, "lng": 2.0567 },
+    "geo": { "lat": 48.772739, "lng": 2.065928 },
     "mapsUrl": "https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6"
   },
   "season": "2026-2027",
@@ -55,6 +55,10 @@
     "diploma": "BE1"
   },
   "hakamaFromGrade": "2e kyu",
+  "trial": {
+    "freePeriod": "septembre",
+    "label": "Cours d'essai gratuits en septembre, lors des portes ouvertes"
+  },
   "social": {
     "Facebook": "https://www.facebook.com/Kannagara-a%C3%AFkido-club-de-Guyancourt-375533475979211/"
   },

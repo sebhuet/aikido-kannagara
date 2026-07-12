@@ -2,6 +2,7 @@
 // Le JSON-LD ci-dessous ne doit JAMAIS réécrire un horaire ou une adresse en dur :
 // tout vient de data/club.json, comme le reste du site.
 require_once __DIR__ . '/includes/data.php';
+require_once __DIR__ . '/includes/equipe.php';
 $club = club_data();
 $sch  = $club['schedule'];
 $loc  = $club['location'];
@@ -18,6 +19,15 @@ $faqEnfants = 'Au club Kannagara, nous accueillons les enfants à partir de 7 an
 $faqLieu = 'Le club est situé au ' . $loc['venue'] . ', ' . $loc['street'] . ', ' . $loc['postalCode'] . ' ' . $loc['city']
     . ', au cœur de Saint-Quentin-en-Yvelines. Nous accueillons des pratiquants de toutes les communes environnantes : '
     . 'Montigny-le-Bretonneux, Voisins-le-Bretonneux, Élancourt, Trappes, La Verrière, Buc, Vélizy-Villacoublay, Versailles et au-delà.';
+
+// Équipe : générée depuis les fiches (professeurs/fiches/*.md), jamais réécrite à la main.
+$faqEquipe = 'Le club est placé sous la responsabilité pédagogique de ' . equipe_responsable() . '. '
+    . equipe_intervenants_txt() . ' interviennent régulièrement sur le tatami. '
+    . "Retrouvez la présence de chaque enseignant sur l'agenda des cours.";
+
+$faqEssai = "Oui, nous proposons des cours d'essai gratuits en " . $club['trial']['freePeriod']
+    . ", lors des portes ouvertes. Vous pouvez venir observer un cours ou participer directement. "
+    . "Contactez-nous pour convenir d'une date.";
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -31,8 +41,8 @@ $faqLieu = 'Le club est situé au ' . $loc['venue'] . ', ' . $loc['street'] . ',
     <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
-    <meta name="geo.position" content="48.7678;2.0567">
-    <meta name="ICBM" content="48.7678, 2.0567">
+    <meta name="geo.position" content="48.772739;2.065928">
+    <meta name="ICBM" content="48.772739, 2.065928">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/faq.php">
 
@@ -101,7 +111,7 @@ $faqLieu = 'Le club est situé au ' . $loc['venue'] . ', ' . $loc['street'] . ',
                 "name": "Peut-on faire un cours d'essai ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Oui, nous proposons des cours d'essai gratuits, particulièrement en septembre lors des portes ouvertes. Contactez-nous pour convenir d'une date."
+                    "text": <?= json_encode($faqEssai, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?>
                 }
             },
             {
@@ -109,7 +119,7 @@ $faqLieu = 'Le club est situé au ' . $loc['venue'] . ', ' . $loc['street'] . ',
                 "name": "Qui enseigne l'aïkido au club Kannagara ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le club est placé sous la responsabilité pédagogique de Nacer Chekkaba. Thierry Montfort, Germain Chamot et Jean-Marc Chamot interviennent régulièrement sur le tatami. Retrouvez la présence de chaque enseignant sur l'agenda des cours."
+                    "text": <?= json_encode($faqEquipe, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?>
                 }
             },
             {
@@ -485,8 +495,8 @@ $faqLieu = 'Le club est situé au ' . $loc['venue'] . ', ' . $loc['street'] . ',
                         <div class="faq-answer">
                             <div class="faq-answer__content">
                                 <p>
-                                    Oui, nous proposons des <strong>cours d'essai gratuits</strong>, particulièrement
-                                    en septembre lors des portes ouvertes. Vous pouvez venir observer un cours
+                                    Oui, nous proposons des <strong>cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?></strong>,
+                                    lors des portes ouvertes. Vous pouvez venir observer un cours
                                     ou participer directement. Contactez-nous pour convenir d'une date.
                                 </p>
                             </div>
@@ -559,9 +569,8 @@ $faqLieu = 'Le club est situé au ' . $loc['venue'] . ', ' . $loc['street'] . ',
                         <div class="faq-answer">
                             <div class="faq-answer__content">
                                 <p>
-                                    Le club est placé sous la <strong>responsabilité pédagogique de Nacer Chekkaba</strong>.
-                                    <strong>Thierry Montfort</strong>, <strong>Germain Chamot</strong>
-                                    et <strong>Jean-Marc Chamot</strong> interviennent régulièrement sur le tatami.
+                                    Le club est placé sous la <strong>responsabilité pédagogique de <?= htmlspecialchars(equipe_responsable()) ?></strong>.
+                                    <?= equipe_intervenants_html() ?> interviennent régulièrement sur le tatami.
                                     Retrouvez la présence de chaque enseignant sur l'<a href="agenda.php">agenda des cours</a>.
                                 </p>
                             </div>

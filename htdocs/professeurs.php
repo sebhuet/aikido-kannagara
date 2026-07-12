@@ -1,5 +1,6 @@
 <?php
 require_once 'includes/markdown.php';
+require_once __DIR__ . '/includes/equipe.php';
 
 // Charger toutes les fiches .md
 $fiches_dir = __DIR__ . '/professeurs/fiches';
@@ -86,8 +87,8 @@ foreach ($fiches as $i => $fiche) {
     <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
-    <meta name="geo.position" content="48.7678;2.0567">
-    <meta name="ICBM" content="48.7678, 2.0567">
+    <meta name="geo.position" content="48.772739;2.065928">
+    <meta name="ICBM" content="48.772739, 2.065928">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/professeurs.php">
 
@@ -142,9 +143,8 @@ foreach ($fiches as $i => $fiche) {
             <div class="content" style="max-width: 900px; margin: 0 auto;">
 
                 <p class="text-center" style="font-size: 1.125rem; margin-bottom: var(--spacing-xl);">
-                    Le club Kannagara est placé sous la <strong>responsabilité pédagogique de Nacer Chekkaba</strong>.
-                    <strong>Thierry Montfort</strong>, <strong>Germain Chamot</strong> et <strong>Jean-Marc Chamot</strong>
-                    interviennent régulièrement sur le tatami.
+                    Le club Kannagara est placé sous la <strong>responsabilité pédagogique de <?= htmlspecialchars(equipe_responsable()) ?></strong>.
+                    <?= equipe_intervenants_html() ?> interviennent régulièrement sur le tatami.
                     Retrouvez la présence de chaque enseignant sur l'<a href="agenda.php">agenda des cours</a>.
                 </p>
 

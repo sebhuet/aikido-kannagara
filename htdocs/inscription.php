@@ -6,13 +6,13 @@
 
     <!-- SEO Meta Tags -->
     <title>Inscription | Rejoindre le club d'aïkido de Guyancourt</title>
-    <meta name="description" content="Inscription au club Aïkido Kannagara Guyancourt. Cours d'essai gratuits, documents nécessaires, équipement. Enfants dès 7 ans, adultes tous niveaux.">
+    <meta name="description" content="Inscription au club Aïkido Kannagara Guyancourt. Cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?>, documents nécessaires, équipement. Enfants dès 7 ans, adultes tous niveaux.">
     <meta name="keywords" content="inscription aïkido, cours essai, tarif aïkido, Guyancourt, enfants aïkido, débutant">
     <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
-    <meta name="geo.position" content="48.7678;2.0567">
-    <meta name="ICBM" content="48.7678, 2.0567">
+    <meta name="geo.position" content="48.772739;2.065928">
+    <meta name="ICBM" content="48.772739, 2.065928">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/inscription.php">
 

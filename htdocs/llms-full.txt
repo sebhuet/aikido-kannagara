@@ -383,7 +383,7 @@ uniquement en cas de reponse positive au questionnaire.
 - Horaires : Lundi et Jeudi 18h00-22h00
 - Lieu : Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt
 - Acces : Quartier des Graviers, accessible en voiture ou en transports en commun
-- Coordonnees GPS : 48.7678, 2.0567
+- Coordonnees GPS : 48.772739, 2.065928
 
 ---
 

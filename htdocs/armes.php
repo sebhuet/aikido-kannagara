@@ -11,8 +11,8 @@
     <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
-    <meta name="geo.position" content="48.7678;2.0567">
-    <meta name="ICBM" content="48.7678, 2.0567">
+    <meta name="geo.position" content="48.772739;2.065928">
+    <meta name="ICBM" content="48.772739, 2.065928">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/armes.php">
 
@@ -505,7 +505,7 @@
                 <h3 class="info-box__title">Envie de découvrir le travail aux armes ?</h3>
                 <p>
                     Le travail aux armes fait partie intégrante de nos cours.
-                    Venez essayer lors d'un cours d'essai gratuit !
+                    Venez essayer lors d'un cours d'essai gratuit en <?= htmlspecialchars(club_data()['trial']['freePeriod']) ?> !
                 </p>
                 <div class="mt-3">
                     <a href="inscription.php" class="btn btn--primary">S'inscrire</a>

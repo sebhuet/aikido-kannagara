@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require_once __DIR__ . '/includes/equipe.php'; $club = club_data(); ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,8 @@
     <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
-    <meta name="geo.position" content="48.7678;2.0567">
-    <meta name="ICBM" content="48.7678, 2.0567">
+    <meta name="geo.position" content="48.772739;2.065928">
+    <meta name="ICBM" content="48.772739, 2.065928">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kannagara.fr/aikido.php">
 
@@ -91,8 +91,8 @@
                 <p style="font-size: 1.125rem; text-align: center; margin-bottom: var(--spacing-xl);">
                     L'aïkido est un art martial japonais fondé par Morihei Ueshiba, basé sur l'harmonie
                     et excluant toute compétition. Au club Kannagara de Guyancourt, l'aïkido est enseigné
-                    sous la <strong>responsabilité pédagogique de Nacer Chekkaba</strong>,
-                    avec Thierry Montfort, Germain Chamot et Jean-Marc Chamot comme intervenants réguliers.
+                    sous la <strong>responsabilité pédagogique de <?= htmlspecialchars(equipe_responsable()) ?></strong>,
+                    avec <?= htmlspecialchars(equipe_intervenants_txt()) ?> comme intervenants réguliers.
                 </p>
 
                 <h2>Qu'est-ce que l'Aïkido ?</h2>
@@ -452,7 +452,7 @@
                 <h2>Prêt à découvrir l'Aïkido ?</h2>
                 <p style="max-width: 600px; margin: 0 auto var(--spacing-lg);">
                     Que vous soyez homme, femme ou enfant, débutant ou pratiquant d'autres disciplines,
-                    venez essayer l'aïkido lors de nos cours d'essai gratuits.
+                    venez essayer l'aïkido lors de nos cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?>.
                 </p>
                 <a href="inscription.php" class="btn btn--primary">Commencer l'Aïkido</a>
                 <a href="contact.php" class="btn btn--outline">Nous contacter</a>

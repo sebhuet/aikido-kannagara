@@ -1,4 +1,4 @@
-﻿<?php require_once __DIR__ . '/includes/data.php'; $club = club_data(); $sch = $club['schedule']; ?><!DOCTYPE html>
+﻿<?php require_once __DIR__ . '/includes/data.php'; require_once __DIR__ . '/includes/equipe.php'; $club = club_data(); $sch = $club['schedule']; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -30,8 +30,8 @@
     <!-- Geo Tags -->
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
-    <meta name="geo.position" content="48.7678;2.0567">
-    <meta name="ICBM" content="48.7678, 2.0567">
+    <meta name="geo.position" content="48.772739;2.065928">
+    <meta name="ICBM" content="48.772739, 2.065928">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -69,8 +69,8 @@
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 48.7678,
-            "longitude": 2.0567
+            "latitude": 48.772739,
+            "longitude": 2.065928
         },
         "openingHoursSpecification": [
             {
@@ -181,8 +181,8 @@
         <div class="container">
             <p style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.125rem;">
                 <strong>Kannagara</strong> est un club d'aïkido à Guyancourt (Yvelines), fondé en 1990
-                et affilié à la FFAB. Le club est placé sous la <strong>responsabilité pédagogique de Nacer Chekkaba</strong>.
-                <strong>Thierry Montfort</strong>, <strong>Germain Chamot</strong> et <strong>Jean-Marc Chamot</strong>
+                et affilié à la FFAB. Le club est placé sous la <strong>responsabilité pédagogique de <?= htmlspecialchars(equipe_responsable()) ?></strong>.
+                <?= equipe_intervenants_html() ?>
                 interviennent régulièrement sur le tatami. Le club propose des cours
                 pour enfants (dès 7 ans) et adultes, le lundi et le jeudi, au Gymnase Maurice Baquet.
             </p>
@@ -212,8 +212,8 @@
                     <div class="card__content">
                         <h3 class="card__title">Équipe enseignante</h3>
                         <p class="card__text">
-                            Sous la responsabilité pédagogique de <strong>Nacer Chekkaba</strong>,
-                            avec Thierry Montfort, Germain Chamot et Jean-Marc Chamot
+                            Sous la responsabilité pédagogique de <strong><?= htmlspecialchars(equipe_responsable()) ?></strong>,
+                            avec <?= htmlspecialchars(equipe_intervenants_txt()) ?>
                             comme intervenants réguliers. <a href="agenda.php">Voir le planning</a>.
                         </p>
                     </div>
