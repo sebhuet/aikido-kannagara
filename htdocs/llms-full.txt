@@ -242,9 +242,26 @@ l'aikido. Une tenue de sport (jogging) convient pour les cours d'essai.
 
 ### Documents necessaires
 - Fiche d'inscription (bulletin adultes ou mineurs)
-- Certificat medical de non contre-indication a la pratique de l'aikido (moins d'un an)
+- Attestation de questionnaire de sante (certificat medical seulement dans certains cas, voir ci-dessous)
 - Photo d'identite
 - Reglement de la cotisation (paiement en plusieurs fois possible)
+
+### Certificat medical et questionnaire de sante
+Le certificat medical annuel n'est plus la regle. Le questionnaire de sante est confidentiel :
+il n'est remis ni au club ni a la federation ; seule l'attestation datee et signee est remise au club.
+- Majeurs (18 ans et +) : certificat medical de non contre-indication exige a la premiere licence,
+  puis tous les 3 ans. Les annees intermediaires, le questionnaire de sante "QS-Sport"
+  (Cerfa n 15699*01) suffit si toutes les reponses sont NON. Si au moins une reponse est OUI
+  (traitement de longue duree, probleme de sante, avis medical necessaire...), un certificat medical
+  est a fournir cette annee-la : en pratique, les personnes suivies medicalement ou sous traitement
+  le renouvellent chaque annee.
+- Mineurs (moins de 18 ans) : aucun certificat medical (decret n 2021-564 du 7 mai 2021).
+  Questionnaire de sante du sportif mineur rempli avec l'enfant, attestation signee par le
+  representant legal. Certificat medical de moins de 6 mois uniquement si au moins une reponse est OUI.
+- Passages de grades dan (FFAB) : certificat medical de non contre-indication a la pratique intensive
+  de l'aikido, datant de moins d'un an, obligatoire.
+- Documents : /docs/Questionnaire sante adultes.pdf, /docs/Questionnaire sante mineurs.pdf,
+  /docs/Attestation questionnaire sante.pdf
 
 ### Tarifs saison 2026-2027
 - Enfants (7-14 ans) : 190 EUR / an
@@ -352,7 +369,10 @@ R: Principalement en septembre lors des portes ouvertes, mais aussi en cours d'a
 les places disponibles.
 
 Q: Quels documents fournir ?
-R: Certificat medical, photo d'identite, formulaire d'inscription, reglement de la cotisation.
+R: Formulaire d'inscription, attestation de questionnaire de sante, photo d'identite, reglement de la
+cotisation. Le certificat medical n'est demande qu'a la premiere licence puis tous les 3 ans pour les
+majeurs (ou chaque annee en cas de reponse positive au questionnaire de sante), et pour les mineurs
+uniquement en cas de reponse positive au questionnaire.
 
 ---
 

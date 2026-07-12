@@ -314,10 +314,13 @@
 
                     <div class="card">
                         <div class="card__content">
-                            <h3 class="card__title">Certificat médical</h3>
+                            <h3 class="card__title">Attestation de santé</h3>
                             <p class="card__text">
-                                Certificat médical de non contre-indication à la pratique
-                                de l'aïkido, daté de moins d'un an.
+                                Dans la plupart des cas, un simple questionnaire de santé suffit :
+                                le certificat médical n'est plus demandé chaque année.
+                            </p>
+                            <p class="card__text">
+                                <a href="#sante">Voir la règle et les documents</a>
                             </p>
                         </div>
                     </div>
@@ -341,6 +344,83 @@
                         </div>
                     </div>
                 </div>
+
+                <h2 id="sante">Certificat médical et questionnaire de santé</h2>
+                <p>
+                    La réglementation a évolué : le certificat médical annuel n'est plus la règle.
+                    Il est le plus souvent remplacé par un <strong>questionnaire de santé</strong> que vous
+                    remplissez chez vous. Ce questionnaire est <strong>confidentiel</strong> : il ne se remet
+                    ni au club, ni à la fédération. Vous ne nous transmettez que l'<strong>attestation</strong>
+                    datée et signée indiquant que toutes vos réponses sont négatives.
+                </p>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Majeurs (18 ans et plus)</h3>
+                            <p class="card__text">
+                                Un <strong>certificat médical</strong> de non contre-indication à la pratique de
+                                l'aïkido est exigé lors de la <strong>première licence</strong>, puis
+                                <strong>tous les 3 ans</strong>.
+                            </p>
+                            <p class="card__text">
+                                Les deux années intermédiaires, il suffit de remplir le questionnaire de santé
+                                « QS-Sport » et de remettre l'attestation. Mais si <strong>au moins une réponse
+                                est OUI</strong> (traitement de longue durée, problème de santé, avis médical
+                                nécessaire…), un <strong>certificat médical doit être fourni cette année-là</strong> :
+                                en pratique, les personnes suivies médicalement ou sous traitement le renouvellent
+                                chaque année.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Mineurs (moins de 18 ans)</h3>
+                            <p class="card__text">
+                                <strong>Aucun certificat médical n'est demandé.</strong> Le questionnaire de santé du
+                                sportif mineur est rempli avec l'enfant, et le représentant légal remet l'attestation
+                                au club.
+                            </p>
+                            <p class="card__text">
+                                Un certificat médical de <strong>moins de 6 mois</strong> n'est exigé que si
+                                <strong>au moins une réponse est OUI</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h4 class="info-box__title">Documents à télécharger</h4>
+                    <ul>
+                        <li>
+                            <a href="docs/Questionnaire%20sant%C3%A9%20adultes.pdf" target="_blank">Questionnaire de santé « QS-Sport » — majeurs (PDF)</a>
+                            — Cerfa n° 15699*01. À conserver, ne pas remettre au club.
+                        </li>
+                        <li>
+                            <a href="docs/Questionnaire%20sant%C3%A9%20mineurs.pdf" target="_blank">Questionnaire de santé du sportif mineur (PDF)</a>
+                            — à remplir avec l'enfant. À conserver également.
+                        </li>
+                        <li>
+                            <a href="docs/Attestation%20questionnaire%20sant%C3%A9.pdf" target="_blank">Attestation à remettre au club (PDF)</a>
+                            — à dater, signer et joindre au dossier d'inscription.
+                        </li>
+                    </ul>
+                    <p class="mt-2">
+                        Si une réponse au questionnaire est positive, présentez-le à votre médecin : c'est lui qui
+                        établira le certificat médical.
+                    </p>
+                </div>
+
+                <p>
+                    L'âge qui compte ici est l'âge légal (18 ans), et non la catégorie tarifaire du club :
+                    un adhérent de 15 à 17 ans inscrit au tarif adulte relève des règles applicables aux mineurs.
+                </p>
+                <p>
+                    <strong>Passages de grades dan</strong> : la FFAB exige un certificat médical de non
+                    contre-indication à la <strong>pratique intensive</strong> de l'aïkido datant de moins d'un an.
+                    Voir les <a href="https://www.ffabaikido.com/fr/certificat-m-dical-questionnaire-de-sant-191.html" target="_blank" rel="noopener">informations médicales de la FFAB</a>.
+                </p>
 
                 <h2>Tarifs saison <?= htmlspecialchars($club['season']) ?></h2>
                 <p>

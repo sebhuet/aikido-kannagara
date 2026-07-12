@@ -662,13 +662,22 @@
                             <div class="faq-answer__content">
                                 <p>Pour vous inscrire, vous devrez fournir :</p>
                                 <ul>
-                                    <li>Un <strong>certificat médical</strong> de non contre-indication à la pratique de l'aïkido</li>
-                                    <li>Une <strong>photo d'identité</strong></li>
                                     <li>Le <strong>formulaire d'inscription</strong> complété</li>
+                                    <li>L'<strong>attestation de questionnaire de santé</strong> (le certificat médical n'est demandé que dans certains cas, voir ci-dessous)</li>
+                                    <li>Une <strong>photo d'identité</strong></li>
                                     <li>Le règlement de la cotisation</li>
                                 </ul>
                                 <p>
-                                    Toutes les informations détaillées sont sur notre <a href="inscription.php">page inscription</a>.
+                                    Le certificat médical n'est plus exigé chaque année. Pour les
+                                    <strong>majeurs</strong>, il est demandé à la première licence puis tous les 3 ans ;
+                                    les autres années, le questionnaire de santé « QS-Sport » suffit, sauf si l'une des
+                                    réponses est positive (traitement de longue durée, suivi médical…), auquel cas un
+                                    certificat est à fournir. Pour les <strong>mineurs</strong>, aucun certificat n'est
+                                    demandé, sauf réponse positive au questionnaire de santé.
+                                </p>
+                                <p>
+                                    Le détail de la règle et les documents à télécharger sont sur notre
+                                    <a href="inscription.php#sante">page inscription</a>.
                                 </p>
                             </div>
                         </div>
