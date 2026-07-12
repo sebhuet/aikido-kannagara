@@ -369,7 +369,7 @@
 
                 <div class="info-box mt-3">
                     <h3 class="info-box__title">Les cours enfants au club Kannagara</h3>
-                    <?php include 'includes/horaires.php'; ?>
+                    <?php $horaires_resume_public = 'enfants'; include 'includes/horaires-resume.php'; ?>
                     <p>
                         <strong>Âge :</strong> À partir de 7 ans<br>
                         <strong>Encadrement :</strong> Cours adaptés avec pédagogie ludique

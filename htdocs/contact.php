@@ -132,7 +132,7 @@
                         </div>
                         <div>
                             <h4>Horaires des cours</h4>
-                            <?php include 'includes/horaires.php'; ?>
+                            <?php include 'includes/horaires-resume.php'; ?>
                         </div>
                     </div>
 

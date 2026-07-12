@@ -134,7 +134,7 @@
                 </div>
 
                 <h2>Horaires des cours</h2>
-                <?php include 'includes/horaires.php'; ?>
+                <?php include 'includes/horaires-resume.php'; ?>
 
                 <h2>Vie du club</h2>
                 <p>
