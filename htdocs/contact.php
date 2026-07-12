@@ -1,4 +1,4 @@
-﻿<?php require_once __DIR__ . '/includes/data.php'; $club = club_data(); $sch = $club['schedule']; ?><!DOCTYPE html>
+﻿<?php require_once __DIR__ . '/includes/data.php'; $club = club_data(); $sch = $club['schedule']; $loc = $club['location']; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
 
     <!-- SEO Meta Tags -->
     <title>Contact | Club d'aïkido Guyancourt - Gymnase Maurice Baquet</title>
-    <meta name="description" content="Contactez Aïkido Kannagara Guyancourt. Gymnase Maurice Baquet, Mail des Graviers. Tél : 06 76 48 16 01. Plan d'accès et formulaire de contact.">
+    <meta name="description" content="Contactez Aïkido Kannagara Guyancourt. <?= htmlspecialchars($loc['venue']) ?>, <?= htmlspecialchars($loc['street']) ?>. Tél : <?= htmlspecialchars($club['contact']['phone']) ?>. Plan d'accès et formulaire de contact.">
     <meta name="keywords" content="contact aïkido, Guyancourt, gymnase maurice baquet, adresse, téléphone, plan">
     <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
@@ -20,13 +20,13 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/contact.php">
     <meta property="og:title" content="Contact - Aïkido Kannagara Guyancourt">
-    <meta property="og:description" content="Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt. Tél: 06 76 48 16 01.">
+    <meta property="og:description" content="<?= htmlspecialchars($loc['venue']) ?>, <?= htmlspecialchars($loc['street']) ?>, <?= htmlspecialchars($loc['postalCode']) ?> <?= htmlspecialchars($loc['city']) ?>. Tél: <?= htmlspecialchars($club['contact']['phone']) ?>.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Contact - Aïkido Kannagara Guyancourt">
-    <meta name="twitter:description" content="Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt. Tél: 06 76 48 16 01.">
+    <meta name="twitter:description" content="<?= htmlspecialchars($loc['venue']) ?>, <?= htmlspecialchars($loc['street']) ?>, <?= htmlspecialchars($loc['postalCode']) ?> <?= htmlspecialchars($loc['city']) ?>. Tél: <?= htmlspecialchars($club['contact']['phone']) ?>.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
@@ -43,19 +43,19 @@
         "@type": "LocalBusiness",
         "name": "Aïkido Kannagara Guyancourt",
         "description": "Club d'aïkido affilié FFAB",
-        "telephone": "+33676481601",
-        "email": "aikido.kannagara.guyancourt@gmail.com",
+        "telephone": <?= json_encode($club['contact']['phoneIntl']) ?>,
+        "email": <?= json_encode($club['contact']['email']) ?>,
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Gymnase Maurice Baquet, Mail des Graviers",
-            "addressLocality": "Guyancourt",
-            "postalCode": "78280",
-            "addressCountry": "FR"
+            "streetAddress": <?= json_encode($loc['venue'] . ', ' . $loc['street'], JSON_UNESCAPED_UNICODE) ?>,
+            "addressLocality": <?= json_encode($loc['city'], JSON_UNESCAPED_UNICODE) ?>,
+            "postalCode": <?= json_encode($loc['postalCode']) ?>,
+            "addressCountry": <?= json_encode($loc['country']) ?>
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 48.7678,
-            "longitude": 2.0567
+            "latitude": <?= json_encode($loc['geo']['lat']) ?>,
+            "longitude": <?= json_encode($loc['geo']['lng']) ?>
         },
         "url": "https://kannagara.fr",
         "openingHoursSpecification": <?= json_encode([
@@ -105,10 +105,10 @@
                     <h2>Nous contacter</h2>
 
                     <div class="team-member" style="text-align: center; margin: var(--spacing-lg) 0;">
-                        <img src="images/fanny-jacquemier.jpg" alt="Fanny Jacquemier" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;" loading="lazy">
-                        <h3 class="team-member__name">Fanny Jacquemier</h3>
+                        <img src="images/fanny-jacquemier.jpg" alt="<?= htmlspecialchars($club['president']) ?>" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;" loading="lazy">
+                        <h3 class="team-member__name"><?= htmlspecialchars($club['president']) ?></h3>
                         <p class="team-member__grade">Présidente du club</p>
-                        <p style="margin-top: var(--spacing-sm);"><a href="tel:0676481601">06 76 48 16 01</a></p>
+                        <p style="margin-top: var(--spacing-sm);"><a href="tel:<?= preg_replace('/\s+/', '', $club['contact']['phone']) ?>"><?= htmlspecialchars($club['contact']['phone']) ?></a></p>
                     </div>
 
                     <div class="contact-info__item">
@@ -120,7 +120,7 @@
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p><a href="mailto:aikido.kannagara.guyancourt@gmail.com">aikido.kannagara.guyancourt@gmail.com</a></p>
+                            <p><a href="mailto:<?= htmlspecialchars($club['contact']['email']) ?>"><?= htmlspecialchars($club['contact']['email']) ?></a></p>
                         </div>
                     </div>
 
@@ -141,10 +141,10 @@
 
                     <h3 class="mt-4">Lieu de pratique</h3>
                     <div class="info-box">
-                        <h4 class="info-box__title"><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></h4>
+                        <h4 class="info-box__title"><a href="<?= htmlspecialchars($loc['mapsUrl']) ?>" target="_blank" rel="noopener" title="Voir sur Google Maps"><?= htmlspecialchars($loc['venue']) ?> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></h4>
                         <p>
-                            Mail des Graviers<br>
-                            78280 Guyancourt
+                            <?= htmlspecialchars($loc['street']) ?><br>
+                            <?= htmlspecialchars($loc['postalCode']) ?> <?= htmlspecialchars($loc['city']) ?>
                         </p>
                         <p class="mt-1">
                             Au cœur de Saint-Quentin-en-Yvelines, accessible depuis Montigny-le-Bretonneux,
@@ -188,7 +188,7 @@
                     Pour nous contacter, vous pouvez utiliser notre formulaire en ligne
                     ou nous envoyer directement un email.
                 </p>
-                <a href="mailto:aikido.kannagara.guyancourt@gmail.com?subject=Contact depuis le site web" class="btn btn--primary">
+                <a href="mailto:<?= htmlspecialchars($club['contact']['email']) ?>?subject=Contact depuis le site web" class="btn btn--primary">
                     Envoyer un email
                 </a>
             </div>

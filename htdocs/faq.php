@@ -1,4 +1,24 @@
-<!DOCTYPE html>
+<?php
+// Le JSON-LD ci-dessous ne doit JAMAIS réécrire un horaire ou une adresse en dur :
+// tout vient de data/club.json, comme le reste du site.
+require_once __DIR__ . '/includes/data.php';
+$club = club_data();
+$sch  = $club['schedule'];
+$loc  = $club['location'];
+
+$hFmt   = fn($t) => str_replace(':', 'h', $t);
+$jours  = implode(' et le ', array_map('strtolower', $sch['days']));
+$saison = date('d/m/Y', strtotime($club['seasonStart']));
+
+$faqEnfants = 'Au club Kannagara, nous accueillons les enfants à partir de 7 ans. À partir du ' . $saison
+    . ' (saison ' . $club['season'] . '), les cours enfants ont lieu le ' . $jours . ' de '
+    . $hFmt($sch['children']['opens']) . ' à ' . $hFmt($sch['children']['closes'])
+    . ', avec une pédagogie adaptée et ludique.';
+
+$faqLieu = 'Le club est situé au ' . $loc['venue'] . ', ' . $loc['street'] . ', ' . $loc['postalCode'] . ' ' . $loc['city']
+    . ', au cœur de Saint-Quentin-en-Yvelines. Nous accueillons des pratiquants de toutes les communes environnantes : '
+    . 'Montigny-le-Bretonneux, Voisins-le-Bretonneux, Élancourt, Trappes, La Verrière, Buc, Vélizy-Villacoublay, Versailles et au-delà.';
+?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -57,7 +77,7 @@
                 "name": "À partir de quel âge peut-on pratiquer l'aïkido ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Au club Kannagara, nous accueillons les enfants à partir de 7 ans. Les cours enfants ont lieu le lundi et jeudi de 18h00 à 19h00 avec une pédagogie adaptée et ludique."
+                    "text": <?= json_encode($faqEnfants, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?>
                 }
             },
             {
@@ -97,7 +117,7 @@
                 "name": "Comment venir au club depuis les villes voisines ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le club est situé au Gymnase Maurice Baquet, Mail des Graviers, 78280 Guyancourt, au cœur de Saint-Quentin-en-Yvelines. Nous accueillons des pratiquants de toutes les communes environnantes : Montigny-le-Bretonneux, Voisins-le-Bretonneux, Élancourt, Trappes, La Verrière, Buc, Vélizy-Villacoublay, Versailles et au-delà."
+                    "text": <?= json_encode($faqLieu, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?>
                 }
             },
             {
@@ -490,8 +510,8 @@
                         <div class="faq-answer">
                             <div class="faq-answer__content">
                                 <p>
-                                    Le club est situé au <strong><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>,
-                                    Mail des Graviers, 78280 Guyancourt. Un plan d'accès détaillé est disponible
+                                    Le club est situé au <strong><a href="<?= htmlspecialchars($loc['mapsUrl']) ?>" target="_blank" rel="noopener" title="Voir sur Google Maps"><?= htmlspecialchars($loc['venue']) ?> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>,
+                                    <?= htmlspecialchars($loc['street']) ?>, <?= htmlspecialchars($loc['postalCode']) ?> <?= htmlspecialchars($loc['city']) ?>. Un plan d'accès détaillé est disponible
                                     sur notre <a href="contact.php">page contact</a>.
                                 </p>
                             </div>
@@ -504,8 +524,8 @@
                         <div class="faq-answer">
                             <div class="faq-answer__content">
                                 <p>
-                                    Le club est situé au <strong>Gymnase Maurice Baquet</strong>, Mail des Graviers,
-                                    78280 Guyancourt, au cœur de <strong>Saint-Quentin-en-Yvelines</strong>.
+                                    Le club est situé au <strong><?= htmlspecialchars($loc['venue']) ?></strong>, <?= htmlspecialchars($loc['street']) ?>,
+                                    <?= htmlspecialchars($loc['postalCode']) ?> <?= htmlspecialchars($loc['city']) ?>, au cœur de <strong>Saint-Quentin-en-Yvelines</strong>.
                                     Nous accueillons des pratiquants de toutes les communes environnantes :
                                     <strong>Montigny-le-Bretonneux</strong>, <strong>Voisins-le-Bretonneux</strong>,
                                     <strong>Élancourt</strong>, <strong>Trappes</strong>, <strong>La Verrière</strong>,
