@@ -1,5 +1,9 @@
 ## Règles d'arbitrage du planning Aïkido Kannagara Guyancourt
 
+Horaires de la saison 2026-2027, en vigueur **à partir du 07/09/2026**.
+Avant cette date (y compris les séances d'été d'août), les anciens horaires
+s'appliquent : enfants 18h30 - 19h30, adultes 19h30 - 21h30.
+
 ### Cours réguliers (hors vacances scolaires)
 - Jours de cours : Lundi et Jeudi
 - Enfants : 18h00 - 19h00

@@ -13,12 +13,12 @@ Chaque cours est défini par :
 
 ### Horaires
 
-**Saison 2025-2026** (jusqu'en juillet 2026) :
+**Saison 2025-2026** (jusqu'au 06/09/2026 inclus, séances d'été comprises) :
 
 - **18h30-19h30** | Enfants
 - **19h30-21h30** | Adultes
 
-**Saison 2026-2027** (à partir de septembre 2026) :
+**Saison 2026-2027** (à partir du 07/09/2026) :
 
 - **18h00-19h00** | Enfants
 - **19h00-20h30** | Adultes
@@ -362,5 +362,44 @@ Chaque cours est défini par :
 
 - **18h30-19h30** | Enfants | Pas de cours
 - **19h30-21h30** | Adultes | Sébastien Huet si dojo accessible
+
+## Semaine du 24/08/2026
+
+### Lundi 24/08
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+### Jeudi 27/08
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+## Semaine du 31/08/2026
+
+### Lundi 31/08
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+### Jeudi 03/09
+
+- **18h30-19h30** | Enfants | Pas de cours
+- **19h30-21h30** | Adultes | Sébastien Huet
+
+## Semaine du 07/09/2026
+
+### Lundi 07/09
+
+- **18h00-19h00** | Enfants | Sébastien Huet
+- **19h00-20h30** | Adultes | Sébastien Huet
+- **20h30-22h00** | Adultes | Sébastien Huet
+
+### Jeudi 10/09
+
+- **18h00-19h00** | Enfants | Sébastien Huet
+- **19h00-20h30** | Adultes | Sébastien Huet
+- **20h30-22h00** | Adultes | Sébastien Huet
+
 
 
