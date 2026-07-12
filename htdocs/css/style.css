@@ -535,6 +535,15 @@ p {
 }
 
 /* ---------- Schedule Table ---------- */
+/* Libellé de saison : au-dessus du tableau, jamais DANS .schedule-table-wrapper
+   (qui est en flex : un <p> à l'intérieur se placerait à côté du tableau). */
+.schedule-season {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
 .schedule-table-wrapper {
   display: flex;
   justify-content: center;

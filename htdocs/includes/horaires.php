@@ -10,12 +10,15 @@ $c = club_data();
 $s = $c['schedule'];
 $saisonDebut = !empty($c['seasonStart']) ? date('d/m/Y', strtotime($c['seasonStart'])) : null;
 ?>
-<div class="schedule-table-wrapper">
 <?php if ($saisonDebut): ?>
+<?php /* Le libellé reste HORS de .schedule-table-wrapper : ce conteneur est en
+         display:flex, un paragraphe placé dedans se retrouverait affiché en
+         colonne, à côté du tableau au lieu d'être au-dessus. */ ?>
 <p class="schedule-season">
     <strong>Saison <?= htmlspecialchars($c['season']) ?></strong> — horaires en vigueur à partir du <?= htmlspecialchars($saisonDebut) ?>.
 </p>
 <?php endif; ?>
+<div class="schedule-table-wrapper">
 <table class="schedule-table">
     <thead>
         <tr>
