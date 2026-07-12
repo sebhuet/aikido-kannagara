@@ -16,7 +16,12 @@
  */
 require_once __DIR__ . '/data.php';
 
-$s = club_data()['schedule'];
+$c = club_data();
+$s = $c['schedule'];
+
+// club.json porte les horaires de la saison à venir : on ne les affiche jamais
+// sans dire à partir de quand ils s'appliquent.
+$saisonDebut = !empty($c['seasonStart']) ? date('d/m/Y', strtotime($c['seasonStart'])) : null;
 
 $public = $horaires_resume_public ?? null;
 $horaires_resume_public = null; // réinitialise : évite toute fuite sur une inclusion ultérieure
@@ -31,10 +36,15 @@ $adultesDebut = $hFmt($s['adultsRange']['opens']);
 $adultesFin   = $hFmt($s['adultsRange']['closes']);
 
 if ($public === 'enfants') {
-    $resume = 'Les cours enfants ont lieu le ' . $jours . ', de ' . $enfantsDebut . ' à ' . $enfantsFin . '.';
+    $resume = $saisonDebut
+        ? 'À partir du ' . $saisonDebut . ', les cours enfants ont lieu le ' . $jours . ', de ' . $enfantsDebut . ' à ' . $enfantsFin . '.'
+        : 'Les cours enfants ont lieu le ' . $jours . ', de ' . $enfantsDebut . ' à ' . $enfantsFin . '.';
 } else {
-    $resume = 'Cours le ' . $jours . ' : enfants ' . $enfantsDebut . ' - ' . $enfantsFin
-            . ', adultes ' . $adultesDebut . ' - ' . $adultesFin . '.';
+    $horaires = 'cours le ' . $jours . ' : enfants ' . $enfantsDebut . ' - ' . $enfantsFin
+              . ', adultes ' . $adultesDebut . ' - ' . $adultesFin . '.';
+    $resume = $saisonDebut
+        ? 'Saison ' . $c['season'] . ', à partir du ' . $saisonDebut . ' — ' . $horaires
+        : ucfirst($horaires);
 }
 ?>
 <p class="horaires-resume">

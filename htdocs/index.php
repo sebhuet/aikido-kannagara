@@ -78,6 +78,7 @@
                 "dayOfWeek": <?= json_encode($sch['daysSchemaOrg']) ?>,
                 "opens": "<?= $sch['children']['opens'] ?>",
                 "closes": "<?= $sch['children']['closes'] ?>",
+                "validFrom": "<?= $club['seasonStart'] ?>",
                 "description": "Cours enfants"
             },
             {
@@ -85,6 +86,7 @@
                 "dayOfWeek": <?= json_encode($sch['daysSchemaOrg']) ?>,
                 "opens": "<?= $sch['adultsRange']['opens'] ?>",
                 "closes": "<?= $sch['adultsRange']['closes'] ?>",
+                "validFrom": "<?= $club['seasonStart'] ?>",
                 "description": "Cours adultes"
             }
         ],

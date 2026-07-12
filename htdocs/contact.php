@@ -58,7 +58,10 @@
             "longitude": 2.0567
         },
         "url": "https://kannagara.fr",
-        "openingHours": <?= json_encode(array_map(fn($d) => substr($d, 0, 2) . ' ' . $sch['children']['opens'] . '-' . $sch['adultsRange']['closes'], $sch['daysSchemaOrg'])) ?>,
+        "openingHoursSpecification": <?= json_encode([
+            ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => $sch['daysSchemaOrg'], 'opens' => $sch['children']['opens'], 'closes' => $sch['children']['closes'], 'validFrom' => $club['seasonStart'], 'description' => 'Cours enfants'],
+            ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => $sch['daysSchemaOrg'], 'opens' => $sch['adultsRange']['opens'], 'closes' => $sch['adultsRange']['closes'], 'validFrom' => $club['seasonStart'], 'description' => 'Cours adultes'],
+        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>,
         "areaServed": [
             {"@type": "City", "name": "Guyancourt"},
             {"@type": "City", "name": "Montigny-le-Bretonneux"},

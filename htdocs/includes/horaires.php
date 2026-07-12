@@ -1,5 +1,21 @@
-<?php require_once __DIR__ . '/data.php'; $s = club_data()['schedule']; ?>
+<?php
+/**
+ * Tableau des horaires (domicile : agenda.php ; rappel : index.php).
+ * Valeurs issues de data/club.json — ne jamais réécrire un horaire en dur.
+ * Le libellé de saison est obligatoire : club.json porte les horaires de la
+ * saison à venir, qui ne prennent effet qu'à seasonStart.
+ */
+require_once __DIR__ . '/data.php';
+$c = club_data();
+$s = $c['schedule'];
+$saisonDebut = !empty($c['seasonStart']) ? date('d/m/Y', strtotime($c['seasonStart'])) : null;
+?>
 <div class="schedule-table-wrapper">
+<?php if ($saisonDebut): ?>
+<p class="schedule-season">
+    <strong>Saison <?= htmlspecialchars($c['season']) ?></strong> — horaires en vigueur à partir du <?= htmlspecialchars($saisonDebut) ?>.
+</p>
+<?php endif; ?>
 <table class="schedule-table">
     <thead>
         <tr>

@@ -24,6 +24,7 @@
     "mapsUrl": "https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6"
   },
   "season": "2026-2027",
+  "seasonStart": "2026-09-07",
   "schedule": {
     "days": ["Lundi", "Jeudi"],
     "daysSchemaOrg": ["Monday", "Thursday"],
