@@ -289,8 +289,8 @@
                     <h4 class="info-box__title">Portes ouvertes</h4>
                     <p>
                         Pendant tout le mois de <strong>septembre</strong>, les cours sont ouverts
-                        aux personnes souhaitant découvrir l'aïkido. Prêt de kimono possible,
-                        à défaut une tenue de sport (jogging) convient pour les cours d'essai.
+                        aux personnes souhaitant découvrir l'aïkido. Une tenue de sport
+                        (jogging) convient pour les cours d'essai.
                     </p>
                     <p><a href="actualites.php">Voir les dates des événements</a></p>
                 </div>
@@ -416,7 +416,6 @@
                 </ul>
                 <p>
                     Pour les premiers cours d'essai, un survêtement propre peut suffire.
-                    Le club peut prêter un kimono pour les séances d'initiation.
                 </p>
                 <p>
                     Il est possible de commander votre équipement par l'intermédiaire du club

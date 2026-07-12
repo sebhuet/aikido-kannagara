@@ -61,4 +61,4 @@ découvrir l'aïkido avant la rentrée.
 - animateur: L'équipe enseignante
 
 Venez découvrir l'aïkido gratuitement pendant tout le mois de septembre !
-Cours d'essai ouverts à tous, avec prêt de kimono.
+Cours d'essai ouverts à tous.
