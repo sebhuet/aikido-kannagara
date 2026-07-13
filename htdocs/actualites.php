@@ -1,33 +1,94 @@
-<!DOCTYPE html>
+<?php
+require_once __DIR__ . '/includes/data.php';
+require_once __DIR__ . '/includes/evenements-parser.php';
+
+$club = club_data();
+$site = rtrim($club['url'], '/');
+$evenements = parse_evenements(__DIR__ . '/evenements.md');
+
+/** Permalien partageable d'un événement. */
+function evenement_permalien($site, $slug)
+{
+    return $site . '/actualites.php?evenement=' . urlencode($slug);
+}
+
+/**
+ * Lien de partage Facebook. Le « sharer » ne reçoit QUE l'URL : c'est Facebook qui
+ * va la crawler et lire ses balises og: — d'où l'importance de les rendre dynamiques.
+ */
+function partage_facebook($url)
+{
+    return 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode($url);
+}
+
+// ---- Événement ciblé par un lien de partage (?evenement=slug) ----
+// Le slug est comparé aux événements RÉELLEMENT parsés : sans cette validation, on
+// pourrait injecter un titre ou une og:image arbitraires via l'URL.
+// Effet de bord assumé : un événement passé n'est plus parsé, donc son lien de
+// partage retombe proprement sur la page complète (pas d'erreur, pas de 404).
+$evtPartage = null;
+$demande = $_GET['evenement'] ?? '';
+if ($demande !== '') {
+    foreach ($evenements as $e) {
+        if ($e['slug'] === $demande) {
+            $evtPartage = $e;
+            break;
+        }
+    }
+}
+
+// ---- Open Graph ----
+$ogUrl   = $site . '/actualites.php';
+$ogTitle = 'Actualités — ' . $club['name'];
+$ogDesc  = 'Portes ouvertes, stages, forums et événements du club d\'aïkido de Guyancourt.';
+$ogImage = $club['logo'];
+
+if ($evtPartage) {
+    // Un partage doit donner l'essentiel sans cliquer : date, horaire, lieu.
+    $bribes = [ucfirst(format_date_evenement($evtPartage['date']))];
+    if ($evtPartage['horaire']) $bribes[] = $evtPartage['horaire'];
+    if ($evtPartage['lieu'])    $bribes[] = $evtPartage['lieu'];
+
+    $ogUrl   = evenement_permalien($site, $evtPartage['slug']);
+    $ogTitle = $evtPartage['title'] . ' — ' . $club['name'];
+    $ogDesc  = implode(' · ', $bribes) . ($evtPartage['description'] ? ' — ' . $evtPartage['description'] : '');
+    // image: est optionnel dans evenements.md ; sans lui, Facebook affiche le logo.
+    if (!empty($evtPartage['image'])) {
+        $ogImage = $site . '/' . ltrim($evtPartage['image'], '/');
+    }
+}
+?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Actualités | Stages et événements aïkido Guyancourt</title>
-    <meta name="description" content="Actualités du club Aïkido Kannagara Guyancourt : portes ouvertes septembre, stages FFAB, passages de grades. Événements à Guyancourt.">
-    <meta name="keywords" content="actualités aïkido, stage aïkido, portes ouvertes, événements Guyancourt, FFAB">
-    <meta name="author" content="Aïkido Kannagara Guyancourt">
+    <title><?= htmlspecialchars($ogTitle) ?></title>
+    <meta name="description" content="<?= htmlspecialchars($ogDesc) ?>">
+    <meta name="author" content="<?= htmlspecialchars($club['name']) ?>">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.772739;2.065928">
     <meta name="ICBM" content="48.772739, 2.065928">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/actualites.php">
+    <?php /* Canonical toujours la page complète : les URL ?evenement= sont des variantes
+             de partage, pas des pages à indexer séparément. Facebook se fie à og:url. */ ?>
+    <link rel="canonical" href="<?= htmlspecialchars($site) ?>/actualites.php">
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/actualites.php">
-    <meta property="og:title" content="Actualités - Aïkido Kannagara Guyancourt">
-    <meta property="og:description" content="Portes ouvertes, stages, événements du club d'aïkido de Guyancourt.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:type" content="<?= $evtPartage ? 'article' : 'website' ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($ogUrl) ?>">
+    <meta property="og:title" content="<?= htmlspecialchars($ogTitle) ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($ogDesc) ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($ogImage) ?>">
+    <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Actualités - Aïkido Kannagara Guyancourt">
-    <meta name="twitter:description" content="Portes ouvertes, stages, événements du club d'aïkido de Guyancourt.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:card" content="<?= $evtPartage && !empty($evtPartage['image']) ? 'summary_large_image' : 'summary' ?>">
+    <meta name="twitter:title" content="<?= htmlspecialchars($ogTitle) ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($ogDesc) ?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($ogImage) ?>">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -208,11 +269,7 @@
         </div>
     </section>
 
-    <!-- Événements à venir (dynamique depuis evenements.md) -->
-    <?php
-    require_once __DIR__ . '/includes/evenements-parser.php';
-    $evenements = parse_evenements(__DIR__ . '/evenements.md');
-    ?>
+    <!-- Événements à venir — parsés dans le prélude (le <head> en a besoin pour les og:) -->
     <section class="section">
         <div class="container">
             <div class="section__header">
@@ -221,9 +278,21 @@
             </div>
 
             <?php if (!empty($evenements)): ?>
+            <div class="text-center" style="margin-bottom: var(--spacing-lg);">
+                <a class="btn btn--outline fb-share-btn"
+                   href="<?= htmlspecialchars(partage_facebook($site . '/actualites.php')) ?>"
+                   target="_blank" rel="noopener"
+                   aria-label="Partager les actualités du club sur Facebook">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+                    Partager les actualités sur Facebook
+                </a>
+            </div>
+
             <div class="cards-grid">
-                <?php foreach ($evenements as $evt): ?>
-                <div class="card fade-in">
+                <?php foreach ($evenements as $evt):
+                    $cible = $evtPartage && $evtPartage['slug'] === $evt['slug'];
+                ?>
+                <div class="card fade-in<?= $cible ? ' is-ciblee' : '' ?>" data-evenement="<?= htmlspecialchars($evt['slug']) ?>">
                     <div class="card__content">
                         <span class="blog-card__date"><?= htmlspecialchars(format_date_evenement($evt['date'])) ?></span>
                         <h3 class="card__title"><?= htmlspecialchars($evt['title']) ?></h3>
@@ -246,6 +315,14 @@
                                 <?php endif; ?>
                             <?php endif; ?>
                         </p>
+                        <a class="fb-share fb-share--card"
+                           href="<?= htmlspecialchars(partage_facebook(evenement_permalien($site, $evt['slug']))) ?>"
+                           target="_blank" rel="noopener"
+                           title="Partager cet événement sur Facebook"
+                           aria-label="Partager l'événement « <?= htmlspecialchars($evt['title']) ?> » sur Facebook">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+                            Partager
+                        </a>
                     </div>
                 </div>
                 <?php endforeach; ?>
@@ -350,5 +427,14 @@
 
     <!-- JavaScript -->
     <script src="js/main.js" defer></script>
+    <script>
+        // Arrivée depuis un lien de partage (?evenement=…) : amener la carte à l'écran.
+        document.addEventListener('DOMContentLoaded', function() {
+            var ciblee = document.querySelector('.is-ciblee');
+            if (ciblee) {
+                ciblee.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+    </script>
 </body>
 </html>

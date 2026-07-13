@@ -253,36 +253,9 @@ if ($photoPartagee) {
             }
         }
 
-        .gallery-item__share {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin-top: 0.35rem;
-            padding: 4px 10px;
-            border-radius: 4px;
-            background: rgba(255, 255, 255, 0.18);
-            color: white;
-            font-size: 0.8rem;
-            text-decoration: none;
-            transition: background 0.2s ease;
-        }
-
-        .gallery-item__share:hover,
-        .gallery-item__share:focus {
-            background: #1877f2; /* bleu Facebook */
-            color: white;
-        }
-
-        .gallery-share svg {
-            vertical-align: text-bottom;
-            margin-right: 6px;
-        }
-
-        /* Photo atteinte via un lien de partage : on la met en évidence */
-        .gallery-item--ciblee {
-            outline: 3px solid var(--color-accent);
-            outline-offset: 3px;
-        }
+        /* Le bouton de partage lui-même (.fb-share) est défini dans style.css :
+           il est partagé avec les événements. Ici, seul le comportement propre
+           à la galerie. */
 
         .gallery-item__title {
             font-size: 1rem;
@@ -433,7 +406,7 @@ if ($photoPartagee) {
             <?php if ($totalPhotos > 0): ?>
                 <!-- Partager la galerie entière -->
                 <div class="text-center" style="margin-bottom: var(--spacing-lg);">
-                    <a class="btn btn--outline gallery-share"
+                    <a class="btn btn--outline fb-share-btn"
                        href="<?= htmlspecialchars(partage_facebook($site . '/galerie.php')) ?>"
                        target="_blank" rel="noopener"
                        aria-label="Partager la galerie sur Facebook">
@@ -467,7 +440,7 @@ if ($photoPartagee) {
                                 && $photoPartagee['slug'] === $slug
                                 && $photoPartagee['photo'] === $photo;
                         ?>
-                        <div class="gallery-item<?= $ciblee ? ' gallery-item--ciblee' : '' ?>"
+                        <div class="gallery-item<?= $ciblee ? ' is-ciblee' : '' ?>"
                              data-category="<?= $slug ?>"
                              data-photo="<?= htmlspecialchars($slug . '/' . $photo) ?>">
                             <img src="<?= htmlspecialchars($src) ?>"
@@ -476,7 +449,7 @@ if ($photoPartagee) {
                                  loading="lazy">
                             <div class="gallery-item__overlay">
                                 <h3 class="gallery-item__title"><?= htmlspecialchars($title) ?></h3>
-                                <a class="gallery-item__share"
+                                <a class="fb-share fb-share--overlay"
                                    href="<?= htmlspecialchars(partage_facebook($permalien)) ?>"
                                    target="_blank" rel="noopener"
                                    title="Partager cette photo sur Facebook"
@@ -571,7 +544,7 @@ if ($photoPartagee) {
                     item.addEventListener('click', function(e) {
                         // Le bouton de partage est DANS l'item cliquable : sans ce garde-fou,
                         // cliquer « Partager » ouvrirait la lightbox en plus d'aller sur Facebook.
-                        if (e.target.closest('.gallery-item__share')) return;
+                        if (e.target.closest('.fb-share')) return;
                         currentIndex = idx;
                         showLightbox();
                     });
@@ -579,7 +552,7 @@ if ($photoPartagee) {
             });
 
             // Arrivée depuis un lien de partage (?photo=…) : amener la photo à l'écran.
-            var ciblee = document.querySelector('.gallery-item--ciblee');
+            var ciblee = document.querySelector('.is-ciblee');
             if (ciblee) {
                 ciblee.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }

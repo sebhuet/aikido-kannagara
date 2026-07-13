@@ -10,6 +10,9 @@ Chaque événement est défini par :
 - `lieu:` nom du lieu (optionnel)
 - `lieu_url:` lien Google Maps (optionnel)
 - `animateur:` nom de l'animateur (optionnel)
+- `image:` chemin d'une image, ex. `galerie/evenements/ma-photo.jpg` (optionnel).
+  C'est l'image affichée quand l'événement est partagé sur Facebook. Sans elle,
+  Facebook retombe sur le logo du club — nettement moins accrocheur.
 - Description libre en texte après les métadonnées
 
 Les événements passés sont automatiquement masqués.

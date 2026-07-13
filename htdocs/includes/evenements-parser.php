@@ -4,6 +4,9 @@
  * Retourne les événements à venir triés par date croissante.
  */
 
+// slugify() y est défini : sert à construire le permalien de partage de chaque événement.
+require_once __DIR__ . '/markdown.php';
+
 /**
  * Parse le fichier evenements.md et retourne un tableau d'événements.
  * Seuls les événements futurs (ou du jour) sont retournés.
@@ -43,6 +46,7 @@ function parse_evenements(string $filepath): array {
                 'lieu' => null,
                 'lieu_url' => null,
                 'animateur' => null,
+                'image' => null,
                 'description' => '',
             ];
             continue;
@@ -51,7 +55,7 @@ function parse_evenements(string $filepath): array {
         if ($current === null) continue;
 
         // Métadonnées : - clé: valeur
-        if (preg_match('/^- (date|horaire|lieu|lieu_url|animateur):\s*(.+)$/', $trimmed, $m)) {
+        if (preg_match('/^- (date|horaire|lieu|lieu_url|animateur|image):\s*(.+)$/', $trimmed, $m)) {
             $key = $m[1];
             $value = trim($m[2]);
             if ($key === 'date') {
@@ -93,6 +97,14 @@ function parse_evenements(string $filepath): array {
     usort($events, function($a, $b) {
         return $a['date'] - $b['date'];
     });
+
+    // Identifiant stable, utilisé comme permalien de partage (?evenement=…).
+    // La date préfixe le titre : deux éditions d'un même événement (l'initiation
+    // revient chaque année) auraient sinon le même slug.
+    foreach ($events as &$e) {
+        $e['slug'] = date('Y-m-d', $e['date']) . '-' . slugify($e['title']);
+    }
+    unset($e);
 
     return $events;
 }

@@ -534,6 +534,52 @@ p {
   color: var(--color-text-light);
 }
 
+/* ---------- Partage Facebook ---------- */
+/* Composant unique, partagé par la galerie et les événements : un bouton de partage
+   par page finirait fatalement par diverger. Les modificateurs gèrent le fond. */
+.fb-share {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.fb-share:hover,
+.fb-share:focus {
+  background: #1877f2; /* bleu Facebook */
+  color: white;
+}
+
+/* Sur fond sombre (overlay des photos) */
+.fb-share--overlay {
+  margin-top: 0.35rem;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+/* Sur fond clair (carte d'événement) */
+.fb-share--card {
+  margin-top: var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-light);
+}
+
+/* Bouton pleine largeur en tête de page (« Partager la galerie / les actualités ») */
+.fb-share-btn svg {
+  vertical-align: text-bottom;
+  margin-right: 6px;
+}
+
+/* Élément atteint via un lien de partage : on le montre du doigt */
+.is-ciblee {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
 /* ---------- Schedule Table ---------- */
 /* Libellé de saison : au-dessus du tableau, jamais DANS .schedule-table-wrapper
    (qui est en flex : un <p> à l'intérieur se placerait à côté du tableau). */
