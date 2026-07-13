@@ -53,6 +53,26 @@ L'occasion de se retrouver et de reprendre la pratique en douceur.
 Séance spéciale d'initiation pour les personnes qui souhaitent
 découvrir l'aïkido avant la rentrée.
 
+## Initiation "Découvrir avant de s'inscrire"
+
+- date: 29/08/2026
+- horaire: 9h à 13h
+- lieu: Gymnase de l'Aviation
+- animateur: Sébastien Huet
+
+Séance spéciale d'initiation pour les personnes qui souhaitent
+découvrir l'aïkido avant la rentrée, dans un cadre adapté aux débutants.
+Aucune tenue ni expérience requise.
+
+## Forum AS Minorange Bouygues
+
+- date: 10/09/2026
+- horaire: 12h à 14h
+- lieu: Challenger
+
+Le club tient un stand au forum des associations AS Minorange (Bouygues), à Challenger.
+Venez nous rencontrer, poser vos questions et découvrir l'aïkido.
+
 ## Portes ouvertes
 
 - date: 01/09/2025
