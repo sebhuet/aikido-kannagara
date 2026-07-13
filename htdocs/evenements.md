@@ -64,6 +64,26 @@ Séance spéciale d'initiation pour les personnes qui souhaitent
 découvrir l'aïkido avant la rentrée, dans un cadre adapté aux débutants.
 Aucune tenue ni expérience requise.
 
+## Assos en fête
+
+- date: 05/09/2026
+- horaire: 9h à 14h30
+- lieu: Gymnase des Droits de l'Homme
+
+Forum des associations de la Ville de Guyancourt : le club y tient un stand.
+Venez nous rencontrer, poser vos questions et découvrir l'aïkido.
+Programme complet sur le site de la Ville de Guyancourt.
+
+## Premier cours de l'année
+
+- date: 07/09/2026
+- horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Reprise des cours pour tous, anciens et nouveaux pratiquants.
+C'est aussi le jour où entrent en vigueur les horaires de la saison 2026-2027.
+
 ## Forum AS Minorange Bouygues
 
 - date: 10/09/2026
