@@ -104,11 +104,12 @@
                 <div>
                     <h2>Nous contacter</h2>
 
+                    <?php $presidente = club_board_member('president'); ?>
                     <div class="team-member" style="text-align: center; margin: var(--spacing-lg) 0;">
-                        <img src="images/fanny-jacquemier.jpg" alt="<?= htmlspecialchars($club['president']) ?>" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;" loading="lazy">
-                        <h3 class="team-member__name"><?= htmlspecialchars($club['president']) ?></h3>
-                        <p class="team-member__grade">Présidente du club</p>
-                        <p style="margin-top: var(--spacing-sm);"><a href="tel:<?= preg_replace('/\s+/', '', $club['contact']['phone']) ?>"><?= htmlspecialchars($club['contact']['phone']) ?></a></p>
+                        <img src="<?= htmlspecialchars($presidente['photo']) ?>" alt="<?= htmlspecialchars($presidente['name']) ?>" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover;" loading="lazy">
+                        <h3 class="team-member__name"><?= htmlspecialchars($presidente['name']) ?></h3>
+                        <p class="team-member__grade"><?= htmlspecialchars($presidente['role']) ?> du club</p>
+                        <p style="margin-top: var(--spacing-sm);"><a href="tel:<?= preg_replace('/\s+/', '', $presidente['phone']) ?>"><?= htmlspecialchars($presidente['phone']) ?></a></p>
                     </div>
 
                     <div class="contact-info__item">

@@ -7,7 +7,27 @@
   "url": "https://kannagara.fr",
   "logo": "https://kannagara.fr/images/logo-kannagara.jpg",
   "membersApprox": 50,
-  "president": "Fanny Jacquemier",
+  "board": [
+    {
+      "key": "president",
+      "role": "Présidente",
+      "name": "Fanny Jacquemier",
+      "photo": "images/fanny-jacquemier.jpg"
+    },
+    {
+      "key": "tresorier",
+      "role": "Trésorier",
+      "name": "Sébastien Huet",
+      "phone": "06 37 92 75 37",
+      "photo": "professeurs/fiches/05-sebastien-huet.jpg"
+    },
+    {
+      "key": "secretaire",
+      "role": "Secrétaire",
+      "name": "Octavio Tapia",
+      "photo": "images/octavio-tapia.jpg"
+    }
+  ],
   "contact": {
     "phone": "06 76 48 16 01",
     "phoneIntl": "+33676481601",

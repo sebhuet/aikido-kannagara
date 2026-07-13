@@ -152,19 +152,19 @@
                     Le club est géré par une équipe de bénévoles dévoués :
                 </p>
 
+                <?php /* Rendu depuis club.json > board : ajouter un dirigeant = une entrée de données,
+                         pas un bloc HTML de plus à copier-coller. Le téléphone est optionnel. */ ?>
                 <div style="display: flex; justify-content: center; gap: var(--spacing-xl); flex-wrap: wrap; margin: var(--spacing-lg) 0;">
+                    <?php foreach (club_board() as $membre): ?>
                     <div class="team-member" style="text-align: center;">
-                        <img src="images/fanny-jacquemier.jpg" alt="Fanny Jacquemier" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;" loading="lazy">
-                        <h3 class="team-member__name">Fanny Jacquemier</h3>
-                        <p class="team-member__grade">Présidente</p>
-                        <p><a href="tel:0676481601">06 76 48 16 01</a></p>
+                        <img src="<?= htmlspecialchars($membre['photo']) ?>" alt="<?= htmlspecialchars($membre['name']) ?>" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;" loading="lazy">
+                        <h3 class="team-member__name"><?= htmlspecialchars($membre['name']) ?></h3>
+                        <p class="team-member__grade"><?= htmlspecialchars($membre['role']) ?></p>
+                        <?php if (!empty($membre['phone'])): ?>
+                        <p><a href="tel:<?= preg_replace('/\s+/', '', $membre['phone']) ?>"><?= htmlspecialchars($membre['phone']) ?></a></p>
+                        <?php endif; ?>
                     </div>
-                    <div class="team-member" style="text-align: center;">
-                        <img src="professeurs/fiches/05-sebastien-huet.jpg" alt="Sébastien Huet" class="team-member__photo" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;" loading="lazy">
-                        <h3 class="team-member__name">Sébastien Huet</h3>
-                        <p class="team-member__grade">Trésorier</p>
-                        <p><a href="tel:0637927537">06 37 92 75 37</a></p>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
 
                 <div class="text-center mt-4">

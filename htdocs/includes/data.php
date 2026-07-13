@@ -19,3 +19,37 @@ function club_data()
 	}
 	return $data;
 }
+
+/**
+ * Équipe dirigeante (club.json > board), chaque membre enrichi de son téléphone.
+ *
+ * Le numéro du club (contact.phone) EST celui de la présidente : il n'est donc pas
+ * recopié dans board (ce serait deux endroits à corriger le jour où il change).
+ * On le résout ici, à la lecture.
+ *
+ * @return array<int, array{key:string, role:string, name:string, photo:string, phone:?string}>
+ */
+function club_board()
+{
+	$club = club_data();
+	$phoneClub = $club['contact']['phone'] ?? null;
+
+	return array_map(function ($membre) use ($phoneClub) {
+		$membre['phone'] = $membre['phone']
+			?? (($membre['key'] ?? '') === 'president' ? $phoneClub : null);
+		return $membre;
+	}, $club['board'] ?? []);
+}
+
+/**
+ * Membre de l'équipe dirigeante par sa clé ('president', 'tresorier', 'secretaire').
+ */
+function club_board_member($key)
+{
+	foreach (club_board() as $membre) {
+		if (($membre['key'] ?? '') === $key) {
+			return $membre;
+		}
+	}
+	return null;
+}
