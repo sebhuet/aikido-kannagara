@@ -1,34 +1,142 @@
-﻿<!DOCTYPE html>
+﻿<?php
+require_once __DIR__ . '/includes/data.php';
+$club = club_data();
+$site = rtrim($club['url'], '/');
+
+// Catégories : slug (= nom du dossier) => label affiché.
+// Le slug doit rester en ASCII sans espace : il sert de segment d'URL.
+$categories = [
+    'cours'      => 'Cours',
+    'stages'     => 'Stages',
+    'grades'     => 'Passages de grades',
+    'evenements' => 'Événements',
+    'vie-club'   => 'Vie du club',
+    'art'        => 'Art',
+];
+
+$extensions = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+$galleryDir = __DIR__ . '/galerie';
+
+// Scan des photos, à plat (pas de sous-dossier).
+$gallery = [];
+$totalPhotos = 0;
+foreach ($categories as $slug => $label) {
+    $photos = [];
+    $dir = $galleryDir . '/' . $slug;
+    if (is_dir($dir)) {
+        foreach (scandir($dir) as $file) {
+            if (in_array(strtolower(pathinfo($file, PATHINFO_EXTENSION)), $extensions, true)) {
+                $photos[] = $file;
+            }
+        }
+        sort($photos);
+    }
+    $gallery[$slug] = $photos;
+    $totalPhotos += count($photos);
+}
+
+/** Chemin web d'une photo (encodé : espaces et accents sont fréquents dans les noms). */
+function galerie_src($slug, $photo)
+{
+    return 'galerie/' . rawurlencode($slug) . '/' . rawurlencode($photo);
+}
+
+/** Titre lisible dérivé du nom de fichier. */
+function galerie_titre($photo, $label)
+{
+    $titre = pathinfo($photo, PATHINFO_FILENAME);
+    $titre = preg_replace('/^IMG-\d{8}-WA\d+$/i', $label, $titre);
+    $titre = str_replace(['_', '-'], ' ', $titre);
+    // Enlever l'index de fin (« … 01 ») : il numérote le fichier, pas la photo
+    $titre = preg_replace('/\s+\d{1,3}$/', '', $titre);
+    return ucfirst(trim($titre));
+}
+
+/** Permalien partageable d'une photo. */
+function galerie_permalien($site, $slug, $photo)
+{
+    return $site . '/galerie.php?photo=' . urlencode($slug . '/' . $photo);
+}
+
+/**
+ * Lien de partage Facebook. Le « sharer » ne reçoit QUE l'URL : c'est Facebook qui
+ * va la crawler et lire ses balises og: — d'où l'importance de les rendre dynamiques.
+ */
+function partage_facebook($url)
+{
+    return 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode($url);
+}
+
+// ---- Photo ciblée par un lien de partage (?photo=slug/fichier) ----
+// La valeur est comparée à la liste RÉELLEMENT scannée. Sans cette validation, on
+// pourrait injecter n'importe quelle og:image via l'URL et se servir du site comme
+// relais d'image sur Facebook (et lire des chemins hors du dossier galerie).
+$photoPartagee = null;
+$demande = $_GET['photo'] ?? '';
+if ($demande !== '') {
+    foreach ($gallery as $slug => $photos) {
+        foreach ($photos as $photo) {
+            if ($slug . '/' . $photo === $demande) {
+                $photoPartagee = ['slug' => $slug, 'photo' => $photo, 'label' => $categories[$slug]];
+                break 2;
+            }
+        }
+    }
+}
+
+// ---- Open Graph ----
+// Par défaut : la galerie entière. og:image doit être une VRAIE photo — une galerie
+// qui s'annonce sur Facebook avec le logo du club ne donne envie de rien.
+$ogUrl   = $site . '/galerie.php';
+$ogTitle = 'Galerie photos — ' . $club['name'];
+$ogDesc  = 'Cours, stages, passages de grades, événements et vie du club en images.';
+$ogImage = $club['logo'];
+foreach ($gallery as $slug => $photos) {
+    if ($photos) {
+        $ogImage = $site . '/' . galerie_src($slug, $photos[0]);
+        break;
+    }
+}
+
+if ($photoPartagee) {
+    $titrePartage = galerie_titre($photoPartagee['photo'], $photoPartagee['label']);
+    $ogUrl   = galerie_permalien($site, $photoPartagee['slug'], $photoPartagee['photo']);
+    $ogTitle = $titrePartage . ' — ' . $club['name'];
+    $ogDesc  = $photoPartagee['label'] . ' — galerie photos du club Aïkido Kannagara Guyancourt.';
+    $ogImage = $site . '/' . galerie_src($photoPartagee['slug'], $photoPartagee['photo']);
+}
+?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Galerie Photos | Aïkido Kannagara Guyancourt</title>
-    <meta name="description" content="Découvrez la galerie photos du club Aïkido Kannagara Guyancourt : cours, stages, passages de grades et moments de vie du club à Guyancourt.">
-    <meta name="keywords" content="aïkido, aikido, Guyancourt, photos, galerie, stages, grades, cours, FFAB">
-    <meta name="author" content="Aïkido Kannagara Guyancourt">
+    <title><?= htmlspecialchars($ogTitle) ?></title>
+    <meta name="description" content="<?= htmlspecialchars($ogDesc) ?>">
+    <meta name="author" content="<?= htmlspecialchars($club['name']) ?>">
     <meta name="geo.region" content="FR-78">
     <meta name="geo.placename" content="Guyancourt">
     <meta name="geo.position" content="48.772739;2.065928">
     <meta name="ICBM" content="48.772739, 2.065928">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://kannagara.fr/galerie.php">
+    <?php /* Canonical toujours la galerie : les URL ?photo= sont des variantes de partage,
+             pas des pages à indexer séparément. Facebook, lui, se fie à og:url. */ ?>
+    <link rel="canonical" href="<?= htmlspecialchars($site) ?>/galerie.php">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kannagara.fr/galerie.php">
-    <meta property="og:title" content="Galerie Photos - Aïkido Kannagara Guyancourt">
-    <meta property="og:description" content="Découvrez la galerie photos du club Aïkido Kannagara Guyancourt : cours, stages, passages de grades et vie du club.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:url" content="<?= htmlspecialchars($ogUrl) ?>">
+    <meta property="og:title" content="<?= htmlspecialchars($ogTitle) ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($ogDesc) ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($ogImage) ?>">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Galerie Photos - Aïkido Kannagara Guyancourt">
-    <meta name="twitter:description" content="Découvrez la galerie photos du club Aïkido Kannagara Guyancourt.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= htmlspecialchars($ogTitle) ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($ogDesc) ?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($ogImage) ?>">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -132,8 +240,48 @@
             transition: transform 0.3s ease;
         }
 
-        .gallery-item:hover .gallery-item__overlay {
+        .gallery-item:hover .gallery-item__overlay,
+        .gallery-item:focus-within .gallery-item__overlay {
             transform: translateY(0);
+        }
+
+        /* Tactile : sans souris, pas de :hover. Sans cette règle, le titre et le bouton
+           de partage resteraient invisibles — donc inatteignables — sur mobile. */
+        @media (hover: none) {
+            .gallery-item__overlay {
+                transform: translateY(0);
+            }
+        }
+
+        .gallery-item__share {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 0.35rem;
+            padding: 4px 10px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.18);
+            color: white;
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .gallery-item__share:hover,
+        .gallery-item__share:focus {
+            background: #1877f2; /* bleu Facebook */
+            color: white;
+        }
+
+        .gallery-share svg {
+            vertical-align: text-bottom;
+            margin-right: 6px;
+        }
+
+        /* Photo atteinte via un lien de partage : on la met en évidence */
+        .gallery-item--ciblee {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 3px;
         }
 
         .gallery-item__title {
@@ -280,46 +428,20 @@
     <!-- Galerie dynamique -->
     <section class="section section--alt">
         <div class="container">
-            <?php
-            // Catégories : slug (= nom du dossier) => label affiché.
-            // Le slug doit rester en ASCII sans espace : il sert de segment d'URL.
-            $categories = [
-                'cours'       => 'Cours',
-                'stages'      => 'Stages',
-                'grades'      => 'Passages de grades',
-                'evenements'  => 'Événements',
-                'vie-club'    => 'Vie du club',
-                'art'         => 'Art',
-            ];
-
-            $galleryDir = __DIR__ . '/galerie';
-            $extensions = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
-
-            // Scanner les images par catégorie
-            $gallery = [];
-            $totalPhotos = 0;
-            foreach ($categories as $slug => $label) {
-                $dir = $galleryDir . '/' . $slug;
-                $photos = [];
-                if (is_dir($dir)) {
-                    $files = scandir($dir);
-                    foreach ($files as $file) {
-                        $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
-                        if (in_array($ext, $extensions)) {
-                            $photos[] = $file;
-                        }
-                    }
-                    sort($photos);
-                }
-                $gallery[$slug] = $photos;
-                $totalPhotos += count($photos);
-            }
-
-            // N'afficher les filtres que s'il y a des photos
-            $categoriesWithPhotos = array_filter($gallery, fn($p) => count($p) > 0);
-            ?>
-
+            <?php /* Le scan des photos et les helpers sont dans le prélude (en tête du
+                     fichier) : le <head> en a besoin pour les balises og:. */ ?>
             <?php if ($totalPhotos > 0): ?>
+                <!-- Partager la galerie entière -->
+                <div class="text-center" style="margin-bottom: var(--spacing-lg);">
+                    <a class="btn btn--outline gallery-share"
+                       href="<?= htmlspecialchars(partage_facebook($site . '/galerie.php')) ?>"
+                       target="_blank" rel="noopener"
+                       aria-label="Partager la galerie sur Facebook">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+                        Partager la galerie sur Facebook
+                    </a>
+                </div>
+
                 <!-- Filtres -->
                 <div class="gallery-filters" role="group" aria-label="Filtrer les photos">
                     <button class="gallery-filter active" data-filter="all">Toutes (<?= $totalPhotos ?>)</button>
@@ -338,24 +460,30 @@
                     <h2 class="gallery-section__title"><?= $label ?></h2>
                     <div class="gallery-grid">
                         <?php foreach ($gallery[$slug] as $photo):
-                            // rawurlencode : sans ça, un fichier contenant un espace ou un
-                            // accent (photo d'appareil, dossier « événement »…) casse l'image.
-                            $src = 'galerie/' . rawurlencode($slug) . '/' . rawurlencode($photo);
-                            $name = pathinfo($photo, PATHINFO_FILENAME);
-                            // Titre lisible : remplacer tirets/underscores, enlever préfixes type IMG-20211122-WA
-                            $title = preg_replace('/^IMG-\d{8}-WA\d+$/i', $label, $name);
-                            $title = str_replace(['_', '-'], ' ', $title);
-                            // Enlever l'index de fin (« … 01 ») : il numérote le fichier, pas la photo
-                            $title = preg_replace('/\s+\d{1,3}$/', '', $title);
-                            $title = ucfirst(trim($title));
+                            $src       = galerie_src($slug, $photo);
+                            $title     = galerie_titre($photo, $label);
+                            $permalien = galerie_permalien($site, $slug, $photo);
+                            $ciblee    = $photoPartagee
+                                && $photoPartagee['slug'] === $slug
+                                && $photoPartagee['photo'] === $photo;
                         ?>
-                        <div class="gallery-item" data-category="<?= $slug ?>">
+                        <div class="gallery-item<?= $ciblee ? ' gallery-item--ciblee' : '' ?>"
+                             data-category="<?= $slug ?>"
+                             data-photo="<?= htmlspecialchars($slug . '/' . $photo) ?>">
                             <img src="<?= htmlspecialchars($src) ?>"
                                  alt="<?= htmlspecialchars($title . ' — Aïkido Kannagara Guyancourt') ?>"
                                  class="gallery-item__image"
                                  loading="lazy">
                             <div class="gallery-item__overlay">
                                 <h3 class="gallery-item__title"><?= htmlspecialchars($title) ?></h3>
+                                <a class="gallery-item__share"
+                                   href="<?= htmlspecialchars(partage_facebook($permalien)) ?>"
+                                   target="_blank" rel="noopener"
+                                   title="Partager cette photo sur Facebook"
+                                   aria-label="Partager la photo « <?= htmlspecialchars($title) ?> » sur Facebook">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+                                    Partager
+                                </a>
                             </div>
                         </div>
                         <?php endforeach; ?>
@@ -440,12 +568,21 @@
                 if (img) {
                     var idx = allImages.length;
                     allImages.push({ src: img.src, caption: title ? title.textContent : '' });
-                    item.addEventListener('click', function() {
+                    item.addEventListener('click', function(e) {
+                        // Le bouton de partage est DANS l'item cliquable : sans ce garde-fou,
+                        // cliquer « Partager » ouvrirait la lightbox en plus d'aller sur Facebook.
+                        if (e.target.closest('.gallery-item__share')) return;
                         currentIndex = idx;
                         showLightbox();
                     });
                 }
             });
+
+            // Arrivée depuis un lien de partage (?photo=…) : amener la photo à l'écran.
+            var ciblee = document.querySelector('.gallery-item--ciblee');
+            if (ciblee) {
+                ciblee.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
 
             function showLightbox() {
                 lightboxImg.src = allImages[currentIndex].src;
