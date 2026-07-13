@@ -478,6 +478,7 @@ La galerie photos du club est organisee en categories :
 - Cours : Photos des cours reguliers (enfants et adultes)
 - Stages : Photos des stages FFAB et stages internes
 - Passages de grades : Examens de kyu et dan
+- Evenements : Forums, demonstrations et temps forts du club
 - Vie du club : Repas, portes ouvertes, photos de groupe
 - Art : Oeuvres et representations artistiques liees a l'aikido
 

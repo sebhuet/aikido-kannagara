@@ -52,3 +52,6 @@ env/
 app
 *.elf
 *.bin
+
+# Photos sources pleine résolution (masters) : hors site et hors dépôt
+photos-sources/

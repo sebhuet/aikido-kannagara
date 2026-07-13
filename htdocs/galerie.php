@@ -281,13 +281,15 @@
     <section class="section section--alt">
         <div class="container">
             <?php
-            // Catégories : slug => label
+            // Catégories : slug (= nom du dossier) => label affiché.
+            // Le slug doit rester en ASCII sans espace : il sert de segment d'URL.
             $categories = [
-                'cours'    => 'Cours',
-                'stages'   => 'Stages',
-                'grades'   => 'Passages de grades',
-                'vie-club' => 'Vie du club',
-                'art'      => 'Art',
+                'cours'       => 'Cours',
+                'stages'      => 'Stages',
+                'grades'      => 'Passages de grades',
+                'evenements'  => 'Événements',
+                'vie-club'    => 'Vie du club',
+                'art'         => 'Art',
             ];
 
             $galleryDir = __DIR__ . '/galerie';
@@ -336,11 +338,15 @@
                     <h2 class="gallery-section__title"><?= $label ?></h2>
                     <div class="gallery-grid">
                         <?php foreach ($gallery[$slug] as $photo):
-                            $src = 'galerie/' . $slug . '/' . $photo;
+                            // rawurlencode : sans ça, un fichier contenant un espace ou un
+                            // accent (photo d'appareil, dossier « événement »…) casse l'image.
+                            $src = 'galerie/' . rawurlencode($slug) . '/' . rawurlencode($photo);
                             $name = pathinfo($photo, PATHINFO_FILENAME);
                             // Titre lisible : remplacer tirets/underscores, enlever préfixes type IMG-20211122-WA
                             $title = preg_replace('/^IMG-\d{8}-WA\d+$/i', $label, $name);
                             $title = str_replace(['_', '-'], ' ', $title);
+                            // Enlever l'index de fin (« … 01 ») : il numérote le fichier, pas la photo
+                            $title = preg_replace('/\s+\d{1,3}$/', '', $title);
                             $title = ucfirst(trim($title));
                         ?>
                         <div class="gallery-item" data-category="<?= $slug ?>">
