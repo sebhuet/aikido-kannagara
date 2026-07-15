@@ -49,7 +49,12 @@ function galerie_titre($photo, $label)
     $titre = str_replace(['_', '-'], ' ', $titre);
     // Enlever l'index de fin (« … 01 ») : il numérote le fichier, pas la photo
     $titre = preg_replace('/\s+\d{1,3}$/', '', $titre);
-    return ucfirst(trim($titre));
+    // Une majuscule à chaque mot (« Stage Hiroshi Ikeda »), pas seulement au premier.
+    // ucwords (et non mb_convert_case) : pas de dépendance à mbstring, que le reste
+    // du site évite volontairement. Les accents en milieu de mot (« fête ») sont
+    // conservés ; seule la 1re lettre est mise en majuscule, or nos noms de fichiers
+    // commencent tous par une lettre ASCII.
+    return ucwords(strtolower(trim($titre)));
 }
 
 /** Permalien partageable d'une photo. */
