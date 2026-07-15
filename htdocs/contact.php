@@ -152,26 +152,38 @@
                             Voisins-le-Bretonneux, Élancourt, Versailles, Vélizy et les communes voisines.
                         </p>
                         <p class="mt-1">
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=Gymnase+Maurice+Baquet,+Guyancourt" target="_blank" rel="noopener" class="btn btn--outline" style="font-size: 0.9rem;">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=<?= rawurlencode($loc['venue'] . ', ' . $loc['city']) ?>" target="_blank" rel="noopener" class="btn btn--outline" style="font-size: 0.9rem;">
                                 Calculer mon itinéraire
                             </a>
                         </p>
                     </div>
                 </div>
 
-                <!-- Carte -->
-                <div class="contact-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d779.6417041653505!2d2.065928400569035!3d48.77273924223142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6815357e7661b%3A0xe4552d046632a0c4!2sA%C3%AFkido%20Club%20de%20Guyancourt%20-%20Kannagara!5e1!3m2!1sfr!2sfr!4v1770278428829!5m2!1sfr!2sfr"
-                        width="100%"
-                        height="450"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Localisation du Gymnase Maurice Baquet">
-                    </iframe>
-                </div>
+                <?php /* Aperçu de plan cliquable, entièrement autonome (SVG + CSS, aucune
+                         requête réseau) : contrairement à l'iframe Google Maps, il ne peut
+                         pas être bloqué par un ad-blocker ni tomber en panne côté Google. */ ?>
+                <a class="contact-map" href="<?= htmlspecialchars($loc['mapsUrl']) ?>" target="_blank" rel="noopener"
+                   aria-label="Ouvrir <?= htmlspecialchars($loc['venue']) ?> dans Google Maps">
+                    <svg class="contact-map__deco" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                        <g stroke="#c7ced6" stroke-width="7" fill="none" opacity="0.55">
+                            <path d="M-20 95 L 420 120"/>
+                            <path d="M-20 215 L 420 195"/>
+                            <path d="M 95 -20 L 72 320"/>
+                            <path d="M 255 -20 L 285 320"/>
+                        </g>
+                        <g stroke="#d6dce2" stroke-width="2.5" fill="none" opacity="0.7">
+                            <path d="M-20 155 L 420 150"/>
+                            <path d="M 175 -20 L 178 320"/>
+                        </g>
+                    </svg>
+                    <span class="contact-map__content">
+                        <span class="contact-map__pin" aria-hidden="true">
+                            <svg width="44" height="44" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+                        </span>
+                        <strong class="contact-map__venue"><?= htmlspecialchars($loc['venue']) ?></strong>
+                        <span class="contact-map__cta">Ouvrir dans Google Maps ↗</span>
+                    </span>
+                </a>
             </div>
         </div>
     </section>
