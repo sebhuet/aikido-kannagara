@@ -62,6 +62,7 @@ découvrir l'aïkido avant la rentrée.
 - horaire: 9h à 13h
 - lieu: Gymnase de l'Aviation
 - animateur: Sébastien Huet
+- image: galerie/stages/stage-hiroshi-ikeda-2026-05.jpg
 
 Séance spéciale d'initiation pour les personnes qui souhaitent
 découvrir l'aïkido avant la rentrée, dans un cadre adapté aux débutants.
@@ -72,6 +73,7 @@ Aucune tenue ni expérience requise.
 - date: 05/09/2026
 - horaire: 9h à 14h30
 - lieu: Gymnase des Droits de l'Homme
+- image: galerie/evenements/baquet-en-fête-2026-02.jpg
 
 Forum des associations de la Ville de Guyancourt : le club y tient un stand.
 Venez nous rencontrer, poser vos questions et découvrir l'aïkido.
@@ -83,6 +85,7 @@ Programme complet sur le site de la Ville de Guyancourt.
 - horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: galerie/vie-club/vie-du-club-02.jpg
 
 Reprise des cours pour tous, anciens et nouveaux pratiquants.
 C'est aussi le jour où entrent en vigueur les horaires de la saison 2026-2027.
@@ -92,6 +95,7 @@ C'est aussi le jour où entrent en vigueur les horaires de la saison 2026-2027.
 - date: 10/09/2026
 - horaire: 12h à 14h
 - lieu: Challenger
+- image: galerie/vie-club/vie-du-club-04.jpg
 
 Le club tient un stand au forum des associations AS Minorange (Bouygues), à Challenger.
 Venez nous rencontrer, poser vos questions et découvrir l'aïkido.

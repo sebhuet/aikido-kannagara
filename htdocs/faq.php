@@ -27,7 +27,7 @@ $faqEquipe = 'Le club est placé sous la responsabilité pédagogique de ' . equ
 
 $faqEssai = "Oui, nous proposons des cours d'essai gratuits en " . $club['trial']['freePeriod']
     . ", lors des portes ouvertes. Vous pouvez venir observer un cours ou participer directement. "
-    . "Contactez-nous pour convenir d'une date.";
+    . $club['trial']['invitation'];
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -497,7 +497,7 @@ $faqEssai = "Oui, nous proposons des cours d'essai gratuits en " . $club['trial'
                                 <p>
                                     Oui, nous proposons des <strong>cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?></strong>,
                                     lors des portes ouvertes. Vous pouvez venir observer un cours
-                                    ou participer directement. Contactez-nous pour convenir d'une date.
+                                    ou participer directement. <?= htmlspecialchars($club['trial']['invitation']) ?>
                                 </p>
                             </div>
                         </div>
@@ -675,7 +675,7 @@ $faqEssai = "Oui, nous proposons des cours d'essai gratuits en " . $club['trial'
                         <div class="faq-answer">
                             <div class="faq-answer__content">
                                 <p>
-                                    Les inscriptions se font principalement en <strong>septembre</strong>
+                                    Les inscriptions se font principalement en <strong><?= htmlspecialchars($club['trial']['freePeriod']) ?></strong>
                                     lors des portes ouvertes, mais vous pouvez nous rejoindre à tout moment
                                     de l'année selon les places disponibles ; la cotisation est alors ajustée
                                     au prorata des mois restants. Contactez-nous pour en savoir plus.

@@ -143,7 +143,7 @@
                 <ul>
                     <li>Stages régionaux et nationaux</li>
                     <li>Passages de grades</li>
-                    <li>Portes ouvertes en septembre</li>
+                    <li>Portes ouvertes en <?= htmlspecialchars(club_data()['trial']['freePeriod']) ?></li>
                     <li>Événements conviviaux (repas du club, etc.)</li>
                 </ul>
 

@@ -53,8 +53,12 @@ if ($evtPartage) {
     $ogTitle = $evtPartage['title'] . ' — ' . $club['name'];
     $ogDesc  = implode(' · ', $bribes) . ($evtPartage['description'] ? ' — ' . $evtPartage['description'] : '');
     // image: est optionnel dans evenements.md ; sans lui, Facebook affiche le logo.
+    // Chaque segment du chemin est encodé : les fichiers de la galerie portent des
+    // accents (« baquet-en-fête-… ») et une og:image avec un caractère brut non
+    // ASCII peut être rejetée par le crawler Facebook.
     if (!empty($evtPartage['image'])) {
-        $ogImage = $site . '/' . ltrim($evtPartage['image'], '/');
+        $segments = array_map('rawurlencode', explode('/', ltrim($evtPartage['image'], '/')));
+        $ogImage = $site . '/' . implode('/', $segments);
     }
 }
 ?><!DOCTYPE html>

@@ -504,8 +504,9 @@
             <div class="info-box" style="max-width: 700px; margin: 0 auto; text-align: center;">
                 <h3 class="info-box__title">Envie de découvrir le travail aux armes ?</h3>
                 <p>
-                    Le travail aux armes fait partie intégrante de nos cours.
-                    Venez essayer lors d'un cours d'essai gratuit en <?= htmlspecialchars(club_data()['trial']['freePeriod']) ?> !
+                    Le travail aux armes fait partie intégrante de nos cours,
+                    et les cours d'essai sont gratuits en <?= htmlspecialchars(club_data()['trial']['freePeriod']) ?>.
+                    <?= htmlspecialchars(club_data()['trial']['invitation']) ?>
                 </p>
                 <div class="mt-3">
                     <a href="inscription.php" class="btn btn--primary">S'inscrire</a>

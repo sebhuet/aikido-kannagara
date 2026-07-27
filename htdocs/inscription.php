@@ -20,13 +20,13 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/inscription.php">
     <meta property="og:title" content="S'inscrire au club Aïkido Kannagara Guyancourt">
-    <meta property="og:description" content="Rejoignez notre club d'aïkido. Cours d'essai gratuits en septembre.">
+    <meta property="og:description" content="Rejoignez notre club d'aïkido. Cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?>.">
     <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="S'inscrire au club Aïkido Kannagara Guyancourt">
-    <meta name="twitter:description" content="Rejoignez notre club d'aïkido. Cours d'essai gratuits en septembre.">
+    <meta name="twitter:description" content="Rejoignez notre club d'aïkido. Cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?>.">
     <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
 
     <!-- Styles -->
@@ -42,7 +42,7 @@
         "@context": "https://schema.org",
         "@type": "Course",
         "name": "Cours d'Aïkido - Kannagara",
-        "description": "Inscrivez-vous au club Aïkido Kannagara Guyancourt. Cours d'essai gratuits en septembre, documents nécessaires, équipement. Enfants dès 7 ans, adultes tous niveaux.",
+        "description": "Inscrivez-vous au club Aïkido Kannagara Guyancourt. Cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?>, documents nécessaires, équipement. Enfants dès 7 ans, adultes tous niveaux.",
         "url": "https://kannagara.fr/inscription.php",
         "provider": {
             "@type": "Organization",
@@ -279,18 +279,17 @@
                     pour vous inscrire et commencer la pratique de l'aïkido.
                 </p>
 
-                <h2>Essayer avant de s'inscrire</h2>
+                <h2 id="essai">Essayer avant de s'inscrire</h2>
                 <p>
-                    Avant de vous engager, nous vous proposons de venir <strong>essayer gratuitement</strong>
-                    pendant les cours d'essai en septembre ou lors de nos séances d'initiation.
+                    <?= htmlspecialchars($club['trial']['invitation']) ?>
                 </p>
 
                 <div class="info-box">
                     <h4 class="info-box__title">Portes ouvertes</h4>
                     <p>
-                        Pendant tout le mois de <strong>septembre</strong>, les cours sont ouverts
-                        aux personnes souhaitant découvrir l'aïkido. Une tenue de sport
-                        (jogging) convient pour les cours d'essai.
+                        Pendant tout le mois de <strong><?= htmlspecialchars($club['trial']['freePeriod']) ?></strong>,
+                        les cours d'essai sont <strong>gratuits</strong> et ouverts à toutes les personnes
+                        souhaitant découvrir l'aïkido. Une tenue de sport (jogging) convient pour les cours d'essai.
                     </p>
                     <p><a href="actualites.php">Voir les dates des événements</a></p>
                 </div>
@@ -507,7 +506,7 @@
                 <div class="info-box">
                     <h4 class="info-box__title">Procédure d'inscription</h4>
                     <ol>
-                        <li>Venez assister à un cours d'essai (gratuit en septembre)</li>
+                        <li>Venez assister à un cours d'essai (gratuit en <?= htmlspecialchars($club['trial']['freePeriod']) ?>)</li>
                         <li>Récupérez la fiche d'inscription auprès des professeurs</li>
                         <li>Complétez le dossier avec les documents demandés</li>
                         <li>Remettez le dossier complet avec le règlement</li>

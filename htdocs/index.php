@@ -164,17 +164,42 @@
     <section class="hero" aria-labelledby="hero-title">
         <div class="hero__content">
             <h1 class="hero__title" id="hero-title">Aïkido Kannagara Guyancourt</h1>
-            <p class="hero__subtitle">Sous la responsabilité pédagogique de Nacer Chekkaba</p>
+            <p class="hero__subtitle">L'art martial de l'harmonie — enfants dès 7 ans, adultes tous niveaux</p>
             <p class="hero__description">
-                Une équipe d'enseignants expérimentés pour les enfants et les adultes.
-                Cours à Guyancourt (78), lundi et jeudi.
+                <?= htmlspecialchars($club['trial']['label']) ?>.
+                Rendez-vous le <?= htmlspecialchars(implode(' et le ', array_map('strtolower', $sch['days']))) ?> à Guyancourt (78).
             </p>
             <div class="hero__buttons">
-                <a href="inscription.php" class="btn btn--primary">S'inscrire</a>
-                <a href="aikido.php" class="btn btn--outline">Découvrir l'Aïkido</a>
+                <a href="inscription.php#essai" class="btn btn--primary">Venez essayer</a>
+                <a href="inscription.php" class="btn btn--outline">S'inscrire</a>
             </div>
         </div>
     </section>
+
+    <!-- Prochains rendez-vous : bandeau auto-extinguible (rien à venir = rien d'affiché) -->
+    <?php
+    require_once __DIR__ . '/includes/evenements-parser.php';
+    $prochains = array_slice(parse_evenements(__DIR__ . '/evenements.md'), 0, 3);
+    ?>
+    <?php if ($prochains): ?>
+    <section class="section section--alt" aria-labelledby="prochains-rdv-title">
+        <div class="container">
+            <div class="info-box">
+                <h2 class="info-box__title" id="prochains-rdv-title">Prochains rendez-vous</h2>
+                <p>Venez nous rencontrer :</p>
+                <ul style="list-style: none; padding: 0; margin: 0.5rem 0 0;">
+                    <?php foreach ($prochains as $evt): ?>
+                    <li style="margin-bottom: 0.35rem;">
+                        <a href="actualites.php?evenement=<?= urlencode($evt['slug']) ?>"><strong><?= htmlspecialchars($evt['title']) ?></strong></a>
+                        — <?= htmlspecialchars(format_date_evenement($evt['date'])) ?><?= $evt['horaire'] ? ', ' . htmlspecialchars($evt['horaire']) : '' ?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+                <p style="margin: 0.75rem 0 0;"><a href="actualites.php">Tous les événements →</a></p>
+            </div>
+        </div>
+    </section>
+    <?php endif; ?>
 
     <!-- Résumé factuel (quick answer pour LLMs) -->
     <section class="section">

@@ -218,9 +218,7 @@
                     Les spectateurs sont les bienvenus (dans le respect du calme nécessaire à la pratique).
                 </p>
                 <p>
-                    Pour les personnes souhaitant essayer l'aïkido, nous vous recommandons de nous
-                    contacter au préalable, notamment en dehors de la période des portes ouvertes
-                    de septembre.
+                    <?= htmlspecialchars($club['trial']['invitation']) ?>
                 </p>
 
                 <div class="info-box">

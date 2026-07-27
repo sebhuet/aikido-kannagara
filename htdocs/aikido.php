@@ -453,6 +453,7 @@
                 <p style="max-width: 600px; margin: 0 auto var(--spacing-lg);">
                     Que vous soyez homme, femme ou enfant, débutant ou pratiquant d'autres disciplines,
                     venez essayer l'aïkido lors de nos cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?>.
+                    <?= htmlspecialchars($club['trial']['invitation']) ?>
                 </p>
                 <a href="inscription.php" class="btn btn--primary">Commencer l'Aïkido</a>
                 <a href="contact.php" class="btn btn--outline">Nous contacter</a>

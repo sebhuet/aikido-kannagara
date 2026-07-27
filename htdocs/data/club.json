@@ -77,7 +77,8 @@
   "hakamaFromGrade": "2e kyu",
   "trial": {
     "freePeriod": "septembre",
-    "label": "Cours d'essai gratuits en septembre, lors des portes ouvertes"
+    "label": "Cours d'essai gratuits en septembre, lors des portes ouvertes",
+    "invitation": "Présentez-vous simplement en début de séance : l'enseignant vous accueillera et conviendra avec vous d'un cours d'essai."
   },
   "social": {
     "Facebook": "https://www.facebook.com/Kannagara-a%C3%AFkido-club-de-Guyancourt-375533475979211/"
