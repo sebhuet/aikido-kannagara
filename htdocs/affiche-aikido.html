@@ -110,16 +110,18 @@
         max-width: 1040px; margin: 10px auto 0; font-weight: 300;
     }
 
-    /* Photo */
+    /* Triptyque photos : accueil / technique / stage. Le cadrage vertical de
+       chaque vignette est calé sur la position des visages dans la photo. */
+    .aff-photos {
+        margin-top: 16px;
+        display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px;
+    }
     .aff-photo {
-        margin-top: 16px; height: 190px;
+        height: 190px;
         border: 6px solid #fff; border-radius: 10px;
         box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22);
         background-color: #dcdce2; background-repeat: no-repeat;
-        background-image: url('images/flyer/travail.jpg');
-        /* 18% : les visages sont dans le quart superieur de la photo ; un cadrage
-           plus bas (32%) les coupait dans ce bandeau etroit. */
-        background-size: cover; background-position: center 18%;
+        background-size: cover;
     }
 
     /* Bandeau essai gratuit */
@@ -249,7 +251,14 @@
                 un chemin pour découvrir et développer ses propres potentiels.
             </p>
 
-            <div class="aff-photo" role="img" aria-label="Deux pratiquantes d'aïkido au dojo"></div>
+            <div class="aff-photos">
+                <div class="aff-photo" role="img" aria-label="Deux pratiquants souriants au dojo"
+                     style="background-image: url('images/flyer/travail.jpg'); background-position: center 20%;"></div>
+                <div class="aff-photo" role="img" aria-label="Immobilisation au tanto (couteau en bois)"
+                     style="background-image: url('images/flyer/self.jpg'); background-position: center 18%;"></div>
+                <div class="aff-photo" role="img" aria-label="Démonstration lors d'un stage"
+                     style="background-image: url('galerie/stages/stage-hiroshi-ikeda-2026-14.jpg'); background-position: center 32%;"></div>
+            </div>
 
             <div class="aff-cta">
                 <div class="aff-cta__big">Essai gratuit</div>
