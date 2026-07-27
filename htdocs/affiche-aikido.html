@@ -112,12 +112,14 @@
 
     /* Photo */
     .aff-photo {
-        margin-top: 16px; height: 170px;
+        margin-top: 16px; height: 190px;
         border: 6px solid #fff; border-radius: 10px;
         box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22);
         background-color: #dcdce2; background-repeat: no-repeat;
         background-image: url('images/flyer/travail.jpg');
-        background-size: cover; background-position: center 32%;
+        /* 18% : les visages sont dans le quart superieur de la photo ; un cadrage
+           plus bas (32%) les coupait dans ce bandeau etroit. */
+        background-size: cover; background-position: center 18%;
     }
 
     /* Bandeau essai gratuit */
