@@ -292,6 +292,58 @@
         </div>
     </section>
 
+    <!-- Le club en images : 4 photos tirées des galeries, rotation quotidienne.
+         Aucune maintenance : toute photo déposée dans galerie/ entre dans la rotation. -->
+    <?php
+    $stripLabels = ['cours' => 'Cours', 'stages' => 'Stages', 'grades' => 'Passages de grades', 'evenements' => 'Événements', 'vie-club' => 'Vie du club'];
+    $stripPool = [];
+    foreach ($stripLabels as $stripSlug => $stripLabel) {
+        $stripDir = __DIR__ . '/galerie/' . $stripSlug;
+        if (!is_dir($stripDir)) continue;
+        foreach (scandir($stripDir) as $stripFile) {
+            if (in_array(strtolower(pathinfo($stripFile, PATHINFO_EXTENSION)), ['jpg', 'jpeg', 'png', 'webp'], true)) {
+                $stripPool[] = ['slug' => $stripSlug, 'file' => $stripFile, 'label' => $stripLabel];
+            }
+        }
+    }
+    $stripPhotos = [];
+    if ($stripPool) {
+        // Graine quotidienne : la sélection change chaque jour mais reste stable dans la
+        // journée (rendu prévisible, cache-friendly). On rétablit ensuite l'aléa normal.
+        mt_srand((int) date('Ymd'));
+        shuffle($stripPool);
+        mt_srand();
+        $stripPhotos = array_slice($stripPool, 0, 4);
+    }
+    ?>
+    <?php if ($stripPhotos): ?>
+    <section class="section section--alt" aria-labelledby="club-images-title">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title" id="club-images-title">Le club en images</h2>
+            </div>
+
+            <div class="photo-strip">
+                <?php foreach ($stripPhotos as $ph):
+                    $src = 'galerie/' . rawurlencode($ph['slug']) . '/' . rawurlencode($ph['file']);
+                ?>
+                <a class="photo-strip__item"
+                   href="galerie.php?photo=<?= urlencode($ph['slug'] . '/' . $ph['file']) ?>"
+                   title="<?= htmlspecialchars($ph['label']) ?> — voir dans la galerie">
+                    <img src="<?= htmlspecialchars($src) ?>"
+                         alt="<?= htmlspecialchars($ph['label']) ?> — la vie du club en photo, Aïkido Kannagara Guyancourt"
+                         loading="lazy">
+                </a>
+                <?php endforeach; ?>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="galerie.php" class="btn btn--outline">Voir toute la galerie</a>
+            </div>
+        </div>
+    </section>
+    <?php endif; ?>
+
     <!-- Nos professeurs (aperçu) -->
     <section class="section section--dark">
         <div class="container">

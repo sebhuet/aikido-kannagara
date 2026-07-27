@@ -534,6 +534,33 @@ p {
   color: var(--color-text-light);
 }
 
+/* ---------- Bandeau photos de l'accueil (« Le club en images ») ---------- */
+.photo-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.photo-strip__item {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4 / 3;
+}
+
+.photo-strip__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-strip__item:hover img,
+.photo-strip__item:focus-visible img {
+  transform: scale(1.04);
+}
+
 /* ---------- Partage Facebook ---------- */
 /* Composant unique, partagé par la galerie et les événements : un bouton de partage
    par page finirait fatalement par diverger. Les modificateurs gèrent le fond. */
