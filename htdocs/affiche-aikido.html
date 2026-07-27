@@ -82,34 +82,39 @@
         box-shadow: 0 0 90px rgba(192, 57, 43, 0.25);
     }
 
-    .content { position: relative; z-index: 10; padding: 56px 80px 0; }
+    .content { position: relative; z-index: 10; padding: 36px 64px 0; }
 
-    /* En-tête */
+    /* En-tête (compact : l'affiche doit loger tout le contenu du flyer) */
     .aff-header { text-align: center; }
-    .aff-header__logo { height: 104px; margin: 0 auto 12px; display: block; }
+    .aff-header__logo { height: 70px; margin: 0 auto 6px; display: block; }
     .aff-header__title {
-        font-size: 140px; font-weight: 900; letter-spacing: 16px; color: var(--ink); line-height: 0.95;
+        font-size: 86px; font-weight: 900; letter-spacing: 11px; color: var(--ink); line-height: 0.95;
     }
     .aff-header__sub {
-        font-size: 26px; color: var(--grey); letter-spacing: 6px; margin-top: 12px;
+        font-size: 21px; color: var(--grey); letter-spacing: 5px; margin-top: 8px;
         font-weight: 300; text-transform: uppercase;
     }
 
-    .separator { width: 150px; height: 4px; background: var(--red); margin: 22px auto; }
+    .separator { width: 130px; height: 4px; background: var(--red); margin: 12px auto; }
 
-    /* Accroche */
+    /* Accroche + présentation */
     .tagline {
-        text-align: center; font-size: 42px; line-height: 1.35; color: var(--ink);
+        text-align: center; font-size: 28px; line-height: 1.3; color: var(--ink);
         font-weight: 700; max-width: 1000px; margin: 0 auto;
     }
     .tagline .red { color: var(--red); }
     .tagline .light { font-weight: 300; }
 
-    /* Grande photo */
+    .lead {
+        text-align: center; font-size: 20px; line-height: 1.35; color: var(--ink);
+        max-width: 1040px; margin: 10px auto 0; font-weight: 300;
+    }
+
+    /* Photo */
     .aff-photo {
-        margin-top: 30px; height: 470px;
-        border: 8px solid #fff; border-radius: 10px;
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+        margin-top: 16px; height: 170px;
+        border: 6px solid #fff; border-radius: 10px;
+        box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22);
         background-color: #dcdce2; background-repeat: no-repeat;
         background-image: url('images/flyer/travail.jpg');
         background-size: cover; background-position: center 32%;
@@ -117,43 +122,82 @@
 
     /* Bandeau essai gratuit */
     .aff-cta {
-        margin-top: 32px; background: var(--red); color: #fff;
-        border-radius: 10px; text-align: center; padding: 22px 30px;
+        margin-top: 18px; background: var(--red); color: #fff;
+        border-radius: 10px; text-align: center; padding: 12px 26px;
         box-shadow: 0 8px 26px rgba(192, 57, 43, 0.3);
     }
-    .aff-cta__big { font-size: 50px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; line-height: 1; }
-    .aff-cta__sub { font-size: 29px; margin-top: 10px; font-weight: 400; }
+    .aff-cta__big { font-size: 36px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; line-height: 1; }
+    .aff-cta__sub { font-size: 21px; margin-top: 6px; font-weight: 400; }
     .aff-cta__sub b { font-weight: 700; }
 
-    /* Infos essentielles */
-    .aff-infos {
-        margin-top: 30px;
-        display: grid; grid-template-columns: 1fr 1fr; gap: 18px 40px;
+    /* Ce que c'est / ce que ce n'est pas (repris du flyer, condensé) */
+    .compare {
+        margin-top: 16px;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px;
     }
-    .aff-info {
-        display: grid; grid-template-columns: 160px 1fr; gap: 14px; align-items: baseline;
+    .compare__head {
+        font-size: 22px; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px;
+        padding-bottom: 2px;
     }
-    .aff-info__label {
-        font-size: 23px; font-weight: 700; color: var(--red);
+    .compare__head--yes { color: var(--ink); }
+    .compare__head--no { color: var(--red); }
+    .compare__cell {
+        font-size: 19.5px; line-height: 1.32; color: var(--ink);
+        padding-left: 30px; position: relative;
+    }
+    .compare__mark {
+        position: absolute; left: 0; top: 1px; font-weight: 900; font-size: 20px;
+    }
+    .compare__mark--yes { color: #2e7d4f; }
+    .compare__mark--no { color: var(--red); }
+
+    /* Bénéfices (repris du verso, condensé en 3 colonnes) */
+    .benefits {
+        margin-top: 16px;
+        display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;
+    }
+    .benefit__title {
+        font-size: 21px; font-weight: 700; color: var(--red);
+        text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;
+    }
+    .benefit__text { font-size: 19.5px; line-height: 1.32; color: var(--ink); }
+
+    /* En pratique (repris du verso : lieu, cours, horaires, tarifs, enseignement, essai) */
+    .practice {
+        margin-top: 16px;
+        border: 2px solid var(--ink); border-radius: 10px; overflow: hidden;
+    }
+    .practice__title {
+        background: var(--ink); color: #fff; font-size: 22px; font-weight: 900;
+        letter-spacing: 2px; text-transform: uppercase; text-align: center; padding: 8px;
+    }
+    .practice__body { padding: 10px 24px 12px; }
+    .practice__row {
+        display: grid; grid-template-columns: 190px 1fr; gap: 14px;
+        padding: 5px 0; align-items: baseline;
+    }
+    .practice__row + .practice__row { border-top: 1px solid rgba(26, 26, 46, 0.12); }
+    .practice__label {
+        font-size: 20px; font-weight: 700; color: var(--red);
         text-transform: uppercase; letter-spacing: 1px;
     }
-    .aff-info__value { font-size: 25px; line-height: 1.35; color: var(--ink); }
-    .aff-info__value b { font-weight: 700; }
-    .aff-info__value .small { font-size: 21px; color: var(--grey); }
+    .practice__value { font-size: 21px; line-height: 1.35; color: var(--ink); }
+    .practice__value b { font-weight: 700; }
+    .practice__value .small { font-size: 18px; color: var(--grey); }
 
     /* Footer */
     .aff-footer {
         position: absolute; bottom: 0; left: 0; right: 0;
         background: var(--ink); color: rgba(255, 255, 255, 0.92);
-        z-index: 25; display: flex; align-items: center; gap: 36px; padding: 26px 70px;
+        z-index: 25; display: flex; align-items: center; gap: 32px; padding: 16px 64px;
     }
-    .aff-footer__qr { background: #fff; padding: 10px; border-radius: 6px; flex-shrink: 0; line-height: 0; }
-    .aff-footer__qr img, .aff-footer__qr canvas { display: block; width: 134px; height: 134px; }
+    .aff-footer__qr { background: #fff; padding: 9px; border-radius: 6px; flex-shrink: 0; line-height: 0; }
+    .aff-footer__qr img, .aff-footer__qr canvas { display: block; width: 104px; height: 104px; }
     .aff-footer__text { flex: 1; text-align: center; }
-    .aff-footer__site { font-size: 46px; font-weight: 900; color: #fff; letter-spacing: 2px; }
-    .aff-footer__contact { font-size: 27px; font-weight: 700; margin-top: 8px; }
+    .aff-footer__site { font-size: 38px; font-weight: 900; color: #fff; letter-spacing: 2px; }
+    .aff-footer__contact { font-size: 23px; font-weight: 700; margin-top: 5px; }
     .aff-footer__contact span { color: var(--red-bright); }
-    .aff-footer__meta { font-size: 20px; margin-top: 8px; opacity: 0.85; letter-spacing: 0.5px; }
+    .aff-footer__meta { font-size: 18px; margin-top: 5px; opacity: 0.85; letter-spacing: 0.5px; }
 
     /* Impression */
     @media print {
@@ -181,7 +225,7 @@
         <div class="top-bar"></div>
 
         <!-- Soleil d'angle -->
-        <div class="deco-sun" style="width: 380px; height: 380px; top: -130px; right: -130px;"></div>
+        <div class="deco-sun" style="width: 300px; height: 300px; top: -110px; right: -110px;"></div>
 
         <div class="content">
             <div class="aff-header">
@@ -193,8 +237,14 @@
             <div class="separator"></div>
 
             <p class="tagline">
-                Un <span class="red">art martial japonais</span> accessible à tous<br>
-                <span class="light">sans compétition, à tout âge, dès 7 ans</span>
+                Un <span class="red">art martial japonais</span> accessible à tous
+                <span class="light">— sans compétition, à tout âge, dès 7 ans</span>
+            </p>
+
+            <p class="lead">
+                Répandu dans le monde entier, l'aïkido a conservé l'esprit et les valeurs des samouraïs
+                qui lui ont donné naissance. Par le travail du corps et de l'esprit, il propose à chacun
+                un chemin pour découvrir et développer ses propres potentiels.
             </p>
 
             <div class="aff-photo" role="img" aria-label="Deux pratiquantes d'aïkido au dojo"></div>
@@ -204,22 +254,109 @@
                 <div class="aff-cta__sub">Venez découvrir l'aïkido <b>tout le mois de septembre</b></div>
             </div>
 
-            <div class="aff-infos">
-                <div class="aff-info">
-                    <div class="aff-info__label">Où</div>
-                    <div class="aff-info__value"><b>Gymnase Maurice Baquet</b><br><span class="small">Mail des Graviers, 78280 Guyancourt</span></div>
+            <div class="compare">
+                <div class="compare__head compare__head--yes">Ce que c'est</div>
+                <div class="compare__head compare__head--no">Ce que ce n'est pas</div>
+
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--yes">✓</span>
+                    Un <b>art martial complet</b> : mains nues, sabre, bâton, couteau,
+                    respiration et concentration.
                 </div>
-                <div class="aff-info">
-                    <div class="aff-info__label">Quand</div>
-                    <div class="aff-info__value">Le <b>lundi</b> et le <b>jeudi</b> soir</div>
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--no">✕</span>
+                    Un <b>sport de compétition</b> : ni classement, ni adversaire à vaincre.
                 </div>
-                <div class="aff-info">
-                    <div class="aff-info__label">Enfants</div>
-                    <div class="aff-info__value"><b>18h00 – 19h00</b> <span class="small">(dès 7 ans)</span></div>
+
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--yes">✓</span>
+                    Une <b>voie de développement personnel</b>, en harmonie avec soi-même et les autres.
                 </div>
-                <div class="aff-info">
-                    <div class="aff-info__label">Adultes</div>
-                    <div class="aff-info__value"><b>19h00 – 20h30</b> puis <b>20h30 – 22h00</b></div>
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--no">✕</span>
+                    Une <b>affaire de force</b> : les techniques reposent sur l'énergie du partenaire.
+                </div>
+
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--yes">✓</span>
+                    Une <b>discipline ouverte à tous</b>, sans prérequis physique ni limite d'âge.
+                </div>
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--no">✕</span>
+                    Une <b>pratique réservée aux sportifs</b> : femmes, enfants et seniors y ont leur place.
+                </div>
+
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--yes">✓</span>
+                    Une <b>école de maîtrise de soi</b>, de calme et de respect mutuel.
+                </div>
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--no">✕</span>
+                    Un <b>art de la violence</b> : on apprend à désamorcer le conflit, pas à le chercher.
+                </div>
+            </div>
+
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit__title">Les pratiquants</div>
+                    <div class="benefit__text">
+                        Aucune aptitude physique requise : la force vient du partenaire.
+                        Femmes, enfants et seniors pratiquent au quotidien.
+                    </div>
+                </div>
+                <div class="benefit">
+                    <div class="benefit__title">Épanouissement</div>
+                    <div class="benefit__text">
+                        Réflexes, coordination, tonicité, souplesse. Chez l'enfant :
+                        psychomotricité, concentration et vie sociale.
+                    </div>
+                </div>
+                <div class="benefit">
+                    <div class="benefit__title">Anti-stress</div>
+                    <div class="benefit__text">
+                        Une activité harmonieuse pour mobiliser toutes ses facultés
+                        et dénouer les tensions du quotidien.
+                    </div>
+                </div>
+            </div>
+
+            <div class="practice">
+                <div class="practice__title">En pratique</div>
+                <div class="practice__body">
+                    <div class="practice__row">
+                        <div class="practice__label">Lieu</div>
+                        <div class="practice__value"><b>Gymnase Maurice Baquet</b> — Mail des Graviers, 78280 Guyancourt</div>
+                    </div>
+                    <div class="practice__row">
+                        <div class="practice__label">Horaires</div>
+                        <div class="practice__value">
+                            Le <b>lundi</b> et le <b>jeudi</b> : enfants <b>18h00 – 19h00</b> <span class="small">(dès 7 ans)</span> ·
+                            adultes <b>19h00 – 20h30</b> puis <b>20h30 – 22h00</b>
+                            <span class="small">(saison 2026-2027)</span>
+                        </div>
+                    </div>
+                    <div class="practice__row">
+                        <div class="practice__label">Tarifs / an</div>
+                        <div class="practice__value">
+                            Enfants <b>190 €</b> · Adultes <b>250 €</b> · Réduit <b>126 €</b> <span class="small">(étudiants, chômeurs)</span>
+                            <span class="small">— licence FFAB et assurance incluses</span>
+                        </div>
+                    </div>
+                    <div class="practice__row">
+                        <div class="practice__label">Enseignement</div>
+                        <div class="practice__value">
+                            Sous la responsabilité pédagogique de <b>Nacer Chekkaba</b> (4e dan), avec
+                            Jean-Marc Chamot (7e dan), Germain Chamot (4e dan kishinkai),
+                            Thierry Montfort (3e dan) et Sébastien Huet (1er dan)
+                        </div>
+                    </div>
+                    <div class="practice__row">
+                        <div class="practice__label">Essai</div>
+                        <div class="practice__value">
+                            Gratuit tout le mois de <b>septembre</b> — le reste de l'année,
+                            présentez-vous simplement en début de séance
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
