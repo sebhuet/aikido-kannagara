@@ -203,11 +203,17 @@
                         <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🏛️</div>
                         <h3 class="card__title">Ville de Guyancourt</h3>
                         <p class="card__text">
-                            La mairie de Guyancourt nous met à disposition le
-                            <strong><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong> pour nos entraînements
-                            et soutient la vie associative locale.
+                            Sans le prêt du
+                            <strong><a href="https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6" target="_blank" rel="noopener" title="Voir sur Google Maps">Gymnase Maurice Baquet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></a></strong>
+                            par la <strong>Ville de Guyancourt</strong>, le club ne pourrait tout simplement pas exister.
+                            Nous lui devons le lieu où nous pratiquons chaque semaine, et la remercions pour son
+                            soutien constant à la vie associative locale.
                         </p>
-                        <a href="https://www.ville-guyancourt.fr" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Visiter</a>
+                        <p class="card__text">
+                            Merci en particulier au
+                            <a href="https://www.ville-guyancourt.fr/vivre-a-guyancourt/sports-loisirs-culture/" target="_blank" rel="noopener">service des sports de la Ville</a>.
+                        </p>
+                        <a href="https://www.ville-guyancourt.fr" target="_blank" rel="noopener" class="btn btn--outline btn--sm">Site de la Ville</a>
                     </div>
                 </div>
 
