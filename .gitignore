@@ -55,3 +55,6 @@ app
 
 # Photos sources pleine résolution (masters) : hors site et hors dépôt
 photos-sources/
+
+# Administration du club (registre courrier, donnees personnelles) : jamais sur GitHub ni sur le site
+admin/
