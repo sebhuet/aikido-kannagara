@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Livret 4 pages — Présentation de l'aïkido — Kannagara Guyancourt</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<style>
+    :root {
+        --ink: #1a1a2e;
+        --red: #c0392b;
+        --red-bright: #e84545;
+        --cream: #fafaf8;
+        --grey: #6b6b76;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+        background: #4a4a52;
+        font-family: "Century Gothic", "Avenir", "Helvetica Neue", Arial, sans-serif;
+        color: var(--ink);
+        padding: 30px 0 60px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* ---------- Barre d'outils (écran uniquement) ---------- */
+    .toolbar {
+        position: sticky; top: 0; z-index: 1000;
+        display: flex; gap: 14px; align-items: center; justify-content: center; flex-wrap: wrap;
+        padding: 14px 20px; margin: -30px 0 30px;
+        background: rgba(26, 26, 46, 0.96);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    }
+    .toolbar__title { color: #fff; font-size: 15px; letter-spacing: 1px; margin-right: 10px; opacity: 0.85; }
+    .btn {
+        border: none; cursor: pointer; font-family: inherit; font-size: 15px; font-weight: 700;
+        letter-spacing: 0.5px; padding: 11px 22px; border-radius: 4px;
+        transition: transform 0.15s ease, background 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn--primary { background: var(--red); color: #fff; }
+    .btn--primary:hover { background: var(--red-bright); }
+    .btn--ghost { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, 0.5); }
+    .btn--ghost:hover { background: rgba(255, 255, 255, 0.12); }
+    .btn:disabled { opacity: 0.5; cursor: wait; transform: none; }
+
+    /* ---------- Pages ---------- */
+    .page-hold {
+        margin: 0 auto 34px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+        overflow: hidden;
+    }
+    .flyer-page {
+        width: 1240px; height: 1754px;
+        position: relative;
+        background: var(--cream);
+        transform-origin: top left;
+        overflow: hidden;
+    }
+
+    .top-bar {
+        position: absolute; top: 0; left: 0; right: 0; height: 10px;
+        background: linear-gradient(to right, var(--ink), var(--red), var(--ink));
+        z-index: 30;
+    }
+
+    .deco-sun {
+        position: absolute; border-radius: 50%;
+        background: radial-gradient(circle at 35% 35%, var(--red-bright) 0%, var(--red) 50%, #a0302b 100%);
+        box-shadow: 0 0 90px rgba(192, 57, 43, 0.25);
+    }
+
+    .content { position: relative; z-index: 10; padding: 52px 72px 0; }
+
+    /* En-tête de couverture */
+    .flyer-header { text-align: center; }
+    .flyer-header__logo { height: 92px; margin: 0 auto 10px; display: block; }
+    .flyer-header__title { font-size: 112px; font-weight: 900; letter-spacing: 14px; color: var(--ink); line-height: 0.95; }
+    .flyer-header__sub {
+        font-size: 24px; color: var(--grey); letter-spacing: 6px; margin-top: 10px;
+        font-weight: 300; text-transform: uppercase;
+    }
+
+    .separator { width: 140px; height: 4px; background: var(--red); margin: 20px auto; }
+    .separator--left { margin: 14px 0 18px; }
+
+    .tagline {
+        text-align: center; font-size: 34px; line-height: 1.3; color: var(--ink);
+        font-weight: 700; max-width: 1000px; margin: 0 auto;
+    }
+    .tagline .red { color: var(--red); }
+    .tagline .light { font-weight: 300; }
+
+    /* Titres de pages / sections */
+    .page-title {
+        font-size: 52px; font-weight: 900; color: var(--ink); text-align: center;
+        letter-spacing: 3px; text-transform: uppercase;
+    }
+    .page-title .num { color: var(--red); }
+    .section-title {
+        font-size: 30px; font-weight: 900; color: var(--ink); letter-spacing: 1px;
+        margin: 26px 0 8px;
+    }
+    .section-title--red { color: var(--red); }
+
+    .lead {
+        font-size: 22px; line-height: 1.45; color: var(--ink); font-weight: 300;
+        text-align: center; max-width: 1040px; margin: 14px auto 0;
+    }
+    p.txt { font-size: 21px; line-height: 1.42; color: var(--ink); margin-top: 6px; }
+    p.txt b { font-weight: 700; }
+    .txt--small { font-size: 19px; color: var(--grey); }
+
+    /* Photo pleine largeur */
+    .hero-banner {
+        margin-top: 24px; height: 420px;
+        border: 7px solid #fff; border-radius: 10px;
+        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.24);
+        background-color: #dcdce2; background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hero-banner--mid { height: 300px; }
+    .hero-banner--tall { height: 380px; }
+
+    /* Tableau comparatif */
+    .compare {
+        margin-top: 26px;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 12px 22px;
+    }
+    .compare__head {
+        font-size: 24px; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px;
+        padding-bottom: 2px;
+    }
+    .compare__head--yes { color: var(--ink); }
+    .compare__head--no { color: var(--red); }
+    .compare__cell { font-size: 20.5px; line-height: 1.36; color: var(--ink); padding-left: 32px; position: relative; }
+    .compare__mark { position: absolute; left: 0; top: 1px; font-weight: 900; font-size: 21px; }
+    .compare__mark--yes { color: #2e7d4f; }
+    .compare__mark--no { color: var(--red); }
+
+    /* Deux colonnes de prose */
+    .cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 40px; margin-top: 8px; }
+
+    /* Cartes (armes, ukemi...) */
+    .cards3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; margin-top: 12px; }
+    .mini-card {
+        border: 2px solid rgba(26, 26, 46, 0.14); border-radius: 10px;
+        padding: 14px 18px; background: #fff;
+    }
+    .mini-card__title { font-size: 22px; font-weight: 900; color: var(--red); letter-spacing: 1px; }
+    .mini-card__jp { font-size: 18px; color: var(--grey); margin-left: 6px; font-weight: 400; }
+    .mini-card__text { font-size: 19.5px; line-height: 1.35; margin-top: 6px; }
+
+    /* Encadré */
+    .box {
+        margin-top: 18px; border-left: 6px solid var(--red);
+        background: #fff; border-radius: 0 10px 10px 0;
+        padding: 16px 22px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+    }
+    .box__title { font-size: 22px; font-weight: 900; color: var(--red); letter-spacing: 1px; text-transform: uppercase; }
+    .box__text { font-size: 20.5px; line-height: 1.4; margin-top: 6px; }
+
+    /* Liste des fondations */
+    .fondations {
+        margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 10px;
+    }
+    .fondation {
+        text-align: center; background: #fff; border: 2px solid rgba(26, 26, 46, 0.14);
+        border-radius: 8px; padding: 10px 6px;
+    }
+    .fondation__jp { font-size: 20px; font-weight: 900; color: var(--ink); }
+    .fondation__fr { font-size: 16.5px; color: var(--grey); margin-top: 2px; }
+
+    /* En pratique (sans tarifs) */
+    .practice { margin-top: 20px; border: 2px solid var(--ink); border-radius: 10px; overflow: hidden; }
+    .practice__title {
+        background: var(--ink); color: #fff; font-size: 23px; font-weight: 900;
+        letter-spacing: 2px; text-transform: uppercase; text-align: center; padding: 9px;
+    }
+    .practice__body { padding: 10px 24px 12px; }
+    .practice__row { display: grid; grid-template-columns: 200px 1fr; gap: 14px; padding: 6px 0; align-items: baseline; }
+    .practice__row + .practice__row { border-top: 1px solid rgba(26, 26, 46, 0.12); }
+    .practice__label { font-size: 20px; font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: 1px; }
+    .practice__value { font-size: 21px; line-height: 1.35; color: var(--ink); }
+    .practice__value b { font-weight: 700; }
+    .practice__value .small { font-size: 18px; color: var(--grey); }
+
+    /* Bas de pages intermédiaires */
+    .page-strip {
+        position: absolute; bottom: 0; left: 0; right: 0;
+        background: var(--ink); color: rgba(255, 255, 255, 0.88);
+        text-align: center; font-size: 20px; letter-spacing: 2px; padding: 14px;
+    }
+    .page-strip span { color: var(--red-bright); font-weight: 700; }
+
+    /* Footer complet (dernière page) */
+    .flyer-footer {
+        position: absolute; bottom: 0; left: 0; right: 0;
+        background: var(--ink); color: rgba(255, 255, 255, 0.92);
+        z-index: 25; display: flex; align-items: center; gap: 32px; padding: 18px 64px;
+    }
+    .flyer-footer__qr { background: #fff; padding: 9px; border-radius: 6px; flex-shrink: 0; line-height: 0; }
+    .flyer-footer__qr img, .flyer-footer__qr canvas { display: block; width: 110px; height: 110px; }
+    .flyer-footer__text { flex: 1; text-align: center; }
+    .flyer-footer__site { font-size: 40px; font-weight: 900; color: #fff; letter-spacing: 2px; }
+    .flyer-footer__contact { font-size: 24px; font-weight: 700; margin-top: 5px; }
+    .flyer-footer__contact span { color: var(--red-bright); }
+    .flyer-footer__meta { font-size: 18px; margin-top: 5px; opacity: 0.85; letter-spacing: 0.5px; }
+
+    /* Impression */
+    @media print {
+        @page { size: A4 portrait; margin: 0; }
+        html, body { background: #fff; padding: 0; margin: 0; }
+        .no-print { display: none !important; }
+        .page-hold {
+            width: 210mm !important; height: 297mm !important; margin: 0 !important;
+            box-shadow: none !important;
+            page-break-after: always; break-after: page;
+        }
+        .page-hold:last-child { page-break-after: auto; break-after: auto; }
+        .flyer-page { transform: scale(0.64) !important; transform-origin: top left; }
+    }
+</style>
+</head>
+<body>
+
+    <div class="toolbar no-print">
+        <span class="toolbar__title">Livret 4 pages — Présentation de l'aïkido — Kannagara Guyancourt</span>
+        <button class="btn btn--primary" id="btn-pdf" onclick="exportPDF()">Télécharger le PDF</button>
+        <button class="btn btn--ghost" onclick="window.print()">Imprimer</button>
+    </div>
+
+    <div id="pages">
+
+    <!-- ================= PAGE 1 — COUVERTURE ================= -->
+    <div class="page-hold">
+    <div class="flyer-page" id="page-1">
+        <div class="top-bar"></div>
+        <div class="deco-sun" style="width: 340px; height: 340px; top: -120px; right: -120px;"></div>
+
+        <div class="content">
+            <div class="flyer-header">
+                <img class="flyer-header__logo" src="images/logo-kannagara.png" alt="Aïkido Kannagara Guyancourt">
+                <div class="flyer-header__title">AÏKIDO</div>
+                <div class="flyer-header__sub">Kannagara · Guyancourt · Affilié FFAB</div>
+            </div>
+
+            <div class="separator"></div>
+
+            <p class="tagline">
+                Un <span class="red">art martial japonais</span> accessible à tous<br>
+                <span class="light">sans compétition, à tout âge, dès 7 ans</span>
+            </p>
+
+            <div class="hero-banner" role="img" aria-label="Deux pratiquants d'aïkido au dojo"
+                 style="background-image: url('images/flyer/travail.jpg'); background-position: center 25%;"></div>
+
+            <h2 class="section-title">L'aïkido en deux mots</h2>
+            <p class="txt">
+                L'aïkido est un art martial japonais de portée universelle. Répandu dans le monde entier,
+                il a conservé l'esprit et les valeurs des samouraïs qui lui ont donné naissance. Par le
+                travail du corps et de l'esprit, il propose à chacun un chemin pour découvrir et développer
+                ses propres potentiels. Le mot « aïkido » se traduit par <b>la voie de l'harmonie des
+                énergies</b> : tout l'art découle de cette recherche d'union entre sa propre énergie et
+                celle du partenaire.
+            </p>
+
+            <div class="compare">
+                <div class="compare__head compare__head--yes">Ce que c'est</div>
+                <div class="compare__head compare__head--no">Ce que ce n'est pas</div>
+
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--yes">✓</span>
+                    Un <b>art martial complet</b> : techniques à mains nues, travail au sabre, au bâton et
+                    au couteau, exercices de respiration et de concentration.
+                </div>
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--no">✕</span>
+                    Un <b>sport de compétition</b> : l'aïkido exclut toute idée de victoire, de classement
+                    ou d'adversaire à vaincre.
+                </div>
+
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--yes">✓</span>
+                    Une <b>voie de développement personnel</b>, en quête d'harmonie avec soi-même, avec les
+                    autres et avec son environnement.
+                </div>
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--no">✕</span>
+                    Une <b>affaire de force</b> : les techniques reposent sur l'énergie du partenaire, non
+                    sur la puissance musculaire.
+                </div>
+
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--yes">✓</span>
+                    Une <b>discipline ouverte à tous</b>, sans prérequis physique ni limite d'âge.
+                </div>
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--no">✕</span>
+                    Une <b>pratique réservée aux plus sportifs</b> : femmes, enfants et seniors y trouvent
+                    naturellement leur place.
+                </div>
+
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--yes">✓</span>
+                    Une <b>école de maîtrise de soi</b>, de calme et de respect mutuel.
+                </div>
+                <div class="compare__cell">
+                    <span class="compare__mark compare__mark--no">✕</span>
+                    Un <b>art de la violence</b> : la pratique apprend à désamorcer le conflit plutôt qu'à
+                    le rechercher.
+                </div>
+            </div>
+        </div>
+
+        <div class="page-strip">Découvrir l'aïkido à Guyancourt · <span>kannagara.fr</span> · page 1/4</div>
+    </div>
+    </div>
+
+    <!-- ================= PAGE 2 — LA PRATIQUE ================= -->
+    <div class="page-hold">
+    <div class="flyer-page" id="page-2">
+        <div class="top-bar"></div>
+        <div class="deco-sun" style="width: 260px; height: 260px; top: -90px; left: -90px; opacity: 0.12; box-shadow: none;"></div>
+
+        <div class="content">
+            <h1 class="page-title"><span class="num">1.</span> La pratique</h1>
+            <div class="separator"></div>
+
+            <p class="txt">
+                L'aïkido se pratique en <b>keikogi</b> (la tenue d'entraînement blanche), puis en
+                <b>hakama</b>, le large pantalon traditionnel, à partir du 2<sup>e</sup> kyu. Chaque cours
+                alterne préparation du corps, chutes et travail des techniques avec des partenaires de tous
+                niveaux — jamais l'un contre l'autre, toujours l'un avec l'autre. Le travail se décline en
+                plusieurs formes : debout (<b>tachi-waza</b>), à genoux (<b>suwari-waza</b>), un partenaire
+                debout et l'autre à genoux (<b>hanmi-handachi</b>), et avec les armes (<b>buki-waza</b>).
+            </p>
+
+            <div class="hero-banner hero-banner--mid" role="img" aria-label="Projection lors d'un cours adultes"
+                 style="background-image: url('images/flyer/mixte.jpg'); background-position: center center;"></div>
+
+            <h2 class="section-title">Le travail aux armes</h2>
+            <p class="txt txt--small">
+                Les armes en bois éclairent les techniques à mains nues : elles enseignent la distance,
+                la précision du geste et le sens du moment juste.
+            </p>
+            <div class="cards3">
+                <div class="mini-card">
+                    <div class="mini-card__title">Le jo <span class="mini-card__jp">bâton</span></div>
+                    <div class="mini-card__text">
+                        Bâton d'environ 1,28 m. Frappes, piques et déplacements ; kata individuels
+                        et travail à deux.
+                    </div>
+                </div>
+                <div class="mini-card">
+                    <div class="mini-card__title">Le bokken <span class="mini-card__jp">sabre</span></div>
+                    <div class="mini-card__text">
+                        Sabre en bois hérité de l'école du sabre japonais. La coupe structure
+                        la plupart des mouvements d'aïkido.
+                    </div>
+                </div>
+                <div class="mini-card">
+                    <div class="mini-card__title">Le tanto <span class="mini-card__jp">couteau</span></div>
+                    <div class="mini-card__text">
+                        Couteau en bois. Travail des défenses et des immobilisations face
+                        à une attaque armée.
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Les chutes — ukemi</h2>
+            <p class="txt">
+                Savoir chuter sans se faire mal est la première liberté du pratiquant : c'est ce qui permet
+                de recevoir les techniques en confiance. Chutes avant (<b>mae ukemi</b>), arrière
+                (<b>ushiro ukemi</b>) et latérales (<b>yoko ukemi</b>) s'apprennent progressivement,
+                au rythme de chacun — c'est aussi un bagage précieux dans la vie quotidienne.
+            </p>
+
+            <h2 class="section-title">La progression</h2>
+            <p class="txt">
+                La progression suit les grades <b>kyu</b>, du 6<sup>e</sup> au 1<sup>er</sup>, puis les
+                grades <b>dan</b>. La tradition de l'aïkido veut que la ceinture reste <b>blanche</b>
+                jusqu'à la ceinture noire : pas de course aux couleurs, chacun avance à son rythme.
+                Le port du hakama, à partir du 2<sup>e</sup> kyu, marque l'engagement dans la voie.
+                Les passages de kyu ont lieu au club ; les grades dan sont délivrés lors d'examens
+                fédéraux FFAB.
+            </p>
+        </div>
+
+        <div class="page-strip">La pratique · <span>kannagara.fr</span> · page 2/4</div>
+    </div>
+    </div>
+
+    <!-- ================= PAGE 3 — UNE VOIE POUR CHACUN ================= -->
+    <div class="page-hold">
+    <div class="flyer-page" id="page-3">
+        <div class="top-bar"></div>
+        <div class="deco-sun" style="width: 260px; height: 260px; top: -90px; right: -90px; opacity: 0.12; box-shadow: none;"></div>
+
+        <div class="content">
+            <h1 class="page-title"><span class="num">2.</span> Une voie pour chacun</h1>
+            <div class="separator"></div>
+
+            <div class="hero-banner hero-banner--tall" role="img" aria-label="Cours enfants au dojo"
+                 style="background-image: url('images/flyer/enfants.jpg'); background-position: center 45%;"></div>
+
+            <div class="cols2">
+                <div>
+                    <h2 class="section-title">Les pratiquants</h2>
+                    <p class="txt">
+                        Les techniques utilisent la force du partenaire et ne demandent aucune aptitude
+                        physique particulière. Le travail musculaire se fait naturellement, selon la
+                        constitution de chacun : femmes, enfants et seniors pratiquent au quotidien,
+                        sur le même tatami.
+                    </p>
+
+                    <h2 class="section-title">Aïkido et les femmes</h2>
+                    <p class="txt">
+                        Pas de force brute, pas de rapport de puissance : les techniques fonctionnent
+                        indépendamment du gabarit. La pratique est mixte, dans un cadre bienveillant
+                        où chacune progresse en confiance.
+                    </p>
+
+                    <h2 class="section-title">Aïkido et les enfants</h2>
+                    <p class="txt">
+                        Dès 7 ans, avec une pédagogie adaptée et ludique : la pratique développe la
+                        psychomotricité, la concentration, le respect des règles et des autres — et
+                        apprend à gérer les conflits autrement que par l'affrontement.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="section-title">Une source d'épanouissement</h2>
+                    <p class="txt">
+                        La pratique développe les réflexes, la coordination, la tonicité et la souplesse.
+                        Elle cultive aussi le calme, la disponibilité et la confiance en soi — des
+                        qualités qui accompagnent le pratiquant bien au-delà du tatami.
+                    </p>
+
+                    <h2 class="section-title">Une réponse au stress</h2>
+                    <p class="txt">
+                        Une activité physique harmonieuse pour mobiliser toutes ses facultés et dénouer
+                        les tensions de la vie contemporaine : on ressort d'un cours fatigué, mais apaisé.
+                    </p>
+
+                    <h2 class="section-title">Aïkido et self-défense</h2>
+                    <p class="txt">
+                        L'aïkido développe la vigilance, le placement et la gestion du stress — des
+                        qualités utiles en situation difficile. Mais il enseigne avant tout à
+                        <b>désamorcer le conflit</b> avant qu'il ne devienne physique : c'est une
+                        approche globale, qui va au-delà des techniques.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box__title">L'esprit du dojo</div>
+                <p class="box__text">
+                    Pas de compétition, pas de classement : chacun est à la fois l'élève et le partenaire
+                    de l'autre. Les plus anciens accompagnent les débutants — c'est ainsi que l'aïkido se
+                    transmet, dans le respect mutuel et la bonne humeur.
+                </p>
+            </div>
+
+            <div class="box" style="border-left-color: var(--ink);">
+                <p class="box__text" style="font-style: italic; font-size: 23px;">
+                    « L'aïkido n'est pas une technique de combat, mais un moyen de s'améliorer soi-même. »
+                </p>
+                <p class="box__text" style="text-align: right; color: var(--grey);">— Maître Nobuyoshi Tamura</p>
+            </div>
+        </div>
+
+        <div class="page-strip">Une voie pour chacun · <span>kannagara.fr</span> · page 3/4</div>
+    </div>
+    </div>
+
+    <!-- ================= PAGE 4 — DES RACINES AU CLUB ================= -->
+    <div class="page-hold">
+    <div class="flyer-page" id="page-4">
+        <div class="top-bar"></div>
+        <div class="deco-sun" style="width: 260px; height: 260px; top: -90px; left: -90px; opacity: 0.12; box-shadow: none;"></div>
+
+        <div class="content">
+            <h1 class="page-title"><span class="num">3.</span> Des racines… au club</h1>
+            <div class="separator"></div>
+
+            <div class="cols2">
+                <div>
+                    <h2 class="section-title">Aux origines</h2>
+                    <p class="txt">
+                        L'aïkido est né au début du XX<sup>e</sup> siècle sous l'impulsion de
+                        <b>Morihei Ueshiba</b> (1883-1969), surnommé Ô Sensei, qui l'a créé en
+                        synthétisant plusieurs arts martiaux traditionnels japonais. Sa vision :
+                        un art capable de vaincre sans blesser, transformant le conflit en harmonie.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="section-title">L'aïkido en France</h2>
+                    <p class="txt">
+                        Introduit dans les années 1950, l'aïkido français doit beaucoup à
+                        <b>Maître Nobuyoshi Tamura</b> (1933-2010), élève direct du fondateur,
+                        qui y a enseigné plus de trente ans, et à <b>Maître André Nocquet</b>,
+                        premier Français parti étudier auprès d'Ô Sensei au Japon.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box__title">Notre filiation</div>
+                <p class="box__text">
+                    Le club s'inscrit dans la lignée de l'enseignement de Maître Tamura, transmis par ses
+                    élèves directs. Jean-Marc Chamot (7<sup>e</sup> dan) a notamment pratiqué avec André
+                    Nocquet, premier uchi-deshi français du fondateur.
+                </p>
+            </div>
+
+            <h2 class="section-title">Les dix fondations selon Maître Tamura</h2>
+            <p class="txt txt--small">
+                Maître Tamura a formalisé dix fondations qui structurent la technique — un fil conducteur
+                que l'on retrouve dans chaque cours.
+            </p>
+            <div class="fondations">
+                <div class="fondation"><div class="fondation__jp">Shisei</div><div class="fondation__fr">posture</div></div>
+                <div class="fondation"><div class="fondation__jp">Kokyu</div><div class="fondation__fr">respiration</div></div>
+                <div class="fondation"><div class="fondation__jp">Kamae</div><div class="fondation__fr">garde</div></div>
+                <div class="fondation"><div class="fondation__jp">Ma-ai</div><div class="fondation__fr">distance</div></div>
+                <div class="fondation"><div class="fondation__jp">Irimi</div><div class="fondation__fr">entrée</div></div>
+                <div class="fondation"><div class="fondation__jp">Tenkan</div><div class="fondation__fr">rotation</div></div>
+                <div class="fondation"><div class="fondation__jp">Ura / Omote</div><div class="fondation__fr">envers / endroit</div></div>
+                <div class="fondation"><div class="fondation__jp">Tai sabaki</div><div class="fondation__fr">déplacement</div></div>
+                <div class="fondation"><div class="fondation__jp">Atemi</div><div class="fondation__fr">frappe</div></div>
+                <div class="fondation"><div class="fondation__jp">Kokyu ryoku</div><div class="fondation__fr">puissance du souffle</div></div>
+            </div>
+
+            <h2 class="section-title">Le club Kannagara</h2>
+            <p class="txt">
+                Fondé en <b>1990</b> à Guyancourt, le club réunit une cinquantaine de licenciés, enfants et
+                adultes, au sein de la <b>Fédération Française d'Aïkido et de Budo (FFAB)</b>. L'enseignement
+                est placé sous la responsabilité pédagogique de <b>Nacer Chekkaba</b> (4<sup>e</sup> dan),
+                entouré d'une équipe de cinq enseignants gradés.
+            </p>
+
+            <div class="practice">
+                <div class="practice__title">En pratique</div>
+                <div class="practice__body">
+                    <div class="practice__row">
+                        <div class="practice__label">Lieu</div>
+                        <div class="practice__value"><b>Gymnase Maurice Baquet</b> — Mail des Graviers, 78280 Guyancourt</div>
+                    </div>
+                    <div class="practice__row">
+                        <div class="practice__label">Horaires</div>
+                        <div class="practice__value">
+                            Le <b>lundi</b> et le <b>jeudi</b> : enfants <b>18h00 – 19h00</b> <span class="small">(dès 7 ans)</span> ·
+                            adultes <b>19h00 – 20h30</b> puis <b>20h30 – 22h00</b>
+                            <span class="small">(saison 2026-2027)</span>
+                        </div>
+                    </div>
+                    <div class="practice__row">
+                        <div class="practice__label">Essai</div>
+                        <div class="practice__value">
+                            Gratuit tout le mois de <b>septembre</b> — le reste de l'année,
+                            présentez-vous simplement en début de séance
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer contact + QR -->
+        <div class="flyer-footer">
+            <div class="flyer-footer__qr" id="qr-code"></div>
+            <div class="flyer-footer__text">
+                <div class="flyer-footer__site">kannagara.fr</div>
+                <div class="flyer-footer__contact"><span>06 76 48 16 01</span> · aikido.kannagara.guyancourt@gmail.com</div>
+                <div class="flyer-footer__meta">Aïkido Kannagara Guyancourt · Affilié à la FFAB · page 4/4</div>
+            </div>
+            <div class="flyer-footer__qr"><img src="images/ffab.png" alt="Fédération Française d'Aïkido et de Budo"></div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        function buildQR() {
+            if (typeof QRCode === "undefined") return;
+            new QRCode(document.getElementById("qr-code"), {
+                text: "https://kannagara.fr", width: 130, height: 130,
+                colorDark: "#1a1a2e", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.M
+            });
+        }
+
+        function fitPreview() {
+            var scale = Math.min(0.66, (window.innerWidth - 48) / 1240);
+            if (scale <= 0) scale = 0.66;
+            document.querySelectorAll(".page-hold").forEach(function (hold) {
+                var page = hold.querySelector(".flyer-page");
+                page.style.transform = "scale(" + scale + ")";
+                hold.style.width = (1240 * scale) + "px";
+                hold.style.height = (1754 * scale) + "px";
+            });
+        }
+
+        window.addEventListener("resize", fitPreview);
+        window.addEventListener("load", function () { buildQR(); fitPreview(); });
+        fitPreview();
+
+        async function exportPDF() {
+            var btn = document.getElementById("btn-pdf");
+            btn.disabled = true;
+            var original = btn.textContent;
+            btn.textContent = "Génération…";
+
+            var pages = [1, 2, 3, 4].map(function (n) { return document.getElementById("page-" + n); });
+            try {
+                var jsPDF = window.jspdf.jsPDF;
+                var pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+
+                for (var i = 0; i < pages.length; i++) {
+                    var page = pages[i];
+                    var hold = page.parentElement;
+                    var savedTransform = page.style.transform;
+                    var savedW = hold.style.width;
+                    var savedH = hold.style.height;
+
+                    page.style.transform = "none";
+                    hold.style.width = "1240px";
+                    hold.style.height = "1754px";
+                    page.offsetHeight;
+
+                    var canvas = await html2canvas(page, {
+                        scale: 2, useCORS: true, allowTaint: true,
+                        width: 1240, height: 1754, windowWidth: 1240, windowHeight: 1754,
+                        backgroundColor: "#fafaf8"
+                    });
+
+                    page.style.transform = savedTransform;
+                    hold.style.width = savedW;
+                    hold.style.height = savedH;
+
+                    if (i > 0) pdf.addPage();
+                    pdf.addImage(canvas.toDataURL("image/jpeg", 0.95), "JPEG", 0, 0, 210, 297);
+                }
+
+                pdf.save("livret-aikido-kannagara.pdf");
+            } catch (err) {
+                alert("Erreur lors de l'export : " + err.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = original;
+            }
+        }
+    </script>
+</body>
+</html>
