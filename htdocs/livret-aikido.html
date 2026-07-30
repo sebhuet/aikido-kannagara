@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Livret 4 pages — Présentation de l'aïkido — Kannagara Guyancourt</title>
+<title>Livret 4 pages · Présentation de l'aïkido · Kannagara Guyancourt</title>
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 <style>
     :root {
@@ -122,8 +122,16 @@
         background-color: #dcdce2; background-repeat: no-repeat;
         background-size: cover;
     }
-    .hero-banner--mid { height: 300px; }
+    .hero-banner--mid { height: 340px; }
     .hero-banner--tall { height: 380px; }
+
+    /* Bandeau a deux photos : moitie de largeur chacune, le ratio se rapproche
+       de celui des photos et les recadrages disparaissent presque. */
+    .hero-duo {
+        margin-top: 24px;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+    .hero-duo .hero-banner { margin-top: 0; }
 
     /* Tableau comparatif */
     .compare {
@@ -229,14 +237,14 @@
 <body>
 
     <div class="toolbar no-print">
-        <span class="toolbar__title">Livret 4 pages — Présentation de l'aïkido — Kannagara Guyancourt</span>
+        <span class="toolbar__title">Livret 4 pages · Présentation de l'aïkido · Kannagara Guyancourt</span>
         <button class="btn btn--primary" id="btn-pdf" onclick="exportPDF()">Télécharger le PDF</button>
         <button class="btn btn--ghost" onclick="window.print()">Imprimer</button>
     </div>
 
     <div id="pages">
 
-    <!-- ================= PAGE 1 — COUVERTURE ================= -->
+    <!-- ================= PAGE 1 - COUVERTURE ================= -->
     <div class="page-hold">
     <div class="flyer-page" id="page-1">
         <div class="top-bar"></div>
@@ -256,8 +264,12 @@
                 <span class="light">sans compétition, à tout âge, dès 7 ans</span>
             </p>
 
-            <div class="hero-banner" role="img" aria-label="Deux pratiquants d'aïkido au dojo"
-                 style="background-image: url('images/flyer/travail.jpg'); background-position: center 25%;"></div>
+            <div class="hero-duo">
+                <div class="hero-banner" role="img" aria-label="Deux pratiquants d'aïkido au dojo"
+                     style="background-image: url('images/flyer/travail.jpg'); background-position: center center;"></div>
+                <div class="hero-banner" role="img" aria-label="Projection lors d'un cours adultes"
+                     style="background-image: url('images/flyer/mixte.jpg'); background-position: center center;"></div>
+            </div>
 
             <h2 class="section-title">L'aïkido en deux mots</h2>
             <p class="txt">
@@ -321,7 +333,7 @@
     </div>
     </div>
 
-    <!-- ================= PAGE 2 — LA PRATIQUE ================= -->
+    <!-- ================= PAGE 2 - LA PRATIQUE ================= -->
     <div class="page-hold">
     <div class="flyer-page" id="page-2">
         <div class="top-bar"></div>
@@ -335,13 +347,17 @@
                 L'aïkido se pratique en <b>keikogi</b> (la tenue d'entraînement blanche), puis en
                 <b>hakama</b>, le large pantalon traditionnel, à partir du 2<sup>e</sup> kyu. Chaque cours
                 alterne préparation du corps, chutes et travail des techniques avec des partenaires de tous
-                niveaux — jamais l'un contre l'autre, toujours l'un avec l'autre. Le travail se décline en
+                niveaux : jamais l'un contre l'autre, toujours l'un avec l'autre. Le travail se décline en
                 plusieurs formes : debout (<b>tachi-waza</b>), à genoux (<b>suwari-waza</b>), un partenaire
                 debout et l'autre à genoux (<b>hanmi-handachi</b>), et avec les armes (<b>buki-waza</b>).
             </p>
 
-            <div class="hero-banner hero-banner--mid" role="img" aria-label="Projection lors d'un cours adultes"
-                 style="background-image: url('images/flyer/mixte.jpg'); background-position: center center;"></div>
+            <div class="hero-duo">
+                <div class="hero-banner hero-banner--mid" role="img" aria-label="Immobilisation au tanto"
+                     style="background-image: url('images/flyer/self.jpg'); background-position: center 15%;"></div>
+                <div class="hero-banner hero-banner--mid" role="img" aria-label="Démonstration lors d'un stage"
+                     style="background-image: url('galerie/stages/stage-hiroshi-ikeda-2026-14.jpg'); background-position: center 25%;"></div>
+            </div>
 
             <h2 class="section-title">Le travail aux armes</h2>
             <p class="txt txt--small">
@@ -372,12 +388,12 @@
                 </div>
             </div>
 
-            <h2 class="section-title">Les chutes — ukemi</h2>
+            <h2 class="section-title">Les chutes (ukemi)</h2>
             <p class="txt">
                 Savoir chuter sans se faire mal est la première liberté du pratiquant : c'est ce qui permet
                 de recevoir les techniques en confiance. Chutes avant (<b>mae ukemi</b>), arrière
                 (<b>ushiro ukemi</b>) et latérales (<b>yoko ukemi</b>) s'apprennent progressivement,
-                au rythme de chacun — c'est aussi un bagage précieux dans la vie quotidienne.
+                au rythme de chacun. C'est aussi un bagage précieux dans la vie quotidienne.
             </p>
 
             <h2 class="section-title">La progression</h2>
@@ -395,7 +411,7 @@
     </div>
     </div>
 
-    <!-- ================= PAGE 3 — UNE VOIE POUR CHACUN ================= -->
+    <!-- ================= PAGE 3 - UNE VOIE POUR CHACUN ================= -->
     <div class="page-hold">
     <div class="flyer-page" id="page-3">
         <div class="top-bar"></div>
@@ -405,8 +421,12 @@
             <h1 class="page-title"><span class="num">2.</span> Une voie pour chacun</h1>
             <div class="separator"></div>
 
-            <div class="hero-banner hero-banner--tall" role="img" aria-label="Cours enfants au dojo"
-                 style="background-image: url('images/flyer/enfants.jpg'); background-position: center 45%;"></div>
+            <div class="hero-duo">
+                <div class="hero-banner hero-banner--tall" role="img" aria-label="Cours enfants au dojo"
+                     style="background-image: url('images/flyer/enfants.jpg'); background-position: center center;"></div>
+                <div class="hero-banner hero-banner--tall" role="img" aria-label="Moment de convivialité entre pratiquants"
+                     style="background-image: url('galerie/stages/stage-hiroshi-ikeda-2026-02.jpg'); background-position: center center;"></div>
+            </div>
 
             <div class="cols2">
                 <div>
@@ -428,7 +448,7 @@
                     <h2 class="section-title">Aïkido et les enfants</h2>
                     <p class="txt">
                         Dès 7 ans, avec une pédagogie adaptée et ludique : la pratique développe la
-                        psychomotricité, la concentration, le respect des règles et des autres — et
+                        psychomotricité, la concentration, le respect des règles et des autres, et
                         apprend à gérer les conflits autrement que par l'affrontement.
                     </p>
                 </div>
@@ -436,7 +456,7 @@
                     <h2 class="section-title">Une source d'épanouissement</h2>
                     <p class="txt">
                         La pratique développe les réflexes, la coordination, la tonicité et la souplesse.
-                        Elle cultive aussi le calme, la disponibilité et la confiance en soi — des
+                        Elle cultive aussi le calme, la disponibilité et la confiance en soi : des
                         qualités qui accompagnent le pratiquant bien au-delà du tatami.
                     </p>
 
@@ -448,7 +468,7 @@
 
                     <h2 class="section-title">Aïkido et self-défense</h2>
                     <p class="txt">
-                        L'aïkido développe la vigilance, le placement et la gestion du stress — des
+                        L'aïkido développe la vigilance, le placement et la gestion du stress : des
                         qualités utiles en situation difficile. Mais il enseigne avant tout à
                         <b>désamorcer le conflit</b> avant qu'il ne devienne physique : c'est une
                         approche globale, qui va au-delà des techniques.
@@ -460,7 +480,7 @@
                 <div class="box__title">L'esprit du dojo</div>
                 <p class="box__text">
                     Pas de compétition, pas de classement : chacun est à la fois l'élève et le partenaire
-                    de l'autre. Les plus anciens accompagnent les débutants — c'est ainsi que l'aïkido se
+                    de l'autre. Les plus anciens accompagnent les débutants : c'est ainsi que l'aïkido se
                     transmet, dans le respect mutuel et la bonne humeur.
                 </p>
             </div>
@@ -469,7 +489,7 @@
                 <p class="box__text" style="font-style: italic; font-size: 23px;">
                     « L'aïkido n'est pas une technique de combat, mais un moyen de s'améliorer soi-même. »
                 </p>
-                <p class="box__text" style="text-align: right; color: var(--grey);">— Maître Nobuyoshi Tamura</p>
+                <p class="box__text" style="text-align: right; color: var(--grey);">Maître Nobuyoshi Tamura</p>
             </div>
         </div>
 
@@ -477,7 +497,7 @@
     </div>
     </div>
 
-    <!-- ================= PAGE 4 — DES RACINES AU CLUB ================= -->
+    <!-- ================= PAGE 4 - DES RACINES AU CLUB ================= -->
     <div class="page-hold">
     <div class="flyer-page" id="page-4">
         <div class="top-bar"></div>
@@ -519,7 +539,7 @@
 
             <h2 class="section-title">Les dix fondations selon Maître Tamura</h2>
             <p class="txt txt--small">
-                Maître Tamura a formalisé dix fondations qui structurent la technique — un fil conducteur
+                Maître Tamura a formalisé dix fondations qui structurent la technique : un fil conducteur
                 que l'on retrouve dans chaque cours.
             </p>
             <div class="fondations">
@@ -548,7 +568,7 @@
                 <div class="practice__body">
                     <div class="practice__row">
                         <div class="practice__label">Lieu</div>
-                        <div class="practice__value"><b>Gymnase Maurice Baquet</b> — Mail des Graviers, 78280 Guyancourt</div>
+                        <div class="practice__value"><b>Gymnase Maurice Baquet</b> · Mail des Graviers, 78280 Guyancourt</div>
                     </div>
                     <div class="practice__row">
                         <div class="practice__label">Horaires</div>
@@ -561,7 +581,7 @@
                     <div class="practice__row">
                         <div class="practice__label">Essai</div>
                         <div class="practice__value">
-                            Gratuit tout le mois de <b>septembre</b> — le reste de l'année,
+                            Gratuit tout le mois de <b>septembre</b> ; le reste de l'année,
                             présentez-vous simplement en début de séance
                         </div>
                     </div>
