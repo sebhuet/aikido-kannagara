@@ -297,6 +297,15 @@ if ($evtPartage) {
                     $cible = $evtPartage && $evtPartage['slug'] === $evt['slug'];
                 ?>
                 <div class="card fade-in<?= $cible ? ' is-ciblee' : '' ?>" data-evenement="<?= htmlspecialchars($evt['slug']) ?>">
+                    <?php if (!empty($evt['image'])):
+                        // Même visuel que l'aperçu Facebook. Segments encodés : certains
+                        // fichiers de la galerie portent des accents.
+                        $imgSrc = implode('/', array_map('rawurlencode', explode('/', ltrim($evt['image'], '/'))));
+                    ?>
+                    <img src="<?= htmlspecialchars($imgSrc) ?>"
+                         alt="<?= htmlspecialchars($evt['title']) ?>"
+                         class="card__image" loading="lazy">
+                    <?php endif; ?>
                     <div class="card__content">
                         <span class="blog-card__date"><?= htmlspecialchars(format_date_evenement($evt['date'])) ?></span>
                         <h3 class="card__title"><?= htmlspecialchars($evt['title']) ?></h3>
