@@ -109,3 +109,91 @@ Venez nous rencontrer, poser vos questions et découvrir l'aïkido.
 
 Venez découvrir l'aïkido gratuitement pendant tout le mois de septembre !
 Cours d'essai ouverts à tous.
+
+## Portes ouvertes : venez essayer
+
+- date: 03/09/2026
+- horaire: Adultes 19h30 - 21h30 (séance d'été)
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Journée portes ouvertes : venez essayer gratuitement l'aïkido.
+Présentez-vous simplement en début de séance avec une tenue souple,
+l'enseignant vous accueillera.
+
+## Portes ouvertes : venez essayer
+
+- date: 07/09/2026
+- horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Journée portes ouvertes : venez essayer gratuitement l'aïkido.
+Présentez-vous simplement en début de séance avec une tenue souple,
+l'enseignant vous accueillera.
+
+## Portes ouvertes : venez essayer
+
+- date: 10/09/2026
+- horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Journée portes ouvertes : venez essayer gratuitement l'aïkido.
+Présentez-vous simplement en début de séance avec une tenue souple,
+l'enseignant vous accueillera.
+
+## Portes ouvertes : venez essayer
+
+- date: 14/09/2026
+- horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Journée portes ouvertes : venez essayer gratuitement l'aïkido.
+Présentez-vous simplement en début de séance avec une tenue souple,
+l'enseignant vous accueillera.
+
+## Portes ouvertes : venez essayer
+
+- date: 17/09/2026
+- horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Journée portes ouvertes : venez essayer gratuitement l'aïkido.
+Présentez-vous simplement en début de séance avec une tenue souple,
+l'enseignant vous accueillera.
+
+## Portes ouvertes : venez essayer
+
+- date: 21/09/2026
+- horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Journée portes ouvertes : venez essayer gratuitement l'aïkido.
+Présentez-vous simplement en début de séance avec une tenue souple,
+l'enseignant vous accueillera.
+
+## Portes ouvertes : venez essayer
+
+- date: 24/09/2026
+- horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Journée portes ouvertes : venez essayer gratuitement l'aïkido.
+Présentez-vous simplement en début de séance avec une tenue souple,
+l'enseignant vous accueillera.
+
+## Portes ouvertes : venez essayer
+
+- date: 28/09/2026
+- horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Journée portes ouvertes : venez essayer gratuitement l'aïkido.
+Présentez-vous simplement en début de séance avec une tenue souple,
+l'enseignant vous accueillera.
