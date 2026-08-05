@@ -59,8 +59,8 @@ découvrir l'aïkido avant la rentrée.
 ## Initiation "Découvrir avant de s'inscrire"
 
 - date: 29/08/2026
-- horaire: 9h à 13h
-- lieu: Gymnase de l'Aviation
+- horaire: 9h à 11h
+- lieu: Salle de boxe du Gymnase de l'Aviation
 - animateur: Sébastien Huet
 - image: galerie/stages/stage-hiroshi-ikeda-2026-05.jpg
 
