@@ -176,6 +176,31 @@
         </div>
     </section>
 
+    <!-- Moments de pratique : bandeau de 4 visuels sous le hero. Sélection fixe et curatée
+         (distincte du bandeau « Le club en images » en bas de page, qui tourne au hasard
+         chaque jour depuis la galerie). -->
+    <?php
+    $pratique = [
+        ['file' => 'travail.jpg', 'alt' => "Travail à deux à mains nues, cours d'aïkido adultes"],
+        ['file' => 'mixte.jpg', 'alt' => "Projection en aïkido, cours adultes"],
+        ['file' => 'enfants.jpg', 'alt' => "Cours enfants d'aïkido, travail au bâton"],
+        ['file' => 'self.jpg', 'alt' => "Immobilisation au sol, technique d'aïkido"],
+    ];
+    ?>
+    <section class="section" aria-label="Moments de pratique">
+        <div class="container">
+            <div class="photo-strip">
+                <?php foreach ($pratique as $ph): ?>
+                <div class="photo-strip__item">
+                    <img src="images/flyer/<?= htmlspecialchars($ph['file']) ?>"
+                         alt="<?= htmlspecialchars($ph['alt']) ?>, Aïkido Kannagara Guyancourt"
+                         loading="lazy">
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
     <!-- Prochains rendez-vous : bandeau auto-extinguible (rien à venir = rien d'affiché) -->
     <?php
     require_once __DIR__ . '/includes/evenements-parser.php';
