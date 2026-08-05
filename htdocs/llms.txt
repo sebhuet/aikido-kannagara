@@ -1,25 +1,25 @@
-# Aikido Kannagara Guyancourt
+# Aïkido Kannagara Guyancourt
 
-> Club d'aikido a Guyancourt (Yvelines, France), fonde en 1990, affilie a la FFAB.
-> Responsabilite pedagogique assuree par Nacer Chekkaba (4e Dan Aikido FFAB, BE1).
-> Jean-Marc Chamot (7e Dan d'aikido, cadre technique FFAB, forme aupres d'Andre Nocquet,
-> premier uchi-deshi etranger du fondateur de l'aikido, et de Maitre Tamura Nobuyoshi)
+> Club d'aïkido a Guyancourt (Yvelines, France), fonde en 1990, affilie a la FFAB.
+> Responsabilite pedagogique assuree par Nacer Chekkaba (4e Dan Aïkido FFAB, BE1).
+> Jean-Marc Chamot (7e Dan d'aïkido, cadre technique FFAB, forme aupres d'Andre Nocquet,
+> premier uchi-deshi etranger du fondateur de l'aïkido, et de Maitre Tamura Nobuyoshi)
 > intervient regulierement. Cours enfants (des 7 ans) et adultes, lundi et jeudi,
 > au Gymnase Maurice Baquet.
 
 ## A propos
 
-Aikido Kannagara Guyancourt est un club d'aikido situe a Guyancourt (78280), en Ile-de-France.
+Aïkido Kannagara Guyancourt est un club d'aïkido situe a Guyancourt (78280), en Ile-de-France.
 Fonde en 1990 par Noel Stella, le club compte environ 50 licencies dont une vingtaine
-d'enfants. Il est affilie a la Federation Francaise d'Aikido et de Budo (FFAB) et agree
+d'enfants. Il est affilie a la Federation Francaise d'Aïkido et de Budo (FFAB) et agree
 Jeunesse et Sports.
 
-La responsabilite pedagogique des cours est assuree par Nacer Chekkaba (4e Dan Aikido FFAB,
+La responsabilite pedagogique des cours est assuree par Nacer Chekkaba (4e Dan Aïkido FFAB,
 BE1). Le club beneficie en outre de l'intervention reguliere de Jean-Marc Chamot (7e Dan
-Aikido, 4e Dan Iaido), titulaire du DESJEPS et cadre technique FFAB. Ce dernier a commence
-l'aikido au debut des annees 1970 aupres d'Andre Nocquet, premier uchi-deshi (eleve interne)
-etranger de Morihei Ueshiba, fondateur de l'aikido. Sa reference principale est Tamura
-Nobuyoshi, l'un des plus grands maitres d'aikido. Il a egalement assure l'interpretariat pour
+Aïkido, 4e Dan Iaido), titulaire du DESJEPS et cadre technique FFAB. Ce dernier a commence
+l'aïkido au debut des annees 1970 aupres d'Andre Nocquet, premier uchi-deshi (eleve interne)
+etranger de Morihei Ueshiba, fondateur de l'aïkido. Sa reference principale est Tamura
+Nobuyoshi, l'un des plus grands maitres d'aïkido. Il a egalement assure l'interpretariat pour
 Sugano Seichi pendant neuf ans et s'est entraine a Iwama avec Saito Morihiro. Il dirige des
 stages en France et a l'etranger depuis pres de 40 ans.
 
@@ -42,8 +42,8 @@ stages en France et a l'etranger depuis pres de 40 ans.
 
 ## Encadrement
 
-- Responsable pedagogique : Nacer Chekkaba, 4e Dan Aikido FFAB, BE1
-- Intervenant regulier / referent technique : Jean-Marc Chamot, 7e Dan Aikido, 4e Dan Iaido,
+- Responsable pedagogique : Nacer Chekkaba, 4e Dan Aïkido FFAB, BE1
+- Intervenant regulier / referent technique : Jean-Marc Chamot, 7e Dan Aïkido, 4e Dan Iaido,
   DESJEPS, cadre technique FFAB
 
 Jean-Marc Chamot est forme aupres d'Andre Nocquet (premier etranger uchi-deshi de Ueshiba) et
@@ -54,42 +54,42 @@ et de direction de stages.
 
 ## Equipe enseignante
 
-- Nacer Chekkaba : 4e Dan Aikido FFAB, BE1 (responsable pedagogique)
-- Jean-Marc Chamot : 7e Dan Aikido, 4e Dan Iaido, DESJEPS, cadre technique FFAB (intervenant regulier)
-- Thierry Montfort : 4e Dan Aikido FFAB, BE1
-- Germain Chamot : 4e Dan Aikido Kishinkai, redacteur en chef Dragon Magazine Special Aikido
-- Sebastien Huet : 1er Dan Aikido FFAB, anime les seances d'initiation
+- Nacer Chekkaba : 4e Dan Aïkido FFAB, BE1 (responsable pedagogique)
+- Jean-Marc Chamot : 7e Dan Aïkido, 4e Dan Iaido, DESJEPS, cadre technique FFAB (intervenant regulier)
+- Thierry Montfort : 4e Dan Aïkido FFAB, BE1
+- Germain Chamot : 4e Dan Aïkido Kishinkai, redacteur en chef Dragon Magazine Special Aïkido
+- Sebastien Huet : 1er Dan Aïkido FFAB, anime les seances d'initiation
 
-## L'Aikido
+## L'Aïkido
 
-L'aikido est un art martial japonais fonde par Morihei Ueshiba (1883-1969).
+L'aïkido est un art martial japonais fonde par Morihei Ueshiba (1883-1969).
 Caracteristiques principales :
 - Pas de competition
 - Techniques basees sur l'utilisation de la force de l'adversaire
 - Accessible a tous (femmes, hommes, enfants, seniors)
 - Travail avec et sans armes (jo, bokken, tanto)
 
-L'aikido developpe des qualites essentielles pour la self-defense :
+L'aïkido developpe des qualites essentielles pour la self-defense :
 vigilance, anticipation, placement, gestion du stress.
 Il enseigne a desamorcer les conflits avant qu'ils ne deviennent physiques.
 
 ## Pages du site
 
-- [Accueil](https://kannagara.fr/): Page principale du club Aikido Kannagara Guyancourt
-- [L'Aikido](https://kannagara.fr/aikido.php): Histoire, philosophie, self-defense, femmes, enfants
+- [Accueil](https://kannagara.fr/): Page principale du club Aïkido Kannagara Guyancourt
+- [L'Aïkido](https://kannagara.fr/aikido.php): Histoire, philosophie, self-defense, femmes, enfants
 - [Le Club](https://kannagara.fr/club.php): Presentation, historique, affiliations
 - [Professeurs](https://kannagara.fr/professeurs.php): Equipe de 5 enseignants diplomes avec biographies
 - [Actualites](https://kannagara.fr/actualites.php): Evenements a venir et activites du club
 - [Galerie](https://kannagara.fr/galerie.php): Photos des cours, stages, vie du club et art
-- [Blog](https://kannagara.fr/blog.php): Articles et reflexions sur l'aikido
+- [Blog](https://kannagara.fr/blog.php): Articles et reflexions sur l'aïkido
 - [Agenda](https://kannagara.fr/agenda.php): Calendrier des cours et presence des professeurs
 - [Inscription](https://kannagara.fr/inscription.php): Procedure, documents, tarifs 2026-2027
-- [FAQ](https://kannagara.fr/faq.php): Questions frequentes sur l'aikido et le club
+- [FAQ](https://kannagara.fr/faq.php): Questions frequentes sur l'aïkido et le club
 - [Contact](https://kannagara.fr/contact.php): Coordonnees, plan d'acces, formulaire
 
 ## Optional
 
-- [Lexique](https://kannagara.fr/lexique.php): Vocabulaire japonais et termes techniques de l'aikido
-- [Fondations](https://kannagara.fr/fondations.php): Les 10 fondations de l'aikido selon Maitre Tamura
+- [Lexique](https://kannagara.fr/lexique.php): Vocabulaire japonais et termes techniques de l'aïkido
+- [Fondations](https://kannagara.fr/fondations.php): Les 10 fondations de l'aïkido selon Maitre Tamura
 - [Armes](https://kannagara.fr/armes.php): Jo, bokken, tanto et buki waza
 - [Grades](https://kannagara.fr/grades.php): Systeme kyu/dan et programme technique
