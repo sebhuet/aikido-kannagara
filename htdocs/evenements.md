@@ -62,7 +62,7 @@ découvrir l'aïkido avant la rentrée.
 - horaire: 9h à 11h
 - lieu: Salle de boxe du Gymnase de l'Aviation
 - animateur: Sébastien Huet
-- image: galerie/stages/stage-hiroshi-ikeda-2026-05.jpg
+- image: images/evenements/decouvrir.jpg
 
 Séance spéciale d'initiation pour les personnes qui souhaitent
 découvrir l'aïkido avant la rentrée, dans un cadre adapté aux débutants.
@@ -73,7 +73,7 @@ Aucune tenue ni expérience requise.
 - date: 05/09/2026
 - horaire: 9h à 14h30
 - lieu: Gymnase des Droits de l'Homme
-- image: galerie/evenements/baquet-en-fête-2026-02.jpg
+- image: images/evenements/assos_en_fete.jpg
 
 Forum des associations de la Ville de Guyancourt : le club y tient un stand.
 Venez nous rencontrer, poser vos questions et découvrir l'aïkido.
@@ -85,7 +85,7 @@ Programme complet sur le site de la Ville de Guyancourt.
 - horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
-- image: galerie/vie-club/vie-du-club-02.jpg
+- image: images/evenements/premier_cours.jpg
 
 Reprise des cours pour tous, anciens et nouveaux pratiquants.
 C'est aussi le jour où entrent en vigueur les horaires de la saison 2026-2027.
@@ -116,6 +116,7 @@ Cours d'essai ouverts à tous.
 - horaire: Adultes 19h30 - 21h30 (séance d'été)
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/portes_ouvertes.jpg
 
 Journée portes ouvertes : venez essayer gratuitement l'aïkido.
 Présentez-vous simplement en début de séance avec une tenue souple,
@@ -127,6 +128,7 @@ l'enseignant vous accueillera.
 - horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/portes_ouvertes.jpg
 
 Journée portes ouvertes : venez essayer gratuitement l'aïkido.
 Présentez-vous simplement en début de séance avec une tenue souple,
@@ -138,6 +140,7 @@ l'enseignant vous accueillera.
 - horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/portes_ouvertes.jpg
 
 Journée portes ouvertes : venez essayer gratuitement l'aïkido.
 Présentez-vous simplement en début de séance avec une tenue souple,
@@ -149,6 +152,7 @@ l'enseignant vous accueillera.
 - horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/portes_ouvertes.jpg
 
 Journée portes ouvertes : venez essayer gratuitement l'aïkido.
 Présentez-vous simplement en début de séance avec une tenue souple,
@@ -160,6 +164,7 @@ l'enseignant vous accueillera.
 - horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/portes_ouvertes.jpg
 
 Journée portes ouvertes : venez essayer gratuitement l'aïkido.
 Présentez-vous simplement en début de séance avec une tenue souple,
@@ -171,6 +176,7 @@ l'enseignant vous accueillera.
 - horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/portes_ouvertes.jpg
 
 Journée portes ouvertes : venez essayer gratuitement l'aïkido.
 Présentez-vous simplement en début de séance avec une tenue souple,
@@ -182,6 +188,7 @@ l'enseignant vous accueillera.
 - horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/portes_ouvertes.jpg
 
 Journée portes ouvertes : venez essayer gratuitement l'aïkido.
 Présentez-vous simplement en début de séance avec une tenue souple,
@@ -193,6 +200,7 @@ l'enseignant vous accueillera.
 - horaire: Enfants 18h00 - 19h00 · Adultes à partir de 19h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/portes_ouvertes.jpg
 
 Journée portes ouvertes : venez essayer gratuitement l'aïkido.
 Présentez-vous simplement en début de séance avec une tenue souple,
