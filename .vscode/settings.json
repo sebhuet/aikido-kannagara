@@ -12,5 +12,8 @@
     "prettier.proseWrap": "preserve",
     "prettier.tabWidth": 2,
     "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "chat.tools.terminal.autoApprove": {
+        "E:\\Tools\\php\\php.exe": true
+    }
 }

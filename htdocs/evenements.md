@@ -205,3 +205,10 @@ l'enseignant vous accueillera.
 Journée portes ouvertes : venez essayer gratuitement l'aïkido.
 Présentez-vous simplement en début de séance avec une tenue souple,
 l'enseignant vous accueillera.
+
+## Stage Brahim Si Guesmi
+- date: 08/11/2026
+- horaire: Adultes 10h00 - 12h30 14h30-17h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/brahim.jpg
