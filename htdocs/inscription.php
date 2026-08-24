@@ -305,8 +305,8 @@
                                 Formulaire d'inscription au club, à compléter et signer.
                             </p>
                             <p class="card__text">
-                                <a href="docs/Bulletin%20adh%C3%A9sion%20adultes.pdf" target="_blank">Bulletin adultes (PDF)</a><br>
-                                <a href="docs/Bulletin%20adh%C3%A9sion%20mineur.pdf" target="_blank">Bulletin mineurs (PDF)</a>
+                                <a href="docs/Bulletin%20adh%C3%A9sion%20adulte%202026%20-%202027.pdf" target="_blank">Bulletin adultes 2026-2027 (PDF)</a><br>
+                                <a href="docs/Bulletin%20adh%C3%A9sion%20mineur%202026%20-%202027.pdf" target="_blank">Bulletin mineurs 2026-2027 (PDF)</a>
                             </p>
                         </div>
                     </div>

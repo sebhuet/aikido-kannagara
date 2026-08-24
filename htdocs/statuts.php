@@ -35,8 +35,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <!-- Marked.js for Markdown parsing -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <?php $active = 'statuts'; include 'includes/header.php'; ?>
@@ -53,14 +51,23 @@
         </div>
     </section>
 
-    <!-- Contenu des statuts -->
+    <!-- Statuts révisés -->
     <section class="section">
         <div class="container">
-            <div class="content" id="markdown-content" style="max-width: 900px; margin: 0 auto;">
-                <p>Chargement...</p>
-            </div>
+            <object
+                data="docs/Kannagara%20_%20Statuts_Rev.%202026.pdf"
+                type="application/pdf"
+                aria-label="Statuts révisés de l'association Kannagara"
+                style="display: block; width: 100%; height: 80vh; min-height: 600px; max-width: 900px; margin: 0 auto;"
+            >
+                <p class="text-center">
+                    Votre navigateur ne peut pas afficher ce PDF.
+                    <a href="docs/Kannagara%20_%20Statuts_Rev.%202026.pdf">Télécharger les statuts révisés en 2026</a>.
+                </p>
+            </object>
 
             <div class="text-center mt-4" style="max-width: 900px; margin: var(--spacing-xl) auto 0;">
+                <a href="docs/Kannagara%20_%20Statuts_Rev.%202026.pdf" class="btn btn--primary" download>Télécharger les statuts (PDF)</a>
                 <a href="reglement-interieur.php" class="btn btn--primary">Règlement intérieur</a>
                 <a href="mentions-legales.php" class="btn btn--outline">Mentions légales</a>
             </div>
@@ -71,17 +78,5 @@
 
     <!-- JavaScript -->
     <script src="js/main.js" defer></script>
-    <script>
-        // Charger et afficher le contenu markdown
-        fetch('statuts.md')
-            .then(response => response.text())
-            .then(markdown => {
-                document.getElementById('markdown-content').innerHTML = marked.parse(markdown);
-            })
-            .catch(error => {
-                document.getElementById('markdown-content').innerHTML = '<p>Erreur lors du chargement du contenu.</p>';
-                console.error('Erreur:', error);
-            });
-    </script>
 </body>
 </html>
