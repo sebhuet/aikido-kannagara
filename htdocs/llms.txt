@@ -57,7 +57,6 @@ et de direction de stages.
 - Nacer Chekkaba : 4e Dan Aïkido FFAB, BE1 (responsable pedagogique)
 - Jean-Marc Chamot : 7e Dan Aïkido, 4e Dan Iaido, DESJEPS, cadre technique FFAB (intervenant regulier)
 - Thierry Montfort : 4e Dan Aïkido FFAB, BE1
-- Germain Chamot : 4e Dan Aïkido Kishinkai, redacteur en chef Dragon Magazine Special Aïkido
 - Sebastien Huet : 1er Dan Aïkido FFAB, anime les seances d'initiation
 
 ## L'Aïkido
@@ -78,7 +77,7 @@ Il enseigne a desamorcer les conflits avant qu'ils ne deviennent physiques.
 - [Accueil](https://kannagara.fr/): Page principale du club Aïkido Kannagara Guyancourt
 - [L'Aïkido](https://kannagara.fr/aikido.php): Histoire, philosophie, self-defense, femmes, enfants
 - [Le Club](https://kannagara.fr/club.php): Presentation, historique, affiliations
-- [Professeurs](https://kannagara.fr/professeurs.php): Equipe de 5 enseignants diplomes avec biographies
+- [Professeurs](https://kannagara.fr/professeurs.php): Equipe de 4 enseignants diplomes avec biographies
 - [Actualites](https://kannagara.fr/actualites.php): Evenements a venir et activites du club
 - [Galerie](https://kannagara.fr/galerie.php): Photos des cours, stages, vie du club et art
 - [Blog](https://kannagara.fr/blog.php): Articles et reflexions sur l'aïkido

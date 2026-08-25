@@ -28,7 +28,7 @@ s'appliquent : enfants 18h30 - 19h30, adultes 19h30 - 21h30.
 - Peut décider de donner cours à tout moment via le groupe WhatsApp
 - Arbitre suprême de l'agenda : ses décisions priment sur toutes les règles par défaut
 
-**Germain Chamot, Thierry Montfort, Nacer Chekkaba** :
+**Thierry Montfort, Nacer Chekkaba** :
 - Se répartissent les cours restants (lundis et jeudis non attribués)
 - Répartition équitable : idéalement le même nombre de cours pour chacun
 - Quand un professeur donne cours, il assure les deux créneaux (enfants + adultes)

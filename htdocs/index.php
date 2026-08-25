@@ -394,11 +394,6 @@
                         <p class="team-member__grade">4ème Dan Aïkido FFAB</p>
                     </div>
                     <div class="team-member teachers-carousel__slide">
-                        <img src="professeurs/fiches/04-germain-chamot.jpg" alt="Germain Chamot" class="team-member__photo" loading="lazy">
-                        <h3 class="team-member__name">Germain Chamot</h3>
-                        <p class="team-member__grade">4ème Dan Aïkido Kishinkai</p>
-                    </div>
-                    <div class="team-member teachers-carousel__slide">
                         <img src="professeurs/fiches/05-sebastien-huet.jpg" alt="Sébastien Huet" class="team-member__photo" loading="lazy">
                         <h3 class="team-member__name">Sébastien Huet</h3>
                         <p class="team-member__grade">1er Dan Aïkido FFAB</p>
@@ -408,8 +403,7 @@
                     <button class="teachers-carousel__dot active" data-slide="0" aria-label="Voir Jean-Marc Chamot"></button>
                     <button class="teachers-carousel__dot" data-slide="1" aria-label="Voir Nacer Chekkaba"></button>
                     <button class="teachers-carousel__dot" data-slide="2" aria-label="Voir Thierry Montfort"></button>
-                    <button class="teachers-carousel__dot" data-slide="3" aria-label="Voir Germain Chamot"></button>
-                    <button class="teachers-carousel__dot" data-slide="4" aria-label="Voir Sébastien Huet"></button>
+                    <button class="teachers-carousel__dot" data-slide="3" aria-label="Voir Sébastien Huet"></button>
                 </div>
             </div>
 
