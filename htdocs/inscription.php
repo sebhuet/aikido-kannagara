@@ -294,6 +294,41 @@
                     <p><a href="actualites.php">Voir les dates des événements</a></p>
                 </div>
 
+                <h2 id="temoignage">Le témoignage d'un parent</h2>
+                <figure class="temoignage">
+                    <blockquote>
+                        <p>
+                            Mes deux enfants ont pratiqué l’aïkido pendant plusieurs années et sont tous les deux
+                            ravis de cette activité. Ils ont pu bénéficier d’un cadre à la fois sérieux et
+                            bienveillant, qui leur a permis de progresser continuellement tout en prenant confiance
+                            en leurs capacités.
+                        </p>
+                        <p>
+                            Ils attendaient toujours les cours avec impatience et avaient plaisir à nous raconter
+                            les nouvelles choses apprises et les petites réussites accomplies. Les professeurs sont
+                            très attentionnés, à l’écoute et savent encourager chaque enfant en respectant son
+                            rythme et sa personnalité.
+                        </p>
+                        <p>
+                            Les passages de ceinture sont également de grands moments de fierté, très gratifiants
+                            pour les enfants et qui leur permettent de mesurer le chemin parcouru. L’ambiance des
+                            cours est formidable : il y a de l’exigence et de la discipline, mais toujours dans la
+                            bonne humeur et la détente.
+                        </p>
+                        <p>
+                            Ma fille, qui continue l’année prochaine, souligne d’ailleurs que c’est à l’aïkido
+                            qu’elle a noué ses meilleures amitiés, et les plus durables !
+                        </p>
+                        <p>
+                            Je recommande donc ce club les yeux fermés à tout parent qui hésiterait à y inscrire
+                            son enfant. Et puisque l’on peut toujours commencer par un cours d’essai avant de
+                            s’engager, n’hésitez pas à tenter l’expérience : c’est sans doute le meilleur moyen de
+                            se faire une idée et de prendre une décision en toute confiance.
+                        </p>
+                    </blockquote>
+                    <figcaption>Laëtitia Coilliot, maman de Niels et Thémis</figcaption>
+                </figure>
+
                 <h2>Documents nécessaires</h2>
                 <p>Pour vous inscrire, vous devrez fournir les documents suivants :</p>
 

@@ -272,6 +272,31 @@
         </div>
     </section>
 
+    <!-- Témoignage (extrait, texte complet sur inscription.php#temoignage) -->
+    <section class="section" aria-labelledby="temoignage-title">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title" id="temoignage-title">Ils nous font confiance</h2>
+            </div>
+
+            <figure class="temoignage" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                <blockquote>
+                    <p>
+                        Ils ont pu bénéficier d’un cadre à la fois sérieux et bienveillant, qui leur a permis
+                        de progresser continuellement tout en prenant confiance en leurs capacités. […]
+                        Ma fille, qui continue l’année prochaine, souligne d’ailleurs que c’est à l’aïkido
+                        qu’elle a noué ses meilleures amitiés, et les plus durables !
+                    </p>
+                </blockquote>
+                <figcaption>Laëtitia, maman de deux jeunes pratiquants</figcaption>
+            </figure>
+
+            <div class="text-center mt-3">
+                <a href="inscription.php#temoignage">Lire le témoignage complet →</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Horaires -->
     <section class="section section--alt">
         <div class="container">
