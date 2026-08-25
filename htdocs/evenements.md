@@ -207,8 +207,17 @@ Présentez-vous simplement en début de séance avec une tenue souple,
 l'enseignant vous accueillera.
 
 ## Stage Brahim Si Guesmi
+
 - date: 08/11/2026
-- horaire: Adultes 10h00 - 12h30 14h30-17h00
+- horaire: Adultes 09h30 - 12h30 14h0-17h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
 - image: images/evenements/brahim.jpg
+
+## Stage Alexia Houette & Xavier Raujol
+
+- date: 24/01/2027
+- horaire: Adultes 09h30 - 12h30 14h0-17h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/alexia_xavier.jpg
