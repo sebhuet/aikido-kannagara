@@ -391,7 +391,7 @@
                     <div class="team-member teachers-carousel__slide">
                         <img src="professeurs/fiches/03-thierry-montfort.jpg" alt="Thierry Montfort" class="team-member__photo" loading="lazy">
                         <h3 class="team-member__name">Thierry Montfort</h3>
-                        <p class="team-member__grade">4ème Dan Aïkido FFAB</p>
+                        <p class="team-member__grade">3ème Dan Aïkido FFAB</p>
                     </div>
                     <div class="team-member teachers-carousel__slide">
                         <img src="professeurs/fiches/05-sebastien-huet.jpg" alt="Sébastien Huet" class="team-member__photo" loading="lazy">
