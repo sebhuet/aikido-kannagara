@@ -30,14 +30,14 @@ $saisonReprise = date('d/m/Y', strtotime($club['seasonStart']));
     <meta property="og:url" content="https://kannagara.fr/septembre-bouge.php">
     <meta property="og:title" content="Septembre Bouge : portes ouvertes d'aïkido à Guyancourt">
     <meta property="og:description" content="Cours d'essai gratuits tout le mois de septembre au club Kannagara, dans le cadre de l'opération nationale Septembre Bouge.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/evenements/septembre-bouge.jpg">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Septembre Bouge : portes ouvertes d'aïkido à Guyancourt">
     <meta name="twitter:description" content="Cours d'essai gratuits tout le mois de septembre au club Kannagara.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/evenements/septembre-bouge.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -61,7 +61,7 @@ $saisonReprise = date('d/m/Y', strtotime($club['seasonStart']));
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "sport": "Aïkido",
-        "image": "https://kannagara.fr/images/logo-kannagara.jpg",
+        "image": "https://kannagara.fr/images/evenements/septembre-bouge.jpg",
         "location": {
             "@type": "Place",
             "name": "<?= $loc['venue'] ?>",
@@ -118,6 +118,16 @@ $saisonReprise = date('d/m/Y', strtotime($club['seasonStart']));
     <section class="section">
         <div class="container">
             <div class="content" style="max-width: 900px; margin: 0 auto;">
+
+                <!-- Visuel officiel de l'opération (kit de communication du ministère des Sports) -->
+                <figure style="margin: 0 0 var(--spacing-xl);">
+                    <img src="images/evenements/septembre-bouge.jpg"
+                         alt="Septembre Bouge, le mois de l'activité physique et sportive : visuel officiel de l'opération nationale"
+                         style="width: 100%; height: auto; display: block; border-radius: 8px; box-shadow: var(--shadow-md);">
+                    <figcaption style="text-align: right; font-size: 0.85rem; color: var(--color-text-light); margin-top: 0.5rem;">
+                        Visuel officiel · Ministère des Sports, de la Jeunesse et de la Vie associative
+                    </figcaption>
+                </figure>
 
                 <p class="text-center" style="font-size: 1.125rem; margin-bottom: var(--spacing-xl);">
                     Un mois pour remettre l'activité physique et sportive au cœur du quotidien :
