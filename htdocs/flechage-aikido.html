@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Fléchage A4 — Aïkido Kannagara Guyancourt</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<style>
+    :root {
+        --ink: #1a1a2e;
+        --red: #c0392b;
+        --red-bright: #e84545;
+        --cream: #fafaf8;
+        --grey: #6b6b76;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+        background: #4a4a52;
+        font-family: "Century Gothic", "Avenir", "Helvetica Neue", Arial, sans-serif;
+        color: var(--ink);
+        padding: 30px 0 60px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* ---------- Barre d'outils (écran uniquement) ---------- */
+    .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 14px 20px;
+        margin: -30px 0 30px;
+        background: rgba(26, 26, 46, 0.96);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    }
+    .toolbar__title { color: #fff; font-size: 15px; letter-spacing: 1px; margin-right: 10px; opacity: 0.85; }
+    .btn {
+        border: none; cursor: pointer; font-family: inherit; font-size: 15px; font-weight: 700;
+        letter-spacing: 0.5px; padding: 11px 22px; border-radius: 4px;
+        transition: transform 0.15s ease, background 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn--primary { background: var(--red); color: #fff; }
+    .btn--primary:hover { background: var(--red-bright); }
+    .btn--ghost { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, 0.5); }
+    .btn--ghost:hover { background: rgba(255, 255, 255, 0.12); }
+    .btn:disabled { opacity: 0.5; cursor: wait; transform: none; }
+
+    .page-label {
+        text-align: center; color: rgba(255, 255, 255, 0.75);
+        font-size: 15px; letter-spacing: 2px; text-transform: uppercase;
+        margin: 34px 0 10px;
+    }
+    .page-label:first-of-type { margin-top: 0; }
+
+    /* ---------- Pages ---------- */
+    .page-hold {
+        margin: 0 auto;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+        overflow: hidden;
+    }
+    .sign-page {
+        width: 1240px;
+        height: 1754px;
+        position: relative;
+        background: var(--cream);
+        transform-origin: top left;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-page--paysage { width: 1754px; height: 1240px; }
+
+    .top-bar {
+        position: absolute; top: 0; left: 0; right: 0; height: 10px;
+        background: linear-gradient(to right, var(--ink), var(--red), var(--ink));
+        z-index: 30;
+    }
+
+    /* Soleil d'angle */
+    .deco-sun {
+        position: absolute; border-radius: 50%;
+        background: radial-gradient(circle at 35% 35%, var(--red-bright) 0%, var(--red) 50%, #a0302b 100%);
+        box-shadow: 0 0 90px rgba(192, 57, 43, 0.25);
+        width: 340px; height: 340px; top: -120px; right: -120px;
+    }
+
+    /* ---------- Portrait : en-tête puis flèche ---------- */
+    .sign-header { position: relative; z-index: 10; text-align: center; padding-top: 90px; }
+    .sign-header__logo { height: 120px; margin: 0 auto 18px; display: block; }
+    .sign-header__title {
+        font-size: 205px; font-weight: 900; color: var(--ink); line-height: 0.95;
+        letter-spacing: 22px; padding-left: 22px;
+    }
+    .separator { width: 170px; height: 6px; background: var(--red); margin: 26px auto; }
+    .sign-header__sub {
+        font-size: 42px; color: var(--grey); letter-spacing: 9px; padding-left: 9px;
+        font-weight: 300; text-transform: uppercase;
+    }
+
+    .sign-arrow {
+        position: relative; z-index: 10; flex: 1;
+        display: flex; align-items: center; justify-content: center;
+    }
+    /* Chaque direction a son propre tracé SVG (pas de rotation CSS : html2canvas
+       et certains moteurs d'impression les ignorent). */
+    .sign-arrow svg {
+        width: 720px; height: 720px; display: block;
+        filter: drop-shadow(0 18px 40px rgba(192, 57, 43, 0.28));
+    }
+
+    /* ---------- Paysage : flèche et texte côte à côte ---------- */
+    .paysage-body {
+        position: relative; z-index: 10; flex: 1;
+        display: flex; align-items: center; justify-content: center;
+        gap: 30px; padding: 70px 90px 20px;
+    }
+    .paysage-body .sign-arrow { flex: 0 0 640px; }
+    .paysage-body .sign-arrow svg { width: 620px; height: 620px; }
+    .paysage-header { position: relative; z-index: 10; text-align: center; flex: 1; }
+    .paysage-header__logo { height: 110px; margin: 0 auto 16px; display: block; }
+    .paysage-header__title {
+        font-size: 160px; font-weight: 900; color: var(--ink); line-height: 0.95;
+        letter-spacing: 17px; padding-left: 17px;
+    }
+    .paysage-header .separator { margin: 22px auto; }
+    .paysage-header__sub {
+        font-size: 37px; color: var(--grey); letter-spacing: 8px; padding-left: 8px;
+        font-weight: 300; text-transform: uppercase;
+    }
+
+    /* Bandeau de pied */
+    .page-strip {
+        position: relative; z-index: 25;
+        background: var(--ink); color: rgba(255, 255, 255, 0.88);
+        text-align: center; font-size: 30px; letter-spacing: 2px; padding: 26px;
+    }
+    .page-strip span { color: var(--red-bright); font-weight: 700; }
+
+    /* Impression : pages nommées pour mélanger portrait et paysage */
+    @media print {
+        @page { size: A4 portrait; margin: 0; }
+        @page paysage { size: A4 landscape; margin: 0; }
+        html, body { background: #fff; padding: 0; margin: 0; }
+        .no-print { display: none !important; }
+        .page-hold {
+            width: 210mm !important; height: 297mm !important; margin: 0 !important;
+            box-shadow: none !important;
+            page-break-after: always; break-after: page;
+        }
+        .page-hold--paysage {
+            page: paysage;
+            width: 297mm !important; height: 210mm !important;
+        }
+        .page-hold:last-child { page-break-after: auto; break-after: auto; }
+        .sign-page { transform: scale(0.64) !important; transform-origin: top left; }
+    }
+</style>
+</head>
+<body>
+
+    <div class="toolbar no-print">
+        <span class="toolbar__title">Fléchage A4 · 5 directions · Aïkido Kannagara Guyancourt</span>
+        <button class="btn btn--primary" id="btn-pdf" onclick="exportPDF()">Télécharger le PDF</button>
+        <button class="btn btn--ghost" onclick="window.print()">Imprimer</button>
+    </div>
+
+    <div id="pages">
+
+    <!-- ================= PAGE 1 - FLÈCHE GAUCHE (PAYSAGE) ================= -->
+    <div class="page-label no-print">Page 1 · Flèche vers la gauche (paysage)</div>
+    <div class="page-hold page-hold--paysage">
+    <div class="sign-page sign-page--paysage" id="page-1">
+        <div class="top-bar"></div>
+        <div class="deco-sun"></div>
+
+        <div class="paysage-body">
+            <div class="sign-arrow" role="img" aria-label="Flèche vers la gauche">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#c0392b" d="M8 100 L100 20 L100 69 L192 69 L192 131 L100 131 L100 180 Z"/>
+                </svg>
+            </div>
+            <div class="paysage-header">
+                <img class="paysage-header__logo" src="images/logo-kannagara.png" alt="Aïkido Kannagara Guyancourt">
+                <div class="paysage-header__title">AÏKIDO</div>
+                <div class="separator"></div>
+                <div class="paysage-header__sub">Kannagara · Guyancourt</div>
+            </div>
+        </div>
+
+        <div class="page-strip">Aïkido Kannagara Guyancourt · <span>kannagara.fr</span></div>
+    </div>
+    </div>
+
+    <!-- ================= PAGE 2 - FLÈCHE DROITE (PAYSAGE) ================= -->
+    <div class="page-label no-print">Page 2 · Flèche vers la droite (paysage)</div>
+    <div class="page-hold page-hold--paysage">
+    <div class="sign-page sign-page--paysage" id="page-2">
+        <div class="top-bar"></div>
+        <div class="deco-sun"></div>
+
+        <div class="paysage-body">
+            <div class="paysage-header">
+                <img class="paysage-header__logo" src="images/logo-kannagara.png" alt="Aïkido Kannagara Guyancourt">
+                <div class="paysage-header__title">AÏKIDO</div>
+                <div class="separator"></div>
+                <div class="paysage-header__sub">Kannagara · Guyancourt</div>
+            </div>
+            <div class="sign-arrow" role="img" aria-label="Flèche vers la droite">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#c0392b" d="M192 100 L100 180 L100 131 L8 131 L8 69 L100 69 L100 20 Z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="page-strip">Aïkido Kannagara Guyancourt · <span>kannagara.fr</span></div>
+    </div>
+    </div>
+
+    <!-- ================= PAGE 3 - TOUT DROIT (PORTRAIT) ================= -->
+    <div class="page-label no-print">Page 3 · Tout droit</div>
+    <div class="page-hold">
+    <div class="sign-page" id="page-3">
+        <div class="top-bar"></div>
+        <div class="deco-sun"></div>
+
+        <div class="sign-header">
+            <img class="sign-header__logo" src="images/logo-kannagara.png" alt="Aïkido Kannagara Guyancourt">
+            <div class="sign-header__title">AÏKIDO</div>
+            <div class="separator"></div>
+            <div class="sign-header__sub">Kannagara · Guyancourt</div>
+        </div>
+
+        <div class="sign-arrow" role="img" aria-label="Flèche tout droit">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#c0392b" d="M100 8 L180 100 L131 100 L131 192 L69 192 L69 100 L20 100 Z"/>
+            </svg>
+        </div>
+
+        <div class="page-strip">Aïkido Kannagara Guyancourt · <span>kannagara.fr</span></div>
+    </div>
+    </div>
+
+    <!-- ================= PAGE 4 - VERS LE HAUT, À DROITE (PORTRAIT) ================= -->
+    <div class="page-label no-print">Page 4 · Vers le haut, à droite</div>
+    <div class="page-hold">
+    <div class="sign-page" id="page-4">
+        <div class="top-bar"></div>
+        <div class="deco-sun"></div>
+
+        <div class="sign-header">
+            <img class="sign-header__logo" src="images/logo-kannagara.png" alt="Aïkido Kannagara Guyancourt">
+            <div class="sign-header__title">AÏKIDO</div>
+            <div class="separator"></div>
+            <div class="sign-header__sub">Kannagara · Guyancourt</div>
+        </div>
+
+        <div class="sign-arrow" role="img" aria-label="Flèche vers le haut, à droite">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#c0392b" d="M165 35 L156.6 156.6 L121.9 121.9 L56.9 187 L13 143.1 L78.1 78.1 L43.4 43.4 Z"/>
+            </svg>
+        </div>
+
+        <div class="page-strip">Aïkido Kannagara Guyancourt · <span>kannagara.fr</span></div>
+    </div>
+    </div>
+
+    <!-- ================= PAGE 5 - VERS LE HAUT, À GAUCHE (PORTRAIT) ================= -->
+    <div class="page-label no-print">Page 5 · Vers le haut, à gauche</div>
+    <div class="page-hold">
+    <div class="sign-page" id="page-5">
+        <div class="top-bar"></div>
+        <div class="deco-sun"></div>
+
+        <div class="sign-header">
+            <img class="sign-header__logo" src="images/logo-kannagara.png" alt="Aïkido Kannagara Guyancourt">
+            <div class="sign-header__title">AÏKIDO</div>
+            <div class="separator"></div>
+            <div class="sign-header__sub">Kannagara · Guyancourt</div>
+        </div>
+
+        <div class="sign-arrow" role="img" aria-label="Flèche vers le haut, à gauche">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#c0392b" d="M35 35 L43.4 156.6 L78.1 121.9 L143.1 187 L187 143.1 L121.9 78.1 L156.6 43.4 Z"/>
+            </svg>
+        </div>
+
+        <div class="page-strip">Aïkido Kannagara Guyancourt · <span>kannagara.fr</span></div>
+    </div>
+    </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        function pageSize(page) {
+            var paysage = page.classList.contains("sign-page--paysage");
+            return paysage ? { w: 1754, h: 1240, paysage: true } : { w: 1240, h: 1754, paysage: false };
+        }
+
+        function fitPreview() {
+            document.querySelectorAll(".page-hold").forEach(function (hold) {
+                var page = hold.querySelector(".sign-page");
+                var size = pageSize(page);
+                var scale = Math.min(0.66, (window.innerWidth - 48) / size.w);
+                if (scale <= 0) scale = 0.66;
+                page.style.transform = "scale(" + scale + ")";
+                hold.style.width = (size.w * scale) + "px";
+                hold.style.height = (size.h * scale) + "px";
+            });
+        }
+
+        window.addEventListener("resize", fitPreview);
+        window.addEventListener("load", fitPreview);
+        fitPreview();
+
+        async function exportPDF() {
+            var btn = document.getElementById("btn-pdf");
+            btn.disabled = true;
+            var original = btn.textContent;
+            btn.textContent = "Génération…";
+
+            var pages = [1, 2, 3, 4, 5].map(function (n) { return document.getElementById("page-" + n); });
+            try {
+                var jsPDF = window.jspdf.jsPDF;
+                var pdf = new jsPDF({ orientation: "landscape", unit: "mm", format: "a4" });
+
+                for (var i = 0; i < pages.length; i++) {
+                    var page = pages[i];
+                    var size = pageSize(page);
+                    var hold = page.parentElement;
+                    var savedTransform = page.style.transform;
+                    var savedW = hold.style.width;
+                    var savedH = hold.style.height;
+
+                    page.style.transform = "none";
+                    hold.style.width = size.w + "px";
+                    hold.style.height = size.h + "px";
+                    page.offsetHeight;
+
+                    var canvas = await html2canvas(page, {
+                        scale: 2, useCORS: true, allowTaint: true,
+                        width: size.w, height: size.h, windowWidth: size.w, windowHeight: size.h,
+                        backgroundColor: "#fafaf8"
+                    });
+
+                    page.style.transform = savedTransform;
+                    hold.style.width = savedW;
+                    hold.style.height = savedH;
+
+                    if (i > 0) pdf.addPage("a4", size.paysage ? "landscape" : "portrait");
+                    pdf.addImage(canvas.toDataURL("image/jpeg", 0.95), "JPEG", 0, 0,
+                        size.paysage ? 297 : 210, size.paysage ? 210 : 297);
+                }
+
+                pdf.save("flechage-aikido-kannagara.pdf");
+            } catch (err) {
+                alert("Erreur lors de l'export : " + err.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = original;
+            }
+        }
+    </script>
+</body>
+</html>
