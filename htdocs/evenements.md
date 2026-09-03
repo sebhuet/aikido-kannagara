@@ -209,7 +209,7 @@ l'enseignant vous accueillera.
 ## Stage Brahim Si Guesmi
 
 - date: 08/11/2026
-- horaire: Adultes 09h30 - 12h30 14h0-17h00
+- horaire: Adultes 09h30 - 12h30 14h00 - 17h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
 - image: images/evenements/brahim.jpg
@@ -217,15 +217,17 @@ l'enseignant vous accueillera.
 ## Stage Alexia Houette & Xavier Raujol
 
 - date: 24/01/2027
-- horaire: Adultes 09h30 - 12h30 14h0-17h00
+- horaire: Adultes 09h30 - 12h30 14h00 - 17h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
 - image: images/evenements/alexia_xavier.jpg
 
 ## Stage Jean-Marc Chamot
 
-- date: 14/04/2027
+- date: 11/04/2027
+- horaire: Adultes 09h30 - 12h30 14h00 - 17h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: galerie/art/IMG-20211122-WA0013.jpeg
 
 Stage ouvert à tous les licenciés, tous les groupements.
