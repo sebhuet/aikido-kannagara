@@ -221,3 +221,11 @@ l'enseignant vous accueillera.
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
 - image: images/evenements/alexia_xavier.jpg
+
+## Stage Jean-Marc Chamot
+
+- date: 14/04/2027
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Stage ouvert à tous les licenciés, tous les groupements.
