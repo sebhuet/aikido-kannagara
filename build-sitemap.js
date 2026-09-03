@@ -32,6 +32,7 @@ const PAGES = [
   { url: "/faq.php", priority: 0.7, changefreq: "monthly" },
   { url: "/agenda.php", priority: 0.8, changefreq: "weekly" },
   { url: "/actualites.php", priority: 0.8, changefreq: "weekly" },
+  { url: "/septembre-bouge.php", priority: 0.6, changefreq: "yearly" },
   { url: "/blog.php", priority: 0.8, changefreq: "weekly" },
   { url: "/galerie.php", priority: 0.6, changefreq: "monthly" },
   { url: "/llms.txt", priority: 0.4, changefreq: "monthly" },

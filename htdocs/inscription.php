@@ -290,6 +290,8 @@
                         Pendant tout le mois de <strong><?= htmlspecialchars($club['trial']['freePeriod']) ?></strong>,
                         les cours d'essai sont <strong>gratuits</strong> et ouverts à toutes les personnes
                         souhaitant découvrir l'aïkido. Une tenue de sport (jogging) convient pour les cours d'essai.
+                        Ces portes ouvertes s'inscrivent dans l'opération nationale
+                        <a href="septembre-bouge.php">Septembre Bouge</a>.
                     </p>
                     <p><a href="actualites.php">Voir les dates des événements</a></p>
                 </div>
