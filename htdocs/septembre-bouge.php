@@ -14,8 +14,8 @@ $saisonReprise = date('d/m/Y', strtotime($club['seasonStart']));
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Septembre Bouge | Portes ouvertes d'aïkido à Guyancourt</title>
-    <meta name="description" content="Le club Aïkido Kannagara Guyancourt participe à Septembre Bouge : cours d'essai gratuits tout le mois de septembre, enfants dès 7 ans et adultes. Fête du Sport le lundi 14 septembre.">
+    <title>Septembre bouge avec l'Aïkido | Portes ouvertes à Guyancourt</title>
+    <meta name="description" content="Septembre bouge avec l'Aïkido : le club Kannagara Guyancourt participe à l'opération nationale Septembre Bouge. Cours d'essai gratuits tout le mois de septembre, enfants dès 7 ans et adultes.">
     <meta name="keywords" content="Septembre Bouge, Fête du Sport, portes ouvertes, aïkido, aikido, cours essai gratuit, Guyancourt, sport santé, rentrée sportive">
     <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
@@ -28,14 +28,14 @@ $saisonReprise = date('d/m/Y', strtotime($club['seasonStart']));
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kannagara.fr/septembre-bouge.php">
-    <meta property="og:title" content="Septembre Bouge : portes ouvertes d'aïkido à Guyancourt">
+    <meta property="og:title" content="Septembre bouge avec l'Aïkido : portes ouvertes à Guyancourt">
     <meta property="og:description" content="Cours d'essai gratuits tout le mois de septembre au club Kannagara, dans le cadre de l'opération nationale Septembre Bouge.">
     <meta property="og:image" content="https://kannagara.fr/images/evenements/septembre-bouge.jpg">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Septembre Bouge : portes ouvertes d'aïkido à Guyancourt">
+    <meta name="twitter:title" content="Septembre bouge avec l'Aïkido : portes ouvertes à Guyancourt">
     <meta name="twitter:description" content="Cours d'essai gratuits tout le mois de septembre au club Kannagara.">
     <meta name="twitter:image" content="https://kannagara.fr/images/evenements/septembre-bouge.jpg">
 
@@ -52,7 +52,7 @@ $saisonReprise = date('d/m/Y', strtotime($club['seasonStart']));
     {
         "@context": "https://schema.org",
         "@type": "SportsEvent",
-        "name": "Portes ouvertes d'aïkido · Septembre Bouge",
+        "name": "Septembre bouge avec l'Aïkido",
         "description": "Cours d'essai gratuits d'aïkido tout le mois de septembre, pour enfants (dès 7 ans) et adultes, dans le cadre de l'opération nationale Septembre Bouge.",
         "url": "https://kannagara.fr/septembre-bouge.php",
         "startDate": "<?= $club['seasonStart'] ?>",
@@ -107,9 +107,9 @@ $saisonReprise = date('d/m/Y', strtotime($club['seasonStart']));
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1 class="page-header__title">Septembre Bouge</h1>
+            <h1 class="page-header__title">Septembre bouge avec l'Aïkido</h1>
             <p class="page-header__breadcrumb">
-                <a href="index.php">Accueil</a> / Septembre Bouge
+                <a href="index.php">Accueil</a> / Septembre bouge avec l'Aïkido
             </p>
         </div>
     </section>
@@ -131,8 +131,9 @@ $saisonReprise = date('d/m/Y', strtotime($club['seasonStart']));
 
                 <p class="text-center" style="font-size: 1.125rem; margin-bottom: var(--spacing-xl);">
                     Un mois pour remettre l'activité physique et sportive au cœur du quotidien :
-                    le club Kannagara participe à l'opération nationale
-                    <strong>Septembre Bouge</strong> avec ses portes ouvertes de septembre.
+                    avec <strong>« Septembre bouge avec l'Aïkido »</strong>, le club Kannagara
+                    participe à l'opération nationale <strong>Septembre Bouge</strong>
+                    à l'occasion de ses portes ouvertes de septembre.
                 </p>
 
                 <h2>Qu'est-ce que Septembre Bouge ?</h2>
