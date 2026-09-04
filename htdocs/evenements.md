@@ -99,6 +99,7 @@ C'est aussi le jour où entrent en vigueur les horaires de la saison 2026-2027.
 
 Le club tient un stand au forum des associations AS Minorange (Bouygues), à Challenger.
 Venez nous rencontrer, poser vos questions et découvrir l'aïkido.
+Événement réservé aux salariés du groupe Bouygues, non ouvert aux extérieurs.
 
 ## Portes ouvertes
 
