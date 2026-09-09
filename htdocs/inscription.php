@@ -328,7 +328,7 @@
                             se faire une idée et de prendre une décision en toute confiance.
                         </p>
                     </blockquote>
-                    <figcaption>Laëtitia Coilliot, maman de Niels et Thémis</figcaption>
+                    <figcaption>Laëtitia, maman de Niels et Thémis</figcaption>
                 </figure>
 
                 <h2>Documents nécessaires</h2>
