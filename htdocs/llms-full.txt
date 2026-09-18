@@ -234,19 +234,20 @@ sont ouverts aux personnes souhaitant decouvrir l'aïkido. Le reste de l'annee, 
 simplement en debut de seance : l'enseignant vous accueillera et conviendra avec vous d'un
 cours d'essai. Une tenue de sport (jogging) convient pour les cours d'essai.
 
-### Adhesion en ligne
-L'adhesion de la saison 2026-2027 se fait en ligne, avec paiement par carte bancaire, sur le
-formulaire HelloAsso du club : https://www.helloasso.com/associations/aikido-kannagara-guyancourt/adhesions/adhesion-2026-2027
+### Paiement en ligne
+La cotisation de la saison 2026-2027 peut se regler par carte bancaire sur la page HelloAsso du
+club : https://www.helloasso.com/associations/aikido-kannagara-guyancourt/adhesions/adhesion-2026-2027
 La contribution volontaire proposee par HelloAsso au paiement est facultative (peut etre ramenee a 0).
-Les pieces non jointes au formulaire (attestation de sante ou certificat medical, photo, justificatif
-de tarif reduit) sont a remettre aux enseignants au dojo. L'inscription au dojo avec le bulletin
-papier et le reglement reste possible.
+Le paiement en ligne ne remplace pas le dossier : le bulletin d'adhesion (a retirer au club ou a
+telecharger) reste a completer, signer et remettre en main propre au club, avec l'attestation de
+sante ou le certificat medical, la photo et le justificatif de tarif reduit le cas echeant.
+Le reglement peut aussi se faire directement au club.
 
 ### Documents necessaires
-- Fiche d'inscription (formulaire HelloAsso en ligne, ou bulletin papier adultes ou mineurs)
+- Bulletin d'adhesion adultes ou mineurs (a retirer au club ou telecharger), remis en main propre au club
 - Attestation de questionnaire de sante (certificat medical seulement dans certains cas, voir ci-dessous)
 - Photo d'identite
-- Reglement de la cotisation (paiement en plusieurs fois possible)
+- Reglement de la cotisation, au club ou en ligne sur HelloAsso (paiement en plusieurs fois possible)
 
 ### Certificat medical et questionnaire de sante
 Le certificat medical annuel n'est plus la regle. Le questionnaire de sante est confidentiel :
@@ -372,10 +373,10 @@ Q: Quand peut-on s'inscrire ?
 R: Principalement en septembre lors des portes ouvertes, mais aussi en cours d'annee selon
 les places disponibles.
 
-Q: Peut-on s'inscrire et payer en ligne ?
-R: Oui, sur le formulaire d'adhesion HelloAsso du club (paiement par carte bancaire) :
+Q: Peut-on payer la cotisation en ligne ?
+R: Oui, par carte bancaire sur la page HelloAsso du club :
 https://www.helloasso.com/associations/aikido-kannagara-guyancourt/adhesions/adhesion-2026-2027
-L'inscription au dojo avec le bulletin papier reste possible.
+Le bulletin d'adhesion reste a completer, signer et remettre en main propre au club.
 
 Q: Quels documents fournir ?
 R: Formulaire d'inscription, attestation de questionnaire de sante, photo d'identite, reglement de la

@@ -283,14 +283,19 @@
                 </p>
 
                 <div class="info-box" id="adhesion">
-                    <h4 class="info-box__title">Adhésion en ligne · saison <?= htmlspecialchars($club['season']) ?></h4>
+                    <h4 class="info-box__title">Paiement en ligne · saison <?= htmlspecialchars($club['season']) ?></h4>
                     <p>
-                        Vous pouvez désormais adhérer au club et régler votre cotisation en ligne, par carte bancaire,
-                        sur notre formulaire <strong><?= htmlspecialchars($club['membership']['provider']) ?></strong>.
-                        Le paiement est sécurisé et vous recevez votre reçu par e-mail.
+                        Vous pouvez désormais régler votre cotisation en ligne, par carte bancaire, sur notre page
+                        <strong><?= htmlspecialchars($club['membership']['provider']) ?></strong>. Le paiement est sécurisé
+                        et vous recevez votre reçu par e-mail.
+                    </p>
+                    <p>
+                        <strong>Le paiement en ligne ne remplace pas le dossier d'adhésion</strong> : le bulletin
+                        d'adhésion reste à remplir, signer et remettre en main propre au club, avec les autres
+                        documents demandés (<a href="#comment">voir la procédure</a>).
                     </p>
                     <p class="text-center mt-2">
-                        <a href="<?= htmlspecialchars($adhesionUrl) ?>" class="btn btn--primary" target="_blank" rel="noopener">Adhérer en ligne</a>
+                        <a href="<?= htmlspecialchars($adhesionUrl) ?>" class="btn btn--primary" target="_blank" rel="noopener">Payer ma cotisation en ligne</a>
                     </p>
                     <p class="mt-2" style="font-size: 0.95em;">
                         HelloAsso est une plateforme gratuite pour les associations : au moment du paiement, elle vous
@@ -359,8 +364,8 @@
                         <div class="card__content">
                             <h3 class="card__title">Fiche d'inscription</h3>
                             <p class="card__text">
-                                À remplir <a href="<?= htmlspecialchars($adhesionUrl) ?>" target="_blank" rel="noopener">en ligne sur HelloAsso</a>,
-                                ou sur papier à compléter et signer :
+                                Bulletin d'adhésion à compléter, signer et remettre en main propre au club.
+                                À retirer auprès des enseignants ou à télécharger :
                             </p>
                             <p class="card__text">
                                 <a href="docs/Bulletin%20adh%C3%A9sion%20adulte%202026%20-%202027.pdf" target="_blank">Bulletin adultes 2026-2027 (PDF)</a><br>
@@ -395,9 +400,9 @@
                         <div class="card__content">
                             <h3 class="card__title">Règlement</h3>
                             <p class="card__text">
-                                Paiement de la cotisation annuelle par carte bancaire
-                                <a href="<?= htmlspecialchars($adhesionUrl) ?>" target="_blank" rel="noopener">en ligne</a>,
-                                ou au dojo. Possibilité de règlement en plusieurs fois.
+                                Paiement de la cotisation annuelle
+                                <a href="<?= htmlspecialchars($adhesionUrl) ?>" target="_blank" rel="noopener">en ligne sur HelloAsso</a>
+                                par carte bancaire, ou au club. Possibilité de règlement en plusieurs fois.
                             </p>
                         </div>
                     </div>
@@ -561,37 +566,25 @@
                     N'hésitez pas à nous consulter avant tout achat.
                 </p>
 
-                <h2>Comment s'inscrire ?</h2>
-                <p>
-                    Commencez par un cours d'essai (gratuit en <?= htmlspecialchars($club['trial']['freePeriod']) ?>),
-                    puis choisissez la formule qui vous convient.
-                </p>
-                <div class="cards-grid">
-                    <div class="card">
-                        <div class="card__content">
-                            <h3 class="card__title">En ligne</h3>
-                            <ol class="card__text">
-                                <li>Remplissez le <a href="<?= htmlspecialchars($adhesionUrl) ?>" target="_blank" rel="noopener">formulaire d'adhésion HelloAsso</a></li>
-                                <li>Réglez la cotisation par carte bancaire</li>
-                                <li>Remettez aux enseignants, au dojo, les pièces que le formulaire ne vous a pas permis de joindre
-                                    (attestation de santé ou certificat médical, photo d'identité, justificatif de tarif réduit)</li>
-                            </ol>
-                            <p class="card__text">
-                                <a href="<?= htmlspecialchars($adhesionUrl) ?>" class="btn btn--primary" target="_blank" rel="noopener">Adhérer en ligne</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__content">
-                            <h3 class="card__title">Au dojo</h3>
-                            <ol class="card__text">
-                                <li>Téléchargez le bulletin (adultes ou mineurs) ou demandez-le aux enseignants</li>
-                                <li>Complétez le dossier avec les documents demandés</li>
-                                <li>Remettez le dossier complet avec le règlement, aux horaires des cours</li>
-                            </ol>
-                        </div>
-                    </div>
+                <h2 id="comment">Comment s'inscrire ?</h2>
+                <div class="info-box">
+                    <h4 class="info-box__title">Procédure d'inscription</h4>
+                    <ol>
+                        <li>Venez assister à un cours d'essai (gratuit en <?= htmlspecialchars($club['trial']['freePeriod']) ?>)</li>
+                        <li>Retirez le bulletin d'adhésion auprès des enseignants ou téléchargez-le
+                            (<a href="docs/Bulletin%20adh%C3%A9sion%20adulte%202026%20-%202027.pdf" target="_blank">adultes</a>,
+                            <a href="docs/Bulletin%20adh%C3%A9sion%20mineur%202026%20-%202027.pdf" target="_blank">mineurs</a>),
+                            puis complétez-le et signez-le</li>
+                        <li>Réglez la cotisation, au choix
+                            <a href="<?= htmlspecialchars($adhesionUrl) ?>" target="_blank" rel="noopener">en ligne sur HelloAsso</a>
+                            ou au club</li>
+                        <li>Remettez en main propre au club, aux horaires des cours, le dossier complet : bulletin signé,
+                            attestation de santé ou certificat médical, photo d'identité, justificatif de tarif réduit
+                            le cas échéant (et le règlement si vous ne payez pas en ligne)</li>
+                    </ol>
+                    <p class="text-center mt-2">
+                        <a href="<?= htmlspecialchars($adhesionUrl) ?>" class="btn btn--primary" target="_blank" rel="noopener">Payer ma cotisation en ligne</a>
+                    </p>
                 </div>
                 <p>
                     Pour le tarif famille ou toute situation particulière, <a href="contact.php">contactez-nous</a>

@@ -171,7 +171,7 @@
             </p>
             <div class="hero__buttons">
                 <a href="inscription.php#essai" class="btn btn--primary">Venez essayer</a>
-                <a href="inscription.php#adhesion" class="btn btn--outline">S'inscrire</a>
+                <a href="inscription.php#comment" class="btn btn--outline">S'inscrire</a>
             </div>
         </div>
     </section>
@@ -448,7 +448,7 @@
 
             <div class="text-center mt-3">
                 <a href="contact.php" class="btn btn--primary">Nous contacter</a>
-                <a href="inscription.php#adhesion" class="btn btn--outline">S'inscrire</a>
+                <a href="inscription.php#comment" class="btn btn--outline">S'inscrire</a>
             </div>
         </div>
     </section>
