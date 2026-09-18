@@ -63,6 +63,10 @@
     "familyDiscountPercent": 10,
     "familyDiscountFrom": 3
   },
+  "membership": {
+    "provider": "HelloAsso",
+    "onlineUrl": "https://www.helloasso.com/associations/aikido-kannagara-guyancourt/adhesions/adhesion-2026-2027"
+  },
   "federation": {
     "name": "Fédération Française d'Aïkido et de Budo",
     "abbr": "FFAB",

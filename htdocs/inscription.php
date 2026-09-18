@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/includes/data.php'; $club = club_data(); $p = $club['pricing']; $cur = $p['currency']; ?><!DOCTYPE html>
+<?php require_once __DIR__ . '/includes/data.php'; $club = club_data(); $p = $club['pricing']; $cur = $p['currency']; $adhesionUrl = $club['membership']['onlineUrl']; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -68,6 +68,7 @@
             {
                 "@type": "Offer",
                 "name": "Enfants (7-14 ans)",
+                "url": "<?= htmlspecialchars($adhesionUrl) ?>",
                 "price": "<?= $p['children'] ?>",
                 "priceCurrency": "<?= $cur ?>",
                 "eligibleCustomerType": "http://schema.org/Student",
@@ -76,6 +77,7 @@
             {
                 "@type": "Offer",
                 "name": "Adultes (15 ans et +)",
+                "url": "<?= htmlspecialchars($adhesionUrl) ?>",
                 "price": "<?= $p['adults'] ?>",
                 "priceCurrency": "<?= $cur ?>",
                 "description": "2 cours par semaine (6h), licence FFAB et assurance incluses, accès aux stages"
@@ -83,6 +85,7 @@
             {
                 "@type": "Offer",
                 "name": "Tarif réduit (étudiants, chômeurs)",
+                "url": "<?= htmlspecialchars($adhesionUrl) ?>",
                 "price": "<?= $p['reduced'] ?>",
                 "priceCurrency": "<?= $cur ?>",
                 "description": "Sur justificatif, mêmes avantages adultes, licence FFAB et assurance incluses"
@@ -279,6 +282,23 @@
                     pour vous inscrire et commencer la pratique de l'aïkido.
                 </p>
 
+                <div class="info-box" id="adhesion">
+                    <h4 class="info-box__title">Adhésion en ligne · saison <?= htmlspecialchars($club['season']) ?></h4>
+                    <p>
+                        Vous pouvez désormais adhérer au club et régler votre cotisation en ligne, par carte bancaire,
+                        sur notre formulaire <strong><?= htmlspecialchars($club['membership']['provider']) ?></strong>.
+                        Le paiement est sécurisé et vous recevez votre reçu par e-mail.
+                    </p>
+                    <p class="text-center mt-2">
+                        <a href="<?= htmlspecialchars($adhesionUrl) ?>" class="btn btn--primary" target="_blank" rel="noopener">Adhérer en ligne</a>
+                    </p>
+                    <p class="mt-2" style="font-size: 0.95em;">
+                        HelloAsso est une plateforme gratuite pour les associations : au moment du paiement, elle vous
+                        propose de lui verser une contribution volontaire. Elle est facultative et ne revient pas au club ;
+                        vous pouvez la ramener à 0 €.
+                    </p>
+                </div>
+
                 <h2 id="essai">Essayer avant de s'inscrire</h2>
                 <p>
                     <?= htmlspecialchars($club['trial']['invitation']) ?>
@@ -339,7 +359,8 @@
                         <div class="card__content">
                             <h3 class="card__title">Fiche d'inscription</h3>
                             <p class="card__text">
-                                Formulaire d'inscription au club, à compléter et signer.
+                                À remplir <a href="<?= htmlspecialchars($adhesionUrl) ?>" target="_blank" rel="noopener">en ligne sur HelloAsso</a>,
+                                ou sur papier à compléter et signer :
                             </p>
                             <p class="card__text">
                                 <a href="docs/Bulletin%20adh%C3%A9sion%20adulte%202026%20-%202027.pdf" target="_blank">Bulletin adultes 2026-2027 (PDF)</a><br>
@@ -374,8 +395,9 @@
                         <div class="card__content">
                             <h3 class="card__title">Règlement</h3>
                             <p class="card__text">
-                                Paiement de la cotisation annuelle. Possibilité de
-                                règlement en plusieurs fois.
+                                Paiement de la cotisation annuelle par carte bancaire
+                                <a href="<?= htmlspecialchars($adhesionUrl) ?>" target="_blank" rel="noopener">en ligne</a>,
+                                ou au dojo. Possibilité de règlement en plusieurs fois.
                             </p>
                         </div>
                     </div>
@@ -540,18 +562,41 @@
                 </p>
 
                 <h2>Comment s'inscrire ?</h2>
-                <div class="info-box">
-                    <h4 class="info-box__title">Procédure d'inscription</h4>
-                    <ol>
-                        <li>Venez assister à un cours d'essai (gratuit en <?= htmlspecialchars($club['trial']['freePeriod']) ?>)</li>
-                        <li>Récupérez la fiche d'inscription auprès des professeurs</li>
-                        <li>Complétez le dossier avec les documents demandés</li>
-                        <li>Remettez le dossier complet avec le règlement</li>
-                    </ol>
-                    <p class="mt-2">
-                        L'inscription peut se faire directement au dojo, aux horaires des cours.
-                    </p>
+                <p>
+                    Commencez par un cours d'essai (gratuit en <?= htmlspecialchars($club['trial']['freePeriod']) ?>),
+                    puis choisissez la formule qui vous convient.
+                </p>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">En ligne</h3>
+                            <ol class="card__text">
+                                <li>Remplissez le <a href="<?= htmlspecialchars($adhesionUrl) ?>" target="_blank" rel="noopener">formulaire d'adhésion HelloAsso</a></li>
+                                <li>Réglez la cotisation par carte bancaire</li>
+                                <li>Remettez aux enseignants, au dojo, les pièces que le formulaire ne vous a pas permis de joindre
+                                    (attestation de santé ou certificat médical, photo d'identité, justificatif de tarif réduit)</li>
+                            </ol>
+                            <p class="card__text">
+                                <a href="<?= htmlspecialchars($adhesionUrl) ?>" class="btn btn--primary" target="_blank" rel="noopener">Adhérer en ligne</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Au dojo</h3>
+                            <ol class="card__text">
+                                <li>Téléchargez le bulletin (adultes ou mineurs) ou demandez-le aux enseignants</li>
+                                <li>Complétez le dossier avec les documents demandés</li>
+                                <li>Remettez le dossier complet avec le règlement, aux horaires des cours</li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
+                <p>
+                    Pour le tarif famille ou toute situation particulière, <a href="contact.php">contactez-nous</a>
+                    avant de régler.
+                </p>
 
                 <h2 id="preinscription">Formulaire de pré-inscription</h2>
                 <p>

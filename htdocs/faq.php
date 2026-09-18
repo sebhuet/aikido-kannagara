@@ -685,13 +685,31 @@ $faqEssai = "Oui, nous proposons des cours d'essai gratuits en " . $club['trial'
                     </li>
                     <li class="faq-item">
                         <button class="faq-question" aria-expanded="false">
+                            Peut-on s'inscrire et payer en ligne ?
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer__content">
+                                <p>
+                                    Oui. L'adhésion de la saison <?= htmlspecialchars($club['season']) ?> se fait en ligne sur notre
+                                    <a href="<?= htmlspecialchars($club['membership']['onlineUrl']) ?>" target="_blank" rel="noopener">formulaire HelloAsso</a>,
+                                    avec paiement sécurisé par carte bancaire. La contribution volontaire proposée par HelloAsso
+                                    au moment du paiement est facultative : vous pouvez la ramener à 0 €.
+                                </p>
+                                <p>
+                                    Vous pouvez aussi toujours vous inscrire au dojo avec le bulletin papier et votre règlement.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
                             Quels documents fournir pour l'inscription ?
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer__content">
                                 <p>Pour vous inscrire, vous devrez fournir :</p>
                                 <ul>
-                                    <li>Le <strong>formulaire d'inscription</strong> complété</li>
+                                    <li>Le <strong>formulaire d'inscription</strong> complété, en ligne ou sur papier</li>
                                     <li>L'<strong>attestation de questionnaire de santé</strong> (le certificat médical n'est demandé que dans certains cas, voir ci-dessous)</li>
                                     <li>Une <strong>photo d'identité</strong></li>
                                     <li>Le règlement de la cotisation</li>
