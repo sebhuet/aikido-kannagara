@@ -81,9 +81,9 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 
 ### Lundi 05/10
 
-- **18h00-19h00** | Enfants | Sébastien Huet
-- **19h00-20h30** | Adultes | Sébastien Huet
-- **20h30-22h00** | Adultes | Sébastien Huet
+- **18h00-19h00** | Enfants | Jean-Marc Chamot
+- **19h00-20h30** | Adultes | Jean-Marc Chamot
+- **20h30-22h00** | Adultes | Jean-Marc Chamot
 
 ### Jeudi 08/10
 
@@ -146,6 +146,11 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 - **18h00-19h00** | Enfants | Nacer Chekkaba
 - **19h00-20h30** | Adultes | Nacer Chekkaba
 - **20h30-22h00** | Adultes | Nacer Chekkaba
+
+### Dimanche 08/11
+
+- **10h00-12h30** | Stage Codep78 | Brahim Si Guesmi
+- **14h30-17h00** | Stage Codep78 | Brahim Si Guesmi
 
 ## Semaine du 09/11/2026
 
@@ -301,6 +306,11 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 - **19h00-20h30** | Adultes | Nacer Chekkaba
 - **20h30-22h00** | Adultes | Nacer Chekkaba
 
+### Dimanche 24/01
+
+- **10h00-12h30** | Stage Codep78 | Alexia Houette, Xavier Raujol
+- **14h30-17h00** | Stage Codep78 | Alexia Houette, Xavier Raujol
+
 ## Semaine du 25/01/2027
 
 ### Lundi 25/01
@@ -356,6 +366,11 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 - **18h00-19h00** | Enfants | Pas de cours
 - **19h00-20h30** | Adultes | Sébastien Huet
 - **20h30-22h00** | Adultes | Sébastien Huet
+
+### Dimanche 21/02
+
+- **10h00-12h30** | Stage Codep78 | Virginie Cantat, Daniel Gannat
+- **14h30-17h00** | Stage Codep78 | Virginie Cantat, Daniel Gannat
 
 ## Semaine du 22/02/2027
 
@@ -454,6 +469,11 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 - **18h00-19h00** | Enfants | Pas de cours
 - **19h00-20h30** | Adultes | Sébastien Huet
 - **20h30-22h00** | Adultes | Sébastien Huet
+
+### Dimanche 11/04
+
+- **10h00-12h30** | Stage Codep78 | Jean-Marc Chamot
+- **14h30-17h00** | Stage Codep78 | Jean-Marc Chamot
 
 ## Semaine du 12/04/2027 - Vacances Scolaires
 
@@ -608,6 +628,11 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 - **18h00-19h00** | Enfants | Nacer Chekkaba
 - **19h00-20h30** | Adultes | Nacer Chekkaba
 - **20h30-22h00** | Adultes | Nacer Chekkaba
+
+### Dimanche 27/06
+
+- **10h00-12h30** | Stage Codep78 | Nacer Chekkaba, Jean-Marie Casta
+- **14h30-17h00** | Stage Codep78 | Nacer Chekkaba, Jean-Marie Casta
 
 ## Semaine du 28/06/2027
 

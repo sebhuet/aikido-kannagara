@@ -6,16 +6,25 @@ Chaque événement est défini par :
 
 - `## Titre de l'événement`
 - `date:` date au format JJ/MM/YYYY (pour le tri et le filtrage automatique)
-- `horaire:` horaire (optionnel)
-- `lieu:` nom du lieu (optionnel)
+- `horaire:` horaire (optionnel sur le site, requis pour OpenAgenda), ex. `19h30 - 21h30`.
+  Plusieurs plages sont possibles (`09h30 - 12h30 14h00 - 17h00`) ; une heure seule
+  (`à partir de 19h00`) compte pour deux heures dans OpenAgenda.
+- `lieu:` nom du lieu (optionnel, Gymnase Maurice Baquet par défaut). Pour OpenAgenda,
+  un autre lieu doit exister dans l'agenda sous exactement le même nom.
 - `lieu_url:` lien Google Maps (optionnel)
 - `animateur:` nom de l'animateur (optionnel)
 - `image:` chemin d'une image, ex. `galerie/evenements/ma-photo.jpg` (optionnel).
   C'est l'image affichée quand l'événement est partagé sur Facebook. Sans elle,
   Facebook retombe sur le logo du club, nettement moins accrocheur.
-- Description libre en texte après les métadonnées
+- `openagenda: non` pour ne pas publier l'événement sur OpenAgenda (optionnel),
+  par exemple un événement réservé aux salariés d'une entreprise.
+- Description libre en texte après les métadonnées. Ses 200 premiers caractères
+  servent de résumé sur OpenAgenda.
 
 Les événements passés sont automatiquement masqués.
+
+Ce fichier est la référence : le site le lit directement, et
+`node tools/sync_openagenda.js --apply` recopie les événements à venir dans OpenAgenda.
 
 ---
 
@@ -210,25 +219,47 @@ l'enseignant vous accueillera.
 ## Stage Brahim Si Guesmi
 
 - date: 08/11/2026
-- horaire: Adultes 09h30 - 12h30 14h00 - 17h00
+- horaire: Adultes 10h00 - 12h30 · 14h30 - 17h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
 - image: images/evenements/brahim.jpg
 
+Stage départemental du CODEP 78, ouvert à tous les licenciés, tous les groupements.
+
 ## Stage Alexia Houette & Xavier Raujol
 
 - date: 24/01/2027
-- horaire: Adultes 09h30 - 12h30 14h00 - 17h00
+- horaire: Adultes 10h00 - 12h30 · 14h30 - 17h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
 - image: images/evenements/alexia_xavier.jpg
 
+Stage départemental du CODEP 78, ouvert à tous les licenciés, tous les groupements.
+
+## Stage Virginie Cantat & Daniel Gannat
+
+- date: 21/02/2027
+- horaire: Adultes 10h00 - 12h30 · 14h30 - 17h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Stage départemental du CODEP 78, ouvert à tous les licenciés, tous les groupements.
+
 ## Stage Jean-Marc Chamot
 
 - date: 11/04/2027
-- horaire: Adultes 09h30 - 12h30 14h00 - 17h00
+- horaire: Adultes 10h00 - 12h30 · 14h30 - 17h00
 - lieu: Gymnase Maurice Baquet
 - lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
 - image: galerie/art/IMG-20211122-WA0013.jpeg
 
-Stage ouvert à tous les licenciés, tous les groupements.
+Stage départemental du CODEP 78, ouvert à tous les licenciés, tous les groupements.
+
+## Stage de clôture Nacer Chekkaba & Jean-Marie Casta
+
+- date: 27/06/2027
+- horaire: Adultes 10h00 - 12h30 · 14h30 - 17h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+
+Stage départemental de clôture de la saison du CODEP 78, ouvert à tous les licenciés, tous les groupements.
