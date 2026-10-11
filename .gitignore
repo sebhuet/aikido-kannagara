@@ -58,3 +58,7 @@ photos-sources/
 
 # Administration du club (registre courrier, donnees personnelles) : jamais sur GitHub ni sur le site
 admin/
+
+# Vidéos (VideoRef : 1,1 Go) : hors dépôt
+*.mp4
+*.MP4
