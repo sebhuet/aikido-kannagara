@@ -818,6 +818,11 @@ function sansAccent(s) {
   return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 }
 
+// Chemin relatif → URL : chaque segment encodé (espaces, crochets, virgules des noms)
+function url(chemin) {
+  return chemin.split("/").map(encodeURIComponent).join("/");
+}
+
 /* --- Moteur de recherche --- */
 
 // Mots français ou variantes courantes ramenés au terme japonais
@@ -1136,7 +1141,7 @@ function tuile(versions) {
   );
   const montrer = (v) => {
     const img = image.querySelector("img.vignette");
-    if (img && v.imagette) img.src = encodeURI(v.imagette);
+    if (img && v.imagette) img.src = url(v.imagette);
     const d = image.querySelector(".tuile__duree");
     if (d && v.duree) d.textContent = fmtTemps(v.duree);
   };
@@ -1179,7 +1184,7 @@ function vignette(v) {
     loading: "lazy",
     decoding: "async",
     class: "vignette",
-    src: encodeURI(v.imagette),
+    src: url(v.imagette),
     alt: "",
     onerror: (e) => e.target.replaceWith(el("span", { class: "vignette vignette--vide" }))
   });
@@ -1333,8 +1338,9 @@ function charger(lire) {
   clearTimeout(minuteurSuite);
   L.a = L.b = null;
   majAB();
-  video.poster = v.imagette ? encodeURI(v.imagette) : "";
-  video.src = encodeURIComponent(v.fichier);
+  video.poster = v.imagette ? url(v.imagette) : "";
+  // Version web (720p, une image clé par seconde) si elle existe, sinon l'original
+  video.src = url(v.web || v.fichier);
   video.defaultPlaybackRate = L.vitesse;
   video.playbackRate = L.vitesse;
   $("l-attente").hidden = false;
@@ -1763,6 +1769,7 @@ function demarrer() {
 /*
   README
   - Ajouter ou renommer des vidéos dans ce dossier, puis : node VideoRef/liste-videos.js
+    (versions web 720p dans web/, imagettes, liste). La page lit web/ en priorité.
   - Ouvrir index.html directement (double-clic) ou via un serveur web.
   - Hors du site, le mot de passe est vérifié dans le navigateur : il écarte les
     curieux mais ne protège pas les fichiers .mp4.

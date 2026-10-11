@@ -11,7 +11,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 32.5,
   "imagette": "imagettes/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 15175946
+  "taille": 15175946,
+  "web": "web/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -23,7 +24,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 26.5,
   "imagette": "imagettes/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13889849
+  "taille": 13889849,
+  "web": "web/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -35,7 +37,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 43.1,
   "imagette": "imagettes/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 27845543
+  "taille": 27845543,
+  "web": "web/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -47,7 +50,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 39.8,
   "imagette": "imagettes/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 18993301
+  "taille": 18993301,
+  "web": "web/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -59,7 +63,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 97.9,
   "imagette": "imagettes/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 42978390
+  "taille": 42978390,
+  "web": "web/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Shiho Nage [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -71,7 +76,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 23.6,
   "imagette": "imagettes/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Shiho Nage [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 12831237
+  "taille": 12831237,
+  "web": "web/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Shiho Nage [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Shiho Nage [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -83,7 +89,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 25,
   "imagette": "imagettes/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Shiho Nage [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13554173
+  "taille": 13554173,
+  "web": "web/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Shiho Nage [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Soto Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -95,7 +102,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 42.6,
   "imagette": "imagettes/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Soto Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 24863797
+  "taille": 24863797,
+  "web": "web/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Soto Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Sumiotoshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -107,7 +115,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 12.9,
   "imagette": "imagettes/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Sumiotoshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 7581888
+  "taille": 7581888,
+  "web": "web/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Sumiotoshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Uchi Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -119,7 +128,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 49.2,
   "imagette": "imagettes/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Uchi Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 29989996
+  "taille": 29989996,
+  "web": "web/Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Uchi Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Katate Dori - Ikkyo - FFAB - HABERT.mp4",
@@ -131,7 +141,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 5.8,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Ikkyo - FFAB - HABERT.jpg",
-  "taille": 2935630
+  "taille": 2935630,
+  "web": "web/Hanmi Handachi Waza - Katate Dori - Ikkyo - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Katate Dori - Irimi Nage - FFAB - HABERT.mp4",
@@ -143,7 +154,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 23,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Irimi Nage - FFAB - HABERT.jpg",
-  "taille": 10420088
+  "taille": 10420088,
+  "web": "web/Hanmi Handachi Waza - Katate Dori - Irimi Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Katate Dori - Kokyu Nage - FFAB - HABERT.mp4",
@@ -155,7 +167,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 8.9,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Kokyu Nage - FFAB - HABERT.jpg",
-  "taille": 4607188
+  "taille": 4607188,
+  "web": "web/Hanmi Handachi Waza - Katate Dori - Kokyu Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Katate Dori - Kotegaeshi - FFAB - HABERT.mp4",
@@ -167,7 +180,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 23.5,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Kotegaeshi - FFAB - HABERT.jpg",
-  "taille": 9775717
+  "taille": 9775717,
+  "web": "web/Hanmi Handachi Waza - Katate Dori - Kotegaeshi - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Katate Dori - Nikyo [Ura] - FFAB - HABERT.mp4",
@@ -179,7 +193,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 20.2,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Nikyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 7819079
+  "taille": 7819079,
+  "web": "web/Hanmi Handachi Waza - Katate Dori - Nikyo [Ura] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Katate Dori - Shiho Nage [Omote] - FFAB - HABERT.mp4",
@@ -191,7 +206,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 5.9,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Shiho Nage [Omote] - FFAB - HABERT.jpg",
-  "taille": 2936958
+  "taille": 2936958,
+  "web": "web/Hanmi Handachi Waza - Katate Dori - Shiho Nage [Omote] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Katate Dori - Shiho Nage [Ura] - FFAB - HABERT.mp4",
@@ -203,7 +219,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 7.3,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Shiho Nage [Ura] - FFAB - HABERT.jpg",
-  "taille": 3737238
+  "taille": 3737238,
+  "web": "web/Hanmi Handachi Waza - Katate Dori - Shiho Nage [Ura] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Katate Dori - Soto Kaiten Nage - FFAB - HABERT.mp4",
@@ -215,7 +232,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 11.7,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Soto Kaiten Nage - FFAB - HABERT.jpg",
-  "taille": 5086095
+  "taille": 5086095,
+  "web": "web/Hanmi Handachi Waza - Katate Dori - Soto Kaiten Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Katate Dori - Sumiotoshi - FFAB - HABERT.mp4",
@@ -227,7 +245,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 6.5,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Sumiotoshi - FFAB - HABERT.jpg",
-  "taille": 3458119
+  "taille": 3458119,
+  "web": "web/Hanmi Handachi Waza - Katate Dori - Sumiotoshi - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Hanmi Handachi Waza - Katate Dori - Uchi Kaiten Nage - FFAB - HABERT.mp4",
@@ -239,7 +258,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 24.4,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Uchi Kaiten Nage - FFAB - HABERT.jpg",
-  "taille": 12327984
+  "taille": 12327984,
+  "web": "web/Hanmi Handachi Waza - Katate Dori - Uchi Kaiten Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Gokyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -251,7 +271,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 24,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Gokyo - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 12117192
+  "taille": 12117192,
+  "web": "web/Suwari Waza - Shomen Uchi - Gokyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Gokyo - FFAB - HABERT.mp4",
@@ -263,7 +284,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 11.2,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Gokyo - FFAB - HABERT.jpg",
-  "taille": 4210807
+  "taille": 4210807,
+  "web": "web/Suwari Waza - Shomen Uchi - Gokyo - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -275,7 +297,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 24.2,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 12628675
+  "taille": 12628675,
+  "web": "web/Suwari Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - HABERT.mp4",
@@ -287,7 +310,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 12.4,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 4571614
+  "taille": 4571614,
+  "web": "web/Suwari Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -299,7 +323,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 20.8,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 11241384
+  "taille": 11241384,
+  "web": "web/Suwari Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - HABERT.mp4",
@@ -311,7 +336,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 8.1,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 2880583
+  "taille": 2880583,
+  "web": "web/Suwari Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -323,7 +349,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 41.8,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 23706686
+  "taille": 23706686,
+  "web": "web/Suwari Waza - Shomen Uchi - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Irimi Nage - FFAB - HABERT.mp4",
@@ -335,7 +362,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 13,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Irimi Nage - FFAB - HABERT.jpg",
-  "taille": 4272951
+  "taille": 4272951,
+  "web": "web/Suwari Waza - Shomen Uchi - Irimi Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -347,7 +375,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 35.7,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 22935923
+  "taille": 22935923,
+  "web": "web/Suwari Waza - Shomen Uchi - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Kokyu Nage - FFAB - HABERT.mp4",
@@ -359,7 +388,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 13.6,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Kokyu Nage - FFAB - HABERT.jpg",
-  "taille": 5304711
+  "taille": 5304711,
+  "web": "web/Suwari Waza - Shomen Uchi - Kokyu Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -371,7 +401,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 41.1,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 21531299
+  "taille": 21531299,
+  "web": "web/Suwari Waza - Shomen Uchi - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Kotegaeshi - FFAB - HABERT.mp4",
@@ -383,7 +414,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 15.2,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Kotegaeshi - FFAB - HABERT.jpg",
-  "taille": 6148965
+  "taille": 6148965,
+  "web": "web/Suwari Waza - Shomen Uchi - Kotegaeshi - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Nikyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -395,7 +427,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 39.8,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Nikyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 18641197
+  "taille": 18641197,
+  "web": "web/Suwari Waza - Shomen Uchi - Nikyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Nikyo [Omote] - FFAB - HABERT.mp4",
@@ -407,7 +440,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 16.2,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Nikyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 5019800
+  "taille": 5019800,
+  "web": "web/Suwari Waza - Shomen Uchi - Nikyo [Omote] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -419,7 +453,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 43.5,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 19711276
+  "taille": 19711276,
+  "web": "web/Suwari Waza - Shomen Uchi - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Nikyo [Ura] - FFAB - HABERT.mp4",
@@ -431,7 +466,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 20,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Nikyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 6380702
+  "taille": 6380702,
+  "web": "web/Suwari Waza - Shomen Uchi - Nikyo [Ura] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Sankyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -443,7 +479,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 36,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Sankyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 18939402
+  "taille": 18939402,
+  "web": "web/Suwari Waza - Shomen Uchi - Sankyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Sankyo [Omote] - FFAB - HABERT.mp4",
@@ -455,7 +492,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 18.7,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Sankyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 5187295
+  "taille": 5187295,
+  "web": "web/Suwari Waza - Shomen Uchi - Sankyo [Omote] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Sankyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -467,7 +505,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 36.6,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Sankyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 17293390
+  "taille": 17293390,
+  "web": "web/Suwari Waza - Shomen Uchi - Sankyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Sankyo [Ura] - FFAB - HABERT.mp4",
@@ -479,7 +518,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 21.4,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Sankyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 6860695
+  "taille": 6860695,
+  "web": "web/Suwari Waza - Shomen Uchi - Sankyo [Ura] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Yonkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -491,7 +531,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 26.4,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Yonkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13680730
+  "taille": 13680730,
+  "web": "web/Suwari Waza - Shomen Uchi - Yonkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Yonkyo [Omote] - FFAB - HABERT.mp4",
@@ -503,7 +544,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 15.4,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Yonkyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 5983487
+  "taille": 5983487,
+  "web": "web/Suwari Waza - Shomen Uchi - Yonkyo [Omote] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Yonkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -515,7 +557,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 26.9,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Yonkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13977260
+  "taille": 13977260,
+  "web": "web/Suwari Waza - Shomen Uchi - Yonkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Suwari Waza - Shomen Uchi - Yonkyo [Ura] - FFAB - HABERT.mp4",
@@ -527,7 +570,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 11.8,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Yonkyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 4974889
+  "taille": 4974889,
+  "web": "web/Suwari Waza - Shomen Uchi - Yonkyo [Ura] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -539,7 +583,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 10,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 6179333
+  "taille": 6179333,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Omote] - FFAB - HABERT.mp4",
@@ -551,7 +596,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 9.8,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 4408856
+  "taille": 4408856,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Omote] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -563,7 +609,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 6.9,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 4633570
+  "taille": 4633570,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Ura] - FFAB - HABERT.mp4",
@@ -575,7 +622,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 5.6,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 2423747
+  "taille": 2423747,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Ura] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -587,7 +635,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 18,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13029328
+  "taille": 13029328,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Irimi Nage - FFAB - HABERT.mp4",
@@ -599,7 +648,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 21.4,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Irimi Nage - FFAB - HABERT.jpg",
-  "taille": 9404863
+  "taille": 9404863,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Irimi Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -611,7 +661,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 18.6,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 14289019
+  "taille": 14289019,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Kokyu Nage - FFAB - HABERT.mp4",
@@ -623,7 +674,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 15.6,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Kokyu Nage - FFAB - HABERT.jpg",
-  "taille": 7654978
+  "taille": 7654978,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Kokyu Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -635,7 +687,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 27,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 17877717
+  "taille": 17877717,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Koshi Nage - FFAB - HABERT.mp4",
@@ -647,7 +700,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 21.8,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Koshi Nage - FFAB - HABERT.jpg",
-  "taille": 9154400
+  "taille": 9154400,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Koshi Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -659,7 +713,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 16.4,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 12012661
+  "taille": 12012661,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Kotegaeshi - FFAB - HABERT.mp4",
@@ -671,7 +726,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 17.6,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Kotegaeshi - FFAB - HABERT.jpg",
-  "taille": 7545622
+  "taille": 7545622,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Kotegaeshi - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -683,7 +739,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 14.6,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 7955214
+  "taille": 7955214,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Omote] - FFAB - HABERT.mp4",
@@ -695,7 +752,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 11.8,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 4332817
+  "taille": 4332817,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Omote] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -707,7 +765,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 17.2,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 8731565
+  "taille": 8731565,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Ura] - FFAB - HABERT.mp4",
@@ -719,7 +778,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 27.4,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 10328969
+  "taille": 10328969,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Ura] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -731,7 +791,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 18,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13061067
+  "taille": 13061067,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Shiho Nage - FFAB - HABERT.mp4",
@@ -743,7 +804,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 20.1,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Shiho Nage - FFAB - HABERT.jpg",
-  "taille": 8391780
+  "taille": 8391780,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Shiho Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -755,7 +817,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 12.2,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 8945653
+  "taille": 8945653,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Ude Kime Nage - FFAB - HABERT.mp4",
@@ -767,7 +830,8 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 14.8,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Ude Kime Nage - FFAB - HABERT.jpg",
-  "taille": 6586017
+  "taille": 6586017,
+  "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Ude Kime Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -779,7 +843,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 18.2,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 9241370
+  "taille": 9241370,
+  "web": "web/Tachi Waza - Katate Dori - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -791,7 +856,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 11.1,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 6609847
+  "taille": 6609847,
+  "web": "web/Tachi Waza - Katate Dori - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Irimi Nage [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -803,7 +869,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 9.1,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Irimi Nage [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 5203097
+  "taille": 5203097,
+  "web": "web/Tachi Waza - Katate Dori - Irimi Nage [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Irimi Nage [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -815,7 +882,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 9.9,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Irimi Nage [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 6266135
+  "taille": 6266135,
+  "web": "web/Tachi Waza - Katate Dori - Irimi Nage [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -827,7 +895,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 17.4,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 11315466
+  "taille": 11315466,
+  "web": "web/Tachi Waza - Katate Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -839,7 +908,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 15.5,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 10132716
+  "taille": 10132716,
+  "web": "web/Tachi Waza - Katate Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -851,7 +921,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 24.7,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 14222222
+  "taille": 14222222,
+  "web": "web/Tachi Waza - Katate Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -863,7 +934,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 14.2,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 7522924
+  "taille": 7522924,
+  "web": "web/Tachi Waza - Katate Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -875,7 +947,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 23.8,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 14587657
+  "taille": 14587657,
+  "web": "web/Tachi Waza - Katate Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Soto Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -887,7 +960,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 12.3,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Soto Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 7615806
+  "taille": 7615806,
+  "web": "web/Tachi Waza - Katate Dori - Soto Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Uchi Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -899,7 +973,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 15.2,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Uchi Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 8690135
+  "taille": 8690135,
+  "web": "web/Tachi Waza - Katate Dori - Uchi Kaiten Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -911,7 +986,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 15.9,
   "imagette": "imagettes/Tachi Waza - Katate Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 10172316
+  "taille": 10172316,
+  "web": "web/Tachi Waza - Katate Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -923,7 +999,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 23.8,
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13219209
+  "taille": 13219209,
+  "web": "web/Tachi Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -935,7 +1012,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 21.4,
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13938941
+  "taille": 13938941,
+  "web": "web/Tachi Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -947,7 +1025,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 26.2,
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 17471471
+  "taille": 17471471,
+  "web": "web/Tachi Waza - Ryote Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -959,7 +1038,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 23.6,
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 14765306
+  "taille": 14765306,
+  "web": "web/Tachi Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -971,7 +1051,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 20.8,
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 11524686
+  "taille": 11524686,
+  "web": "web/Tachi Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -983,7 +1064,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 31,
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 19178593
+  "taille": 19178593,
+  "web": "web/Tachi Waza - Ryote Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Tenchi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -995,7 +1077,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 14.4,
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Tenchi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 9462162
+  "taille": 9462162,
+  "web": "web/Tachi Waza - Ryote Dori - Tenchi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1007,7 +1090,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 11.1,
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 7729486
+  "taille": 7729486,
+  "web": "web/Tachi Waza - Ryote Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1019,7 +1103,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 7.2,
   "imagette": "imagettes/Tachi Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 4942241
+  "taille": 4942241,
+  "web": "web/Tachi Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1031,7 +1116,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 6.7,
   "imagette": "imagettes/Tachi Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 4578843
+  "taille": 4578843,
+  "web": "web/Tachi Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Shomen Uchi - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1043,7 +1129,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 11,
   "imagette": "imagettes/Tachi Waza - Shomen Uchi - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 8413439
+  "taille": 8413439,
+  "web": "web/Tachi Waza - Shomen Uchi - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Shomen Uchi - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1055,7 +1142,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 15.2,
   "imagette": "imagettes/Tachi Waza - Shomen Uchi - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 11538709
+  "taille": 11538709,
+  "web": "web/Tachi Waza - Shomen Uchi - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Shomen Uchi - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1067,7 +1155,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 12.6,
   "imagette": "imagettes/Tachi Waza - Shomen Uchi - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 9313915
+  "taille": 9313915,
+  "web": "web/Tachi Waza - Shomen Uchi - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Shomen Uchi - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1079,7 +1168,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 9.2,
   "imagette": "imagettes/Tachi Waza - Shomen Uchi - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 6737952
+  "taille": 6737952,
+  "web": "web/Tachi Waza - Shomen Uchi - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Shomen Uchi - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1091,7 +1181,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 11.4,
   "imagette": "imagettes/Tachi Waza - Shomen Uchi - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 8445305
+  "taille": 8445305,
+  "web": "web/Tachi Waza - Shomen Uchi - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Shomen Uchi - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1103,7 +1194,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 6.4,
   "imagette": "imagettes/Tachi Waza - Shomen Uchi - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 4701636
+  "taille": 4701636,
+  "web": "web/Tachi Waza - Shomen Uchi - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Yokomen Uchi - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1115,7 +1207,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 11.5,
   "imagette": "imagettes/Tachi Waza - Yokomen Uchi - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 6277542
+  "taille": 6277542,
+  "web": "web/Tachi Waza - Yokomen Uchi - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Yokomen Uchi - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1127,7 +1220,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 10.6,
   "imagette": "imagettes/Tachi Waza - Yokomen Uchi - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 6148244
+  "taille": 6148244,
+  "web": "web/Tachi Waza - Yokomen Uchi - Ikkyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Yokomen Uchi - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1139,7 +1233,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 30.6,
   "imagette": "imagettes/Tachi Waza - Yokomen Uchi - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 20219652
+  "taille": 20219652,
+  "web": "web/Tachi Waza - Yokomen Uchi - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Yokomen Uchi - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1151,7 +1246,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 12.8,
   "imagette": "imagettes/Tachi Waza - Yokomen Uchi - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 9473548
+  "taille": 9473548,
+  "web": "web/Tachi Waza - Yokomen Uchi - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Yokomen Uchi - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1163,7 +1259,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 15.5,
   "imagette": "imagettes/Tachi Waza - Yokomen Uchi - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 10474991
+  "taille": 10474991,
+  "web": "web/Tachi Waza - Yokomen Uchi - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Yokomen Uchi - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1175,7 +1272,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 20.1,
   "imagette": "imagettes/Tachi Waza - Yokomen Uchi - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13092637
+  "taille": 13092637,
+  "web": "web/Tachi Waza - Yokomen Uchi - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Yokomen Uchi - Nikyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1187,7 +1285,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 15.6,
   "imagette": "imagettes/Tachi Waza - Yokomen Uchi - Nikyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 7584229
+  "taille": 7584229,
+  "web": "web/Tachi Waza - Yokomen Uchi - Nikyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Yokomen Uchi - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1199,7 +1298,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 16,
   "imagette": "imagettes/Tachi Waza - Yokomen Uchi - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 9103136
+  "taille": 9103136,
+  "web": "web/Tachi Waza - Yokomen Uchi - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Yokomen Uchi - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1211,7 +1311,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 19.2,
   "imagette": "imagettes/Tachi Waza - Yokomen Uchi - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13165679
+  "taille": 13165679,
+  "web": "web/Tachi Waza - Yokomen Uchi - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Tachi Waza - Yokomen Uchi - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1223,7 +1324,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 12.8,
   "imagette": "imagettes/Tachi Waza - Yokomen Uchi - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 9537804
+  "taille": 9537804,
+  "web": "web/Tachi Waza - Yokomen Uchi - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1235,7 +1337,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 15,
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 6993139
+  "taille": 6993139,
+  "web": "web/Ushiro Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1247,7 +1350,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 23.7,
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13318313
+  "taille": 13318313,
+  "web": "web/Ushiro Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Jujigarami - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1259,7 +1363,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 9.6,
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Jujigarami - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 5483192
+  "taille": 5483192,
+  "web": "web/Ushiro Waza - Ryote Dori - Jujigarami - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1271,7 +1376,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 21.1,
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 12200796
+  "taille": 12200796,
+  "web": "web/Ushiro Waza - Ryote Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1283,7 +1389,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 25.2,
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 13384601
+  "taille": 13384601,
+  "web": "web/Ushiro Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1295,7 +1402,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 26.2,
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 14400607
+  "taille": 14400607,
+  "web": "web/Ushiro Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1307,7 +1415,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 21.1,
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 9907189
+  "taille": 9907189,
+  "web": "web/Ushiro Waza - Ryote Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Sankyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1319,7 +1428,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 24.2,
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Sankyo - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 12146834
+  "taille": 12146834,
+  "web": "web/Ushiro Waza - Ryote Dori - Sankyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1331,7 +1441,8 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 10.3,
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 6320099
+  "taille": 6320099,
+  "web": "web/Ushiro Waza - Ryote Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1343,6 +1454,7 @@ window.VIDEOS = [
   "sensei": "CHARLES, CISSE, LUCCHETTI",
   "duree": 8.7,
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
-  "taille": 5024745
+  "taille": 5024745,
+  "web": "web/Ushiro Waza - Ryote Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  }
 ];

@@ -4,11 +4,13 @@
  *
  * Usage (appelé par deploy.sh) : node tools/commit_gandi.js   -> affiche le hash du commit
  *
- * Les vidéos de VideoRef/ (1,2 Go) ne vont jamais sur GitHub : master les ignore
- * (.gitignore). Ce script fabrique, sans toucher ni à la copie de travail ni aux
- * branches, un commit dont le parent est master et qui ajoute :
- *   htdocs/videotheque/index.html, videos.js, imagettes/*.jpg, *.mp4  (repris de VideoRef/)
- *   htdocs/videotheque/.htaccess, connexion.php                        (générés ici)
+ * Les vidéos de VideoRef/ ne vont jamais sur GitHub : master les ignore (.gitignore).
+ * Ce script fabrique, sans toucher ni à la copie de travail ni aux branches, un commit
+ * dont le parent est master et qui ajoute :
+ *   htdocs/videotheque/index.html, videos.js, imagettes/*.jpg, web/*.mp4  (repris de VideoRef/)
+ *   htdocs/videotheque/.htaccess, connexion.php                            (générés ici)
+ * Seules les versions web (720p, produites par VideoRef/liste-videos.js) sont déployées,
+ * jamais les originaux 1080p.
  * deploy.sh le pousse ensuite sur la branche master du dépôt Gandi uniquement.
  *
  * Accès : .htaccess refuse tout le dossier sans le cookie déposé par connexion.php
@@ -209,13 +211,15 @@ function hacher(chemins) {
   if (aCalculer.length) {
     console.error(`Ajout de ${aCalculer.length} fichier(s) aux objets git…`);
     const sortie = git(["-c", "core.safecrlf=false", "hash-object", "-w", "--stdin-paths"], { input: aCalculer.join("\n") + "\n" }).split("\n");
-    aCalculer.forEach((c, i) => {
-      const st = fs.statSync(c);
-      resultat.set(c, sortie[i]);
-      cache[path.relative(RACINE, c)] = { taille: st.size, date: st.mtimeMs, hash: sortie[i] };
-    });
-    fs.writeFileSync(CACHE, JSON.stringify(cache), "utf8");
+    aCalculer.forEach((c, i) => resultat.set(c, sortie[i]));
   }
+  // Le cache ne garde que les fichiers déployés cette fois-ci
+  const nouveau = {};
+  for (const [c, hash] of resultat) {
+    const st = fs.statSync(c);
+    nouveau[path.relative(RACINE, c)] = { taille: st.size, date: st.mtimeMs, hash };
+  }
+  fs.writeFileSync(CACHE, JSON.stringify(nouveau), "utf8");
   return resultat;
 }
 
@@ -248,11 +252,23 @@ if (!fs.existsSync(path.join(SOURCE, "videos.js"))) {
   throw new Error("VideoRef/videos.js absent : lancer d'abord node VideoRef/liste-videos.js");
 }
 
+// La liste (videos.js) fait foi : chaque vidéo doit avoir sa version web et son imagette
+const window = {};
+new Function("window", fs.readFileSync(path.join(SOURCE, "videos.js"), "utf8"))(window);
+const videos = window.VIDEOS || [];
+const manquantes = videos.filter((v) => !v.web || !v.imagette || !fs.existsSync(path.join(SOURCE, v.web)) || !fs.existsSync(path.join(SOURCE, v.imagette)));
+if (!videos.length || manquantes.length) {
+  throw new Error(
+    `${manquantes.length || "Aucune"} vidéo(s) sans version web ou sans imagette : lancer d'abord node VideoRef/liste-videos.js` +
+      manquantes.slice(0, 5).map((v) => `\n  - ${v.fichier}`).join("")
+  );
+}
+
 const fichiers = [
   path.join(SOURCE, "index.html"),
   path.join(SOURCE, "videos.js"),
-  ...fs.readdirSync(SOURCE).filter((f) => /\.mp4$/i.test(f)).map((f) => path.join(SOURCE, f)),
-  ...fs.readdirSync(path.join(SOURCE, "imagettes")).filter((f) => /\.jpg$/i.test(f)).map((f) => path.join(SOURCE, "imagettes", f))
+  ...videos.map((v) => path.join(SOURCE, v.web)),
+  ...videos.map((v) => path.join(SOURCE, v.imagette))
 ];
 
 const hashes = hacher(fichiers);
