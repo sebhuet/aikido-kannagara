@@ -31,8 +31,10 @@
 
     # Anciens liens .html -> .php. Les fichiers .html reels (articles de blog) existent
     # physiquement (-f), la condition les exclut : ils restent servis directement.
+    # Le / initial est indispensable : sans lui, Apache redirige vers le chemin disque
+    # du serveur (/srv/data/web/vhosts/...).
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.+)\.html$ $1.php [L,R=301]
+    RewriteRule ^(.+)\.html$ /$1.php [L,R=301]
 </IfModule>
 
 # Headers de sécurité
