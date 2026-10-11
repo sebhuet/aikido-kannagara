@@ -753,6 +753,8 @@ button { cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-colo
 // pas les fichiers vidéo eux-mêmes (voir README en fin de fichier).
 const EMPREINTE_MDP = 4492937671091798; // cyrb53("aikido")
 const CLE_STOCKAGE = "videoref.acces";
+// Sur le site, le serveur a déjà vérifié le mot de passe (connexion.php + .htaccess)
+const SUR_LE_SITE = /(^|\.)kannagara\.fr$/.test(location.hostname);
 
 const FACETTES = [
   {
@@ -1723,6 +1725,10 @@ function demarrer() {
     ouvrir(resultats[Math.floor(Math.random() * resultats.length)]);
   });
   $("verrouiller").addEventListener("click", () => {
+    if (SUR_LE_SITE) {
+      location.href = "connexion.php?sortie";
+      return;
+    }
     stockage(CLE_STOCKAGE, null);
     location.reload();
   });
@@ -1734,7 +1740,7 @@ function demarrer() {
 }
 
 (function verrou() {
-  if (Number(stockage(CLE_STOCKAGE)) === EMPREINTE_MDP) return demarrer();
+  if (SUR_LE_SITE || Number(stockage(CLE_STOCKAGE)) === EMPREINTE_MDP) return demarrer();
   const form = $("verrou-form");
   const champ = $("mdp");
   champ.focus();
@@ -1758,9 +1764,11 @@ function demarrer() {
   README
   - Ajouter ou renommer des vidéos dans ce dossier, puis : node VideoRef/liste-videos.js
   - Ouvrir index.html directement (double-clic) ou via un serveur web.
-  - Le mot de passe est vérifié dans le navigateur : il écarte les curieux mais ne
-    protège pas les fichiers .mp4. Mis en ligne, protéger le dossier côté serveur
-    (.htaccess + .htpasswd sur Gandi).
+  - Hors du site, le mot de passe est vérifié dans le navigateur : il écarte les
+    curieux mais ne protège pas les fichiers .mp4.
+  - Sur kannagara.fr/videotheque/, c'est le serveur qui protège tout le dossier
+    (.htaccess + connexion.php, générés par tools/commit_gandi.js au déploiement).
+    Les vidéos ne partent que sur Gandi, jamais sur GitHub.
 */
 </script>
 </body>
