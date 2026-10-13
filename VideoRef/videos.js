@@ -1,6 +1,279 @@
 // Fichier généré par liste-videos.js : ne pas modifier à la main.
-// 112 vidéos, générées le 2026-10-11.
+// 184 vidéos, générées le 2026-10-13.
 window.VIDEOS = [
+ {
+  "fichier": "Buki Waza - Jo Dori - Chudan Tsuki - Ikkyo [Omote] - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Jo Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Ikkyo [Omote]",
+  "sensei": "FFAB - HABERT",
+  "duree": 8,
+  "imagette": "imagettes/Buki Waza - Jo Dori - Chudan Tsuki - Ikkyo [Omote] - FFAB - HABERT.jpg",
+  "taille": 3486431,
+  "web": "web/Buki Waza - Jo Dori - Chudan Tsuki - Ikkyo [Omote] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Jo Dori - Chudan Tsuki - Irimi Nage [Omote] - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Jo Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Irimi Nage [Omote]",
+  "sensei": "FFAB - HABERT",
+  "duree": 6,
+  "imagette": "imagettes/Buki Waza - Jo Dori - Chudan Tsuki - Irimi Nage [Omote] - FFAB - HABERT.jpg",
+  "taille": 2627634,
+  "web": "web/Buki Waza - Jo Dori - Chudan Tsuki - Irimi Nage [Omote] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Jo Dori - Chudan Tsuki - Kokyu Nage 1 (Ude Kime Nage) - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Jo Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Kokyu Nage 1 (Ude Kime Nage)",
+  "sensei": "FFAB - HABERT",
+  "duree": 5.9,
+  "imagette": "imagettes/Buki Waza - Jo Dori - Chudan Tsuki - Kokyu Nage 1 (Ude Kime Nage) - FFAB - HABERT.jpg",
+  "taille": 2907984,
+  "web": "web/Buki Waza - Jo Dori - Chudan Tsuki - Kokyu Nage 1 (Ude Kime Nage) - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Jo Dori - Chudan Tsuki - Kokyu Nage 2 (Juji Garami) - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Jo Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Kokyu Nage 2 (Juji Garami)",
+  "sensei": "FFAB - HABERT",
+  "duree": 5.8,
+  "imagette": "imagettes/Buki Waza - Jo Dori - Chudan Tsuki - Kokyu Nage 2 (Juji Garami) - FFAB - HABERT.jpg",
+  "taille": 2676642,
+  "web": "web/Buki Waza - Jo Dori - Chudan Tsuki - Kokyu Nage 2 (Juji Garami) - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Jo Dori - Chudan Tsuki - Kokyu Nage 3 - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Jo Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Kokyu Nage 3",
+  "sensei": "FFAB - HABERT",
+  "duree": 7.8,
+  "imagette": "imagettes/Buki Waza - Jo Dori - Chudan Tsuki - Kokyu Nage 3 - FFAB - HABERT.jpg",
+  "taille": 3701612,
+  "web": "web/Buki Waza - Jo Dori - Chudan Tsuki - Kokyu Nage 3 - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Jo Dori - Chudan Tsuki - Koshi Nage - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Jo Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Koshi Nage",
+  "sensei": "FFAB - HABERT",
+  "duree": 9.9,
+  "imagette": "imagettes/Buki Waza - Jo Dori - Chudan Tsuki - Koshi Nage - FFAB - HABERT.jpg",
+  "taille": 4439828,
+  "web": "web/Buki Waza - Jo Dori - Chudan Tsuki - Koshi Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Jo Dori - Chudan Tsuki - Kotegaeshi (Ikkyo Nage) - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Jo Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Kotegaeshi (Ikkyo Nage)",
+  "sensei": "FFAB - HABERT",
+  "duree": 6.6,
+  "imagette": "imagettes/Buki Waza - Jo Dori - Chudan Tsuki - Kotegaeshi (Ikkyo Nage) - FFAB - HABERT.jpg",
+  "taille": 3153541,
+  "web": "web/Buki Waza - Jo Dori - Chudan Tsuki - Kotegaeshi (Ikkyo Nage) - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Jo Dori - Chudan Tsuki - Naname Kokyu Nage - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Jo Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Naname Kokyu Nage",
+  "sensei": "FFAB - HABERT",
+  "duree": 6.3,
+  "imagette": "imagettes/Buki Waza - Jo Dori - Chudan Tsuki - Naname Kokyu Nage - FFAB - HABERT.jpg",
+  "taille": 2637840,
+  "web": "web/Buki Waza - Jo Dori - Chudan Tsuki - Naname Kokyu Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Jo Dori - Chudan Tsuki - Shiho Nage - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Jo Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Shiho Nage",
+  "sensei": "FFAB - HABERT",
+  "duree": 8.2,
+  "imagette": "imagettes/Buki Waza - Jo Dori - Chudan Tsuki - Shiho Nage - FFAB - HABERT.jpg",
+  "taille": 3739332,
+  "web": "web/Buki Waza - Jo Dori - Chudan Tsuki - Shiho Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Chudan Tsuki - Hiji Kime Osae - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Hiji Kime Osae",
+  "sensei": "FFAB - HABERT",
+  "duree": 7.9,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Chudan Tsuki - Hiji Kime Osae - FFAB - HABERT.jpg",
+  "taille": 3903869,
+  "web": "web/Buki Waza - Tanto Dori - Chudan Tsuki - Hiji Kime Osae - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Chudan Tsuki - Ikkyo - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Ikkyo",
+  "sensei": "FFAB - HABERT",
+  "duree": 16.5,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Chudan Tsuki - Ikkyo - FFAB - HABERT.jpg",
+  "taille": 6737952,
+  "web": "web/Buki Waza - Tanto Dori - Chudan Tsuki - Ikkyo - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Chudan Tsuki - Irimi Nage - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Irimi Nage",
+  "sensei": "FFAB - HABERT",
+  "duree": 13.8,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Chudan Tsuki - Irimi Nage - FFAB - HABERT.jpg",
+  "taille": 5761245,
+  "web": "web/Buki Waza - Tanto Dori - Chudan Tsuki - Irimi Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Chudan Tsuki - Kotegaeshi - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Kotegaeshi",
+  "sensei": "FFAB - HABERT",
+  "duree": 15.2,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Chudan Tsuki - Kotegaeshi - FFAB - HABERT.jpg",
+  "taille": 5961976,
+  "web": "web/Buki Waza - Tanto Dori - Chudan Tsuki - Kotegaeshi - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Chudan Tsuki - Kubi Nage - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Kubi Nage",
+  "sensei": "FFAB - HABERT",
+  "duree": 12.1,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Chudan Tsuki - Kubi Nage - FFAB - HABERT.jpg",
+  "taille": 5342266,
+  "web": "web/Buki Waza - Tanto Dori - Chudan Tsuki - Kubi Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Chudan Tsuki - Shiho Nage - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Shiho Nage",
+  "sensei": "FFAB - HABERT",
+  "duree": 13.5,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Chudan Tsuki - Shiho Nage - FFAB - HABERT.jpg",
+  "taille": 5616347,
+  "web": "web/Buki Waza - Tanto Dori - Chudan Tsuki - Shiho Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Chudan Tsuki - Uchi Kaiten Sankyo - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Uchi Kaiten Sankyo",
+  "sensei": "FFAB - HABERT",
+  "duree": 10.1,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Chudan Tsuki - Uchi Kaiten Sankyo - FFAB - HABERT.jpg",
+  "taille": 5288033,
+  "web": "web/Buki Waza - Tanto Dori - Chudan Tsuki - Uchi Kaiten Sankyo - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Chudan Tsuki - Ude Osae Nage - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Chudan Tsuki",
+  "forme": "",
+  "courant": "Ude Osae Nage",
+  "sensei": "FFAB - HABERT",
+  "duree": 12.7,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Chudan Tsuki - Ude Osae Nage - FFAB - HABERT.jpg",
+  "taille": 5532347,
+  "web": "web/Buki Waza - Tanto Dori - Chudan Tsuki - Ude Osae Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Shomen Uchi - Gokyo - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Shomen Uchi",
+  "forme": "",
+  "courant": "Gokyo",
+  "sensei": "FFAB - HABERT",
+  "duree": 14.2,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Shomen Uchi - Gokyo - FFAB - HABERT.jpg",
+  "taille": 5904416,
+  "web": "web/Buki Waza - Tanto Dori - Shomen Uchi - Gokyo - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Shomen Uchi - Shiho Nage - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Shomen Uchi",
+  "forme": "",
+  "courant": "Shiho Nage",
+  "sensei": "FFAB - HABERT",
+  "duree": 8.9,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Shomen Uchi - Shiho Nage - FFAB - HABERT.jpg",
+  "taille": 4171152,
+  "web": "web/Buki Waza - Tanto Dori - Shomen Uchi - Shiho Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Yokomen Uchi - Gokyo - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Yokomen Uchi",
+  "forme": "",
+  "courant": "Gokyo",
+  "sensei": "FFAB - HABERT",
+  "duree": 16.1,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Yokomen Uchi - Gokyo - FFAB - HABERT.jpg",
+  "taille": 7263120,
+  "web": "web/Buki Waza - Tanto Dori - Yokomen Uchi - Gokyo - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Buki Waza - Tanto Dori - Yokomen Uchi - Shiho Nage - FFAB - HABERT.mp4",
+  "type": "Buki Waza",
+  "attaque": "Tanto Dori",
+  "technique": "Yokomen Uchi",
+  "forme": "",
+  "courant": "Shiho Nage",
+  "sensei": "FFAB - HABERT",
+  "duree": 9.5,
+  "imagette": "imagettes/Buki Waza - Tanto Dori - Yokomen Uchi - Shiho Nage - FFAB - HABERT.jpg",
+  "taille": 4604483,
+  "web": "web/Buki Waza - Tanto Dori - Yokomen Uchi - Shiho Nage - FFAB - HABERT.mp4"
+ },
  {
   "fichier": "Hanmi Handachi Waza - Gyaku Hanmi Katate Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
   "type": "Hanmi Handachi Waza",
@@ -141,7 +414,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 5.8,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Ikkyo - FFAB - HABERT.jpg",
-  "taille": 2935630,
+  "taille": 3807826,
   "web": "web/Hanmi Handachi Waza - Katate Dori - Ikkyo - FFAB - HABERT.mp4"
  },
  {
@@ -154,7 +427,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 23,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Irimi Nage - FFAB - HABERT.jpg",
-  "taille": 10420088,
+  "taille": 12933631,
   "web": "web/Hanmi Handachi Waza - Katate Dori - Irimi Nage - FFAB - HABERT.mp4"
  },
  {
@@ -167,7 +440,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 8.9,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Kokyu Nage - FFAB - HABERT.jpg",
-  "taille": 4607188,
+  "taille": 5495946,
   "web": "web/Hanmi Handachi Waza - Katate Dori - Kokyu Nage - FFAB - HABERT.mp4"
  },
  {
@@ -180,7 +453,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 23.5,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Kotegaeshi - FFAB - HABERT.jpg",
-  "taille": 9775717,
+  "taille": 12672291,
   "web": "web/Hanmi Handachi Waza - Katate Dori - Kotegaeshi - FFAB - HABERT.mp4"
  },
  {
@@ -191,9 +464,9 @@ window.VIDEOS = [
   "forme": "Ura",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 20.2,
+  "duree": 20.3,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Nikyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 7819079,
+  "taille": 9691346,
   "web": "web/Hanmi Handachi Waza - Katate Dori - Nikyo [Ura] - FFAB - HABERT.mp4"
  },
  {
@@ -206,7 +479,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 5.9,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Shiho Nage [Omote] - FFAB - HABERT.jpg",
-  "taille": 2936958,
+  "taille": 3502502,
   "web": "web/Hanmi Handachi Waza - Katate Dori - Shiho Nage [Omote] - FFAB - HABERT.mp4"
  },
  {
@@ -219,7 +492,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 7.3,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Shiho Nage [Ura] - FFAB - HABERT.jpg",
-  "taille": 3737238,
+  "taille": 4751002,
   "web": "web/Hanmi Handachi Waza - Katate Dori - Shiho Nage [Ura] - FFAB - HABERT.mp4"
  },
  {
@@ -232,7 +505,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 11.7,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Soto Kaiten Nage - FFAB - HABERT.jpg",
-  "taille": 5086095,
+  "taille": 6274160,
   "web": "web/Hanmi Handachi Waza - Katate Dori - Soto Kaiten Nage - FFAB - HABERT.mp4"
  },
  {
@@ -245,7 +518,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 6.5,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Sumiotoshi - FFAB - HABERT.jpg",
-  "taille": 3458119,
+  "taille": 3890266,
   "web": "web/Hanmi Handachi Waza - Katate Dori - Sumiotoshi - FFAB - HABERT.mp4"
  },
  {
@@ -258,7 +531,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 24.4,
   "imagette": "imagettes/Hanmi Handachi Waza - Katate Dori - Uchi Kaiten Nage - FFAB - HABERT.jpg",
-  "taille": 12327984,
+  "taille": 14648234,
   "web": "web/Hanmi Handachi Waza - Katate Dori - Uchi Kaiten Nage - FFAB - HABERT.mp4"
  },
  {
@@ -282,9 +555,9 @@ window.VIDEOS = [
   "forme": "",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 11.2,
+  "duree": 8.3,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Gokyo - FFAB - HABERT.jpg",
-  "taille": 4210807,
+  "taille": 4162436,
   "web": "web/Suwari Waza - Shomen Uchi - Gokyo - FFAB - HABERT.mp4"
  },
  {
@@ -308,9 +581,9 @@ window.VIDEOS = [
   "forme": "Omote",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 12.4,
+  "duree": 10.3,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 4571614,
+  "taille": 4960683,
   "web": "web/Suwari Waza - Shomen Uchi - Ikkyo [Omote] - FFAB - HABERT.mp4"
  },
  {
@@ -334,9 +607,9 @@ window.VIDEOS = [
   "forme": "Ura",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 8.1,
+  "duree": 6.5,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 2880583,
+  "taille": 3070393,
   "web": "web/Suwari Waza - Shomen Uchi - Ikkyo [Ura] - FFAB - HABERT.mp4"
  },
  {
@@ -360,9 +633,9 @@ window.VIDEOS = [
   "forme": "",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 13,
+  "duree": 7,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Irimi Nage - FFAB - HABERT.jpg",
-  "taille": 4272951,
+  "taille": 3361107,
   "web": "web/Suwari Waza - Shomen Uchi - Irimi Nage - FFAB - HABERT.mp4"
  },
  {
@@ -386,9 +659,9 @@ window.VIDEOS = [
   "forme": "",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 13.6,
+  "duree": 15.2,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Kokyu Nage - FFAB - HABERT.jpg",
-  "taille": 5304711,
+  "taille": 6345472,
   "web": "web/Suwari Waza - Shomen Uchi - Kokyu Nage - FFAB - HABERT.mp4"
  },
  {
@@ -412,9 +685,9 @@ window.VIDEOS = [
   "forme": "",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 15.2,
+  "duree": 12.6,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Kotegaeshi - FFAB - HABERT.jpg",
-  "taille": 6148965,
+  "taille": 6209844,
   "web": "web/Suwari Waza - Shomen Uchi - Kotegaeshi - FFAB - HABERT.mp4"
  },
  {
@@ -438,9 +711,9 @@ window.VIDEOS = [
   "forme": "Omote",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 16.2,
+  "duree": 23.3,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Nikyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 5019800,
+  "taille": 9534287,
   "web": "web/Suwari Waza - Shomen Uchi - Nikyo [Omote] - FFAB - HABERT.mp4"
  },
  {
@@ -464,9 +737,9 @@ window.VIDEOS = [
   "forme": "Ura",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 20,
+  "duree": 25.2,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Nikyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 6380702,
+  "taille": 13190567,
   "web": "web/Suwari Waza - Shomen Uchi - Nikyo [Ura] - FFAB - HABERT.mp4"
  },
  {
@@ -490,9 +763,9 @@ window.VIDEOS = [
   "forme": "Omote",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 18.7,
+  "duree": 12.5,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Sankyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 5187295,
+  "taille": 6258298,
   "web": "web/Suwari Waza - Shomen Uchi - Sankyo [Omote] - FFAB - HABERT.mp4"
  },
  {
@@ -516,9 +789,9 @@ window.VIDEOS = [
   "forme": "Ura",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 21.4,
+  "duree": 12.4,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Sankyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 6860695,
+  "taille": 6139743,
   "web": "web/Suwari Waza - Shomen Uchi - Sankyo [Ura] - FFAB - HABERT.mp4"
  },
  {
@@ -542,9 +815,9 @@ window.VIDEOS = [
   "forme": "Omote",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 15.4,
+  "duree": 9.3,
   "imagette": "imagettes/Suwari Waza - Shomen Uchi - Yonkyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 5983487,
+  "taille": 4533307,
   "web": "web/Suwari Waza - Shomen Uchi - Yonkyo [Omote] - FFAB - HABERT.mp4"
  },
  {
@@ -574,6 +847,162 @@ window.VIDEOS = [
   "web": "web/Suwari Waza - Shomen Uchi - Yonkyo [Ura] - FFAB - HABERT.mp4"
  },
  {
+  "fichier": "Suwari Waza - Yokomen Uchi - Gokyo - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Gokyo",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 10.1,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Gokyo - FFAB - HABERT.jpg",
+  "taille": 3903032,
+  "web": "web/Suwari Waza - Yokomen Uchi - Gokyo - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Ikkyo [Omote] - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Ikkyo",
+  "forme": "Omote",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 13.5,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Ikkyo [Omote] - FFAB - HABERT.jpg",
+  "taille": 4730168,
+  "web": "web/Suwari Waza - Yokomen Uchi - Ikkyo [Omote] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Ikkyo [Ura] - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Ikkyo",
+  "forme": "Ura",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 11.1,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Ikkyo [Ura] - FFAB - HABERT.jpg",
+  "taille": 3738691,
+  "web": "web/Suwari Waza - Yokomen Uchi - Ikkyo [Ura] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Irimi Nage - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Irimi Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 11.3,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Irimi Nage - FFAB - HABERT.jpg",
+  "taille": 4012960,
+  "web": "web/Suwari Waza - Yokomen Uchi - Irimi Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Kokyu Nage - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Kokyu Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 13.3,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Kokyu Nage - FFAB - HABERT.jpg",
+  "taille": 6110075,
+  "web": "web/Suwari Waza - Yokomen Uchi - Kokyu Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Kotegaeshi - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Kotegaeshi",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 17.9,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Kotegaeshi - FFAB - HABERT.jpg",
+  "taille": 5338239,
+  "web": "web/Suwari Waza - Yokomen Uchi - Kotegaeshi - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Nikyo [Omote] - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Nikyo",
+  "forme": "Omote",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 19.1,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Nikyo [Omote] - FFAB - HABERT.jpg",
+  "taille": 5639290,
+  "web": "web/Suwari Waza - Yokomen Uchi - Nikyo [Omote] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Nikyo [Ura] - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Nikyo",
+  "forme": "Ura",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 22.3,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Nikyo [Ura] - FFAB - HABERT.jpg",
+  "taille": 7023834,
+  "web": "web/Suwari Waza - Yokomen Uchi - Nikyo [Ura] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Sankyo [Omote] - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Sankyo",
+  "forme": "Omote",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 17.3,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Sankyo [Omote] - FFAB - HABERT.jpg",
+  "taille": 5190117,
+  "web": "web/Suwari Waza - Yokomen Uchi - Sankyo [Omote] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Sankyo [Ura] - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Sankyo",
+  "forme": "Ura",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 25.9,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Sankyo [Ura] - FFAB - HABERT.jpg",
+  "taille": 7535838,
+  "web": "web/Suwari Waza - Yokomen Uchi - Sankyo [Ura] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Yonkyo [Omote] - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Yonkyo",
+  "forme": "Omote",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 12,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Yonkyo [Omote] - FFAB - HABERT.jpg",
+  "taille": 4617428,
+  "web": "web/Suwari Waza - Yokomen Uchi - Yonkyo [Omote] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Suwari Waza - Yokomen Uchi - Yonkyo [Ura] - FFAB - HABERT.mp4",
+  "type": "Suwari Waza",
+  "attaque": "Yokomen Uchi",
+  "technique": "Yonkyo",
+  "forme": "Ura",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 14,
+  "imagette": "imagettes/Suwari Waza - Yokomen Uchi - Yonkyo [Ura] - FFAB - HABERT.jpg",
+  "taille": 4241559,
+  "web": "web/Suwari Waza - Yokomen Uchi - Yonkyo [Ura] - FFAB - HABERT.mp4"
+ },
+ {
   "fichier": "Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
   "type": "Tachi Waza",
   "attaque": "Ai Hanmi Katate Dori",
@@ -596,7 +1025,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 9.8,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 4408856,
+  "taille": 5349702,
   "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Omote] - FFAB - HABERT.mp4"
  },
  {
@@ -622,7 +1051,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 5.6,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 2423747,
+  "taille": 3174049,
   "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Ikkyo [Ura] - FFAB - HABERT.mp4"
  },
  {
@@ -646,9 +1075,9 @@ window.VIDEOS = [
   "forme": "",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 21.4,
+  "duree": 21.5,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Irimi Nage - FFAB - HABERT.jpg",
-  "taille": 9404863,
+  "taille": 12351018,
   "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Irimi Nage - FFAB - HABERT.mp4"
  },
  {
@@ -674,7 +1103,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 15.6,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Kokyu Nage - FFAB - HABERT.jpg",
-  "taille": 7654978,
+  "taille": 9698983,
   "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Kokyu Nage - FFAB - HABERT.mp4"
  },
  {
@@ -700,7 +1129,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 21.8,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Koshi Nage - FFAB - HABERT.jpg",
-  "taille": 9154400,
+  "taille": 11243371,
   "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Koshi Nage - FFAB - HABERT.mp4"
  },
  {
@@ -726,7 +1155,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 17.6,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Kotegaeshi - FFAB - HABERT.jpg",
-  "taille": 7545622,
+  "taille": 9791482,
   "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Kotegaeshi - FFAB - HABERT.mp4"
  },
  {
@@ -752,7 +1181,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 11.8,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Omote] - FFAB - HABERT.jpg",
-  "taille": 4332817,
+  "taille": 5093889,
   "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Omote] - FFAB - HABERT.mp4"
  },
  {
@@ -778,7 +1207,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 27.4,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Ura] - FFAB - HABERT.jpg",
-  "taille": 10328969,
+  "taille": 12002673,
   "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Nikyo [Ura] - FFAB - HABERT.mp4"
  },
  {
@@ -804,7 +1233,7 @@ window.VIDEOS = [
   "sensei": "HABERT",
   "duree": 20.1,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Shiho Nage - FFAB - HABERT.jpg",
-  "taille": 8391780,
+  "taille": 10458959,
   "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Shiho Nage - FFAB - HABERT.mp4"
  },
  {
@@ -828,10 +1257,114 @@ window.VIDEOS = [
   "forme": "",
   "courant": "FFAB",
   "sensei": "HABERT",
-  "duree": 14.8,
+  "duree": 14.9,
   "imagette": "imagettes/Tachi Waza - Ai Hanmi Katate Dori - Ude Kime Nage - FFAB - HABERT.jpg",
-  "taille": 6586017,
+  "taille": 8542744,
   "web": "web/Tachi Waza - Ai Hanmi Katate Dori - Ude Kime Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Kata Dori Men Uchi - Ikkyo - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Kata Dori Men Uchi",
+  "technique": "Ikkyo",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 30,
+  "imagette": "imagettes/Tachi Waza - Kata Dori Men Uchi - Ikkyo - FFAB - HABERT.jpg",
+  "taille": 14644007,
+  "web": "web/Tachi Waza - Kata Dori Men Uchi - Ikkyo - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Kata Dori Men Uchi - Irimi Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Kata Dori Men Uchi",
+  "technique": "Irimi Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 15.5,
+  "imagette": "imagettes/Tachi Waza - Kata Dori Men Uchi - Irimi Nage - FFAB - HABERT.jpg",
+  "taille": 9098889,
+  "web": "web/Tachi Waza - Kata Dori Men Uchi - Irimi Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Kata Dori Men Uchi - Kokyu Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Kata Dori Men Uchi",
+  "technique": "Kokyu Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 19.5,
+  "imagette": "imagettes/Tachi Waza - Kata Dori Men Uchi - Kokyu Nage - FFAB - HABERT.jpg",
+  "taille": 11514322,
+  "web": "web/Tachi Waza - Kata Dori Men Uchi - Kokyu Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Kata Dori Men Uchi - Koshi Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Kata Dori Men Uchi",
+  "technique": "Koshi Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 15.8,
+  "imagette": "imagettes/Tachi Waza - Kata Dori Men Uchi - Koshi Nage - FFAB - HABERT.jpg",
+  "taille": 8053481,
+  "web": "web/Tachi Waza - Kata Dori Men Uchi - Koshi Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Kata Dori Men Uchi - Kotegaeshi - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Kata Dori Men Uchi",
+  "technique": "Kotegaeshi",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 14.9,
+  "imagette": "imagettes/Tachi Waza - Kata Dori Men Uchi - Kotegaeshi - FFAB - HABERT.jpg",
+  "taille": 6292740,
+  "web": "web/Tachi Waza - Kata Dori Men Uchi - Kotegaeshi - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Kata Dori Men Uchi - Nikyo [Ura] - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Kata Dori Men Uchi",
+  "technique": "Nikyo",
+  "forme": "Ura",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 32.5,
+  "imagette": "imagettes/Tachi Waza - Kata Dori Men Uchi - Nikyo [Ura] - FFAB - HABERT.jpg",
+  "taille": 13493118,
+  "web": "web/Tachi Waza - Kata Dori Men Uchi - Nikyo [Ura] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Kata Dori Men Uchi - Shiho Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Kata Dori Men Uchi",
+  "technique": "Shiho Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 13.3,
+  "imagette": "imagettes/Tachi Waza - Kata Dori Men Uchi - Shiho Nage - FFAB - HABERT.jpg",
+  "taille": 6486092,
+  "web": "web/Tachi Waza - Kata Dori Men Uchi - Shiho Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Kata Dori Men Uchi - Ude Kime Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Kata Dori Men Uchi",
+  "technique": "Ude Kime Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 9.4,
+  "imagette": "imagettes/Tachi Waza - Kata Dori Men Uchi - Ude Kime Nage - FFAB - HABERT.jpg",
+  "taille": 5777471,
+  "web": "web/Tachi Waza - Kata Dori Men Uchi - Ude Kime Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Katate Dori - Ikkyo [Omote] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -990,6 +1523,136 @@ window.VIDEOS = [
   "web": "web/Tachi Waza - Katate Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
+  "fichier": "Tachi Waza - Morote Dori - Ikkyo - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Morote Dori",
+  "technique": "Ikkyo",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 12.9,
+  "imagette": "imagettes/Tachi Waza - Morote Dori - Ikkyo - FFAB - HABERT.jpg",
+  "taille": 10426532,
+  "web": "web/Tachi Waza - Morote Dori - Ikkyo - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Morote Dori - Irimi Nage [Ura] - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Morote Dori",
+  "technique": "Irimi Nage",
+  "forme": "Ura",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 15,
+  "imagette": "imagettes/Tachi Waza - Morote Dori - Irimi Nage [Ura] - FFAB - HABERT.jpg",
+  "taille": 14057767,
+  "web": "web/Tachi Waza - Morote Dori - Irimi Nage [Ura] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Morote Dori - Juji Garami - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Morote Dori",
+  "technique": "Juji Garami",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 10.7,
+  "imagette": "imagettes/Tachi Waza - Morote Dori - Juji Garami - FFAB - HABERT.jpg",
+  "taille": 9695200,
+  "web": "web/Tachi Waza - Morote Dori - Juji Garami - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Morote Dori - Kokyu Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Morote Dori",
+  "technique": "Kokyu Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 24.4,
+  "imagette": "imagettes/Tachi Waza - Morote Dori - Kokyu Nage - FFAB - HABERT.jpg",
+  "taille": 19736546,
+  "web": "web/Tachi Waza - Morote Dori - Kokyu Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Morote Dori - Koshi Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Morote Dori",
+  "technique": "Koshi Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 7.7,
+  "imagette": "imagettes/Tachi Waza - Morote Dori - Koshi Nage - FFAB - HABERT.jpg",
+  "taille": 6318344,
+  "web": "web/Tachi Waza - Morote Dori - Koshi Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Morote Dori - Kotegaeshi - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Morote Dori",
+  "technique": "Kotegaeshi",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 9.3,
+  "imagette": "imagettes/Tachi Waza - Morote Dori - Kotegaeshi - FFAB - HABERT.jpg",
+  "taille": 9014308,
+  "web": "web/Tachi Waza - Morote Dori - Kotegaeshi - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Morote Dori - Naname Kokyu Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Morote Dori",
+  "technique": "Naname Kokyu Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 9.3,
+  "imagette": "imagettes/Tachi Waza - Morote Dori - Naname Kokyu Nage - FFAB - HABERT.jpg",
+  "taille": 7963454,
+  "web": "web/Tachi Waza - Morote Dori - Naname Kokyu Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Morote Dori - Nikyo [Ura] - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Morote Dori",
+  "technique": "Nikyo",
+  "forme": "Ura",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 15.3,
+  "imagette": "imagettes/Tachi Waza - Morote Dori - Nikyo [Ura] - FFAB - HABERT.jpg",
+  "taille": 9970655,
+  "web": "web/Tachi Waza - Morote Dori - Nikyo [Ura] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Morote Dori - Shiho Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Morote Dori",
+  "technique": "Shiho Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 6.3,
+  "imagette": "imagettes/Tachi Waza - Morote Dori - Shiho Nage - FFAB - HABERT.jpg",
+  "taille": 5701750,
+  "web": "web/Tachi Waza - Morote Dori - Shiho Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Morote Dori - Ude Kime Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Morote Dori",
+  "technique": "Ude Kime Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 6.3,
+  "imagette": "imagettes/Tachi Waza - Morote Dori - Ude Kime Nage - FFAB - HABERT.jpg",
+  "taille": 5767650,
+  "web": "web/Tachi Waza - Morote Dori - Ude Kime Nage - FFAB - HABERT.mp4"
+ },
+ {
   "fichier": "Tachi Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
   "type": "Tachi Waza",
   "attaque": "Ryote Dori",
@@ -1001,6 +1664,32 @@ window.VIDEOS = [
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
   "taille": 13219209,
   "web": "web/Tachi Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Ryote Dori - Ikkyo [Omote] - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Ikkyo",
+  "forme": "Omote",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 10.1,
+  "imagette": "imagettes/Tachi Waza - Ryote Dori - Ikkyo [Omote] - FFAB - HABERT.jpg",
+  "taille": 4157105,
+  "web": "web/Tachi Waza - Ryote Dori - Ikkyo [Omote] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Ryote Dori - Ikkyo [Ura] - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Ikkyo",
+  "forme": "Ura",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 8.7,
+  "imagette": "imagettes/Tachi Waza - Ryote Dori - Ikkyo [Ura] - FFAB - HABERT.jpg",
+  "taille": 3332144,
+  "web": "web/Tachi Waza - Ryote Dori - Ikkyo [Ura] - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1029,6 +1718,19 @@ window.VIDEOS = [
   "web": "web/Tachi Waza - Ryote Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
+  "fichier": "Tachi Waza - Ryote Dori - Kokyu Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Kokyu Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 35.7,
+  "imagette": "imagettes/Tachi Waza - Ryote Dori - Kokyu Nage - FFAB - HABERT.jpg",
+  "taille": 16438212,
+  "web": "web/Tachi Waza - Ryote Dori - Kokyu Nage - FFAB - HABERT.mp4"
+ },
+ {
   "fichier": "Tachi Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
   "type": "Tachi Waza",
   "attaque": "Ryote Dori",
@@ -1042,6 +1744,19 @@ window.VIDEOS = [
   "web": "web/Tachi Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
+  "fichier": "Tachi Waza - Ryote Dori - Koshi Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Koshi Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 13.2,
+  "imagette": "imagettes/Tachi Waza - Ryote Dori - Koshi Nage - FFAB - HABERT.jpg",
+  "taille": 5221356,
+  "web": "web/Tachi Waza - Ryote Dori - Koshi Nage - FFAB - HABERT.mp4"
+ },
+ {
   "fichier": "Tachi Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
   "type": "Tachi Waza",
   "attaque": "Ryote Dori",
@@ -1053,6 +1768,19 @@ window.VIDEOS = [
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
   "taille": 11524686,
   "web": "web/Tachi Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Ryote Dori - Kotegaeshi (3 Formes) - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Kotegaeshi (3 Formes)",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 21.5,
+  "imagette": "imagettes/Tachi Waza - Ryote Dori - Kotegaeshi (3 Formes) - FFAB - HABERT.jpg",
+  "taille": 8852989,
+  "web": "web/Tachi Waza - Ryote Dori - Kotegaeshi (3 Formes) - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1079,6 +1807,19 @@ window.VIDEOS = [
   "imagette": "imagettes/Tachi Waza - Ryote Dori - Tenchi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
   "taille": 9462162,
   "web": "web/Tachi Waza - Ryote Dori - Tenchi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
+ },
+ {
+  "fichier": "Tachi Waza - Ryote Dori - Tenchi Nage - FFAB - HABERT.mp4",
+  "type": "Tachi Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Tenchi Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 5.5,
+  "imagette": "imagettes/Tachi Waza - Ryote Dori - Tenchi Nage - FFAB - HABERT.jpg",
+  "taille": 2675225,
+  "web": "web/Tachi Waza - Ryote Dori - Tenchi Nage - FFAB - HABERT.mp4"
  },
  {
   "fichier": "Tachi Waza - Ryote Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1328,6 +2069,110 @@ window.VIDEOS = [
   "web": "web/Tachi Waza - Yokomen Uchi - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
+  "fichier": "Ushiro Waza - Katate Kubishime - Ikkyo - FFAB - HABERT.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Katate Kubishime",
+  "technique": "Ikkyo",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 9.9,
+  "imagette": "imagettes/Ushiro Waza - Katate Kubishime - Ikkyo - FFAB - HABERT.jpg",
+  "taille": 1977632,
+  "web": "web/Ushiro Waza - Katate Kubishime - Ikkyo - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Katate Kubishime - Irimi Nage - FFAB - HABERT.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Katate Kubishime",
+  "technique": "Irimi Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 19.1,
+  "imagette": "imagettes/Ushiro Waza - Katate Kubishime - Irimi Nage - FFAB - HABERT.jpg",
+  "taille": 3844887,
+  "web": "web/Ushiro Waza - Katate Kubishime - Irimi Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Katate Kubishime - Kokyu Nage - FFAB - HABERT.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Katate Kubishime",
+  "technique": "Kokyu Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 13.9,
+  "imagette": "imagettes/Ushiro Waza - Katate Kubishime - Kokyu Nage - FFAB - HABERT.jpg",
+  "taille": 2585722,
+  "web": "web/Ushiro Waza - Katate Kubishime - Kokyu Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Katate Kubishime - Koshi Nage - FFAB - HABERT.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Katate Kubishime",
+  "technique": "Koshi Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 29.3,
+  "imagette": "imagettes/Ushiro Waza - Katate Kubishime - Koshi Nage - FFAB - HABERT.jpg",
+  "taille": 6442649,
+  "web": "web/Ushiro Waza - Katate Kubishime - Koshi Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Katate Kubishime - Kotegaeshi - FFAB - HABERT.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Katate Kubishime",
+  "technique": "Kotegaeshi",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 16.7,
+  "imagette": "imagettes/Ushiro Waza - Katate Kubishime - Kotegaeshi - FFAB - HABERT.jpg",
+  "taille": 3380583,
+  "web": "web/Ushiro Waza - Katate Kubishime - Kotegaeshi - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Katate Kubishime - Nikyo [Ura] - FFAB - HABERT.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Katate Kubishime",
+  "technique": "Nikyo",
+  "forme": "Ura",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 30.4,
+  "imagette": "imagettes/Ushiro Waza - Katate Kubishime - Nikyo [Ura] - FFAB - HABERT.jpg",
+  "taille": 5433988,
+  "web": "web/Ushiro Waza - Katate Kubishime - Nikyo [Ura] - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Katate Kubishime - Shiho Nage - FFAB - HABERT.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Katate Kubishime",
+  "technique": "Shiho Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 17.1,
+  "imagette": "imagettes/Ushiro Waza - Katate Kubishime - Shiho Nage - FFAB - HABERT.jpg",
+  "taille": 3599838,
+  "web": "web/Ushiro Waza - Katate Kubishime - Shiho Nage - FFAB - HABERT.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Katate Kubishime - Ude Kime Nage - FFAB - HABERT.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Katate Kubishime",
+  "technique": "Ude Kime Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "HABERT",
+  "duree": 12.9,
+  "imagette": "imagettes/Ushiro Waza - Katate Kubishime - Ude Kime Nage - FFAB - HABERT.jpg",
+  "taille": 2807792,
+  "web": "web/Ushiro Waza - Katate Kubishime - Ude Kime Nage - FFAB - HABERT.mp4"
+ },
+ {
   "fichier": "Ushiro Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
   "type": "Ushiro Waza",
   "attaque": "Ryote Dori",
@@ -1341,6 +2186,19 @@ window.VIDEOS = [
   "web": "web/Ushiro Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
+  "fichier": "Ushiro Waza - Ryote Dori - Ikkyo - FFAB - LUCCHETTI.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Ikkyo",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "LUCCHETTI",
+  "duree": 6.3,
+  "imagette": "imagettes/Ushiro Waza - Ryote Dori - Ikkyo - FFAB - LUCCHETTI.jpg",
+  "taille": 2576977,
+  "web": "web/Ushiro Waza - Ryote Dori - Ikkyo - FFAB - LUCCHETTI.mp4"
+ },
+ {
   "fichier": "Ushiro Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
   "type": "Ushiro Waza",
   "attaque": "Ryote Dori",
@@ -1352,6 +2210,32 @@ window.VIDEOS = [
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
   "taille": 13318313,
   "web": "web/Ushiro Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Ryote Dori - Irimi Nage - FFAB - LUCCHETTI.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Irimi Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "LUCCHETTI",
+  "duree": 24.4,
+  "imagette": "imagettes/Ushiro Waza - Ryote Dori - Irimi Nage - FFAB - LUCCHETTI.jpg",
+  "taille": 13029949,
+  "web": "web/Ushiro Waza - Ryote Dori - Irimi Nage - FFAB - LUCCHETTI.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Ryote Dori - Juji Garami - FFAB - LUCCHETTI.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Juji Garami",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "LUCCHETTI",
+  "duree": 8.4,
+  "imagette": "imagettes/Ushiro Waza - Ryote Dori - Juji Garami - FFAB - LUCCHETTI.jpg",
+  "taille": 4372972,
+  "web": "web/Ushiro Waza - Ryote Dori - Juji Garami - FFAB - LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Jujigarami - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1380,6 +2264,19 @@ window.VIDEOS = [
   "web": "web/Ushiro Waza - Ryote Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
+  "fichier": "Ushiro Waza - Ryote Dori - Kokyu Nage - FFAB - LUCCHETTI.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Kokyu Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "LUCCHETTI",
+  "duree": 6.2,
+  "imagette": "imagettes/Ushiro Waza - Ryote Dori - Kokyu Nage - FFAB - LUCCHETTI.jpg",
+  "taille": 3269361,
+  "web": "web/Ushiro Waza - Ryote Dori - Kokyu Nage - FFAB - LUCCHETTI.mp4"
+ },
+ {
   "fichier": "Ushiro Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
   "type": "Ushiro Waza",
   "attaque": "Ryote Dori",
@@ -1393,6 +2290,19 @@ window.VIDEOS = [
   "web": "web/Ushiro Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
  },
  {
+  "fichier": "Ushiro Waza - Ryote Dori - Koshi Nage - FFAB - LUCCHETTI.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Koshi Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "LUCCHETTI",
+  "duree": 13.8,
+  "imagette": "imagettes/Ushiro Waza - Ryote Dori - Koshi Nage - FFAB - LUCCHETTI.jpg",
+  "taille": 5465902,
+  "web": "web/Ushiro Waza - Ryote Dori - Koshi Nage - FFAB - LUCCHETTI.mp4"
+ },
+ {
   "fichier": "Ushiro Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
   "type": "Ushiro Waza",
   "attaque": "Ryote Dori",
@@ -1404,6 +2314,19 @@ window.VIDEOS = [
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
   "taille": 14400607,
   "web": "web/Ushiro Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Ryote Dori - Kotegaeshi - FFAB - LUCCHETTI.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Kotegaeshi",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "LUCCHETTI",
+  "duree": 12.4,
+  "imagette": "imagettes/Ushiro Waza - Ryote Dori - Kotegaeshi - FFAB - LUCCHETTI.jpg",
+  "taille": 6261343,
+  "web": "web/Ushiro Waza - Ryote Dori - Kotegaeshi - FFAB - LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Nikyo [Ura] - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
@@ -1443,6 +2366,19 @@ window.VIDEOS = [
   "imagette": "imagettes/Ushiro Waza - Ryote Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.jpg",
   "taille": 6320099,
   "web": "web/Ushiro Waza - Ryote Dori - Shiho Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4"
+ },
+ {
+  "fichier": "Ushiro Waza - Ryote Dori - Shiho Nage - FFAB - LUCCHETTI.mp4",
+  "type": "Ushiro Waza",
+  "attaque": "Ryote Dori",
+  "technique": "Shiho Nage",
+  "forme": "",
+  "courant": "FFAB",
+  "sensei": "LUCCHETTI",
+  "duree": 10.3,
+  "imagette": "imagettes/Ushiro Waza - Ryote Dori - Shiho Nage - FFAB - LUCCHETTI.jpg",
+  "taille": 5784251,
+  "web": "web/Ushiro Waza - Ryote Dori - Shiho Nage - FFAB - LUCCHETTI.mp4"
  },
  {
   "fichier": "Ushiro Waza - Ryote Dori - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4",
