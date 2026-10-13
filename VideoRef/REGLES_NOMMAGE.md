@@ -147,7 +147,7 @@ renommé à la main doit suivre la même règle, et `decoupe.py verifier` signal
 - Tachi Waza - Yokomen Uchi - Ude Kime Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4
 - Ushiro Waza - Ryote Dori - Ikkyo - FFAB - CHARLES, CISSE, LUCCHETTI.mp4
 - Ushiro Waza - Ryote Dori - Irimi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4
-- Ushiro Waza - Ryote Dori - Jujigarami - FFAB - CHARLES, CISSE, LUCCHETTI.mp4
+- Ushiro Waza - Ryote Dori - Juji Garami - FFAB - CHARLES, CISSE, LUCCHETTI.mp4
 - Ushiro Waza - Ryote Dori - Kokyu Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4
 - Ushiro Waza - Ryote Dori - Koshi Nage - FFAB - CHARLES, CISSE, LUCCHETTI.mp4
 - Ushiro Waza - Ryote Dori - Kotegaeshi - FFAB - CHARLES, CISSE, LUCCHETTI.mp4

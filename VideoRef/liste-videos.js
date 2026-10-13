@@ -47,7 +47,11 @@ function analyser(fichier) {
   const parties = base.split(" - ").map((p) => p.trim());
   if (parties.length < 5) return null;
 
-  const [type, attaque, techniqueBrute, courant, ...reste] = parties;
+  // Buki Waza : une partie de plus (arme), fusionnée avec l'attaque : « Jo Dori · Chudan Tsuki »
+  const [type, ...suite] = parties;
+  const attaques = suite.length >= 5 ? suite.splice(0, 2) : suite.splice(0, 1);
+  const attaque = attaques.join(" · ");
+  const [techniqueBrute, courant, ...reste] = suite;
   const sensei = reste.join(" - ");
   const m = techniqueBrute.match(/^(.*?)\s*\[(.+)\]$/);
 
