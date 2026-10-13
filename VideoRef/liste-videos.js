@@ -45,22 +45,25 @@ const CRF = 23;
 function analyser(fichier) {
   const base = path.basename(fichier, path.extname(fichier));
   const parties = base.split(" - ").map((p) => p.trim());
-  if (parties.length < 5) return null;
+  if (parties.length < 4) return null;
 
-  // Buki Waza : une partie de plus (arme), fusionnée avec l'attaque : « Jo Dori · Chudan Tsuki »
+  // Sans attaque (Jo Nage - Kokyu Nage (1) - FFAB - HABERT), le nom n'a que 4 parties
   const [type, ...suite] = parties;
-  const attaques = suite.length >= 5 ? suite.splice(0, 2) : suite.splice(0, 1);
-  const attaque = attaques.join(" · ");
+  const attaque = parties.length >= 5 ? suite.shift() : "";
   const [techniqueBrute, courant, ...reste] = suite;
   const sensei = reste.join(" - ");
-  const m = techniqueBrute.match(/^(.*?)\s*\[(.+)\]$/);
+  // Le numéro entre parenthèses (« Kokyu Nage (3) ») ne fait pas partie de la technique
+  const v = techniqueBrute.match(/^(.*?)\s*\((\d+)\)$/);
+  const brute = v ? v[1] : techniqueBrute;
+  const m = brute.match(/^(.*?)\s*\[(.+)\]$/);
 
   return {
     fichier,
     type,
     attaque,
-    technique: m ? m[1] : techniqueBrute,
+    technique: m ? m[1] : brute,
     forme: m ? m[2] : "",
+    variante: v ? v[2] : "",
     courant,
     sensei
   };
@@ -164,7 +167,7 @@ function listePrecedente() {
   const fichiers = fs
     .readdirSync(DOSSIER)
     .filter((f) => EXTENSIONS.has(path.extname(f).toLowerCase()))
-    .sort((a, b) => a.localeCompare(b, "fr"));
+    .sort((a, b) => a.localeCompare(b, "fr", { numeric: true }));
 
   const videos = [];
   const ignores = [];

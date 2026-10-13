@@ -1111,7 +1111,7 @@ function majResultats() {
         el(
           "div",
           { class: "groupe__tete" },
-          el("h3", { class: "groupe__titre" }, `${s.type} · ${s.attaque}`),
+          el("h3", { class: "groupe__titre" }, [s.type, s.attaque].filter(Boolean).join(" · ")),
           el("small", {}, `${nb} vidéo${nb > 1 ? "s" : ""}`),
           nb > 1 ? boutonToutLire(videosSection) : null
         ),
@@ -1169,7 +1169,7 @@ function tuile(versions) {
               onmouseleave: versions.length > 1 ? () => montrer(v0) : null
             },
             svg(IC_LECTURE),
-            v.sensei
+            v.variante ? `${v.sensei} (${v.variante})` : v.sensei
           )
         )
       )
@@ -1301,7 +1301,7 @@ function majFile() {
           },
           el("span", { class: "file__vignette" }, vignette(v)),
           el("span", { class: "file__nom" }, `${v.technique}${v.forme ? " " + v.forme : ""}`),
-          el("span", { class: "file__sous" }, `${v.type} · ${v.attaque} · ${v.sensei}`)
+          el("span", { class: "file__sous" }, [v.type, v.attaque, v.sensei].filter(Boolean).join(" · "))
         )
       )
     );
@@ -1346,7 +1346,7 @@ function charger(lire) {
   $("l-attente").hidden = false;
   if (lire) video.play().catch(() => {});
 
-  $("l-ctx").textContent = `${v.type} · ${v.attaque}`;
+  $("l-ctx").textContent = [v.type, v.attaque].filter(Boolean).join(" · ");
   $("l-titre").replaceChildren(v.technique, badgeForme(v.forme) || "");
   $("l-source").textContent = [v.courant, v.sensei].filter(Boolean).join(" · ");
 
@@ -1367,7 +1367,7 @@ function charger(lire) {
               onclick: () => changerVersion(x)
             },
             svg(IC_LECTURE),
-            x.sensei
+            x.variante ? `${x.sensei} (${x.variante})` : x.sensei
           )
         )
       : [];
