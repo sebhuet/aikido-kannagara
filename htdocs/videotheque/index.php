@@ -11,12 +11,17 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/responsive.css">
-  <link rel="stylesheet" href="style.css?v=7234312a84">
+  <link rel="stylesheet" href="style.css?v=509c411d11">
   <style>
     /* Intégration dans le site : la vidéothèque se place sous l'en-tête fixe */
     body { padding-top: var(--header-height); background-image: none; }
     .barre { top: var(--header-height); }
     .filtres { top: calc(var(--header-height) + 72px); max-height: calc(100vh - var(--header-height) - 88px); }
+    /* Les titres et paragraphes du site (noirs, marges, interligne) écrasaient ceux de la
+       vidéothèque, illisibles en mode sombre. Même poids que les règles du site (h2, p),
+       placées après elles : les règles à classe de la vidéothèque gardent la main. */
+    :where(.barre, .mise, .apropos) :is(h1, h2, h3, h4, h5, h6) { color: inherit; margin: 0; line-height: inherit; font-family: inherit; }
+    :where(.barre, .mise, .apropos) p { margin: 0; }
     /* Pas de bouton « À propos » sur le site (app.js en a besoin : on le masque) */
     #ouvrir-apropos { display: none; }
     @media (max-width: 900px) {
@@ -158,8 +163,8 @@
   <form class="apropos__pied" method="dialog"><button class="bouton" data-i18n="fermer">Fermer</button></form>
 </dialog>
 
-<script src="donnees.js?v=7234312a84"></script>
-<script src="app.js?v=7234312a84"></script>
+<script src="donnees.js?v=509c411d11"></script>
+<script src="app.js?v=509c411d11"></script>
 <script src="/js/main.js" defer></script>
 </body>
 </html>

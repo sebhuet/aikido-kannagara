@@ -32,6 +32,11 @@ const STYLE_INTEGRATION = `
     body { padding-top: var(--header-height); background-image: none; }
     .barre { top: var(--header-height); }
     .filtres { top: calc(var(--header-height) + 72px); max-height: calc(100vh - var(--header-height) - 88px); }
+    /* Les titres et paragraphes du site (noirs, marges, interligne) écrasaient ceux de la
+       vidéothèque, illisibles en mode sombre. Même poids que les règles du site (h2, p),
+       placées après elles : les règles à classe de la vidéothèque gardent la main. */
+    :where(.barre, .mise, .apropos) :is(h1, h2, h3, h4, h5, h6) { color: inherit; margin: 0; line-height: inherit; font-family: inherit; }
+    :where(.barre, .mise, .apropos) p { margin: 0; }
     /* Pas de bouton « À propos » sur le site (app.js en a besoin : on le masque) */
     #ouvrir-apropos { display: none; }
     @media (max-width: 900px) {
