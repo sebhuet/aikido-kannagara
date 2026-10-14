@@ -13,13 +13,14 @@
   --ombre: 0 1px 2px rgb(0 0 0 / 6%), 0 8px 24px rgb(0 0 0 / 7%);
   --police: "Century Gothic", "Avenir Next", "Avenir", "Helvetica Neue", Arial, sans-serif;
   /* Niveaux : du 6e kyu (clair) au 1er dan (foncé) */
-  --n6: #f3e3c3;
-  --n5: #f0cf9a;
-  --n4: #e9b06f;
-  --n3: #db8a4c;
-  --n2: #c4613a;
-  --n1: #9e3a2e;
-  --nd: #2b2622;
+  /* Niveaux : couleurs des ceintures de judo (blanc 6e kyu ... marron 1er kyu, noir shodan) */
+  --n6: #ffffff;
+  --n5: #f5d90a;
+  --n4: #f08a1d;
+  --n3: #2e9b4a;
+  --n2: #1f62c4;
+  --n1: #7a4a24;
+  --nd: #1c1a17;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -34,13 +35,13 @@
     --rouge-2: #f06a6a;
     --rouge-pale: #3b1f1d;
     --ombre: 0 1px 2px rgb(0 0 0 / 40%), 0 8px 24px rgb(0 0 0 / 30%);
-    --n6: #4a4234;
-    --n5: #6a5636;
-    --n4: #8a6237;
-    --n3: #a5643a;
-    --n2: #b8553a;
-    --n1: #c94a3c;
-    --nd: #f0ebe3;
+    --n6: #ffffff;
+    --n5: #f5d90a;
+    --n4: #f08a1d;
+    --n3: #2e9b4a;
+    --n2: #1f62c4;
+    --n1: #7a4a24;
+    --nd: #1c1a17;
     color-scheme: dark;
   }
 }
@@ -55,13 +56,13 @@
   --rouge-2: #f06a6a;
   --rouge-pale: #3b1f1d;
   --ombre: 0 1px 2px rgb(0 0 0 / 40%), 0 8px 24px rgb(0 0 0 / 30%);
-  --n6: #4a4234;
-  --n5: #6a5636;
-  --n4: #8a6237;
-  --n3: #a5643a;
-  --n2: #b8553a;
-  --n1: #c94a3c;
-  --nd: #f0ebe3;
+  --n6: #ffffff;
+  --n5: #f5d90a;
+  --n4: #f08a1d;
+  --n3: #2e9b4a;
+  --n2: #1f62c4;
+  --n1: #7a4a24;
+  --nd: #1c1a17;
   color-scheme: dark;
 }
 
@@ -186,7 +187,7 @@ a { color: var(--rouge); text-underline-offset: 3px; }
 .puce[aria-pressed="true"] .puce__nb { background: rgb(255 255 255 / 22%); color: var(--sur-rouge); }
 .puce.vide { opacity: 0.42; border-style: dashed; }
 .puce.vide:hover { opacity: 0.8; }
-.puce__niveau { width: 10px; height: 10px; border-radius: 3px; flex: none; border: 1px solid rgb(0 0 0 / 15%); }
+.puce__niveau { width: 10px; height: 10px; border-radius: 3px; flex: none; border: 1px solid rgb(0 0 0 / 30%); }
 
 /* ---------- Vues ---------- */
 .vues {
@@ -300,7 +301,7 @@ a { color: var(--rouge); text-underline-offset: 3px; }
 }
 .tuile__duree { right: 6px; }
 .tuile__niveau { left: 6px; display: inline-flex; align-items: center; gap: 5px; }
-.tuile__niveau i { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+.tuile__niveau i { width: 8px; height: 8px; border-radius: 2px; display: inline-block; box-shadow: 0 0 0 1px rgb(0 0 0 / 35%); }
 .tuile__nom { font-weight: 700; font-size: 1.02rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .sens {
   font-size: 0.7rem;
@@ -388,10 +389,11 @@ a { color: var(--rouge); text-underline-offset: 3px; }
   background: transparent;
 }
 .case[data-n] { color: #2b2622; }
-.case[data-n="1 Kyu"], .case[data-n="1 Dan"], .case[data-n="2 Kyu"] { color: #fff; }
+.case[data-n="3 Kyu"], .case[data-n="2 Kyu"], .case[data-n="1 Kyu"], .case[data-n="1 Dan"] { color: #fff; }
+.case[data-n="6 Kyu"] { box-shadow: inset 0 0 0 1px rgb(0 0 0 / 30%); } /* blanc : liseré pour le distinguer d'une case vide */
 .case:hover { outline: 2px solid var(--rouge); outline-offset: -2px; }
 .legende { display: flex; flex-wrap: wrap; gap: 10px 16px; margin: 12px 2px 0; font-size: 0.8rem; color: var(--encre-2); align-items: center; }
-.legende i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; vertical-align: -2px; margin-right: 5px; }
+.legende i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; vertical-align: -2px; margin-right: 5px; border: 1px solid rgb(0 0 0 / 25%); }
 
 /* ---------- Lecteur ---------- */
 .lecteur {

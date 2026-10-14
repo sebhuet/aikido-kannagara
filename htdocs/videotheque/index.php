@@ -11,7 +11,7 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/responsive.css">
-  <link rel="stylesheet" href="style.css?v=8f946f33d6">
+  <link rel="stylesheet" href="style.css?v=7234312a84">
   <style>
     /* Intégration dans le site : la vidéothèque se place sous l'en-tête fixe */
     body { padding-top: var(--header-height); background-image: none; }
@@ -158,8 +158,8 @@
   <form class="apropos__pied" method="dialog"><button class="bouton" data-i18n="fermer">Fermer</button></form>
 </dialog>
 
-<script src="donnees.js?v=8f946f33d6"></script>
-<script src="app.js?v=8f946f33d6"></script>
+<script src="donnees.js?v=7234312a84"></script>
+<script src="app.js?v=7234312a84"></script>
 <script src="/js/main.js" defer></script>
 </body>
 </html>
