@@ -6,3 +6,10 @@ DirectoryIndex index.php
 <IfModule mod_headers.c>
     Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.youtube.com https://s.ytimg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src https://www.youtube-nocookie.com https://www.youtube.com; frame-ancestors 'self'"
 </IfModule>
+
+# Ancienne page sans le menu du site (restée sur le serveur) : vers la page actuelle
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteOptions Inherit
+    RewriteRule ^index\.html$ /videotheque/ [R=301,L]
+</IfModule>
