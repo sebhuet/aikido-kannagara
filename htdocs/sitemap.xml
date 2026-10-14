@@ -86,7 +86,7 @@
     </url>
     <url>
         <loc>https://kannagara.fr/blog.php</loc>
-        <lastmod>2026-10-13</lastmod>
+        <lastmod>2026-10-14</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -95,6 +95,12 @@
         <lastmod>2026-07-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://kannagara.fr/videotheque/</loc>
+        <lastmod>2026-10-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://kannagara.fr/llms.txt</loc>
@@ -127,6 +133,12 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://kannagara.fr/blog/passage-grades-juin-2023.html</loc>
+        <lastmod>2023-06-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
         <loc>https://kannagara.fr/blog/stage-regional-2023.html</loc>
         <lastmod>2023-12-08</lastmod>
         <changefreq>yearly</changefreq>
@@ -135,12 +147,6 @@
     <url>
         <loc>https://kannagara.fr/blog/importance-ukemi.html</loc>
         <lastmod>2024-01-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://kannagara.fr/blog/passage-grades-juin-2023.html</loc>
-        <lastmod>2023-06-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
