@@ -11,12 +11,14 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/responsive.css">
-  <link rel="stylesheet" href="style.css?v=42f6aa9193">
+  <link rel="stylesheet" href="style.css?v=8f946f33d6">
   <style>
     /* Intégration dans le site : la vidéothèque se place sous l'en-tête fixe */
     body { padding-top: var(--header-height); background-image: none; }
     .barre { top: var(--header-height); }
     .filtres { top: calc(var(--header-height) + 72px); max-height: calc(100vh - var(--header-height) - 88px); }
+    /* Pas de bouton « À propos » sur le site (app.js en a besoin : on le masque) */
+    #ouvrir-apropos { display: none; }
     @media (max-width: 900px) {
       .lecteur { top: var(--header-height); }
     }
@@ -156,8 +158,8 @@
   <form class="apropos__pied" method="dialog"><button class="bouton" data-i18n="fermer">Fermer</button></form>
 </dialog>
 
-<script src="donnees.js?v=42f6aa9193"></script>
-<script src="app.js?v=42f6aa9193"></script>
+<script src="donnees.js?v=8f946f33d6"></script>
+<script src="app.js?v=8f946f33d6"></script>
 <script src="/js/main.js" defer></script>
 </body>
 </html>

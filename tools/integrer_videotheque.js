@@ -32,6 +32,8 @@ const STYLE_INTEGRATION = `
     body { padding-top: var(--header-height); background-image: none; }
     .barre { top: var(--header-height); }
     .filtres { top: calc(var(--header-height) + 72px); max-height: calc(100vh - var(--header-height) - 88px); }
+    /* Pas de bouton « À propos » sur le site (app.js en a besoin : on le masque) */
+    #ouvrir-apropos { display: none; }
     @media (max-width: 900px) {
       .lecteur { top: var(--header-height); }
     }`;

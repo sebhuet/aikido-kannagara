@@ -644,3 +644,6 @@ a { color: var(--rouge); text-underline-offset: 3px; }
   .commandes { padding: 6px 10px 8px; gap: 6px; }
   .cmd { height: 36px; }
 }
+
+/* Adresse d'origine du clip, sous le lecteur */
+.origine__url { display: block; margin-top: 2px; font-size: 0.78rem; word-break: break-all; }

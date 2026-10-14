@@ -1018,7 +1018,9 @@ function afficherInfos(c) {
   $("l-origine").replaceChildren(
     `${T().source} : `,
     el("a", { href: lien, target: "_blank", rel: "noopener" }, v?.titre || T().voirYT),
-    v?.chaine ? ` · ${v.chaine}` : ""
+    v?.chaine ? ` · ${v.chaine}` : "",
+    // Adresse d'origine en clair, pour la retrouver ou la partager
+    el("a", { class: "origine__url", href: lien, target: "_blank", rel: "noopener" }, lien)
   );
 
   majNavigation();
