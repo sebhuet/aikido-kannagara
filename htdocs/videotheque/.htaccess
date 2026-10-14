@@ -1,5 +1,5 @@
-# Vidéothèque : page statique (index.html), clips lus depuis YouTube (youtube-nocookie).
-DirectoryIndex index.html
+# Vidéothèque : page index.php générée par tools/integrer_videotheque.js, clips lus depuis YouTube (youtube-nocookie).
+DirectoryIndex index.php
 
 # La CSP du site (htdocs/.htaccess) bloque les iframes et scripts externes : on l'élargit
 # ici, pour ce dossier seulement, au lecteur YouTube.

@@ -1332,7 +1332,6 @@ function brancherCommandes() {
 
 function appliquerLangue(l) {
   langue = l;
-  stockage("aikido.langue", l);
   document.documentElement.lang = l;
   const t = T();
   document.querySelectorAll("[data-i18n]").forEach((n) => (n.textContent = t[n.dataset.i18n]));
@@ -1356,7 +1355,9 @@ function appliquerLangue(l) {
    ================================================================ */
 
 function demarrer() {
-  const l = stockage("aikido.langue") || "fr"; // français par défaut ; le bouton EN reste disponible
+  // Français par défaut. Seul un clic sur le bouton de langue est mémorisé ; l'ancienne
+// clé « aikido.langue », qui enregistrait la langue du navigateur, est ignorée.
+  const l = stockage("aikido.langueChoisie") || "fr";
   L.boucle = stockage("aikido.boucle") !== "0";
   $("c-boucle").setAttribute("aria-pressed", String(L.boucle));
   basculerSon(stockage("aikido.muet") !== "0");
@@ -1398,7 +1399,11 @@ function demarrer() {
     if (resultats.length) ouvrir(resultats[Math.floor(Math.random() * resultats.length)]);
   });
   $("ouvrir-apropos").addEventListener("click", () => $("apropos").showModal());
-  $("langue").addEventListener("click", () => appliquerLangue(langue === "fr" ? "en" : "fr"));
+  $("langue").addEventListener("click", () => {
+    const l = langue === "fr" ? "en" : "fr";
+    stockage("aikido.langueChoisie", l);
+    appliquerLangue(l);
+  });
 
   requestAnimationFrame(surveiller);
   // Le lecteur YouTube met plusieurs secondes à s'installer : on le prépare

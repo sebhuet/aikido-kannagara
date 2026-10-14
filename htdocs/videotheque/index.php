@@ -1,16 +1,29 @@
 <!doctype html>
+<!-- Généré par tools/integrer_videotheque.js depuis la vidéothèque (index.html) : ne pas modifier ici. -->
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#141312">
-<meta name="description" content="Techniques d'aïkido en vidéo : par attaque, par technique, par niveau de kyu ou par sensei, avec recherche et lecteur image par image.">
-<title>Aïkido · Techniques en vidéo</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%227%22 fill=%22%23ce3030%22/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css?v=1791951689">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141312">
+  <meta name="description" content="Techniques d'aïkido en vidéo : par attaque, par technique, par niveau de kyu ou par sensei, avec recherche et lecteur image par image.">
+  <title>Aïkido · Techniques en vidéo</title>
+  <link rel="canonical" href="https://kannagara.fr/videotheque/">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="style.css?v=42f6aa9193">
+  <style>
+    /* Intégration dans le site : la vidéothèque se place sous l'en-tête fixe */
+    body { padding-top: var(--header-height); background-image: none; }
+    .barre { top: var(--header-height); }
+    .filtres { top: calc(var(--header-height) + 72px); max-height: calc(100vh - var(--header-height) - 88px); }
+    @media (max-width: 900px) {
+      .lecteur { top: var(--header-height); }
+    }
+  </style>
 </head>
-<body>
-
+<body class="page-videotheque">
+<?php $active = 'videotheque'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
 <header class="barre">
   <button class="marque" id="accueil" type="button" title="Revenir à la liste complète">
     <span class="marque__point" aria-hidden="true"></span>
@@ -143,7 +156,8 @@
   <form class="apropos__pied" method="dialog"><button class="bouton" data-i18n="fermer">Fermer</button></form>
 </dialog>
 
-<script src="donnees.js?v=1791951689"></script>
-<script src="app.js?v=1791951689"></script>
+<script src="donnees.js?v=42f6aa9193"></script>
+<script src="app.js?v=42f6aa9193"></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>

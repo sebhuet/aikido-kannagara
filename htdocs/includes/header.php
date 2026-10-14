@@ -2,8 +2,8 @@
     <!-- Header -->
     <header class="header">
         <div class="container header__container">
-            <a href="index.php" class="header__logo">
-                <img src="images/logo-kannagara.jpg" alt="Aïkido Kannagara Guyancourt" class="header__logo-img">
+            <a href="/" class="header__logo">
+                <img src="/images/logo-kannagara.jpg" alt="Aïkido Kannagara Guyancourt" class="header__logo-img">
             </a>
 
             <nav class="nav">
@@ -28,12 +28,13 @@
                         'inscription' => 'Inscription',
                         'contact' => 'Contact',
                     ];
-                    // La vidéothèque est une page statique à part (videotheque/index.html)
-                    $liens = ['videotheque' => 'videotheque/'];
+                    // Liens absolus : l'en-tête sert aussi aux pages des sous-dossiers
+                    // (videotheque/, 404). La vidéothèque est un dossier, pas une page .php.
+                    $liens = ['index' => '/', 'videotheque' => '/videotheque/'];
                     foreach ($pages as $slug => $label):
                         $isActive = (isset($active) && $active === $slug);
                         $activeClass = $isActive ? ' nav__link--active' : '';
-                        $href = $liens[$slug] ?? "$slug.php";
+                        $href = $liens[$slug] ?? "/$slug.php";
                     ?>
                     <li class="nav__item"><a href="<?= $href ?>" class="nav__link<?= $activeClass ?>"><?= $label ?></a></li>
                     <?php endforeach; ?>
