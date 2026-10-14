@@ -73,7 +73,7 @@ const TEXTES = {
       <h3>Comment s'en servir</h3>
       <p>Les techniques se retrouvent par attaque, par technique, par niveau de kyu ou par sensei. Les filtres se combinent dans n'importe quel ordre, et la recherche tolère les fautes de frappe (« kotegaesi », « shiho », « 3 kyu », « Habert »…). Chaque clip se lit en boucle ; le ralenti, l'image par image et le miroir aident à décomposer le mouvement.</p>
       <h3>Niveaux</h3>
-      <p>Le classement par niveau mêle les progressions techniques FFAAA et FFAB : une technique apparaît à un niveau de kyu dès que l'une des deux fédérations considère qu'elle doit être connue à ce niveau. Cette approche n'est pas entièrement compatible avec les programmes des deux fédérations, mais j'espère qu'elle reste utile.</p>
+      <p>Le classement par niveau mêle les progressions techniques FFAAA et FFAB : une technique apparaît à un niveau de kyu dès que l'une des deux fédérations considère qu'elle doit être connue à ce niveau. Cette approche n'est pas entièrement compatible avec les programmes des deux fédérations, mais j'espère qu'elle reste utile. Les niveaux sont cumulatifs : choisir le 5e kyu affiche aussi les techniques du 6e kyu, et plus le kyu approche du shodan, plus il compte de clips.</p>
       <h3>Vidéos</h3>
       <p>Les vidéos appartiennent à leurs auteurs et restent hébergées sur YouTube ; chaque clip renvoie à la vidéo d'origine. Les débuts et fins des clips des vidéos FFAB sont calés automatiquement à l'image près (coupes de montage, bandeaux de titre, fondus) ; les autres sont encore à la seconde près.</p>
       <h3>Contact</h3>
@@ -147,7 +147,7 @@ const TEXTES = {
       <h3>How to use it</h3>
       <p>Techniques can be found by attack, by technique, by kyu level or by sensei. Filters combine in any order and the search tolerates typos (“kotegaesi”, “shiho”, “3 kyu”, “Habert”…). Each clip loops; slow motion, frame by frame and mirror help to break the movement down.</p>
       <h3>Levels</h3>
-      <p>The level classification blends the technical progressions of the French federations FFAAA and FFAB: a technique appears at a kyu level as soon as one of the two federations considers it should be known at that level. This may not fully match either syllabus, but I hope it is still helpful.</p>
+      <p>The level classification blends the technical progressions of the French federations FFAAA and FFAB: a technique appears at a kyu level as soon as one of the two federations considers it should be known at that level. This may not fully match either syllabus, but I hope it is still helpful. Levels are cumulative: choosing 5th kyu also shows the 6th kyu techniques, so the closer to shodan, the more clips a level has.</p>
       <h3>Videos</h3>
       <p>The videos belong to their authors and stay hosted on YouTube; each clip links to the original video. Clips from FFAB videos start and end on the exact frame (edit cuts, title banners and fades are detected automatically); the others are still accurate to the second.</p>
       <h3>Contact</h3>
@@ -376,10 +376,22 @@ const sel = new Map(); // ordre d'insertion = ordre de choix
 let requete = "";
 let vue = "attaque";
 
+// Les niveaux sont cumulatifs : au 5e kyu, il faut aussi connaître le programme du 6e kyu.
+// Choisir un niveau retient donc tous les clips de ce niveau et des niveaux inférieurs.
+function rangNiveau(n) {
+  const i = NIVEAUX.indexOf(n);
+  return i === -1 ? Infinity : i;
+}
+
+function correspondChoix(c, cle, val) {
+  if (cle === "niveau") return rangNiveau(c.niveau) <= rangNiveau(val);
+  return c[cle] === val;
+}
+
 function filtrer({ sauf = null, avecRecherche = true } = {}) {
   const t = avecRecherche ? jetonsDe(requete).map((j) => [j, CLIPS.some((c) => c._mots.some((m) => m.startsWith(j)))]) : [];
   return CLIPS.filter((c) => {
-    for (const [k, val] of sel) if (k !== sauf && c[k] !== val) return false;
+    for (const [k, val] of sel) if (k !== sauf && !correspondChoix(c, k, val)) return false;
     return t.every(([j, exact]) => correspond(j, c, exact));
   });
 }
@@ -448,7 +460,7 @@ function majFacettes() {
     for (const c of base) n.set(c[f.cle], (n.get(c[f.cle]) || 0) + 1);
     for (const [val, b] of puces[f.cle]) {
       const actif = sel.has(f.cle) && sel.get(f.cle) === val;
-      const nb = n.get(val) || 0;
+      const nb = f.cle === "niveau" ? base.filter((c) => correspondChoix(c, "niveau", val)).length : n.get(val) || 0;
       b.setAttribute("aria-pressed", String(actif));
       b.classList.toggle("vide", !actif && nb === 0);
       b.querySelector(".puce__nb").textContent = nb;
@@ -1344,7 +1356,7 @@ function appliquerLangue(l) {
    ================================================================ */
 
 function demarrer() {
-  const l = stockage("aikido.langue") || (navigator.language?.startsWith("fr") ? "fr" : "en");
+  const l = stockage("aikido.langue") || "fr"; // français par défaut ; le bouton EN reste disponible
   L.boucle = stockage("aikido.boucle") !== "0";
   $("c-boucle").setAttribute("aria-pressed", String(L.boucle));
   basculerSon(stockage("aikido.muet") !== "0");
