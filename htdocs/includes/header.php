@@ -23,15 +23,19 @@
                         'agenda' => 'Agenda',
                         'actualites' => 'Actualités',
                         'galerie' => 'Galerie',
+                        'videotheque' => 'Vidéos',
                         'blog' => 'Blog',
                         'inscription' => 'Inscription',
                         'contact' => 'Contact',
                     ];
+                    // La vidéothèque est une page statique à part (videotheque/index.html)
+                    $liens = ['videotheque' => 'videotheque/'];
                     foreach ($pages as $slug => $label):
                         $isActive = (isset($active) && $active === $slug);
                         $activeClass = $isActive ? ' nav__link--active' : '';
+                        $href = $liens[$slug] ?? "$slug.php";
                     ?>
-                    <li class="nav__item"><a href="<?= $slug ?>.php" class="nav__link<?= $activeClass ?>"><?= $label ?></a></li>
+                    <li class="nav__item"><a href="<?= $href ?>" class="nav__link<?= $activeClass ?>"><?= $label ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </nav>

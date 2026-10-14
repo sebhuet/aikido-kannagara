@@ -35,6 +35,7 @@ const PAGES = [
   { url: "/septembre-bouge.php", priority: 0.6, changefreq: "yearly" },
   { url: "/blog.php", priority: 0.8, changefreq: "weekly" },
   { url: "/galerie.php", priority: 0.6, changefreq: "monthly" },
+  { url: "/videotheque/", priority: 0.7, changefreq: "monthly" },
   { url: "/llms.txt", priority: 0.4, changefreq: "monthly" },
   { url: "/llms-full.txt", priority: 0.4, changefreq: "monthly" }
 ];

@@ -36,31 +36,10 @@
   }
 }
 
-/* ---------- Mobile (max 768px) ---------- */
-@media screen and (max-width: 768px) {
-  :root {
-    --header-height: 70px;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-    --spacing-xxl: 3rem;
-  }
-
-  html {
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  .container {
-    padding: 0 var(--spacing-sm);
-  }
-
+/* ---------- Menu replié (max 1023px) ----------
+   Au-delà de 1024px, les 11 entrées du menu tiennent sur une ligne ; en dessous,
+   elles débordaient de l'écran : on passe au menu burger. */
+@media screen and (max-width: 1023px) {
   /* Navigation mobile */
   .nav__toggle {
     display: flex;
@@ -155,6 +134,32 @@
 
   .nav__toggle.active .nav__toggle-bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* ---------- Mobile (max 768px) ---------- */
+@media screen and (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+  }
+
+  html {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
   }
 
   /* Hero */

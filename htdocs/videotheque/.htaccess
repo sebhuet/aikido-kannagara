@@ -1,0 +1,8 @@
+# Vidéothèque : page statique (index.html), clips lus depuis YouTube (youtube-nocookie).
+DirectoryIndex index.html
+
+# La CSP du site (htdocs/.htaccess) bloque les iframes et scripts externes : on l'élargit
+# ici, pour ce dossier seulement, au lecteur YouTube.
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.youtube.com https://s.ytimg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src https://www.youtube-nocookie.com https://www.youtube.com; frame-ancestors 'self'"
+</IfModule>
