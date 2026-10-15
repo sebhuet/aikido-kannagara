@@ -36,7 +36,6 @@
                         <li><a href="club.php">Présentation</a></li>
                         <li><a href="professeurs.php">Professeurs</a></li>
                         <li><a href="actualites.php">Actualités</a></li>
-                        <li><a href="blog.php">Blog</a></li>
                         <li><a href="galerie.php">Galerie</a></li>
                         <li><a href="inscription.php">Inscription</a></li>
                         <li><a href="agenda.php">Agenda</a></li>

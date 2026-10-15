@@ -84,7 +84,6 @@ Il enseigne a desamorcer les conflits avant qu'ils ne deviennent physiques.
 - [Professeurs](https://kannagara.fr/professeurs.php): Equipe de 4 enseignants diplomes avec biographies
 - [Actualites](https://kannagara.fr/actualites.php): Evenements a venir et activites du club
 - [Galerie](https://kannagara.fr/galerie.php): Photos des cours, stages, vie du club et art
-- [Blog](https://kannagara.fr/blog.php): Articles et reflexions sur l'aïkido
 - [Agenda](https://kannagara.fr/agenda.php): Calendrier des cours et presence des professeurs
 - [Inscription](https://kannagara.fr/inscription.php): Procedure, documents, tarifs 2026-2027
 - [FAQ](https://kannagara.fr/faq.php): Questions frequentes sur l'aïkido et le club

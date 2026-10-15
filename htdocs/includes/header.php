@@ -24,7 +24,6 @@
                         'actualites' => 'Actualités',
                         'galerie' => 'Galerie',
                         'videotheque' => 'Vidéos',
-                        'blog' => 'Blog',
                         'inscription' => 'Inscription',
                         'contact' => 'Contact',
                     ];

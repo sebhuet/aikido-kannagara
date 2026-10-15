@@ -413,11 +413,6 @@ if ($evtPartage) {
                 </ul>
 
                 <p>
-                    Les comptes-rendus de ces temps forts sont publiés sur le
-                    <a href="blog.php">blog du club</a>.
-                </p>
-
-                <p>
                     Pour être tenu informé des prochains événements, n'hésitez pas à nous contacter
                     ou à suivre les annonces sur cette page.
                 </p>

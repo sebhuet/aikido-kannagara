@@ -33,7 +33,6 @@ const PAGES = [
   { url: "/agenda.php", priority: 0.8, changefreq: "weekly" },
   { url: "/actualites.php", priority: 0.8, changefreq: "weekly" },
   { url: "/septembre-bouge.php", priority: 0.6, changefreq: "yearly" },
-  { url: "/blog.php", priority: 0.8, changefreq: "weekly" },
   { url: "/galerie.php", priority: 0.6, changefreq: "monthly" },
   { url: "/videotheque/", priority: 0.7, changefreq: "monthly" },
   { url: "/llms.txt", priority: 0.4, changefreq: "monthly" },
@@ -95,13 +94,13 @@ function getBlogArticles() {
 function generateSitemap() {
   console.log("🗺️  Génération du sitemap.xml...\n");
 
-  const blogArticles = getBlogArticles();
-  const allPages = [...PAGES, ...blogArticles];
+  // Blog retiré du site (octobre 2026) : ses articles ne sont plus listés.
+  // Pour le remettre : const allPages = [...PAGES, ...getBlogArticles()];
+  const allPages = PAGES;
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 
-  // Pages principales + articles de blog
   allPages.forEach((page) => {
     const lastmod = page.lastmod || getLastModified(page.url === "/" ? "index.php" : page.url);
     xml += `    <url>\n`;
@@ -120,7 +119,7 @@ function generateSitemap() {
   fs.writeFileSync(SITEMAP_FILE, xml, "utf-8");
 
   console.log(`\n✨ Sitemap généré avec succès : ${SITEMAP_FILE}`);
-  console.log(`📊 ${allPages.length} URLs incluses (${PAGES.length} pages + ${blogArticles.length} articles)\n`);
+  console.log(`📊 ${allPages.length} URLs incluses\n`);
 }
 
 // Exécution
