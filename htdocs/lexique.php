@@ -168,6 +168,18 @@
             font-weight: 600;
             color: var(--color-secondary);
         }
+
+        /* Terme qui renvoie à ses vidéos dans la vidéothèque */
+        .lexique-video {
+            color: inherit;
+            text-decoration: underline dotted;
+            text-underline-offset: 3px;
+        }
+
+        .lexique-video:hover {
+            color: var(--color-primary);
+            text-decoration-style: solid;
+        }
     </style>
 </head>
 <body>
@@ -444,6 +456,10 @@
         <div class="container">
             <div class="lexique-section">
                 <h2 class="lexique-section__title">Types de techniques</h2>
+                <p>
+                    Les termes soulignés en pointillé renvoient à leurs vidéos dans la
+                    <a href="/videotheque/">vidéothèque</a>.
+                </p>
 
                 <h3 style="margin: var(--spacing-lg) 0 var(--spacing-md); color: var(--color-secondary);">Attaques (Waza)</h3>
                 <table class="lexique-table">
@@ -455,31 +471,31 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="japanese">Ai hanmi katate dori</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#attaque=Ai+Hanmi+Katate+Dori" title="Voir Ai hanmi katate dori en vidéo">Ai hanmi katate dori</a></td>
                             <td>Saisie du poignet en garde identique</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Gyaku hanmi katate dori</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#attaque=Katate+Dori" title="Voir Gyaku hanmi katate dori en vidéo">Gyaku hanmi katate dori</a></td>
                             <td>Saisie du poignet en garde inverse</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Ryote dori</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#attaque=Ryote+Dori" title="Voir Ryote dori en vidéo">Ryote dori</a></td>
                             <td>Saisie des deux poignets</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Morote dori</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#attaque=Katate+Ryote+Dori" title="Voir Morote dori en vidéo">Morote dori</a></td>
                             <td>Saisie d'un poignet à deux mains</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Kata dori</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#attaque=Kata+Dori" title="Voir Kata dori en vidéo">Kata dori</a></td>
                             <td>Saisie de l'épaule</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Shomen uchi</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#attaque=Shomen+Uchi" title="Voir Shomen uchi en vidéo">Shomen uchi</a></td>
                             <td>Frappe verticale à la tête</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Yokomen uchi</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#attaque=Yokomen+Uchi" title="Voir Yokomen uchi en vidéo">Yokomen uchi</a></td>
                             <td>Frappe latérale à la tempe</td>
                         </tr>
                         <tr>
@@ -487,7 +503,7 @@
                             <td>Coup de poing direct</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Ushiro ryote dori</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#attaque=Ushiro+Ryote+Dori" title="Voir Ushiro ryote dori en vidéo">Ushiro ryote dori</a></td>
                             <td>Saisie des deux poignets par l'arrière</td>
                         </tr>
                     </tbody>
@@ -503,31 +519,31 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="japanese">Irimi nage</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Irimi+Nage" title="Voir Irimi nage en vidéo">Irimi nage</a></td>
                             <td>Projection par entrée</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Shiho nage</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Shiho+Nage" title="Voir Shiho nage en vidéo">Shiho nage</a></td>
                             <td>Projection dans les quatre directions</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Kote gaeshi</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Kote+Gaeshi" title="Voir Kote gaeshi en vidéo">Kote gaeshi</a></td>
                             <td>Retournement du poignet</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Kaiten nage</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#q=kaiten+nage" title="Voir Kaiten nage en vidéo">Kaiten nage</a></td>
                             <td>Projection rotative</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Tenchi nage</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Tenchi+Nage" title="Voir Tenchi nage en vidéo">Tenchi nage</a></td>
                             <td>Projection ciel-terre</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Kokyu nage</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Kokyu+Nage" title="Voir Kokyu nage en vidéo">Kokyu nage</a></td>
                             <td>Projection par la respiration</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Koshi nage</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Koshi+Nage" title="Voir Koshi nage en vidéo">Koshi nage</a></td>
                             <td>Projection de hanche</td>
                         </tr>
                     </tbody>
@@ -543,23 +559,23 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="japanese">Ikkyo</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Ikkyo" title="Voir Ikkyo en vidéo">Ikkyo</a></td>
                             <td>Première immobilisation (contrôle du coude)</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Nikyo</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Nikyo" title="Voir Nikyo en vidéo">Nikyo</a></td>
                             <td>Deuxième immobilisation (torsion du poignet)</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Sankyo</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Sankyo" title="Voir Sankyo en vidéo">Sankyo</a></td>
                             <td>Troisième immobilisation (rotation du poignet)</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Yonkyo</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Yonkyo" title="Voir Yonkyo en vidéo">Yonkyo</a></td>
                             <td>Quatrième immobilisation (pression sur le nerf)</td>
                         </tr>
                         <tr>
-                            <td class="japanese">Gokyo</td>
+                            <td class="japanese"><a class="lexique-video" href="/videotheque/#technique=Gokyo" title="Voir Gokyo en vidéo">Gokyo</a></td>
                             <td>Cinquième immobilisation</td>
                         </tr>
                     </tbody>
@@ -575,11 +591,11 @@
                 <h2 class="lexique-section__title">Directions et positions</h2>
                 <div class="lexique-grid">
                     <div class="lexique-item">
-                        <div class="lexique-item__term">Omote</div>
+                        <div class="lexique-item__term"><a class="lexique-video" href="/videotheque/#sens=Omote" title="Voir Omote en vidéo">Omote</a></div>
                         <p class="lexique-item__definition">Devant, face. Entrée vers l'avant du partenaire.</p>
                     </div>
                     <div class="lexique-item">
-                        <div class="lexique-item__term">Ura</div>
+                        <div class="lexique-item__term"><a class="lexique-video" href="/videotheque/#sens=Ura" title="Voir Ura en vidéo">Ura</a></div>
                         <p class="lexique-item__definition">Derrière, dos. Entrée vers l'arrière du partenaire.</p>
                     </div>
                     <div class="lexique-item">
@@ -591,15 +607,15 @@
                         <p class="lexique-item__definition">Rotation, pivot sur un pied.</p>
                     </div>
                     <div class="lexique-item">
-                        <div class="lexique-item__term">Tachi waza</div>
+                        <div class="lexique-item__term"><a class="lexique-video" href="/videotheque/#forme=Tachi+Waza" title="Voir Tachi waza en vidéo">Tachi waza</a></div>
                         <p class="lexique-item__definition">Techniques debout.</p>
                     </div>
                     <div class="lexique-item">
-                        <div class="lexique-item__term">Suwari waza</div>
+                        <div class="lexique-item__term"><a class="lexique-video" href="/videotheque/#forme=Suwari+Waza" title="Voir Suwari waza en vidéo">Suwari waza</a></div>
                         <p class="lexique-item__definition">Techniques à genoux.</p>
                     </div>
                     <div class="lexique-item">
-                        <div class="lexique-item__term">Hanmi handachi</div>
+                        <div class="lexique-item__term"><a class="lexique-video" href="/videotheque/#forme=Hanmi+Handachi+Waza" title="Voir Hanmi handachi en vidéo">Hanmi handachi</a></div>
                         <p class="lexique-item__definition">Tori à genoux, uke debout.</p>
                     </div>
                     <div class="lexique-item">

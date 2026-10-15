@@ -32,6 +32,15 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Liens vers la vidéothèque, sous le programme de chaque kyu */
+        .grades-videos {
+            display: inline-block;
+            margin-top: 4px;
+            font-size: 0.9em;
+            white-space: nowrap;
+        }
+    </style>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -125,41 +134,46 @@
                         <tr>
                             <td data-label="Grade"><span class="grade-badge grade-badge--6kyu">6e Kyu</span></td>
                             <td data-label="Niveau">Débutant</td>
-                            <td data-label="Programme">Chutes de base, postures, déplacements fondamentaux</td>
+                            <td data-label="Programme">Chutes de base, postures, déplacements fondamentaux<br><span class="grades-videos"><a href="/videotheque/#vue=niveau&amp;niveau=6+Kyu" title="Techniques du 6e kyu en vidéo">En vidéo</a> · <a href="/videotheque/#interro&amp;niveau=6+Kyu" title="Le nom de la technique d'abord, la vidéo ensuite, comme au passage">S'interroger</a></span></td>
                             <td data-label="Pratique">3 mois</td>
                         </tr>
                         <tr>
                             <td data-label="Grade"><span class="grade-badge grade-badge--5kyu">5e Kyu</span></td>
                             <td data-label="Niveau">Débutant avancé</td>
-                            <td data-label="Programme">Techniques de base (ikkyo, shihonage, iriminage)</td>
+                            <td data-label="Programme">Techniques de base (ikkyo, shihonage, iriminage)<br><span class="grades-videos"><a href="/videotheque/#vue=niveau&amp;niveau=5+Kyu" title="Techniques du 5e kyu en vidéo (niveaux précédents compris)">En vidéo</a> · <a href="/videotheque/#interro&amp;niveau=5+Kyu" title="Le nom de la technique d'abord, la vidéo ensuite, comme au passage">S'interroger</a></span></td>
                             <td data-label="Pratique">6 mois</td>
                         </tr>
                         <tr>
                             <td data-label="Grade"><span class="grade-badge grade-badge--4kyu">4e Kyu</span></td>
                             <td data-label="Niveau">Intermédiaire</td>
-                            <td data-label="Programme">Techniques assises (suwari-waza), koshinage</td>
+                            <td data-label="Programme">Techniques assises (suwari-waza), koshinage<br><span class="grades-videos"><a href="/videotheque/#vue=niveau&amp;niveau=4+Kyu" title="Techniques du 4e kyu en vidéo (niveaux précédents compris)">En vidéo</a> · <a href="/videotheque/#interro&amp;niveau=4+Kyu" title="Le nom de la technique d'abord, la vidéo ensuite, comme au passage">S'interroger</a></span></td>
                             <td data-label="Pratique">1 an</td>
                         </tr>
                         <tr>
                             <td data-label="Grade"><span class="grade-badge grade-badge--3kyu">3e Kyu</span></td>
                             <td data-label="Niveau">Intermédiaire avancé</td>
-                            <td data-label="Programme">Techniques debout-assis (hanmi-handachi), armes</td>
+                            <td data-label="Programme">Techniques debout-assis (hanmi-handachi), armes<br><span class="grades-videos"><a href="/videotheque/#vue=niveau&amp;niveau=3+Kyu" title="Techniques du 3e kyu en vidéo (niveaux précédents compris)">En vidéo</a> · <a href="/videotheque/#interro&amp;niveau=3+Kyu" title="Le nom de la technique d'abord, la vidéo ensuite, comme au passage">S'interroger</a></span></td>
                             <td data-label="Pratique">1,5 an</td>
                         </tr>
                         <tr>
                             <td data-label="Grade"><span class="grade-badge grade-badge--2kyu">2e Kyu</span></td>
                             <td data-label="Niveau">Avancé</td>
-                            <td data-label="Programme">Variations des techniques, travail libre</td>
+                            <td data-label="Programme">Variations des techniques, travail libre<br><span class="grades-videos"><a href="/videotheque/#vue=niveau&amp;niveau=2+Kyu" title="Techniques du 2e kyu en vidéo (niveaux précédents compris)">En vidéo</a> · <a href="/videotheque/#interro&amp;niveau=2+Kyu" title="Le nom de la technique d'abord, la vidéo ensuite, comme au passage">S'interroger</a></span></td>
                             <td data-label="Pratique">2 ans</td>
                         </tr>
                         <tr>
                             <td data-label="Grade"><span class="grade-badge grade-badge--1kyu">1er Kyu</span></td>
                             <td data-label="Niveau">Pré-ceinture noire</td>
-                            <td data-label="Programme">Maîtrise de l'ensemble du programme, randori</td>
+                            <td data-label="Programme">Maîtrise de l'ensemble du programme, randori<br><span class="grades-videos"><a href="/videotheque/#vue=niveau&amp;niveau=1+Kyu" title="Techniques du 1er kyu en vidéo (niveaux précédents compris)">En vidéo</a> · <a href="/videotheque/#interro&amp;niveau=1+Kyu" title="Le nom de la technique d'abord, la vidéo ensuite, comme au passage">S'interroger</a></span></td>
                             <td data-label="Pratique">3 ans</td>
                         </tr>
                     </tbody>
                 </table>
+                <p>
+                    Pour réviser, la <a href="/videotheque/">vidéothèque</a> montre les techniques de chaque
+                    kyu en vidéo, niveaux précédents compris. « S'interroger » fonctionne comme un passage :
+                    le nom de la technique s'affiche, on l'exécute, puis la vidéo sert de corrigé.
+                </p>
 
                 <h2>Passages de grades au club</h2>
                 <p>
