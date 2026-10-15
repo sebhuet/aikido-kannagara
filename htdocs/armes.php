@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require_once __DIR__ . '/includes/jsonld.php'; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -21,14 +21,16 @@
     <meta property="og:url" content="https://kannagara.fr/armes.php">
     <meta property="og:title" content="Les Armes en Aïkido - Jo, Bokken, Tanto">
     <meta property="og:description" content="Le travail avec les armes en aïkido : comprendre les origines des techniques à mains nues.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Les Armes en Aïkido - Jo, Bokken, Tanto">
     <meta name="twitter:description" content="Le travail avec les armes en aïkido : comprendre les origines des techniques à mains nues.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -47,20 +49,8 @@
         "description": "Découvrez les armes de l'aïkido : jo (bâton), bokken (sabre en bois) et tanto (couteau). Histoire, utilisation et importance dans la pratique.",
         "url": "https://kannagara.fr/armes.php",
         "inLanguage": "fr",
-        "author": {
-            "@type": "Organization",
-            "name": "Aïkido Kannagara Guyancourt",
-            "url": "https://kannagara.fr"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Aïkido Kannagara Guyancourt",
-            "url": "https://kannagara.fr",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
-            }
-        },
+        "author": <?= jsonld_json(jsonld_club_ref()) ?>,
+        "publisher": <?= jsonld_json(jsonld_editeur()) ?>,
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://kannagara.fr/armes.php"

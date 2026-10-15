@@ -51,14 +51,16 @@ $faqEssai = "Oui, nous proposons des cours d'essai gratuits en " . $club['trial'
     <meta property="og:url" content="https://kannagara.fr/faq.php">
     <meta property="og:title" content="FAQ - Questions fréquentes - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Toutes les réponses à vos questions sur l'aïkido et notre club de Guyancourt.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="FAQ - Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Questions fréquentes sur l'aïkido et notre club.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

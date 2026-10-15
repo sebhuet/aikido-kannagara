@@ -5,8 +5,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#141312">
-  <meta name="description" content="Techniques d'aïkido en vidéo : par attaque, par technique, par niveau de kyu ou par sensei, avec recherche et lecteur image par image.">
-  <title>Aïkido · Techniques en vidéo</title>
+  <title>Techniques d'aïkido en vidéo | Kannagara Guyancourt</title>
+  <meta name="description" content="158 techniques d'aïkido en vidéo, par attaque, technique, kyu ou sensei : ralenti, image par image et mode interrogation. Vidéothèque du club Kannagara.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kannagara.fr/videotheque/">
+  <meta property="og:title" content="Techniques d'aïkido en vidéo | Kannagara Guyancourt">
+  <meta property="og:description" content="158 techniques d'aïkido en vidéo, par attaque, technique, kyu ou sensei : ralenti, image par image et mode interrogation. Vidéothèque du club Kannagara.">
+  <meta property="og:image" content="https://kannagara.fr/images/partage/videotheque.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Aïkido Kannagara Guyancourt">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Techniques d'aïkido en vidéo | Kannagara Guyancourt">
+  <meta name="twitter:description" content="158 techniques d'aïkido en vidéo, par attaque, technique, kyu ou sensei : ralenti, image par image et mode interrogation. Vidéothèque du club Kannagara.">
+  <meta name="twitter:image" content="https://kannagara.fr/images/partage/videotheque.jpg">
+  <script>document.documentElement.classList.add("js")</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Techniques d'aïkido en vidéo",
+  "description": "158 techniques d'aïkido en vidéo, par attaque, technique, kyu ou sensei : ralenti, image par image et mode interrogation. Vidéothèque du club Kannagara.",
+  "url": "https://kannagara.fr/videotheque/",
+  "inLanguage": "fr",
+  "image": "https://kannagara.fr/images/partage/videotheque.jpg",
+  "about": {
+    "@type": "Thing",
+    "name": "Aïkido"
+  },
+  "isPartOf": {
+    "@id": "https://kannagara.fr/#website"
+  },
+  "publisher": {
+    "@type": "SportsClub",
+    "@id": "https://kannagara.fr/#organization",
+    "name": "Aïkido Kannagara Guyancourt",
+    "url": "https://kannagara.fr/"
+  }
+}
+  </script>
   <link rel="canonical" href="https://kannagara.fr/videotheque/">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
@@ -29,6 +65,13 @@
     @media (max-width: 900px) {
       .lecteur { top: var(--header-height); }
     }
+    /* Liste des techniques écrite dans la page pour les robots qui n'exécutent pas le
+       JavaScript ; l'application la remplace au démarrage. Masquée d'emblée quand le
+       JavaScript tourne, pour qu'elle ne s'affiche pas un instant avant l'application. */
+    .js .statique { display: none; }
+    .statique { max-width: 800px; line-height: 1.6; }
+    .statique h2 { margin: 1.5rem 0 0.4rem; font-size: 1.1rem; }
+    .statique ul { margin: 0 0 0 1.2rem; }
   </style>
 </head>
 <body class="page-videotheque">
@@ -70,6 +113,7 @@
   </aside>
 
   <main>
+    <h1 class="sr-only">Techniques d'aïkido en vidéo : la vidéothèque du club Aïkido Kannagara Guyancourt</h1>
     <!-- Lecteur intégré -->
     <section class="lecteur" id="lecteur" hidden aria-label="Lecteur vidéo">
       <div class="lecteur__entete">
@@ -166,7 +210,253 @@
     <div class="annonce" id="annonce" role="status" aria-live="polite"></div>
     <div class="vues" id="vues" role="group" aria-label="Regrouper par"></div>
     <div class="resume" id="resume" aria-live="polite"></div>
-    <div id="resultats"></div>
+    <div id="resultats">
+      <div class="statique">
+        <p>La vidéothèque du club Aïkido Kannagara Guyancourt réunit 260 clips de 158 techniques d'aïkido, du 6e kyu au shodan, présentées par Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé, tirés de 24 vidéos publiées par Greg Habert et Aïkido FFAB Île de France. On les retrouve par attaque, par technique, par niveau de kyu ou par sensei, avec ralenti, image par image, miroir et un mode interrogation pour réviser les passages de grade. Les vidéos restent hébergées sur YouTube : chaque clip renvoie à la vidéo d'origine.</p>
+        <h2>Tachi Waza · Ai Hanmi Katate Dori</h2>
+        <ul>
+          <li>Ikkyo omote : 6e kyu, Aurélie Lucchetti et Greg Habert</li>
+          <li>Ikkyo ura : 6e kyu, Aurélie Lucchetti et Greg Habert</li>
+          <li>Nikyo omote : 6e kyu, Aurélie Lucchetti et Greg Habert</li>
+          <li>Nikyo ura : 6e kyu, Aurélie Lucchetti et Greg Habert</li>
+          <li>Kote Gaeshi : 6e kyu, Aurélie Lucchetti et Greg Habert</li>
+          <li>Shiho Nage : 6e kyu, Greg Habert</li>
+          <li>Shiho Nage omote : 6e kyu, Aurélie Lucchetti</li>
+          <li>Shiho Nage ura : 6e kyu, Aurélie Lucchetti</li>
+          <li>Ude Kime Nage : 4e kyu, Greg Habert</li>
+          <li>Ude Kime Nage omote : 4e kyu, Aurélie Lucchetti</li>
+          <li>Ude Kime Nage ura : 4e kyu, Aurélie Lucchetti</li>
+          <li>Irimi Nage : 6e kyu, Greg Habert</li>
+          <li>Irimi Nage omote : 6e kyu, Aurélie Lucchetti</li>
+          <li>Irimi Nage ura : 6e kyu, Aurélie Lucchetti</li>
+          <li>Koshi Nage : 2e kyu, Aurélie Lucchetti et Greg Habert</li>
+          <li>Kokyu Nage : shodan, Aurélie Lucchetti et Greg Habert</li>
+        </ul>
+        <h2>Tachi Waza · Kata Dori</h2>
+        <ul>
+          <li>Ikkyo omote : 4e kyu, Greg Habert</li>
+          <li>Ikkyo ura : 4e kyu, Greg Habert</li>
+        </ul>
+        <h2>Tachi Waza · Ryote Dori</h2>
+        <ul>
+          <li>Ikkyo omote : 3e kyu, Greg Habert et Stéphane Cissé</li>
+          <li>Ikkyo ura : 3e kyu, Greg Habert et Stéphane Cissé</li>
+          <li>Kote Gaeshi : 2e kyu, Greg Habert et Stéphane Cissé</li>
+          <li>Shiho Nage : 3e kyu, Stéphane Cissé</li>
+          <li>Ude Kime Nage : shodan, Stéphane Cissé</li>
+          <li>Irimi Nage : 2e kyu, Stéphane Cissé</li>
+          <li>Tenchi Nage : 4e kyu, Greg Habert</li>
+          <li>Tenchi Nage omote : 4e kyu, Stéphane Cissé</li>
+          <li>Tenchi Nage ura : 4e kyu, Stéphane Cissé</li>
+          <li>Koshi Nage : shodan, Greg Habert et Stéphane Cissé</li>
+          <li>Kokyu Nage : shodan, Greg Habert et Stéphane Cissé</li>
+        </ul>
+        <h2>Tachi Waza · Katate Ryote Dori</h2>
+        <ul>
+          <li>Ikkyo omote : 3e kyu, Greg Habert</li>
+          <li>Ikkyo ura : 3e kyu, Greg Habert</li>
+          <li>Nikyo ura : 3e kyu, Greg Habert</li>
+          <li>Kote Gaeshi : 3e kyu, Greg Habert</li>
+          <li>Shiho Nage : shodan, Greg Habert</li>
+          <li>Ude Kime Nage : 3e kyu, Greg Habert</li>
+          <li>Irimi Nage ura : 2e kyu, Greg Habert</li>
+          <li>Sokumen Irimi Nage : shodan, Greg Habert</li>
+          <li>Koshi Nage : shodan, Greg Habert</li>
+          <li>Kokyu Nage : 3e kyu, Greg Habert</li>
+          <li>Juji Garami : 1er kyu, Greg Habert</li>
+        </ul>
+        <h2>Tachi Waza · Shomen Uchi</h2>
+        <ul>
+          <li>Ikkyo omote : 5e kyu, Jean-Luc Charles</li>
+          <li>Ikkyo ura : 5e kyu, Jean-Luc Charles</li>
+          <li>Kote Gaeshi : 5e kyu, Jean-Luc Charles</li>
+          <li>Shiho Nage : 2e kyu, Jean-Luc Charles</li>
+          <li>Ude Kime Nage : shodan, Jean-Luc Charles</li>
+          <li>Irimi Nage omote : 5e kyu, Jean-Luc Charles</li>
+          <li>Irimi Nage ura : 5e kyu, Jean-Luc Charles</li>
+          <li>Koshi Nage : shodan, Jean-Luc Charles</li>
+          <li>Kokyu Nage : shodan, Jean-Luc Charles</li>
+        </ul>
+        <h2>Tachi Waza · Yokomen Uchi</h2>
+        <ul>
+          <li>Ikkyo omote : 3e kyu, Stéphane Cissé</li>
+          <li>Ikkyo ura : 3e kyu, Stéphane Cissé</li>
+          <li>Nikyo omote : 3e kyu, Stéphane Cissé</li>
+          <li>Nikyo ura : 3e kyu, Stéphane Cissé</li>
+          <li>Kote Gaeshi : 3e kyu, Stéphane Cissé</li>
+          <li>Shiho Nage omote : 4e kyu, Stéphane Cissé</li>
+          <li>Shiho Nage ura : 4e kyu, Stéphane Cissé</li>
+          <li>Ude Kime Nage : 4e kyu, Stéphane Cissé</li>
+          <li>Irimi Nage omote : 3e kyu, Stéphane Cissé</li>
+          <li>Irimi Nage ura : 3e kyu, Stéphane Cissé</li>
+          <li>Koshi Nage : shodan, Stéphane Cissé</li>
+          <li>Kokyu Nage : shodan, Stéphane Cissé</li>
+        </ul>
+        <h2>Tachi Waza · Kata Dori Men Uchi</h2>
+        <ul>
+          <li>Ikkyo omote : 2e kyu, Greg Habert</li>
+          <li>Ikkyo ura : 2e kyu, Greg Habert</li>
+          <li>Nikyo ura : 2e kyu, Greg Habert</li>
+          <li>Kote Gaeshi : 2e kyu, Greg Habert</li>
+          <li>Shiho Nage : 2e kyu, Greg Habert</li>
+          <li>Ude Kime Nage : shodan, Greg Habert</li>
+          <li>Irimi Nage : 2e kyu, Greg Habert</li>
+          <li>Koshi Nage : shodan, Greg Habert</li>
+          <li>Kokyu Nage : shodan, Greg Habert</li>
+        </ul>
+        <h2>Suwari Waza · Shomen Uchi</h2>
+        <ul>
+          <li>Ikkyo omote : 5e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Ikkyo ura : 5e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Nikyo omote : 3e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Nikyo ura : 3e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Sankyo omote : 3e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Sankyo ura : 3e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Yonkyo omote : 3e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Yonkyo ura : 3e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Gokyo : 1er kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Kote Gaeshi : 3e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Irimi Nage : 5e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Kokyu Nage : shodan, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+        </ul>
+        <h2>Suwari Waza · Yokomen Uchi</h2>
+        <ul>
+          <li>Ikkyo omote : 2e kyu, Greg Habert</li>
+          <li>Ikkyo ura : 2e kyu, Greg Habert</li>
+          <li>Nikyo omote : 2e kyu, Greg Habert</li>
+          <li>Nikyo ura : 2e kyu, Greg Habert</li>
+          <li>Sankyo omote : 2e kyu, Greg Habert</li>
+          <li>Sankyo ura : 2e kyu, Greg Habert</li>
+          <li>Yonkyo omote : 2e kyu, Greg Habert</li>
+          <li>Yonkyo ura : 2e kyu, Greg Habert</li>
+          <li>Gokyo : 2e kyu, Greg Habert</li>
+          <li>Kote Gaeshi : 1er kyu, Greg Habert</li>
+          <li>Irimi Nage : 2e kyu, Greg Habert</li>
+          <li>Kokyu Nage : shodan, Greg Habert</li>
+        </ul>
+        <h2>Hanmi Handachi Waza · Katate Dori</h2>
+        <ul>
+          <li>Ikkyo omote : shodan, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Nikyo ura : 1er kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Kote Gaeshi : shodan, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Shiho Nage omote : 3e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Shiho Nage ura : 3e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Irimi Nage : shodan, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Uchi Kaiten Nage : 3e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Soto Kaiten Nage : 2e kyu, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Kokyu Nage : shodan, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+          <li>Sumi Otoshi : shodan, Aurélie Lucchetti, Greg Habert, Jean-Luc Charles et Stéphane Cissé</li>
+        </ul>
+        <h2>Hanmi Handachi Waza · Ushiro Ryo Kata Dori</h2>
+        <ul>
+          <li>Ikkyo : shodan, Greg Habert</li>
+          <li>Sankyo : shodan, Greg Habert</li>
+          <li>Kote Gaeshi : shodan, Greg Habert</li>
+          <li>Kokyu Nage : shodan, Greg Habert</li>
+        </ul>
+        <h2>Ushiro Waza · Ushiro Ryote Dori</h2>
+        <ul>
+          <li>Ikkyo : 3e kyu, Aurélie Lucchetti</li>
+          <li>Nikyo ura : 3e kyu, Aurélie Lucchetti</li>
+          <li>Sankyo : 4e kyu, Aurélie Lucchetti</li>
+          <li>Kote Gaeshi : 3e kyu, Aurélie Lucchetti</li>
+          <li>Shiho Nage : 3e kyu, Aurélie Lucchetti</li>
+          <li>Ude Kime Nage : 3e kyu, Aurélie Lucchetti</li>
+          <li>Irimi Nage : 3e kyu, Aurélie Lucchetti</li>
+          <li>Koshi Nage : 1er kyu, Aurélie Lucchetti</li>
+          <li>Kokyu Nage : 1er kyu, Aurélie Lucchetti</li>
+          <li>Juji Garami : 2e kyu, Aurélie Lucchetti</li>
+        </ul>
+        <h2>Ushiro Waza · Ushiro Eri Dori</h2>
+        <ul>
+          <li>Ikkyo omote : 1er kyu, Greg Habert</li>
+          <li>Ikkyo ura : 1er kyu, Greg Habert</li>
+          <li>Nikyo ura : shodan, Greg Habert</li>
+          <li>Kote Gaeshi : 1er kyu, Greg Habert</li>
+          <li>Shiho Nage : 1er kyu, Greg Habert</li>
+          <li>Ude Kime Nage : shodan, Greg Habert</li>
+          <li>Irimi Nage : shodan, Greg Habert</li>
+          <li>Koshi Nage : shodan, Greg Habert</li>
+          <li>Kokyu Nage : shodan, Greg Habert</li>
+          <li>Aiki Otoshi : shodan, Greg Habert</li>
+        </ul>
+        <h2>Ushiro Waza · Ushiro Katate Dori Kubishime</h2>
+        <ul>
+          <li>Ikkyo : 2e kyu, Greg Habert</li>
+          <li>Nikyo ura : shodan, Greg Habert</li>
+          <li>Kote Gaeshi : 1er kyu, Greg Habert</li>
+          <li>Shiho Nage : 1er kyu, Greg Habert</li>
+          <li>Ude Kime Nage : shodan, Greg Habert</li>
+          <li>Irimi Nage : 1er kyu, Greg Habert</li>
+          <li>Koshi Nage : shodan, Greg Habert</li>
+          <li>Kokyu Nage : shodan, Greg Habert</li>
+        </ul>
+        <h2>Buki Waza · Tanto Dori Shomen Uchi</h2>
+        <ul>
+          <li>Gokyo : shodan, Greg Habert</li>
+          <li>Shiho Nage : shodan, Greg Habert</li>
+        </ul>
+        <h2>Buki Waza · Tanto Dori Yokomen Uchi</h2>
+        <ul>
+          <li>Gokyo : shodan, Greg Habert</li>
+          <li>Shiho Nage : shodan, Greg Habert</li>
+        </ul>
+        <h2>Buki Waza · Tanto Dori Chudan Tsuki</h2>
+        <ul>
+          <li>Ikkyo : shodan, Greg Habert</li>
+          <li>Hiji Kime Osae : shodan, Greg Habert</li>
+          <li>Kote Gaeshi : shodan, Greg Habert</li>
+          <li>Shiho Nage : shodan, Greg Habert</li>
+          <li>Irimi Nage : shodan, Greg Habert</li>
+          <li>Uchi Kaiten Sankyo : shodan, Greg Habert</li>
+          <li>Kubi Nage : shodan, Greg Habert</li>
+          <li>Ude Osae Nage : shodan, Greg Habert</li>
+        </ul>
+        <h2>Buki Waza · Jo Dori Chudan Tsuki</h2>
+        <ul>
+          <li>Ikkyo omote : shodan, Aurélie Lucchetti et Greg Habert</li>
+          <li>Kote Gaeshi : shodan, Aurélie Lucchetti et Greg Habert</li>
+          <li>Shiho Nage : shodan, Aurélie Lucchetti et Greg Habert</li>
+          <li>Ude Kime Nage : shodan, Aurélie Lucchetti et Greg Habert</li>
+          <li>Irimi Nage omote : shodan, Greg Habert</li>
+          <li>Sokumen Irimi Nage : shodan, Aurélie Lucchetti et Greg Habert</li>
+          <li>Koshi Nage : shodan, Greg Habert</li>
+          <li>Kokyu Nage : shodan, Greg Habert</li>
+          <li>Juji Garami : shodan, Greg Habert</li>
+        </ul>
+        <h2>Buki Waza · Jo Nage</h2>
+        <ul>
+          <li>Jyu Waza : shodan, Greg Habert</li>
+        </ul>
+        <h2>Vidéos d'origine</h2>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=9gzxPxhQKVE">Préparation Nidan : Hanmihandashi waza Ushiro ryokatadori par Greg Habert</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=hwry2oz2L2Y">Préparation Shodan : Suwari waza Shomen uchi par Greg Habert et Léo Gaspard</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=RnX5hrbR_eQ">Point Technique : Ushiro waza Katate Kubishime par Greg Habert</a>, Aïkido FFAB Île de France</li>
+          <li><a href="https://www.youtube.com/watch?v=fEgRsM_ikJo">Point Technique : Suwari waza Yokomen Uchi par Greg Habert et Alexandre Dallemagne</a>, Aïkido FFAB Île de France</li>
+          <li><a href="https://www.youtube.com/watch?v=bRjzCbkj3Fc">Préparation Shodan : Hanmihandashi waza Gyakyhanmi katatedori par Greg Habert et Léo Gaspard</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=AXB4Grouc98">Préparation au Shodan : Tachi waza Morotedori par Greg Habert et Nicolas Charvet</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=Ok447jIlgm8">Préparation Nidan : Suwari waza Yokomen uchi par Greg Habert et Alexandre Dallemagne</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=xrqEIh93DbE">Préparation Shodan : Tachi waza Ai-hanmi katatedori par Greg Habert et Lucile Marguinaud</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=8DcuSnmW1wc">Point Technique de la FFAB ligue IDF par Aurélie Lucchetti : Ushiro waza Ryotedori.</a>, Aïkido FFAB Île de France</li>
+          <li><a href="https://www.youtube.com/watch?v=OG2nLNzziPY">Préparation Nidan : Ushiro waza Eridori par Greg Habert</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=zjhStd2IJ3w">Préparation au Shodan : Tachi waza Katadori menuchi par Greg Habert et Laurence Zettwoog</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=1xG4L6a--cU">Préparation Shodan : Tachi waza Ryotedori par Greg Habert et Lucile Marguinaud.</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=Q9BlCi3qqWw">Préparation au Shodan : Tachi waza Katadori Ikkyo par Greg Habert et Laurence Zettwoog</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=MtewPE3sePQ">Préparation au Shodan : Buki waza Tantodori par Greg Habert et Léo Gaspard</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=gaJeAxlZB34">Préparation au Shodan : Bukiwaza Jodori par Greg Habert et Laurence Zettwoog</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=1u6_aEkHVSk">Préparation au Shodan : Bukiwaza Jonage par Greg Habert et Lucile Marguinaud</a>, Greg Habert</li>
+          <li><a href="https://www.youtube.com/watch?v=CciXzcNU5UA">Point Technique de la FFAB ligue IDF par Aurélie Lucchetti : Jodori.</a>, Aïkido FFAB Île de France</li>
+          <li><a href="https://www.youtube.com/watch?v=3MkGxQQ0f3U">FFAB IDF présente : Passage Shodan - Suwari waza Shomen uchi</a>, Aïkido FFAB Île de France</li>
+          <li><a href="https://www.youtube.com/watch?v=vvjqTcfI0to">FFAB IDF - Passage Shodan - Hanmihandashi waza Gyakukatatedori</a>, Aïkido FFAB Île de France</li>
+          <li><a href="https://www.youtube.com/watch?v=z7GwbWAxzIg">FFAB IDF présente : Passage Shodan - Tachi waza Aihanmi katatedori</a>, Aïkido FFAB Île de France</li>
+          <li><a href="https://www.youtube.com/watch?v=z6V2LbvX7yQ">FFAB IDF présente : Passage Shodan - Tachi waza Ryotedori</a>, Aïkido FFAB Île de France</li>
+          <li><a href="https://www.youtube.com/watch?v=HtROljrGMzY">FFAB IDF présente : Passage Shodan - Tachi waza Shomenuchi</a>, Aïkido FFAB Île de France</li>
+          <li><a href="https://www.youtube.com/watch?v=hB8jDVdUnNk">FFAB IDF présente : Passage Shodan - Tachi waza Yokomen uchi</a>, Aïkido FFAB Île de France</li>
+          <li><a href="https://www.youtube.com/watch?v=fdZVHRz4-r4">FFAB IDF présente : Passage Shodan - Ushiro waza Ryotedori</a>, Aïkido FFAB Île de France</li>
+        </ul>
+      </div>
+    </div>
   </main>
 </div>
 

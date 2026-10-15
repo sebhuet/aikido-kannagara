@@ -1,6 +1,7 @@
 <?php
 require_once 'includes/markdown.php';
 require_once __DIR__ . '/includes/equipe.php';
+require_once __DIR__ . '/includes/jsonld.php';
 
 // Charger toutes les fiches .md
 $fiches_dir = __DIR__ . '/professeurs/fiches';
@@ -30,21 +31,19 @@ $schema = [
     'itemListElement' => [],
 ];
 foreach ($fiches as $i => $fiche) {
+    // Identifiant = ancre de la fiche, repris par l'accueil (employee du club)
     $person = [
         '@type' => 'Person',
+        '@id' => jsonld_enseignant_ref($fiche)['@id'],
         'position' => $i + 1,
         'name' => $fiche['meta']['name'] ?? '',
         'jobTitle' => "Professeur d'aïkido",
         'description' => ($fiche['meta']['grade'] ?? '') . '. ' . ($fiche['meta']['diplome'] ?? '') . '.',
-        'worksFor' => [
-            '@type' => 'Organization',
-            'name' => 'Aïkido Kannagara Guyancourt',
-        ],
+        'worksFor' => jsonld_club_ref(),
     ];
 
     // Enrichir Jean-Marc Chamot avec des credentials détaillées
     if (($fiche['meta']['initials'] ?? '') === 'JMC') {
-        $person['@id'] = 'https://kannagara.fr/professeurs.php#jean-marc-chamot';
         $person['description'] = '7e Dan Aïkido, 4e Dan Iaïdo. Cadre technique FFAB, titulaire du DESJEPS. Formé auprès d\'André Nocquet (premier uchi-deshi étranger du fondateur de l\'aïkido) et de Maître Tamura Nobuyoshi. Plus de 50 ans de pratique.';
         $person['hasCredential'] = [
             [
@@ -97,13 +96,15 @@ foreach ($fiches as $i => $fiche) {
     <meta property="og:url" content="https://kannagara.fr/professeurs.php">
     <meta property="og:title" content="Équipe enseignante - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="<?= htmlspecialchars($og_description) ?>">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Équipe enseignante - Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="<?= htmlspecialchars($og_description) ?>">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

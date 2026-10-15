@@ -310,6 +310,7 @@ p {
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 8px;
   max-width: 800px;
+  margin: 0 auto;
   box-shadow: var(--shadow-md);
 }
 
@@ -331,6 +332,74 @@ p {
   color: var(--color-text);
   max-width: 600px;
   margin: 0 auto var(--spacing-md);
+}
+
+/* Accueil : photo de pratique prise en studio sur fond noir. Le noir du bandeau
+   prolonge celui de la photo, calée à droite ; le texte occupe le vide à gauche
+   des pratiquants. En dessous de 1024 px, la photo passe au-dessus du texte
+   (responsive.css). */
+.hero--photo {
+  height: clamp(440px, 64vh, 620px);
+  min-height: 0;
+  padding: 0;
+  align-items: stretch;
+  text-align: left;
+  background: #000;
+}
+
+.hero__photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  /* Fondu du bord gauche : aucune ligne de raccord entre la photo et le bandeau */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 25%);
+  mask-image: linear-gradient(to right, transparent, #000 25%);
+}
+
+.hero--photo .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero--photo .hero__content {
+  max-width: min(520px, 42vw);
+  margin: 0;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hero--photo .hero__title {
+  color: var(--color-white);
+}
+
+/* Rouge du club éclairci : le rouge d'origine manque de contraste sur le noir */
+.hero--photo .hero__subtitle {
+  color: #f48a84;
+}
+
+.hero--photo .hero__description {
+  margin: 0 0 var(--spacing-md);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Texte réservé aux lecteurs d'écran et aux moteurs (ex. titre de la vidéothèque) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Enso (cercle zen) decoratif - masqué */

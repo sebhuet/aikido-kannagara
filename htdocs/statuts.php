@@ -20,13 +20,15 @@
     <meta property="og:url" content="https://kannagara.fr/statuts.php">
     <meta property="og:title" content="Statuts de l'association | Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Statuts de l'association Aïkido Kannagara Guyancourt, association loi 1901 affiliée à la FFAB.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Statuts de l'association | Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Statuts de l'association Aïkido Kannagara Guyancourt, association loi 1901 affiliée à la FFAB.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">

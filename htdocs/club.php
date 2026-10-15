@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require_once __DIR__ . '/includes/jsonld.php'; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -21,13 +21,15 @@
     <meta property="og:url" content="https://kannagara.fr/club.php">
     <meta property="og:title" content="Le Club Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Club d'aïkido à Guyancourt depuis 1990. Environ 50 membres, affilié FFAB.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Le Club Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Club d'aïkido à Guyancourt depuis 1990. Environ 50 membres, affilié FFAB.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -35,6 +37,15 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- JSON-LD : page de présentation du club, même entité que l'accueil (includes/jsonld.php) -->
+    <?php jsonld_script([
+        '@type' => 'AboutPage',
+        'name' => 'Le Club Kannagara',
+        'url' => jsonld_site() . '/club.php',
+        'inLanguage' => 'fr',
+        'isPartOf' => jsonld_website_ref(),
+        'mainEntity' => jsonld_club_ref(),
+    ]); ?>
 </head>
 <body>
     <?php $active = 'club'; include 'includes/header.php'; ?>

@@ -1,4 +1,12 @@
-﻿<?php require_once __DIR__ . '/includes/data.php'; require_once __DIR__ . '/includes/equipe.php'; $club = club_data(); $sch = $club['schedule']; ?><!DOCTYPE html>
+﻿<?php
+require_once __DIR__ . '/includes/data.php';
+require_once __DIR__ . '/includes/equipe.php';
+require_once __DIR__ . '/includes/images.php';
+require_once __DIR__ . '/includes/jsonld.php';
+$club = club_data();
+$sch = $club['schedule'];
+$partage = image_partage();
+?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -17,15 +25,15 @@
     <meta property="og:url" content="https://kannagara.fr/">
     <meta property="og:title" content="Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Responsabilité pédagogique de Nacer Chekkaba. Cours enfants et adultes, lundi et jeudi.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="<?= htmlspecialchars($partage) ?>">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="Aïkido Kannagara Guyancourt">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Club d'aïkido à Guyancourt (78) affilié FFAB. Responsabilité pédagogique de Nacer Chekkaba. Cours enfants et adultes, lundi et jeudi.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="<?= htmlspecialchars($partage) ?>">
 
     <!-- Geo Tags -->
     <meta name="geo.region" content="FR-78">
@@ -45,111 +53,8 @@
     <link rel="alternate" type="text/plain" href="https://kannagara.fr/llms.txt" title="LLM summary">
     <link rel="alternate" type="text/plain" href="https://kannagara.fr/llms-full.txt" title="LLM full content">
 
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SportsActivityLocation",
-        "@id": "https://kannagara.fr/#organization",
-        "name": "Aïkido Kannagara Guyancourt",
-        "alternateName": "Kannagara",
-        "description": "Club d'aïkido affilié à la FFAB, proposant des cours pour enfants et adultes à Guyancourt depuis 1990.",
-        "url": "https://kannagara.fr",
-        "logo": "https://kannagara.fr/images/logo-kannagara.jpg",
-        "image": "https://kannagara.fr/images/logo-kannagara.jpg",
-        "telephone": "+33676481601",
-        "email": "aikido.kannagara.guyancourt@gmail.com",
-        "foundingDate": "1990",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Gymnase Maurice Baquet, Mail des Graviers",
-            "addressLocality": "Guyancourt",
-            "postalCode": "78280",
-            "addressCountry": "FR"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 48.772739,
-            "longitude": 2.065928
-        },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": <?= json_encode($sch['daysSchemaOrg']) ?>,
-                "opens": "<?= $sch['children']['opens'] ?>",
-                "closes": "<?= $sch['children']['closes'] ?>",
-                "validFrom": "<?= $club['seasonStart'] ?>",
-                "description": "Cours enfants"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": <?= json_encode($sch['daysSchemaOrg']) ?>,
-                "opens": "<?= $sch['adultsRange']['opens'] ?>",
-                "closes": "<?= $sch['adultsRange']['closes'] ?>",
-                "validFrom": "<?= $club['seasonStart'] ?>",
-                "description": "Cours adultes"
-            }
-        ],
-        "sameAs": [
-            "https://www.facebook.com/Kannagara-a%C3%AFkido-club-de-Guyancourt-375533475979211/"
-        ],
-        "memberOf": {
-            "@type": "Organization",
-            "name": "Fédération Française d'Aïkido et de Budo",
-            "alternateName": "FFAB"
-        },
-        "areaServed": [
-            {"@type": "City", "name": "Guyancourt"},
-            {"@type": "City", "name": "Montigny-le-Bretonneux"},
-            {"@type": "City", "name": "Voisins-le-Bretonneux"},
-            {"@type": "City", "name": "Élancourt"},
-            {"@type": "City", "name": "Trappes"},
-            {"@type": "City", "name": "La Verrière"},
-            {"@type": "City", "name": "Buc"},
-            {"@type": "City", "name": "Vélizy-Villacoublay"},
-            {"@type": "City", "name": "Versailles"},
-            {"@type": "AdministrativeArea", "name": "Saint-Quentin-en-Yvelines"}
-        ],
-        "sport": "Aïkido",
-        "employee": [
-            {
-                "@type": "Person",
-                "@id": "https://kannagara.fr/professeurs.php#jean-marc-chamot",
-                "name": "Jean-Marc Chamot",
-                "jobTitle": "Professeur d'aïkido - Intervenant régulier",
-                "description": "7e Dan Aïkido, 4e Dan Iaïdo. Cadre technique FFAB, titulaire du DESJEPS. Formé auprès d'André Nocquet (premier uchi-deshi étranger du fondateur de l'aïkido) et de Maître Tamura Nobuyoshi. Plus de 50 ans de pratique, près de 40 ans d'enseignement.",
-                "hasCredential": [
-                    {
-                        "@type": "EducationalOccupationalCredential",
-                        "credentialCategory": "grade",
-                        "name": "7e Dan Aïkido",
-                        "recognizedBy": {
-                            "@type": "Organization",
-                            "name": "Fédération Française d'Aïkido et de Budo"
-                        }
-                    },
-                    {
-                        "@type": "EducationalOccupationalCredential",
-                        "credentialCategory": "grade",
-                        "name": "4e Dan Iaïdo"
-                    },
-                    {
-                        "@type": "EducationalOccupationalCredential",
-                        "credentialCategory": "diploma",
-                        "name": "DESJEPS",
-                        "description": "Diplôme d'État Supérieur de la Jeunesse, de l'Éducation Populaire et du Sport"
-                    }
-                ],
-                "knowsAbout": ["Aïkido", "Iaïdo", "Judo", "Karaté", "Jodo"],
-                "memberOf": {
-                    "@type": "Organization",
-                    "name": "Fédération Française d'Aïkido et de Budo",
-                    "alternateName": "FFAB"
-                }
-            }
-        ]
-    }
-    </script>
+    <!-- Schema.org JSON-LD : le site et le club, une seule identité (includes/jsonld.php) -->
+    <?php jsonld_script(jsonld_website(), jsonld_club()); ?>
 </head>
 <body>
     <?php $active = 'index'; include 'includes/header.php'; ?>
@@ -160,25 +65,37 @@
 
 
 
-    <!-- Hero Section -->
-    <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__content">
-            <h1 class="hero__title" id="hero-title">Aïkido Kannagara Guyancourt</h1>
-            <p class="hero__subtitle">L'art martial de l'harmonie — enfants dès 7 ans, adultes tous niveaux</p>
-            <p class="hero__description">
-                <?= htmlspecialchars($club['trial']['label']) ?>.
-                Rendez-vous le <?= htmlspecialchars(implode(' et le ', array_map('strtolower', $sch['days']))) ?> à Guyancourt (78).
-            </p>
-            <div class="hero__buttons">
-                <a href="inscription.php#essai" class="btn btn--primary">Venez essayer</a>
-                <a href="inscription.php#comment" class="btn btn--outline">S'inscrire</a>
+    <!-- Hero : photo de pratique sur fond noir (variantes WebP de tools/optimiser_images.py).
+         Sans elle, le bandeau retrouve sa carte blanche sur le fond du site. -->
+    <?php $heroPhoto = image_existe('images/accueil/hero-1600.webp'); ?>
+    <section class="hero<?= $heroPhoto ? ' hero--photo' : '' ?>" aria-labelledby="hero-title">
+        <?php if ($heroPhoto): ?>
+        <img class="hero__photo" src="images/accueil/hero-1600.webp"
+             srcset="images/accueil/hero-800.webp 800w, images/accueil/hero-1600.webp 1600w"
+             sizes="(max-width: 1023px) 100vw, 70vw" width="1600" height="1073"
+             alt="" fetchpriority="high">
+        <?php endif; ?>
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title" id="hero-title">Aïkido Kannagara Guyancourt</h1>
+                <p class="hero__subtitle">L'art martial de l'harmonie — enfants dès 7 ans, adultes tous niveaux</p>
+                <p class="hero__description">
+                    <?= htmlspecialchars(club_essai_accroche()) ?>.
+                    Rendez-vous le <?= htmlspecialchars(implode(' et le ', array_map('strtolower', $sch['days']))) ?> à Guyancourt (78).
+                </p>
+                <div class="hero__buttons">
+                    <a href="inscription.php#essai" class="btn btn--primary">Venez essayer</a>
+                    <a href="inscription.php#comment" class="btn <?= $heroPhoto ? 'btn--secondary' : 'btn--outline' ?>">S'inscrire</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Moments de pratique : bandeau de 4 visuels sous le hero. Sélection fixe et curatée
          (distincte du bandeau « Le club en images » en bas de page, qui tourne au hasard
-         chaque jour depuis la galerie). -->
+         chaque jour depuis la galerie). Les originaux d'images/flyer/ (jusqu'à 1,2 Mo,
+         réservés aux flyers imprimés) sont servis en WebP de 480 et 960 px. Pas de
+         chargement différé : le bandeau est visible dès l'arrivée sur la page. -->
     <?php
     $pratique = [
         ['file' => 'travail.jpg', 'alt' => "Travail à deux à mains nues, cours d'aïkido adultes"],
@@ -190,11 +107,13 @@
     <section class="section" aria-label="Moments de pratique">
         <div class="container">
             <div class="photo-strip">
-                <?php foreach ($pratique as $ph): ?>
+                <?php foreach ($pratique as $ph):
+                    $img = accueil_photo($ph['file']);
+                ?>
                 <div class="photo-strip__item">
-                    <img src="images/flyer/<?= htmlspecialchars($ph['file']) ?>"
-                         alt="<?= htmlspecialchars($ph['alt']) ?>, Aïkido Kannagara Guyancourt"
-                         loading="lazy">
+                    <img src="<?= htmlspecialchars($img['src']) ?>"
+                         <?php if ($img['srcset']): ?>srcset="<?= htmlspecialchars($img['srcset']) ?>" sizes="(max-width: 768px) 50vw, 285px"<?php endif; ?>
+                         alt="<?= htmlspecialchars($ph['alt']) ?>, Aïkido Kannagara Guyancourt">
                 </div>
                 <?php endforeach; ?>
             </div>
@@ -226,20 +145,9 @@
     </section>
     <?php endif; ?>
 
-    <!-- Résumé factuel (quick answer pour LLMs) -->
-    <section class="section">
-        <div class="container">
-            <p style="max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.125rem;">
-                <strong>Kannagara</strong> est un club d'aïkido à Guyancourt (Yvelines), fondé en 1990
-                et affilié à la FFAB. Le club est placé sous la <strong>responsabilité pédagogique de <?= htmlspecialchars(equipe_responsable()) ?></strong>.
-                <?= equipe_intervenants_html() ?>
-                interviennent régulièrement sur le tatami. Le club propose des cours
-                pour enfants (dès 7 ans) et adultes, le lundi et le jeudi, au Gymnase Maurice Baquet.
-            </p>
-        </div>
-    </section>
-
-    <!-- Présentation rapide -->
+    <!-- Bienvenue : présentation factuelle du club, réponse directe pour les moteurs et
+         les assistants IA. Elle remplace deux cartes qui répétaient la composition de
+         l'équipe, déjà donnée ici et dans le carrousel des enseignants. -->
     <section class="section">
         <div class="container">
             <div class="section__header">
@@ -247,52 +155,19 @@
                 <p class="section__subtitle">L'Aïkido, un art martial pour tous</p>
             </div>
 
-            <div class="cards-grid">
-                <div class="card fade-in">
-                    <div class="card__content">
-                        <h3 class="card__title">Environ 50 membres</h3>
-                        <p class="card__text">
-                            Notre club accueille près de 50 licenciés, dont une vingtaine d'enfants,
-                            dans une ambiance familiale et respectueuse des traditions martiales.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card fade-in">
-                    <div class="card__content">
-                        <h3 class="card__title">Équipe enseignante</h3>
-                        <p class="card__text">
-                            Sous la responsabilité pédagogique de <strong><?= htmlspecialchars(equipe_responsable()) ?></strong>,
-                            avec <?= htmlspecialchars(equipe_intervenants_txt()) ?>
-                            comme intervenants réguliers. <a href="agenda.php">Voir le planning</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Témoignage (extrait, texte complet sur inscription.php#temoignage) -->
-    <section class="section" aria-labelledby="temoignage-title">
-        <div class="container">
-            <div class="section__header">
-                <h2 class="section__title" id="temoignage-title">Ils nous font confiance</h2>
-            </div>
-
-            <figure class="temoignage" style="max-width: 800px; margin-left: auto; margin-right: auto;">
-                <blockquote>
-                    <p>
-                        Ils ont pu bénéficier d’un cadre à la fois sérieux et bienveillant, qui leur a permis
-                        de progresser continuellement tout en prenant confiance en leurs capacités. […]
-                        Ma fille, qui continue l’année prochaine, souligne d’ailleurs que c’est à l’aïkido
-                        qu’elle a noué ses meilleures amitiés, et les plus durables !
-                    </p>
-                </blockquote>
-                <figcaption>Laëtitia, maman de deux jeunes pratiquants</figcaption>
-            </figure>
-
-            <div class="text-center mt-3">
-                <a href="inscription.php#temoignage">Lire le témoignage complet →</a>
+            <div class="content" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.125rem;">
+                    <strong>Kannagara</strong> est un club d'aïkido à Guyancourt (Yvelines), fondé en <?= (int) $club['foundingYear'] ?>
+                    et affilié à la FFAB. Le club est placé sous la <strong>responsabilité pédagogique de <?= htmlspecialchars(equipe_responsable()) ?></strong>.
+                    <?= equipe_intervenants_html() ?>
+                    interviennent régulièrement sur le tatami. Le club propose des cours
+                    pour enfants (dès 7 ans) et adultes, le lundi et le jeudi, au Gymnase Maurice Baquet.
+                </p>
+                <p>
+                    Il compte environ <?= (int) $club['membersApprox'] ?> licenciés, dont une vingtaine d'enfants,
+                    dans une ambiance familiale et respectueuse des traditions martiales.
+                    <a href="agenda.php">Voir le planning des enseignants</a>.
+                </p>
             </div>
         </div>
     </section>
@@ -309,6 +184,31 @@
 
             <div class="text-center mt-3">
                 <a href="inscription.php" class="btn btn--outline">Nous rejoindre</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignage (extrait, texte complet sur inscription.php#temoignage) -->
+    <section class="section" aria-labelledby="temoignage-title">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title" id="temoignage-title">Témoignage</h2>
+            </div>
+
+            <figure class="temoignage" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                <blockquote>
+                    <p>
+                        Ils ont pu bénéficier d’un cadre à la fois sérieux et bienveillant, qui leur a permis
+                        de progresser continuellement tout en prenant confiance en leurs capacités. […]
+                        Ma fille, qui continue l’année prochaine, souligne d’ailleurs que c’est à l’aïkido
+                        qu’elle a noué ses meilleures amitiés, et les plus durables !
+                    </p>
+                </blockquote>
+                <figcaption>Laëtitia, maman de deux jeunes pratiquants</figcaption>
+            </figure>
+
+            <div class="text-center mt-3">
+                <a href="inscription.php#temoignage">Lire le témoignage complet →</a>
             </div>
         </div>
     </section>
@@ -375,7 +275,7 @@
 
             <div class="photo-strip">
                 <?php foreach ($stripPhotos as $ph):
-                    $src = 'galerie/' . rawurlencode($ph['slug']) . '/' . rawurlencode($ph['file']);
+                    $src = galerie_vignette($ph['slug'], $ph['file']);
                 ?>
                 <a class="photo-strip__item"
                    href="galerie.php?photo=<?= urlencode($ph['slug'] . '/' . $ph['file']) ?>"

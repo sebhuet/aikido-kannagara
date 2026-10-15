@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require_once __DIR__ . '/includes/jsonld.php'; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -21,14 +21,16 @@
     <meta property="og:url" content="https://kannagara.fr/lexique.php">
     <meta property="og:title" content="Lexique Japonais de l'Aïkido">
     <meta property="og:description" content="Vocabulaire japonais essentiel pour la pratique de l'aïkido : termes techniques, expressions du dojo.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lexique Japonais de l'Aïkido">
     <meta name="twitter:description" content="Vocabulaire japonais essentiel pour la pratique de l'aïkido : termes techniques, expressions du dojo.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -47,15 +49,7 @@
         "description": "Lexique japonais de l'aïkido : termes techniques, vocabulaire du dojo, noms des techniques, comptage japonais. Guide complet pour les pratiquants.",
         "url": "https://kannagara.fr/lexique.php",
         "inLanguage": ["ja", "fr"],
-        "publisher": {
-            "@type": "Organization",
-            "name": "Aïkido Kannagara Guyancourt",
-            "url": "https://kannagara.fr",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
-            }
-        }
+        "publisher": <?= jsonld_json(jsonld_editeur()) ?>
     }
     </script>
 

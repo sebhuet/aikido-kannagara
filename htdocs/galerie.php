@@ -1,5 +1,7 @@
 ﻿<?php
 require_once __DIR__ . '/includes/data.php';
+require_once __DIR__ . '/includes/images.php';
+require_once __DIR__ . '/includes/jsonld.php';
 $club = club_data();
 $site = rtrim($club['url'], '/');
 
@@ -159,11 +161,8 @@ if ($photoPartagee) {
         "name": "Galerie Photos Aïkido Kannagara Guyancourt",
         "description": "Galerie photos du club Aïkido Kannagara Guyancourt : cours, stages, passages de grades et vie du club.",
         "url": "https://kannagara.fr/galerie.php",
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "Aïkido Kannagara Guyancourt",
-            "url": "https://kannagara.fr"
-        }
+        "isPartOf": <?= json_encode(jsonld_website_ref(), JSON_UNESCAPED_SLASHES) ?>,
+        "publisher": <?= json_encode(jsonld_club_ref(), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) ?>
     }
     </script>
 
@@ -448,7 +447,10 @@ if ($photoPartagee) {
                         <div class="gallery-item<?= $ciblee ? ' is-ciblee' : '' ?>"
                              data-category="<?= $slug ?>"
                              data-photo="<?= htmlspecialchars($slug . '/' . $photo) ?>">
-                            <img src="<?= htmlspecialchars($src) ?>"
+                            <?php /* Vignette dans la grille (tools/optimiser_images.py),
+                                     photo entière dans la visionneuse (data-full). */ ?>
+                            <img src="<?= htmlspecialchars(galerie_vignette($slug, $photo)) ?>"
+                                 data-full="<?= htmlspecialchars($src) ?>"
                                  alt="<?= htmlspecialchars($title . ' — Aïkido Kannagara Guyancourt') ?>"
                                  class="gallery-item__image"
                                  loading="lazy">
@@ -545,7 +547,7 @@ if ($photoPartagee) {
                 var title = item.querySelector('.gallery-item__title');
                 if (img) {
                     var idx = allImages.length;
-                    allImages.push({ src: img.src, caption: title ? title.textContent : '' });
+                    allImages.push({ src: img.dataset.full || img.src, caption: title ? title.textContent : '' });
                     item.addEventListener('click', function(e) {
                         // Le bouton de partage est DANS l'item cliquable : sans ce garde-fou,
                         // cliquer « Partager » ouvrirait la lightbox en plus d'aller sur Facebook.

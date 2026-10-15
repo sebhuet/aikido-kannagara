@@ -12,7 +12,11 @@
  *     (includes/header.php), feuilles de style du site, puis celles de la vidéothèque
  *     et quelques règles qui placent la vidéothèque sous l'en-tête fixe ;
  *   - numérote les fichiers d'après leur contenu (?v=...) : le navigateur recharge
- *     app.js, style.css et donnees.js dès qu'ils changent, malgré le cache d'une semaine.
+ *     app.js, style.css et donnees.js dès qu'ils changent, malgré le cache d'une semaine ;
+ *   - rend la page lisible sans JavaScript, pour Google et les robots des assistants IA
+ *     qui n'exécutent pas l'application (74 mots lisibles auparavant) : titre, description,
+ *     aperçu de partage, données structurées, titre H1 et liste des techniques en HTML,
+ *     remplacée par l'application dès son démarrage.
  * Les fichiers de la source ne sont jamais modifiés.
  */
 
@@ -43,7 +47,14 @@ const STYLE_INTEGRATION = `
     #ouvrir-apropos { display: none; }
     @media (max-width: 900px) {
       .lecteur { top: var(--header-height); }
-    }`;
+    }
+    /* Liste des techniques écrite dans la page pour les robots qui n'exécutent pas le
+       JavaScript ; l'application la remplace au démarrage. Masquée d'emblée quand le
+       JavaScript tourne, pour qu'elle ne s'affiche pas un instant avant l'application. */
+    .js .statique { display: none; }
+    .statique { max-width: 800px; line-height: 1.6; }
+    .statique h2 { margin: 1.5rem 0 0.4rem; font-size: 1.1rem; }
+    .statique ul { margin: 0 0 0 1.2rem; }`;
 
 function lire(f) {
   return fs.readFileSync(path.join(SOURCE, f), "utf8");
@@ -85,21 +96,144 @@ if (!tete || !corps) {
   process.exit(1);
 }
 
-// En-tête : métadonnées de la vidéothèque, sans sa feuille de style (rajoutée après celles du site)
+/* ---------- Référencement : la page lisible sans JavaScript ---------- */
+
+const CLUB = JSON.parse(fs.readFileSync(path.join(RACINE, "htdocs", "data", "club.json"), "utf8"));
+const SITE = CLUB.url.replace(/\/$/, "");
+const URL_PAGE = `${SITE}/videotheque/`;
+const D = JSON.parse(
+  lire("donnees.js")
+    .trim()
+    .replace(/^window\.DONNEES\s*=\s*/, "")
+    .replace(/;$/, "")
+);
+const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const liste = (noms) => (noms.length > 1 ? noms.slice(0, -1).join(", ") + " et " + noms.at(-1) : noms[0] || "");
+const nomNiveau = (n) => (/dan/i.test(n) ? "shodan" : `${parseInt(n, 10)}${parseInt(n, 10) === 1 ? "er" : "e"} kyu`);
+
+// Une technique = position + attaque + technique + sens, comme dans l'application ;
+// son niveau est le plus précoce de ses clips (ordre[3] : rang du niveau).
+const techniques = new Map();
+for (const c of D.clips) {
+  const cle = [c.forme, c.attaque, c.technique, c.sens].join("|");
+  if (!techniques.has(cle)) techniques.set(cle, { ...c, senseis: new Set() });
+  const t = techniques.get(cle);
+  if (c.sensei) t.senseis.add(c.sensei);
+  if (c.ordre[3] < t.ordre[3]) Object.assign(t, { niveau: c.niveau, ordre: [t.ordre[0], t.ordre[1], t.ordre[2], c.ordre[3]] });
+}
+const groupes = new Map();
+const parOrdre = (a, b) =>
+  a.ordre[0] - b.ordre[0] || a.ordre[1] - b.ordre[1] || a.ordre[2] - b.ordre[2] || (a.sens || "").localeCompare(b.sens || "");
+for (const t of [...techniques.values()].sort(parOrdre)) {
+  const titre = `${t.forme} · ${t.attaque}`;
+  if (!groupes.has(titre)) groupes.set(titre, []);
+  groupes.get(titre).push(t);
+}
+const videos = Object.entries(D.videos);
+const senseis = [...new Set(D.clips.map((c) => c.sensei).filter(Boolean))].sort((a, b) => a.localeCompare(b, "fr"));
+const chaines = [...new Set(videos.map(([, v]) => v.chaine).filter(Boolean))];
+
+const titre = "Techniques d'aïkido en vidéo | Kannagara Guyancourt";
+const description =
+  `${techniques.size} techniques d'aïkido en vidéo, par attaque, technique, kyu ou sensei : ` +
+  "ralenti, image par image et mode interrogation. Vidéothèque du club Kannagara.";
+const intro =
+  `La vidéothèque du club ${CLUB.name} réunit ${D.clips.length} clips de ${techniques.size} techniques d'aïkido, ` +
+  `du 6e kyu au shodan, présentées par ${liste(senseis)}, tirés de ${videos.length} vidéos publiées par ` +
+  `${liste(chaines)}. On les retrouve par attaque, par technique, par niveau de kyu ou par sensei, avec ralenti, ` +
+  "image par image, miroir et un mode interrogation pour réviser les passages de grade. Les vidéos restent " +
+  "hébergées sur YouTube : chaque clip renvoie à la vidéo d'origine.";
+const imagePartage = ["videotheque", "kannagara"]
+  .map((n) => `images/partage/${n}.jpg`)
+  .find((f) => fs.existsSync(path.join(RACINE, "htdocs", f)));
+const ogImage = imagePartage ? `${SITE}/${imagePartage}` : CLUB.logo;
+
+const jsonld = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Techniques d'aïkido en vidéo",
+  description,
+  url: URL_PAGE,
+  inLanguage: "fr",
+  image: ogImage,
+  about: { "@type": "Thing", name: "Aïkido" },
+  isPartOf: { "@id": `${SITE}/#website` },
+  publisher: { "@type": "SportsClub", "@id": `${SITE}/#organization`, name: CLUB.name, url: `${SITE}/` }
+};
+
+const seo = `  <title>${esc(titre)}</title>
+  <meta name="description" content="${esc(description)}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${URL_PAGE}">
+  <meta property="og:title" content="${esc(titre)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:image" content="${esc(ogImage)}">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="${esc(CLUB.name)}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(titre)}">
+  <meta name="twitter:description" content="${esc(description)}">
+  <meta name="twitter:image" content="${esc(ogImage)}">
+  <script>document.documentElement.classList.add("js")</script>
+  <script type="application/ld+json">
+${JSON.stringify(jsonld, null, 2).replace(/</g, "\\u003c")}
+  </script>`;
+
+const statique = `      <div class="statique">
+        <p>${esc(intro)}</p>
+${[...groupes]
+  .map(
+    ([g, ts]) => `        <h2>${esc(g)}</h2>
+        <ul>
+${ts
+  .map(
+    (t) =>
+      `          <li>${esc(t.technique + (t.sens ? " " + t.sens.toLowerCase() : ""))} : ${esc(nomNiveau(t.niveau))}` +
+      `${t.senseis.size ? ", " + esc(liste([...t.senseis].sort((a, b) => a.localeCompare(b, "fr")))) : ""}</li>`
+  )
+  .join("\n")}
+        </ul>`
+  )
+  .join("\n")}
+        <h2>Vidéos d'origine</h2>
+        <ul>
+${videos.map(([id, v]) => `          <li><a href="https://www.youtube.com/watch?v=${esc(id)}">${esc(v.titre)}</a>, ${esc(v.chaine)}</li>`).join("\n")}
+        </ul>
+      </div>`;
+
+function remplacerUne(texte, motif, remplacement) {
+  const n = texte.split(motif).length - 1;
+  if (n !== 1) {
+    console.error(`index.html : ${n} occurrence(s) de ${motif} (1 attendue)`);
+    process.exit(1);
+  }
+  return texte.replace(motif, () => remplacement);
+}
+
+// En-tête : métadonnées de la vidéothèque, sans sa feuille de style (rajoutée après celles du site),
+// ni son titre ni sa description (remplacés par ceux du site, ci-dessus)
 const meta = tete[1]
   .split("\n")
   .filter((l) => l.trim() && !/rel="stylesheet"/.test(l) && !/rel="icon"/.test(l))
+  .filter((l) => !/<title>/.test(l) && !/name="description"/.test(l))
   .map((l) => "  " + l.trim())
   .join("\n");
 
-const scripts = corps[1].replace(/(src)="(donnees\.js|app\.js)(?:\?v=[^"]*)?"/g, `$1="$2?v=${version}"`);
+let corpsPage = remplacerUne(
+  corps[1],
+  "<main>",
+  `<main>\n    <h1 class="sr-only">Techniques d'aïkido en vidéo : la vidéothèque du club ${esc(CLUB.name)}</h1>`
+);
+corpsPage = remplacerUne(corpsPage, '<div id="resultats"></div>', `<div id="resultats">\n${statique}\n    </div>`);
+const scripts = corpsPage.replace(/(src)="(donnees\.js|app\.js)(?:\?v=[^"]*)?"/g, `$1="$2?v=${version}"`);
 
 const php = `<!doctype html>
 <!-- Généré par tools/integrer_videotheque.js depuis la vidéothèque (index.html) : ne pas modifier ici. -->
 <html lang="fr">
 <head>
 ${meta}
-  <link rel="canonical" href="https://kannagara.fr/videotheque/">
+${seo}
+  <link rel="canonical" href="${URL_PAGE}">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/responsive.css">

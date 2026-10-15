@@ -72,14 +72,51 @@ function parse_agenda(string $filepath): array {
 }
 
 /**
+ * Date (timestamp à minuit) d'un jour de l'agenda : « Lundi 28/09 » dans la
+ * « Semaine du 28/09/2026 ». Un jour de janvier dans une semaine de décembre
+ * appartient à l'année suivante. Null si une date manque.
+ */
+function agenda_date_jour(string $titreSemaine, string $nomJour): ?int {
+    if (!preg_match('#(\d{2})/(\d{2})/(\d{4})#', $titreSemaine, $s) || !preg_match('#(\d{2})/(\d{2})#', $nomJour, $j)) {
+        return null;
+    }
+    $annee = (int) $s[3] + ((int) $j[2] < (int) $s[2] ? 1 : 0);
+    return mktime(0, 0, 0, (int) $j[2], (int) $j[1], $annee);
+}
+
+/**
+ * Ne garde que les jours à venir (aujourd'hui compris) et retire les semaines vides.
+ * Fait côté serveur : la page ne transporte plus la saison passée, que du JavaScript
+ * masquait après coup.
+ */
+function agenda_a_venir(array $weeks, int $aujourdhui): array {
+    $resultat = [];
+    foreach ($weeks as $week) {
+        $week['days'] = array_values(array_filter($week['days'], function ($jour) use ($week, $aujourdhui) {
+            $date = agenda_date_jour($week['title'], $jour['name']);
+            return $date === null || $date >= $aujourdhui;
+        }));
+        if ($week['days']) {
+            $resultat[] = $week;
+        }
+    }
+    return $resultat;
+}
+
+/**
  * Génère le HTML de l'agenda (tableaux par semaine).
  * Nécessite la fonction slugify() de markdown.php.
+ *
+ * $aujourdhui : signale le premier jour de cours à venir (« Aujourd'hui » ou
+ * « Prochain cours »). $decalage : rang de la première semaine, pour alterner les fonds
+ * quand l'agenda est rendu en deux parties.
  */
-function render_agenda(array $weeks): string {
+function render_agenda(array $weeks, ?int $aujourdhui = null, int $decalage = 0): string {
     $html = '';
+    $prochainSignale = $aujourdhui === null;
 
     foreach ($weeks as $weekIndex => $week) {
-        $sectionClass = ($weekIndex % 2 === 1) ? 'section section--alt' : 'section';
+        $sectionClass = (($weekIndex + $decalage) % 2 === 1) ? 'section section--alt' : 'section';
 
         $html .= '<section class="' . $sectionClass . '">' . "\n";
         $html .= '    <div class="container">' . "\n";
@@ -99,11 +136,21 @@ function render_agenda(array $weeks): string {
             $rowCount = count($day['courses']);
             $firstCourse = true;
 
+            // Premier jour où l'on pratique (un jour « Fermé » ne compte pas)
+            $badge = '';
+            $ouvert = array_filter($day['courses'], fn($c) => $c['time'] !== 'Fermé');
+            if (!$prochainSignale && $ouvert) {
+                $prochainSignale = true;
+                $estAujourdhui = agenda_date_jour($week['title'], $day['name']) === $aujourdhui;
+                $badge = ' <span class="agenda-badge">' . ($estAujourdhui ? 'Aujourd\'hui' : 'Prochain cours') . '</span>';
+            }
+            $dayCell = htmlspecialchars($day['name']) . $badge;
+
             foreach ($day['courses'] as $course) {
                 if ($course['time'] === 'Fermé') {
                     $html .= '                <tr class="agenda-closed">' . "\n";
                     if ($firstCourse) {
-                        $html .= '                    <td class="agenda-day-cell" rowspan="' . $rowCount . '">' . htmlspecialchars($day['name']) . '</td>' . "\n";
+                        $html .= '                    <td class="agenda-day-cell" rowspan="' . $rowCount . '">' . $dayCell . '</td>' . "\n";
                     }
                     $html .= '                    <td colspan="3" class="agenda-time-cell">Fermé - ' . htmlspecialchars($course['type']) . '</td>' . "\n";
                     $html .= '                </tr>' . "\n";
@@ -122,9 +169,9 @@ function render_agenda(array $weeks): string {
                         $teachersHtml .= '<br><span class="agenda-course__note"><span class="agenda-note-icon">ℹ️</span>' . htmlspecialchars($course['note']) . '</span>';
                     }
 
-                    $html .= '                <tr>' . "\n";
+                    $html .= '                <tr' . ($badge ? ' class="agenda-row--prochain"' : '') . '>' . "\n";
                     if ($firstCourse) {
-                        $html .= '                    <td class="agenda-day-cell" rowspan="' . $rowCount . '">' . htmlspecialchars($day['name']) . '</td>' . "\n";
+                        $html .= '                    <td class="agenda-day-cell" rowspan="' . $rowCount . '">' . $dayCell . '</td>' . "\n";
                     }
                     $html .= '                    <td class="agenda-time-cell">' . htmlspecialchars($course['time']) . '</td>' . "\n";
                     $html .= '                    <td class="agenda-type-cell">' . htmlspecialchars($course['type']) . '</td>' . "\n";

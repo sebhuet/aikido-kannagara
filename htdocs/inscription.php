@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/includes/data.php'; $club = club_data(); $p = $club['pricing']; $cur = $p['currency']; $adhesionUrl = $club['membership']['onlineUrl']; ?><!DOCTYPE html>
+<?php require_once __DIR__ . '/includes/data.php'; require_once __DIR__ . '/includes/jsonld.php'; $club = club_data(); $p = $club['pricing']; $cur = $p['currency']; $adhesionUrl = $club['membership']['onlineUrl']; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -21,13 +21,15 @@
     <meta property="og:url" content="https://kannagara.fr/inscription.php">
     <meta property="og:title" content="S'inscrire au club Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Rejoignez notre club d'aïkido. Cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?>.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/partage/inscription.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="S'inscrire au club Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Rejoignez notre club d'aïkido. Cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?>.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/partage/inscription.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -41,29 +43,12 @@
     {
         "@context": "https://schema.org",
         "@type": "Course",
+        "@id": "<?= jsonld_site() ?>/#cours",
         "name": "Cours d'Aïkido - Kannagara",
         "description": "Inscrivez-vous au club Aïkido Kannagara Guyancourt. Cours d'essai gratuits en <?= htmlspecialchars($club['trial']['freePeriod']) ?>, documents nécessaires, équipement. Enfants dès 7 ans, adultes tous niveaux.",
         "url": "https://kannagara.fr/inscription.php",
-        "provider": {
-            "@type": "Organization",
-            "name": "Aïkido Kannagara Guyancourt",
-            "url": "https://kannagara.fr",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
-            }
-        },
-        "location": {
-            "@type": "Place",
-            "name": "Gymnase Maurice Baquet",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Mail des Graviers",
-                "addressLocality": "Guyancourt",
-                "postalCode": "78280",
-                "addressCountry": "FR"
-            }
-        },
+        "provider": <?= jsonld_json(jsonld_editeur()) ?>,
+        "location": <?= jsonld_json(jsonld_lieu()) ?>,
         "offers": [
             {
                 "@type": "Offer",
@@ -71,7 +56,6 @@
                 "url": "<?= htmlspecialchars($adhesionUrl) ?>",
                 "price": "<?= $p['children'] ?>",
                 "priceCurrency": "<?= $cur ?>",
-                "eligibleCustomerType": "http://schema.org/Student",
                 "description": "2 cours par semaine, licence FFAB et assurance incluses"
             },
             {
@@ -91,14 +75,7 @@
                 "description": "Sur justificatif, mêmes avantages adultes, licence FFAB et assurance incluses"
             }
         ],
-        "hasCourseInstance": [
-            {
-                "@type": "CourseInstance",
-                "courseMode": "onsite",
-                "courseWorkload": "PT6H",
-                "inLanguage": "fr"
-            }
-        ]
+        "hasCourseInstance": <?= jsonld_json(jsonld_cours()['hasCourseInstance']) ?>
     }
     </script>
 

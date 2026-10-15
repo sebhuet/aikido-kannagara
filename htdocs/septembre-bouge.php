@@ -75,7 +75,7 @@ $saisonReprise = date('d/m/Y', strtotime($club['seasonStart']));
             "geo": { "@type": "GeoCoordinates", "latitude": <?= $loc['geo']['lat'] ?>, "longitude": <?= $loc['geo']['lng'] ?> }
         },
         "organizer": {
-            "@type": "SportsActivityLocation",
+            "@type": "SportsClub",
             "@id": "https://kannagara.fr/#organization",
             "name": "<?= $club['name'] ?>",
             "url": "https://kannagara.fr"

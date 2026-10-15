@@ -135,6 +135,37 @@
   .nav__toggle.active .nav__toggle-bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  /* Accueil : la photo passe au-dessus du texte, dont elle couvrirait les pratiquants */
+  .hero--photo {
+    height: auto;
+  }
+
+  .hero__photo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    max-height: 55vh;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent);
+    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+  }
+
+  .hero--photo .container {
+    margin-top: calc(-1 * var(--spacing-lg));
+    padding-bottom: var(--spacing-xl);
+  }
+
+  .hero--photo .hero__content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero--photo .hero__description {
+    margin: 0 auto var(--spacing-md);
+  }
 }
 
 /* ---------- Mobile (max 768px) ---------- */
@@ -205,6 +236,12 @@
   .cards-grid,
   .blog-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Bandeaux de photos de l'accueil : 2 × 2 au lieu de 4 photos empilées (3 écrans) */
+  .photo-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
   }
 
   .team-grid {

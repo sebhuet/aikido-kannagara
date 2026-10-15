@@ -5,10 +5,8 @@
  * Charge (une seule fois) les données de data/club.json et les expose via club_data().
  *
  * Consommé côté PHP par les pages, les composants (horaires.php, horaires-resume.php,
- * footer.php) et les blocs JSON-LD. Côté Node, seul build-blog.js le lit.
- *
- * ATTENTION : llms.txt et llms-full.txt NE SONT PAS générés — ils recopient ces mêmes
- * données à la main et divergent donc à chaque changement. À corriger (build-llms.js).
+ * footer.php) et les blocs JSON-LD (jsonld.php). Côté Node, build-blog.js et
+ * build-llms.js le lisent : llms.txt et llms-full.txt en sont régénérés à chaque build.
  */
 function club_data()
 {
@@ -39,6 +37,22 @@ function club_board()
 			?? (($membre['key'] ?? '') === 'president' ? $phoneClub : null);
 		return $membre;
 	}, $club['board'] ?? []);
+}
+
+/**
+ * Phrase d'accroche du cours d'essai, selon la période.
+ *
+ * De juillet à septembre, on annonce les cours d'essai gratuits des portes ouvertes de
+ * septembre. Le reste de l'année, cette phrase faisait croire qu'il était trop tard :
+ * on rappelle qu'on peut essayer à tout moment, en début de séance.
+ */
+function club_essai_accroche(?int $mois = null): string
+{
+    $essai = club_data()['trial'] ?? [];
+    $mois = $mois ?? (int) date('n');
+    return in_array($mois, [7, 8, 9], true)
+        ? ($essai['label'] ?? '')
+        : ($essai['yearRound'] ?? $essai['label'] ?? '');
 }
 
 /**

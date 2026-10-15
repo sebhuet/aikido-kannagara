@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/includes/equipe.php'; $club = club_data(); ?><!DOCTYPE html>
+<?php require_once __DIR__ . '/includes/equipe.php'; require_once __DIR__ . '/includes/jsonld.php'; $club = club_data(); ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -21,13 +21,15 @@
     <meta property="og:url" content="https://kannagara.fr/aikido.php">
     <meta property="og:title" content="L'Aïkido : histoire et philosophie">
     <meta property="og:description" content="Art martial japonais fondé par Morihei Ueshiba. Sans compétition, accessible à tous.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/partage/aikido.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="L'Aïkido : histoire et philosophie">
     <meta name="twitter:description" content="Art martial japonais fondé par Morihei Ueshiba. Sans compétition, accessible à tous.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/partage/aikido.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -43,18 +45,8 @@
         "@type": "Article",
         "headline": "L'Aïkido : histoire, philosophie et pratique",
         "description": "Découvrez l'aïkido, art martial japonais fondé par Morihei Ueshiba.",
-        "author": {
-            "@type": "Organization",
-            "name": "Aïkido Kannagara Guyancourt"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Aïkido Kannagara Guyancourt",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
-            }
-        },
+        "author": <?= jsonld_json(jsonld_club_ref()) ?>,
+        "publisher": <?= jsonld_json(jsonld_editeur()) ?>,
         "mainEntityOfPage": "https://kannagara.fr/aikido.php",
         "about": {
             "@type": "Thing",

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require_once __DIR__ . '/includes/jsonld.php'; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -21,13 +21,15 @@
     <meta property="og:url" content="https://kannagara.fr/agenda.php">
     <meta property="og:title" content="Agenda des cours - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="Planning des cours et présence des professeurs. Cours ouverts à tous les licenciés.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Agenda des cours - Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="Planning des cours et présence des professeurs. Cours ouverts à tous les licenciés.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -36,44 +38,8 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "Cours d'Aïkido Kannagara",
-        "description": "Agenda et planning des cours d'aïkido du club Kannagara avec présence des professeurs. Cours ouverts à tous les licenciés, quelle que soit leur fédération.",
-        "url": "https://kannagara.fr/agenda.php",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "location": {
-            "@type": "Place",
-            "name": "Gymnase Maurice Baquet",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Mail des Graviers",
-                "addressLocality": "Guyancourt",
-                "postalCode": "78280",
-                "addressCountry": "FR"
-            }
-        },
-        "organizer": {
-            "@type": "Organization",
-            "name": "Aïkido Kannagara Guyancourt",
-            "url": "https://kannagara.fr",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
-            }
-        },
-        "eventSchedule": {
-            "@type": "Schedule",
-            "repeatFrequency": "P1W",
-            "byDay": ["Monday", "Thursday"],
-            "scheduleTimezone": "Europe/Paris"
-        }
-    }
-    </script>
+    <!-- JSON-LD : les cours hebdomadaires de la saison (includes/jsonld.php) -->
+    <?php jsonld_script(jsonld_cours()); ?>
 
     <style>
         .info-box {
@@ -217,6 +183,52 @@
             margin-right: var(--spacing-xs);
         }
 
+        /* Prochain jour de cours : badge et lignes surlignées */
+        .agenda-badge {
+            display: inline-block;
+            margin-left: 6px;
+            padding: 2px 8px;
+            border-radius: 999px;
+            background: var(--color-secondary);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            vertical-align: middle;
+        }
+
+        .agenda-table tbody tr.agenda-row--prochain {
+            background: rgba(206, 48, 48, 0.07);
+        }
+
+        /* Semaines au-delà des 4 prochaines : repliées derrière un bouton */
+        .agenda-suite > summary {
+            display: block;
+            width: fit-content;
+            margin: var(--spacing-lg) auto;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border: 2px solid var(--color-secondary);
+            border-radius: 4px;
+            color: var(--color-secondary);
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .agenda-suite > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .agenda-suite > summary:hover,
+        .agenda-suite > summary:focus-visible {
+            background: var(--color-secondary);
+            color: white;
+        }
+
+        .agenda-suite[open] .agenda-suite__ouvrir,
+        .agenda-suite:not([open]) .agenda-suite__fermer {
+            display: none;
+        }
+
         @media (max-width: 768px) {
             .agenda-table {
                 font-size: 0.9rem;
@@ -231,14 +243,46 @@
                 min-width: auto;
             }
         }
+
+        /* Téléphone : les quatre colonnes doivent tenir dans l'écran. Le tableau, plus
+           large, coupait la colonne des professeurs (overflow: hidden). */
+        @media (max-width: 600px) {
+            .agenda-table {
+                font-size: 0.82rem;
+            }
+
+            .agenda-table th,
+            .agenda-table td {
+                padding: 0.6rem 0.4rem;
+            }
+
+            .agenda-table th {
+                font-size: 0.72rem;
+                letter-spacing: 0;
+            }
+
+            .agenda-day-cell {
+                white-space: normal;
+            }
+
+            .agenda-time-cell {
+                font-size: 0.8rem;
+            }
+
+            .agenda-badge {
+                display: block;
+                width: fit-content;
+                margin: 4px 0 0;
+            }
+        }
     </style>
 </head>
 <body>
     <?php
     $active = 'agenda';
     include 'includes/header.php';
-    include 'includes/markdown.php';
-    include 'includes/agenda-parser.php';
+    require_once __DIR__ . '/includes/markdown.php';
+    require_once __DIR__ . '/includes/agenda-parser.php';
     ?>
 
 
@@ -274,11 +318,31 @@
         </div>
     </section>
 
-    <!-- Agenda généré dynamiquement depuis agenda.md -->
+    <!-- Agenda généré dynamiquement depuis agenda.md : seulement les jours à venir.
+         Les 4 prochaines semaines sont dépliées, la suite de la saison est repliée
+         (elle faisait plus de 30 écrans de téléphone). -->
     <?php
-    $weeks = parse_agenda(__DIR__ . '/agenda.md');
-    echo render_agenda($weeks);
+    $aujourdhui = strtotime('today');
+    $semaines = agenda_a_venir(parse_agenda(__DIR__ . '/agenda.md'), $aujourdhui);
+    $nbVisibles = 4;
+    echo render_agenda(array_slice($semaines, 0, $nbVisibles), $aujourdhui);
+    $suite = array_slice($semaines, $nbVisibles);
     ?>
+    <?php if ($suite): ?>
+    <details class="agenda-suite">
+        <summary>
+            <span class="agenda-suite__ouvrir">Voir les <?= count($suite) ?> semaines suivantes</span>
+            <span class="agenda-suite__fermer">Masquer les semaines suivantes</span>
+        </summary>
+        <?= render_agenda($suite, null, $nbVisibles) ?>
+    </details>
+    <?php elseif (!$semaines): ?>
+    <section class="section">
+        <div class="container">
+            <p class="text-center">Le planning de la prochaine saison sera publié ici avant la rentrée.</p>
+        </div>
+    </section>
+    <?php endif; ?>
 
     <?php include 'includes/footer.php'; ?>
 
@@ -287,56 +351,5 @@
 
     <!-- JavaScript -->
     <script src="js/main.js" defer></script>
-    <script>
-        // Filtrer les cours passés
-        document.addEventListener('DOMContentLoaded', function() {
-            const today = new Date();
-            today.setHours(0, 0, 0, 0);
-            
-            // Récupérer toutes les cellules de jour
-            const dayCells = document.querySelectorAll('.agenda-day-cell');
-            
-            dayCells.forEach(cell => {
-                const dayText = cell.textContent.trim();
-                // Parser "Lundi 03/02" -> extraire "03/02"
-                const dateMatch = dayText.match(/(\d{2})\/(\d{2})/);
-                
-                if (dateMatch) {
-                    const day = parseInt(dateMatch[1], 10);
-                    const month = parseInt(dateMatch[2], 10);
-                    
-                    // Trouver l'année depuis le titre de la semaine
-                    const weekTitle = cell.closest('section').querySelector('.agenda-week__title').textContent;
-                    const yearMatch = weekTitle.match(/\/(\d{4})/);
-                    const year = yearMatch ? parseInt(yearMatch[1], 10) : new Date().getFullYear();
-                    
-                    const courseDate = new Date(year, month - 1, day);
-                    
-                    // Si la date est passée, masquer toutes les lignes de ce jour
-                    if (courseDate < today) {
-                        const rowspan = parseInt(cell.getAttribute('rowspan') || '1', 10);
-                        let row = cell.closest('tr');
-                        
-                        // Masquer la première ligne
-                        row.style.display = 'none';
-                        
-                        // Masquer les lignes suivantes (rowspan - 1)
-                        for (let i = 1; i < rowspan; i++) {
-                            row = row.nextElementSibling;
-                            if (row) row.style.display = 'none';
-                        }
-                    }
-                }
-            });
-            
-            // Masquer les sections vides
-            document.querySelectorAll('.agenda-table tbody').forEach(tbody => {
-                const visibleRows = Array.from(tbody.querySelectorAll('tr')).filter(row => row.style.display !== 'none');
-                if (visibleRows.length === 0) {
-                    tbody.closest('section').style.display = 'none';
-                }
-            });
-        });
-    </script>
 </body>
 </html>

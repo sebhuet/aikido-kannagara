@@ -1,4 +1,4 @@
-﻿<?php require_once __DIR__ . '/includes/data.php'; $club = club_data(); $sch = $club['schedule']; $loc = $club['location']; ?><!DOCTYPE html>
+﻿<?php require_once __DIR__ . '/includes/data.php'; require_once __DIR__ . '/includes/jsonld.php'; $club = club_data(); $sch = $club['schedule']; $loc = $club['location']; ?><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
 
     <!-- SEO Meta Tags -->
     <title>Contact | Club d'aïkido Guyancourt - Gymnase Maurice Baquet</title>
-    <meta name="description" content="Contactez Aïkido Kannagara Guyancourt. <?= htmlspecialchars($loc['venue']) ?>, <?= htmlspecialchars($loc['street']) ?>. Tél : <?= htmlspecialchars($club['contact']['phone']) ?>. Plan d'accès et formulaire de contact.">
+    <meta name="description" content="Contactez Aïkido Kannagara Guyancourt. <?= htmlspecialchars($loc['venue']) ?>, <?= htmlspecialchars($loc['street']) ?>. Tél : <?= htmlspecialchars($club['contact']['phone']) ?>. Plan d'accès et itinéraire.">
     <meta name="keywords" content="contact aïkido, Guyancourt, gymnase maurice baquet, adresse, téléphone, plan">
     <meta name="author" content="Aïkido Kannagara Guyancourt">
     <meta name="geo.region" content="FR-78">
@@ -21,13 +21,15 @@
     <meta property="og:url" content="https://kannagara.fr/contact.php">
     <meta property="og:title" content="Contact - Aïkido Kannagara Guyancourt">
     <meta property="og:description" content="<?= htmlspecialchars($loc['venue']) ?>, <?= htmlspecialchars($loc['street']) ?>, <?= htmlspecialchars($loc['postalCode']) ?> <?= htmlspecialchars($loc['city']) ?>. Tél: <?= htmlspecialchars($club['contact']['phone']) ?>.">
-    <meta property="og:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta property="og:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact - Aïkido Kannagara Guyancourt">
     <meta name="twitter:description" content="<?= htmlspecialchars($loc['venue']) ?>, <?= htmlspecialchars($loc['street']) ?>, <?= htmlspecialchars($loc['postalCode']) ?> <?= htmlspecialchars($loc['city']) ?>. Tél: <?= htmlspecialchars($club['contact']['phone']) ?>.">
-    <meta name="twitter:image" content="https://kannagara.fr/images/logo-kannagara.jpg">
+    <meta name="twitter:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -36,46 +38,8 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <!-- Schema.org LocalBusiness -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Aïkido Kannagara Guyancourt",
-        "description": "Club d'aïkido affilié FFAB",
-        "telephone": <?= json_encode($club['contact']['phoneIntl']) ?>,
-        "email": <?= json_encode($club['contact']['email']) ?>,
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": <?= json_encode($loc['venue'] . ', ' . $loc['street'], JSON_UNESCAPED_UNICODE) ?>,
-            "addressLocality": <?= json_encode($loc['city'], JSON_UNESCAPED_UNICODE) ?>,
-            "postalCode": <?= json_encode($loc['postalCode']) ?>,
-            "addressCountry": <?= json_encode($loc['country']) ?>
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": <?= json_encode($loc['geo']['lat']) ?>,
-            "longitude": <?= json_encode($loc['geo']['lng']) ?>
-        },
-        "url": "https://kannagara.fr",
-        "openingHoursSpecification": <?= json_encode([
-            ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => $sch['daysSchemaOrg'], 'opens' => $sch['children']['opens'], 'closes' => $sch['children']['closes'], 'validFrom' => $club['seasonStart'], 'description' => 'Cours enfants'],
-            ['@type' => 'OpeningHoursSpecification', 'dayOfWeek' => $sch['daysSchemaOrg'], 'opens' => $sch['adultsRange']['opens'], 'closes' => $sch['adultsRange']['closes'], 'validFrom' => $club['seasonStart'], 'description' => 'Cours adultes'],
-        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>,
-        "areaServed": [
-            {"@type": "City", "name": "Guyancourt"},
-            {"@type": "City", "name": "Montigny-le-Bretonneux"},
-            {"@type": "City", "name": "Voisins-le-Bretonneux"},
-            {"@type": "City", "name": "Élancourt"},
-            {"@type": "City", "name": "Trappes"},
-            {"@type": "City", "name": "La Verrière"},
-            {"@type": "City", "name": "Buc"},
-            {"@type": "City", "name": "Vélizy-Villacoublay"},
-            {"@type": "City", "name": "Versailles"},
-            {"@type": "AdministrativeArea", "name": "Saint-Quentin-en-Yvelines"}
-        ]
-    }
-    </script>
+    <!-- Schema.org : le club, même entité que sur l'accueil (includes/jsonld.php) -->
+    <?php jsonld_script(jsonld_club()); ?>
 </head>
 <body>
     <?php $active = 'contact'; include 'includes/header.php'; ?>
@@ -198,8 +162,8 @@
 
             <div class="text-center">
                 <p style="max-width: 600px; margin: 0 auto var(--spacing-lg);">
-                    Pour nous contacter, vous pouvez utiliser notre formulaire en ligne
-                    ou nous envoyer directement un email.
+                    Pour nous contacter, envoyez-nous un email : nous vous répondrons
+                    dans les plus brefs délais.
                 </p>
                 <a href="mailto:<?= htmlspecialchars($club['contact']['email']) ?>?subject=Contact depuis le site web" class="btn btn--primary">
                     Envoyer un email

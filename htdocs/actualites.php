@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/includes/data.php';
 require_once __DIR__ . '/includes/evenements-parser.php';
+require_once __DIR__ . '/includes/jsonld.php';
 
 $club = club_data();
 $site = rtrim($club['url'], '/');
@@ -41,7 +42,8 @@ if ($demande !== '') {
 $ogUrl   = $site . '/actualites.php';
 $ogTitle = 'Actualités — ' . $club['name'];
 $ogDesc  = 'Portes ouvertes, stages, forums et événements du club d\'aïkido de Guyancourt.';
-$ogImage = $club['logo'];
+// Image générale du club (1200 × 630, tools/images_partage.js) plutôt que le logo
+$ogImage = image_partage();
 
 if ($evtPartage) {
     // Un partage doit donner l'essentiel sans cliquer : date, horaire, lieu.
@@ -52,7 +54,7 @@ if ($evtPartage) {
     $ogUrl   = evenement_permalien($site, $evtPartage['slug']);
     $ogTitle = $evtPartage['title'] . ' — ' . $club['name'];
     $ogDesc  = implode(' · ', $bribes) . ($evtPartage['description'] ? ' — ' . $evtPartage['description'] : '');
-    // image: est optionnel dans evenements.md ; sans lui, Facebook affiche le logo.
+    // image: est optionnel dans evenements.md ; sans lui, l'aperçu garde l'image du club.
     // Chaque segment du chemin est encodé : les fichiers de la galerie portent des
     // accents (« baquet-en-fête-… ») et une og:image avec un caractère brut non
     // ASCII peut être rejetée par le crawler Facebook.
@@ -89,7 +91,7 @@ if ($evtPartage) {
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="<?= $evtPartage && !empty($evtPartage['image']) ? 'summary_large_image' : 'summary' ?>">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= htmlspecialchars($ogTitle) ?>">
     <meta name="twitter:description" content="<?= htmlspecialchars($ogDesc) ?>">
     <meta name="twitter:image" content="<?= htmlspecialchars($ogImage) ?>">
@@ -101,31 +103,22 @@ if ($evtPartage) {
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Actualités - Aïkido Kannagara Guyancourt",
-        "description": "Actualités du club Aïkido Kannagara Guyancourt : portes ouvertes septembre, stages FFAB, passages de grades. Événements à Guyancourt.",
-        "url": "https://kannagara.fr/actualites.php",
-        "inLanguage": "fr",
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "Aïkido Kannagara Guyancourt",
-            "url": "https://kannagara.fr"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Aïkido Kannagara Guyancourt",
-            "url": "https://kannagara.fr",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://kannagara.fr/images/logo-kannagara.jpg"
-            }
-        }
-    }
-    </script>
+    <!-- JSON-LD : la page, puis chaque événement à venir. Les stages peuvent ainsi
+         apparaître dans les résultats d'événements de Google (includes/jsonld.php). -->
+    <?php
+    jsonld_script(
+        [
+            '@type' => 'CollectionPage',
+            'name' => 'Actualités - ' . $club['name'],
+            'description' => "Actualités du club {$club['name']} : portes ouvertes en septembre, stages, passages de grades. Événements à Guyancourt.",
+            'url' => $site . '/actualites.php',
+            'inLanguage' => 'fr',
+            'isPartOf' => jsonld_website_ref(),
+            'publisher' => jsonld_editeur(),
+        ],
+        ...array_map(fn($e) => jsonld_evenement($e, evenement_permalien($site, $e['slug'])), $evenements)
+    );
+    ?>
 
     <style>
         /* Calendrier des événements */

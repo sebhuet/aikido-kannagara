@@ -2,6 +2,7 @@
   "name": "Aïkido Kannagara Guyancourt",
   "shortName": "Aïkido Kannagara",
   "alternateName": "Kannagara",
+  "alternateNames": ["Kannagara", "Aïkido Kannagara", "Kannagara Aïkido Club de Guyancourt"],
   "foundingYear": 1990,
   "founder": "Noël Stella",
   "url": "https://kannagara.fr",
@@ -43,6 +44,18 @@
     "geo": { "lat": 48.772739, "lng": 2.065928 },
     "mapsUrl": "https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6"
   },
+  "areaServed": [
+    "Guyancourt",
+    "Montigny-le-Bretonneux",
+    "Voisins-le-Bretonneux",
+    "Élancourt",
+    "Trappes",
+    "La Verrière",
+    "Buc",
+    "Vélizy-Villacoublay",
+    "Versailles",
+    "Saint-Quentin-en-Yvelines"
+  ],
   "season": "2026-2027",
   "seasonStart": "2026-09-07",
   "schedule": {
@@ -82,12 +95,16 @@
   "trial": {
     "freePeriod": "septembre",
     "label": "Cours d'essai gratuits en septembre, lors des portes ouvertes",
+    "yearRound": "Cours d'essai possible toute l'année : présentez-vous en début de séance",
     "invitation": "Présentez-vous simplement en début de séance : l'enseignant vous accueillera et conviendra avec vous d'un cours d'essai."
   },
   "social": {
-    "Facebook": "https://www.facebook.com/Kannagara-a%C3%AFkido-club-de-Guyancourt-375533475979211/"
+    "Facebook": "https://www.facebook.com/people/Kannagara-a%C3%AFkido-club-de-Guyancourt/100066547843610/"
   },
   "sameAs": [
-    "https://www.facebook.com/Kannagara-a%C3%AFkido-club-de-Guyancourt-375533475979211/"
+    "https://www.facebook.com/people/Kannagara-a%C3%AFkido-club-de-Guyancourt/100066547843610/",
+    "https://aikido-paris-idf.org/kannagara-aikido-club-de-guyancourt/",
+    "https://www.helloasso.com/associations/aikido-kannagara-guyancourt",
+    "https://openagenda.com/kannagara-evenements-ouverts-aux-exterieurs"
   ]
 }
