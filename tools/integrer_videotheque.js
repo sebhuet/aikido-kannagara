@@ -31,6 +31,8 @@ const STYLE_INTEGRATION = `
     /* Intégration dans le site : la vidéothèque se place sous l'en-tête fixe */
     body { padding-top: var(--header-height); background-image: none; }
     .barre { top: var(--header-height); }
+    /* Ouverture du lecteur : son titre s'arrête sous l'en-tête du site et la barre de recherche */
+    .lecteur { scroll-margin-top: calc(var(--header-height) + 72px); }
     .filtres { top: calc(var(--header-height) + 72px); max-height: calc(100vh - var(--header-height) - 88px); }
     /* Les titres et paragraphes du site (noirs, marges, interligne) écrasaient ceux de la
        vidéothèque, illisibles en mode sombre. Même poids que les règles du site (h2, p),

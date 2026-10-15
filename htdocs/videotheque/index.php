@@ -11,11 +11,13 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/responsive.css">
-  <link rel="stylesheet" href="style.css?v=509c411d11">
+  <link rel="stylesheet" href="style.css?v=3349e5046f">
   <style>
     /* Intégration dans le site : la vidéothèque se place sous l'en-tête fixe */
     body { padding-top: var(--header-height); background-image: none; }
     .barre { top: var(--header-height); }
+    /* Ouverture du lecteur : son titre s'arrête sous l'en-tête du site et la barre de recherche */
+    .lecteur { scroll-margin-top: calc(var(--header-height) + 72px); }
     .filtres { top: calc(var(--header-height) + 72px); max-height: calc(100vh - var(--header-height) - 88px); }
     /* Les titres et paragraphes du site (noirs, marges, interligne) écrasaient ceux de la
        vidéothèque, illisibles en mode sombre. Même poids que les règles du site (h2, p),
@@ -46,6 +48,10 @@
   <button class="bouton" id="hasard" type="button" data-i18n-title="hasardTitre" title="Lire une technique au hasard parmi la sélection">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3l4 4-4 4V8h-2.6l-3 3.5-1.3-1.5 3.4-4H17zM3 6h4.6l9.4 11H17v-3l4 4-4 4v-3h-2.6L5 8H3zm0 10h2l2.2-2.6 1.3 1.5L6 18H3z"/></svg>
     <span class="bouton__texte" data-i18n="hasard">Au hasard</span>
+  </button>
+  <button class="bouton" id="interroger" type="button" data-i18n-title="interroTitre" title="S'interroger sur la sélection, comme à un passage de grade : le nom de la technique d'abord, la vidéo ensuite (I)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-1 11h2v2h-2zm1-9a3.5 3.5 0 0 1 1.9 6.4c-.6.4-.9.7-.9 1.3v.3h-2v-.4c0-1.3.7-2 1.6-2.6A1.5 1.5 0 1 0 10.5 9.5h-2A3.5 3.5 0 0 1 12 6z"/></svg>
+    <span class="bouton__texte" data-i18n="interroger">S'interroger</span>
   </button>
   <button class="bouton" id="ouvrir-apropos" type="button" data-i18n-title="aproposTitre" title="À propos de cette vidéothèque">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm1 7v6h-2v-6zm0-4v2h-2V7z"/></svg>
@@ -83,6 +89,8 @@
         <div class="ecran__cadre">
           <div class="ecran__video" id="l-video"><div id="yt"></div></div>
           <div class="attente" id="l-attente" hidden></div>
+          <!-- Interrogation : énoncé de la technique, vidéo cachée jusqu'à la réponse -->
+          <div class="question" id="l-question" aria-live="polite" hidden></div>
           <div class="flash" id="l-flash" aria-hidden="true"></div>
         </div>
 
@@ -130,6 +138,9 @@
             </div>
           </div>
         </div>
+
+        <!-- Interrogation : avancement, verdict, mains libres (visible aussi en plein écran) -->
+        <div class="interro" id="l-interro" hidden></div>
       </div>
 
       <div class="lecteur__versions lecteur__versions--bas" id="l-versions-bas"></div>
@@ -147,7 +158,8 @@
       <p class="raccourcis" data-i18n-html="raccourcis">
         <kbd>Espace</kbd> lecture/pause · <kbd>←</kbd> <kbd>→</kbd> 2 s · <kbd>,</kbd> <kbd>.</kbd> image par image ·
         <kbd>↓</kbd> <kbd>↑</kbd> ralentir/accélérer · <kbd>B</kbd> boucle A-B · <kbd>L</kbd> boucle · <kbd>M</kbd> miroir ·
-        <kbd>E</kbd> enchaîner · <kbd>S</kbd> son · <kbd>F</kbd> plein écran · <kbd>P</kbd> <kbd>N</kbd> clip précédent/suivant
+        <kbd>E</kbd> enchaîner · <kbd>S</kbd> son · <kbd>F</kbd> plein écran · <kbd>P</kbd> <kbd>N</kbd> clip précédent/suivant ·
+        <kbd>I</kbd> s'interroger · <kbd>J</kbd> <kbd>R</kbd> je savais / à revoir
       </p>
     </section>
 
@@ -163,8 +175,8 @@
   <form class="apropos__pied" method="dialog"><button class="bouton" data-i18n="fermer">Fermer</button></form>
 </dialog>
 
-<script src="donnees.js?v=509c411d11"></script>
-<script src="app.js?v=509c411d11"></script>
+<script src="donnees.js?v=3349e5046f"></script>
+<script src="app.js?v=3349e5046f"></script>
 <script src="/js/main.js" defer></script>
 </body>
 </html>

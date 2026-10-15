@@ -39,7 +39,31 @@ const TEXTES = {
     raccourcis:
       "<kbd>Espace</kbd> lecture/pause · <kbd>←</kbd> <kbd>→</kbd> 2 s · <kbd>,</kbd> <kbd>.</kbd> image par image · " +
       "<kbd>↓</kbd> <kbd>↑</kbd> ralentir/accélérer · <kbd>B</kbd> boucle A-B · <kbd>L</kbd> boucle · <kbd>M</kbd> miroir · " +
-      "<kbd>E</kbd> enchaîner · <kbd>S</kbd> son · <kbd>F</kbd> plein écran · <kbd>P</kbd> <kbd>N</kbd> clip précédent/suivant",
+      "<kbd>E</kbd> enchaîner · <kbd>S</kbd> son · <kbd>F</kbd> plein écran · <kbd>P</kbd> <kbd>N</kbd> clip précédent/suivant · " +
+      "<kbd>I</kbd> s'interroger · <kbd>J</kbd> <kbd>R</kbd> je savais / à revoir",
+    interroger: "S'interroger",
+    interroTitre: "S'interroger sur la sélection, comme à un passage de grade : le nom de la technique d'abord, la vidéo ensuite (I)",
+    interrogerSur: (n) => `S'interroger · ${n} technique${n > 1 ? "s" : ""}`,
+    voirReponse: "Voir la réponse",
+    aideQuestion: "Exécuter la technique, puis vérifier avec la vidéo.",
+    compte: (s) => `Réponse dans ${s} s`,
+    question: (i, n) => `Question ${i} / ${n}`,
+    programme: (n) => `${n} technique${n > 1 ? "s" : ""} au programme`,
+    jeSavais: "Je savais",
+    jeSavaisTitre: "Technique connue : question suivante (J)",
+    aRevoir: "À revoir",
+    aRevoirTitre: "Technique à retravailler : elle reviendra en fin de série (R)",
+    arreter: "Arrêter",
+    arreterTitre: "Quitter l'interrogation",
+    mainsLibres: (s) => (s ? `Mains libres : ${s} s` : "Mains libres : non"),
+    mainsLibresTitre: "Réponse automatique après ce délai, clip lu deux fois, puis question suivante",
+    serieFinie: "Série terminée",
+    score: (s, n) => `${s} / ${n} réussie${s > 1 ? "s" : ""}`,
+    vues: (n) => `${n} technique${n > 1 ? "s" : ""} vue${n > 1 ? "s" : ""}`,
+    revoirN: (n) => (n > 1 ? `Revoir ces ${n} techniques` : "Revoir cette technique"),
+    dePlus: (n) => `${n} de plus`,
+    nouveauTirage: "Nouveau tirage",
+    listeARevoir: "À revoir :",
     regrouper: "Regrouper par",
     vues: { attaque: "Attaque", technique: "Technique", niveau: "Niveau", sensei: "Sensei", tableau: "Tableau des niveaux" },
     facettes: { niveau: "Niveau", forme: "Position", attaque: "Attaque", technique: "Technique", sens: "Forme", sensei: "Sensei", courant: "Fédération / courant" },
@@ -63,7 +87,8 @@ const TEXTES = {
     flash: {
       imgPlus: "+1 image", imgMoins: "−1 image", a: "Début A", ab: "Boucle A-B", abNon: "Boucle A-B annulée",
       boucle: "Boucle", boucleNon: "Boucle désactivée", miroir: "Miroir", miroirNon: "Image normale",
-      ench: "Enchaînement", enchNon: "Enchaînement désactivé", suivant: "Clip suivant…", son: "Son", muet: "Muet"
+      ench: "Enchaînement", enchNon: "Enchaînement désactivé", suivant: "Clip suivant…", son: "Son", muet: "Muet",
+      nouvelleSerie: "Nouvelle série"
     },
     legende: "Niveau auquel la technique est demandée (FFAB ou FFAAA, le plus précoce des deux)",
     caseTitre: (n, k) => `${n} · ${k}`,
@@ -72,6 +97,7 @@ const TEXTES = {
       <p>Débutant en aïkido, j'ai rassemblé ces vidéos pour faciliter mes révisions et approfondir mes connaissances. Je les partage dans un esprit d'entraide. Elles m'ont semblé pédagogiques et utiles, mais il existe bien d'autres ressources de grande valeur : cette liste n'est pas exhaustive et je la compléterai au fil de mes découvertes et de vos suggestions.</p>
       <h3>Comment s'en servir</h3>
       <p>Les techniques se retrouvent par attaque, par technique, par niveau de kyu ou par sensei. Les filtres se combinent dans n'importe quel ordre, et la recherche tolère les fautes de frappe (« kotegaesi », « shiho », « 3 kyu », « Habert »…). Chaque clip se lit en boucle ; le ralenti, l'image par image et le miroir aident à décomposer le mouvement.</p>
+      <p>« S'interroger » fonctionne comme un passage de grade : le nom de la technique s'affiche, on l'exécute, puis la vidéo sert de corrigé. Les questions sont tirées par séries de 10 dans la sélection en cours (un niveau, une position…). Le mode mains libres affiche la réponse tout seul après quelques secondes.</p>
       <h3>Niveaux</h3>
       <p>Le classement par niveau mêle les progressions techniques FFAAA et FFAB : une technique apparaît à un niveau de kyu dès que l'une des deux fédérations considère qu'elle doit être connue à ce niveau. Cette approche n'est pas entièrement compatible avec les programmes des deux fédérations, mais j'espère qu'elle reste utile. Les niveaux sont cumulatifs : choisir le 5e kyu affiche aussi les techniques du 6e kyu, et plus le kyu approche du shodan, plus il compte de clips.</p>
       <h3>Vidéos</h3>
@@ -113,7 +139,31 @@ const TEXTES = {
     raccourcis:
       "<kbd>Space</kbd> play/pause · <kbd>←</kbd> <kbd>→</kbd> 2 s · <kbd>,</kbd> <kbd>.</kbd> frame by frame · " +
       "<kbd>↓</kbd> <kbd>↑</kbd> slower/faster · <kbd>B</kbd> A-B loop · <kbd>L</kbd> loop · <kbd>M</kbd> mirror · " +
-      "<kbd>E</kbd> autoplay · <kbd>S</kbd> sound · <kbd>F</kbd> full screen · <kbd>P</kbd> <kbd>N</kbd> previous/next clip",
+      "<kbd>E</kbd> autoplay · <kbd>S</kbd> sound · <kbd>F</kbd> full screen · <kbd>P</kbd> <kbd>N</kbd> previous/next clip · " +
+      "<kbd>I</kbd> quiz · <kbd>J</kbd> <kbd>R</kbd> knew it / review again",
+    interroger: "Quiz me",
+    interroTitre: "Test yourself on the selection, as in a grading: the technique name first, then the video (I)",
+    interrogerSur: (n) => `Quiz me · ${n} technique${n > 1 ? "s" : ""}`,
+    voirReponse: "Show answer",
+    aideQuestion: "Perform the technique, then check it against the video.",
+    compte: (s) => `Answer in ${s} s`,
+    question: (i, n) => `Question ${i} / ${n}`,
+    programme: (n) => `${n} technique${n > 1 ? "s" : ""} in the syllabus`,
+    jeSavais: "I knew it",
+    jeSavaisTitre: "Known technique: next question (J)",
+    aRevoir: "Review again",
+    aRevoirTitre: "Technique to work on: it will come back at the end of the round (R)",
+    arreter: "Stop",
+    arreterTitre: "Leave the quiz",
+    mainsLibres: (s) => (s ? `Hands-free: ${s} s` : "Hands-free: off"),
+    mainsLibresTitre: "Automatic answer after this delay, clip played twice, then next question",
+    serieFinie: "Round complete",
+    score: (s, n) => `${s} / ${n} known`,
+    vues: (n) => `${n} technique${n > 1 ? "s" : ""} seen`,
+    revoirN: (n) => (n > 1 ? `Review these ${n} techniques` : "Review this technique"),
+    dePlus: (n) => `${n} more`,
+    nouveauTirage: "New draw",
+    listeARevoir: "To review:",
     regrouper: "Group by",
     vues: { attaque: "Attack", technique: "Technique", niveau: "Level", sensei: "Sensei", tableau: "Level chart" },
     facettes: { niveau: "Level", forme: "Position", attaque: "Attack", technique: "Technique", sens: "Form", sensei: "Sensei", courant: "Federation / style" },
@@ -137,7 +187,8 @@ const TEXTES = {
     flash: {
       imgPlus: "+1 frame", imgMoins: "−1 frame", a: "Start A", ab: "A-B loop", abNon: "A-B loop off",
       boucle: "Loop", boucleNon: "Loop off", miroir: "Mirror", miroirNon: "Normal image",
-      ench: "Autoplay", enchNon: "Autoplay off", suivant: "Next clip…", son: "Sound on", muet: "Muted"
+      ench: "Autoplay", enchNon: "Autoplay off", suivant: "Next clip…", son: "Sound on", muet: "Muted",
+      nouvelleSerie: "New round"
     },
     legende: "Level at which the technique is required (FFAB or FFAAA, whichever comes first)",
     caseTitre: (n, k) => `${n} · ${k}`,
@@ -146,6 +197,7 @@ const TEXTES = {
       <p>As a beginner in Aikido, I gathered these videos to help my revisions and deepen my knowledge, and I share them in a spirit of mutual support. They seemed educational and helpful to me, but there are many other valuable resources: this list is not exhaustive and I will expand it as I discover more and with your suggestions.</p>
       <h3>How to use it</h3>
       <p>Techniques can be found by attack, by technique, by kyu level or by sensei. Filters combine in any order and the search tolerates typos (“kotegaesi”, “shiho”, “3 kyu”, “Habert”…). Each clip loops; slow motion, frame by frame and mirror help to break the movement down.</p>
+      <p>“Quiz me” works like a grading: the technique name is shown, you perform it, then the video gives the answer. Questions are drawn in rounds of 10 from the current selection (a level, a position…). Hands-free mode shows the answer by itself after a few seconds.</p>
       <h3>Levels</h3>
       <p>The level classification blends the technical progressions of the French federations FFAAA and FFAB: a technique appears at a kyu level as soon as one of the two federations considers it should be known at that level. This may not fully match either syllabus, but I hope it is still helpful. Levels are cumulative: choosing 5th kyu also shows the 6th kyu techniques, so the closer to shodan, the more clips a level has.</p>
       <h3>Videos</h3>
@@ -181,6 +233,8 @@ const FACETTES = [
 const VUES = ["attaque", "technique", "niveau", "sensei", "tableau"];
 const VITESSES = [0.25, 0.5, 0.75, 1];
 const PAS_SAUT = 2;
+const TAILLE_SERIE = 10; // questions par série d'interrogation, comme un passage de grade
+const MINUTERIES = [0, 10, 20, 30]; // mains libres : secondes avant la réponse (0 = non)
 
 /* ================================================================
    Outils
@@ -214,6 +268,9 @@ const IC_LECTURE = "M8 5v14l11-7z";
 const IC_PAUSE = "M7 5h4v14H7zM13 5h4v14h-4z";
 const IC_MUET = "M4 9h4l5-4v14l-5-4H4zM16 9l5 6m0-6l-5 6";
 const IC_SON = "M4 9h4l5-4v14l-5-4H4zm12.5-1.5a5 5 0 0 1 0 9M15 10a2.5 2.5 0 0 1 0 4";
+const IC_QUESTION =
+  "M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-1 11h2v2h-2zm1-9a3.5 3.5 0 0 1 1.9 6.4" +
+  "c-.6.4-.9.7-.9 1.3v.3h-2v-.4c0-1.3.7-2 1.6-2.6A1.5 1.5 0 1 0 10.5 9.5h-2A3.5 3.5 0 0 1 12 6z";
 
 function sansAccent(s) {
   return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -527,6 +584,14 @@ function majResultats() {
   $("resume").replaceChildren(
     el("span", { class: "resume__nb" }, T().clips(resultats.length)),
     resultats.length > 1 ? boutonToutLire(resultats, true, total) : null,
+    resultats.length
+      ? el(
+          "button",
+          { class: "tout-lire tout-lire--interro", type: "button", title: T().interroTitre, onclick: demarrerInterro },
+          svg(IC_QUESTION),
+          T().interrogerSur(new Set(resultats.map(cleQuestion)).size)
+        )
+      : null,
     ...[...sel].map(([k, val]) =>
       el(
         "button",
@@ -537,6 +602,7 @@ function majResultats() {
     )
   );
 
+  $("interroger").disabled = !resultats.length;
   const zone = $("resultats");
   if (!resultats.length) {
     zone.replaceChildren(
@@ -745,25 +811,35 @@ function lireAdresse() {
   requete = p.get("q") || "";
   $("q").value = requete;
   if (VUES.includes(p.get("vue"))) vue = p.get("vue");
-  return p.get("c");
+  return { clip: p.get("c"), interro: p.has("interro") };
 }
 
+// « #interro&niveau=3+Kyu » ouvre directement l'interrogation sur cette sélection
 function ecrireAdresse() {
   const p = new URLSearchParams();
   if (vue !== "attaque") p.set("vue", vue);
   for (const [k, v] of sel) p.set(k, v);
   if (requete) p.set("q", requete);
-  if (courante()) p.set("c", courante().id);
-  const h = p.toString();
+  if (!Q.actif && courante()) p.set("c", courante().id);
+  const h = [Q.actif ? "interro" : "", p.toString()].filter(Boolean).join("&");
   history.replaceState(history.state, "", h ? "#" + h : location.pathname + location.search);
 }
 
 function majTout() {
   majFacettes();
   majResultats();
-  // La liste de lecture suit les filtres tant que le clip en cours en fait partie
   const c = courante();
-  if (c) {
+  if (Q.actif) {
+    // Sélection modifiée pendant l'interrogation : nouvelle série sur la nouvelle sélection.
+    // Le changement de langue passe aussi par ici, mais ne change pas la sélection.
+    if (cleSelection() !== Q.selection) {
+      if (resultats.length) {
+        demarrerInterro();
+        flash(T().flash.nouvelleSerie);
+      } else arreterInterro();
+    }
+  } else if (c) {
+    // La liste de lecture suit les filtres tant que le clip en cours en fait partie
     const i = resultats.indexOf(c);
     if (i !== -1) { L.liste = resultats; L.index = i; }
     majNavigation();
@@ -777,6 +853,24 @@ function majTout() {
    ================================================================ */
 
 const L = { liste: [], index: -1, vitesse: 1, a: null, b: null, miroir: false, boucle: true, enchainer: false, muet: true };
+
+// Interrogation : la série en cours est aussi la liste de lecture (L.liste), une
+// question par clip. Chaque question garde toutes ses versions (senseis) de la sélection.
+const Q = {
+  actif: false,
+  selection: "", // sélection d'origine, pour relancer une série si elle change
+  programme: [], // questions pas encore tirées (tableaux de versions), dans le désordre
+  total: 0,
+  serie: [], // { versions, clip, verdict: null | "su" | "revoir", reprise }
+  i: 0,
+  revele: false,
+  fin: false,
+  aide: true, // ligne d'aide jusqu'à la première réponse
+  minuterie: 0, // mains libres : secondes avant la réponse
+  reste: 0,
+  compte: null,
+  lectures: 0 // mains libres : lectures du clip depuis la réponse
+};
 
 // Le lecteur YouTube ne donne le temps courant qu'à chaque message reçu de
 // l'iframe (quelques fois par seconde) : entre deux messages, on extrapole
@@ -850,6 +944,8 @@ function surEtat(e) {
   // La vidéo est là dès qu'elle change d'état, même si la lecture automatique
   // a été bloquée par le navigateur : on ne masque plus l'image.
   if (e.data !== ATTENTE && Y.video) attente(null);
+  // Vidéo cachée (question ou bilan) : elle ne doit pas jouer, même lancée par loadVideoById
+  if (e.data === LECTURE && Q.actif && (!Q.revele || Q.fin)) Y.player.pauseVideo();
   if (e.data === FINI) finDeClip();
   majBoutonLecture();
 }
@@ -899,7 +995,8 @@ let fileAffichee = null;
 function majFile() {
   const zone = $("l-file");
   const conteneur = $("l-file-liste");
-  if (L.liste.length < 2) {
+  // En interrogation, la liste dévoilerait les questions suivantes
+  if (L.liste.length < 2 || Q.actif) {
     zone.hidden = true;
     fileAffichee = null;
     return;
@@ -927,7 +1024,9 @@ function majFile() {
   if (c) conteneur.scrollTo({ left: c.offsetLeft - (conteneur.clientWidth - c.offsetWidth) / 2, behavior: "smooth" });
 }
 
-function ouvrir(c, liste = resultats) {
+// Ouvrir un clip depuis la liste (tuile, Tout lire, Au hasard…) quitte l'interrogation
+function ouvrir(c, liste = resultats, interro = false) {
+  if (!interro) arreterInterro();
   let i = liste.indexOf(c);
   if (i === -1) { liste = [c]; i = 0; }
   L.liste = liste;
@@ -953,6 +1052,8 @@ async function charger(lire) {
   clearTimeout(minuteurSuite);
   L.a = L.b = null;
   majAB();
+  if (Q.actif && !Q.revele && !Q.fin) lancerCompte();
+  else arreterCompte();
   afficherInfos(c);
 
   if (location.protocol === "file:") {
@@ -962,11 +1063,16 @@ async function charger(lire) {
   if (!Y.player) attente(T().chargement);
   const p = await preparerYouTube();
   if (courante() !== c) return; // un autre clip a été demandé entre-temps
+  // Question posée : la vidéo se charge cachée et en pause, la réponse s'affichera sans attente.
+  // Évalué après l'attente du lecteur : la réponse a pu être demandée entre-temps.
+  if (Q.actif && (!Q.revele || Q.fin)) lire = false;
   Y.erreur = false;
   const debut = tempsDe(c, imgDebut(c));
   if (Y.video === c.video) {
     sauter(debut);
+    // Même vidéo que le clip précédent, peut-être en cours de lecture : pause explicite
     if (lire) p.playVideo();
+    else p.pauseVideo();
   } else {
     Y.video = c.video;
     attente(T().chargement);
@@ -1026,12 +1132,26 @@ function afficherInfos(c) {
   majNavigation();
   majFile();
   majSurlignage();
+  majInterro();
   ecrireAdresse();
   document.title = `${c.technique}${c.sens ? " " + c.sens : ""} · ${c.attaque} · ${T().titre}`;
 }
 
 function changerVersion(x) {
   if (x === courante()) return;
+  if (Q.actif) {
+    // Autre sensei pour la même question : on montre la réponse, sans nouvelle question
+    if (Q.fin) return;
+    Q.serie[Q.i].clip = x;
+    L.liste = Q.serie.map((q) => q.clip);
+    if (!Q.revele) {
+      Q.revele = true;
+      Q.aide = false;
+    }
+    Q.lectures = 0;
+    charger(true);
+    return;
+  }
   let i = L.liste.indexOf(x);
   if (i === -1) {
     L.liste = [...L.liste];
@@ -1057,6 +1177,10 @@ function majSurlignage() {
 function aller(delta) {
   const i = L.index + delta;
   if (i < 0 || i >= L.liste.length) return;
+  if (Q.actif) {
+    Q.i = i;
+    Q.revele = Q.fin = false;
+  }
   L.index = i;
   charger(true);
 }
@@ -1068,6 +1192,7 @@ function fermer() {
 
 function fermerLecteur() {
   if ($("lecteur").hidden) return;
+  arreterInterro();
   clearTimeout(minuteurSuite);
   const id = String(courante()?.id ?? "");
   Y.player?.pauseVideo?.();
@@ -1103,10 +1228,22 @@ function surveiller() {
 function finDeClip() {
   const c = courante();
   if (!c) return;
+  // Mains libres : le clip est lu deux fois, puis question suivante
+  if (Q.actif && Q.revele && Q.minuterie) {
+    if (++Q.lectures >= 2) {
+      Y.player.pauseVideo();
+      suivanteInterro();
+    } else {
+      sauter(tempsDe(c, imgDebut(c)));
+      Y.player.playVideo();
+    }
+    return;
+  }
   if (L.boucle) {
     sauter(tempsDe(c, imgDebut(c)));
     Y.player.playVideo();
-  } else if (L.enchainer && L.index < L.liste.length - 1) {
+  } else if (L.enchainer && !Q.actif && L.index < L.liste.length - 1) {
+    // En interrogation, on ne passe jamais seul à la question suivante
     Y.player.pauseVideo();
     flash(T().flash.suivant);
     minuteurSuite = setTimeout(() => aller(1), 600);
@@ -1117,6 +1254,11 @@ function finDeClip() {
 }
 
 function basculerLecture() {
+  // Question posée : « lecture » montre la réponse ; bilan : rien à lire
+  if (Q.actif && (!Q.revele || Q.fin)) {
+    if (!Q.fin) reveler();
+    return;
+  }
   if (!Y.player) return;
   if (Y.etat === LECTURE || Y.etat === ATTENTE) Y.player.pauseVideo();
   else {
@@ -1290,19 +1432,32 @@ function brancherCommandes() {
   $("c-son").addEventListener("click", () => basculerSon());
   $("c-plein").addEventListener("click", pleinEcran);
   $("l-fermer").addEventListener("click", fermer);
+  // Question : un clic n'importe où sur le cache montre la réponse. Les boutons du bilan
+  // ont leur propre action (qui relance parfois une question : ne pas la dévoiler aussitôt).
+  $("l-question").addEventListener("click", (e) => {
+    if (!e.target.closest(".question__actions")) reveler();
+  });
 
   // Un clic souris sur une commande ne lui donne pas le focus : la barre d'espace
-  // reste ainsi dédiée à lecture/pause.
-  $("l-commandes").addEventListener("mousedown", (e) => {
-    if (e.target.closest("button")) e.preventDefault();
-  });
+  // reste ainsi dédiée à lecture/pause (et ne revalide pas « Je savais »).
+  for (const zone of ["l-commandes", "l-interro", "l-question"]) {
+    $(zone).addEventListener("mousedown", (e) => {
+      if (e.target.closest("button")) e.preventDefault();
+    });
+  }
+  document.addEventListener("visibilitychange", garderEveil);
 
   document.addEventListener("keydown", (e) => {
     if ($("lecteur").hidden || e.ctrlKey || e.metaKey || e.altKey) return;
     const cible = e.target;
     if (cible.matches?.("input[type=search], input[type=text], textarea")) return;
     const surBouton = cible.tagName === "BUTTON";
+    const enQuestion = Q.actif && !Q.revele && !Q.fin;
+    const enReponse = Q.actif && Q.revele && !Q.fin;
     const actions = {
+      Enter: enQuestion && !surBouton ? reveler : null,
+      j: enReponse ? () => suivanteInterro("su") : null,
+      r: enReponse ? () => suivanteInterro("revoir") : null,
       " ": surBouton ? null : basculerLecture,
       k: basculerLecture,
       ArrowLeft: () => deplacer(e.shiftKey ? -5 : -PAS_SAUT),
@@ -1326,6 +1481,262 @@ function brancherCommandes() {
     e.preventDefault();
     action();
   });
+}
+
+/* ================================================================
+   Interrogation : le nom de la technique d'abord, la vidéo ensuite
+   ================================================================ */
+
+// Une question = position + attaque + technique + sens : omote et ura font deux questions,
+// comme les tuiles de la vue Attaque ; une technique filmée par 4 senseis ne sort pas 4 fois plus.
+function cleQuestion(c) {
+  return [c.forme, c.attaque, c.technique, c.sens].join("|");
+}
+
+function cleSelection() {
+  return resultats.map((c) => c.id).join(" ");
+}
+
+function melanger(t) {
+  for (let i = t.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [t[i], t[j]] = [t[j], t[i]];
+  }
+  return t;
+}
+
+function programmeDe(liste) {
+  const m = new Map();
+  for (const c of liste) {
+    const k = cleQuestion(c);
+    if (!m.has(k)) m.set(k, []);
+    m.get(k).push(c);
+  }
+  return melanger([...m.values()]);
+}
+
+function nomQuestion(c) {
+  return `${c.forme} · ${c.attaque} · ${c.technique}${c.sens ? " " + c.sens : ""}`;
+}
+
+function demarrerInterro() {
+  if (!resultats.length) return;
+  Q.actif = true;
+  Q.selection = cleSelection();
+  Q.programme = programmeDe(resultats);
+  Q.total = Q.programme.length;
+  garderEveil();
+  nouvelleSerie();
+}
+
+// Les séries se suivent sans répétition ; programme épuisé : nouveau tirage
+function nouvelleSerie() {
+  if (!Q.programme.length) Q.programme = programmeDe(resultats);
+  lancerSerie(Q.programme.splice(0, TAILLE_SERIE));
+}
+
+// Une série à partir de questions (tableaux de versions) ; le sensei est tiré au hasard
+function lancerSerie(questions) {
+  Q.serie = questions.map((versions) => ({
+    versions,
+    clip: versions[Math.floor(Math.random() * versions.length)],
+    verdict: null,
+    reprise: false
+  }));
+  Q.i = 0;
+  Q.revele = Q.fin = false;
+  const liste = Q.serie.map((q) => q.clip);
+  ouvrir(liste[0], liste, true);
+}
+
+function allerQuestion(i) {
+  Q.i = i;
+  Q.revele = Q.fin = false;
+  L.liste = Q.serie.map((q) => q.clip);
+  L.index = i;
+  charger(true);
+}
+
+function reveler() {
+  if (!Q.actif || Q.revele || Q.fin) return;
+  Q.revele = true;
+  Q.aide = false;
+  Q.lectures = 0;
+  arreterCompte();
+  majInterro();
+  // Vidéo déjà chargée (en pause) : lecture immédiate. Sinon charger() la lancera.
+  const c = courante();
+  if (c && Y.player && Y.video === c.video) {
+    sauter(tempsDe(c, imgDebut(c)));
+    Y.player.playVideo();
+  }
+}
+
+// « À revoir » : la question revient en fin de série
+function suivanteInterro(verdict) {
+  if (!Q.actif || Q.fin) return;
+  const q = Q.serie[Q.i];
+  if (verdict && q) {
+    q.verdict = verdict;
+    if (verdict === "revoir") Q.serie.push({ versions: q.versions, clip: q.clip, verdict: null, reprise: true });
+  }
+  if (Q.i + 1 < Q.serie.length) allerQuestion(Q.i + 1);
+  else finSerie();
+}
+
+function finSerie() {
+  Q.fin = true;
+  Q.revele = false;
+  arreterCompte();
+  Y.player?.pauseVideo?.();
+  majInterro();
+  majNavigation();
+}
+
+// Score sur les premières réponses ; à revoir = dernier verdict donné « à revoir »
+function bilan() {
+  const premieres = Q.serie.filter((q) => !q.reprise);
+  const dernier = new Map();
+  for (const q of Q.serie) if (q.verdict) dernier.set(q.versions, q);
+  return {
+    total: premieres.length,
+    notees: premieres.filter((q) => q.verdict).length,
+    sues: premieres.filter((q) => q.verdict === "su").length,
+    aRevoir: [...dernier.values()].filter((q) => q.verdict === "revoir")
+  };
+}
+
+// Sortie de l'interrogation : le clip en cours reste dans le lecteur normal
+function arreterInterro() {
+  if (!Q.actif) return;
+  Q.actif = Q.revele = Q.fin = false;
+  arreterCompte();
+  libererEveil();
+  majInterro();
+  const c = courante();
+  if (c) {
+    const i = resultats.indexOf(c);
+    L.liste = i === -1 ? [c] : resultats;
+    L.index = Math.max(0, i);
+    majNavigation();
+    majFile();
+  }
+  ecrireAdresse();
+}
+
+/* --- Mains libres : compte à rebours avant la réponse --- */
+
+function arreterCompte() {
+  clearInterval(Q.compte);
+  Q.compte = null;
+}
+
+function lancerCompte() {
+  arreterCompte();
+  if (!Q.minuterie) return;
+  Q.reste = Q.minuterie;
+  Q.compte = setInterval(() => {
+    Q.reste--;
+    const n = $("q-compte");
+    if (n) n.textContent = T().compte(Q.reste);
+    if (Q.reste <= 0) reveler();
+  }, 1000);
+}
+
+function basculerMinuterie() {
+  Q.minuterie = MINUTERIES[(MINUTERIES.indexOf(Q.minuterie) + 1) % MINUTERIES.length];
+  stockage("aikido.minuterie", String(Q.minuterie));
+  if (Q.actif && !Q.revele && !Q.fin) lancerCompte();
+  majInterro();
+}
+
+// Écran allumé pendant l'interrogation : le téléphone reste posé au bord du tatami
+let eveil = null;
+async function garderEveil() {
+  if (!Q.actif || eveil || document.visibilityState !== "visible" || !navigator.wakeLock) return;
+  try {
+    eveil = await navigator.wakeLock.request("screen");
+    eveil.addEventListener("release", () => (eveil = null));
+  } catch (e) { /* refusé (batterie faible, navigateur) : l'écran se mettra en veille */ }
+}
+
+function libererEveil() {
+  eveil?.release().catch(() => {});
+  eveil = null;
+}
+
+/* --- Affichage : cache de question sur la vidéo, bandeau sous les commandes --- */
+
+// Comme el() : remplace le contenu en aplatissant les tableaux et en ignorant null
+function remplir(noeud, ...enfants) {
+  noeud.replaceChildren(...enfants.flat().filter((e) => e != null && e !== false));
+}
+
+function majInterro() {
+  const cache = $("l-question");
+  const bande = $("l-interro");
+  const q = Q.serie[Q.i];
+  if (!Q.actif || !q) {
+    cache.hidden = bande.hidden = true;
+    return;
+  }
+  const t = T();
+  const c = q.clip;
+  const bouton = (texte, action, attrs = {}) =>
+    el("button", { class: "question__bouton", type: "button", onclick: action, ...attrs }, texte);
+
+  cache.hidden = Q.revele && !Q.fin;
+  bande.hidden = false;
+  let liste = null;
+  if (Q.fin) {
+    const b = bilan();
+    remplir(cache,
+      el("p", { class: "question__forme" }, t.serieFinie),
+      el("p", { class: "question__technique" }, b.notees ? t.score(b.sues, b.total) : t.vues(b.total)),
+      el(
+        "div",
+        { class: "question__actions" },
+        b.aRevoir.length ? bouton(t.revoirN(b.aRevoir.length), () => lancerSerie(b.aRevoir.map((x) => x.versions))) : null,
+        Q.programme.length
+          ? bouton(t.dePlus(Math.min(TAILLE_SERIE, Q.programme.length)), nouvelleSerie)
+          : bouton(t.nouveauTirage, nouvelleSerie),
+        bouton(t.arreter, arreterInterro, { class: "question__bouton question__bouton--discret" })
+      )
+    );
+    if (b.aRevoir.length) liste = el("p", { class: "interro__liste" }, `${t.listeARevoir} `, b.aRevoir.map((x) => nomQuestion(x.clip)).join(" · "));
+  } else if (!Q.revele) {
+    remplir(cache,
+      el("p", { class: "question__forme" }, c.forme),
+      el("p", { class: "question__attaque" }, c.attaque),
+      el("p", { class: "question__technique" }, c.technique, c.sens ? el("span", { class: "question__sens" }, ` ${c.sens}`) : null),
+      // Toute la zone montre la réponse au clic ; le bouton sert au clavier et à l'œil
+      bouton(t.voirReponse),
+      Q.minuterie ? el("p", { class: "question__compte", id: "q-compte" }, t.compte(Q.reste)) : null,
+      Q.aide ? el("p", { class: "question__aide" }, t.aideQuestion) : null
+    );
+  }
+
+  remplir(bande,
+    el(
+      "span",
+      { class: "interro__etat" },
+      Q.fin ? t.serieFinie : t.question(Q.i + 1, Q.serie.length),
+      el("small", {}, t.programme(Q.total))
+    ),
+    Q.revele && !Q.fin
+      ? [
+          el("button", { class: "cmd interro__su", type: "button", title: t.jeSavaisTitre, onclick: () => suivanteInterro("su") }, t.jeSavais),
+          el("button", { class: "cmd interro__revoir", type: "button", title: t.aRevoirTitre, onclick: () => suivanteInterro("revoir") }, t.aRevoir)
+        ]
+      : null,
+    el(
+      "button",
+      { class: "cmd", type: "button", "aria-pressed": String(!!Q.minuterie), title: t.mainsLibresTitre, onclick: basculerMinuterie },
+      t.mainsLibres(Q.minuterie)
+    ),
+    el("button", { class: "cmd", type: "button", title: t.arreterTitre, onclick: arreterInterro }, t.arreter),
+    liste
+  );
 }
 
 /* ================================================================
@@ -1363,8 +1774,10 @@ function demarrer() {
   L.boucle = stockage("aikido.boucle") !== "0";
   $("c-boucle").setAttribute("aria-pressed", String(L.boucle));
   basculerSon(stockage("aikido.muet") !== "0");
+  const minuterie = Number(stockage("aikido.minuterie"));
+  Q.minuterie = MINUTERIES.includes(minuterie) ? minuterie : 0;
   brancherCommandes();
-  const id = lireAdresse();
+  const adresse = lireAdresse();
   appliquerLangue(l === "en" ? "en" : "fr");
 
   $("q").addEventListener("input", (e) => {
@@ -1390,8 +1803,17 @@ function demarrer() {
     $("q").focus();
     $("q").select();
   });
+  // « I » lance l'interrogation sur la sélection, lecteur ouvert ou non
+  document.addEventListener("keydown", (e) => {
+    if (e.key.toLowerCase() !== "i" || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.target.matches?.("input, textarea") || $("apropos").open) return;
+    e.preventDefault();
+    demarrerInterro();
+  });
+  $("interroger").addEventListener("click", demarrerInterro);
   $("effacer").addEventListener("click", toutEffacer);
   $("accueil").addEventListener("click", () => {
+    arreterInterro();
     fermer();
     toutEffacer();
     changerVue("attaque");
@@ -1411,8 +1833,9 @@ function demarrer() {
   // Le lecteur YouTube met plusieurs secondes à s'installer : on le prépare
   // dès l'arrivée sur la page pour qu'il soit prêt au premier clic.
   if (location.protocol !== "file:") preparerYouTube();
-  const c = id && PAR_ID.get(id);
-  if (c) ouvrir(c);
+  const c = adresse.clip && PAR_ID.get(adresse.clip);
+  if (adresse.interro) demarrerInterro();
+  else if (c) ouvrir(c);
 }
 
 demarrer();
