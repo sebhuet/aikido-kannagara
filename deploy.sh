@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
+# Sous Windows, le ssh de Git Bash ne voit pas l'agent OpenSSH de Windows (clé à
+# passphrase) : on prend les binaires Windows quand ils existent.
+OPENSSH_WIN="/c/Windows/System32/OpenSSH"
+[ -x "$OPENSSH_WIN/ssh.exe" ] && PATH="$OPENSSH_WIN:$PATH"
+
 echo "=== Build du site ==="
 node build-all.js
 
