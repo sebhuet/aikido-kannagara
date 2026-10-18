@@ -137,9 +137,9 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 
 ### Lundi 02/11
 
-- **18h00-19h00** | Enfants | Sébastien Huet
-- **19h00-20h30** | Adultes | Sébastien Huet
-- **20h30-22h00** | Adultes | Sébastien Huet
+- **18h00-19h00** | Enfants | Jean-Marc Chamot
+- **19h00-20h30** | Adultes | Jean-Marc Chamot
+- **20h30-22h00** | Adultes | Jean-Marc Chamot
 
 ### Jeudi 05/11
 
