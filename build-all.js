@@ -9,12 +9,13 @@
 const { execSync } = require("child_process");
 
 // facultatif : un échec n'arrête pas le build (sans Python ni Pillow, le site affiche
-// les photos originales, seulement plus lourdes)
+// les photos originales, seulement plus lourdes).
+// Le sitemap passe en dernier : il date chaque page d'après son fichier, llms.txt compris.
 const scripts = [
   { name: "Blog", cmd: "node build-blog.js" },
-  { name: "Sitemap", cmd: "node build-sitemap.js" },
   { name: "Fichiers pour les assistants IA (llms.txt)", cmd: "node build-llms.js" },
-  { name: "Images web (vignettes, accueil)", cmd: "python tools/optimiser_images.py", facultatif: true }
+  { name: "Images web (vignettes, accueil)", cmd: "python tools/optimiser_images.py", facultatif: true },
+  { name: "Sitemap", cmd: "node build-sitemap.js" }
 ];
 
 console.log("🚀 Génération complète du site...\n");
