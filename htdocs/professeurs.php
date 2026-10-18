@@ -107,8 +107,8 @@ foreach ($fiches as $i => $fiche) {
     <meta name="twitter:image" content="https://kannagara.fr/images/partage/kannagara.jpg">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css?v=<?= substr(md5_file(__DIR__ . '/css/style.css'), 0, 8) ?>">
+    <link rel="stylesheet" href="css/responsive.css?v=<?= substr(md5_file(__DIR__ . '/css/responsive.css'), 0, 8) ?>">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -245,6 +245,6 @@ foreach ($fiches as $i => $fiche) {
 
 
     <!-- JavaScript -->
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js?v=<?= substr(md5_file(__DIR__ . '/js/main.js'), 0, 8) ?>" defer></script>
 </body>
 </html>

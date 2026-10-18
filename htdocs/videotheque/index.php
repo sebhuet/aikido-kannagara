@@ -45,8 +45,8 @@
   </script>
   <link rel="canonical" href="https://kannagara.fr/videotheque/">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/style.css?v=<?= substr(md5_file($_SERVER['DOCUMENT_ROOT'] . '/css/style.css'), 0, 8) ?>">
+  <link rel="stylesheet" href="/css/responsive.css?v=<?= substr(md5_file($_SERVER['DOCUMENT_ROOT'] . '/css/responsive.css'), 0, 8) ?>">
   <link rel="stylesheet" href="style.css?v=3349e5046f">
   <style>
     /* Intégration dans le site : la vidéothèque se place sous l'en-tête fixe */
@@ -467,6 +467,6 @@
 
 <script src="donnees.js?v=3349e5046f"></script>
 <script src="app.js?v=3349e5046f"></script>
-<script src="/js/main.js" defer></script>
+<script src="/js/main.js?v=<?= substr(md5_file($_SERVER['DOCUMENT_ROOT'] . '/js/main.js'), 0, 8) ?>" defer></script>
 </body>
 </html>

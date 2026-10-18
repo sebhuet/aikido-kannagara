@@ -146,8 +146,8 @@ if ($photoPartagee) {
     <meta name="twitter:image" content="<?= htmlspecialchars($ogImage) ?>">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css?v=<?= substr(md5_file(__DIR__ . '/css/style.css'), 0, 8) ?>">
+    <link rel="stylesheet" href="css/responsive.css?v=<?= substr(md5_file(__DIR__ . '/css/responsive.css'), 0, 8) ?>">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -516,7 +516,7 @@ if ($photoPartagee) {
     </div>
 
     <!-- JavaScript -->
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js?v=<?= substr(md5_file(__DIR__ . '/js/main.js'), 0, 8) ?>" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Filtres de galerie

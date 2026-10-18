@@ -235,8 +235,8 @@ ${meta}
 ${seo}
   <link rel="canonical" href="${URL_PAGE}">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/style.css?v=<?= substr(md5_file($_SERVER['DOCUMENT_ROOT'] . '/css/style.css'), 0, 8) ?>">
+  <link rel="stylesheet" href="/css/responsive.css?v=<?= substr(md5_file($_SERVER['DOCUMENT_ROOT'] . '/css/responsive.css'), 0, 8) ?>">
   <link rel="stylesheet" href="style.css?v=${version}">
   <style>${STYLE_INTEGRATION}
   </style>
@@ -244,7 +244,7 @@ ${seo}
 <body class="page-videotheque">
 <?php $active = 'videotheque'; include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>
 ${scripts.trim()}
-<script src="/js/main.js" defer></script>
+<script src="/js/main.js?v=<?= substr(md5_file($_SERVER['DOCUMENT_ROOT'] . '/js/main.js'), 0, 8) ?>" defer></script>
 </body>
 </html>
 `;
