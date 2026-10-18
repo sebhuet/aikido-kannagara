@@ -143,9 +143,9 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 
 ### Jeudi 05/11
 
-- **18h00-19h00** | Enfants | Sébastien Huet
-- **19h00-20h30** | Adultes | Sébastien Huet
-- **20h30-22h00** | Adultes | Sébastien Huet
+- **18h00-19h00** | Enfants | Nacer Chekkaba
+- **19h00-20h30** | Adultes | Nacer Chekkaba
+- **20h30-22h00** | Adultes | Nacer Chekkaba
 
 ### Dimanche 08/11
 
@@ -162,9 +162,9 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 
 ### Jeudi 12/11
 
-- **18h00-19h00** | Enfants | Sébastien Huet
-- **19h00-20h30** | Adultes | Sébastien Huet
-- **20h30-22h00** | Adultes | Sébastien Huet
+- **18h00-19h00** | Enfants | Nacer Chekkaba
+- **19h00-20h30** | Adultes | Nacer Chekkaba
+- **20h30-22h00** | Adultes | Nacer Chekkaba
 
 ## Semaine du 16/11/2026
 
