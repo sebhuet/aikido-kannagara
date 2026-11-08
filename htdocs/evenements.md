@@ -226,6 +226,16 @@ l'enseignant vous accueillera.
 
 Stage départemental du CODEP 78, ouvert à tous les licenciés, tous les groupements.
 
+## Téléthon 2026 : soirée portes ouvertes
+
+- date: 03/12/2026
+- horaire: 18h00 - 22h00
+- lieu: Gymnase Maurice Baquet
+- lieu_url: https://maps.app.goo.gl/xuTo7Rqh51XWqWEh6
+- image: images/evenements/telethon-2026.jpg
+
+Soirée portes ouvertes au club dans le cadre du Téléthon 2026 : entrée gratuite, don libre au profit de l'AFM-Téléthon. Une animation menée par la Ville de Guyancourt avec les associations guyancourtoises.
+
 ## Stage Alexia Houette & Xavier Raujol
 
 - date: 24/01/2027

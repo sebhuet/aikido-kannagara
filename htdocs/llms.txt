@@ -43,6 +43,7 @@ Morihiro. Il dirige des stages en France et à l'étranger depuis près de 40 an
 ## Prochains événements
 
 - Dimanche 8 novembre 2026 : Stage Brahim Si Guesmi, Adultes 10h00 - 12h30 · 14h30 - 17h00, Gymnase Maurice Baquet. Stage départemental du CODEP 78, ouvert à tous les licenciés, tous les groupements. https://kannagara.fr/actualites.php?evenement=2026-11-08-stage-brahim-si-guesmi
+- Jeudi 3 décembre 2026 : Téléthon 2026 : soirée portes ouvertes, 18h00 - 22h00, Gymnase Maurice Baquet. Soirée portes ouvertes au club dans le cadre du Téléthon 2026 : entrée gratuite, don libre au profit de l'AFM-Téléthon. Une animation menée par la Ville de Guyancourt avec les associations guyancourtoises. https://kannagara.fr/actualites.php?evenement=2026-12-03-telethon-2026-soiree-portes-ouvertes
 - Dimanche 24 janvier 2027 : Stage Alexia Houette & Xavier Raujol, Adultes 10h00 - 12h30 · 14h30 - 17h00, Gymnase Maurice Baquet. Stage départemental du CODEP 78, ouvert à tous les licenciés, tous les groupements. https://kannagara.fr/actualites.php?evenement=2027-01-24-stage-alexia-houette-xavier-raujol
 - Dimanche 21 février 2027 : Stage Virginie Cantat & Daniel Gannat, Adultes 10h00 - 12h30 · 14h30 - 17h00, Gymnase Maurice Baquet. Stage départemental du CODEP 78, ouvert à tous les licenciés, tous les groupements. https://kannagara.fr/actualites.php?evenement=2027-02-21-stage-virginie-cantat-daniel-gannat
 - Dimanche 11 avril 2027 : Stage Jean-Marc Chamot, Adultes 10h00 - 12h30 · 14h30 - 17h00, Gymnase Maurice Baquet. Stage départemental du CODEP 78, ouvert à tous les licenciés, tous les groupements. https://kannagara.fr/actualites.php?evenement=2027-04-11-stage-jean-marc-chamot
@@ -52,7 +53,6 @@ Morihiro. Il dirige des stages en France et à l'étranger depuis près de 40 an
 
 - Jean-Marc Chamot : 7ème Dan Aïkido - 4e Dan Iaïdo, DESJEPS, Cadre technique FFAB
 - Nacer Chekkaba : 4ème Dan Aïkido FFAB, BE1 (responsable pédagogique)
-- Thierry Montfort : 3ème Dan Aïkido FFAB, BE1
 - Sébastien Huet : 1er Dan Aïkido FFAB, Brevet Fédéral FFAB
 
 Jean-Marc Chamot est formé auprès d'André Nocquet (premier étranger uchi-deshi de Ueshiba) et de
@@ -87,7 +87,7 @@ qui reproduit un passage de grade (le nom de la technique d'abord, la vidéo ens
 - [Accueil](https://kannagara.fr/): Page principale du club Aïkido Kannagara Guyancourt
 - [L'Aïkido](https://kannagara.fr/aikido.php): Histoire, philosophie, self-défense, femmes, enfants
 - [Le Club](https://kannagara.fr/club.php): Présentation, historique, affiliations
-- [Professeurs](https://kannagara.fr/professeurs.php): Équipe de 4 enseignants avec biographies
+- [Professeurs](https://kannagara.fr/professeurs.php): Équipe de 3 enseignants avec biographies
 - [Agenda](https://kannagara.fr/agenda.php): Calendrier des cours et présence des professeurs
 - [Actualités](https://kannagara.fr/actualites.php): Événements à venir et activités du club
 - [Vidéothèque](https://kannagara.fr/videotheque/): Techniques d'aïkido en vidéo, avec mode interrogation

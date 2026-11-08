@@ -141,11 +141,11 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 - **19h00-20h30** | Adultes | Jean-Marc Chamot
 - **20h30-22h00** | Adultes | Jean-Marc Chamot
 
-### Jeudi 05/11
+### Jeudi 05/11 - Grève - Pas de cours
 
-- **18h00-19h00** | Enfants | Nacer Chekkaba
-- **19h00-20h30** | Adultes | Nacer Chekkaba
-- **20h30-22h00** | Adultes | Nacer Chekkaba
+- **18h00-19h00** | Enfants | Pas de cours
+- **19h00-20h30** | Adultes | Pas de cours
+- **20h30-22h00** | Adultes | Pas de cours
 
 ### Dimanche 08/11
 
@@ -176,9 +176,9 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 
 ### Jeudi 19/11
 
-- **18h00-19h00** | Enfants | Sébastien Huet
-- **19h00-20h30** | Adultes | Sébastien Huet
-- **20h30-22h00** | Adultes | Sébastien Huet
+- **18h00-19h00** | Enfants | Nacer Chekkaba
+- **19h00-20h30** | Adultes | Nacer Chekkaba
+- **20h30-22h00** | Adultes | Nacer Chekkaba
 
 ## Semaine du 23/11/2026
 
@@ -190,9 +190,9 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 
 ### Jeudi 26/11
 
-- **18h00-19h00** | Enfants | Sébastien Huet
-- **19h00-20h30** | Adultes | Sébastien Huet
-- **20h30-22h00** | Adultes | Sébastien Huet
+- **18h00-19h00** | Enfants | Nacer Chekkaba
+- **19h00-20h30** | Adultes | Nacer Chekkaba
+- **20h30-22h00** | Adultes | Nacer Chekkaba
 
 ## Semaine du 30/11/2026
 
@@ -204,9 +204,10 @@ Les saisons passées sont archivées dans `agenda-2025-2026.md`.
 
 ### Jeudi 03/12
 
-- **18h00-19h00** | Enfants | Sébastien Huet
-- **19h00-20h30** | Adultes | Sébastien Huet
-- **20h30-22h00** | Adultes | Sébastien Huet
+- **18h00-19h00** | Enfants | Nacer Chekkaba
+- **Note** : Téléthon, soirée portes ouvertes de 18h à 22h : entrée gratuite, don libre
+- **19h00-20h30** | Adultes | Nacer Chekkaba
+- **20h30-22h00** | Adultes | Nacer Chekkaba
 
 ## Semaine du 07/12/2026
 

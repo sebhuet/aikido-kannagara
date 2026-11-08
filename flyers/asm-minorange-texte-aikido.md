@@ -8,7 +8,7 @@ Au fil des séances, on gagne en souplesse, en équilibre et en coordination, on
 
 La pratique se fait à mains nues et avec les armes traditionnelles en bois (sabre, bâton, couteau), dans une ambiance conviviale et respectueuse.
 
-Les cours sont assurés par le club Aïkido Kannagara Guyancourt, affilié à la FFAB, sous la responsabilité pédagogique de Nacer Chekkaba (4e dan, diplômé d'État), avec Jean-Marc Chamot (7e dan, cadre technique de la FFAB), Thierry Montfort (3e dan) et Sébastien Huet (1er dan).
+Les cours sont assurés par le club Aïkido Kannagara Guyancourt, affilié à la FFAB, sous la responsabilité pédagogique de Nacer Chekkaba (4e dan, diplômé d'État), avec Jean-Marc Chamot (7e dan, cadre technique de la FFAB) et Sébastien Huet (1er dan).
 
 Cours d'essai gratuits tout le mois de septembre, et possibles toute l'année : présentez-vous simplement en début de séance, en tenue souple.
 

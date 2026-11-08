@@ -489,7 +489,7 @@ La galerie photos du club ({{site}}/galerie.php) est organisée en catégories :
 ## Mots-clés
 
 aïkido, aikido, aïkido Guyancourt, aïkido Saint-Quentin-en-Yvelines, arts martiaux, FFAB,
-Jean-Marc Chamot, 7e Dan, Nacer Chekkaba, Thierry Montfort, Sébastien Huet,
+Jean-Marc Chamot, 7e Dan, Nacer Chekkaba, Sébastien Huet,
 dojo, Gymnase Maurice Baquet, Yvelines, Île-de-France, sport, self-défense,
 aïkido femmes, aïkido enfants, cours enfants, arts martiaux enfants,
 Morihei Ueshiba, Nobuyoshi Tamura, André Nocquet, Sugano Seichi,
